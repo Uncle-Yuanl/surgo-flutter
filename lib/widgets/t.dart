@@ -1,0 +1,76 @@
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../app/app_state.dart';
+import '../app/i18n.dart';
+import '../app/routes.dart';
+
+/// 界面文案 —— 对应原型 `applyLang()` 在 DOM 上逐文本节点做的翻译。
+///
+/// 原型的做法很"网页"：渲染完中文文案后，用 TreeWalker 遍历文本节点，
+/// 把能命中词典的整串替换掉。Flutter 没有这一层，所以改用显式包装：
+/// 页面里凡是**界面文案（chrome）**都用 [T] 包起来，
+/// 而题干、原文、选项、transcript 这类**题目内容**用原始 Text，
+/// 与原型「翻译只作用于 chrome」的边界完全一致。
+///
+/// 判定规则原样照搬 [Translator.translate]（整串精确匹配 / 正则兜底 /
+/// zh 模式只翻不含中文的串 / en 模式只翻含中文的串）。
+class T extends StatelessWidget {
+  const T(
+    this.text, {
+    super.key,
+    this.style,
+    this.textAlign,
+    this.maxLines,
+    this.uppercase = false,
+  });
+
+  /// 中文模式下的原文（也是词典的 key）
+  final String text;
+  final TextStyle? style;
+  final TextAlign? textAlign;
+  final int? maxLines;
+
+  /// 对应 CSS 的 `text-transform:uppercase`。
+  ///
+  /// ⚠️ 顺序很重要：原型是「文本节点存原文 → CSS 视觉转大写」，
+  /// 而词典的 key 是**原文**（"Today's train"），不是大写形式。
+  /// 所以必须**先翻译、后大写**。反过来（先大写再查词典）会命中失败，
+  /// 中文模式下就会漏翻成 "TODAY'S TRAIN"。
+  final bool uppercase;
+
+  @override
+  Widget build(BuildContext context) {
+    final lang = context.select<AppState, UiLang>((s) => s.lang);
+    var out = Translator.instance.translate(text, lang) ?? text;
+    if (uppercase) out = out.toUpperCase();
+    return Text(out, style: style, textAlign: textAlign, maxLines: maxLines);
+  }
+}
+
+/// 带内联高亮的文案（首页「距离你的考试还剩 20天」那种）。
+/// 每个片段单独过词典，行为与原型逐文本节点翻译一致。
+class TSpan extends StatelessWidget {
+  const TSpan({
+    super.key,
+    required this.parts,
+    this.style,
+    this.highlightStyle,
+  });
+
+  /// (文案, 是否高亮)
+  final List<(String, bool)> parts;
+  final TextStyle? style;
+  final TextStyle? highlightStyle;
+
+  @override
+  Widget build(BuildContext context) {
+    final lang = context.select<AppState, UiLang>((s) => s.lang);
+    final spans = <TextSpan>[];
+    for (final (raw, hl) in parts) {
+      final out = Translator.instance.translate(raw, lang) ?? raw;
+      spans.add(TextSpan(text: out, style: hl ? highlightStyle : null));
+    }
+    return Text.rich(TextSpan(children: spans), style: style);
+  }
+}

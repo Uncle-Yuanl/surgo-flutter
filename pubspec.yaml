@@ -1,0 +1,50 @@
+name: surgo_flutter
+description: "SURGO · 雅思/托福备考 App —— 由 H5 原型重写的原生 Flutter 版"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # 播放题目音频、计时到点提示音（对应 H5 里的 <audio> / Audio() 调用）
+  audioplayers: ^6.1.0
+  # 口语跟读录音、回放自评（对应 H5 的 MediaRecorder）
+  record: ^5.1.2
+  # 朗读题干（对应 H5 的 speechSynthesis）
+  flutter_tts: ^4.2.0
+  # 视频素材：ready.mp4 / timeup.mp4 / waiting.mp4
+  video_player: ^2.9.2
+  # 雷达图、环形进度、饼图（对应 H5 里的内联 SVG）
+  fl_chart: ^0.69.0
+  # 中英切换需要读取 82KB 词典与 62KB 题库，走 assets 异步加载
+  provider: ^6.1.2
+  # 首选项：当前语言、当前考试类型等本地状态
+  shared_preferences: ^2.3.2
+  # 本地 H5 原型用作对照（debug 期并排比对还原度）
+  webview_flutter: ^4.9.0
+  # 原型里大量图标是 .svg（ic_*.svg / nav_*.svg / orb_ask.svg）以及内联 <svg>
+  flutter_svg: ^2.0.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/video/
+    - assets/data/
+
+  fonts:
+    # @font-face{font-family:'VioletSans';src:url('assets/fonts/violet-sans.ttf')}
+    - family: VioletSans
+      fonts:
+        - asset: assets/fonts/violet-sans.ttf

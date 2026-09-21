@@ -1,0 +1,15 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# 转换过程的中间产物（879 个抽取文件，可随时用 extract_source.py 重新生成）
+_extract/

@@ -1,0 +1,1329 @@
+{
+  "ielts": {
+    "reading": {
+      "types": [
+        {
+          "key": "tfng",
+          "name": "True / False / Not Given",
+          "instr": "Do the statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN."
+        },
+        {
+          "key": "ynng",
+          "name": "Yes / No / Not Given",
+          "instr": "Do the statements agree with the views of the writer? Write YES, NO or NOT GIVEN."
+        },
+        {
+          "key": "mchoice",
+          "name": "Multiple choice",
+          "instr": "Choose the correct letter, A, B, C or D."
+        },
+        {
+          "key": "matchinfo",
+          "name": "Matching information",
+          "instr": "Which paragraph contains the following information? Write the correct letter, A-E."
+        },
+        {
+          "key": "headings",
+          "name": "Matching headings",
+          "instr": "Choose the correct heading for each paragraph from the list of headings below."
+        },
+        {
+          "key": "matchfeat",
+          "name": "Matching features",
+          "instr": "Match each statement with the correct feature. Write the correct letter."
+        },
+        {
+          "key": "sentend",
+          "name": "Matching sentence endings",
+          "instr": "Complete each sentence with the correct ending, A-D, below."
+        },
+        {
+          "key": "sentcomp",
+          "name": "Sentence completion",
+          "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+        },
+        {
+          "key": "summary",
+          "name": "Summary / note / table completion",
+          "instr": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+        },
+        {
+          "key": "diagram",
+          "name": "Diagram label completion",
+          "instr": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage."
+        },
+        {
+          "key": "shortans",
+          "name": "Short-answer questions",
+          "instr": "Answer the questions below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+        }
+      ],
+      "daily": {
+        "title": "The Migration of Monarch Butterflies",
+        "passage": [
+          [
+            "A",
+            "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world, travelling up to 4,000 kilometres from Canada and the northern United States to the forests of central Mexico. What makes this migration so extraordinary is that no single butterfly completes the round trip."
+          ],
+          [
+            "B",
+            "Scientists have long been puzzled by how the insects navigate. Recent research suggests that monarchs rely on a combination of the position of the sun and an internal magnetic compass that allows them to maintain a consistent southward bearing even on cloudy days."
+          ],
+          [
+            "C",
+            "The overwintering sites in Mexico were unknown to scientists until 1975, when a research team finally located the dense colonies clinging to oyamel fir trees at high altitude. The discovery raised urgent questions about conservation, as logging threatened the very forests the butterflies depend on."
+          ],
+          [
+            "D",
+            "Climate change now poses an additional threat. Warmer temperatures disrupt the delicate timing of migration, and unusual weather events can devastate colonies that have gathered in a single location. Only monarchs born in late summer make the migration, and it may be their great-grandchildren that return the following year."
+          ]
+        ],
+        "questions": [
+          {
+            "type": "mchoice",
+            "group": "Questions 1-6",
+            "instr": "Choose the correct letter, A, B or C.",
+            "q": "What is most remarkable about the monarch migration?",
+            "opts": [
+              "A) Its total distance",
+              "B) No single butterfly completes it",
+              "C) It happens in spring"
+            ],
+            "a": "B",
+            "why": "Paragraph A: \"no single butterfly completes the round trip.\""
+          },
+          {
+            "type": "mchoice",
+            "q": "Monarchs are believed to navigate using",
+            "opts": [
+              "A) the stars",
+              "B) the sun and a magnetic compass",
+              "C) wind direction"
+            ],
+            "a": "B",
+            "why": "Paragraph B: the position of the sun and an internal magnetic compass."
+          },
+          {
+            "type": "mchoice",
+            "q": "The Mexican overwintering sites were located in",
+            "opts": [
+              "A) 1965",
+              "B) 1975",
+              "C) 1985"
+            ],
+            "a": "B",
+            "why": "Paragraph C: unknown to scientists until 1975."
+          },
+          {
+            "type": "mchoice",
+            "q": "The butterflies gather on",
+            "opts": [
+              "A) oyamel fir trees",
+              "B) oak trees",
+              "C) milkweed plants"
+            ],
+            "a": "A",
+            "why": "Paragraph C: colonies clinging to oyamel fir trees."
+          },
+          {
+            "type": "mchoice",
+            "q": "The main early threat to the colonies was",
+            "opts": [
+              "A) tourism",
+              "B) logging",
+              "C) disease"
+            ],
+            "a": "B",
+            "why": "Paragraph C: logging threatened the forests."
+          },
+          {
+            "type": "mchoice",
+            "q": "Climate change is said to affect migration by",
+            "opts": [
+              "A) disrupting its timing",
+              "B) shortening the route",
+              "C) increasing numbers"
+            ],
+            "a": "A",
+            "why": "Paragraph D: warmer temperatures disrupt the delicate timing of migration."
+          },
+          {
+            "type": "ynng",
+            "group": "Questions 7-11",
+            "instr": "Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.",
+            "q": "The writer believes the monarch migration is unique among insects.",
+            "a": "NOT GIVEN",
+            "why": "The passage calls it remarkable but never compares it with other insects."
+          },
+          {
+            "type": "ynng",
+            "q": "Scientists fully understand monarch navigation.",
+            "a": "NO",
+            "why": "Paragraph B: scientists \"have long been puzzled\"; research only \"suggests\"."
+          },
+          {
+            "type": "ynng",
+            "q": "Monarchs migrate more successfully than birds.",
+            "a": "NOT GIVEN",
+            "why": "No comparison with birds appears in the text."
+          },
+          {
+            "type": "ynng",
+            "q": "Conservation became a concern after 1975.",
+            "a": "YES",
+            "why": "Paragraph C: the 1975 discovery \"raised urgent questions about conservation\"."
+          },
+          {
+            "type": "ynng",
+            "q": "Climate change is the only threat to monarchs.",
+            "a": "NO",
+            "why": "Logging is also named as a threat, so climate change is not the only one."
+          },
+          {
+            "type": "gap",
+            "group": "Questions 12-14",
+            "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+            "q": "Monarchs travel up to ______ kilometres on their journey.",
+            "a": "4,000",
+            "why": "Paragraph A: travelling up to 4,000 kilometres."
+          },
+          {
+            "type": "gap",
+            "q": "They spend the winter clinging to ______ in Mexico.",
+            "a": "oyamel fir trees",
+            "why": "Paragraph C: clinging to oyamel fir trees."
+          },
+          {
+            "type": "gap",
+            "q": "Only monarchs born in ______ make the migration.",
+            "a": "late summer",
+            "why": "Paragraph D: only monarchs born in late summer make the migration."
+          }
+        ]
+      },
+      "_oldDaily": {
+        "title": "The Rise of Urban Vertical Farming",
+        "passage": [
+          [
+            "A",
+            "Vertical farming, the practice of growing crops in stacked layers inside controlled environments, has moved from science fiction to commercial reality in under two decades. Proponents argue that it answers three of agriculture's most pressing problems: land scarcity, water consumption and food miles."
+          ],
+          [
+            "B",
+            "Because crops are grown hydroponically — their roots bathed in nutrient-rich water rather than soil — vertical farms can use up to 95 per cent less water than conventional agriculture. Stacking growing trays also multiplies the productive area of a single urban plot many times over, and locating farms inside cities cuts the distance food travels to consumers dramatically."
+          ],
+          [
+            "C",
+            "Critics, however, point to the industry's Achilles' heel: energy. Replacing sunlight with LED lighting is expensive, and unless the electricity comes from renewable sources, the carbon footprint of a lettuce grown indoors can exceed that of one trucked in from a distant field. Several high-profile start-ups have collapsed after underestimating operating costs."
+          ],
+          [
+            "D",
+            "The sector's future most likely lies in a narrower niche than early evangelists imagined: high-value, fast-growing crops such as herbs and salad leaves, grown close to dense urban markets where freshness commands a premium."
+          ],
+          [
+            "E",
+            ""
+          ]
+        ],
+        "questions": [
+          {
+            "type": "tfng",
+            "q": "The writer states that all vertical farms have a lower carbon footprint than conventional farms.",
+            "a": "FALSE",
+            "why": "Paragraph C says indoor lighting can make crops carbon intensive, so the claim of \"all\" is contradicted."
+          },
+          {
+            "type": "tfng",
+            "q": "Some vertical-farming companies have gone out of business.",
+            "a": "TRUE",
+            "why": "\"Several high-profile start-ups have collapsed.\""
+          },
+          {
+            "type": "tfng",
+            "q": "Most vertical farms are owned by supermarket chains.",
+            "a": "NOT GIVEN",
+            "why": "The passage never discusses who owns vertical farms."
+          },
+          {
+            "type": "mchoice",
+            "q": "Which crops does the writer suggest suit vertical farming best?",
+            "opts": [
+              "A) Root vegetables",
+              "B) Cereal grains",
+              "C) Herbs and salad leaves",
+              "D) Tropical fruit"
+            ],
+            "a": "C",
+            "why": "Paragraph D names herbs and salad leaves."
+          },
+          {
+            "type": "shortans",
+            "q": "What technology replaces sunlight in vertical farms? (NO MORE THAN TWO WORDS)",
+            "a": "artificial lighting",
+            "why": "The final paragraph names artificial lighting."
+          }
+        ]
+      },
+      "passages": {
+        "monarch": {
+          "title": "The Migration of Monarch Butterflies",
+          "passage": [
+            [
+              "",
+              "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world. Leaving the cooling forests of southern Canada and the northern United States, they travel up to 4,000 kilometres to reach the warm mountain forests of central Mexico, where they spend the winter."
+            ],
+            [
+              "",
+              "What makes the migration so extraordinary is that no single butterfly completes the round trip. The insects that fly south in the autumn are three or four generations removed from those that made the journey the previous year, yet they return to the very same groves of trees — sometimes even the same individual trees — that their ancestors used. How they achieve this has puzzled scientists for decades."
+            ],
+            [
+              "",
+              "Research suggests that the butterflies rely on more than one method of navigation. They appear to use the position of the sun as a compass, correcting for the way it moves across the sky during the day with the help of an internal clock. In addition, experiments indicate that they can sense the Earth's magnetic field, which may guide them on cloudy days when the sun is hidden."
+            ],
+            [
+              "",
+              "The Mexican overwintering sites themselves were unknown to scientists until relatively recently. Although local communities had long been aware of the butterflies, the location of the main colonies was only formally documented by researchers in 1975. Today these sites are protected, but the species still faces threats from habitat loss and a changing climate."
+            ]
+          ],
+          "questions": [
+            {
+              "type": "tfng",
+              "q": "An individual butterfly makes the entire round trip.",
+              "a": "FALSE",
+              "mine": "TRUE",
+              "evidence": "No single butterfly completes the round trip.",
+              "why": "The text states no single butterfly completes the trip, so FALSE.",
+              "whyZh": "原文说没有单只蝴蝶完成整趟，所以是 FALSE。"
+            },
+            {
+              "type": "tfng",
+              "q": "Monarchs navigate using the position of the sun.",
+              "a": "TRUE",
+              "mine": "TRUE",
+              "evidence": "they navigate using the position of the sun",
+              "why": "Directly supported by the passage.",
+              "whyZh": "原文直接支持。"
+            },
+            {
+              "type": "tfng",
+              "q": "The Mexican overwintering sites were found before 1970.",
+              "a": "FALSE",
+              "mine": "NOT GIVEN",
+              "evidence": "The overwintering sites in Mexico were located in 1975.",
+              "why": "1975 is after 1970, so the statement is FALSE, not NOT GIVEN.",
+              "whyZh": "1975 晚于 1970，所以是 FALSE 而非 NOT GIVEN。"
+            }
+          ]
+        }
+      },
+      "mock": {
+        "intro": "You have 60 minutes to answer 40 questions across 3 passages. The timer starts when you click OK. You may answer in any order and move freely between passages.",
+        "summary": "Three passages, forty questions, sixty minutes."
+      }
+    },
+    "listening": {
+      "types": [
+        {
+          "key": "form",
+          "name": "Form / note completion",
+          "instr": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+        },
+        {
+          "key": "mchoice",
+          "name": "Multiple choice",
+          "instr": "Choose the correct answer, A, B or C."
+        },
+        {
+          "key": "map",
+          "name": "Map / plan labelling",
+          "instr": "Label the map below. Write the correct letter, A-G, next to the questions."
+        },
+        {
+          "key": "match",
+          "name": "Matching",
+          "instr": "What comment does each student make? Choose your answers from the box and write the correct letter."
+        },
+        {
+          "key": "table",
+          "name": "Table / flow-chart completion",
+          "instr": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+        }
+      ],
+      "daily": {
+        "title": "Campus accommodation enquiry",
+        "context": "Campus accommodation enquiry",
+        "audioTitle": "Conversation: Booking a Studio Flat",
+        "transcript": "Good morning, Hartley Student Housing, how can I help? Hi, I'm calling about the studio flats on Mill Lane. Could you tell me the monthly rent? Of course. The studios are 725 pounds a month, and that includes all utility bills, but not the internet, which is 18 pounds extra. And is there a deposit? Yes, one month's rent, refundable at the end of the tenancy. Viewings run Tuesday to Saturday, from ten until four. Great, could I book one for Thursday at eleven? Let me check. Yes, Thursday at eleven is fine. Could I take your name? It's Wei Zhang, that's Z H A N G.",
+        "questions": [
+          {
+            "type": "form",
+            "q": [
+              "The studios cost ",
+              " pounds per month."
+            ],
+            "a": "725"
+          },
+          {
+            "type": "form",
+            "q": [
+              "The deposit equals ",
+              " rent."
+            ],
+            "a": "one month’s"
+          },
+          {
+            "type": "form",
+            "q": [
+              "Viewings are available from Tuesday to ",
+              "."
+            ],
+            "a": "Saturday"
+          },
+          {
+            "type": "form",
+            "q": [
+              "The student books a viewing on Thursday at ",
+              "."
+            ],
+            "a": "11 / eleven"
+          }
+        ]
+      },
+      "mock": {
+        "intro": "Four parts, forty questions, about thirty minutes. The recording plays once only, exactly as it does in the real test. You cannot pause, rewind or replay it.",
+        "summary": "All four parts and 40 questions, the recording playing once only."
+      }
+    },
+    "writing": {
+      "types": [
+        {
+          "key": "t1chart",
+          "name": "Task 1 · 图表描述",
+          "instr": "Report the main features of the data objectively and compare them where relevant. Cover the overall trend before details."
+        },
+        {
+          "key": "t1letter",
+          "name": "Task 1 · 书信（General）",
+          "instr": "Address every bullet point, use a tone appropriate for the recipient, and organise the letter into clear paragraphs."
+        },
+        {
+          "key": "t2opinion",
+          "name": "Task 2 · 观点论证",
+          "instr": "Take a clear position, support each idea with a developed example, and address the opposing view before concluding."
+        },
+        {
+          "key": "t2discuss",
+          "name": "Task 2 · 讨论双方",
+          "instr": "Discuss both views and give your own opinion. Balance both perspectives before stating your position."
+        }
+      ],
+      "analysis": {
+        "t1chart": {
+          "label": "Opinion Essay",
+          "requirement": "Discuss both views and give your own opinion",
+          "detail": "This task asks you to consider two opposing views on animal testing and then state your own position. Cover BOTH perspectives fairly before making your opinion clear, and support each point with a reason or example.",
+          "pitfall": "Common pitfalls: Do not give only one side of the argument — you must address both perspectives, then state your own opinion clearly."
+        },
+        "t1letter": {
+          "label": "书信写作题",
+          "requirement": "用恰当的语气回应全部三个要点",
+          "detail": "题目里的三个要点就是评分清单，每一条都要单独成段。先定语气：收信人姓名已知或是熟悉的机构用半正式语气；不知姓名的官方对象用 Dear Sir or Madam 配 Yours faithfully。提出的解决方案必须具体可执行，而不是笼统的抱怨。",
+          "pitfall": "不要漏掉任何一个要点，也不要把正式称呼和非正式落款混用"
+        },
+        "t2opinion": {
+          "label": "Opinion Essay",
+          "requirement": "Discuss both views and give your own opinion",
+          "detail": "This task asks you to consider two opposing views on animal testing and then state your own position. Cover BOTH perspectives fairly before making your opinion clear, and support each point with a reason or example.",
+          "pitfall": "Common pitfalls: Do not give only one side of the argument — you must address both perspectives, then state your own opinion clearly."
+        },
+        "t2discuss": {
+          "label": "讨论双方观点题",
+          "requirement": "讨论双方观点，并给出你自己的看法",
+          "detail": "这类题目有两个义务：公平呈现双方，以及表明你自己的看法。每种观点各占一个主体段并配展开的例子，然后在引言和结论里都明确表达自己的立场。用带保留的学术表达（this suggests、tends to）比绝对化断言更有说服力。",
+          "pitfall": "不要只写一方观点，两种视角要平衡"
+        }
+      },
+      "plan": {
+        "task2": {
+          "args": [
+            {
+              "band": "选择理由",
+              "text": "Animal testing should be banned",
+              "note": "Strong ethical grounds and the availability of modern alternatives make a ban defensible and easier to support with examples."
+            },
+            {
+              "band": "选择理由",
+              "text": "It should be allowed only for essential medical research",
+              "note": "A balanced view acknowledges medical benefits while limiting harm — realistic and nuanced, but harder to argue tightly."
+            }
+          ],
+          "parasByArg": {
+            "0": [
+              {
+                "tag": "Introduction",
+                "text": "Introduce the debate over animal testing and state your position that it should be banned.",
+                "bullets": [
+                  "- Paraphrase the topic: the use of animals in scientific research is controversial.",
+                  "- Acknowledge both sides briefly (ethics vs. medical progress).",
+                  "- State your position clearly: animal testing should be banned.",
+                  "example: \"While some argue animal research drives medical progress, this essay contends it should be prohibited.\""
+                ]
+              },
+              {
+                "tag": "Body 1 — Ethical objection",
+                "text": "Argue that causing animals to suffer for research is morally indefensible.",
+                "bullets": [
+                  "- Topic sentence: the strongest case against testing is ethical.",
+                  "- Explain: animals can feel pain; inflicting harm needs strong justification.",
+                  "- Use synonyms: \"cruel\" to \"inhumane\", \"ban\" to \"prohibit\".",
+                  "example: cosmetic testing bans already exist across the EU and India."
+                ]
+              },
+              {
+                "tag": "Body 2 — Modern alternatives",
+                "text": "Argue that reliable alternatives now make animal testing unnecessary.",
+                "bullets": [
+                  "- Topic sentence: technology has produced viable replacements.",
+                  "- Explain: cell cultures and computer models increasingly replace animal tests.",
+                  "- Add a benefit: these are often cheaper and more reproducible.",
+                  "example: organ-on-a-chip models can predict drug toxicity without animals."
+                ]
+              },
+              {
+                "tag": "Conclusion",
+                "text": "Restate the position and summarise the two main reasons.",
+                "bullets": [
+                  "- Restate: animal testing should be banned.",
+                  "- Summarise the ethical objection and the availability of alternatives.",
+                  "- End with a forward-looking statement."
+                ]
+              }
+            ],
+            "1": [
+              {
+                "tag": "Introduction",
+                "text": "Introduce both views and state a qualified position: allow testing only when essential.",
+                "bullets": [
+                  "- Paraphrase the topic and note the debate has two sides.",
+                  "- State a nuanced position: permit it only for essential medical research.",
+                  "example: \"This essay argues that animal testing should be limited to essential medical purposes.\""
+                ]
+              },
+              {
+                "tag": "Body 1 — Medical necessity",
+                "text": "Acknowledge that some medical breakthroughs relied on animal research.",
+                "bullets": [
+                  "- Topic sentence: animal research has delivered genuine benefits.",
+                  "- Explain: vaccines and treatments were developed with animal models.",
+                  "- Add: strict oversight can limit unnecessary suffering.",
+                  "example: polio and COVID-19 vaccines involved animal trials."
+                ]
+              },
+              {
+                "tag": "Body 2 — Limits and alternatives",
+                "text": "Argue that non-essential testing should be banned and alternatives used.",
+                "bullets": [
+                  "- Topic sentence: not all testing is justifiable.",
+                  "- Explain: ban trivial uses such as cosmetics.",
+                  "- Require alternatives (cell cultures, models) where possible."
+                ]
+              },
+              {
+                "tag": "Conclusion",
+                "text": "Restate the qualified position and the conditions attached.",
+                "bullets": [
+                  "- Restate: allow testing only when essential.",
+                  "- Summarise the medical case and the limits you would impose."
+                ]
+              }
+            ]
+          },
+          "vocab": [
+            {
+              "en": "alleviate",
+              "zh": "减轻，缓解",
+              "ex": "Strict regulation can alleviate concerns about animal welfare.",
+              "exZh": "严格监管可以减轻对动物福利的担忧。"
+            },
+            {
+              "en": "ethical",
+              "zh": "道德的，伦理的",
+              "ex": "There are strong ethical arguments against animal testing.",
+              "exZh": "反对动物实验有充分的伦理依据。"
+            },
+            {
+              "en": "alternative",
+              "zh": "替代方案",
+              "ex": "Scientists are developing alternatives to animal models.",
+              "exZh": "科学家正在开发动物模型的替代方案。"
+            },
+            {
+              "en": "breakthrough",
+              "zh": "突破",
+              "ex": "Several medical breakthroughs relied on animal research.",
+              "exZh": "多项医学突破依赖过动物研究。"
+            },
+            {
+              "en": "oversight",
+              "zh": "监管，监督",
+              "ex": "Independent oversight ensures testing is not misused.",
+              "exZh": "独立监管确保实验不被滥用。"
+            },
+            {
+              "en": "justify",
+              "zh": "证明…正当",
+              "ex": "It is hard to justify causing suffering for trivial products.",
+              "exZh": "为无关紧要的产品制造痛苦难以被正当化。"
+            }
+          ]
+        },
+        "task1": {
+          "args": [
+            {
+              "band": "Band 7",
+              "text": "Animal testing should be banned",
+              "note": "Strong ethical grounds and the availability of modern alternatives make a ban defensible and easier to support with examples."
+            },
+            {
+              "band": "Band 7",
+              "text": "It should be allowed only for essential medical research",
+              "note": "A balanced view acknowledges medical benefits while limiting harm — realistic and nuanced, but harder to argue tightly."
+            }
+          ],
+          "parasByArg": [
+            [
+              {
+                "tag": "Introduction",
+                "text": "Introduce the debate over animal testing and state your position that it should be banned.",
+                "bullets": [
+                  "- Paraphrase the topic: the use of animals in scientific research is controversial.",
+                  "- Acknowledge both sides briefly (ethics vs. medical progress).",
+                  "- State your position clearly: animal testing should be banned.",
+                  "example: \"While some argue animal research drives medical progress, this essay contends it should be prohibited.\""
+                ]
+              },
+              {
+                "tag": "Body 1 — Ethical objection",
+                "text": "Argue that causing animals to suffer for research is morally indefensible.",
+                "bullets": [
+                  "- Topic sentence: the strongest case against testing is ethical.",
+                  "- Explain: animals can feel pain; inflicting harm needs strong justification.",
+                  "- Use synonyms: \"cruel\" to \"inhumane\", \"ban\" to \"prohibit\".",
+                  "example: cosmetic testing bans already exist across the EU and India."
+                ]
+              },
+              {
+                "tag": "Body 2 — Modern alternatives",
+                "text": "Argue that reliable alternatives now make animal testing unnecessary.",
+                "bullets": [
+                  "- Topic sentence: technology has produced viable replacements.",
+                  "- Explain: cell cultures and computer models increasingly replace animal tests.",
+                  "- Add a benefit: these are often cheaper and more reproducible.",
+                  "example: organ-on-a-chip models can predict drug toxicity without animals."
+                ]
+              },
+              {
+                "tag": "Conclusion",
+                "text": "Restate the position and summarise the two main reasons.",
+                "bullets": [
+                  "- Restate: animal testing should be banned.",
+                  "- Summarise the ethical objection and the availability of alternatives.",
+                  "- End with a forward-looking statement."
+                ]
+              }
+            ],
+            [
+              {
+                "tag": "Introduction",
+                "text": "Introduce the debate and state that testing should be permitted only for essential medical research.",
+                "bullets": [
+                  "- Paraphrase the topic: animal research divides public opinion.",
+                  "- Acknowledge the ethical concern honestly.",
+                  "- State your qualified position: allow it only where lives are at stake.",
+                  "example: \"This essay argues for strict limits rather than an outright ban.\""
+                ]
+              },
+              {
+                "tag": "Body 1 — Medical necessity",
+                "text": "Argue that some life-saving research still has no viable substitute.",
+                "bullets": [
+                  "- Topic sentence: certain breakthroughs remain dependent on animal models.",
+                  "- Explain: whole-body systems cannot yet be fully simulated.",
+                  "example: vaccines and cancer therapies were developed through animal trials."
+                ]
+              },
+              {
+                "tag": "Body 2 — Strict regulation",
+                "text": "Argue that harm must be minimised through tight rules, not permitted freely.",
+                "bullets": [
+                  "- Topic sentence: permission must come with strict safeguards.",
+                  "- Explain: licensing, ethical review and the 3Rs (replace, reduce, refine).",
+                  "- Rule out trivial uses such as cosmetics.",
+                  "example: the UK requires a Home Office licence for every procedure."
+                ]
+              },
+              {
+                "tag": "Conclusion",
+                "text": "Restate the qualified position and the conditions attached.",
+                "bullets": [
+                  "- Restate: permit only essential medical research.",
+                  "- Summarise necessity plus regulation.",
+                  "- End by urging continued investment in alternatives."
+                ]
+              }
+            ]
+          ],
+          "vocab": [
+            {
+              "en": "alleviate",
+              "zh": "减轻，缓解",
+              "ex": "Strict regulation can alleviate concerns about animal welfare.",
+              "exZh": "严格监管可以减轻对动物福利的担忧。"
+            },
+            {
+              "en": "ethical",
+              "zh": "道德的，伦理的",
+              "ex": "There are strong ethical arguments against animal testing.",
+              "exZh": "反对动物实验有充分的伦理依据。"
+            },
+            {
+              "en": "alternative",
+              "zh": "替代方案",
+              "ex": "Scientists are developing alternatives to animal models.",
+              "exZh": "科学家正在开发动物模型的替代方案。"
+            },
+            {
+              "en": "breakthrough",
+              "zh": "突破",
+              "ex": "Several medical breakthroughs relied on animal research.",
+              "exZh": "多项医学突破依赖于动物研究。"
+            },
+            {
+              "en": "oversight",
+              "zh": "监管，监督",
+              "ex": "Independent oversight ensures testing is not misused.",
+              "exZh": "独立监管确保实验不被滥用。"
+            },
+            {
+              "en": "justify",
+              "zh": "证明…正当",
+              "ex": "It is hard to justify causing suffering for trivial products.",
+              "exZh": "为无关紧要的产品制造痛苦难以被正当化。"
+            }
+          ]
+        },
+        "letter": {
+          "args": [
+            {
+              "band": "Band 7",
+              "text": "The evening timetable was the reason you enrolled — it fitted around daytime work."
+            },
+            {
+              "band": "Band 7",
+              "text": "The cancellation leaves you with no suitable local alternative after rearranging your schedule."
+            },
+            {
+              "band": "Band 8",
+              "text": "Request a specific remedy: a place on an equivalent online course or the next evening class."
+            }
+          ],
+          "paras": [
+            {
+              "tag": "Greeting",
+              "text": "Dear Sir or Madam,",
+              "note": "不知收信人姓名时用 Dear Sir or Madam 配 Yours faithfully"
+            },
+            {
+              "tag": "Body 1",
+              "text": "Explain why you chose this course — timetable fit and relevant syllabus.",
+              "note": "要点 1 —— 集中在一段里写完"
+            },
+            {
+              "tag": "Body 2",
+              "text": "Describe the concrete impact: no local alternative, work schedule already rearranged.",
+              "note": "要点 2 —— 写具体后果，不要笼统抱怨"
+            },
+            {
+              "tag": "Body 3 + sign-off",
+              "text": "Request an equivalent online course or a transfer to the next evening class.",
+              "note": "要点 3 —— 解决方案要可执行，然后礼貌收尾"
+            }
+          ],
+          "vocab": [
+            {
+              "en": "I am writing regarding",
+              "zh": "我写信是关于",
+              "ex": "I am writing regarding the cancellation of the evening course.",
+              "exZh": "我写信是关于晚间课程被取消的事。"
+            },
+            {
+              "en": "fit around",
+              "zh": "与…时间相配",
+              "ex": "The timetable fitted around my daytime work.",
+              "exZh": "该课表与我白天的工作时间相配。"
+            },
+            {
+              "en": "leave me without",
+              "zh": "使我失去",
+              "ex": "The cancellation leaves me without a suitable alternative.",
+              "exZh": "课程取消使我失去了合适的替代选择。"
+            },
+            {
+              "en": "I would appreciate",
+              "zh": "我将不胜感激",
+              "ex": "I would appreciate a place on an equivalent course.",
+              "exZh": "若能安排同等课程的名额，我将不胜感激。"
+            },
+            {
+              "en": "equivalent",
+              "zh": "同等的",
+              "ex": "Please transfer me to an equivalent online course.",
+              "exZh": "请将我转到同等的线上课程。"
+            },
+            {
+              "en": "Yours faithfully",
+              "zh": "谨上（不知姓名时）",
+              "ex": "Yours faithfully, Alex Morgan",
+              "exZh": "谨上，Alex Morgan"
+            }
+          ]
+        }
+      },
+      "daily": {
+        "task1": {
+          "type": "t1chart",
+          "title": "Urban and rural households with internet access",
+          "prompt": "The chart below shows the percentage of urban and rural households with internet access in one country in 2005, 2010, 2015 and 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "minWords": 150,
+          "minutes": 20,
+          "chartTitle": "Households with internet access (%), selected years",
+          "chartYears": [
+            "2005",
+            "2010",
+            "2015",
+            "2020"
+          ],
+          "chartSeries": [
+            {
+              "name": "Urban",
+              "color": "#F5B301",
+              "data": [
+                48,
+                66,
+                81,
+                92
+              ]
+            },
+            {
+              "name": "Rural",
+              "color": "#7cb518",
+              "data": [
+                21,
+                39,
+                58,
+                77
+              ]
+            }
+          ],
+          "chartDesc": "A bar chart comparing the percentage of urban and rural households with internet access in 2005, 2010, 2015 and 2020. Urban access rises from 48% to 92%; rural access grows faster in relative terms from 21% to 77%, narrowing the gap.",
+          "keyPoints": [
+            "Urban access rose from 48% (2005) to 92% (2020)",
+            "Rural access grew from 21% to 77% over the same period",
+            "Rural access increased fastest between 2010 and 2015",
+            "The urban–rural gap narrowed from 27 to 15 percentage points"
+          ],
+          "hints": [
+            "Open with a one-sentence paraphrase of what the chart measures",
+            "Give an overview sentence: both rose and the gap narrowed",
+            "Quote the endpoint figures (48%→92% urban, 21%→77% rural)",
+            "Do not list every year — select the endpoints and the biggest change",
+            "Report the data objectively; do not explain causes"
+          ]
+        },
+        "letter": {
+          "type": "t1letter",
+          "title": "A letter about a cancelled course",
+          "titleZh": "关于课程取消的书信",
+          "prompt": "You recently enrolled in an evening course, but the course has been cancelled. Write a letter to the course organiser. In your letter, explain why you enrolled, describe how the cancellation affects you, and suggest a suitable solution.",
+          "promptZh": "你最近报名参加了一门晚间课程，但课程被取消了。请写信给课程组织者，说明你报名的原因、课程取消对你的影响，并提出合适的解决方案。",
+          "minWords": 150,
+          "minutes": 20,
+          "keyPoints": [
+            "Reason for enrolling in the course",
+            "Effect of the cancellation",
+            "A practical requested solution"
+          ],
+          "hints": [
+            "Use an appropriate greeting and sign-off for the recipient",
+            "Cover all three bullet points in separate, clear paragraphs",
+            "Keep the tone polite while making the requested solution specific"
+          ]
+        },
+        "task2": {
+          "type": "t2opinion",
+          "title": "Discuss both views and give your own opinion",
+          "prompt": "Some people believe that using animals for scientific research is cruel and should be banned. Others argue that it is essential for medical progress.\n\nDiscuss both views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+          "minWords": 250,
+          "minutes": 40,
+          "keyPoints": [
+            "Ethical grounds: causing animals to suffer for research is hard to justify",
+            "Medical progress: vaccines and treatments have relied on animal models",
+            "Modern alternatives: cell cultures and computer models increasingly replace animal tests"
+          ],
+          "hints": [
+            "Cover BOTH perspectives fairly before making your opinion clear",
+            "Support each point with a reason or example",
+            "State your position clearly and keep it consistent throughout",
+            "Do not give only one side of the argument — address both perspectives",
+            "Use hedged academic language rather than absolute claims"
+          ]
+        }
+      },
+      "mock": {
+        "intro": "Two tasks share a single sixty-minute clock. Task 2 carries twice the marks of Task 1, so most candidates spend about twenty minutes on Task 1 and forty on Task 2.",
+        "summary": "Both tasks under one 60-minute clock, at least 150 words then at least 250 words."
+      }
+    },
+    "speaking": {
+      "types": [
+        {
+          "key": "p1",
+          "name": "Part 1 · 日常问答",
+          "instr": "Familiar topics such as your home, work, studies and interests."
+        },
+        {
+          "key": "p2",
+          "name": "Part 2 · 个人陈述（Cue Card）",
+          "instr": "A cue card with one minute to prepare, then you speak alone for one to two minutes."
+        },
+        {
+          "key": "p3",
+          "name": "Part 3 · 深入讨论",
+          "instr": "Broader, more abstract questions linked to the Part 2 topic."
+        }
+      ],
+      "daily": {
+        "part1": {
+          "topic": "Your studies and daily routine",
+          "questions": [
+            "Do you like music?",
+            "What kind of music do you like to listen to?",
+            "Do you prefer sad or happy music?",
+            "Does happy music make you feel more excited?",
+            "Has the music you listen to changed since you were young?",
+            "Where is your hometown?",
+            "What do you like most about your hometown?",
+            "Has your hometown changed much in recent years?",
+            "Would you like to live in your hometown in the future?",
+            "Do many tourists visit your hometown?"
+          ]
+        },
+        "part2": {
+          "cue": "Describe a person you know who has a healthy lifestyle",
+          "points": [
+            "where it is",
+            "how often you go there",
+            "what you do there",
+            "and explain why you enjoy visiting it."
+          ],
+          "pointsZh": [
+            "它在哪里",
+            "你多久去一次",
+            "你在那里做什么",
+            "你为什么喜欢它"
+          ],
+          "prepSeconds": 60,
+          "minutes": 2
+        },
+        "part3": {
+          "topic": "Skills, work and the future",
+          "questions": [
+            "Why do people like to visit different places?",
+            "What are the differences between travelling in your own country and abroad?",
+            "Do you think tourism can harm local communities?",
+            "How has the way people travel changed over the past few decades?",
+            "Will virtual travel ever replace real travel in the future?",
+            "Should governments invest more in local tourism?"
+          ]
+        }
+      },
+      "mock": {
+        "intro": "Three parts, eleven to fourteen minutes. The examiner’s questions play as audio and your spoken answers are recorded. One minute of preparation is given in Part 2 only.",
+        "summary": "All three parts back to back, with one minute of preparation in Part 2 only."
+      }
+    }
+  },
+  "toefl": {
+    "reading": {
+      "types": [
+        {
+          "key": "factual",
+          "name": "Factual information",
+          "instr": "Choose the correct answer according to the passage."
+        },
+        {
+          "key": "infer",
+          "name": "Inference",
+          "instr": "Choose the answer that can be inferred from the passage."
+        },
+        {
+          "key": "vocab",
+          "name": "Vocabulary",
+          "instr": "Choose the word or phrase closest in meaning to the highlighted word."
+        },
+        {
+          "key": "purpose",
+          "name": "Rhetorical purpose",
+          "instr": "Choose the answer that best describes why the author includes this information."
+        },
+        {
+          "key": "summary",
+          "name": "Prose summary",
+          "instr": "Choose the answer that best summarises the passage."
+        }
+      ],
+      "daily": {
+        "title": "The Migration of Monarch Butterflies",
+        "passage": [
+          [
+            "A",
+            "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world, travelling up to 4,000 kilometres from Canada and the northern United States to the forests of central Mexico. What makes this migration so extraordinary is that no single butterfly completes the round trip."
+          ],
+          [
+            "B",
+            "Scientists have long been puzzled by how the insects navigate. Recent research suggests that monarchs rely on a combination of the position of the sun and an internal magnetic compass that allows them to maintain a consistent southward bearing even on cloudy days."
+          ],
+          [
+            "C",
+            "The overwintering sites in Mexico were unknown to scientists until 1975, when a research team finally located the dense colonies clinging to oyamel fir trees at high altitude. The discovery raised urgent questions about conservation, as logging threatened the very forests the butterflies depend on."
+          ],
+          [
+            "D",
+            "Climate change now poses an additional threat. Warmer temperatures disrupt the delicate timing of migration, and unusual weather events can devastate colonies that have gathered in a single location. Only monarchs born in late summer make the migration, and it may be their great-grandchildren that return the following year."
+          ]
+        ],
+        "questions": [
+          {
+            "type": "mchoice",
+            "q": "What is most remarkable about the monarch migration?",
+            "opts": [
+              "Its total distance",
+              "No single butterfly completes it",
+              "It happens in spring"
+            ],
+            "a": "No single butterfly completes it"
+          },
+          {
+            "type": "mchoice",
+            "q": "Monarchs are believed to navigate using",
+            "opts": [
+              "the stars",
+              "the sun and a magnetic compass",
+              "wind direction"
+            ],
+            "a": "the sun and a magnetic compass"
+          },
+          {
+            "type": "mchoice",
+            "q": "The Mexican overwintering sites were located in",
+            "opts": [
+              "1965",
+              "1975",
+              "1985"
+            ],
+            "a": "1975"
+          },
+          {
+            "type": "mchoice",
+            "q": "The butterflies gather on",
+            "opts": [
+              "oyamel fir trees",
+              "oak trees",
+              "milkweed plants"
+            ],
+            "a": "oyamel fir trees"
+          },
+          {
+            "type": "mchoice",
+            "q": "The main early threat to the colonies was",
+            "opts": [
+              "tourism",
+              "logging",
+              "disease"
+            ],
+            "a": "logging"
+          },
+          {
+            "type": "mchoice",
+            "q": "Climate change is said to affect migration by",
+            "opts": [
+              "disrupting its timing",
+              "shortening the route",
+              "increasing numbers"
+            ],
+            "a": "disrupting its timing"
+          }
+        ]
+      },
+      "passages": {
+        "monarch": {
+          "title": "The Migration of Monarch Butterflies",
+          "passage": [
+            [
+              "",
+              "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world. Leaving the cooling forests of southern Canada and the northern United States, they travel up to 4,000 kilometres to reach the warm mountain forests of central Mexico, where they spend the winter."
+            ],
+            [
+              "",
+              "What makes the migration so extraordinary is that no single butterfly completes the round trip. The insects that fly south in the autumn are three or four generations removed from those that made the journey the previous year, yet they return to the very same groves of trees — sometimes even the same individual trees — that their ancestors used. How they achieve this has puzzled scientists for decades."
+            ],
+            [
+              "",
+              "Research suggests that the butterflies rely on more than one method of navigation. They appear to use the position of the sun as a compass, correcting for the way it moves across the sky during the day with the help of an internal clock. In addition, experiments indicate that they can sense the Earth's magnetic field, which may guide them on cloudy days when the sun is hidden."
+            ],
+            [
+              "",
+              "The Mexican overwintering sites themselves were unknown to scientists until relatively recently. Although local communities had long been aware of the butterflies, the location of the main colonies was only formally documented by researchers in 1975. Today these sites are protected, but the species still faces threats from habitat loss and a changing climate."
+            ]
+          ],
+          "questions": [
+            {
+              "type": "tfng",
+              "q": "An individual butterfly makes the entire round trip.",
+              "a": "FALSE",
+              "mine": "TRUE",
+              "evidence": "No single butterfly completes the round trip.",
+              "why": "The text states no single butterfly completes the trip, so FALSE.",
+              "whyZh": "原文说没有单只蝴蝶完成整趟，所以是 FALSE。"
+            },
+            {
+              "type": "tfng",
+              "q": "Monarchs navigate using the position of the sun.",
+              "a": "TRUE",
+              "mine": "TRUE",
+              "evidence": "they navigate using the position of the sun",
+              "why": "Directly supported by the passage.",
+              "whyZh": "原文直接支持。"
+            },
+            {
+              "type": "tfng",
+              "q": "The Mexican overwintering sites were found before 1970.",
+              "a": "FALSE",
+              "mine": "NOT GIVEN",
+              "evidence": "The overwintering sites in Mexico were located in 1975.",
+              "why": "1975 is after 1970, so the statement is FALSE, not NOT GIVEN.",
+              "whyZh": "1975 晚于 1970，所以是 FALSE 而非 NOT GIVEN。"
+            }
+          ]
+        }
+      },
+      "_oldDaily": {
+        "title": "The Development of Writing Systems",
+        "passage": [
+          [
+            "A",
+            "The invention of writing is widely regarded as one of humanity's most transformative achievements. The earliest known writing systems emerged independently in at least three regions: Mesopotamia around 3200 BCE, Egypt shortly thereafter, and China by approximately 1200 BCE. Each system arose in response to specific administrative and social needs, though the paths they followed differed considerably."
+          ],
+          [
+            "B",
+            "In Mesopotamia, writing began as a system of accounting. Temple administrators needed to track goods — quantities of grain, numbers of livestock, and volumes of trade. The earliest tablets from Uruk contain nothing resembling literature or history; they are inventories and receipts. Over several centuries, these pictographic symbols became increasingly abstract, evolving into the wedge-shaped marks we call cuneiform. Only after the system had been in use for administrative purposes for roughly 500 years did scribes begin recording myths, laws, and diplomatic correspondence."
+          ],
+          [
+            "C",
+            "Egyptian hieroglyphs present a different developmental pattern. From their earliest appearance, hieroglyphs served both practical and ceremonial functions. Royal monuments bore inscriptions that combined record-keeping with religious and political propaganda. The Egyptians also developed cursive scripts — hieratic and later demotic — for everyday administrative use, while reserving the elaborate hieroglyphic forms for formal contexts."
+          ],
+          [
+            "D",
+            "Chinese writing followed yet another trajectory. The earliest confirmed Chinese characters appear on oracle bones used for divination during the Shang dynasty. These inscriptions record questions posed to ancestors and deities about warfare, harvests, and royal health. The system was already quite sophisticated by the time of these earliest surviving examples, suggesting an earlier developmental phase that has not been preserved."
+          ],
+          [
+            "E",
+            "What these three traditions share is a common pattern: writing systems tend to begin with narrow, specialized uses before expanding to serve broader communicative purposes. The technology of writing, once invented, proved remarkably adaptable, eventually transforming not just administration but human thought itself."
+          ]
+        ],
+        "questions": [
+          {
+            "type": "factual",
+            "q": "According to the passage, what was the primary initial purpose of writing in Mesopotamia?",
+            "opts": [
+              "Recording religious myths",
+              "Tracking goods and trade",
+              "Writing diplomatic letters",
+              "Preserving historical events"
+            ],
+            "a": "Tracking goods and trade"
+          },
+          {
+            "type": "factual",
+            "q": "How did Egyptian hieroglyphs differ from early Mesopotamian writing?",
+            "opts": [
+              "They were used exclusively for trade.",
+              "They served both practical and ceremonial purposes from the start.",
+              "They were simpler and easier to learn.",
+              "They were only used by common people."
+            ],
+            "a": "They served both practical and ceremonial purposes from the start."
+          },
+          {
+            "type": "infer",
+            "q": "What does the passage suggest about the earliest Chinese writing?",
+            "opts": [
+              "It was borrowed from Mesopotamian cuneiform.",
+              "It was primarily used for poetry.",
+              "It likely had an earlier stage that did not survive.",
+              "It was simpler than Egyptian hieroglyphs."
+            ],
+            "a": "It likely had an earlier stage that did not survive."
+          },
+          {
+            "type": "summary",
+            "q": "Which of the following best summarizes the main argument of the passage?",
+            "opts": [
+              "Writing was invented only once and spread globally.",
+              "Different writing systems emerged independently but share a pattern of expanding from narrow to broad use.",
+              "Chinese writing is older than previously believed.",
+              "Administrative needs are less important than religious ones."
+            ],
+            "a": "Different writing systems emerged independently but share a pattern of expanding from narrow to broad use."
+          }
+        ]
+      },
+      "mock": {
+        "intro": "The reading section contains two modules with up to 50 questions. Difficulty adapts based on your Module 1 performance.",
+        "summary": "Two adaptive modules, timed per question."
+      }
+    },
+    "listening": {
+      "types": [
+        {
+          "key": "convo",
+          "name": "Conversation",
+          "instr": "Answer questions about a short everyday conversation."
+        },
+        {
+          "key": "announce",
+          "name": "Announcement",
+          "instr": "Answer questions about a campus announcement."
+        },
+        {
+          "key": "talk",
+          "name": "Academic talk",
+          "instr": "Answer questions about a short academic talk."
+        }
+      ],
+      "daily": {
+        "title": "TOEFL 听力 · Conversation",
+        "context": "Listen to a conversation.",
+        "transcript": "Student: Hi Professor Lee, do you have a minute? I'm not sure which topic to choose for my research paper. Professor: Of course. I’d suggest you narrow the scope of the topic first — a focused question is much easier to research well than a broad one. Why don’t you bring me a one-paragraph outline by Friday?",
+        "questions": [
+          {
+            "type": "convo",
+            "q": "Why does the student go to see the professor?",
+            "opts": [
+              "To ask for an extension on an assignment",
+              "To discuss a topic for a research paper",
+              "To complain about a course grade",
+              "To request a letter of recommendation"
+            ],
+            "a": "To discuss a topic for a research paper"
+          },
+          {
+            "type": "convo",
+            "q": "What does the professor suggest the student do?",
+            "opts": [
+              "Narrow the scope of the topic",
+              "Choose a completely different subject",
+              "Submit the paper a week early",
+              "Interview other students"
+            ],
+            "a": "Narrow the scope of the topic"
+          }
+        ]
+      },
+      "mock": {
+        "intro": "The listening section contains two modules with up to 47 questions. Audio for each question plays once and cannot be replayed.",
+        "summary": "Two modules, timed per question, audio plays once."
+      }
+    },
+    "writing": {
+      "types": [
+        {
+          "key": "buildsent",
+          "name": "Build a Sentence",
+          "instr": "Move the words to the blanks to create a grammatical sentence appropriate in the context provided."
+        },
+        {
+          "key": "email",
+          "name": "Write an Email",
+          "instr": "Write an email in response to a given situation. Address all required points and use an appropriate tone."
+        },
+        {
+          "key": "discussion",
+          "name": "Academic Discussion",
+          "instr": "Write a response to an online academic discussion. An effective response contains at least 100 words."
+        }
+      ],
+      "daily": {
+        "email": {
+          "type": "email",
+          "title": "Course enquiry email",
+          "minutes": 7,
+          "minWords": 100,
+          "prompt": "You saw an advertisement for a language course at a local college and are interested in joining. The advertisement did not include enough details. Write an email to the program coordinator: explain why you are interested, ask about the class schedule and fees, and request any materials you may have missed.",
+          "points": [
+            "Explain why you are interested in the course.",
+            "Ask for details about the class schedule and fees.",
+            "Request any materials you may have missed."
+          ]
+        },
+        "discussion": {
+          "type": "discussion",
+          "title": "Academic discussion · Social media in education",
+          "minWords": 100,
+          "prompt": "Your professor asks: Can social media be used effectively as a tool for educational purposes? Why or why not? Express and support your opinion and contribute to the discussion in your own words."
+        }
+      },
+      "mock": {
+        "intro": "Three task types across two parts. The clock shows how much time you have to complete each task.",
+        "summary": "Three tasks, saved automatically after every task."
+      }
+    },
+    "speaking": {
+      "types": [
+        {
+          "key": "repeat",
+          "name": "Listen and Repeat",
+          "instr": "Listen to a sentence and repeat it exactly as you heard it. No preparation time; begin speaking after the beep."
+        },
+        {
+          "key": "interview",
+          "name": "Take an Interview",
+          "instr": "Listen to each question and answer in your own words. You have 45 seconds to answer each question."
+        }
+      ],
+      "daily": {
+        "repeat": {
+          "type": "repeat",
+          "context": "You are helping at the front desk of a community library. Listen to the speaker and repeat what he says. Repeat only once.",
+          "sentences": [
+            "You can borrow up to five books at a time for three weeks.",
+            "Please return the books to the desk on the second floor."
+          ]
+        },
+        "interview": {
+          "type": "interview",
+          "topic": "Skills, work and the future",
+          "questions": [
+            "What is one skill you learned from work or study that you think is important? Why?",
+            "Some people prefer working in a team, while others prefer working alone. Which do you prefer, and why?",
+            "What kind of work would you like to do in the future, and how are you preparing for it?"
+          ]
+        }
+      },
+      "mock": {
+        "intro": "Seven Listen and Repeat questions then the interview, recorded with no preparation time.",
+        "summary": "Two task types recorded under exam conditions."
+      }
+    }
+  }
+}
