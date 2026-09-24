@@ -3,6 +3,10 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
 import 'routes.dart';
+import 'js_replacement.dart';
+import 'supplementary_en.dart';
+import 'supplementary_zh.dart';
+import '../widgets/source_text.dart' show SourceNodeTranslations;
 
 /// 一位正在翻译的字符串。原型 `applyLang()` 的逻辑逐条照搬：
 ///
@@ -63,6 +67,7 @@ class Translator {
   /// （949 条精确词条 + 62 条正则规则），不经过手工转写，保证与原型一致。
   static Future<Translator> load() async {
     if (_cached != null) return _cached!;
+    await SourceNodeTranslations.load();
     final raw = await rootBundle.loadString('assets/data/i18n.json');
     final map = json.decode(raw) as Map<String, dynamic>;
     final t = Translator._(
@@ -87,13 +92,9 @@ class Translator {
     for (final row in v) {
       if (row is! List || row.length < 2) continue;
       final flags = row.length > 2 ? row[2].toString() : '';
-      var pattern = row[0].toString();
-      // JS 正则字面量会带 /.../ 包裹，剥掉
-      if (pattern.startsWith('/') && pattern.endsWith('/')) {
-        pattern = pattern.substring(1, pattern.length - 1);
-      }
-      out.add(_ReRule(RegExp(pattern, caseSensitive: !flags.contains('i')),
-          row[1].toString()));
+      final pattern = row[0].toString();
+      out.add(_ReRule(jsRegExp(pattern, flags),
+          row[1].toString(), flags.contains('g')));
     }
     return out;
   }
@@ -108,7 +109,7 @@ class Translator {
     if (hit != null) return hit;
     for (final r in _enRe) {
       if (r.pattern.hasMatch(key)) {
-        return key.replaceFirst(r.pattern, r.replacement);
+        return jsReplace(key, r.pattern, r.replacement, global: r.global);
       }
     }
     return s;
@@ -124,8 +125,12 @@ class Translator {
       final t = _en[key];
       if (t != null) return t;
       for (final r in _enRe) {
-        if (r.pattern.hasMatch(key)) return key.replaceFirst(r.pattern, r.replacement);
+        if (r.pattern.hasMatch(key)) return jsReplace(key, r.pattern, r.replacement, global: r.global);
       }
+      // 补充表（用户 2026-09-24）：源站「中文→英文」表漏掉的界面文案，
+      // 例如答题卡弹窗的「题号导航 / 未作答 / 交卷」。只补界面文案。
+      final extra = supplementaryEn[key];
+      if (extra != null) return extra;
       return s;
     }
     final z = _zhExact[key];
@@ -133,8 +138,13 @@ class Translator {
     final t = _zh[key];
     if (t != null) return t;
     for (final r in _zhRe) {
-      if (r.pattern.hasMatch(key)) return key.replaceFirst(r.pattern, r.replacement);
+      if (r.pattern.hasMatch(key)) return jsReplace(key, r.pattern, r.replacement, global: r.global);
     }
+    // 补充表（用户 2026-09-24）：源站把部分界面文案硬编码成英文，
+    // 而 i18n.json 只有「中文→英文」方向，这些串在中文模式下查不到译文。
+    // 这里按英文原文补中文，只覆盖界面文案，不含题干与选项。
+    final extra = supplementaryZh[key];
+    if (extra != null) return extra;
     return s;
   }
 
@@ -156,15 +166,16 @@ class Translator {
 
   /// 题目内容（题干/原文/选项/transcript）直接透传，永不翻译。
   ///
-  /// 对应原型 `.questions` / passage / transcript 这些数据从进 DOM 起
-  /// 就不参与 applyLang 的遍历 —— 它们是英文原文。
+  /// 原型依赖词典范围避免翻译题目，并非 DOM 自动跳过题目节点。
+  /// 新页面必须显式将题目内容与界面文案分开使用。
   String content(String s) => s;
 }
 
 class _ReRule {
-  const _ReRule(this.pattern, this.replacement);
+  const _ReRule(this.pattern, this.replacement, this.global);
   final RegExp pattern;
   final String replacement;
+  final bool global;
 }
 
 /// 题库 —— 对应原型 `questions.js` 的 `const QB = {exam:{skill:{...}}}`。

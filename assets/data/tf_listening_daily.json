@@ -1,0 +1,934 @@
+{
+  "respond": {
+    "total": 12,
+    "seconds": 20,
+    "segments": [
+      {
+        "sec": 7,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "Yes, I prefer it to driving."
+          ],
+          [
+            "B",
+            "It'll depend on the traffic."
+          ],
+          [
+            "C",
+            "Yes, everyone will be there."
+          ],
+          [
+            "D",
+            "The campus facilities are state-of-the-art."
+          ]
+        ]
+      },
+      {
+        "sec": 6,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "The library closes at ten."
+          ],
+          [
+            "B",
+            "I borrowed three books."
+          ],
+          [
+            "C",
+            "You'll need your student ID."
+          ],
+          [
+            "D",
+            "The study rooms are upstairs."
+          ]
+        ]
+      },
+      {
+        "sec": 8,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "The soup is today's special."
+          ],
+          [
+            "B",
+            "I usually eat around noon."
+          ],
+          [
+            "C",
+            "It costs about five dollars."
+          ],
+          [
+            "D",
+            "Sure, I can join you then."
+          ]
+        ]
+      },
+      {
+        "sec": 7,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "The deadline is next Friday."
+          ],
+          [
+            "B",
+            "I found the lecture fascinating."
+          ],
+          [
+            "C",
+            "Professor Lee teaches that course."
+          ],
+          [
+            "D",
+            "It meets in the science building."
+          ]
+        ]
+      },
+      {
+        "sec": 6,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "My roommate is from Canada."
+          ],
+          [
+            "B",
+            "I'll ask the resident advisor."
+          ],
+          [
+            "C",
+            "The rent is due on the first."
+          ],
+          [
+            "D",
+            "There are two beds in the room."
+          ]
+        ]
+      },
+      {
+        "sec": 7,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "The bus stop is across the street."
+          ],
+          [
+            "B",
+            "It's about a twenty-minute walk."
+          ],
+          [
+            "C",
+            "I take the shuttle every day."
+          ],
+          [
+            "D",
+            "The parking lot is always full."
+          ]
+        ]
+      },
+      {
+        "sec": 6,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "The pool is closed for repairs."
+          ],
+          [
+            "B",
+            "I work out every morning."
+          ],
+          [
+            "C",
+            "You need a membership card."
+          ],
+          [
+            "D",
+            "The class starts in ten minutes."
+          ]
+        ]
+      },
+      {
+        "sec": 8,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "You should schedule an appointment."
+          ],
+          [
+            "B",
+            "The advisor is very helpful."
+          ],
+          [
+            "C",
+            "I changed my major last year."
+          ],
+          [
+            "D",
+            "Registration opens on Monday."
+          ]
+        ]
+      },
+      {
+        "sec": 7,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "The experiment takes two hours."
+          ],
+          [
+            "B",
+            "Safety goggles are required."
+          ],
+          [
+            "C",
+            "Yes, I'll email you the results."
+          ],
+          [
+            "D",
+            "The lab is on the third floor."
+          ]
+        ]
+      },
+      {
+        "sec": 6,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "The fair is in the main hall."
+          ],
+          [
+            "B",
+            "Bring several copies of your resume."
+          ],
+          [
+            "C",
+            "Many companies will attend."
+          ],
+          [
+            "D",
+            "It runs from ten to four."
+          ]
+        ]
+      },
+      {
+        "sec": 7,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "The clinic is free for students."
+          ],
+          [
+            "B",
+            "You can walk in any time."
+          ],
+          [
+            "C",
+            "I felt much better afterward."
+          ],
+          [
+            "D",
+            "The pharmacy is next door."
+          ]
+        ]
+      },
+      {
+        "sec": 8,
+        "q": "选择最佳回答。",
+        "opts": [
+          [
+            "A",
+            "Transcripts take a week to process."
+          ],
+          [
+            "B",
+            "The form is available online."
+          ],
+          [
+            "C",
+            "Yes, you can pick it up in person."
+          ],
+          [
+            "D",
+            "The office closes at five."
+          ]
+        ]
+      }
+    ],
+    "weak": [
+      {
+        "tags": [
+          "听力",
+          "目的意图",
+          "对话开头"
+        ],
+        "q": "听对话第 1 题：错把附带请求当成主要目的。",
+        "a": "对话目的题重点听开头 2-3 句。建议练习“开头意图捕捉”。"
+      }
+    ],
+    "questions": [
+      {
+        "n": 1,
+        "ok": false,
+        "dur": "00:12",
+        "q": "Why does the student go to see the professor?",
+        "mine": "A. To ask for an extension on an assignment.",
+        "ans": "B. To discuss a topic for a research paper.",
+        "why": "学生明确向教授寻求选择论文题目的建议。",
+        "evi": "\"I'm not sure which topic to choose for my research paper.\""
+      },
+      {
+        "n": 2,
+        "ok": true,
+        "dur": "00:12",
+        "q": "What does the professor suggest the student do?",
+        "mine": "A. Narrow the scope of the topic."
+      }
+    ],
+    "source": [],
+    "lead": "",
+    "score": "85.0",
+    "description": "对话把握良好，学术讲座需加强。",
+    "prefix": "tfDr"
+  },
+  "convo": {
+    "total": 6,
+    "seconds": 20,
+    "segments": [
+      {
+        "aud": 0,
+        "sec": 33,
+        "q": "Why does the student go to see the professor?",
+        "opts": [
+          [
+            "A",
+            "To ask for an extension on an assignment"
+          ],
+          [
+            "B",
+            "To discuss a topic for a research paper"
+          ],
+          [
+            "C",
+            "To complain about a course grade"
+          ],
+          [
+            "D",
+            "To request a letter of recommendation"
+          ]
+        ]
+      },
+      {
+        "aud": 0,
+        "sec": 33,
+        "q": "What does the professor suggest the student do?",
+        "opts": [
+          [
+            "A",
+            "Narrow the scope of the topic"
+          ],
+          [
+            "B",
+            "Choose a completely different subject"
+          ],
+          [
+            "C",
+            "Work with a partner"
+          ],
+          [
+            "D",
+            "Submit the paper a week early"
+          ]
+        ]
+      },
+      {
+        "aud": 1,
+        "sec": 31,
+        "q": "What is the conversation mainly about?",
+        "opts": [
+          [
+            "A",
+            "A problem with a dormitory room"
+          ],
+          [
+            "B",
+            "A change in the meal plan"
+          ],
+          [
+            "C",
+            "A parking permit application"
+          ],
+          [
+            "D",
+            "A lost student ID card"
+          ]
+        ]
+      },
+      {
+        "aud": 1,
+        "sec": 31,
+        "q": "What will the student most likely do next?",
+        "opts": [
+          [
+            "A",
+            "Pay a replacement fee"
+          ],
+          [
+            "B",
+            "Fill out a maintenance request"
+          ],
+          [
+            "C",
+            "Move to a different building"
+          ],
+          [
+            "D",
+            "Speak with a roommate"
+          ]
+        ]
+      },
+      {
+        "aud": 2,
+        "sec": 34,
+        "q": "Why does the woman imply the deadline is flexible?",
+        "opts": [
+          [
+            "A",
+            "Many students have requested extensions."
+          ],
+          [
+            "B",
+            "The system was down for a day."
+          ],
+          [
+            "C",
+            "The professor is out of town."
+          ],
+          [
+            "D",
+            "The assignment was optional."
+          ]
+        ]
+      },
+      {
+        "aud": 2,
+        "sec": 34,
+        "q": "What does the man mean when he says he'll 'sleep on it'?",
+        "opts": [
+          [
+            "A",
+            "He is too tired to decide now."
+          ],
+          [
+            "B",
+            "He will decide later after thinking."
+          ],
+          [
+            "C",
+            "He disagrees with the suggestion."
+          ],
+          [
+            "D",
+            "He needs to ask someone else."
+          ]
+        ]
+      }
+    ],
+    "weak": [
+      {
+        "tags": [
+          "听力",
+          "目的意图",
+          "对话开头"
+        ],
+        "q": "听对话第 1 题：错把附带请求当成主要目的。",
+        "a": "对话目的题重点听开头 2-3 句。建议练习“开头意图捕捉”。"
+      }
+    ],
+    "questions": [
+      {
+        "n": 1,
+        "ok": false,
+        "dur": "00:12",
+        "q": "Why does the student go to see the professor?",
+        "mine": "A. To ask for an extension on an assignment.",
+        "ans": "B. To discuss a topic for a research paper.",
+        "why": "学生明确向教授寻求选择论文题目的建议。",
+        "evi": "\"I'm not sure which topic to choose for my research paper.\""
+      },
+      {
+        "n": 2,
+        "ok": true,
+        "dur": "00:12",
+        "q": "What does the professor suggest the student do?",
+        "mine": "A. Narrow the scope of the topic."
+      }
+    ],
+    "source": [
+      [
+        "Student: Hi Professor Lee, do you have a minute? ",
+        "I'm not sure which topic to choose for my research paper",
+        1,
+        ". Professor: Of course. "
+      ],
+      [
+        "",
+        "I'd suggest you narrow the scope of the topic first",
+        2,
+        " — a focused question is much easier to research well than a broad one. Why don't you bring me a one-paragraph outline by Friday?"
+      ]
+    ],
+    "lead": "Listen to a conversation.",
+    "score": "80.0",
+    "description": "对话把握良好，学术讲座需加强。",
+    "prefix": "tfDc"
+  },
+  "announce": {
+    "total": 6,
+    "seconds": 20,
+    "segments": [
+      {
+        "aud": 0,
+        "sec": 32,
+        "lead": "Listen to an announcement in a university classroom.",
+        "q": "What is the purpose of the announcement?",
+        "opts": [
+          [
+            "A",
+            "To recommend a book about networking"
+          ],
+          [
+            "B",
+            "To inform students about a list of resources"
+          ],
+          [
+            "C",
+            "To emphasize the importance of a career in education"
+          ],
+          [
+            "D",
+            "To explain the process of joining professional organizations"
+          ]
+        ]
+      },
+      {
+        "aud": 0,
+        "sec": 32,
+        "q": "What does the speaker recommend students do first?",
+        "opts": [
+          [
+            "A",
+            "Visit the career center in person"
+          ],
+          [
+            "B",
+            "Sign up for a professional organization"
+          ],
+          [
+            "C",
+            "Review the online resource list"
+          ],
+          [
+            "D",
+            "Schedule a meeting with an advisor"
+          ]
+        ]
+      },
+      {
+        "aud": 1,
+        "sec": 34,
+        "lead": "Listen to an announcement about a campus event.",
+        "q": "What is being announced?",
+        "opts": [
+          [
+            "A",
+            "A change to the library hours"
+          ],
+          [
+            "B",
+            "A guest lecture series"
+          ],
+          [
+            "C",
+            "A campus construction project"
+          ],
+          [
+            "D",
+            "A new student club"
+          ]
+        ]
+      },
+      {
+        "aud": 1,
+        "sec": 34,
+        "q": "How can students reserve a seat?",
+        "opts": [
+          [
+            "A",
+            "By registering online"
+          ],
+          [
+            "B",
+            "By calling the department office"
+          ],
+          [
+            "C",
+            "By arriving early on the day"
+          ],
+          [
+            "D",
+            "By emailing the speaker"
+          ]
+        ]
+      },
+      {
+        "aud": 2,
+        "sec": 31,
+        "lead": "Listen to an announcement in a dormitory.",
+        "q": "Why is the announcement being made?",
+        "opts": [
+          [
+            "A",
+            "To warn residents about a water shutoff"
+          ],
+          [
+            "B",
+            "To introduce a new resident advisor"
+          ],
+          [
+            "C",
+            "To announce a change in meal times"
+          ],
+          [
+            "D",
+            "To remind residents about quiet hours"
+          ]
+        ]
+      },
+      {
+        "aud": 2,
+        "sec": 31,
+        "q": "What are residents advised to do?",
+        "opts": [
+          [
+            "A",
+            "Store water in advance"
+          ],
+          [
+            "B",
+            "Move to another building"
+          ],
+          [
+            "C",
+            "Contact maintenance directly"
+          ],
+          [
+            "D",
+            "Attend a residents meeting"
+          ]
+        ]
+      }
+    ],
+    "weak": [
+      {
+        "tags": [
+          "听力",
+          "目的意图",
+          "对话开头"
+        ],
+        "q": "听对话第 1 题：错把附带请求当成主要目的。",
+        "a": "对话目的题重点听开头 2-3 句。建议练习“开头意图捕捉”。"
+      }
+    ],
+    "questions": [
+      {
+        "n": 1,
+        "ok": false,
+        "dur": "00:12",
+        "q": "Why does the student go to see the professor?",
+        "mine": "A. To ask for an extension on an assignment.",
+        "ans": "B. To discuss a topic for a research paper.",
+        "why": "学生明确向教授寻求选择论文题目的建议。",
+        "evi": "\"I'm not sure which topic to choose for my research paper.\""
+      },
+      {
+        "n": 2,
+        "ok": true,
+        "dur": "00:12",
+        "q": "What does the professor suggest the student do?",
+        "mine": "A. Narrow the scope of the topic."
+      }
+    ],
+    "source": [
+      [
+        "Student: Hi Professor Lee, do you have a minute? ",
+        "I'm not sure which topic to choose for my research paper",
+        1,
+        ". Professor: Of course. "
+      ],
+      [
+        "",
+        "I'd suggest you narrow the scope of the topic first",
+        2,
+        " — a focused question is much easier to research well than a broad one. Why don't you bring me a one-paragraph outline by Friday?"
+      ]
+    ],
+    "lead": "Listen to an announcement in a university classroom.",
+    "score": "75.0",
+    "description": "对话把握良好，学术讲座需加强。",
+    "prefix": "tfAn"
+  },
+  "lecture": {
+    "total": 8,
+    "seconds": 30,
+    "segments": [
+      {
+        "aud": 0,
+        "sec": 105,
+        "lead": "Listen to a talk in a creative writing class.",
+        "q": "What does the speaker mainly discuss?",
+        "opts": [
+          [
+            "A",
+            "A textbook with many pictures"
+          ],
+          [
+            "B",
+            "A guide to understanding common symbols"
+          ],
+          [
+            "C",
+            "A tool for generating ideas"
+          ],
+          [
+            "D",
+            "A collection of mystery stories"
+          ]
+        ]
+      },
+      {
+        "aud": 0,
+        "sec": 105,
+        "q": "What is different about the dice the speaker discusses compared to traditional dice?",
+        "opts": [
+          [
+            "A",
+            "They have more sides than traditional dice."
+          ],
+          [
+            "B",
+            "They have pictures instead of numbers."
+          ],
+          [
+            "C",
+            "They are made of glass instead of plastic."
+          ],
+          [
+            "D",
+            "They can be adapted to individual needs."
+          ]
+        ]
+      },
+      {
+        "aud": 0,
+        "sec": 105,
+        "q": "According to the speaker, how can the tool help writers who feel stuck?",
+        "opts": [
+          [
+            "A",
+            "By providing a complete plot outline"
+          ],
+          [
+            "B",
+            "By prompting unexpected combinations of ideas"
+          ],
+          [
+            "C",
+            "By correcting grammatical mistakes"
+          ],
+          [
+            "D",
+            "By suggesting published authors to imitate"
+          ]
+        ]
+      },
+      {
+        "aud": 0,
+        "sec": 105,
+        "q": "What does the speaker imply about creativity?",
+        "opts": [
+          [
+            "A",
+            "It cannot be taught in a classroom."
+          ],
+          [
+            "B",
+            "It benefits from structured prompts."
+          ],
+          [
+            "C",
+            "It requires expensive materials."
+          ],
+          [
+            "D",
+            "It is mainly a natural talent."
+          ]
+        ]
+      },
+      {
+        "aud": 1,
+        "sec": 112,
+        "lead": "Listen to a talk in a biology class.",
+        "q": "What is the main topic of the talk?",
+        "opts": [
+          [
+            "A",
+            "The migration patterns of birds"
+          ],
+          [
+            "B",
+            "How certain animals adapt to cold climates"
+          ],
+          [
+            "C",
+            "The classification of mammal species"
+          ],
+          [
+            "D",
+            "The effects of pollution on ecosystems"
+          ]
+        ]
+      },
+      {
+        "aud": 1,
+        "sec": 112,
+        "q": "Why does the professor mention body size?",
+        "opts": [
+          [
+            "A",
+            "To explain how it affects heat retention"
+          ],
+          [
+            "B",
+            "To compare predators and prey"
+          ],
+          [
+            "C",
+            "To describe growth over a lifetime"
+          ],
+          [
+            "D",
+            "To illustrate differences between sexes"
+          ]
+        ]
+      },
+      {
+        "aud": 1,
+        "sec": 112,
+        "q": "What example does the professor give of a behavioral adaptation?",
+        "opts": [
+          [
+            "A",
+            "Growing thicker fur in winter"
+          ],
+          [
+            "B",
+            "Huddling together for warmth"
+          ],
+          [
+            "C",
+            "Storing fat under the skin"
+          ],
+          [
+            "D",
+            "Changing color with the seasons"
+          ]
+        ]
+      },
+      {
+        "aud": 1,
+        "sec": 112,
+        "q": "What can be inferred about physiological adaptations?",
+        "opts": [
+          [
+            "A",
+            "They occur faster than behavioral ones."
+          ],
+          [
+            "B",
+            "They involve internal bodily processes."
+          ],
+          [
+            "C",
+            "They are unique to mammals."
+          ],
+          [
+            "D",
+            "They only happen in extreme cold."
+          ]
+        ]
+      }
+    ],
+    "weak": [
+      {
+        "tags": [
+          "听力",
+          "目的意图",
+          "对话开头"
+        ],
+        "q": "听对话第 1 题：错把附带请求当成主要目的。",
+        "a": "对话目的题重点听开头 2-3 句。建议练习“开头意图捕捉”。"
+      }
+    ],
+    "questions": [
+      {
+        "n": 1,
+        "ok": false,
+        "dur": "00:12",
+        "q": "Why does the student go to see the professor?",
+        "mine": "A. To ask for an extension on an assignment.",
+        "ans": "B. To discuss a topic for a research paper.",
+        "why": "学生明确向教授寻求选择论文题目的建议。",
+        "evi": "\"I'm not sure which topic to choose for my research paper.\""
+      },
+      {
+        "n": 2,
+        "ok": true,
+        "dur": "00:12",
+        "q": "What does the professor suggest the student do?",
+        "mine": "A. Narrow the scope of the topic."
+      }
+    ],
+    "source": [
+      [
+        "Student: Hi Professor Lee, do you have a minute? ",
+        "I'm not sure which topic to choose for my research paper",
+        1,
+        ". Professor: Of course. "
+      ],
+      [
+        "",
+        "I'd suggest you narrow the scope of the topic first",
+        2,
+        " — a focused question is much easier to research well than a broad one. Why don't you bring me a one-paragraph outline by Friday?"
+      ]
+    ],
+    "lead": "",
+    "score": "65.0",
+    "description": "对话把握良好，学术讲座需加强。",
+    "prefix": "tfLc"
+  }
+}

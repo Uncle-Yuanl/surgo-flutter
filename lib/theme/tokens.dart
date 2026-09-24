@@ -34,58 +34,52 @@ class SurgoColors {
   // ---- 高频散落值 ----
   /// 手机框边框 / 刘海 / 底部导航条
   static const deviceBlack = Color(0xFF111111);
+
   /// 作答类页面暖白底：.phone.we-bg{background:#FCF8F5}
   static const warmWhite = Color(0xFFFCF8F5);
+
   /// 底部悬浮导航胶囊
   static const navBar = Color(0xFF000000);
   static const navItem = Color(0xFF1A1A1A);
+
   /// 深色按钮 .btn-dark
   static const dark = Color(0xFF141210);
+
   /// 黄色卡上的深棕文字（pf-card / ot-go）
   static const onYellowStrong = Color(0xFF3A2E00);
   static const onYellowSoft = Color(0xFF6A5600);
+
   /// 倒计时超时
   static const overrun = Color(0xFFD9503F);
+
   /// 退出登录
   static const danger = Color(0xFFE5484D);
+
   /// 星级徽章文字
   static const goldInk = Color(0xFFB98A00);
   static const goldInkSoft = Color(0xFF9A7A00);
+
   /// 弹窗遮罩 rgba(20,15,5,.45)
   static const mask = Color(0x730F0F05);
+
   /// 进度条轨道
   static const track = Color(0xFFF1EBE0);
+
   /// 抽屉把手
   static const grip = Color(0xFFE3E7EC);
+
   /// 箭头灰
   static const arrow = Color(0xFFC4BBAA);
+
   /// 成功绿
   static const ok = Color(0xFF4F9E3A);
+
   /// 提示卡（黄底说明）
   static const noteBg = Color(0xFFFDF6E3);
   static const noteInk = Color(0xFF6A5A2A);
 
   /// .ot-go 按钮底色（比 --yellow 浅一档：#fbd45f）
   static const yellowButton = Color(0xFFFBD45F);
-
-  /// 顶部渐变：conic-gradient(from 210deg,#f5b301,#f7cf5b,#f5b301)
-  static const logoGradient = LinearGradient(
-    begin: Alignment.bottomLeft,
-    end: Alignment.topRight,
-    colors: [Color(0xFFF5B301), Color(0xFFF7CF5B), Color(0xFFF5B301)],
-  );
-
-  /// 进度条渐变：linear-gradient(90deg,#f5b301,#f7cf5b)
-  static const progressGradient = LinearGradient(
-    colors: [Color(0xFFF5B301), Color(0xFFF7CF5B)],
-  );
-
-  /// welcome 卡渐变：linear-gradient(120deg,#fff,#fdf6e4)
-  static const welcomeGradient = LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [Color(0xFFFFFFFF), Color(0xFFFDF6E4)],
-  );
 }
 
 /// 圆角 —— 对应 CSS 里出现的各档 border-radius。
@@ -115,7 +109,8 @@ class SurgoRadius {
   static const chipAll = BorderRadius.all(Radius.circular(chip));
   static const pillAll = BorderRadius.all(Radius.circular(pill));
   static const fullAll = BorderRadius.all(Radius.circular(full));
-  static const sheetTopAll = BorderRadius.vertical(top: Radius.circular(sheetTop));
+  static const sheetTopAll =
+      BorderRadius.vertical(top: Radius.circular(sheetTop));
   static const dialogAll = BorderRadius.all(Radius.circular(dialog));
 }
 
@@ -176,6 +171,7 @@ class SurgoDevice {
   static const screenPadH = 18.0;
   static const screenPadTop = 8.0;
   static const screenPadBottom = 30.0;
+
   /// .screen.has-nav{padding-bottom:120px}
   static const screenPadBottomWithNav = 120.0;
 
@@ -211,6 +207,7 @@ class SurgoText {
 
   /// .h1{font-size:26px} → 屏幕 24px
   static const h1 = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 24,
     fontWeight: FontWeight.w800,
     letterSpacing: -0.5,
@@ -226,6 +223,7 @@ class SurgoText {
 
   /// .sec-title{font-size:19px;font-weight:800} → 17px
   static const secTitle = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 17,
     fontWeight: FontWeight.w800,
     color: SurgoColors.ink,
@@ -236,6 +234,7 @@ class SurgoText {
 
   /// .card .title{font-size:20px;font-weight:800} → 18px
   static const cardTitle = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 18,
     fontWeight: FontWeight.w800,
     color: SurgoColors.ink,
@@ -267,6 +266,7 @@ class SurgoText {
 
   /// .nav .brand{font-size:17px;font-weight:700} → 15px
   static const navBrand = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 15,
     fontWeight: FontWeight.w700,
     color: SurgoColors.ink,
@@ -274,6 +274,7 @@ class SurgoText {
 
   /// .nav .nav-timer .cd-num{font-size:32px;font-weight:800;letter-spacing:.5px} → 30px
   static const countdownNumber = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 30,
     fontWeight: FontWeight.w800,
     letterSpacing: 0.5,
@@ -289,6 +290,7 @@ class SurgoText {
 
   /// .btn{font-weight:700;font-size:15px} → 13px
   static const button = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 13,
     fontWeight: FontWeight.w700,
     color: SurgoColors.ink,
@@ -296,6 +298,7 @@ class SurgoText {
 
   /// .btn-block 文字居中 → 13px
   static const buttonBlock = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 13,
     fontWeight: FontWeight.w700,
     color: SurgoColors.ink,
@@ -304,6 +307,7 @@ class SurgoText {
 
   /// .sheet .q{font-size:23px;font-weight:800;line-height:1.25;letter-spacing:-.4px} → 21px
   static const sheetTitle = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 21,
     fontWeight: FontWeight.w800,
     height: 1.25,
@@ -313,6 +317,7 @@ class SurgoText {
 
   /// .pf-name{font-size:22px;font-weight:800} → 20px
   static const profileName = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 20,
     fontWeight: FontWeight.w800,
     color: SurgoColors.ink,
@@ -320,6 +325,7 @@ class SurgoText {
 
   /// .pf-top .pf-ttl{font-size:19px;font-weight:800} → 17px
   static const profileTitle = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 17,
     fontWeight: FontWeight.w800,
     color: SurgoColors.ink,
@@ -327,6 +333,7 @@ class SurgoText {
 
   /// .pf-sec{font-size:14px;font-weight:700} → 12px
   static const profileSection = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 12,
     fontWeight: FontWeight.w700,
     color: SurgoColors.muted,
@@ -337,17 +344,44 @@ class SurgoText {
 
   /// .pf-row .pf-label{font-size:17px;font-weight:700} → 15px
   static const rowLabel = TextStyle(
+    fontFamily: 'Outfit',fontFamilyFallback: SurgoFontFamily.fallback, 
     fontSize: 15,
     fontWeight: FontWeight.w700,
     color: SurgoColors.ink,
   );
 }
 
-/// 字体族 —— @font-face 的 VioletSans + 中文回退链。
+/// 字体族。
 ///
 /// 原 CSS：`font-family:'VioletSans',-apple-system,"PingFang SC","Helvetica Neue",Arial,sans-serif`
-/// Flutter 端在 pubspec 里注册 VioletSans，中文交给系统字体（iOS 苹方 / Android 思源）。
+/// 用户 2026-09-24 指定：全局标题与副标题用 Outfit，题目与正文用 PingFang。
+///
+/// Outfit 只含拉丁字形，中文必须由 [fallback] 里的苹方接住；把苹方写进每一处
+/// 回退链，而不是交给引擎自行挑选，否则 CanvasKit 会拿 notdef / 自动下载的字体
+/// 凑数，中文就会出现杂散墨点。
+///
+/// 苹方与 SF Pro 同属 Apple，不可随包分发：这里只按族名引用，由 iOS / macOS
+/// 系统解析，与源站 CSS 的写法一致，工程里不存放字体文件。
 class SurgoFontFamily {
   const SurgoFontFamily._();
-  static const primary = 'VioletSans';
+
+  /// 标题 / 副标题。
+  static const heading = 'Outfit';
+
+  /// 题目 / 正文 —— 系统苹方，未打包。
+  static const body = 'PingFang SC';
+
+  /// 默认继承族 = 正文。
+  static const primary = body;
+
+  /// 原型 @font-face 字体，仅个别沿用源站字形的位置使用。
+  static const violetSans = 'VioletSans';
+
+  /// 中文与拉丁回退链，对应源站 font-family 后半段。
+  static const fallback = <String>[
+    'PingFang SC',
+    'Heiti SC',
+    'Helvetica Neue',
+    'Arial',
+  ];
 }

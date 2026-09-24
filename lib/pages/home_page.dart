@@ -1,3 +1,4 @@
+import '../widgets/source_text.dart';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -45,108 +46,111 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        // .home-top：顶部只放 logo，点它回考试选择
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
-          child: GestureDetector(
-            onTap: onLogo,
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Image.asset(
-                'assets/images/surgo_logo.png',
-                height: 34,
-                fit: BoxFit.contain,
+    return DefaultTextStyle.merge(
+        style: const TextStyle(
+            letterSpacing: 0,
+            fontFamilyFallback: ['PingFang SC', 'Helvetica Neue', 'Arial']),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            // .home-top：顶部只放 logo，点它回考试选择
+            Padding(
+              padding: const EdgeInsets.only(top: 14, bottom: 18),
+              child: GestureDetector(
+                onTap: onLogo,
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Image.asset(
+                    'assets/images/surgo_logo.png',
+                    height: 30,
+                    fit: BoxFit.contain,
+                  ),
+                ),
               ),
             ),
-          ),
-        ),
 
-        _ContinueCourseCard(onContinue: onContinue, onTapBody: onOpenModule),
-        const SizedBox(height: 16),
+            _ContinueCourseCard(
+                onContinue: onContinue, onTapBody: onOpenModule),
+            const SizedBox(height: 16),
 
-        // 六科入口横向滚动
-        SizedBox(
-          height: 98,
-          child: ListView(
-            scrollDirection: Axis.horizontal,
-            padding: EdgeInsets.zero,
-            children: [
-              _StudyItem(
-                asset: 'assets/images/ic3_reading.png',
-                label: 'Reading',
-                onTap: onReading,
+            // 六科入口横向滚动
+            SizedBox(
+              height: 110,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.only(top: 8),
+                children: [
+                  _StudyItem(
+                    asset: 'assets/images/ic3_reading.png',
+                    label: 'Reading',
+                    onTap: onReading,
+                  ),
+                  const SizedBox(width: 12),
+                  _StudyItem(
+                    asset: 'assets/images/ic3_listening.png',
+                    label: 'Listening',
+                    onTap: onListening,
+                  ),
+                  const SizedBox(width: 12),
+                  _StudyItem(
+                    asset: 'assets/images/ic3_writing.png',
+                    label: 'Writing',
+                    onTap: onWriting,
+                  ),
+                  const SizedBox(width: 12),
+                  _StudyItem(
+                    asset: 'assets/images/ic3_speaking.png',
+                    label: 'Speaking',
+                    onTap: onSpeaking,
+                  ),
+                  const SizedBox(width: 12),
+                  _StudyItem(
+                    asset: 'assets/images/ic3_vocab.png',
+                    label: 'Vocabulary',
+                    onTap: onVocab,
+                  ),
+                  const SizedBox(width: 12),
+                  _StudyItem(
+                    asset: 'assets/images/ic3_preparing.png',
+                    label: 'Preparing',
+                    onTap: onPrep,
+                  ),
+                ],
               ),
-              const SizedBox(width: 12),
-              _StudyItem(
-                asset: 'assets/images/ic3_listening.png',
-                label: 'Listening',
-                onTap: onListening,
-              ),
-              const SizedBox(width: 12),
-              _StudyItem(
-                asset: 'assets/images/ic3_writing.png',
-                label: 'Writing',
-                onTap: onWriting,
-              ),
-              const SizedBox(width: 12),
-              _StudyItem(
-                asset: 'assets/images/ic3_speaking.png',
-                label: 'Speaking',
-                onTap: onSpeaking,
-              ),
-              const SizedBox(width: 12),
-              _StudyItem(
-                asset: 'assets/images/ic3_vocab.png',
-                label: 'Vocabulary',
-                onTap: onVocab,
-              ),
-              const SizedBox(width: 12),
-              _StudyItem(
-                asset: 'assets/images/ic3_preparing.png',
-                label: 'Preparing',
-                onTap: onPrep,
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 16),
+            ),
+            const _SectionHeader('Today’s train'),
 
-        const _SectionHeader('Today’s train'),
-
-        // 三张大卡 + 每日挑战
-        _CourseCard(
-          variant: _CourseVariant.yellow,
-          kicker: 'READING · SECTION 3',
-          head: '学术长文 阅读理解',
-          waveOn: 40,
-          meta: '本周进度 2/5',
-          onTap: () => onTrain('readingDaily', null),
-        ),
-        _CourseCard(
-          variant: _CourseVariant.dark,
-          kicker: 'SPEAKING · PART 2',
-          head: '个人陈述 口语训练',
-          waveOn: 80,
-          meta: '本周进度 4/5',
-          onTap: () => onTrain('speakingDaily', 'p2'),
-        ),
-        _CourseCard(
-          variant: _CourseVariant.yellow,
-          kicker: 'WRITING · TASK 2',
-          head: '议论文 写作精练',
-          waveOn: 60,
-          meta: '本周进度 3/5',
-          onTap: () => onTrain('writingDaily', 't2'),
-        ),
-        _ChallengeCard(
-          onTap: () => onTrain('listeningDaily', 's1'),
-          onContinue: () => onTrain('listeningDaily', 's1'),
-        ),
-      ],
-    );
+            // 三张大卡 + 每日挑战
+            _CourseCard(
+              variant: _CourseVariant.yellow,
+              kicker: 'READING · SECTION 3',
+              head: '学术长文 阅读理解',
+              waveOn: 40,
+              meta: '本周进度 2/5',
+              onTap: () => onTrain('readingDaily', null),
+            ),
+            _CourseCard(
+              variant: _CourseVariant.dark,
+              kicker: 'SPEAKING · PART 2',
+              head: '个人陈述 口语训练',
+              waveOn: 80,
+              meta: '本周进度 4/5',
+              onTap: () => onTrain('speakingDaily', 'p2'),
+            ),
+            _CourseCard(
+              variant: _CourseVariant.yellow,
+              kicker: 'WRITING · TASK 2',
+              head: '议论文 写作精练',
+              waveOn: 60,
+              meta: '本周进度 3/5',
+              onTap: () => onTrain('writingDaily', 't2'),
+            ),
+            _ChallengeCard(
+              onTap: () => onTrain('listeningDaily', 's1'),
+              onContinue: () => onTrain('listeningDaily', 's1'),
+            ),
+          ],
+        ));
   }
 }
 
@@ -154,7 +158,8 @@ class HomePage extends StatelessWidget {
 
 /// `.course`（161-Continue-course-card.css）
 class _ContinueCourseCard extends StatelessWidget {
-  const _ContinueCourseCard({required this.onContinue, required this.onTapBody});
+  const _ContinueCourseCard(
+      {required this.onContinue, required this.onTapBody});
 
   final VoidCallback onContinue;
   final VoidCallback onTapBody;
@@ -164,66 +169,67 @@ class _ContinueCourseCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTapBody,
       child: Container(
-        // .course{background:#FCF3D2;border-radius:22px;padding:18px}
+        // User reference2: compact white banner, IP behind the bottom CTA.
+        key: const ValueKey('home-ip-card'),
+        height: 140,
+        clipBehavior: Clip.antiAlias,
         decoration: BoxDecoration(
-          color: const Color(0xFFFCF3D2),
+          color: Colors.white,
           borderRadius: BorderRadius.circular(22),
         ),
-        padding: const EdgeInsets.all(18),
         child: Stack(
           children: [
-            // .course-otter{right:14px;top:14px;width:88px}
             Positioned(
-              right: -4,
-              top: -4,
-              child: IgnorePointer(
-                child: Image.asset(
-                  'assets/images/otter6_top.png',
-                  width: 88,
-                  fit: BoxFit.contain,
-                ),
-              ),
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                // 标题占 66% 宽，右侧留给水獭
-                FractionallySizedBox(
-                  alignment: Alignment.centerLeft,
-                  widthFactor: 0.66,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const T('Welcome back, Nafis!',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w800,
-                            color: Color(0xFF1A1A1A),
-                            height: 1.2,
-                            letterSpacing: -0.3,
-                          )),
-                      const SizedBox(height: 6),
-                      const TSpan(
-                        parts: [
-                          ('距离你的考试还剩', false),
-                          ('20天', true),
-                          ('，你的目标是', false),
-                          ('7.0', true),
-                          ('分', false),
-                        ],
-                        style: TextStyle(
-                          fontSize: 10.5,
-                          color: Color(0xFF9A9385),
-                          height: 1.5,
-                        ),
-                        highlightStyle: _hl,
+                right: 14,
+                top: 14,
+                child: IgnorePointer(
+                    child: Image.asset('assets/images/otter6.png',
+                        key: const ValueKey('home-complete-illustration'),
+                        width: 88,
+                        height: 109,
+                        fit: BoxFit.contain))),
+            const Positioned(
+                left: 18,
+                right: 104,
+                top: 18,
+                child: T('Welcome back, Nafis!',
+                    style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800,
+                      color: Color(0xFF1A1A1A),
+                      height: 1.2,
+                      letterSpacing: -0.3,
+                    ))),
+            const Positioned(
+                left: 18,
+                right: 122,
+                top: 47,
+                child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerLeft,
+                    child: TSpan(
+                      parts: [
+                        ('距离你的考试还剩', false),
+                        ('20天', true),
+                        ('，你的目标是', false),
+                        ('7.0', true),
+                        ('分', false),
+                      ],
+                      style: TextStyle(
+                        fontSize: 10,
+                        color: Color(0xFF817969),
+                        height: 1.5,
                       ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 14),
-                // .course-cta
-                GestureDetector(
+                      highlightStyle: _hl,
+                    ))),
+            // Deliberate foreground overlap, confirmed by the user.
+            Positioned(
+                left: 18,
+                right: 18,
+                bottom: 18,
+                height: 42,
+                child: GestureDetector(
+                  key: const ValueKey('home-continue'),
                   onTap: onContinue,
                   child: Container(
                     decoration: BoxDecoration(
@@ -241,15 +247,13 @@ class _ContinueCourseCard extends StatelessWidget {
                         horizontal: 18, vertical: 13),
                     alignment: Alignment.center,
                     child: const T('Continue Writing',
-                        style: TextStyle(
+                        style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                           fontSize: 12,
                           fontWeight: FontWeight.w800,
                           color: SurgoColors.onYellowStrong,
                         )),
                   ),
-                ),
-              ],
-            ),
+                )),
           ],
         ),
       ),
@@ -257,8 +261,8 @@ class _ContinueCourseCard extends StatelessWidget {
   }
 
   /// `.course .course-sub .hl{font-size:14.5px;font-weight:800;color:#E0A000;text-decoration:underline}`
-  static const _hl = TextStyle(
-    fontSize: 12.5,
+  static const _hl = TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
+    fontSize: 12,
     fontWeight: FontWeight.w800,
     color: Color(0xFFE0A000),
     decoration: TextDecoration.underline,
@@ -296,12 +300,15 @@ class _StudyItem extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
             ),
             alignment: Alignment.center,
-            child: Image.asset(asset, width: 46, height: 46, fit: BoxFit.contain),
+            child:
+                Image.asset(asset, width: 46, height: 46, fit: BoxFit.contain),
           ),
           const SizedBox(height: 9),
           T(label,
               style: const TextStyle(
-                  fontSize: 10, fontWeight: FontWeight.w400, color: Colors.black)),
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black)),
         ],
       ),
     );
@@ -320,37 +327,34 @@ class _SectionHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 16, bottom: 12),
-      child: Stack(
-        alignment: Alignment.bottomLeft,
-        children: [
-          // ::before{width:33%;bottom:2px;height:9px;background:var(--yellow);border-radius:3px;opacity:.85}
-          Padding(
-            padding: const EdgeInsets.only(bottom: 2),
-            child: FractionallySizedBox(
-              alignment: Alignment.centerLeft,
-              widthFactor: 0.33,
-              child: Container(
-                height: 9,
-                decoration: BoxDecoration(
-                  color: SurgoColors.yellow.withValues(alpha: 0.85),
-                  borderRadius: BorderRadius.circular(3),
-                ),
-              ),
-            ),
-          ),
-          T(
-            title,
-            uppercase: true,
-            style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w800,
-              color: Colors.black,
-              height: 28 / 16,
-              letterSpacing: 0.3,
-            ),
-          ),
-        ],
-      ),
+      child: Align(
+          alignment: Alignment.centerLeft,
+          child: Stack(
+            children: [
+              Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 2,
+                  child: FractionallySizedBox(
+                    alignment: Alignment.centerLeft,
+                    widthFactor: .33,
+                    child: Container(
+                        height: 9,
+                        decoration: BoxDecoration(
+                            color: SurgoColors.yellow.withValues(alpha: .85),
+                            borderRadius: BorderRadius.circular(3))),
+                  )),
+              T(title,
+                  uppercase: true,
+                  style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.black,
+                    height: 28 / 16,
+                    letterSpacing: .3,
+                  )),
+            ],
+          )),
     );
   }
 }
@@ -408,8 +412,11 @@ class _CourseCard extends StatelessWidget {
         : violet
             ? const Color(0x59FFFFFF)
             : const Color(0x0FFFFFFF);
-    final onColor =
-        yellow ? SurgoColors.ink : violet ? const Color(0xFF2B2A2E) : SurgoColors.yellow;
+    final onColor = yellow
+        ? SurgoColors.ink
+        : violet
+            ? const Color(0xFF2B2A2E)
+            : SurgoColors.yellow;
     final offColor = yellow
         ? const Color(0x2E1C1A17)
         : violet
@@ -443,19 +450,20 @@ class _CourseCard extends StatelessWidget {
                   width: 230,
                   height: 200,
                   decoration: BoxDecoration(
-                    shape: BoxShape.circle,
+                    borderRadius: BorderRadius.circular(200),
                     border: Border.all(color: curveColor, width: 26),
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     T(kicker,
-                        style: TextStyle(
+                        style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                           fontSize: 10,
                           fontWeight: FontWeight.w800,
                           letterSpacing: 0.8,
@@ -463,7 +471,7 @@ class _CourseCard extends StatelessWidget {
                         )),
                     const SizedBox(height: 6),
                     T(head,
-                        style: TextStyle(
+                        style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                           fontSize: 15,
                           fontWeight: FontWeight.w800,
                           height: 1.25,
@@ -475,7 +483,8 @@ class _CourseCard extends StatelessWidget {
                     FractionallySizedBox(
                       alignment: Alignment.centerLeft,
                       widthFactor: 0.72,
-                      child: _Wave(on: waveOn, onColor: onColor, offColor: offColor),
+                      child: _Wave(
+                          on: waveOn, onColor: onColor, offColor: offColor),
                     ),
                     const SizedBox(height: 8),
                     T(meta,
@@ -506,9 +515,8 @@ class _CourseCard extends StatelessWidget {
                     ],
                   ),
                   alignment: Alignment.center,
-                  child: Text('→',
-                      style: TextStyle(
-                          fontSize: 20, color: goFg, height: 1.0)),
+                  child: SourceText('→',
+                      style: TextStyle(fontSize: 20, color: goFg, height: 1.0)),
                 ),
               ),
             ],
@@ -536,7 +544,7 @@ class _Wave extends StatelessWidget {
   final Color onColor;
   final Color offColor;
 
-  /// 原型 wave(n) 固定生成 40 根条形
+  /// 原型 wave(pct, n=34)，将百分比换算成点亮的条数。
   static const count = 34;
 
   @override
@@ -557,7 +565,8 @@ class _Wave extends StatelessWidget {
                   heightFactor: (h / 100).clamp(0.0, 1.0),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: i < on ? onColor : offColor,
+                      color:
+                          i < (count * on / 100).round() ? onColor : offColor,
                       borderRadius: BorderRadius.circular(2),
                     ),
                   ),
@@ -603,18 +612,20 @@ class _ChallengeCard extends StatelessWidget {
                   height: 200,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    border: Border.all(color: const Color(0x0FFFFFFF), width: 26),
+                    border:
+                        Border.all(color: const Color(0x0FFFFFFF), width: 26),
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const T('每日挑战',
-                        style: TextStyle(
+                        style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                           fontSize: 10,
                           fontWeight: FontWeight.w800,
                           letterSpacing: 0.8,
@@ -622,7 +633,7 @@ class _ChallengeCard extends StatelessWidget {
                         )),
                     const SizedBox(height: 6),
                     const T('保持你的 12 天连胜',
-                        style: TextStyle(
+                        style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                           fontSize: 15,
                           fontWeight: FontWeight.w800,
                           color: Colors.white,
@@ -660,12 +671,14 @@ class _ChallengeCard extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const T('今日挑战已就绪',
-                            style: TextStyle(
-                              fontSize: 10.5,
-                              fontWeight: FontWeight.w700,
-                              color: Color(0x8CFFFFFF),
-                            )),
+                        const Expanded(
+                            child: T('今日挑战已就绪',
+                                style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
+                                  fontSize: 10.5,
+                                  fontWeight: FontWeight.w700,
+                                  color: Color(0x8CFFFFFF),
+                                ))),
+                        const SizedBox(width: 8),
                         GestureDetector(
                           onTap: onContinue,
                           child: Container(
@@ -676,7 +689,7 @@ class _ChallengeCard extends StatelessWidget {
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 22, vertical: 12),
                             child: const T('继续挑战',
-                                style: TextStyle(
+                                style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                                   fontSize: 11,
                                   fontWeight: FontWeight.w800,
                                   color: Color(0xFF1A1A1A),

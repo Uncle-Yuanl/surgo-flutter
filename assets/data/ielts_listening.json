@@ -1,0 +1,724 @@
+{
+  "parts": {
+    "s1": {
+      "part": "Part 1",
+      "ctx": "Booking a hall for an event",
+      "section": "Section 3",
+      "sectionDesc": "A conversation about booking a hall for an event.",
+      "audioDur": "07:00",
+      "audioTitle": "Conversation: Booking a Hall for an Event",
+      "mainType": "mc",
+      "groupLabel": "Questions 1-6",
+      "groupInstr": "Choose the correct answer, A, B or C.",
+      "qs": [
+        {
+          "kind": "mc",
+          "type": "mc",
+          "q": "1. The customer wants to book the hall for a",
+          "opts": [
+            "A. birthday party.",
+            "B. wedding reception.",
+            "C. company event."
+          ]
+        },
+        {
+          "kind": "mc",
+          "type": "mc",
+          "q": "2. The event will take place in",
+          "opts": [
+            "A. the Garden Room.",
+            "B. the Main Hall.",
+            "C. the Terrace Room."
+          ]
+        },
+        {
+          "kind": "mc",
+          "type": "mc",
+          "q": "3. The party is booked for",
+          "opts": [
+            "A. Friday.",
+            "B. Saturday.",
+            "C. Sunday."
+          ]
+        },
+        {
+          "kind": "mc",
+          "type": "mc",
+          "q": "4. The hall can hold a maximum of",
+          "opts": [
+            "A. 80 people.",
+            "B. 100 people.",
+            "C. 120 people."
+          ]
+        },
+        {
+          "kind": "mc",
+          "type": "mc",
+          "q": "5. Parking is",
+          "opts": [
+            "A. free for all guests.",
+            "B. available for a fee.",
+            "C. not available."
+          ]
+        },
+        {
+          "kind": "mc",
+          "type": "mc",
+          "q": "6. The customer is most concerned about",
+          "opts": [
+            "A. the cost.",
+            "B. the catering.",
+            "C. the timing."
+          ]
+        }
+      ],
+      "group2Label": "Questions 7-10",
+      "group2Instr": "Answer the questions below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+      "qs2": [
+        {
+          "n": 7,
+          "q": "What deposit is required?"
+        },
+        {
+          "n": 8,
+          "q": "How should the customer pay?"
+        },
+        {
+          "n": 9,
+          "q": "What food option was chosen?"
+        },
+        {
+          "n": 10,
+          "q": "What is the best contact time?"
+        }
+      ]
+    },
+    "s2": {
+      "part": "Part 2",
+      "ctx": "Missing person description",
+      "section": "Section 4",
+      "sectionDesc": "A monologue describing a missing person and giving directions.",
+      "audioDur": "07:00",
+      "audioTitle": "Monologue: A Missing Person Description",
+      "mainType": "form",
+      "groupLabel": "Questions 11-16",
+      "groupInstr": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "tableTitle": "MISSING PERSON DESCRIPTION",
+      "table": [
+        {
+          "label": "Age",
+          "rows": [
+            {
+              "val": "Early 20s"
+            }
+          ]
+        },
+        {
+          "label": "Height",
+          "rows": [
+            {
+              "val": "About 1 m 83 cms"
+            }
+          ]
+        },
+        {
+          "label": "Build",
+          "rows": [
+            {
+              "n": 11
+            }
+          ]
+        },
+        {
+          "label": "Hair",
+          "rows": [
+            {
+              "val": "Red"
+            }
+          ]
+        },
+        {
+          "label": "Face",
+          "rows": [
+            {
+              "val": "Clean shaven"
+            }
+          ]
+        },
+        {
+          "label": "Clothing",
+          "rows": [
+            {
+              "val": "Dark blue sweater"
+            },
+            {
+              "n": 12
+            },
+            {
+              "val": "Motorbike helmet"
+            }
+          ]
+        },
+        {
+          "label": "Age of bike",
+          "rows": [
+            {
+              "n": 13
+            }
+          ]
+        },
+        {
+          "label": "Colour",
+          "rows": [
+            {
+              "n": 14
+            }
+          ]
+        },
+        {
+          "label": "Last seen",
+          "rows": [
+            {
+              "n": 15
+            }
+          ]
+        },
+        {
+          "label": "Reference",
+          "rows": [
+            {
+              "n": 16
+            }
+          ]
+        }
+      ],
+      "qs": [
+        {
+          "kind": "gap",
+          "type": "form",
+          "num": 11,
+          "q": [
+            "11. Build: ",
+            ""
+          ]
+        },
+        {
+          "kind": "gap",
+          "type": "form",
+          "num": 12,
+          "q": [
+            "12. Clothing (middle item): ",
+            ""
+          ]
+        },
+        {
+          "kind": "gap",
+          "type": "form",
+          "num": 13,
+          "q": [
+            "13. Age of bike: ",
+            ""
+          ]
+        },
+        {
+          "kind": "gap",
+          "type": "form",
+          "num": 14,
+          "q": [
+            "14. Colour: ",
+            ""
+          ]
+        },
+        {
+          "kind": "gap",
+          "type": "form",
+          "num": 15,
+          "q": [
+            "15. Last seen: ",
+            ""
+          ]
+        },
+        {
+          "kind": "gap",
+          "type": "form",
+          "num": 16,
+          "q": [
+            "16. Reference: ",
+            ""
+          ]
+        }
+      ],
+      "mapGroupLabel": "Questions 17-20",
+      "mapGroupInstr": "Label the map below. Write the correct letter, A-G, next to Questions 17-20.",
+      "mapQs": [
+        {
+          "n": 17,
+          "label": "Car park"
+        },
+        {
+          "n": 18,
+          "label": "Ticket office"
+        },
+        {
+          "n": 19,
+          "label": "Cafe"
+        },
+        {
+          "n": 20,
+          "label": "Gift shop"
+        }
+      ]
+    },
+    "s3": {
+      "part": "Part 3",
+      "ctx": "A discussion between two students and their tutor",
+      "section": "Section 5",
+      "sectionDesc": "A discussion between two students and their tutor.",
+      "audioDur": "07:00",
+      "audioTitle": "Discussion: A Research Project Review",
+      "mainType": "matching",
+      "groupLabel": "Questions 21-25",
+      "groupInstr": "What comment does each student make about the topics? Choose your answers from the box and write the correct letter, A-F, next to Questions 21-25.",
+      "matchBox": [
+        "A  needs more research",
+        "B  was surprisingly easy",
+        "C  took too long",
+        "D  was well organised",
+        "E  should be repeated",
+        "F  lacked good data"
+      ],
+      "matchOpts": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "qs": [
+        {
+          "kind": "match",
+          "type": "matching",
+          "q": "21. The literature review",
+          "opts": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        {
+          "kind": "match",
+          "type": "matching",
+          "q": "22. The questionnaire design",
+          "opts": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        {
+          "kind": "match",
+          "type": "matching",
+          "q": "23. The data collection",
+          "opts": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        {
+          "kind": "match",
+          "type": "matching",
+          "q": "24. The interviews",
+          "opts": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        {
+          "kind": "match",
+          "type": "matching",
+          "q": "25. The final analysis",
+          "opts": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        {
+          "kind": "mc",
+          "type": "mc",
+          "groupStart": "Questions 26-30",
+          "groupInstr": "Choose the correct answer, A, B or C.",
+          "q": "26. In which year will Robert gain work experience?",
+          "opts": [
+            "A. First year",
+            "B. Second year",
+            "C. Third year"
+          ]
+        },
+        {
+          "kind": "mc",
+          "type": "mc",
+          "q": "27. Robert will produce extended written work in",
+          "opts": [
+            "A. first year",
+            "B. second year",
+            "C. third year"
+          ]
+        },
+        {
+          "kind": "mc",
+          "type": "mc",
+          "q": "28. The number of exams at the end of the year is",
+          "opts": [
+            "A. five",
+            "B. six",
+            "C. eight"
+          ]
+        },
+        {
+          "kind": "mc",
+          "type": "mc",
+          "q": "29. Robert chose the university mainly for its",
+          "opts": [
+            "A. location.",
+            "B. reputation.",
+            "C. facilities."
+          ]
+        },
+        {
+          "kind": "mc",
+          "type": "mc",
+          "q": "30. The tutor suggests Robert should",
+          "opts": [
+            "A. join a club.",
+            "B. start early.",
+            "C. contact staff."
+          ]
+        }
+      ]
+    },
+    "s4": {
+      "part": "Part 4",
+      "ctx": "A university lecture on survey methods",
+      "section": "Section 6",
+      "sectionDesc": "A university lecture on survey methods.",
+      "audioDur": "07:00",
+      "audioTitle": "Lecture: Survey Methods",
+      "mainType": "note",
+      "groupLabel": "Questions 31-36",
+      "groupInstr": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "notesTitle": "SURVEY METHODS",
+      "qs": [
+        {
+          "kind": "gap",
+          "type": "note",
+          "q": [
+            "31. The lecture is useful for students writing ",
+            " and theses."
+          ]
+        },
+        {
+          "kind": "gap",
+          "type": "note",
+          "q": [
+            "32. Modernised countries are described as now being ",
+            ""
+          ]
+        },
+        {
+          "kind": "gap",
+          "type": "note",
+          "q": [
+            "33. The size of a sample depends on the ",
+            " required."
+          ]
+        },
+        {
+          "kind": "gap",
+          "type": "note",
+          "q": [
+            "34. Mail surveys are relatively ",
+            " and good for particular groups."
+          ]
+        },
+        {
+          "kind": "gap",
+          "type": "note",
+          "q": [
+            "35. Telephone surveys are good when time is ",
+            ""
+          ]
+        },
+        {
+          "kind": "gap",
+          "type": "note",
+          "q": [
+            "36. In-person surveys can mean lots of ",
+            ""
+          ]
+        }
+      ],
+      "group2Label": "Questions 37-40",
+      "group2Instr": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "qs2": [
+        {
+          "n": 37,
+          "q": "Street interviews are not considered",
+          "tail": "sampling."
+        },
+        {
+          "n": 38,
+          "q": "Questions can be open-ended or of a",
+          "tail": "type."
+        },
+        {
+          "n": 39,
+          "q": "A survey can use a",
+          "tail": "to reach more people."
+        },
+        {
+          "n": 40,
+          "q": "Results must not be used for",
+          "tail": "purposes."
+        }
+      ]
+    }
+  },
+  "mapSvg": "<svg class=\"lmap-svg\" viewBox=\"0 0 460 300\" xmlns=\"http://www.w3.org/2000/svg\">\n    <rect x=\"0\" y=\"0\" width=\"460\" height=\"300\" rx=\"10\" fill=\"#eef1e5\"/>\n    <rect x=\"210\" y=\"55\" width=\"42\" height=\"200\" fill=\"#d9d3c4\"/>\n    <rect x=\"30\" y=\"150\" width=\"400\" height=\"34\" fill=\"#d9d3c4\"/>\n    <rect x=\"45\" y=\"75\" width=\"120\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"105\" cy=\"105\" r=\"13\" fill=\"#e8a90c\"/><text x=\"105\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">A</text>\n    <rect x=\"285\" y=\"75\" width=\"130\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"350\" cy=\"105\" r=\"13\" fill=\"#e8a90c\"/><text x=\"350\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">B</text>\n    <rect x=\"45\" y=\"200\" width=\"120\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"105\" cy=\"230\" r=\"13\" fill=\"#e8a90c\"/><text x=\"105\" y=\"235\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">C</text>\n    <rect x=\"300\" y=\"205\" width=\"115\" height=\"55\" rx=\"16\" fill=\"#c9e2f0\" stroke=\"#9fc7de\"/>\n    <circle cx=\"357\" cy=\"232\" r=\"13\" fill=\"#e8a90c\"/><text x=\"357\" y=\"237\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">F</text>\n    <circle cx=\"200\" cy=\"167\" r=\"13\" fill=\"#e8a90c\"/><text x=\"200\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">D</text>\n    <circle cx=\"285\" cy=\"167\" r=\"13\" fill=\"#e8a90c\"/><text x=\"285\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">E</text>\n    <circle cx=\"231\" cy=\"120\" r=\"13\" fill=\"#e8a90c\"/><text x=\"231\" y=\"125\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">G</text>\n    <text x=\"231\" y=\"278\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7a7566\">ENTRANCE</text>\n  </svg>",
+  "feedback": {
+    "1": {
+      "qs": [
+        {
+          "n": 1,
+          "ok": true,
+          "type": "Form completion",
+          "q": "The customer wants to book the hall for a ______.",
+          "mine": "birthday party",
+          "ans": "birthday party",
+          "evi": "book the hall for a birthday party",
+          "why": "Correctly identified from the opening line.",
+          "whyZh": "从开头一句正确识别。"
+        },
+        {
+          "n": 2,
+          "ok": false,
+          "type": "Form completion",
+          "q": "The event will take place in the ______.",
+          "mine": "Main Hall",
+          "ans": "Garden Room",
+          "evi": "We have the Garden Room available on Saturday",
+          "why": "The manager names the Garden Room, not the Main Hall.",
+          "whyZh": "经理说的是 Garden Room，不是 Main Hall。"
+        },
+        {
+          "n": 3,
+          "ok": true,
+          "type": "Form completion",
+          "q": "The hall can hold a maximum of ______ guests.",
+          "mine": "100",
+          "ans": "100",
+          "evi": "Up to 100 guests",
+          "why": "Number matched correctly.",
+          "whyZh": "数字匹配正确。"
+        },
+        {
+          "n": 4,
+          "ok": false,
+          "type": "Form completion",
+          "q": "A deposit of ______ dollars is required.",
+          "mine": "150",
+          "ans": "100",
+          "evi": "A deposit of 100 dollars",
+          "why": "Listen carefully for the exact figure — it was 100.",
+          "whyZh": "注意准确数字 — 是 100。"
+        }
+      ],
+      "transcript": [
+        [
+          "CUSTOMER: Hi, I'd like to ",
+          "book the hall for a birthday party",
+          1,
+          "."
+        ],
+        [
+          "MANAGER: Of course. ",
+          "We have the Garden Room available on Saturday",
+          2,
+          "."
+        ],
+        [
+          "CUSTOMER: Great. How many people can it hold?",
+          null,
+          0,
+          ""
+        ],
+        [
+          "MANAGER: ",
+          "Up to 100 guests",
+          3,
+          ", and parking is free for all of them."
+        ],
+        [
+          "CUSTOMER: What deposit do you need?",
+          null,
+          0,
+          ""
+        ],
+        [
+          "MANAGER: ",
+          "A deposit of 100 dollars",
+          4,
+          ", payable by card."
+        ]
+      ]
+    },
+    "2": {
+      "qs": [
+        {
+          "n": 5,
+          "ok": true,
+          "q": "Swimming pool (public) — which day?",
+          "opts": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+          ],
+          "mine": "Monday",
+          "ans": "Monday",
+          "evi": "The swimming pool is only open to the public on Monday",
+          "why": "Directly stated — Monday.",
+          "whyZh": "原文直接说明 — 周一。"
+        },
+        {
+          "n": 6,
+          "ok": false,
+          "q": "Climbing wall (beginners) — which day?",
+          "opts": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+          ],
+          "mine": "Friday",
+          "ans": "Wednesday",
+          "evi": "The climbing wall is reserved for beginners on Wednesday",
+          "why": "The beginners' session is Wednesday, not Friday.",
+          "whyZh": "初学者时段是周三，不是周五。"
+        },
+        {
+          "n": 7,
+          "ok": true,
+          "q": "Badminton club — which day?",
+          "opts": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+          ],
+          "mine": "Friday",
+          "ans": "Friday",
+          "evi": "the sports hall hosts the badminton club on Friday evening",
+          "why": "Correct — Friday evening.",
+          "whyZh": "正确 — 周五晚上。"
+        }
+      ],
+      "transcript": [
+        [
+          "GUIDE: Let me run through the week. ",
+          "The swimming pool is only open to the public on Monday",
+          5,
+          ". "
+        ],
+        [
+          "",
+          "The climbing wall is reserved for beginners on Wednesday",
+          6,
+          ". And "
+        ],
+        [
+          "",
+          "the sports hall hosts the badminton club on Friday evening",
+          7,
+          "."
+        ]
+      ]
+    },
+    "3": {
+      "qs": [
+        {
+          "n": 8,
+          "ok": false,
+          "q": "Why did the student's first survey fail?",
+          "opts": [
+            "The sample was too small",
+            "The questions were unclear",
+            "The deadline was missed"
+          ],
+          "mine": "The questions were unclear",
+          "ans": "The sample was too small",
+          "evi": "the sample was too small — only twelve people",
+          "why": "The student explicitly blames the small sample size, not the questions.",
+          "whyZh": "学生明确归因于样本太小，而非问题不清楚。"
+        },
+        {
+          "n": 9,
+          "ok": true,
+          "q": "What will the student aim for next time?",
+          "opts": [
+            "A shorter survey",
+            "At least 100 responses",
+            "A different topic"
+          ],
+          "mine": "At least 100 responses",
+          "ans": "At least 100 responses",
+          "evi": "I'll aim for at least a hundred responses",
+          "why": "Correct — 100 responses.",
+          "whyZh": "正确 — 100 份回复。"
+        }
+      ],
+      "tHtml": "\n    <div>TUTOR: So why did your first survey fail?</div>\n    <div>STUDENT: Mainly because <span class=\"hit bad\">the sample was too small — only twelve people</span><span class=\"qn bad\">8</span>, so the results were not reliable. Next time <span class=\"hit ok\">I'll aim for at least a hundred responses</span><span class=\"qn ok\">9</span>.</div>"
+    },
+    "4": {
+      "qs": [
+        {
+          "n": 10,
+          "ok": true,
+          "q": "Coral reefs support about ______ of all marine species.",
+          "mine": "a quarter",
+          "ans": "a quarter",
+          "evi": "they support around a quarter of all marine species",
+          "why": "Correct — a quarter.",
+          "whyZh": "正确 — 四分之一。"
+        },
+        {
+          "n": 11,
+          "ok": false,
+          "q": "The greatest threat is rising sea ______.",
+          "mine": "levels",
+          "ans": "temperature",
+          "evi": "the greatest threat … is rising sea temperature",
+          "why": "The lecturer says temperature (which causes bleaching), not sea levels — a classic distractor.",
+          "whyZh": "讲师说的是温度（导致白化），不是海平面 — 典型干扰项。"
+        }
+      ],
+      "tHtml": "<div>LECTURER: Coral reefs cover less than one percent of the ocean floor, yet <span class=\"hit ok\">they support around a quarter of all marine species</span><span class=\"qn ok\">10</span>. The greatest threat to them today is rising sea temperature, which causes bleaching.</div>"
+    }
+  },
+  "audioDuration": 225
+}

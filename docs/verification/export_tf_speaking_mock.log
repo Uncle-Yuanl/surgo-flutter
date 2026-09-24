@@ -1,0 +1,5 @@
+{
+  task1: { total: 7, instrSec: 5, readySec: 1, segs: 7 },
+  task2: { total: 4, segs: 4 },
+  feedback: { score: '3.6', types: 2, subs: 3, qr: 2, qi: 1, weak: 2 }
+}

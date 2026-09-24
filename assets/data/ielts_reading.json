@@ -1,0 +1,489 @@
+{
+  "types": [
+    {
+      "key": "mc",
+      "name": "选择题",
+      "mins": 9,
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+        {
+          "q": "1. What is most remarkable about the monarch migration?",
+          "opts": [
+            "A. Its total distance",
+            "B. No single butterfly completes it",
+            "C. It happens in spring"
+          ]
+        },
+        {
+          "q": "2. Monarchs are believed to navigate using",
+          "opts": [
+            "A. the stars",
+            "B. the sun and a magnetic compass",
+            "C. wind direction"
+          ]
+        },
+        {
+          "q": "3. The Mexican overwintering sites were located in",
+          "opts": [
+            "A. 1965",
+            "B. 1975",
+            "C. 1985"
+          ]
+        },
+        {
+          "q": "4. The butterflies gather on",
+          "opts": [
+            "A. oyamel fir trees",
+            "B. oak trees",
+            "C. milkweed plants"
+          ]
+        },
+        {
+          "q": "5. The main early threat to the colonies was",
+          "opts": [
+            "A. tourism",
+            "B. logging",
+            "C. disease"
+          ]
+        },
+        {
+          "q": "6. Climate change is said to affect migration by",
+          "opts": [
+            "A. disrupting its timing",
+            "B. shortening the route",
+            "C. increasing numbers"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "tfng",
+      "name": "判断信息（正误未提及）",
+      "mins": 6,
+      "instr": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+      "kind": "tfng",
+      "article": {
+        "title": "Persuasion and Smell",
+        "passage": [
+          [
+            "A",
+            "The link between smell and memory is well established: most people have experienced the phenomenon of unexpectedly encountering a smell, perhaps the scent of a particular flower, which brings back a flood of long-forgotten memories. The fact that smell can conjure up feelings, whether enjoyable or unpleasant, is also undeniable."
+          ],
+          [
+            "B",
+            "The olfactory system is the oldest sensory system in mammals and can process about 10,000 different odours. When people smell something, its scent enters the nose and is transmitted to the olfactory bulb, which forms part of the limbic system. Briefly put, the limbic system is a set of structures in the brain that govern emotional responses and memories."
+          ],
+          [
+            "C",
+            "A commercial rather than moral experiment was undertaken with footwear. Two identical pairs of branded running shoes were placed in two different rooms, one of which contained scent previously shown to create positive feelings. Eighty-four per cent of participants in the study reported that they were more likely to buy the running shoes in the scented room."
+          ],
+          [
+            "D",
+            "Scent research also indicated a direct influence on improving sociability. A recent study found that when environments were sprayed with scents linked with hygiene, individuals reported a desire to connect with those who were in the vicinity. Advertisers thus have greater power to influence consumers than was previously thought."
+          ]
+        ]
+      },
+      "items": [
+        "1. Smell can bring back forgotten memories.",
+        "2. The olfactory system can process exactly 5,000 odours.",
+        "3. Most people prefer floral scents to citrus.",
+        "4. Scent influenced buying behaviour in the footwear study."
+      ]
+    },
+    {
+      "key": "yyng",
+      "name": "判断观点（是否未提及）",
+      "mins": 7.5,
+      "instr": "Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.",
+      "kind": "tfng",
+      "opts3": [
+        "Yes",
+        "No",
+        "Not Given"
+      ],
+      "article": {
+        "title": "The Migration of Monarch Butterflies",
+        "passage": [
+          [
+            "A",
+            "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world, travelling up to 4,000 kilometres from Canada and the northern United States to the forests of central Mexico. What makes this migration so extraordinary is that no single butterfly completes the round trip."
+          ],
+          [
+            "B",
+            "Scientists have long been puzzled by how the insects navigate. Recent research suggests that monarchs rely on a combination of the position of the sun and an internal magnetic compass that allows them to maintain a consistent southward bearing even on cloudy days."
+          ],
+          [
+            "C",
+            "The overwintering sites in Mexico were unknown to scientists until 1975, when a research team finally located the dense colonies clinging to oyamel fir trees at high altitude. The discovery raised urgent questions about conservation, as logging threatened the very forests the butterflies depend on."
+          ],
+          [
+            "D",
+            "Climate change now poses an additional threat. Warmer temperatures disrupt the delicate timing of migration, and unusual weather events can devastate colonies that have gathered in a single location. Only monarchs born in late summer make the migration, and it may be their great-grandchildren that return the following year."
+          ]
+        ]
+      },
+      "items": [
+        "1. The writer believes the monarch migration is unique among insects.",
+        "2. Scientists fully understand monarch navigation.",
+        "3. Monarchs migrate more successfully than birds.",
+        "4. Conservation became a concern after 1975.",
+        "5. Climate change is the only threat to monarchs."
+      ]
+    },
+    {
+      "key": "imatch",
+      "name": "信息匹配",
+      "mins": 4.5,
+      "instr": "Which paragraph contains the following information? Write the correct letter, A-E.",
+      "kind": "match",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "article": {
+        "title": "The Science of Building with Bamboo",
+        "passage": [
+          [
+            "A",
+            "Bamboo has been used as a building material for thousands of years across Asia and South America. Recently, engineers in Europe and North America have begun to take the plant seriously as a sustainable alternative to steel and concrete, whose production is responsible for a significant share of global carbon emissions."
+          ],
+          [
+            "B",
+            "The appeal of bamboo lies in its remarkable strength-to-weight ratio. Some species have a tensile strength comparable to that of mild steel, yet weigh a fraction as much. Bamboo also grows extraordinarily quickly, with certain species adding almost a metre in a single day, making it a rapidly renewable resource."
+          ],
+          [
+            "C",
+            "There are, however, challenges. Untreated bamboo is vulnerable to insects and fungal decay, and its performance varies widely between species and even between individual stems. Engineers have therefore developed treatment processes and grading systems to ensure consistency and durability in construction."
+          ],
+          [
+            "D",
+            "A typical bamboo culm consists of hollow segments separated by solid joints known as nodes. The outer wall is dense and fibrous, while the inner layers are softer. Understanding this structure is essential for designing joints that transfer loads effectively without splitting the material."
+          ],
+          [
+            "E",
+            "Advocates argue that with proper treatment and engineering, bamboo could play a major role in low-carbon construction, particularly in regions where it grows naturally. Critics counter that building codes in many countries have yet to catch up, limiting its use in large-scale projects."
+          ]
+        ]
+      },
+      "items": [
+        "1. a comparison of bamboo’s strength with a metal",
+        "2. a reference to regulations that restrict bamboo use",
+        "3. a description of how bamboo is damaged if untreated"
+      ]
+    },
+    {
+      "key": "hmatch",
+      "name": "标题匹配",
+      "mins": 7.5,
+      "instr": "The passage has five paragraphs, A-E. Choose the correct heading for each paragraph from the list of headings below.",
+      "kind": "match",
+      "options": [
+        "i",
+        "ii",
+        "iii",
+        "iv",
+        "v",
+        "vi"
+      ],
+      "optionLabels": [
+        "i  Problems that must be overcome",
+        "ii  The internal structure of a stem",
+        "iii  A long history of use",
+        "iv  Why bamboo is so strong",
+        "v  An uncertain but promising future",
+        "vi  The cost of transportation"
+      ],
+      "article": {
+        "title": "The Science of Building with Bamboo",
+        "passage": [
+          [
+            "A",
+            "Bamboo has been used as a building material for thousands of years across Asia and South America. Recently, engineers in Europe and North America have begun to take the plant seriously as a sustainable alternative to steel and concrete, whose production is responsible for a significant share of global carbon emissions."
+          ],
+          [
+            "B",
+            "The appeal of bamboo lies in its remarkable strength-to-weight ratio. Some species have a tensile strength comparable to that of mild steel, yet weigh a fraction as much. Bamboo also grows extraordinarily quickly, with certain species adding almost a metre in a single day, making it a rapidly renewable resource."
+          ],
+          [
+            "C",
+            "There are, however, challenges. Untreated bamboo is vulnerable to insects and fungal decay, and its performance varies widely between species and even between individual stems. Engineers have therefore developed treatment processes and grading systems to ensure consistency and durability in construction."
+          ],
+          [
+            "D",
+            "A typical bamboo culm consists of hollow segments separated by solid joints known as nodes. The outer wall is dense and fibrous, while the inner layers are softer. Understanding this structure is essential for designing joints that transfer loads effectively without splitting the material."
+          ],
+          [
+            "E",
+            "Advocates argue that with proper treatment and engineering, bamboo could play a major role in low-carbon construction, particularly in regions where it grows naturally. Critics counter that building codes in many countries have yet to catch up, limiting its use in large-scale projects."
+          ]
+        ]
+      },
+      "items": [
+        "28. Paragraph A",
+        "29. Paragraph B",
+        "30. Paragraph C",
+        "31. Paragraph D",
+        "32. Paragraph E"
+      ]
+    },
+    {
+      "key": "fmatch",
+      "name": "特征匹配",
+      "mins": 3,
+      "instr": "Match each finding with the correct study. Write the correct letter, A-C.",
+      "kind": "match",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ],
+      "optionLabels": [
+        "A  the footwear study",
+        "B  the sociability study",
+        "C  the memory study"
+      ],
+      "article": {
+        "title": "Persuasion and Smell",
+        "passage": [
+          [
+            "A",
+            "The link between smell and memory is well established: most people have experienced the phenomenon of unexpectedly encountering a smell, perhaps the scent of a particular flower, which brings back a flood of long-forgotten memories. The fact that smell can conjure up feelings, whether enjoyable or unpleasant, is also undeniable."
+          ],
+          [
+            "B",
+            "The olfactory system is the oldest sensory system in mammals and can process about 10,000 different odours. When people smell something, its scent enters the nose and is transmitted to the olfactory bulb, which forms part of the limbic system. Briefly put, the limbic system is a set of structures in the brain that govern emotional responses and memories."
+          ],
+          [
+            "C",
+            "A commercial rather than moral experiment was undertaken with footwear. Two identical pairs of branded running shoes were placed in two different rooms, one of which contained scent previously shown to create positive feelings. Eighty-four per cent of participants in the study reported that they were more likely to buy the running shoes in the scented room."
+          ],
+          [
+            "D",
+            "Scent research also indicated a direct influence on improving sociability. A recent study found that when environments were sprayed with scents linked with hygiene, individuals reported a desire to connect with those who were in the vicinity. Advertisers thus have greater power to influence consumers than was previously thought."
+          ]
+        ]
+      },
+      "items": [
+        "1. People wanted to connect with others nearby.",
+        "2. 84% were more likely to buy a product."
+      ]
+    },
+    {
+      "key": "ematch",
+      "name": "句尾匹配",
+      "mins": 3,
+      "instr": "Complete each sentence with the correct ending, A-D, below.",
+      "kind": "match",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "optionLabels": [
+        "A  because it grows very quickly.",
+        "B  because building codes lag behind.",
+        "C  because it is heavier than steel.",
+        "D  because it never decays."
+      ],
+      "article": {
+        "title": "The Science of Building with Bamboo",
+        "passage": [
+          [
+            "A",
+            "Bamboo has been used as a building material for thousands of years across Asia and South America. Recently, engineers in Europe and North America have begun to take the plant seriously as a sustainable alternative to steel and concrete, whose production is responsible for a significant share of global carbon emissions."
+          ],
+          [
+            "B",
+            "The appeal of bamboo lies in its remarkable strength-to-weight ratio. Some species have a tensile strength comparable to that of mild steel, yet weigh a fraction as much. Bamboo also grows extraordinarily quickly, with certain species adding almost a metre in a single day, making it a rapidly renewable resource."
+          ],
+          [
+            "C",
+            "There are, however, challenges. Untreated bamboo is vulnerable to insects and fungal decay, and its performance varies widely between species and even between individual stems. Engineers have therefore developed treatment processes and grading systems to ensure consistency and durability in construction."
+          ],
+          [
+            "D",
+            "A typical bamboo culm consists of hollow segments separated by solid joints known as nodes. The outer wall is dense and fibrous, while the inner layers are softer. Understanding this structure is essential for designing joints that transfer loads effectively without splitting the material."
+          ],
+          [
+            "E",
+            "Advocates argue that with proper treatment and engineering, bamboo could play a major role in low-carbon construction, particularly in regions where it grows naturally. Critics counter that building codes in many countries have yet to catch up, limiting its use in large-scale projects."
+          ]
+        ]
+      },
+      "items": [
+        "1. Bamboo is considered rapidly renewable",
+        "2. Large-scale use is currently limited"
+      ]
+    },
+    {
+      "key": "scomplete",
+      "name": "句子填空",
+      "mins": 4.5,
+      "instr": "用文中不超过两个词完成句子。",
+      "kind": "gap",
+      "items": [
+        [
+          "1. Produce grown near consumers cuts down on ",
+          " emissions."
+        ],
+        [
+          "2. Enclosed systems reuse ",
+          " to save resources."
+        ],
+        [
+          "3. Start-up costs for vertical farms remain ",
+          "."
+        ]
+      ]
+    },
+    {
+      "key": "summary",
+      "name": "摘要/笔记/表格填空",
+      "mins": 3,
+      "instr": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "kind": "gap",
+      "summaryTitle": "BAMBOO AS A MATERIAL",
+      "summaryText": "Bamboo offers a high strength-to-weight ratio, with some species matching the tensile strength of mild (38) ______. Because untreated stems can suffer from insects and (39) ______, engineers apply treatment processes before use.",
+      "article": {
+        "title": "The Science of Building with Bamboo",
+        "passage": [
+          [
+            "A",
+            "Bamboo has been used as a building material for thousands of years across Asia and South America. Recently, engineers in Europe and North America have begun to take the plant seriously as a sustainable alternative to steel and concrete, whose production is responsible for a significant share of global carbon emissions."
+          ],
+          [
+            "B",
+            "The appeal of bamboo lies in its remarkable strength-to-weight ratio. Some species have a tensile strength comparable to that of mild steel, yet weigh a fraction as much. Bamboo also grows extraordinarily quickly, with certain species adding almost a metre in a single day, making it a rapidly renewable resource."
+          ],
+          [
+            "C",
+            "There are, however, challenges. Untreated bamboo is vulnerable to insects and fungal decay, and its performance varies widely between species and even between individual stems. Engineers have therefore developed treatment processes and grading systems to ensure consistency and durability in construction."
+          ],
+          [
+            "D",
+            "A typical bamboo culm consists of hollow segments separated by solid joints known as nodes. The outer wall is dense and fibrous, while the inner layers are softer. Understanding this structure is essential for designing joints that transfer loads effectively without splitting the material."
+          ],
+          [
+            "E",
+            "Advocates argue that with proper treatment and engineering, bamboo could play a major role in low-carbon construction, particularly in regions where it grows naturally. Critics counter that building codes in many countries have yet to catch up, limiting its use in large-scale projects."
+          ]
+        ]
+      },
+      "items": [
+        [
+          "38. ",
+          " (mild ___)"
+        ],
+        [
+          "39. ",
+          " (insects and ___)"
+        ]
+      ]
+    },
+    {
+      "key": "diagram",
+      "name": "示意图标注填空",
+      "mins": 1.5,
+      "instr": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage.",
+      "kind": "gap",
+      "groupLabel": "Question 40",
+      "diagramSvg": "<svg viewBox=\"0 0 260 150\" width=\"100%\" height=\"140\"><g stroke=\"#8bbf6a\" stroke-width=\"1.6\" fill=\"#e7f2dc\"><rect x=\"90\" y=\"20\" width=\"52\" height=\"36\"/><rect x=\"90\" y=\"56\" width=\"52\" height=\"36\"/><rect x=\"90\" y=\"92\" width=\"52\" height=\"36\"/></g><line x1=\"142\" y1=\"40\" x2=\"215\" y2=\"40\" stroke=\"#8bbf6a\" stroke-width=\"1.6\"/><text x=\"222\" y=\"45\" font-size=\"16\" fill=\"#7a6f5a\" font-weight=\"700\">?</text></svg>",
+      "article": {
+        "title": "The Science of Building with Bamboo",
+        "passage": [
+          [
+            "A",
+            "Bamboo has been used as a building material for thousands of years across Asia and South America. Recently, engineers in Europe and North America have begun to take the plant seriously as a sustainable alternative to steel and concrete, whose production is responsible for a significant share of global carbon emissions."
+          ],
+          [
+            "B",
+            "The appeal of bamboo lies in its remarkable strength-to-weight ratio. Some species have a tensile strength comparable to that of mild steel, yet weigh a fraction as much. Bamboo also grows extraordinarily quickly, with certain species adding almost a metre in a single day, making it a rapidly renewable resource."
+          ],
+          [
+            "C",
+            "There are, however, challenges. Untreated bamboo is vulnerable to insects and fungal decay, and its performance varies widely between species and even between individual stems. Engineers have therefore developed treatment processes and grading systems to ensure consistency and durability in construction."
+          ],
+          [
+            "D",
+            "A typical bamboo culm consists of hollow segments separated by solid joints known as nodes. The outer wall is dense and fibrous, while the inner layers are softer. Understanding this structure is essential for designing joints that transfer loads effectively without splitting the material."
+          ],
+          [
+            "E",
+            "Advocates argue that with proper treatment and engineering, bamboo could play a major role in low-carbon construction, particularly in regions where it grows naturally. Critics counter that building codes in many countries have yet to catch up, limiting its use in large-scale projects."
+          ]
+        ]
+      },
+      "items": [
+        [
+          "40. The solid joints of a culm are called ",
+          "."
+        ]
+      ]
+    },
+    {
+      "key": "short",
+      "name": "简答题",
+      "mins": 3,
+      "instr": "Answer the questions. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+      "kind": "gap",
+      "groupLabel": "Questions 26-27",
+      "boxInput": true,
+      "article": {
+        "title": "Persuasion and Smell",
+        "passage": [
+          [
+            "A",
+            "The link between smell and memory is well established: most people have experienced the phenomenon of unexpectedly encountering a smell, perhaps the scent of a particular flower, which brings back a flood of long-forgotten memories. The fact that smell can conjure up feelings, whether enjoyable or unpleasant, is also undeniable."
+          ],
+          [
+            "B",
+            "The olfactory system is the oldest sensory system in mammals and can process about 10,000 different odours. When people smell something, its scent enters the nose and is transmitted to the olfactory bulb, which forms part of the limbic system. Briefly put, the limbic system is a set of structures in the brain that govern emotional responses and memories."
+          ],
+          [
+            "C",
+            "A commercial rather than moral experiment was undertaken with footwear. Two identical pairs of branded running shoes were placed in two different rooms, one of which contained scent previously shown to create positive feelings. Eighty-four per cent of participants in the study reported that they were more likely to buy the running shoes in the scented room."
+          ],
+          [
+            "D",
+            "Scent research also indicated a direct influence on improving sociability. A recent study found that when environments were sprayed with scents linked with hygiene, individuals reported a desire to connect with those who were in the vicinity. Advertisers thus have greater power to influence consumers than was previously thought."
+          ]
+        ]
+      },
+      "items": [
+        [
+          "26  Which part of the brain does the olfactory bulb belong to? ",
+          ""
+        ],
+        [
+          "27  How many odours can the olfactory system process? ",
+          ""
+        ]
+      ]
+    }
+  ],
+  "fallbackArticle": {
+    "title": "The Migration of Monarch Butterflies",
+    "passage": [
+      [
+        "A",
+        "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world, travelling up to 4,000 kilometres from Canada and the northern United States to the forests of central Mexico. What makes this migration so extraordinary is that no single butterfly completes the round trip."
+      ],
+      [
+        "B",
+        "Scientists have long been puzzled by how the insects navigate. Recent research suggests that monarchs rely on a combination of the position of the sun and an internal magnetic compass that allows them to maintain a consistent southward bearing even on cloudy days."
+      ],
+      [
+        "C",
+        "The overwintering sites in Mexico were unknown to scientists until 1975, when a research team finally located the dense colonies clinging to oyamel fir trees at high altitude. The discovery raised urgent questions about conservation, as logging threatened the very forests the butterflies depend on."
+      ],
+      [
+        "D",
+        "Climate change now poses an additional threat. Warmer temperatures disrupt the delicate timing of migration, and unusual weather events can devastate colonies that have gathered in a single location. Only monarchs born in late summer make the migration, and it may be their great-grandchildren that return the following year."
+      ]
+    ]
+  }
+}

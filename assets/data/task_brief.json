@@ -1,0 +1,408 @@
+{
+  "TF_BRIEF": {
+    "reading": {
+      "wordfill": {
+        "mod": "阅读",
+        "title": "补全单词",
+        "desc": "在短段落中补齐单词缺失的字母，恢复文章原貌。",
+        "steps": [
+          "先通读上下文，判断缺失单词的含义。",
+          "逐空补齐字母，字母数会明确显示。",
+          "检查拼写，确认整段读起来通顺。"
+        ],
+        "time": "每段 90 秒；归零后转为红色正计时，仍可继续作答。",
+        "chips": [
+          "上下文推断",
+          "显示字母数",
+          "逐空补齐",
+          "自动保存"
+        ],
+        "cta": "开始本项训练"
+      },
+      "liferead": {
+        "mod": "阅读",
+        "title": "生活阅读",
+        "desc": "阅读通知、邮件等日常材料，回答相关问题。",
+        "steps": [
+          "先通读材料，抓住时间、地点与要求。",
+          "逐题回到原文，找出作答依据。",
+          "提交后查看逐题解析。"
+        ],
+        "time": "每题 40 秒建议用时；这是软提示，超时后仍可继续作答。",
+        "chips": [
+          "日常材料",
+          "定位作答",
+          "逐题解析"
+        ],
+        "cta": "开始本项训练"
+      },
+      "acadread": {
+        "mod": "阅读",
+        "title": "学术阅读",
+        "desc": "阅读一段学术文章，回答相关问题。",
+        "steps": [
+          "浏览文章结构，标出关键句。",
+          "逐题回到原文，找出作答依据。",
+          "提交后查看逐题解析。"
+        ],
+        "time": "每题 40 秒建议用时；这是软提示，超时后仍可继续作答。",
+        "chips": [
+          "学术长文",
+          "定位作答",
+          "逐题解析"
+        ],
+        "cta": "开始本项训练"
+      }
+    },
+    "listening": {
+      "respond": {
+        "mod": "听力",
+        "title": "听后选择回应",
+        "desc": "听一个简短的问题或陈述，选出最恰当的回应。",
+        "steps": [
+          "仔细听音频，本项音频只播放一次。",
+          "从三个选项中选出最自然的回应。",
+          "确认后自动进入下一题。"
+        ],
+        "time": "每题 20 秒作答时间，音频仅播放一次。",
+        "chips": [
+          "短音频",
+          "仅播放一次",
+          "三选一"
+        ],
+        "cta": "开始本项训练"
+      },
+      "convo": {
+        "mod": "听力",
+        "title": "听对话",
+        "desc": "听一段简短的日常对话，回答相关问题。",
+        "steps": [
+          "先完整听一遍对话。",
+          "逐题作答，需要时可以回听。",
+          "全部完成后查看批改。"
+        ],
+        "time": "每题 20 秒建议用时；音频支持回听。",
+        "chips": [
+          "日常对话",
+          "可回听",
+          "逐题作答"
+        ],
+        "cta": "开始本项训练"
+      },
+      "announce": {
+        "mod": "听力",
+        "title": "听通知",
+        "desc": "听一段校园通知，回答相关问题。",
+        "steps": [
+          "留意通知的目的、时间与地点。",
+          "逐题作答，需要时可以回听。",
+          "全部完成后查看批改。"
+        ],
+        "time": "每题 20 秒建议用时；音频支持回听。",
+        "chips": [
+          "校园通知",
+          "可回听",
+          "逐题作答"
+        ],
+        "cta": "开始本项训练"
+      },
+      "lecture": {
+        "mod": "听力",
+        "title": "听学术讲座",
+        "desc": "听一段简短的学术讲座，回答相关问题。",
+        "steps": [
+          "听出讲座的主题与展开结构。",
+          "记下关键概念和举例。",
+          "逐题作答并查看批改。"
+        ],
+        "time": "每题 30 秒建议用时；音频支持回听。",
+        "chips": [
+          "学术讲座",
+          "可回听",
+          "逐题作答"
+        ],
+        "cta": "开始本项训练"
+      }
+    },
+    "writing": {
+      "sent": {
+        "mod": "写作",
+        "title": "排列成句",
+        "desc": "将所有给定词块排列成一个语法正确、语境恰当的句子。",
+        "steps": [
+          "阅读情境，先判断句子需要表达的含义。",
+          "点击或拖动每个词块到答案区。",
+          "调整词块顺序，并检查语法、语序和标点。"
+        ],
+        "time": "每个句子显示 40 秒建议用时；这是软提示，超时后仍可继续调整。",
+        "chips": [
+          "词块区",
+          "答案区",
+          "拖动排序",
+          "使用全部词块"
+        ],
+        "cta": "开始本项训练"
+      },
+      "email": {
+        "mod": "写作",
+        "title": "写邮件",
+        "desc": "针对一个真实情境写一封邮件，覆盖题目给出的三个要点。",
+        "steps": [
+          "读清情境，先确定收件人和语气。",
+          "在正文里覆盖三个要点，不遗漏。",
+          "检查语法、拼写与邮件格式后提交。"
+        ],
+        "time": "本题 7 分钟，正文建议不少于 20 词。",
+        "chips": [
+          "情境说明",
+          "三个要点",
+          "收件人与主题",
+          "分栏计时"
+        ],
+        "cta": "开始本项训练"
+      },
+      "disc": {
+        "mod": "写作",
+        "title": "学术讨论",
+        "desc": "阅读教授的问题与两位同学的观点，然后发表你的讨论帖。",
+        "steps": [
+          "读教授的问题和已有的两条观点。",
+          "写出自己的立场，并给出理由或例子。",
+          "检查词数，不少于 100 词后提交。"
+        ],
+        "time": "本题 10 分钟，回应不少于 100 词。",
+        "chips": [
+          "教授提问",
+          "同学观点",
+          "不少于 100 词"
+        ],
+        "cta": "开始本项训练"
+      }
+    },
+    "speaking": {
+      "retell": {
+        "mod": "口语",
+        "title": "听后复述",
+        "desc": "听一段话，然后尽可能原样地把它复述出来。",
+        "steps": [
+          "音频只播放一次，仔细听清内容。",
+          "听完确认后开始录音。",
+          "在 7 秒内清晰复述这段话。"
+        ],
+        "time": "每题录音 7 秒，音频仅播放一次。",
+        "chips": [
+          "仅播放一次",
+          "听完确认",
+          "录音复述"
+        ],
+        "cta": "开始本项训练"
+      },
+      "interview": {
+        "mod": "口语",
+        "title": "接受访谈",
+        "desc": "听访谈者的问题，然后用自己的话作答。",
+        "steps": [
+          "逐题听清访谈者的提问。",
+          "没有准备时间，听到后立即作答。",
+          "每题约 45 秒，可重录一次。"
+        ],
+        "time": "每题录音 45 秒，不提供准备时间。",
+        "chips": [
+          "无准备时间",
+          "每题 45 秒",
+          "可重录"
+        ],
+        "cta": "开始本项训练"
+      },
+      "pron": {
+        "mod": "口语",
+        "title": "发音专项训练",
+        "desc": "针对音标、连读、重音与语调做跟读专项练习。",
+        "steps": [
+          "先听示范发音。",
+          "跟读并录音。",
+          "对比评分，针对薄弱处重练。"
+        ],
+        "time": "单次训练约 5–8 分钟。",
+        "chips": [
+          "听示范",
+          "跟读录音",
+          "对比评分"
+        ],
+        "cta": "开始本项训练"
+      }
+    }
+  },
+  "TF_TASK_ICON": {
+    "wordfill": "tf_ic_wordfill",
+    "liferead": "tf_ic_liferead",
+    "acadread": "tf_ic_acadread",
+    "respond": "tf_ic_respond",
+    "convo": "tf_ic_convo",
+    "announce": "tf_ic_announce",
+    "lecture": "tf_ic_lecture",
+    "sent": "tf_ic_sent",
+    "email": "tf_ic_email",
+    "disc": "tf_ic_disc",
+    "retell": "tf_ic_retell",
+    "interview": "tf_ic_interview",
+    "pron": "tf_ic_pron"
+  },
+  "startup": {
+    "startTfDailyWords": {
+      "tfDwPara": 0,
+      "tfDwVals": {},
+      "tfDwLeft": 90,
+      "tfDwOver": false,
+      "tfDwUp": 0,
+      "tfDwAlerted": false,
+      "target": "tfDailyWords"
+    },
+    "startTfDailyLife": {
+      "tfDlIdx": 0,
+      "tfDlVals": {},
+      "tfDlLeft": 40,
+      "tfDlOver": false,
+      "tfDlUp": 0,
+      "tfDlAlerted": false,
+      "target": "tfDailyLife"
+    },
+    "startTfDailyAcad": {
+      "tfDaIdx": 0,
+      "tfDaVals": {},
+      "tfDaLeft": 40,
+      "tfDaOver": false,
+      "tfDaUp": 0,
+      "tfDaAlerted": false,
+      "target": "tfDailyAcad"
+    },
+    "startTfDailyResp": {
+      "tfDrIdx": 0,
+      "tfDrPicks": {},
+      "tfDrNotes": {},
+      "tfDrPhase": "play",
+      "tfDrAudio": 0,
+      "tfDrLeft": 20,
+      "tfDrOver": false,
+      "tfDrUp": 0,
+      "tfDrAlerted": false,
+      "target": "tfDailyResp"
+    },
+    "startTfDailyConvo": {
+      "tfDcIdx": 0,
+      "tfDcPicks": {},
+      "tfDcNotes": {},
+      "tfDcPhase": "play",
+      "tfDcAudio": 0,
+      "tfDcLeft": 20,
+      "tfDcOver": false,
+      "tfDcUp": 0,
+      "tfDcAlerted": false,
+      "target": "tfDailyConvo"
+    },
+    "startTfDailyAnn": {
+      "tfAnIdx": 0,
+      "tfAnPicks": {},
+      "tfAnNotes": {},
+      "tfAnPhase": "play",
+      "tfAnAudio": 0,
+      "tfAnLeft": 20,
+      "tfAnOver": false,
+      "tfAnUp": 0,
+      "tfAnAlerted": false,
+      "target": "tfDailyAnn"
+    },
+    "startTfDailyLect": {
+      "tfLcIdx": 0,
+      "tfLcPicks": {},
+      "tfLcNotes": {},
+      "tfLcPhase": "play",
+      "tfLcAudio": 0,
+      "tfLcLeft": 30,
+      "tfLcOver": false,
+      "tfLcUp": 0,
+      "tfLcAlerted": false,
+      "target": "tfDailyLect"
+    },
+    "startTfDailySent": {
+      "tfw1Daily": true,
+      "tfw1Idx": 0,
+      "tfw1Skipped": 1,
+      "tfw1Left": 410,
+      "tfw1Done": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tfw1Seen": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tfw1Slots": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "tfwTab": "topic",
+      "tfwTabPage": "tfWr1Q",
+      "target": "tfWr1Q"
+    },
+    "startTfDailyEmail": {
+      "tfw2Daily": true,
+      "tfw2Subj": "",
+      "tfw2Body": "",
+      "tfw2Left": 420,
+      "tfw2ReqOpen": false,
+      "tfw2ReqChecked": [
+        false,
+        false,
+        false
+      ],
+      "tfwTab": "topic",
+      "tfwTabPage": "tfWr2Q",
+      "target": "tfWr2Q"
+    },
+    "startTfDailyDisc": {
+      "tfw3Daily": true,
+      "tfw3Body": "",
+      "tfw3Left": 600,
+      "tfwTab": "topic",
+      "tfwTabPage": "tfWr3Q",
+      "target": "tfWr3Q"
+    },
+    "startTfDailyRetell": {
+      "tfRtIdx": 0,
+      "tfRtPhase": "play",
+      "tfRtAudio": 0,
+      "tfRtAnsUp": 0,
+      "tfRtRateIdx": 1,
+      "target": "tfDailyRetell"
+    },
+    "startTfDailyInterview": {
+      "tfIvIdx": 0,
+      "tfIvPhase": "play",
+      "tfIvAudio": 0,
+      "tfIvAnsUp": 0,
+      "tfIvRateIdx": 1,
+      "target": "tfDailyInterview"
+    }
+  }
+}

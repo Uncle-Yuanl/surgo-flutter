@@ -1,0 +1,377 @@
+{
+  "formatVersion": 1,
+  "sourceFiles": {
+    "app.js": "21a8e34203c3376a36afbfad6e8152adc9c6edccf064704d77780ec97300eb32",
+    "index.html": "1c6efae1d7045151e6ef392912cdcc9f26c62d8e83f61301f0d3fddc8c5c7a72",
+    "questions.js": "bd56e12faf049ee894e6e1351888a37e8e5f410e56d55b6769e0d68cb440ea6b",
+    "i18n.js": "04630583c0a1dc8cffdd02fe085138392b8a13cc56c7761689b7115029f55f9b"
+  },
+  "assets": [
+    {
+      "path": "app_bg.png",
+      "sha256": "11cae8e8061a627d376acde18858649a71b71ac4b66e6b0ec8e39aa5759422b5"
+    },
+    {
+      "path": "correction_otter.png",
+      "sha256": "911da6529d29c40de398502ae686a1bb7557ea75c6b041e6739d5b9afd0097f2"
+    },
+    {
+      "path": "data_chart.svg",
+      "sha256": "4c4d9d3f841c2b17b9cc6b5ddcf18ca2d4b51897a4cba752e1d86c905415c243"
+    },
+    {
+      "path": "fonts/violet-sans.ttf",
+      "sha256": "ab03804669e19cb4f522310d1e0957ab3a0e356a858f239a1d880bfb0ff790c9"
+    },
+    {
+      "path": "Frame 1000003169.png",
+      "sha256": "1f62487b05125c5064010ebdcd0b13d69d6df17fe3015bb66ec1cee8dc8518f4"
+    },
+    {
+      "path": "Frame 365.png",
+      "sha256": "4a951505a0c50e841ccf89a7adb38dfe195f385f41267b76e640b8bbcc749825"
+    },
+    {
+      "path": "home_icon.svg",
+      "sha256": "356e0626288d5a3c73bdabc79af10ece584674ca0d06d3d5bfc3b78816775d97"
+    },
+    {
+      "path": "home.svg",
+      "sha256": "e259ae521354d84fe7fbcd291951cebb701fdd564b8d7d68960a64da241d5a1f"
+    },
+    {
+      "path": "ic_back15.svg",
+      "sha256": "358de68ff3c3a46d503ba163ad3f59d11c93dc6247e27c7ffa44205f2890463e"
+    },
+    {
+      "path": "ic_fwd15.svg",
+      "sha256": "992568cd7926e05a4e1367a5ac4ded6ce29c702746ddb27ffadf97ae3ce81fa7"
+    },
+    {
+      "path": "ic_l_conv.svg",
+      "sha256": "acdd28052b1714fc56a0eb7004fc01a42e7335525c9393d8f46be3e845fddcd3"
+    },
+    {
+      "path": "ic_l_discussion.svg",
+      "sha256": "5c261cd74d112e468d15a50667869e838a13c50e0dadb55256bfbb1460a48961"
+    },
+    {
+      "path": "ic_l_lecture.svg",
+      "sha256": "fb92f963ae90db54facd35c38b95c344db48c2dd375331e73d921fe8fa800244"
+    },
+    {
+      "path": "ic_l_monologue.svg",
+      "sha256": "4b44708d35b23b48968067c0347c2dbb575f6c0ae68c7e0aa05f3a78ca13d140"
+    },
+    {
+      "path": "ic_listening.png",
+      "sha256": "3ab4956587d8ced097d1ef25503cd5ab2325603176f5fe9134b7061c6f8b4996"
+    },
+    {
+      "path": "ic_reading_goal.png",
+      "sha256": "415fcf9c2386d0f7fc1b101b090e5c9d8ba34d67806d793a2af4c5ee47375774"
+    },
+    {
+      "path": "ic_reading_goal2.png",
+      "sha256": "1f637e7870d127e8745ad61ad0f4d47aefb6ca7f1a1e0fba05c4d0ad0055c87e"
+    },
+    {
+      "path": "ic_reading.png",
+      "sha256": "415fcf9c2386d0f7fc1b101b090e5c9d8ba34d67806d793a2af4c5ee47375774"
+    },
+    {
+      "path": "ic_replay.svg",
+      "sha256": "2921befcc2bd52a7ad27640333936b7a402edbe0f040fefef0c04513b066aa2a"
+    },
+    {
+      "path": "ic_s_discussion.svg",
+      "sha256": "60d41fc2b1278afb05b212c4dd4c031d30d5a7bb34d11e7558f3607cc39885ca"
+    },
+    {
+      "path": "ic_s_interview.svg",
+      "sha256": "a19e289b0c2421d27482ac2b2e351ade0d90aa789923680237252815dae31fce"
+    },
+    {
+      "path": "ic_s_monologue.svg",
+      "sha256": "07abbd30b690f53f6991a13765ac89d27cda121aca7d1e102ac66252d7bc7616"
+    },
+    {
+      "path": "ic_s_pron.svg",
+      "sha256": "2e3f121fb44f7f9e094f4b2af1d20420de423939cf966aa1c25852161a37888c"
+    },
+    {
+      "path": "ic_speaking.png",
+      "sha256": "2ddf3e97d95038febc4aa6c9cf5e6157de2954c7bff75cdeb309815929beadaa"
+    },
+    {
+      "path": "ic_vocab.png",
+      "sha256": "ab92a91d75cfa81f22b2e524525557c6d24edc8902c92d8f631a6020f78fd109"
+    },
+    {
+      "path": "ic_w_letter.svg",
+      "sha256": "a6302c70e4287b9aacde8dc68b0578a70f7e67f1688453d9e224d2c374e7d2fc"
+    },
+    {
+      "path": "ic_w_task1.svg",
+      "sha256": "2c6b8617be9ef76e789b0e72361d3c11bb8b8bd8547b22d2589ec5ced533db33"
+    },
+    {
+      "path": "ic_w_task2.svg",
+      "sha256": "842d14c66d45059468c8118bb074debffd607d466b91abdcc10fc4544e6d7eea"
+    },
+    {
+      "path": "ic_writing.png",
+      "sha256": "694532e1031910fe10bdeafdd390a34c4e36271e07a6392b64ae6e93cba87744"
+    },
+    {
+      "path": "ic3_listening.png",
+      "sha256": "32eed3ab737993b1f034b24e53ba7cd7817918e471f423150023e01d55ba46cb"
+    },
+    {
+      "path": "ic3_preparing.png",
+      "sha256": "bcb2bb130fdef97dea8d2cdf120679e55db1eaa197b3262b56bc1ee43d6d00d8"
+    },
+    {
+      "path": "ic3_reading.png",
+      "sha256": "bcae5d97d1d13988608b53ce1446a66861cc87ac30f7f424fdeed8a7c55357a7"
+    },
+    {
+      "path": "ic3_speaking.png",
+      "sha256": "d4153da04a738e15176a97d16df9774958389eecb09125f311917817f8b7d6b9"
+    },
+    {
+      "path": "ic3_vocab.png",
+      "sha256": "b307f5f18e823f3c3004d79b2631487f6036e2f92ab299f4d0f958d26bc0abe9"
+    },
+    {
+      "path": "ic3_writing.png",
+      "sha256": "8852a517d1293854a81b6c9edf879b28528a19f0075e6a4781efa09c6e672fee"
+    },
+    {
+      "path": "mk_listening.png",
+      "sha256": "0a9fae97401af63e753a374004180661dec52b7a1ef6b5b5d830677d2d470ea3"
+    },
+    {
+      "path": "mk_reading.png",
+      "sha256": "680064b4e712c78098aaadaa44515787c1d28d2d6a7beba5b7ae135a42ac4d10"
+    },
+    {
+      "path": "mk_speaking.png",
+      "sha256": "df3de37ad5f505376c7339a7aa03cc3cba407bc487fc7ee3278cb060836cc0de"
+    },
+    {
+      "path": "mk_test.png",
+      "sha256": "1e2e4128e40697bf387b2ff7541130b9cd3583c977b7da0a67771f1284b7a2e3"
+    },
+    {
+      "path": "mk_writing.png",
+      "sha256": "4966d2b194167ec7b214491c61f602f91c402812ac922ad5c4b473cd91eafb29"
+    },
+    {
+      "path": "msg_icon.svg",
+      "sha256": "24830063220f700753a133f9545119497f2d3c2a86bb5d6247327d9a5f855cdd"
+    },
+    {
+      "path": "nav_exam.svg",
+      "sha256": "3a91eb90f3f9b642b65b36ddab2228dcc1da80dbcb29f9a0fffe1900c65199a7"
+    },
+    {
+      "path": "nav_home_full.png",
+      "sha256": "4a951505a0c50e841ccf89a7adb38dfe195f385f41267b76e640b8bbcc749825"
+    },
+    {
+      "path": "nav_home.png",
+      "sha256": "795788c3255f51f4ac146a9b352fa00f7d4c520a3b130bfb46b9017fbd98057f"
+    },
+    {
+      "path": "nav_pencil.png",
+      "sha256": "c8c278467a67b7a9842c893af9181d6cf171f732d9d2ec357a1a4ad1c4fbd0d4"
+    },
+    {
+      "path": "nav_profile_full.png",
+      "sha256": "1f62487b05125c5064010ebdcd0b13d69d6df17fe3015bb66ec1cee8dc8518f4"
+    },
+    {
+      "path": "nav_profile.png",
+      "sha256": "9f0a5886c4d9daa76d4cd84c8303ccfb95d43af1c591062ed7f18b086db1ac6f"
+    },
+    {
+      "path": "orb_ask.svg",
+      "sha256": "9cfa8c9bb668a0154c2f33e7231d1461f6e3233fe8297f63c5b3f023ae02f79d"
+    },
+    {
+      "path": "otter_banner.png",
+      "sha256": "9646d15ad7affd80c5feef2bec5630ff7340b6db7a5a238eb85353870c863964"
+    },
+    {
+      "path": "otter_glasses.png",
+      "sha256": "4f559261983d62e5309c578a560deb44494a72ff90e151866d3092bbce93f9db"
+    },
+    {
+      "path": "otter_real.png",
+      "sha256": "6630d61460501ba381de58d1ba2dacb3c4530968d63f4f2fc3c990a7f1ac49c8"
+    },
+    {
+      "path": "otter_start.png",
+      "sha256": "29571fc18e38bc12e49ee3958d0a7f6b70a338d3e4a0c97a084942c79c2c1b53"
+    },
+    {
+      "path": "otter_start4.png",
+      "sha256": "c7f559c07193e6b7c7c9392f2da617ea3f1bde8b1a608ecbfd8694473852f3ea"
+    },
+    {
+      "path": "otter_start5.png",
+      "sha256": "b5228e4817c63090a6a82d5f1f33237fc9af01e47f47ea9a61098cdb62b1ecd0"
+    },
+    {
+      "path": "otter_study.png",
+      "sha256": "75e06cc0f983042bf2dc8607cb0820604d2737367bf6527b6c0631a6e56ca7ea"
+    },
+    {
+      "path": "otter_welcome.png",
+      "sha256": "0c70e583952883c9775cfcd73d57cb986fcded4df3f6dd62f1a16e32dc4ef11c"
+    },
+    {
+      "path": "otter.png",
+      "sha256": "ba380fa0c5e3e59ab037672a2179aec9a82bd90a764b38d5d64a862875a34a5b"
+    },
+    {
+      "path": "otter1.png",
+      "sha256": "8937b5bc8566e54e95aa0f9528924ae2cfdfbb7cb7910465cc0306b11eb88311"
+    },
+    {
+      "path": "otter3.png",
+      "sha256": "7efc3192ab8e6146b14e80d45f4ae7f066542e2358bdb0e38de580f81eccf0d6"
+    },
+    {
+      "path": "otter6_top.png",
+      "sha256": "481104abd041e44a13f9ae34815b4086c26c15f661d81cb42587909e0eba7a67"
+    },
+    {
+      "path": "otter6.png",
+      "sha256": "8e19abdd19a02ec2be4b915cbf961c771fd3888a27f2457923d5879f61dfcd1a"
+    },
+    {
+      "path": "otter7.png",
+      "sha256": "736e42c48e8cf0412aa7903f2718247f3c089b93431a64c9b91d9c3cc54d7176"
+    },
+    {
+      "path": "otter88.png",
+      "sha256": "297879c19d38a2da36e7cac27d782462c262ac6bc9c352a7a8d509718374f7e1"
+    },
+    {
+      "path": "pick_full.svg",
+      "sha256": "26930509c0fac9ad4f8d4dd3da33a435232d205420ca034f068bfeeb979ca75f"
+    },
+    {
+      "path": "pick_single.svg",
+      "sha256": "19bae70825b14626df16195fd189dc4fce4fdae4b4039fe511c277c101a9d597"
+    },
+    {
+      "path": "profile_icon.svg",
+      "sha256": "2c3cb04501a8adc4fd8f00593600d04fd8d0747e9007b7657bcc64c5ba428756"
+    },
+    {
+      "path": "radar.svg",
+      "sha256": "336c7fee32f83265ea7518ce74fcd12dcf46fc0f61adfdb214523c6d3cb933c6"
+    },
+    {
+      "path": "ready.mp4",
+      "sha256": "fca8953dde84aa511387e5e42245a03a3d3ee1450b067e125d1bcfa7e9975f76"
+    },
+    {
+      "path": "report_bg.png",
+      "sha256": "a08d56e8591ebd95625c26ca3b434c312ac34d83032f286c9aa37b45fc727c79"
+    },
+    {
+      "path": "speak-fill 1.png",
+      "sha256": "0383878d3074085607ed584f039c3df0829d5009ca917b6a017e13ce3778d988"
+    },
+    {
+      "path": "status_bar.png",
+      "sha256": "e3744f505fc3234d9ba68b24b58618bad67cff4f3d26f789d013f552f8b57817"
+    },
+    {
+      "path": "surgo_logo.png",
+      "sha256": "9b7fa0d4fe4632dff071e89d641ece90acf80e03b48bd9e1027dbc74a39bfcaf"
+    },
+    {
+      "path": "tf_ic_acadread.svg",
+      "sha256": "62fa5d6c69c84cdc3a21a5c6eabdb35abcc2ff52cf78ceb9fe82a81c1ea54ebd"
+    },
+    {
+      "path": "tf_ic_announce.svg",
+      "sha256": "6d7c66e62aab9a624b4d94ceeb9486c6ba13177be0a6a1867a446aaf7d23d224"
+    },
+    {
+      "path": "tf_ic_convo.svg",
+      "sha256": "21d37a8ee86c1007a0e5fda8277eaa89e91134af29af63312095b9cc5477d013"
+    },
+    {
+      "path": "tf_ic_disc.svg",
+      "sha256": "2a4fa36230f4030d494c0e180649c5f38d97773fad5db53273f9d2b3e24b111f"
+    },
+    {
+      "path": "tf_ic_email.svg",
+      "sha256": "e1100e3b7879c3b6d927c6a76f8898a9e95e32798aeb622a0ac95a563a4611d4"
+    },
+    {
+      "path": "tf_ic_interview.svg",
+      "sha256": "124c38749e9370b3733131b07a5d54613b69e60fb1969e8cf3c5cbfeed0ca674"
+    },
+    {
+      "path": "tf_ic_lecture.svg",
+      "sha256": "f98765a21a2b30343131e5fd092afd2aa5fe86766c7762d228535c7f289db79b"
+    },
+    {
+      "path": "tf_ic_liferead.svg",
+      "sha256": "fc68693190e9e67525d58732cade8479daa9621951b20bb1ef4d0f28810daa77"
+    },
+    {
+      "path": "tf_ic_pron.svg",
+      "sha256": "b055b3e63521481e5e9795ea575beaa0bc5a52a9431b3f37d3ede328a0b72e95"
+    },
+    {
+      "path": "tf_ic_respond.svg",
+      "sha256": "243b8cc1da91b6711112ae0e5e1aa36517494c7e0742aa01e8d7bee5751b0f77"
+    },
+    {
+      "path": "tf_ic_retell.svg",
+      "sha256": "5c94faac1cd843ca5437499a259bd7e4fa161c997b385578dd72aa0175758bb8"
+    },
+    {
+      "path": "tf_ic_sent.svg",
+      "sha256": "19d5472d82f581c88c551ca6b072385aea4d171c6f8d16bb6a691b9b4c7bd598"
+    },
+    {
+      "path": "tf_ic_wordfill.svg",
+      "sha256": "a5f42cd22d51aa433b8be918867ca0c2de9d8530b97b91f772f29f3c3d82ba57"
+    },
+    {
+      "path": "timeup.mp4",
+      "sha256": "976dfc22f2325bf647c0f694be7c536c876eefbe1c600ead619028292067a772"
+    },
+    {
+      "path": "train1.png",
+      "sha256": "b4597d0dbc3cc45298a83ef8f319cde92a869196a04dbc9e59c92f1c0dcab889"
+    },
+    {
+      "path": "train2.png",
+      "sha256": "42d7dd8246f36dfd3bc8e5899c33bdcc8edaa19d890e36806db1b9c0a21e5b28"
+    },
+    {
+      "path": "waiting.mp4",
+      "sha256": "b9e8de8c08a6cea0d99dbd5b15985922840bd7236ec5cff0989a6919fe903140"
+    }
+  ],
+  "tables": {
+    "SURGO_EN": 949,
+    "SURGO_EN_RE": 62,
+    "SURGO_ZH": 428,
+    "SURGO_ZH_RE": 32
+  },
+  "dictionaryCases": 2862,
+  "regexCases": 102,
+  "questionSha256": "ce1d132ddacdf5bd095e3bcf1c68294018df3eed6a2c2de8ce549102a0c8a513",
+  "note": "This verifies exported data, NOT native page/logic equivalence."
+}

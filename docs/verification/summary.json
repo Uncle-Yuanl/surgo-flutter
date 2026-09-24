@@ -1,0 +1,354 @@
+{
+  "generated": "2026-09-25T00:33:49.496667+08:00",
+  "allPassed": true,
+  "originalHashes": {
+    "app.js": "21a8e34203c3376a36afbfad6e8152adc9c6edccf064704d77780ec97300eb32",
+    "index.html": "1c6efae1d7045151e6ef392912cdcc9f26c62d8e83f61301f0d3fddc8c5c7a72",
+    "questions.js": "bd56e12faf049ee894e6e1351888a37e8e5f410e56d55b6769e0d68cb440ea6b",
+    "i18n.js": "04630583c0a1dc8cffdd02fe085138392b8a13cc56c7761689b7115029f55f9b"
+  },
+  "checks": [
+    {
+      "name": "export_continue",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_continue.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.09,
+      "log": "export_continue.log"
+    },
+    {
+      "name": "export_ielts_listening",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_ielts_listening.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.03,
+      "log": "export_ielts_listening.log"
+    },
+    {
+      "name": "export_ielts_mock_listening",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_ielts_mock_listening.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.03,
+      "log": "export_ielts_mock_listening.log"
+    },
+    {
+      "name": "export_ielts_mock_reading",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_ielts_mock_reading.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_ielts_mock_reading.log"
+    },
+    {
+      "name": "export_ielts_mock_speaking",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_ielts_mock_speaking.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_ielts_mock_speaking.log"
+    },
+    {
+      "name": "export_ielts_mock_writing",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_ielts_mock_writing.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_ielts_mock_writing.log"
+    },
+    {
+      "name": "export_mock_listening_oracle",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_mock_listening_oracle.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_mock_listening_oracle.log"
+    },
+    {
+      "name": "export_oral_daily",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_oral_daily.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.03,
+      "log": "export_oral_daily.log"
+    },
+    {
+      "name": "export_reading",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_reading.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_reading.log"
+    },
+    {
+      "name": "export_reading_feedback",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_reading_feedback.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.03,
+      "log": "export_reading_feedback.log"
+    },
+    {
+      "name": "export_source",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_source.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.07,
+      "log": "export_source.log"
+    },
+    {
+      "name": "export_speaking_review",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_speaking_review.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_speaking_review.log"
+    },
+    {
+      "name": "export_task_brief",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_task_brief.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.03,
+      "log": "export_task_brief.log"
+    },
+    {
+      "name": "export_tf_acad",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_tf_acad.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_tf_acad.log"
+    },
+    {
+      "name": "export_tf_listening_daily",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_tf_listening_daily.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_tf_listening_daily.log"
+    },
+    {
+      "name": "export_tf_listening_mock",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_tf_listening_mock.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.03,
+      "log": "export_tf_listening_mock.log"
+    },
+    {
+      "name": "export_tf_reading_mock",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_tf_reading_mock.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_tf_reading_mock.log"
+    },
+    {
+      "name": "export_tf_response",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_tf_response.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_tf_response.log"
+    },
+    {
+      "name": "export_tf_speaking_daily",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_tf_speaking_daily.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.03,
+      "log": "export_tf_speaking_daily.log"
+    },
+    {
+      "name": "export_tf_speaking_mock",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_tf_speaking_mock.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_tf_speaking_mock.log"
+    },
+    {
+      "name": "export_tf_writing",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_tf_writing.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_tf_writing.log"
+    },
+    {
+      "name": "export_tf_writing_feedback",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_tf_writing_feedback.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_tf_writing_feedback.log"
+    },
+    {
+      "name": "export_toefl_life",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_toefl_life.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_toefl_life.log"
+    },
+    {
+      "name": "export_training_wizards",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_training_wizards.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_training_wizards.log"
+    },
+    {
+      "name": "export_writing_legacy",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_writing_legacy.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_writing_legacy.log"
+    },
+    {
+      "name": "export_writing_review",
+      "command": [
+        "node",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_writing_review.cjs",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.02,
+      "log": "export_writing_review.log"
+    },
+    {
+      "name": "source_dom_translations",
+      "command": [
+        "/Users/mikijin/Library/Application Support/violoop/runtime/python/venv/bin/python3",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/export_dom_translation.py",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.03,
+      "log": "source_dom_translations.log"
+    },
+    {
+      "name": "analyze",
+      "command": [
+        "flutter",
+        "analyze"
+      ],
+      "exit": 0,
+      "seconds": 34.21,
+      "log": "analyze.log"
+    },
+    {
+      "name": "test",
+      "command": [
+        "flutter",
+        "test",
+        "--reporter",
+        "expanded"
+      ],
+      "exit": 0,
+      "seconds": 47.8,
+      "log": "test.log"
+    },
+    {
+      "name": "route_mapping",
+      "command": [
+        "/Users/mikijin/Library/Application Support/violoop/runtime/python/venv/bin/python3",
+        "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/generate_route_mapping.py"
+      ],
+      "exit": 0,
+      "seconds": 0.08,
+      "log": "route_mapping.log"
+    },
+    {
+      "name": "build_web",
+      "command": [
+        "flutter",
+        "build",
+        "web",
+        "--release",
+        "--no-web-resources-cdn"
+      ],
+      "exit": 0,
+      "seconds": 22.91,
+      "log": "build_web.log"
+    }
+  ]
+}

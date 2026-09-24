@@ -13,3 +13,11 @@ build/
 
 # 转换过程的中间产物（879 个抽取文件，可随时用 extract_source.py 重新生成）
 _extract/
+
+# 视觉审计产物：17GB / 29 万个截图与抓取结果，可用 tool/visual_capture.cjs 重新生成。
+# 例外：Figma 登录注册设计稿与导出规格要留档，便于后续核对设计。
+artifacts/*
+!artifacts/figma_auth/
+artifacts/figma_auth/*
+!artifacts/figma_auth/spec_all.txt
+!artifacts/figma_auth/page5.json

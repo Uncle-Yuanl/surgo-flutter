@@ -1,0 +1,613 @@
+[
+  {
+    "exam": "ielts",
+    "card": "p1",
+    "task": {
+      "kind": "qa",
+      "list": [
+        "Do you like music?",
+        "What kind of music do you like to listen to?",
+        "Do you prefer sad or happy music?",
+        "Does happy music make you feel more excited?",
+        "Has the music you listen to changed since you were young?",
+        "Where is your hometown?",
+        "What do you like most about your hometown?",
+        "Has your hometown changed much in recent years?",
+        "Would you like to live in your hometown in the future?",
+        "Do many tourists visit your hometown?"
+      ],
+      "topic": "Your studies and daily routine",
+      "prep": 0,
+      "answer": 30
+    },
+    "frames": [
+      {
+        "action": {
+          "call": "startOralExam"
+        },
+        "state": {
+          "phase": "note",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 400
+        },
+        "state": {
+          "phase": "note",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "endSpeech": true
+        },
+        "state": {
+          "phase": "ready",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "call": "oralMic"
+        },
+        "state": {
+          "phase": "rec",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 7000
+        },
+        "state": {
+          "phase": "rec",
+          "index": 0,
+          "note": "",
+          "recSec": 7,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "call": "oralMic"
+        },
+        "state": {
+          "phase": "done",
+          "index": 0,
+          "note": "",
+          "recSec": 7,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "call": "oralRetake"
+        },
+        "state": {
+          "phase": "ready",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "call": "oralMic"
+        },
+        "state": {
+          "phase": "rec",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 30000
+        },
+        "state": {
+          "phase": "done",
+          "index": 0,
+          "note": "",
+          "recSec": 30,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "call": "oralSubmitAnswer"
+        },
+        "state": {
+          "phase": "note",
+          "index": 1,
+          "note": "",
+          "recSec": 30,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 350
+        },
+        "state": {
+          "phase": "note",
+          "index": 1,
+          "note": "",
+          "recSec": 30,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "endSpeech": true
+        },
+        "state": {
+          "phase": "ready",
+          "index": 1,
+          "note": "",
+          "recSec": 30,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      }
+    ]
+  },
+  {
+    "exam": "ielts",
+    "card": "p2",
+    "task": {
+      "kind": "cue",
+      "cue": "Describe a person you know who has a healthy lifestyle",
+      "points": [
+        "where it is",
+        "how often you go there",
+        "what you do there"
+      ],
+      "last": "and explain why you enjoy visiting it.",
+      "list": [
+        "Describe a person you know who has a healthy lifestyle"
+      ],
+      "prep": 60,
+      "answer": 120
+    },
+    "frames": [
+      {
+        "action": {
+          "call": "startOralExam"
+        },
+        "state": {
+          "phase": "note",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 400
+        },
+        "state": {
+          "phase": "note",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "endSpeech": true
+        },
+        "state": {
+          "phase": "note",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 2099
+        },
+        "state": {
+          "phase": "note",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 1
+        },
+        "state": {
+          "phase": "ready",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "note": "source note"
+        },
+        "state": {
+          "phase": "ready",
+          "index": 0,
+          "note": "source note",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "call": "oralMic"
+        },
+        "state": {
+          "phase": "rec",
+          "index": 0,
+          "note": "source note",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 119000
+        },
+        "state": {
+          "phase": "rec",
+          "index": 0,
+          "note": "source note",
+          "recSec": 119,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 1000
+        },
+        "state": {
+          "phase": "done",
+          "index": 0,
+          "note": "source note",
+          "recSec": 120,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "call": "oralSubmitAnswer"
+        },
+        "state": {
+          "phase": "done",
+          "index": 0,
+          "note": "source note",
+          "recSec": 120,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "speakingReview"
+        }
+      }
+    ]
+  },
+  {
+    "exam": "toefl",
+    "card": "interview",
+    "task": {
+      "kind": "qa",
+      "list": [
+        "What is one skill you learned from work or study that you think is important? Why?",
+        "Some people prefer working in a team, while others prefer working alone. Which do you prefer, and why?",
+        "What kind of work would you like to do in the future, and how are you preparing for it?"
+      ],
+      "topic": "Skills, work and the future",
+      "prep": 0,
+      "answer": 45
+    },
+    "frames": [
+      {
+        "action": {
+          "call": "startOralExam"
+        },
+        "state": {
+          "phase": "note",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 400
+        },
+        "state": {
+          "phase": "note",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "endSpeech": true
+        },
+        "state": {
+          "phase": "ready",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "call": "oralMic"
+        },
+        "state": {
+          "phase": "rec",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 30000
+        },
+        "state": {
+          "phase": "done",
+          "index": 0,
+          "note": "",
+          "recSec": 30,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      }
+    ]
+  },
+  {
+    "exam": "ielts",
+    "card": "p3",
+    "task": {
+      "kind": "discuss",
+      "list": [
+        "Why do people like to visit different places?",
+        "What are the differences between travelling in your own country and abroad?",
+        "Do you think tourism can harm local communities?",
+        "How has the way people travel changed over the past few decades?",
+        "Will virtual travel ever replace real travel in the future?",
+        "Should governments invest more in local tourism?"
+      ],
+      "topic": "Skills, work and the future",
+      "prep": 0,
+      "answer": 30,
+      "rounds": 10
+    },
+    "frames": [
+      {
+        "action": {
+          "call": "startOralExam"
+        },
+        "state": {
+          "phase": "note",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralDiscuss"
+        }
+      },
+      {
+        "action": {
+          "wait": 200
+        },
+        "state": {
+          "phase": "note",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralDiscuss"
+        }
+      },
+      {
+        "action": {
+          "endSpeech": true
+        },
+        "state": {
+          "phase": "ready",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralExam"
+        }
+      },
+      {
+        "action": {
+          "wait": 4800
+        },
+        "state": {
+          "phase": "ready",
+          "index": 0,
+          "note": "",
+          "recSec": 0,
+          "turn": "answer",
+          "round": 1,
+          "answerSec": 0,
+          "askSec": 0,
+          "route": "oralDiscuss"
+        }
+      },
+      {
+        "action": {
+          "wait": 30000
+        },
+        "state": {
+          "phase": "ready",
+          "index": 1,
+          "note": "",
+          "recSec": 0,
+          "turn": "ask",
+          "round": 2,
+          "answerSec": 30,
+          "askSec": 0,
+          "route": "oralDiscuss"
+        }
+      },
+      {
+        "action": {
+          "wait": 315000
+        },
+        "state": {
+          "phase": "ready",
+          "index": 3,
+          "note": "",
+          "recSec": 0,
+          "turn": "answer",
+          "round": 10,
+          "answerSec": 30,
+          "askSec": 0,
+          "route": "speakingReview"
+        }
+      }
+    ]
+  }
+]

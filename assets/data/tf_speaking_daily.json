@@ -1,0 +1,204 @@
+{
+  "retell": {
+    "prefix": "tfRt",
+    "total": 7,
+    "ansSec": 7,
+    "segments": [
+      {
+        "sec": 4
+      },
+      {
+        "sec": 4
+      },
+      {
+        "sec": 6
+      },
+      {
+        "sec": 5
+      },
+      {
+        "sec": 5
+      },
+      {
+        "sec": 7
+      },
+      {
+        "sec": 6
+      }
+    ],
+    "rates": [
+      0.75,
+      1,
+      1.25,
+      1.5
+    ],
+    "playTitle": "仔细听，只复述一次。",
+    "playSub": "按需重听提示，然后清晰复述。",
+    "answerSub": "像真实面试一样自然作答。",
+    "feedback": {
+      "score": "4.0",
+      "description": "表达流利，需提升复述完整度与用词准确性。",
+      "subs": [
+        [
+          "Delivery",
+          "4.0",
+          "ok"
+        ],
+        [
+          "Language Use",
+          "2.0",
+          "bad"
+        ],
+        [
+          "Topic Development",
+          "3.0",
+          ""
+        ]
+      ],
+      "weak": {
+        "tags": [
+          "口语",
+          "复述完整度",
+          "长句尾部信息"
+        ],
+        "q": "第 1 句：句子后半段关键词未复述出来。",
+        "a": "长句复述先抓主干，再补结尾细节。"
+      },
+      "questions": [
+        {
+          "n": 1,
+          "ok": false,
+          "pct": 72,
+          "q": "\"Please put on your safety goggles before you start.\"",
+          "fb": "The retelling completeness is 72%, missing the key words in the latter half of the sentence. Focus on the sentence ending."
+        },
+        {
+          "n": 2,
+          "ok": true,
+          "pct": 95,
+          "q": "\"Always keep your fingers away from the blade.\"",
+          "fb": "Accurate and clear delivery. Well done."
+        },
+        {
+          "n": 3,
+          "ok": true,
+          "pct": 88,
+          "q": "\"The library will be closed during the holiday weekend.\"",
+          "fb": "Good overall retelling; minor hesitation near the middle."
+        },
+        {
+          "n": 4,
+          "ok": false,
+          "pct": 65,
+          "q": "\"You can pick up your student ID at the front desk.\"",
+          "fb": "Retelling completeness is 65%. The location detail was dropped."
+        },
+        {
+          "n": 5,
+          "ok": true,
+          "pct": 90,
+          "q": "\"Remember to submit your form before Friday afternoon.\"",
+          "fb": "Clear and complete. Nice pacing."
+        },
+        {
+          "n": 6,
+          "ok": false,
+          "pct": 70,
+          "q": "\"The museum tour starts at the main entrance in ten minutes.\"",
+          "fb": "Retelling completeness is 70%, missing the time and place details at the end."
+        },
+        {
+          "n": 7,
+          "ok": true,
+          "pct": 92,
+          "q": "\"Please turn off your phone during the presentation.\"",
+          "fb": "Accurate delivery with correct word order."
+        }
+      ]
+    }
+  },
+  "interview": {
+    "prefix": "tfIv",
+    "total": 4,
+    "ansSec": 45,
+    "segments": [
+      {
+        "sec": 6
+      },
+      {
+        "sec": 6
+      },
+      {
+        "sec": 6
+      },
+      {
+        "sec": 6
+      }
+    ],
+    "rates": [
+      0.75,
+      1,
+      1.25,
+      1.5
+    ],
+    "playTitle": "请听面试官的问题。",
+    "playSub": "听完确认后，再开始作答。",
+    "answerSub": "像真实面试一样自然作答。",
+    "feedback": {
+      "score": "3.0",
+      "description": "表达流利，需提升复述完整度与用词准确性。",
+      "subs": [
+        [
+          "Delivery",
+          "4.0",
+          "ok"
+        ],
+        [
+          "Language Use",
+          "2.0",
+          "bad"
+        ],
+        [
+          "Topic Development",
+          "3.0",
+          ""
+        ]
+      ],
+      "weak": {
+        "tags": [
+          "口语",
+          "内容展开",
+          "理由缺例证"
+        ],
+        "q": "访谈第 2 题：理由罗列但缺少具体例子。",
+        "a": "每个理由配一个具体例子来展开。"
+      },
+      "questions": [
+        {
+          "n": 1,
+          "ok": false,
+          "q": "\"Have you ever had a part-time job or an internship? Tell me about it.\"",
+          "fb": "Good fluency, but the reasons lack concrete examples. Add one specific example per reason."
+        },
+        {
+          "n": 2,
+          "ok": true,
+          "q": "\"What do you usually do to relax after a long day?\"",
+          "fb": "Natural delivery with clear structure. Well organized."
+        },
+        {
+          "n": 3,
+          "ok": true,
+          "q": "\"Describe a skill you would like to learn and explain why.\"",
+          "fb": "Good reasoning; consider adding a personal example to strengthen the point."
+        },
+        {
+          "n": 4,
+          "ok": false,
+          "q": "\"Do you prefer studying alone or in a group? Why?\"",
+          "fb": "Position is clear, but the second reason is underdeveloped. Expand with a concrete situation."
+        }
+      ]
+    }
+  }
+}

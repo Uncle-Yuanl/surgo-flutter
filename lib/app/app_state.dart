@@ -22,6 +22,18 @@ class AppState extends ChangeNotifier {
         _lang = lang,
         _current = current;
 
+  /// Shared original-JS state keys for cross-route hand-off. Each module owns
+  /// its own controllers; navigation inputs and full-mock state live here.
+  final Map<String, dynamic> session = <String, dynamic>{};
+  int _revision = 0;
+  int get revision => _revision;
+
+  void refresh() { _revision++; notifyListeners(); }
+  void updateSession(Map<String, dynamic> values) {
+    session.addAll(values);
+    refresh();
+  }
+
   // ---------------------------------------------------------------- examType
   // 原型：let examType='ielts'
   ExamType _examType;
@@ -65,8 +77,9 @@ class AppState extends ChangeNotifier {
   /// ```
   /// 关键差异（有意为之）：原型在进入 pronRepeat / pronSentence 时会先清掉
   /// 跟读计时与录音状态。那是"页面入场副作用"，在 Flutter 里由
-  /// [PageController] 承接，见 lib/app/page_host.dart —— 这里只负责换页。
+  /// 各模块控制器承接；这里仅负责换页和触发重新构建。
   void go(SurgoPage page) {
+    _revision++;
     if (_current == page) {
       // 原型里 go() 到同一页也会重渲染（用于刷新数据），保持一致
       notifyListeners();

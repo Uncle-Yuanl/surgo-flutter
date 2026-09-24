@@ -1,0 +1,2120 @@
+======================================================================
+FRAME 40:363  "80"  375x812
+  FRAME "Status Bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Battery Icon"  @336,17 24x12  fill=#0a0a0a
+          BOOLEAN_OPERATION "Battery Path"  @336,17 22x12  fill=#dadada
+            VECTOR "Battery Shape"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Battery Detail"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Battery Overlay"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Wifi Indicator"  @338,19 18x8  fill=#0a0a0a  r=1.600000023841858
+      BOOLEAN_OPERATION "Wifi Symbol"  @294,18 17x11  fill=#0a0a0a
+        RECTANGLE "Wifi Path"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Wifi Line"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Wifi Dot"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Wifi Signal"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Time Status"  @316,17 15x11  fill=#0a0a0a
+        VECTOR "Time Text"  @316,17 15x5  fill=#000000
+        VECTOR "Time Display"  @318,21 10x4  fill=#000000
+        VECTOR "Time Content"  @321,25 5x3  fill=#000000
+    FRAME "Main Header"  @0,12 180x22
+      TEXT "Time Display Text"  @30,14 35x20  text='19:27'  font=DM Sans 700 15  lh=19.5  align=LEFT  fill=#0a0a0a
+  FRAME "Frame 162880"  @107,379 162x54
+    GROUP "Group 2"  @107,379 45x54
+      VECTOR "Vector"  @107,379 45x54  fill=#000000
+    TEXT "Surgo"  @168,390 101x32  text='Surgo'  font=AaJiJiaHei 400 32  lh=32  align=LEFT  fill=#000000
+======================================================================
+FRAME 40:388  "81"  375x812
+  FRAME "Account Prompt"  @98,764 167x10
+    TEXT "Sign In Text"  @98,764 167x10  text='have an account? Sign In'  font=Anek Bangla 600 14  lh=26.1  align=CENTER  fill=#ffc71b
+  FRAME "Button"  @25,694 325x50  fill=#ffc71b  r=11
+    TEXT "Text"  @164,714 47x10  text='Signup'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#0a0a0a
+  FRAME "Agreement Section"  @25,659 232x15
+    FRAME "Checkbox Frame"  @25,659 15x15  fill=#ffc71b  r=3
+      VECTOR "Checkbox"  @30,664 6x5  stroke=#1a1a1a/1  r=[0, 0, 0, 0]
+    TEXT "Agree Terms Text"  @50,662 207x10  text='I agree with Terms & Condition'  font=Anek Bangla 600 14  lh=26.1  align=LEFT  fill=#aaaaaa
+  FRAME "Sign Up Form"  @25,304 325x340
+    FRAME "Name Section"  @25,304 325x70
+      FRAME "Full Name Label"  @25,304 67x10
+        TEXT "Full Name"  @25,304 67x10  text='Full Name'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+      FRAME "Full Name Input Container"  @25,324 325x50  fill=#f1ece6  r=11
+        INSTANCE "icon"  @45,341 16x16
+          GROUP "Profile"  @48,342 11x13
+            BOOLEAN_OPERATION "Profile"  @48,342 11x13  fill=#aaaaaa
+              VECTOR "Fill 1"  @48,351 11x5  fill=#130f26
+              VECTOR "Fill 4"  @49,342 7x7  fill=#130f26
+        TEXT "Full Name Text"  @73,344 257x10  text='Full Name'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#6d6d6d
+    FRAME "Email Section"  @25,394 325x70
+      FRAME "Email Label"  @25,394 325x10
+        TEXT "Your Email"  @25,394 325x10  text='Your Email'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+      FRAME "Email Input Container"  @25,414 325x50  fill=#f1ece6  r=11
+        INSTANCE "icon"  @45,431 16x16
+          GROUP "Message"  @46,433 13x12
+            BOOLEAN_OPERATION "Message"  @46,433 13x12  fill=#aaaaaa
+              VECTOR "Path"  @49,436 9x4
+              VECTOR "Path"  @46,433 13x12
+        TEXT "Enter Email Text"  @73,434 257x10  text='Enter email'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#6d6d6d
+    FRAME "Password Section"  @25,484 325x70
+      FRAME "Password Label"  @25,484 104x10
+        TEXT "Enter Password"  @25,484 104x10  text='Enter Password'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+      FRAME "Password Input Container"  @25,504 325x50  fill=#f1ece6  r=12
+        INSTANCE "icon"  @45,521 16x16
+          GROUP "Lock"  @47,522 11x13
+            BOOLEAN_OPERATION "Lock"  @47,522 11x13  fill=#aaaaaa
+              VECTOR "Path"  @52,530 1x3  fill=#130f26
+              VECTOR "Path"  @51,523 5x3  fill=#130f26
+              VECTOR "Path"  @47,522 11x13  fill=#130f26
+        FRAME "Password Text"  @73,526 233x6
+          ELLIPSE "Password Dot 1"  @73,526 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 2"  @84,526 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 3"  @95,526 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 4"  @106,526 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 5"  @117,526 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 6"  @128,526 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 7"  @139,526 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 8"  @150,526 6x6  fill=#6d6d6d
+        INSTANCE "hide"  @318,521 16x16
+          GROUP "Hide"  @319,523 13x11
+            BOOLEAN_OPERATION "Hide"  @319,523 13x11  fill=#6d6d6d
+              VECTOR "Fill 1"  @319,524 9x8  fill=#130f26
+              BOOLEAN_OPERATION "Fill 4"  @320,523 12x11  fill=#130f26
+                VECTOR "Path"  @325,528 4x4
+                VECTOR "Path"  @320,523 12x11
+    FRAME "Confirm Password Section"  @25,574 325x70
+      FRAME "Confirm Password Label"  @25,574 122x10
+        TEXT "Confirm Password"  @25,574 122x10  text='Confirm Password'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+      FRAME "Confirm Password Input Container"  @25,594 325x50  fill=#f1ece6  r=12
+        INSTANCE "icon"  @45,611 16x16
+          GROUP "Lock"  @47,612 11x13
+            BOOLEAN_OPERATION "Lock"  @47,612 11x13  fill=#aaaaaa
+              VECTOR "Path"  @52,620 1x3  fill=#130f26
+              VECTOR "Path"  @51,613 5x3  fill=#130f26
+              VECTOR "Path"  @47,612 11x13  fill=#130f26
+        FRAME "Confirm Password Text"  @73,616 233x6
+          ELLIPSE "Password Dot 1"  @73,616 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 2"  @84,616 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 3"  @95,616 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 4"  @106,616 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 5"  @117,616 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 6"  @128,616 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 7"  @139,616 6x6  fill=#6d6d6d
+          ELLIPSE "Password Dot 8"  @150,616 6x6  fill=#6d6d6d
+        INSTANCE "hide"  @318,611 16x16
+          GROUP "Hide"  @319,613 13x11
+            BOOLEAN_OPERATION "Hide"  @319,613 13x11  fill=#6d6d6d
+              VECTOR "Fill 1"  @319,614 9x8  fill=#130f26
+              BOOLEAN_OPERATION "Fill 4"  @320,613 12x11  fill=#130f26
+                VECTOR "Path"  @325,618 4x4
+                VECTOR "Path"  @320,613 12x11
+  FRAME "title"  @25,260 143x10
+    TEXT "Sign up your account"  @25,260 143x10  text='Sign up your account'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+  FRAME "Top Bar"  @25,44 203x48
+    GROUP "Navigation Group"  @25,44 48x48
+      GROUP "Back Button Background"  @25,44 48x48
+        ELLIPSE "Back Arrow Icon"  @25,44 48x48  fill=#f1ece6
+        FRAME "Back Arrow"  @37,56 24x24  fill=#f1ece6
+          GROUP "Iconly/Light-Outline/Arrow---Left"  @40,62 16x14
+            GROUP "Arrow---Left"  @40,62 16x14
+              VECTOR "Combined-Shape"  @40,62 16x14  fill=#000000
+    GROUP "title"  @159,63 51x10  r=[0, 0, 0, 0]
+      TEXT "Sign Up"  @159,63 51x10  text='Sign Up'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#000000
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#000000
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#000000  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#000000
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#000000
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+======================================================================
+FRAME 40:472  "错误页面"  375x812
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#000000
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#000000  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#000000
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#000000
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+  RECTANGLE "98229a83-0a24-4a63-9cf2-eaf85c9209d8 1"  @62,117 251x274
+  FRAME "Text Content"  @24,450 327x92
+    TEXT "Headline Text"  @24,450 327x40  text='A mistake happened'  font=Outfit 700 24  lh=40  align=CENTER  fill=#000000
+    TEXT "Subtext"  @24,498 316x44  text='There was a minor error, so check the network and try refreshing'  font=DM Sans 500 14  lh=22  align=CENTER  fill=#6d6d6d
+  FRAME "Button dark"  @24,691 327x56
+    FRAME "Label"  @24,691 327x56  fill=#ffc71b  r=24
+      TEXT "Large Label-Medium 16px"  @162,707 50x24  text='RETRY'  font=Outfit 600 16  lh=24  align=LEFT  fill=#0a0a0a
+======================================================================
+FRAME 40:500  "82"  375x812
+  FRAME "login page"  @25,129 325x649
+    FRAME "text"  @25,736 324x28
+      TEXT "By signing in, you accept our Terms of use and Privacy Policy."  @25,736 324x28  text='By signing in, you accept our Terms of use and Privacy Policy.'  font=Anek Bangla 600 14  lh=26.1  align=LEFT  fill=#aaaaaa
+    FRAME "sign in"  @120,707 141x10
+      TEXT "More sign-in options"  @120,707 141x10  text='More sign-in options'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffc71b
+    INSTANCE "Sign in with Apple"  @25,637 325x50  fill=#ffc71b  r=11
+      VECTOR "Vector"  @116,654 12x15  fill=#0a0a0a
+      TEXT "Sign in with Apple"  @138,657 121x10  text='Sign in with Apple'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#0a0a0a
+    FRAME "text"  @25,529 283x72
+      TEXT "Sign in to continue"  @25,529 283x10  text='Sign in to continue'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#222222
+      TEXT "Get access to member-only deals, Price Alerts and more."  @25,559 283x42  text='Get access to member-only deals, Price\nAlerts and more.'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#aaaaaa
+    GROUP "illustration"  @57,129 262x270
+      GROUP "freepik--Shadows--inject-2"  @57,256 262x84
+        VECTOR "freepik--Shadow--inject-2"  @57,286 94x54  fill=#6d6d6d
+        VECTOR "freepik--shadow--inject-2"  @77,290 84x48  fill=#6d6d6d
+        VECTOR "freepik--shadow--inject-2"  @170,256 56x32  fill=#6d6d6d
+        VECTOR "Vector"  @217,278 61x35  fill=#6d6d6d
+        VECTOR "Vector"  @270,287 49x29  fill=#6d6d6d
+      GROUP "freepik--Device--inject-2"  @57,131 84x205
+        GROUP "freepik--Mobile--inject-2"  @57,131 84x205
+          VECTOR "Vector"  @57,131 84x205  fill=#ffc71b
+          VECTOR "Vector"  @57,131 84x205  fill=#000000
+          VECTOR "Vector"  @57,175 10x161  fill=#ffc71b
+          VECTOR "Vector"  @57,175 10x161  fill=#000000
+          VECTOR "Vector"  @63,136 78x200  fill=#ffc71b
+          VECTOR "Vector"  @63,136 78x200  fill=#000000
+          VECTOR "Vector"  @66,149 72x174  fill=#ffc71b
+          VECTOR "Vector"  @66,149 72x174  fill=#000000
+          VECTOR "Vector"  @66,150 68x168  fill=#37474f
+          VECTOR "Vector"  @96,158 14x10  fill=#000000
+          VECTOR "Vector"  @116,153 2x3  fill=#000000
+          VECTOR "Vector"  @120,150 2x3  fill=#000000
+          VECTOR "Vector"  @83,172 2x3  fill=#000000
+          VECTOR "Vector"  @88,169 2x3  fill=#000000
+      GROUP "freepik--Screen--inject-2"  @82,155 75x180
+        GROUP "freepik--Window--inject-2"  @82,155 75x180
+          GROUP "freepik--dark-window--inject-2"  @82,155 75x180
+            VECTOR "Vector"  @82,196 4x139  fill=#f0f0f0
+            VECTOR "Vector"  @86,157 72x178  fill=#0a0a0a
+            VECTOR "Vector"  @86,157 72x178  fill=#ebebeb
+            VECTOR "Vector"  @83,155 74x42  fill=#f5f5f5
+          VECTOR "Vector"  @89,201 0x2  fill=#455a64
+          VECTOR "Vector"  @89,200 0x2  fill=#455a64
+          VECTOR "Vector"  @90,199 0x3  fill=#455a64
+          VECTOR "Vector"  @91,197 0x4  fill=#455a64
+          VECTOR "Vector"  @92,197 1x3  fill=#455a64
+          VECTOR "Vector"  @94,196 2x4  fill=#455a64
+          VECTOR "Vector"  @149,163 4x6  fill=#455a64
+          VECTOR "Vector"  @150,164 2x3  fill=#455a64
+          VECTOR "Vector"  @153,163 0x2  fill=#455a64
+          VECTOR "Vector"  @98,196 1x2  fill=#455a64
+          VECTOR "Vector"  @97,194 2x2  fill=#455a64
+          VECTOR "Vector"  @96,193 4x3  fill=#455a64
+          VECTOR "Vector"  @117,183 1x4  fill=#455a64
+          VECTOR "Vector"  @119,184 0x3  fill=#455a64
+          VECTOR "Vector"  @120,181 2x4  fill=#455a64
+          VECTOR "Vector"  @122,180 2x4  fill=#455a64
+          VECTOR "Vector"  @86,168 72x55  fill=#ffc71b
+          VECTOR "Vector"  @101,203 3x7  fill=#0a0a0a
+          VECTOR "Vector"  @104,201 3x6  fill=#0a0a0a
+          VECTOR "Vector"  @108,199 3x6  fill=#0a0a0a
+          VECTOR "Vector"  @112,197 3x7  fill=#0a0a0a
+          VECTOR "Vector"  @116,194 3x7  fill=#0a0a0a
+          VECTOR "Vector"  @119,193 3x6  fill=#0a0a0a
+          VECTOR "Vector"  @123,190 3x7  fill=#0a0a0a
+          VECTOR "Vector"  @127,189 3x7  fill=#0a0a0a
+          VECTOR "Vector"  @131,186 2x7  fill=#0a0a0a
+          VECTOR "Vector"  @134,185 3x6  fill=#0a0a0a
+          VECTOR "Vector"  @137,183 1x6  fill=#0a0a0a
+          VECTOR "Vector"  @139,182 3x6  fill=#0a0a0a
+          VECTOR "Vector"  @142,179 3x7  fill=#0a0a0a
+          VECTOR "Vector"  @146,177 3x6  fill=#0a0a0a
+          VECTOR "Vector"  @91,204 8x13  fill=#0a0a0a
+          VECTOR "Vector"  @116,209 10x13  fill=#455a64
+          VECTOR "Vector"  @96,225 3x7  fill=#ffc71b
+          VECTOR "Vector"  @99,223 4x7  fill=#ffc71b
+          VECTOR "Vector"  @103,221 3x7  fill=#ffc71b
+          VECTOR "Vector"  @106,220 1x6  fill=#ffc71b
+          VECTOR "Vector"  @108,218 3x6  fill=#ffc71b
+          VECTOR "Vector"  @96,234 1x3  fill=#455a64
+          VECTOR "Vector"  @98,233 1x3  fill=#455a64
+          VECTOR "Vector"  @99,231 1x4  fill=#455a64
+          VECTOR "Vector"  @101,231 1x3  fill=#455a64
+          VECTOR "Vector"  @102,230 1x3  fill=#455a64
+          VECTOR "Vector"  @104,229 0x0  fill=#455a64
+          VECTOR "Vector"  @105,229 1x3  fill=#455a64
+          VECTOR "Vector"  @106,228 1x3  fill=#455a64
+          VECTOR "Vector"  @108,227 1x3  fill=#455a64
+          VECTOR "Vector"  @109,226 1x3  fill=#455a64
+          VECTOR "Vector"  @132,213 1x3  fill=#455a64
+          VECTOR "Vector"  @133,212 1x3  fill=#455a64
+          VECTOR "Vector"  @135,211 1x4  fill=#455a64
+          VECTOR "Vector"  @136,210 1x3  fill=#455a64
+          VECTOR "Vector"  @138,210 1x3  fill=#455a64
+          VECTOR "Vector"  @140,208 0x0  fill=#455a64
+          VECTOR "Vector"  @140,208 1x3  fill=#455a64
+          VECTOR "Vector"  @142,207 1x3  fill=#455a64
+          VECTOR "Vector"  @143,206 1x3  fill=#455a64
+          VECTOR "Vector"  @145,205 1x3  fill=#455a64
+          VECTOR "Vector"  @131,205 3x7  fill=#ffc71b
+          VECTOR "Vector"  @135,202 3x7  fill=#ffc71b
+          VECTOR "Vector"  @138,202 1x6  fill=#ffc71b
+          VECTOR "Vector"  @139,200 3x7  fill=#ffc71b
+          VECTOR "Vector"  @143,199 1x6  fill=#ffc71b
+          VECTOR "Vector"  @144,197 3x7  fill=#ffc71b
+          VECTOR "Vector"  @96,248 2x5  fill=#455a64
+          VECTOR "Vector"  @99,246 3x5  fill=#455a64
+          VECTOR "Vector"  @102,244 2x5  fill=#455a64
+          VECTOR "Vector"  @105,244 2x4  fill=#455a64
+          VECTOR "Vector"  @107,242 0x5  fill=#455a64
+          VECTOR "Vector"  @108,241 1x4  fill=#455a64
+          VECTOR "Vector"  @135,223 5x9  fill=#ffc71b
+          VECTOR "Vector"  @136,227 3x2  fill=#455a64
+          VECTOR "Vector"  @138,226 1x3  fill=#455a64
+          VECTOR "Vector"  @145,218 5x9  fill=#ffc71b
+          VECTOR "Vector"  @146,221 3x2  fill=#455a64
+          VECTOR "Vector"  @96,259 2x5  fill=#455a64
+          VECTOR "Vector"  @100,257 2x5  fill=#455a64
+          VECTOR "Vector"  @103,256 2x5  fill=#455a64
+          VECTOR "Vector"  @105,254 0x5  fill=#455a64
+          VECTOR "Vector"  @106,254 0x5  fill=#455a64
+          VECTOR "Vector"  @107,252 2x5  fill=#455a64
+          VECTOR "Vector"  @135,234 5x9  fill=#ffc71b
+          VECTOR "Vector"  @136,238 3x2  fill=#455a64
+          VECTOR "Vector"  @138,237 1x3  fill=#455a64
+          VECTOR "Vector"  @145,229 5x9  fill=#ffc71b
+          VECTOR "Vector"  @146,232 3x2  fill=#455a64
+          VECTOR "Vector"  @96,275 2x5  fill=#455a64
+          VECTOR "Vector"  @99,275 2x4  fill=#455a64
+          VECTOR "Vector"  @101,273 2x4  fill=#455a64
+          VECTOR "Vector"  @103,272 2x4  fill=#455a64
+          VECTOR "Vector"  @106,271 2x4  fill=#455a64
+          VECTOR "Vector"  @108,268 3x5  fill=#455a64
+          VECTOR "Vector"  @112,267 2x5  fill=#455a64
+          VECTOR "Vector"  @96,285 2x5  fill=#455a64
+          VECTOR "Vector"  @99,285 0x5  fill=#455a64
+          VECTOR "Vector"  @100,285 1x4  fill=#455a64
+          VECTOR "Vector"  @101,284 2x4  fill=#455a64
+          VECTOR "Vector"  @103,282 1x4  fill=#455a64
+          VECTOR "Vector"  @106,280 2x5  fill=#455a64
+          VECTOR "Vector"  @109,279 0x5  fill=#455a64
+          VECTOR "Vector"  @110,279 2x4  fill=#455a64
+          VECTOR "Vector"  @112,278 2x4  fill=#455a64
+          VECTOR "Vector"  @114,277 2x4  fill=#455a64
+          VECTOR "Vector"  @96,296 2x5  fill=#455a64
+          VECTOR "Vector"  @99,296 2x4  fill=#455a64
+          VECTOR "Vector"  @101,295 2x4  fill=#455a64
+          VECTOR "Vector"  @104,293 0x5  fill=#455a64
+          VECTOR "Vector"  @105,293 2x4  fill=#455a64
+          VECTOR "Vector"  @107,291 2x4  fill=#455a64
+          VECTOR "Vector"  @109,290 2x4  fill=#455a64
+          VECTOR "Vector"  @111,289 2x4  fill=#455a64
+          VECTOR "Vector"  @145,245 5x8  fill=#ffc71b
+          VECTOR "Vector"  @145,256 5x9  fill=#ffc71b
+          VECTOR "Vector"  @145,266 5x9  fill=#ffc71b
+          VECTOR "Vector"  @146,246 3x5  fill=#0a0a0a
+          VECTOR "Vector"  @112,291 21x22  fill=#ffc71b
+          VECTOR "Vector"  @116,302 3x7  fill=#0a0a0a
+          VECTOR "Vector"  @120,300 3x7  fill=#0a0a0a
+          VECTOR "Vector"  @123,298 3x7  fill=#0a0a0a
+          VECTOR "Vector"  @127,296 3x6  fill=#0a0a0a
+      GROUP "freepik--Calendar--inject-2"  @166,129 61x96
+        GROUP "freepik--calendar--inject-2"  @166,129 61x96
+          GROUP "freepik--Days--inject-2"  @166,129 61x52
+            VECTOR "Vector"  @166,153 16x27  fill=#ffc71b
+            TEXT "03"  @168,161 16x20  text='03'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#0a0a0a
+            VECTOR "Vector"  @170,157 8x5  fill=#0a0a0a
+            VECTOR "Vector"  @187,141 16x27  fill=#ffc71b
+            VECTOR "Vector"  @187,141 16x27  fill=#000000
+            TEXT "04"  @189,149 16x20  text='04'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#0a0a0a
+            VECTOR "Vector"  @191,145 8x5  fill=#0a0a0a
+            VECTOR "Vector"  @208,129 16x27  fill=#ffc71b
+            TEXT "05"  @210,137 16x20  text='05'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#0a0a0a
+            VECTOR "Vector"  @212,133 8x5  fill=#0a0a0a
+          GROUP "freepik--calendar--inject-2"  @166,155 58x69
+            VECTOR "Vector"  @166,185 7x5  fill=#455a64
+            VECTOR "Vector"  @174,180 7x5  fill=#455a64
+            VECTOR "Vector"  @183,175 7x5  fill=#455a64
+            VECTOR "Vector"  @191,170 7x5  fill=#455a64
+            VECTOR "Vector"  @200,165 7x5  fill=#455a64
+            VECTOR "Vector"  @208,160 7x5  fill=#455a64
+            VECTOR "Vector"  @217,155 7x5  fill=#455a64
+            VECTOR "Vector"  @167,192 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @167,200 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @167,207 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @167,215 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @175,187 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @175,195 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @175,203 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @175,210 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @184,182 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @184,190 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @184,198 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @184,205 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @192,177 6x9  fill=#ffc71b
+            VECTOR "Vector"  @192,185 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @192,193 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @192,201 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @201,172 6x9  fill=#ffc71b
+            GROUP "Group"  @201,172 6x9
+              VECTOR "Vector"  @201,172 6x9  fill=#0a0a0a
+            VECTOR "Vector"  @201,180 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @201,188 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @201,196 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @209,167 6x9  fill=#ffc71b
+            VECTOR "Vector"  @209,175 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @209,183 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @209,191 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @218,162 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @218,170 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @218,178 6x9  fill=#6d6d6d
+            VECTOR "Vector"  @218,186 6x9  fill=#6d6d6d
+      GROUP "freepik--credit-card--inject-2"  @167,202 57x75
+        GROUP "freepik--Card--inject-2"  @167,202 57x75
+          VECTOR "Vector"  @168,202 56x33  fill=#f5f5f5
+          VECTOR "Vector"  @167,232 5x46  fill=#ffc71b
+          VECTOR "Vector"  @167,232 5x46  fill=#000000
+          VECTOR "Vector"  @169,204 55x74  fill=#ffc71b
+          VECTOR "Vector"  @169,204 55x74  fill=#000000
+          VECTOR "Vector"  @169,204 55x43  fill=#ebebeb
+          VECTOR "Vector"  @176,233 4x6  fill=#455a64
+          VECTOR "Vector"  @180,231 5x6  fill=#455a64
+          VECTOR "Vector"  @185,227 4x7  fill=#455a64
+          VECTOR "Vector"  @190,225 4x7  fill=#455a64
+          VECTOR "Vector"  @178,257 1x3  fill=#0a0a0a
+          VECTOR "Vector"  @180,255 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @182,254 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @185,252 2x2  fill=#0a0a0a
+          VECTOR "Vector"  @190,249 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @192,248 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @195,247 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @197,245 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @202,242 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @204,242 1x3  fill=#0a0a0a
+          VECTOR "Vector"  @206,240 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @208,239 1x3  fill=#0a0a0a
+          VECTOR "Vector"  @212,237 1x3  fill=#0a0a0a
+          VECTOR "Vector"  @214,235 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @217,234 1x3  fill=#0a0a0a
+          VECTOR "Vector"  @218,233 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @200,250 1x3  fill=#0a0a0a
+          VECTOR "Vector"  @202,249 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @205,246 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @208,245 2x3  fill=#0a0a0a
+          VECTOR "Vector"  @204,248 1x3  fill=#0a0a0a
+          VECTOR "Vector"  @178,240 8x12  fill=#ffc71b
+          GROUP "Clip path group"  @178,240 8x12
+            GROUP "freepik--clip-path--inject-2"  @178,240 8x12
+              VECTOR "Vector"  @178,240 8x12  fill=#000000
+            GROUP "Group"  @176,240 11x12
+              VECTOR "Vector"  @178,240 8x12  fill=#ffc71b
+              VECTOR "Vector"  @178,240 8x12  fill=#0a0a0a
+              VECTOR "Vector"  @176,241 11x10  fill=#455a64
+          VECTOR "Vector"  @169,235 1x12  fill=#ffc71b
+          VECTOR "Vector"  @171,223 18x11  fill=#0a0a0a
+          VECTOR "Vector"  @172,204 50x29  fill=#0a0a0a
+          VECTOR "Vector"  @213,239 8x6  fill=#455a64
+          VECTOR "Vector"  @169,233 4x45  fill=#ffc71b
+          VECTOR "Vector"  @169,233 4x45  fill=#000000
+          VECTOR "Vector"  @168,232 5x4  fill=#ffc71b
+          VECTOR "Vector"  @168,232 5x4  fill=#0a0a0a
+          VECTOR "Vector"  @169,233 3x37  fill=#0a0a0a
+          VECTOR "Vector"  @173,244 2x33  fill=#ebebeb
+      GROUP "freepik--Tickets--inject-2"  @69,290 193x109
+        GROUP "freepik--Ticket--inject-2"  @69,293 166x100
+          GROUP "freepik--shadow--inject-2"  @69,297 166x96
+            VECTOR "Vector"  @69,297 166x96  fill=#000000
+          GROUP "freepik--ticket--inject-2"  @69,293 166x97
+            VECTOR "Vector"  @69,293 166x96  fill=#0a0a0a
+            VECTOR "Vector"  @69,293 166x96  fill=#ebebeb
+            VECTOR "Vector"  @69,293 166x97  fill=#6d6d6d
+            VECTOR "Vector"  @69,293 123x72  fill=#ffc71b
+            VECTOR "Vector"  @69,293 123x72  fill=#000000
+            VECTOR "Vector"  @117,321 118x69  fill=#ffc71b
+            VECTOR "Vector"  @117,321 118x69  fill=#000000
+            VECTOR "Vector"  @69,293 166x96  fill=#0a0a0a
+            VECTOR "Vector"  @69,293 166x96  fill=#ebebeb
+            VECTOR "Vector"  @111,293 124x45  fill=#000000
+            VECTOR "Vector"  @69,293 123x71  fill=#ffc71b
+            VECTOR "Vector"  @117,321 118x68  fill=#ffc71b
+            VECTOR "Vector"  @150,324 10x6  fill=#455a64
+            VECTOR "Vector"  @156,328 10x6  fill=#455a64
+            VECTOR "Vector"  @163,331 10x6  fill=#455a64
+            VECTOR "Vector"  @153,326 10x6  fill=#455a64
+            VECTOR "Vector"  @161,330 10x6  fill=#455a64
+            VECTOR "Vector"  @151,325 9x5  fill=#455a64
+            VECTOR "Vector"  @155,327 9x5  fill=#455a64
+            VECTOR "Vector"  @165,332 10x6  fill=#455a64
+            VECTOR "Vector"  @178,340 10x6  fill=#455a64
+            VECTOR "Vector"  @171,336 10x6  fill=#455a64
+            VECTOR "Vector"  @168,334 10x6  fill=#455a64
+            VECTOR "Vector"  @166,333 9x5  fill=#455a64
+            VECTOR "Vector"  @170,335 9x5  fill=#455a64
+            VECTOR "Vector"  @158,329 9x5  fill=#455a64
+            VECTOR "Vector"  @159,329 9x5  fill=#455a64
+            VECTOR "Vector"  @149,323 9x5  fill=#455a64
+            VECTOR "Vector"  @174,338 10x6  fill=#455a64
+            VECTOR "Vector"  @173,337 9x5  fill=#455a64
+            VECTOR "Vector"  @176,339 9x5  fill=#455a64
+            VECTOR "Vector"  @177,340 9x5  fill=#455a64
+            VECTOR "Vector"  @160,317 2x1  fill=#455a64
+            VECTOR "Vector"  @162,317 2x1  fill=#455a64
+            VECTOR "Vector"  @164,316 2x1  fill=#455a64
+            VECTOR "Vector"  @165,316 2x1  fill=#455a64
+            VECTOR "Vector"  @166,315 2x1  fill=#455a64
+            VECTOR "Vector"  @167,314 2x1  fill=#455a64
+            VECTOR "Vector"  @168,314 2x1  fill=#455a64
+            VECTOR "Vector"  @169,313 2x1  fill=#455a64
+            VECTOR "Vector"  @170,312 1x1  fill=#455a64
+            VECTOR "Vector"  @171,311 3x2  fill=#455a64
+            VECTOR "Vector"  @173,311 2x1  fill=#455a64
+            VECTOR "Vector"  @174,310 3x1  fill=#455a64
+            VECTOR "Vector"  @177,309 2x1  fill=#455a64
+            VECTOR "Vector"  @168,322 2x2  fill=#455a64
+            VECTOR "Vector"  @169,321 1x1  fill=#455a64
+            VECTOR "Vector"  @170,321 2x1  fill=#455a64
+            VECTOR "Vector"  @171,320 3x1  fill=#455a64
+            VECTOR "Vector"  @171,323 3x2  fill=#455a64
+            VECTOR "Vector"  @174,322 4x2  fill=#455a64
+            VECTOR "Vector"  @176,321 4x2  fill=#455a64
+            VECTOR "Vector"  @178,320 3x2  fill=#455a64
+            VECTOR "Vector"  @179,319 3x2  fill=#455a64
+            VECTOR "Vector"  @175,326 2x1  fill=#455a64
+            VECTOR "Vector"  @177,325 2x1  fill=#455a64
+            VECTOR "Vector"  @178,327 4x2  fill=#455a64
+            VECTOR "Vector"  @181,326 4x2  fill=#455a64
+            VECTOR "Vector"  @183,326 3x2  fill=#455a64
+            VECTOR "Vector"  @184,325 2x2  fill=#455a64
+            VECTOR "Vector"  @185,324 3x2  fill=#455a64
+            VECTOR "Vector"  @186,323 4x3  fill=#455a64
+            VECTOR "Vector"  @183,330 2x1  fill=#455a64
+            VECTOR "Vector"  @185,330 2x1  fill=#455a64
+            VECTOR "Vector"  @186,329 2x1  fill=#455a64
+            VECTOR "Vector"  @187,329 2x1  fill=#455a64
+            VECTOR "Vector"  @187,332 3x2  fill=#455a64
+            VECTOR "Vector"  @189,331 3x2  fill=#455a64
+            VECTOR "Vector"  @191,330 2x2  fill=#455a64
+            VECTOR "Vector"  @193,329 4x2  fill=#455a64
+            VECTOR "Vector"  @195,327 4x3  fill=#455a64
+            VECTOR "Vector"  @196,323 2x1  fill=#455a64
+            VECTOR "Vector"  @197,322 2x1  fill=#455a64
+            VECTOR "Vector"  @198,322 3x1  fill=#455a64
+            VECTOR "Vector"  @200,321 2x1  fill=#455a64
+            VECTOR "Vector"  @200,324 3x2  fill=#455a64
+            VECTOR "Vector"  @202,324 2x1  fill=#455a64
+            VECTOR "Vector"  @203,323 3x2  fill=#455a64
+            VECTOR "Vector"  @205,322 3x2  fill=#455a64
+            VECTOR "Vector"  @206,317 2x1  fill=#455a64
+            VECTOR "Vector"  @208,317 2x1  fill=#455a64
+            VECTOR "Vector"  @208,316 2x1  fill=#455a64
+            VECTOR "Vector"  @210,316 2x1  fill=#455a64
+            VECTOR "Vector"  @209,319 4x2  fill=#455a64
+            VECTOR "Vector"  @211,318 3x2  fill=#455a64
+            VECTOR "Vector"  @194,336 3x2  fill=#455a64
+            VECTOR "Vector"  @197,335 3x2  fill=#455a64
+            VECTOR "Vector"  @199,334 3x2  fill=#455a64
+            VECTOR "Vector"  @201,333 4x2  fill=#455a64
+            VECTOR "Vector"  @203,332 3x2  fill=#455a64
+            VECTOR "Vector"  @208,329 3x2  fill=#455a64
+            VECTOR "Vector"  @209,328 4x2  fill=#455a64
+            VECTOR "Vector"  @211,327 4x2  fill=#455a64
+            VECTOR "Vector"  @191,335 2x2  fill=#455a64
+            VECTOR "Vector"  @192,335 2x1  fill=#455a64
+            VECTOR "Vector"  @192,334 2x1  fill=#455a64
+            VECTOR "Vector"  @193,334 2x1  fill=#455a64
+            VECTOR "Vector"  @194,333 3x1  fill=#455a64
+            VECTOR "Vector"  @195,333 2x1  fill=#455a64
+            VECTOR "Vector"  @204,327 2x1  fill=#455a64
+            VECTOR "Vector"  @206,327 2x1  fill=#455a64
+            VECTOR "Vector"  @207,326 2x1  fill=#455a64
+            VECTOR "Vector"  @208,326 2x1  fill=#455a64
+            VECTOR "Vector"  @213,322 2x1  fill=#455a64
+            VECTOR "Vector"  @215,321 2x1  fill=#455a64
+            VECTOR "Vector"  @217,321 2x1  fill=#455a64
+            VECTOR "Vector"  @218,320 1x1  fill=#455a64
+            VECTOR "Vector"  @219,319 2x1  fill=#455a64
+            VECTOR "Vector"  @220,318 2x1  fill=#455a64
+            VECTOR "Vector"  @221,318 2x1  fill=#455a64
+            VECTOR "Vector"  @221,317 2x1  fill=#455a64
+            VECTOR "Vector"  @222,317 2x1  fill=#455a64
+            VECTOR "Vector"  @217,323 3x2  fill=#455a64
+            VECTOR "Vector"  @219,323 2x1  fill=#455a64
+            VECTOR "Vector"  @220,322 3x2  fill=#455a64
+            VECTOR "Vector"  @221,321 3x2  fill=#455a64
+            VECTOR "Vector"  @165,306 25x15  fill=#455a64
+            VECTOR "Vector"  @87,362 2x1  fill=#455a64
+            VECTOR "Vector"  @89,361 2x1  fill=#455a64
+            VECTOR "Vector"  @90,361 2x1  fill=#455a64
+            VECTOR "Vector"  @91,360 2x1  fill=#455a64
+            VECTOR "Vector"  @92,360 2x1  fill=#455a64
+            VECTOR "Vector"  @93,359 2x1  fill=#455a64
+            VECTOR "Vector"  @95,358 2x1  fill=#455a64
+            VECTOR "Vector"  @96,357 2x1  fill=#455a64
+            VECTOR "Vector"  @97,357 1x1  fill=#455a64
+            VECTOR "Vector"  @98,355 3x2  fill=#455a64
+            VECTOR "Vector"  @100,355 2x1  fill=#455a64
+            VECTOR "Vector"  @101,354 3x1  fill=#455a64
+            VECTOR "Vector"  @103,353 2x1  fill=#455a64
+            VECTOR "Vector"  @96,367 2x2  fill=#455a64
+            VECTOR "Vector"  @98,367 1x1  fill=#455a64
+            VECTOR "Vector"  @99,366 2x1  fill=#455a64
+            VECTOR "Vector"  @100,365 3x1  fill=#455a64
+            VECTOR "Vector"  @99,369 3x2  fill=#455a64
+            VECTOR "Vector"  @102,367 4x2  fill=#455a64
+            VECTOR "Vector"  @104,366 4x2  fill=#455a64
+            VECTOR "Vector"  @106,365 3x2  fill=#455a64
+            VECTOR "Vector"  @107,364 3x2  fill=#455a64
+            VECTOR "Vector"  @105,372 2x1  fill=#455a64
+            VECTOR "Vector"  @107,372 2x1  fill=#455a64
+            VECTOR "Vector"  @108,374 4x2  fill=#455a64
+            VECTOR "Vector"  @110,372 4x2  fill=#455a64
+            VECTOR "Vector"  @113,372 3x2  fill=#455a64
+            VECTOR "Vector"  @114,371 2x2  fill=#455a64
+            VECTOR "Vector"  @115,370 3x2  fill=#455a64
+            VECTOR "Vector"  @116,369 4x3  fill=#455a64
+            VECTOR "Vector"  @125,350 2x1  fill=#455a64
+            VECTOR "Vector"  @127,350 2x1  fill=#455a64
+            VECTOR "Vector"  @128,349 1x1  fill=#455a64
+            VECTOR "Vector"  @128,349 1x1  fill=#455a64
+            VECTOR "Vector"  @129,348 2x1  fill=#455a64
+            VECTOR "Vector"  @130,348 2x1  fill=#455a64
+            VECTOR "Vector"  @131,347 1x1  fill=#455a64
+            VECTOR "Vector"  @129,352 4x2  fill=#455a64
+            VECTOR "Vector"  @130,351 3x2  fill=#455a64
+            VECTOR "Vector"  @131,350 4x2  fill=#455a64
+            VECTOR "Vector"  @133,349 4x2  fill=#455a64
+            VECTOR "Vector"  @135,348 3x2  fill=#455a64
+            VECTOR "Vector"  @136,347 4x3  fill=#455a64
+            VECTOR "Vector"  @139,346 4x2  fill=#455a64
+            VECTOR "Vector"  @117,379 3x2  fill=#455a64
+            VECTOR "Vector"  @121,377 3x2  fill=#455a64
+            VECTOR "Vector"  @123,376 3x2  fill=#455a64
+            VECTOR "Vector"  @124,375 4x2  fill=#455a64
+            VECTOR "Vector"  @126,374 3x2  fill=#455a64
+            VECTOR "Vector"  @132,371 3x2  fill=#455a64
+            VECTOR "Vector"  @134,369 4x2  fill=#455a64
+            VECTOR "Vector"  @136,369 4x2  fill=#455a64
+            VECTOR "Vector"  @114,377 2x2  fill=#455a64
+            VECTOR "Vector"  @115,377 2x1  fill=#455a64
+            VECTOR "Vector"  @115,377 2x1  fill=#455a64
+            VECTOR "Vector"  @116,376 2x1  fill=#455a64
+            VECTOR "Vector"  @117,376 2x1  fill=#455a64
+            VECTOR "Vector"  @118,375 2x1  fill=#455a64
+            VECTOR "Vector"  @143,361 2x1  fill=#455a64
+            VECTOR "Vector"  @145,360 2x1  fill=#455a64
+            VECTOR "Vector"  @145,360 2x1  fill=#455a64
+            VECTOR "Vector"  @147,359 2x1  fill=#455a64
+            VECTOR "Vector"  @146,362 4x2  fill=#455a64
+            VECTOR "Vector"  @148,361 3x2  fill=#455a64
+            VECTOR "Vector"  @129,369 2x1  fill=#455a64
+            VECTOR "Vector"  @130,368 2x1  fill=#455a64
+            VECTOR "Vector"  @131,368 2x1  fill=#455a64
+            VECTOR "Vector"  @132,367 2x1  fill=#455a64
+            VECTOR "Vector"  @161,354 3x2  fill=#455a64
+            VECTOR "Vector"  @163,354 2x1  fill=#455a64
+            VECTOR "Vector"  @163,353 3x2  fill=#455a64
+            VECTOR "Vector"  @165,352 3x2  fill=#455a64
+            VECTOR "Vector"  @157,353 2x1  fill=#455a64
+            VECTOR "Vector"  @159,352 2x1  fill=#455a64
+            VECTOR "Vector"  @160,351 2x1  fill=#455a64
+            VECTOR "Vector"  @161,351 1x1  fill=#455a64
+            VECTOR "Vector"  @162,350 2x1  fill=#455a64
+            VECTOR "Vector"  @163,349 2x1  fill=#455a64
+            VECTOR "Vector"  @164,348 2x1  fill=#455a64
+            VECTOR "Vector"  @165,348 2x1  fill=#455a64
+            VECTOR "Vector"  @165,348 2x1  fill=#455a64
+            VECTOR "Vector"  @134,356 2x1  fill=#455a64
+            VECTOR "Vector"  @136,355 2x1  fill=#455a64
+            VECTOR "Vector"  @137,354 2x1  fill=#455a64
+            VECTOR "Vector"  @138,354 2x1  fill=#455a64
+            VECTOR "Vector"  @138,357 3x2  fill=#455a64
+            VECTOR "Vector"  @140,356 3x2  fill=#455a64
+            VECTOR "Vector"  @142,355 2x2  fill=#455a64
+            VECTOR "Vector"  @144,354 4x2  fill=#455a64
+            VECTOR "Vector"  @145,352 4x3  fill=#455a64
+            VECTOR "Vector"  @148,347 2x1  fill=#455a64
+            VECTOR "Vector"  @149,347 2x1  fill=#455a64
+            VECTOR "Vector"  @150,346 3x1  fill=#455a64
+            VECTOR "Vector"  @152,346 2x1  fill=#455a64
+            VECTOR "Vector"  @152,349 3x2  fill=#455a64
+            VECTOR "Vector"  @154,349 2x1  fill=#455a64
+            VECTOR "Vector"  @155,347 3x2  fill=#455a64
+            VECTOR "Vector"  @157,346 3x2  fill=#455a64
+            VECTOR "Vector"  @91,347 32x18  fill=#455a64
+            VECTOR "Vector"  @116,334 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @119,332 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @122,331 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @124,329 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @127,327 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @130,326 4x2  fill=#0a0a0a
+            VECTOR "Vector"  @131,325 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @134,323 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @137,321 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @140,320 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @143,318 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @145,317 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @152,312 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @156,311 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @159,309 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @161,308 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @163,306 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @166,305 4x2  fill=#0a0a0a
+            VECTOR "Vector"  @167,304 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @171,302 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @174,300 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @177,299 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @180,297 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @182,296 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @147,313 1x1  fill=#455a64
+            VECTOR "Vector"  @149,315 47x28  fill=#455a64
+            VECTOR "Vector"  @198,343 1x1  fill=#455a64
+            VECTOR "Vector"  @107,334 11x7  fill=#0a0a0a
+        GROUP "freepik--ticket--inject-2"  @118,290 143x109
+          GROUP "freepik--shadow--inject-2"  @119,294 143x105
+            VECTOR "Vector"  @119,294 143x105  fill=#000000
+          GROUP "freepik--ticket--inject-2"  @118,290 143x106
+            VECTOR "Vector"  @119,290 143x106  fill=#6d6d6d
+            VECTOR "Vector"  @119,371 10x6  fill=#ffc71b
+            VECTOR "Vector"  @119,371 10x6  fill=#000000
+            VECTOR "Vector"  @176,312 86x84  fill=#ffc71b
+            VECTOR "Vector"  @176,312 86x84  fill=#000000
+            VECTOR "Vector"  @119,290 143x105  fill=#0a0a0a
+            VECTOR "Vector"  @118,290 143x105  fill=#ebebeb
+            VECTOR "Vector"  @149,290 113x51  fill=#000000
+            VECTOR "Vector"  @119,290 92x86  fill=#ffc71b
+            VECTOR "Vector"  @176,312 86x83  fill=#ffc71b
+            VECTOR "Vector"  @183,324 8x7  fill=#455a64
+            VECTOR "Vector"  @191,328 8x7  fill=#455a64
+            VECTOR "Vector"  @199,330 8x7  fill=#455a64
+            VECTOR "Vector"  @187,326 8x7  fill=#455a64
+            VECTOR "Vector"  @196,330 8x7  fill=#455a64
+            VECTOR "Vector"  @185,325 7x6  fill=#455a64
+            VECTOR "Vector"  @189,327 7x6  fill=#455a64
+            VECTOR "Vector"  @200,331 8x7  fill=#455a64
+            VECTOR "Vector"  @217,337 8x7  fill=#455a64
+            VECTOR "Vector"  @208,334 8x7  fill=#455a64
+            VECTOR "Vector"  @204,333 8x7  fill=#455a64
+            VECTOR "Vector"  @202,332 7x6  fill=#455a64
+            VECTOR "Vector"  @207,334 7x6  fill=#455a64
+            VECTOR "Vector"  @193,328 7x6  fill=#455a64
+            VECTOR "Vector"  @194,329 7x6  fill=#455a64
+            VECTOR "Vector"  @182,324 7x6  fill=#455a64
+            VECTOR "Vector"  @212,336 8x7  fill=#455a64
+            VECTOR "Vector"  @210,335 7x6  fill=#455a64
+            VECTOR "Vector"  @214,336 7x6  fill=#455a64
+            VECTOR "Vector"  @215,337 7x6  fill=#455a64
+            VECTOR "Vector"  @189,318 2x1  fill=#455a64
+            VECTOR "Vector"  @191,317 2x1  fill=#455a64
+            VECTOR "Vector"  @191,316 2x1  fill=#455a64
+            VECTOR "Vector"  @192,316 2x1  fill=#455a64
+            VECTOR "Vector"  @193,315 2x1  fill=#455a64
+            VECTOR "Vector"  @194,314 2x1  fill=#455a64
+            VECTOR "Vector"  @195,313 2x1  fill=#455a64
+            VECTOR "Vector"  @196,312 2x1  fill=#455a64
+            VECTOR "Vector"  @196,311 2x1  fill=#455a64
+            VECTOR "Vector"  @197,310 3x2  fill=#455a64
+            VECTOR "Vector"  @198,309 2x1  fill=#455a64
+            VECTOR "Vector"  @199,308 3x2  fill=#455a64
+            VECTOR "Vector"  @201,307 2x1  fill=#455a64
+            VECTOR "Vector"  @197,321 2x1  fill=#455a64
+            VECTOR "Vector"  @199,321 2x1  fill=#455a64
+            VECTOR "Vector"  @199,320 2x1  fill=#455a64
+            VECTOR "Vector"  @200,319 3x2  fill=#455a64
+            VECTOR "Vector"  @201,322 3x2  fill=#455a64
+            VECTOR "Vector"  @203,321 4x2  fill=#455a64
+            VECTOR "Vector"  @205,319 4x2  fill=#455a64
+            VECTOR "Vector"  @206,318 3x1  fill=#455a64
+            VECTOR "Vector"  @207,317 3x2  fill=#455a64
+            VECTOR "Vector"  @206,324 2x1  fill=#455a64
+            VECTOR "Vector"  @208,324 2x1  fill=#455a64
+            VECTOR "Vector"  @210,325 4x2  fill=#455a64
+            VECTOR "Vector"  @211,324 4x2  fill=#455a64
+            VECTOR "Vector"  @213,323 3x1  fill=#455a64
+            VECTOR "Vector"  @214,322 3x2  fill=#455a64
+            VECTOR "Vector"  @215,321 3x1  fill=#455a64
+            VECTOR "Vector"  @215,320 4x2  fill=#455a64
+            VECTOR "Vector"  @215,328 2x1  fill=#455a64
+            VECTOR "Vector"  @217,327 2x1  fill=#455a64
+            VECTOR "Vector"  @217,326 2x1  fill=#455a64
+            VECTOR "Vector"  @218,326 2x1  fill=#455a64
+            VECTOR "Vector"  @219,329 3x2  fill=#455a64
+            VECTOR "Vector"  @221,327 3x2  fill=#455a64
+            VECTOR "Vector"  @223,326 3x2  fill=#455a64
+            VECTOR "Vector"  @224,325 4x2  fill=#455a64
+            VECTOR "Vector"  @225,323 4x2  fill=#455a64
+            VECTOR "Vector"  @225,318 2x1  fill=#455a64
+            VECTOR "Vector"  @226,318 2x1  fill=#455a64
+            VECTOR "Vector"  @226,317 3x2  fill=#455a64
+            VECTOR "Vector"  @228,316 2x1  fill=#455a64
+            VECTOR "Vector"  @229,320 3x2  fill=#455a64
+            VECTOR "Vector"  @231,319 2x1  fill=#455a64
+            VECTOR "Vector"  @231,317 3x2  fill=#455a64
+            VECTOR "Vector"  @232,316 3x2  fill=#455a64
+            VECTOR "Vector"  @232,311 2x1  fill=#455a64
+            VECTOR "Vector"  @233,311 2x1  fill=#455a64
+            VECTOR "Vector"  @233,310 2x1  fill=#455a64
+            VECTOR "Vector"  @235,309 2x1  fill=#455a64
+            VECTOR "Vector"  @236,313 4x2  fill=#455a64
+            VECTOR "Vector"  @237,311 3x2  fill=#455a64
+            VECTOR "Vector"  @228,332 3x2  fill=#455a64
+            VECTOR "Vector"  @231,330 3x2  fill=#455a64
+            VECTOR "Vector"  @232,329 3x1  fill=#455a64
+            VECTOR "Vector"  @233,328 4x2  fill=#455a64
+            VECTOR "Vector"  @234,327 3x2  fill=#455a64
+            VECTOR "Vector"  @238,323 3x2  fill=#455a64
+            VECTOR "Vector"  @239,322 4x2  fill=#455a64
+            VECTOR "Vector"  @240,321 4x1  fill=#455a64
+            VECTOR "Vector"  @224,331 2x1  fill=#455a64
+            VECTOR "Vector"  @225,331 2x1  fill=#455a64
+            VECTOR "Vector"  @225,331 2x1  fill=#455a64
+            VECTOR "Vector"  @226,330 2x1  fill=#455a64
+            VECTOR "Vector"  @226,329 3x1  fill=#455a64
+            VECTOR "Vector"  @227,329 2x1  fill=#455a64
+            VECTOR "Vector"  @234,322 2x1  fill=#455a64
+            VECTOR "Vector"  @235,321 2x1  fill=#455a64
+            VECTOR "Vector"  @236,320 2x1  fill=#455a64
+            VECTOR "Vector"  @236,320 2x1  fill=#455a64
+            VECTOR "Vector"  @240,315 2x1  fill=#455a64
+            VECTOR "Vector"  @242,314 2x1  fill=#455a64
+            VECTOR "Vector"  @243,314 2x1  fill=#455a64
+            VECTOR "Vector"  @244,313 2x1  fill=#455a64
+            VECTOR "Vector"  @244,312 2x1  fill=#455a64
+            VECTOR "Vector"  @245,310 2x1  fill=#455a64
+            VECTOR "Vector"  @246,310 2x1  fill=#455a64
+            VECTOR "Vector"  @246,310 2x1  fill=#455a64
+            VECTOR "Vector"  @247,310 2x1  fill=#455a64
+            VECTOR "Vector"  @245,316 3x2  fill=#455a64
+            VECTOR "Vector"  @247,316 2x1  fill=#455a64
+            VECTOR "Vector"  @247,315 3x1  fill=#455a64
+            VECTOR "Vector"  @248,313 3x2  fill=#455a64
+            VECTOR "Vector"  @194,303 19x18  fill=#455a64
+            VECTOR "Vector"  @137,372 2x1  fill=#455a64
+            VECTOR "Vector"  @139,371 2x1  fill=#455a64
+            VECTOR "Vector"  @140,371 2x1  fill=#455a64
+            VECTOR "Vector"  @140,370 2x1  fill=#455a64
+            VECTOR "Vector"  @141,369 2x1  fill=#455a64
+            VECTOR "Vector"  @142,368 2x1  fill=#455a64
+            VECTOR "Vector"  @143,367 2x1  fill=#455a64
+            VECTOR "Vector"  @144,366 2x1  fill=#455a64
+            VECTOR "Vector"  @144,366 2x1  fill=#455a64
+            VECTOR "Vector"  @145,364 3x2  fill=#455a64
+            VECTOR "Vector"  @147,364 2x1  fill=#455a64
+            VECTOR "Vector"  @147,362 3x2  fill=#455a64
+            VECTOR "Vector"  @149,361 2x1  fill=#455a64
+            VECTOR "Vector"  @147,376 2x1  fill=#455a64
+            VECTOR "Vector"  @149,376 2x1  fill=#455a64
+            VECTOR "Vector"  @150,375 2x1  fill=#455a64
+            VECTOR "Vector"  @150,374 3x2  fill=#455a64
+            VECTOR "Vector"  @152,377 3x2  fill=#455a64
+            VECTOR "Vector"  @154,376 4x2  fill=#455a64
+            VECTOR "Vector"  @155,374 4x2  fill=#455a64
+            VECTOR "Vector"  @156,373 3x1  fill=#455a64
+            VECTOR "Vector"  @157,372 3x2  fill=#455a64
+            VECTOR "Vector"  @158,380 2x1  fill=#455a64
+            VECTOR "Vector"  @160,379 2x1  fill=#455a64
+            VECTOR "Vector"  @162,381 4x2  fill=#455a64
+            VECTOR "Vector"  @164,379 4x2  fill=#455a64
+            VECTOR "Vector"  @165,379 3x1  fill=#455a64
+            VECTOR "Vector"  @166,378 3x2  fill=#455a64
+            VECTOR "Vector"  @167,377 3x1  fill=#455a64
+            VECTOR "Vector"  @167,375 4x2  fill=#455a64
+            VECTOR "Vector"  @168,355 2x1  fill=#455a64
+            VECTOR "Vector"  @170,355 2x1  fill=#455a64
+            VECTOR "Vector"  @170,354 2x1  fill=#455a64
+            VECTOR "Vector"  @171,354 2x1  fill=#455a64
+            VECTOR "Vector"  @171,353 2x1  fill=#455a64
+            VECTOR "Vector"  @172,353 2x1  fill=#455a64
+            VECTOR "Vector"  @173,352 2x1  fill=#455a64
+            VECTOR "Vector"  @173,357 4x2  fill=#455a64
+            VECTOR "Vector"  @174,356 3x1  fill=#455a64
+            VECTOR "Vector"  @174,354 4x2  fill=#455a64
+            VECTOR "Vector"  @176,354 4x1  fill=#455a64
+            VECTOR "Vector"  @177,352 3x1  fill=#455a64
+            VECTOR "Vector"  @178,351 4x2  fill=#455a64
+            VECTOR "Vector"  @180,349 4x2  fill=#455a64
+            VECTOR "Vector"  @172,385 3x2  fill=#455a64
+            VECTOR "Vector"  @175,383 3x2  fill=#455a64
+            VECTOR "Vector"  @176,382 3x1  fill=#455a64
+            VECTOR "Vector"  @177,381 4x2  fill=#455a64
+            VECTOR "Vector"  @179,379 3x2  fill=#455a64
+            VECTOR "Vector"  @183,375 3x2  fill=#455a64
+            VECTOR "Vector"  @184,373 4x2  fill=#455a64
+            VECTOR "Vector"  @186,373 4x1  fill=#455a64
+            VECTOR "Vector"  @168,384 2x1  fill=#455a64
+            VECTOR "Vector"  @169,384 2x1  fill=#455a64
+            VECTOR "Vector"  @170,383 2x1  fill=#455a64
+            VECTOR "Vector"  @170,383 2x1  fill=#455a64
+            VECTOR "Vector"  @171,382 3x1  fill=#455a64
+            VECTOR "Vector"  @172,381 2x1  fill=#455a64
+            VECTOR "Vector"  @189,363 2x1  fill=#455a64
+            VECTOR "Vector"  @191,363 2x1  fill=#455a64
+            VECTOR "Vector"  @191,362 2x1  fill=#455a64
+            VECTOR "Vector"  @192,361 2x1  fill=#455a64
+            VECTOR "Vector"  @193,365 4x2  fill=#455a64
+            VECTOR "Vector"  @195,363 3x2  fill=#455a64
+            VECTOR "Vector"  @179,374 2x1  fill=#455a64
+            VECTOR "Vector"  @180,373 2x1  fill=#455a64
+            VECTOR "Vector"  @181,372 2x1  fill=#455a64
+            VECTOR "Vector"  @182,371 2x1  fill=#455a64
+            VECTOR "Vector"  @204,355 3x2  fill=#455a64
+            VECTOR "Vector"  @205,354 2x1  fill=#455a64
+            VECTOR "Vector"  @205,353 3x1  fill=#455a64
+            VECTOR "Vector"  @206,352 3x2  fill=#455a64
+            VECTOR "Vector"  @199,354 2x1  fill=#455a64
+            VECTOR "Vector"  @201,353 2x1  fill=#455a64
+            VECTOR "Vector"  @202,352 2x1  fill=#455a64
+            VECTOR "Vector"  @202,351 2x1  fill=#455a64
+            VECTOR "Vector"  @203,350 2x1  fill=#455a64
+            VECTOR "Vector"  @204,349 2x1  fill=#455a64
+            VECTOR "Vector"  @205,349 2x1  fill=#455a64
+            VECTOR "Vector"  @205,348 2x1  fill=#455a64
+            VECTOR "Vector"  @205,348 2x1  fill=#455a64
+            VECTOR "Vector"  @179,360 2x1  fill=#455a64
+            VECTOR "Vector"  @180,359 2x1  fill=#455a64
+            VECTOR "Vector"  @181,358 2x1  fill=#455a64
+            VECTOR "Vector"  @182,357 2x1  fill=#455a64
+            VECTOR "Vector"  @183,361 3x2  fill=#455a64
+            VECTOR "Vector"  @185,359 3x2  fill=#455a64
+            VECTOR "Vector"  @186,358 3x2  fill=#455a64
+            VECTOR "Vector"  @187,357 4x2  fill=#455a64
+            VECTOR "Vector"  @189,354 4x2  fill=#455a64
+            VECTOR "Vector"  @189,349 2x1  fill=#455a64
+            VECTOR "Vector"  @190,349 2x1  fill=#455a64
+            VECTOR "Vector"  @190,348 3x2  fill=#455a64
+            VECTOR "Vector"  @192,347 2x1  fill=#455a64
+            VECTOR "Vector"  @193,351 3x2  fill=#455a64
+            VECTOR "Vector"  @195,350 2x1  fill=#455a64
+            VECTOR "Vector"  @195,349 3x2  fill=#455a64
+            VECTOR "Vector"  @197,347 3x2  fill=#455a64
+            VECTOR "Vector"  @142,353 24x22  fill=#455a64
+            VECTOR "Vector"  @153,340 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @156,338 4x2  fill=#0a0a0a
+            VECTOR "Vector"  @158,336 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @159,334 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @161,332 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @163,331 4x2  fill=#0a0a0a
+            VECTOR "Vector"  @164,329 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @166,327 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @169,324 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @171,323 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @173,321 4x2  fill=#0a0a0a
+            VECTOR "Vector"  @175,319 4x2  fill=#0a0a0a
+            VECTOR "Vector"  @180,314 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @182,312 4x2  fill=#0a0a0a
+            VECTOR "Vector"  @184,310 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @186,308 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @188,306 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @190,305 4x2  fill=#0a0a0a
+            VECTOR "Vector"  @190,303 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @193,301 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @195,298 4x3  fill=#0a0a0a
+            VECTOR "Vector"  @197,297 5x3  fill=#0a0a0a
+            VECTOR "Vector"  @199,295 4x2  fill=#0a0a0a
+            VECTOR "Vector"  @201,293 4x2  fill=#0a0a0a
+            VECTOR "Vector"  @175,315 1x1  fill=#455a64
+            VECTOR "Vector"  @177,316 56x22  fill=#455a64
+            VECTOR "Vector"  @234,338 1x1  fill=#455a64
+            VECTOR "Vector"  @146,341 11x7  fill=#0a0a0a
+      GROUP "freepik--Character--inject-2"  @215,144 101x167
+        GROUP "freepik--character--inject-2"  @215,144 101x167
+          GROUP "freepik--Bottom--inject-2"  @225,204 44x102
+            VECTOR "Vector"  @229,261 17x32  fill=#f28f8f
+            VECTOR "Vector"  @225,290 20x8  fill=#263238
+            VECTOR "Vector"  @225,284 20x14  fill=#37474f
+            VECTOR "Vector"  @225,292 9x5  fill=#0a0a0a
+            VECTOR "Vector"  @231,290 4x2  fill=#f0f0f0
+            VECTOR "Vector"  @233,289 4x2  fill=#f0f0f0
+            VECTOR "Vector"  @234,288 4x2  fill=#f0f0f0
+            VECTOR "Vector"  @236,287 4x2  fill=#f0f0f0
+            VECTOR "Vector"  @257,268 10x33  fill=#f28f8f
+            VECTOR "Vector"  @261,299 8x8  fill=#263238
+            VECTOR "Vector"  @261,286 8x20  fill=#37474f
+            VECTOR "Vector"  @261,299 8x7  fill=#0a0a0a
+            VECTOR "Vector"  @262,297 5x1  fill=#f0f0f0
+            VECTOR "Vector"  @262,294 5x1  fill=#f0f0f0
+            VECTOR "Vector"  @262,292 5x1  fill=#f0f0f0
+            VECTOR "Vector"  @262,290 6x1  fill=#ebebeb
+            VECTOR "Vector"  @237,204 30x73  fill=#37474f
+            VECTOR "Vector"  @259,274 9x4  fill=#455a64
+            VECTOR "Vector"  @238,274 8x4  fill=#455a64
+            VECTOR "Vector"  @241,218 11x31  fill=#263238
+          GROUP "freepik--Top--inject-2"  @215,144 101x167
+            GROUP "freepik--Hat--inject-2"  @233,144 36x31
+              VECTOR "Vector"  @241,144 26x23  fill=#37474f
+              VECTOR "Vector"  @233,149 36x26  fill=#455a64
+            VECTOR "freepik--Hair--inject-2"  @244,163 24x41  fill=#263238
+            GROUP "freepik--Arm--inject-2"  @215,175 30x29
+              VECTOR "Vector"  @219,175 26x27  fill=#f28f8f
+              VECTOR "Vector"  @229,193 4x4  fill=#b16668
+              VECTOR "Vector"  @215,187 14x17  fill=#455a64
+              VECTOR "Vector"  @223,189 6x15  fill=#263238
+              VECTOR "Vector"  @215,188 13x16  fill=#37474f
+              VECTOR "Vector"  @215,192 9x9  fill=#f28f8f
+            GROUP "freepik--Chest--inject-2"  @238,175 29x43
+              VECTOR "Vector"  @239,175 25x32  fill=#f28f8f
+              VECTOR "Vector"  @261,185 1x7  fill=#b16668
+              VECTOR "Vector"  @238,175 29x43  fill=#ffc71b
+              VECTOR "Vector"  @238,175 29x43  fill=#000000
+            GROUP "freepik--arm--inject-2"  @260,176 56x135
+              VECTOR "Vector"  @260,176 28x36  fill=#f28f8f
+              VECTOR "Vector"  @270,201 4x3  fill=#b16668
+              GROUP "freepik--Luggage--inject-2"  @273,205 43x105
+                VECTOR "Vector"  @298,207 1x34  fill=#455a64
+                VECTOR "Vector"  @297,207 1x35  fill=#263238
+                VECTOR "Vector"  @281,240 18x10  fill=#37474f
+                VECTOR "Vector"  @281,217 1x34  fill=#455a64
+                VECTOR "Vector"  @280,217 1x35  fill=#37474f
+                VECTOR "Vector"  @280,205 20x14  fill=#ffc71b
+                VECTOR "Vector"  @280,205 20x14  fill=#0a0a0a
+                VECTOR "Vector"  @281,206 19x13  fill=#ffc71b
+                VECTOR "Vector"  @281,206 19x13  fill=#0a0a0a
+                VECTOR "Vector"  @280,216 2x3  fill=#000000
+                VECTOR "Vector"  @277,239 39x71  fill=#ffc71b
+                VECTOR "Vector"  @277,239 39x71  fill=#0a0a0a
+                VECTOR "Vector"  @276,254 15x57  fill=#ffc71b
+                VECTOR "Vector"  @276,254 15x57  fill=#000000
+                VECTOR "Vector"  @274,297 9x11  fill=#37474f
+                VECTOR "Vector"  @273,298 7x9  fill=#455a64
+                VECTOR "Vector"  @275,301 3x4  fill=#263238
+                VECTOR "Vector"  @287,305 6x5  fill=#37474f
+                VECTOR "Vector"  @287,305 4x5  fill=#263238
+                VECTOR "Vector"  @313,293 3x5  fill=#37474f
+                VECTOR "Vector"  @277,239 38x22  fill=#0a0a0a
+                VECTOR "Vector"  @301,244 4x3  fill=#263238
+                VECTOR "Vector"  @301,244 4x2  fill=#455a64
+                VECTOR "Vector"  @301,244 2x3  fill=#37474f
+                VECTOR "Vector"  @289,244 14x8  fill=#455a64
+                VECTOR "Vector"  @289,250 2x3  fill=#37474f
+                VECTOR "Vector"  @287,252 4x3  fill=#263238
+                VECTOR "Vector"  @287,252 4x2  fill=#455a64
+                VECTOR "Vector"  @291,252 0x2  fill=#263238
+                VECTOR "Vector"  @303,245 0x2  fill=#263238
+                VECTOR "Vector"  @291,245 12x7  fill=#263238
+                VECTOR "Vector"  @301,246 2x2  fill=#37474f
+              VECTOR "Vector"  @284,206 12x9  fill=#f28f8f
+            GROUP "freepik--Head--inject-2"  @240,150 23x30
+              VECTOR "Vector"  @242,150 21x21  fill=#263238
+              VECTOR "Vector"  @242,155 20x26  fill=#f28f8f
+              VECTOR "Vector"  @250,162 2x2  fill=#263238
+              VECTOR "Vector"  @242,157 2x1  fill=#263238
+              VECTOR "Vector"  @250,158 2x1  fill=#263238
+              VECTOR "Vector"  @247,167 3x2  fill=#9a4a4d
+              VECTOR "Vector"  @248,168 2x2  fill=#ffa8a7
+              VECTOR "Vector"  @243,161 2x2  fill=#263238
+              VECTOR "Vector"  @244,161 3x5  fill=#b16668
+              VECTOR "Vector"  @248,170 7x4  fill=#b16668
+              VECTOR "Vector"  @245,161 2x1  fill=#263238
+              VECTOR "Vector"  @247,159 8x7  fill=#ffc71b
+              VECTOR "Vector"  @247,159 8x7  fill=#000000
+              VECTOR "Vector"  @248,160 6x5  fill=#000000
+              VECTOR "Vector"  @241,159 4x4  fill=#000000
+              VECTOR "Vector"  @240,159 6x6  fill=#ffc71b
+              VECTOR "Vector"  @240,159 6x6  fill=#000000
+            VECTOR "Vector"  @243,149 20x16  fill=#455a64
+      GROUP "freepik--speech-bubble--inject-2"  @275,150 18x23
+        GROUP "freepik--speech-bubble--inject-2"  @275,150 18x23
+          GROUP "freepik--speech-bubble--inject-2"  @275,150 18x23
+            VECTOR "Vector"  @278,150 14x23  fill=#ffc71b
+            VECTOR "Vector"  @278,157 3x16  fill=#000000
+            VECTOR "Vector"  @278,150 14x8  fill=#0a0a0a
+            VECTOR "Vector"  @275,162 6x6  fill=#ffc71b
+            VECTOR "Vector"  @275,162 6x6  fill=#0a0a0a
+            VECTOR "Vector"  @277,152 16x21  fill=#ffc71b
+          VECTOR "freepik--Check--inject-2"  @282,156 8x12  fill=#0a0a0a
+  GROUP "hober"  @0,0 375x812
+    RECTANGLE "Rectangle 171"  @0,0 375x812  fill=#000000@0.60
+  FRAME "Sign In Screen"  @0,315 375x497
+    GROUP "Welcome Section"  @0,315 375x497  r=[0, 0, 0, 0]
+      GROUP "Background"  @0,315 375x497  r=[0, 0, 0, 0]
+        RECTANGLE "Background Rectangle"  @0,315 375x497  fill=#fcf8f5  r=[30, 30, 0, 0]
+      FRAME "Header Text"  @73,764 217x10
+        TEXT "Welcome Message"  @73,764 217x10  text='Don’t have an account? Register'  font=Anek Bangla 600 14  lh=26.1  align=CENTER  fill=#ffc71b
+      FRAME "Social Sign-In Methods"  @25,568 326x180
+        FRAME "Google Sign-In Button"  @25,568 326x50  fill=#f1ece6  r=11
+          GROUP "Google Icon"  @102,585 16x16
+            VECTOR "Vector"  @102,585 16x16  fill=#1e1e1e
+          TEXT "Google Sign-In Text"  @128,588 146x10  text='Continue with Google'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#1e1e1e
+        FRAME "Facebook Sign-In Button"  @25,633 326x50  fill=#f1ece6  r=11
+          FRAME "手机 1"  @72,646 24x24
+            VECTOR "Vector"  @77,646 14x22  fill=#000000
+          TEXT "Facebook Sign-In Text"  @106,653 197x10  text='Continue with Phone number'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#1e1e1e
+        FRAME "Apple Sign-In Button"  @25,698 326x50  fill=#f1ece6  r=11
+          VECTOR "Apple Icon"  @108,716 12x15  fill=#1e1e1e
+          TEXT "Apple Sign-In Text"  @130,718 138x10  text='Continue with Apple'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#1e1e1e
+      FRAME "Divider With Text"  @25,545 325x10
+        LINE "Divider Line 1"  @18,550 125x0  stroke=#eeeeee/1
+        TEXT "Divider Text"  @149,545 77x10  text='Sign in with'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#6d6d6d
+        LINE "Divider Line 2"  @232,550 125x0  stroke=#eeeeee/1
+      FRAME "Email Login"  @25,480 325x50  fill=#ffc71b  r=11
+        GROUP "Message Icon"  @107,498 16x15
+          VECTOR "Message Stroke 1"  @110,503 9x3  stroke=#fcf8f5/1.5
+          VECTOR "Message Stroke 2"  @107,498 16x15  stroke=#fcf8f5/1.5
+        TEXT "Continue with Email Button"  @133,500 135x10  text='Continue with Email'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#fcf8f5
+      FRAME "Welcome Message Box"  @25,374 316x68
+        TEXT "Welcome Title"  @25,374 316x11  text='Welcome to Surgo'  font=Outfit 600 16  lh=20.2  align=LEFT  fill=#000000
+        TEXT "Welcome Description"  @25,405 316x37  text='If you are alrady have procery account, enter your email below.'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#6d6d6d
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#ffffff
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#ffffff  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#ffffff
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#ffffff
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffffff
+======================================================================
+FRAME 40:1415  "POP UP"  375x812
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#ffffff
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#ffffff  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#ffffff
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#ffffff
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffffff
+  GROUP "Description"  @24,135 327x65  r=[0, 0, 0, 0]
+    TEXT "Enter OTP Code"  @24,135 107x10  text='Enter OTP Code'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffffff
+    TEXT "We have just sent you 4 digit code via your email example@gmail.com"  @24,172 327x28  text='We have just sent you 4 digit code via your email example@gmail.com'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffffff
+  GROUP "Top"  @24,52 48x48
+    GROUP "Arrow Back"  @24,52 48x48
+      ELLIPSE "BG"  @24,52 48x48  fill=#f1ece6
+      FRAME "Arrow - Left"  @36,64 24x24
+        GROUP "Iconly/Light-Outline/Arrow---Left"  @40,70 16x14
+          GROUP "Arrow---Left"  @40,70 16x14
+            VECTOR "Combined-Shape"  @40,70 16x14  fill=#ffffff
+  GROUP "Actions"  @24,336 327x42  r=1
+    INSTANCE "Button"  @24,336 327x42  r=1
+      INSTANCE "Label"  @24,336 327x42  fill=#ffc71b  r=16
+        TEXT "Large Label-Medium 16px"  @156,352 62x10  text='Continue'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#0a0a0a
+  FRAME "Code"  @52,232 272x56
+    INSTANCE "INPUT FIELD"  @52,232 56x56
+      RECTANGLE "Code"  @52,232 56x56  fill=#f1ece6  r=16
+      TEXT "Medium Label-Semi Bold 14px"  @60,252 40x10  text='3'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffc71b
+    INSTANCE "INPUT FIELD"  @124,232 56x56
+      RECTANGLE "Code"  @124,232 56x56  fill=#f1ece6  r=16
+      TEXT "Medium Label-Semi Bold 14px"  @132,252 40x10  text='3'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffc71b
+    INSTANCE "INPUT FIELD"  @196,232 56x56
+      RECTANGLE "Code"  @196,232 56x56  fill=#f1ece6  r=16
+      TEXT "Medium Label-Semi Bold 14px"  @204,252 40x10  text='1'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffc71b
+    INSTANCE "INPUT FIELD"  @268,232 56x56
+      RECTANGLE "Code"  @268,232 56x56  fill=#0a0a0a  stroke=#ffc71b/1  r=16
+      TEXT "Medium Label-Semi Bold 14px"  @276,252 40x10  text='4'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffc71b
+  FRAME "Frame 1000003243"  @53,416 270x24
+    TEXT "Large Label-Medium 16px"  @49,424 231x10  text='Didn’t receive code? Resend Code'  font=Anek Bangla 600 14  lh=26.1  align=LEFT  fill=#6d6d6d
+  RECTANGLE "Overlay"  @0,0 375x812  fill=#171725@0.24
+  FRAME "Pop Up"  @41,272 294x218  fill=#f1ece6  r=16
+    GROUP "Description"  @65,312 246x64  r=[0, 0, 0, 0]
+      TEXT ""I accept the Terms of Service and Conditions, agree to electronic communications, and affirm the accuracy of my information.""  @65,312 246x64  text='"I accept the Terms of Service and Conditions, agree to electronic communications, and affirm the accuracy of my information."'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#000000
+    FRAME "CTA"  @65,408 246x42
+      FRAME "Button"  @65,424 115x10
+        INSTANCE "Label"  @92,424 60x10  r=8
+          TEXT "Medium Label-Medium 14px"  @92,424 60x10  text='Disagree'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#f41f52
+      FRAME "Button"  @196,408 115x42
+        FRAME "Button dark"  @196,408 115x42  fill=#ffc71b  r=20
+          INSTANCE "Label"  @218,420 72x18  fill=#ffc71b  r=12
+            TEXT "Small Label-Regular 12px"  @234,424 40x10  text='Agree'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#0a0a0a
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#ffffff
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#ffffff  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#ffffff
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#ffffff
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffffff
+======================================================================
+FRAME 40:1485  "Congratulations"  375x812
+  GROUP "Top"  @24,52 48x48
+    GROUP "Arrow Back"  @24,52 48x48
+      ELLIPSE "BG"  @24,52 48x48  fill=#f1ece6
+      FRAME "Arrow - Left"  @36,64 24x24  fill=#f1ece6
+        GROUP "Iconly/Light-Outline/Arrow---Left"  @40,70 16x14
+          GROUP "Arrow---Left"  @40,70 16x14
+            VECTOR "Combined-Shape"  @40,70 16x14  fill=#ffffff
+  FRAME "Create New Password "  @25,44 325x734
+    INSTANCE "continue"  @25,728 325x50  fill=#ffc71b  r=11
+      TEXT "Text"  @156,748 62x10  text='Continue'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+    FRAME "text"  @25,693 124x15
+      FRAME "check"  @25,693 15x15  fill=#ffc71b  r=3
+        VECTOR "Vector 6663"  @30,698 6x5  stroke=#ffffff/1  r=[0, 0, 0, 0]
+      TEXT "Remember me"  @50,696 99x10  text='Remember me'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#aaaaaa
+    FRAME "Password"  @25,589 325x86
+      TEXT "New Password"  @25,589 98x10  text='New Password'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+      FRAME "text"  @25,607 325x50  fill=#ffffff  r=11
+        INSTANCE "icon"  @45,624 16x16
+          GROUP "Lock"  @47,625 11x13
+            BOOLEAN_OPERATION "Lock"  @47,625 11x13  fill=#000000
+              VECTOR "Path"  @52,633 1x3  fill=#130f26
+              VECTOR "Path"  @51,626 5x3  fill=#130f26
+              VECTOR "Path"  @47,625 11x13  fill=#130f26
+        FRAME "pass"  @73,629 233x6
+          ELLIPSE "Ellipse 21"  @73,629 6x6  fill=#000000
+          ELLIPSE "Ellipse 22"  @84,629 6x6  fill=#000000
+          ELLIPSE "Ellipse 23"  @95,629 6x6  fill=#000000
+          ELLIPSE "Ellipse 24"  @106,629 6x6  fill=#000000
+          ELLIPSE "Ellipse 25"  @117,629 6x6  fill=#000000
+          ELLIPSE "Ellipse 26"  @128,629 6x6  fill=#000000
+          ELLIPSE "Ellipse 27"  @139,629 6x6  fill=#000000
+          ELLIPSE "Ellipse 28"  @150,629 6x6  fill=#000000
+        INSTANCE "hide"  @318,624 16x16
+          GROUP "Hide"  @319,626 13x11
+            BOOLEAN_OPERATION "Hide"  @319,626 13x11  fill=#ffc71b
+              VECTOR "Fill 1"  @319,627 9x8  fill=#130f26
+              BOOLEAN_OPERATION "Fill 4"  @320,626 12x11  fill=#130f26
+                VECTOR "Path"  @325,631 4x4
+                VECTOR "Path"  @320,626 12x11
+      FRAME "text"  @25,665 185x10
+        TEXT "Both password must match"  @25,665 185x10  text='Both password must match'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#aaaaaa
+    FRAME "Password"  @25,481 325x90
+      TEXT "Password"  @25,481 65x10  text='Password'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+      FRAME "text"  @25,501 325x50  fill=#ffffff  r=11
+        INSTANCE "icon"  @45,518 16x16
+          GROUP "Lock"  @47,519 11x13
+            BOOLEAN_OPERATION "Lock"  @47,519 11x13  fill=#000000
+              VECTOR "Path"  @52,527 1x3  fill=#130f26
+              VECTOR "Path"  @51,520 5x3  fill=#130f26
+              VECTOR "Path"  @47,519 11x13  fill=#130f26
+        FRAME "pass"  @73,523 233x6
+          ELLIPSE "Ellipse 21"  @73,523 6x6  fill=#000000
+          ELLIPSE "Ellipse 22"  @84,523 6x6  fill=#000000
+          ELLIPSE "Ellipse 23"  @95,523 6x6  fill=#000000
+          ELLIPSE "Ellipse 24"  @106,523 6x6  fill=#000000
+          ELLIPSE "Ellipse 25"  @117,523 6x6  fill=#000000
+          ELLIPSE "Ellipse 26"  @128,523 6x6  fill=#000000
+          ELLIPSE "Ellipse 27"  @139,523 6x6  fill=#000000
+          ELLIPSE "Ellipse 28"  @150,523 6x6  fill=#000000
+        INSTANCE "hide"  @318,518 16x16
+          GROUP "Hide"  @319,520 13x11
+            BOOLEAN_OPERATION "Hide"  @319,520 13x11  fill=#ffc71b
+              VECTOR "Fill 1"  @319,521 9x8  fill=#130f26
+              BOOLEAN_OPERATION "Fill 4"  @320,520 12x11  fill=#130f26
+                VECTOR "Path"  @325,525 4x4
+                VECTOR "Path"  @320,520 12x11
+      FRAME "text"  @25,561 198x10
+        TEXT "Must be at least 8 characters"  @25,561 198x10  text='Must be at least 8 characters'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#aaaaaa
+    FRAME "title"  @25,447 147x10
+      TEXT "Create New Password"  @25,447 147x10  text='Create New Password'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    GROUP "illustrations"  @52,115 270x270
+      GROUP "clip0_46_7731"  @52,115 270x270
+        VECTOR "Vector"  @52,115 270x270  fill=#000000
+      GROUP "Group"  @63,138 249x225
+        GROUP "Clip path group"  @63,138 249x225
+          GROUP "clip1_46_7731"  @63,138 249x225
+            VECTOR "Vector"  @63,138 249x225  fill=#000000
+          GROUP "Group"  @63,138 248x224
+            VECTOR "Vector"  @84,193 186x119  fill=#000000
+            VECTOR "Vector"  @283,261 12x28  fill=#000000
+            VECTOR "Vector"  @222,226 8x12
+            VECTOR "Vector"  @178,227 49x14  fill=#000000
+            VECTOR "Vector"  @176,230 9x12
+            VECTOR "Vector"  @141,147 35x37  fill=#000000
+            VECTOR "Vector"  @162,199 13x31
+            VECTOR "Vector"  @114,304 23x58
+            VECTOR "Vector"  @113,245 22x37
+            VECTOR "Vector"  @170,158 4x38  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @149,183 3x1  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @149,182 0x1  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @149,183 0x0  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @145,182 4x2  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @145,180 1x2  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @141,147 22x35  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @163,150 1x2  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @149,148 26x51  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @161,162 6x15  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @165,167 3x1  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @155,168 3x1  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @158,184 5x1  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @156,193 25x36  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @148,199 8x11  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @158,198 15x4  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @168,199 2x7  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @162,201 4x5  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @165,206 1x11  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @168,206 6x10  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @84,209 64x104  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @122,270 6x14  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @121,290 29x14  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @126,284 23x6  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @128,279 19x6  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @181,199 89x40  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @263,251 27x32  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @266,269 13x2  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @262,264 18x6  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @260,271 20x7  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @124,237 155x33  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @124,283 160x80  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @113,245 22x31  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @114,313 23x49  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @149,237 20x6  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @244,234 14x4  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @176,230 7x11  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @178,231 7x11  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @223,227 5x11  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @225,227 6x12  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @180,222 46x9  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @283,261 11x28  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @63,202 38x55  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @286,215 25x105
+            VECTOR "Vector"  @184,156 8x0  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @181,139 17x12  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @178,138 3x9  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @131,143 5x3  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @132,141 4x6  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @125,194 6x5  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @124,191 6x8  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @232,179 6x6
+            VECTOR "Vector"  @232,177 5x7
+            VECTOR "Vector"  @190,177 13x13  fill=#000000
+            VECTOR "Vector"  @99,174 11x11
+            VECTOR "Vector"  @81,290 13x21  stroke=#000000/0.9281249642372131
+            VECTOR "Vector"  @289,276 8x15  stroke=#000000/0.9281249642372131
+            GROUP "Group"  @149,159 11x43
+              VECTOR "Vector"  @149,159 11x43  fill=#000000
+            GROUP "Group"  @170,198 5x29
+              VECTOR "Vector"  @170,198 5x29  fill=#000000
+            GROUP "Group"  @112,247 19x31
+              VECTOR "Vector"  @112,247 19x31  fill=#000000
+            GROUP "Group"  @114,312 16x49
+              VECTOR "Vector"  @114,312 16x49  fill=#000000
+    FRAME "menu bar"  @25,44 147x10
+    RECTANGLE "Rectangle 171"  @0,-8 375x822  fill=#000000@0.60
+  FRAME "congratulations!"  @25,147 325x519  fill=#f1ece6  r=30
+    RECTANGLE "50a2a242-bff1-42ae-af72-d6bc5a99f01a 1"  @88,197 199x172
+    FRAME "title"  @53,399 269x14
+      TEXT "Congratulations!"  @53,399 269x14  text='Congratulations!'  font=Outfit 600 20  lh=25.2  align=CENTER  fill=#000000
+    FRAME "text"  @53,443 269x28
+      TEXT ""Account successfully created. Choose your region and language～"  @53,443 269x28  text='"Account successfully created. Choose your region and language～'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#6d6d6d
+    FRAME "Frame 2147225921"  @62,501 251x115
+      FRAME "back to home"  @62,501 251x50  fill=#ffc71b  r=11
+        TEXT "English"  @164,521 48x10  text='English'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#0a0a0a
+      FRAME "back to home"  @62,566 251x50  fill=#ffc71b  r=11
+        TEXT "Chinese"  @160,586 55x10  text='Chinese'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#0a0a0a
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#ffffff
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#ffffff  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#ffffff
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#ffffff
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffffff
+======================================================================
+FRAME 40:1648  "Forget password 3"  375x812
+  FRAME "text"  @135,361 104x10
+    FRAME "Back to sign in"  @135,361 104x10
+      TEXT "Back to Sign In"  @135,361 99x10  text='Back to Sign In'  font=Anek Bangla 600 14  lh=26.1  align=CENTER  fill=#ffc71b
+  FRAME "email"  @25,211 325x70
+    FRAME "title"  @25,211 325x10
+      TEXT "Your Email"  @25,211 325x10  text='Your Email'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffffff
+    INSTANCE "email"  @25,231 325x50  fill=#f1ece6  r=11
+      INSTANCE "icon"  @45,248 16x16
+        GROUP "Message"  @46,250 13x12
+          BOOLEAN_OPERATION "Message"  @46,250 13x12  fill=#aaaaaa
+            VECTOR "Path"  @49,253 9x4
+            VECTOR "Path"  @46,250 13x12
+      TEXT "Enter email"  @73,251 257x10  text='Enter email'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#aaaaaa
+  FRAME "text"  @25,129 325x28
+    TEXT ""Enter your email, and we’ll guide you to reset your password.""  @25,129 325x28  text='"Enter your email, and we’ll guide you to reset your password."'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#aaaaaa
+  FRAME "menu bar"  @25,44 186x48
+    GROUP "Arrow Back"  @25,44 48x48
+      ELLIPSE "BG"  @25,44 48x48  fill=#f1ece6
+      FRAME "Arrow - Left"  @37,56 24x24
+        GROUP "Iconly/Light-Outline/Arrow---Left"  @40,62 16x14
+          GROUP "Arrow---Left"  @40,62 16x14
+            VECTOR "Combined-Shape"  @40,62 16x14  fill=#000000
+    FRAME "title"  @99,63 112x10
+      TEXT "Forget Password"  @99,63 112x10  text='Forget Password'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#000000
+  FRAME "Button"  @25,296 325x50  fill=#ffc71b  r=11
+    TEXT "Text"  @164,316 47x10  text='Signup'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#0a0a0a
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#000000
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#000000  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#000000
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#000000
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+======================================================================
+FRAME 40:1689  "Check Email"  375x812
+  FRAME "text"  @11,699 325x24
+    TEXT "Did not receive the email? Check your Spam folder or try. Try another email address"  @11,699 325x24  text='Did not receive the email? Check your Spam\u2028folder or try. Try another email address'  font=Anek Bangla 600 12  lh=22.4  align=CENTER  fill=#888888
+  FRAME "Skip"  @115,662 140x10
+    TEXT "Skip, I’ll confirm later"  @115,662 140x10  text='Skip, I’ll confirm later'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#6d6d6d
+  FRAME "open email"  @23,597 325x50  fill=#ffc71b  r=11
+    TEXT "Text"  @132,617 108x10  text='Open Email App'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#0a0a0a
+  FRAME "title"  @24,569 311x28
+  TEXT "We have sent a password recover instructions to your email."  @34,526 311x28  text='We have sent a password recover instructions\u2028to your email.'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#6d6d6d@0.52
+  FRAME "menu bar"  @25,44 146x48
+    GROUP "Top"  @25,44 48x48
+      GROUP "Arrow Back"  @25,44 48x48
+        ELLIPSE "BG"  @25,44 48x48  fill=#f1ece6
+        FRAME "Arrow - Left"  @37,56 24x24
+          GROUP "Iconly/Light-Outline/Arrow---Left"  @40,62 16x14
+            GROUP "Arrow---Left"  @40,62 16x14
+              VECTOR "Combined-Shape"  @40,62 16x14  fill=#000000
+    FRAME "title"  @88,63 83x10
+      TEXT "Check Email"  @88,63 83x10  text='Check Email'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#000000
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#000000
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#000000  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#000000
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#000000
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+  RECTANGLE "50a2a242-bff1-42ae-af72-d6bc5a99f01a 1"  @-12,110 399x399
+======================================================================
+FRAME 40:1729  "Reset Password 4"  375x812
+  FRAME "verify"  @25,434 325x50  fill=#ffc71b  r=11
+    TEXT "Text"  @168,454 40x10  text='Verify'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#0a0a0a
+  FRAME "Resend code"  @123,355 130x10
+    TEXT "Resend code is 55s"  @123,355 130x10  text='Resend code is 55s'  font=Anek Bangla 600 14  lh=26.1  align=CENTER  fill=#aaaaaa
+  FRAME "count"  @70,290 235x45
+    FRAME "1"  @70,290 35x45  fill=#f1ece6  r=6
+      TEXT "5"  @83,308 9x10  text='5'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "1"  @120,290 35x45  fill=#f1ece6  r=6
+      TEXT "3"  @133,308 9x10  text='3'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "1"  @170,290 35x45  fill=#f1ece6  stroke=#000000/1  r=6
+      TEXT "|"  @186,308 4x10  text='|'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "1"  @220,290 35x45  fill=#f1ece6  r=6
+    FRAME "1"  @270,290 35x45  fill=#f1ece6  r=6
+  FRAME "text"  @25,129 283x28
+    TEXT "Please enter the verification code we sent to your email arishairean@gmail.com"  @25,129 283x28  text='Please enter the verification code we sent\nto your email arishairean@gmail.com'  font=Anek Bangla 600 14  lh=26.1  align=LEFT  fill=#6d6d6d
+  FRAME "menu bar"  @25,44 186x48
+    GROUP "Top"  @25,44 48x48
+      GROUP "Arrow Back"  @25,44 48x48
+        ELLIPSE "BG"  @25,44 48x48  fill=#f1ece6
+        FRAME "Arrow - Left"  @37,56 24x24
+          GROUP "Iconly/Light-Outline/Arrow---Left"  @40,62 16x14
+            GROUP "Arrow---Left"  @40,62 16x14
+              VECTOR "Combined-Shape"  @40,62 16x14  fill=#000000
+    FRAME "title"  @105,63 106x10
+      TEXT "Reset Password"  @105,63 106x10  text='Reset Password'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+  FRAME "Alphanumberic"  @0,513 375x299  fill=#1a1a1a
+    FRAME "Suggestions"  @0,513 375x42
+      TEXT "Suggestion"  @0,513 124x42  text='I'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      RECTANGLE "Divider"  @124,523 1x22  fill=#ffffff
+      TEXT "Suggestion"  @125,513 124x42  text='The'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      RECTANGLE "Divider"  @250,523 1x22  fill=#ffffff
+      TEXT "Suggestion"  @251,513 124x42  text='Go'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+    FRAME "Alphanumeric Keyboard Layout"  @0,555 375x193
+      FRAME "Row 1"  @4,559 368x39
+        FRAME "Keys"  @4,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @4,559 33x39  text='Q'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @41,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @41,559 31x39  text='W'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @78,559 34x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @78,559 34x39  text='E'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @117,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @117,559 31x39  text='R'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @153,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @153,559 33x39  text='T'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @191,559 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @191,559 32x39  text='Y'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @228,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @228,559 31x39  text='U'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @264,559 34x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @264,559 34x39  text='I'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @303,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @303,559 31x39  text='O'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @339,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @339,559 33x39  text='P'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      FRAME "Row 2"  @4,608 368x39
+        FRAME "Keys"  @21,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @21,608 33x39  text='A'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @59,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @59,608 32x39  text='S'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @96,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @96,608 33x39  text='D'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @134,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @134,608 33x39  text='F'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @172,608 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @172,608 31x39  text='G'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @208,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @208,608 33x39  text='H'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @246,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @246,608 32x39  text='J'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @283,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,608 33x39  text='K'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @321,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @321,608 32x39  text='L'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      FRAME "Row 3"  @4,657 368x39
+        FRAME "Keys"  @59,657 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @59,657 32x39  text='Z'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @96,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @96,657 33x39  text='X'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @134,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @134,657 33x39  text='C'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @172,657 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @172,657 31x39  text='V'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @208,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @208,657 33x39  text='B'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @246,657 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @246,657 32x39  text='N'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @283,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,657 33x39  text='M'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @4,657 39x39  fill=#0a0a0a  r=4.38084077835083
+          INSTANCE "Icons"  @9,662 28x28
+            VECTOR "on"  @14,668 17x14  fill=#ffffff
+        FRAME "Keys"  @333,657 39x39  fill=#0a0a0a  r=4.38084077835083
+          INSTANCE "Icons"  @338,662 28x28
+            VECTOR "Union"  @342,668 20x15  fill=#ffffff
+      FRAME "Row 4"  @4,706 368x39
+        FRAME "Keys"  @96,706 182x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Label"  @96,706 182x39  text='space'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @321,706 50x39  fill=#ffc71b  r=4.38084077835083
+          TEXT "Label"  @321,706 50x39  text='go'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#1a1a1a
+        FRAME "Keys"  @283,706 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,706 33x39  text='.'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @4,706 87x39  fill=#1d1d1d  r=4.38084077835083
+          TEXT "Label"  @4,706 87x39  text='123'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+    FRAME "Home Indicator"  @0,748 375x63
+      RECTANGLE "Home Indicator"  @118,799 138x4  fill=#ffffff  r=4.38084077835083
+      INSTANCE "Icons"  @315,755 42x42
+        VECTOR "Union"  @329,763 15x25  fill=#50545b
+      INSTANCE "Icons"  @18,755 42x42
+        VECTOR "Icon"  @25,763 26x26  fill=#50545b
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#000000
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#000000  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#000000
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#000000
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+======================================================================
+FRAME 40:1855  "Reset Password 5"  375x812
+  FRAME "verify"  @25,434 325x50  fill=#ffc71b  r=11
+    TEXT "Text"  @168,454 40x10  text='Verify'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#0a0a0a
+  FRAME "Resend code"  @123,355 130x10
+    TEXT "Resend code is 55s"  @123,355 130x10  text='Resend code is 55s'  font=Anek Bangla 600 14  lh=26.1  align=CENTER  fill=#aaaaaa
+  FRAME "count"  @70,290 235x45
+    FRAME "1"  @70,290 35x45  fill=#f1ece6  r=6
+      TEXT "5"  @83,308 9x10  text='5'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "1"  @120,290 35x45  fill=#f1ece6  r=6
+      TEXT "3"  @133,308 9x10  text='3'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "1"  @170,290 35x45  fill=#f1ece6  stroke=#000000/1  r=6
+      TEXT "|"  @186,308 4x10  text='|'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "1"  @220,290 35x45  fill=#f1ece6  r=6
+    FRAME "1"  @270,290 35x45  fill=#f1ece6  r=6
+  FRAME "text"  @25,129 283x28
+    TEXT "Please enter the verification code we sent to your Phone 1234444333"  @25,129 283x28  text='Please enter the verification code we sent\nto your Phone 1234444333'  font=Anek Bangla 600 14  lh=26.1  align=LEFT  fill=#6d6d6d
+  FRAME "menu bar"  @25,44 186x48
+    GROUP "Top"  @25,44 48x48
+      GROUP "Arrow Back"  @25,44 48x48
+        ELLIPSE "BG"  @25,44 48x48  fill=#f1ece6
+        FRAME "Arrow - Left"  @37,56 24x24
+          GROUP "Iconly/Light-Outline/Arrow---Left"  @40,62 16x14
+            GROUP "Arrow---Left"  @40,62 16x14
+              VECTOR "Combined-Shape"  @40,62 16x14  fill=#000000
+    FRAME "title"  @105,63 106x10
+      TEXT "Reset Password"  @105,63 106x10  text='Reset Password'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+  FRAME "Alphanumberic"  @0,513 375x299  fill=#1a1a1a
+    FRAME "Suggestions"  @0,513 375x42
+      TEXT "Suggestion"  @0,513 124x42  text='I'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      RECTANGLE "Divider"  @124,523 1x22  fill=#ffffff
+      TEXT "Suggestion"  @125,513 124x42  text='The'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      RECTANGLE "Divider"  @250,523 1x22  fill=#ffffff
+      TEXT "Suggestion"  @251,513 124x42  text='Go'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+    FRAME "Alphanumeric Keyboard Layout"  @0,555 375x193
+      FRAME "Row 1"  @4,559 368x39
+        FRAME "Keys"  @4,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @4,559 33x39  text='Q'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @41,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @41,559 31x39  text='W'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @78,559 34x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @78,559 34x39  text='E'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @117,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @117,559 31x39  text='R'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @153,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @153,559 33x39  text='T'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @191,559 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @191,559 32x39  text='Y'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @228,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @228,559 31x39  text='U'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @264,559 34x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @264,559 34x39  text='I'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @303,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @303,559 31x39  text='O'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @339,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @339,559 33x39  text='P'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      FRAME "Row 2"  @4,608 368x39
+        FRAME "Keys"  @21,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @21,608 33x39  text='A'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @59,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @59,608 32x39  text='S'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @96,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @96,608 33x39  text='D'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @134,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @134,608 33x39  text='F'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @172,608 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @172,608 31x39  text='G'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @208,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @208,608 33x39  text='H'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @246,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @246,608 32x39  text='J'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @283,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,608 33x39  text='K'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @321,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @321,608 32x39  text='L'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      FRAME "Row 3"  @4,657 368x39
+        FRAME "Keys"  @59,657 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @59,657 32x39  text='Z'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @96,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @96,657 33x39  text='X'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @134,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @134,657 33x39  text='C'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @172,657 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @172,657 31x39  text='V'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @208,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @208,657 33x39  text='B'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @246,657 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @246,657 32x39  text='N'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @283,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,657 33x39  text='M'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @4,657 39x39  fill=#0a0a0a  r=4.38084077835083
+          INSTANCE "Icons"  @9,662 28x28
+            VECTOR "on"  @14,668 17x14  fill=#ffffff
+        FRAME "Keys"  @333,657 39x39  fill=#0a0a0a  r=4.38084077835083
+          INSTANCE "Icons"  @338,662 28x28
+            VECTOR "Union"  @342,668 20x15  fill=#ffffff
+      FRAME "Row 4"  @4,706 368x39
+        FRAME "Keys"  @96,706 182x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Label"  @96,706 182x39  text='space'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @321,706 50x39  fill=#ffc71b  r=4.38084077835083
+          TEXT "Label"  @321,706 50x39  text='go'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#1a1a1a
+        FRAME "Keys"  @283,706 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,706 33x39  text='.'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @4,706 87x39  fill=#1d1d1d  r=4.38084077835083
+          TEXT "Label"  @4,706 87x39  text='123'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+    FRAME "Home Indicator"  @0,748 375x63
+      RECTANGLE "Home Indicator"  @118,799 138x4  fill=#ffffff  r=4.38084077835083
+      INSTANCE "Icons"  @315,755 42x42
+        VECTOR "Union"  @329,763 15x25  fill=#50545b
+      INSTANCE "Icons"  @18,755 42x42
+        VECTOR "Icon"  @25,763 26x26  fill=#50545b
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#000000
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#000000  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#000000
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#000000
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+======================================================================
+FRAME 40:1981  "Create New Password 4"  375x812
+  FRAME "Continue Button"  @25,728 325x50  fill=#ffc71b  r=11
+    TEXT "Continue Text"  @156,748 62x10  text='Continue'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#0a0a0a
+  FRAME "Login Card"  @25,693 124x15
+    FRAME "Checkbox"  @25,693 15x15  fill=#ffc71b  r=3
+      VECTOR "Checkbox Checked Icon"  @30,698 6x5  stroke=#ffffff/1  r=[0, 0, 0, 0]
+    TEXT "Remember Me Label"  @50,696 99x10  text='Remember me'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#6d6d6d
+  FRAME "Password Section"  @25,589 325x86
+    TEXT "New Password Label"  @25,589 98x10  text='New Password'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffffff
+    FRAME "Password Input Area"  @25,607 325x50  fill=#f1ece6  r=11
+      INSTANCE "icon"  @45,624 16x16
+        GROUP "Lock"  @47,625 11x13
+          BOOLEAN_OPERATION "Lock"  @47,625 11x13  fill=#6d6d6d
+            VECTOR "Path"  @52,633 1x3  fill=#130f26
+            VECTOR "Path"  @51,626 5x3  fill=#130f26
+            VECTOR "Path"  @47,625 11x13  fill=#130f26
+      FRAME "Password Fields"  @73,629 233x6
+        ELLIPSE "Elliptical Indicator 1"  @73,629 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 2"  @84,629 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 3"  @95,629 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 4"  @106,629 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 5"  @117,629 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 6"  @128,629 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 7"  @139,629 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 8"  @150,629 6x6  fill=#6d6d6d
+      INSTANCE "hide"  @318,624 16x16
+        GROUP "Hide"  @319,626 13x11
+          BOOLEAN_OPERATION "Hide"  @319,626 13x11  fill=#6d6d6d
+            VECTOR "Fill 1"  @319,627 9x8  fill=#130f26
+            BOOLEAN_OPERATION "Fill 4"  @320,626 12x11  fill=#130f26
+              VECTOR "Path"  @325,631 4x4
+              VECTOR "Path"  @320,626 12x11
+    FRAME "Password Reminder Text"  @25,665 185x10
+      TEXT "Both password must match"  @25,665 185x10  text='Both password must match'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#6d6d6d
+  FRAME "Confirm Password Section"  @25,481 325x90
+    TEXT "Confirm Password Label"  @25,481 65x10  text='Password'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "Confirm Password Input Area"  @25,501 325x50  fill=#f1ece6  r=11
+      INSTANCE "icon"  @45,518 16x16
+        GROUP "Lock"  @47,519 11x13
+          BOOLEAN_OPERATION "Lock"  @47,519 11x13  fill=#6d6d6d
+            VECTOR "Path"  @52,527 1x3  fill=#130f26
+            VECTOR "Path"  @51,520 5x3  fill=#130f26
+            VECTOR "Path"  @47,519 11x13  fill=#130f26
+      FRAME "Confirm Password Fields"  @73,523 233x6
+        ELLIPSE "Elliptical Indicator 9"  @73,523 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 10"  @84,523 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 11"  @95,523 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 12"  @106,523 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 13"  @117,523 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 14"  @128,523 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 15"  @139,523 6x6  fill=#6d6d6d
+        ELLIPSE "Elliptical Indicator 16"  @150,523 6x6  fill=#6d6d6d
+      INSTANCE "hide"  @318,518 16x16
+        GROUP "Hide"  @319,520 13x11
+          BOOLEAN_OPERATION "Hide"  @319,520 13x11  fill=#6d6d6d
+            VECTOR "Fill 1"  @319,521 9x8  fill=#130f26
+            BOOLEAN_OPERATION "Fill 4"  @320,520 12x11  fill=#130f26
+              VECTOR "Path"  @325,525 4x4
+              VECTOR "Path"  @320,520 12x11
+    FRAME "Password Requirements"  @25,561 198x10
+      TEXT "Minimum 8 Characters Note"  @25,561 198x10  text='Must be at least 8 characters'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#6d6d6d
+  FRAME "Title Section"  @25,447 147x10
+    TEXT "Create New Password Label"  @25,447 147x10  text='Create New Password'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+  FRAME "menu bar"  @25,44 208x48
+    GROUP "Top"  @25,44 48x48
+      GROUP "Arrow Back"  @25,44 48x48
+        ELLIPSE "BG"  @25,44 48x48  fill=#f1ece6
+        FRAME "Arrow - Left"  @37,56 24x24  fill=#f1ece6
+          GROUP "Iconly/Light-Outline/Arrow---Left"  @40,62 16x14
+            GROUP "Arrow---Left"  @40,62 16x14
+              VECTOR "Combined-Shape"  @40,62 16x14  fill=#000000
+    TEXT "Create New Password"  @86,63 147x10  text='Create New Password'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#000000
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#000000
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#000000  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#000000
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#000000
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+  RECTANGLE "50a2a242-bff1-42ae-af72-d6bc5a99f01a 1"  @40,133 288x272
+======================================================================
+FRAME 40:2052  "Sign In Page 4"  375x812
+  FRAME "Button"  @25,415 325x50  fill=#ffc71b  r=11
+    TEXT "Text"  @164,435 47x10  text='Signup'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#0a0a0a
+  FRAME "checkmark"  @25,349 334x15
+    FRAME "check"  @25,349 15x15  fill=#ffc71b  r=3
+      VECTOR "Vector 6663"  @30,354 6x5  stroke=#1a1a1a/1  r=[0, 0, 0, 0]
+    FRAME "text"  @50,352 301x10
+      TEXT "Remember me"  @50,352 99x10  text='Remember me'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#aaaaaa
+      TEXT "Forgot Password?"  @230,352 119x10  text='Forgot Password?'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffc71b
+  FRAME "email"  @25,174 325x70
+    FRAME "title"  @25,174 325x10
+      TEXT "Your Email"  @25,174 325x10  text='Your Email'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "email"  @25,194 325x50  fill=#f1ece6  r=11
+      INSTANCE "icon"  @45,211 16x16
+        GROUP "Message"  @46,213 13x12
+          BOOLEAN_OPERATION "Message"  @46,213 13x12  fill=#aaaaaa
+            VECTOR "Path"  @49,216 9x4
+            VECTOR "Path"  @46,213 13x12
+      TEXT "Enter email"  @73,214 257x10  text='Enter email'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#6d6d6d
+  FRAME "password"  @25,264 325x70
+    FRAME "title"  @25,264 104x10
+      TEXT "Enter Password"  @25,264 104x10  text='Enter Password'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "password"  @25,284 325x50  fill=#f1ece6  r=12
+      INSTANCE "icon"  @45,301 16x16
+        GROUP "Lock"  @47,302 11x13
+          BOOLEAN_OPERATION "Lock"  @47,302 11x13  fill=#aaaaaa
+            VECTOR "Path"  @52,310 1x3  fill=#130f26
+            VECTOR "Path"  @51,303 5x3  fill=#130f26
+            VECTOR "Path"  @47,302 11x13  fill=#130f26
+      FRAME "pass"  @73,306 233x6
+        ELLIPSE "Ellipse 21"  @73,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 22"  @84,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 23"  @95,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 24"  @106,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 25"  @117,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 26"  @128,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 27"  @139,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 28"  @150,306 6x6  fill=#6d6d6d
+      INSTANCE "hide"  @318,301 16x16
+        GROUP "Hide"  @319,303 13x11
+          BOOLEAN_OPERATION "Hide"  @319,303 13x11  fill=#6d6d6d
+            VECTOR "Fill 1"  @319,304 9x8  fill=#130f26
+            BOOLEAN_OPERATION "Fill 4"  @320,303 12x11  fill=#130f26
+              VECTOR "Path"  @325,308 4x4
+              VECTOR "Path"  @320,303 12x11
+  FRAME "title"  @25,130 138x10
+    TEXT "Sign in your account"  @25,130 138x10  text='Sign in your account'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+  FRAME "menu bar"  @25,44 203x48
+    GROUP "Top"  @25,44 48x48
+      GROUP "Arrow Back"  @25,44 48x48
+        ELLIPSE "BG"  @25,44 48x48  fill=#f1ece6
+        FRAME "Arrow - Left"  @37,56 24x24  fill=#f1ece6
+          GROUP "Iconly/Light-Outline/Arrow---Left"  @40,62 16x14
+            GROUP "Arrow---Left"  @40,62 16x14
+              VECTOR "Combined-Shape"  @40,62 16x14  fill=#000000
+  FRAME "Alphanumberic"  @0,513 375x299  fill=#1a1a1a
+    FRAME "Suggestions"  @0,513 375x42
+      TEXT "Suggestion"  @0,513 124x42  text='I'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      RECTANGLE "Divider"  @124,523 1x22  fill=#ffffff
+      TEXT "Suggestion"  @125,513 124x42  text='The'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      RECTANGLE "Divider"  @250,523 1x22  fill=#ffffff
+      TEXT "Suggestion"  @251,513 124x42  text='Go'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+    FRAME "Alphanumeric Keyboard Layout"  @0,555 375x193
+      FRAME "Row 1"  @4,559 368x39
+        FRAME "Keys"  @4,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @4,559 33x39  text='Q'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @41,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @41,559 31x39  text='W'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @78,559 34x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @78,559 34x39  text='E'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @117,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @117,559 31x39  text='R'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @153,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @153,559 33x39  text='T'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @191,559 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @191,559 32x39  text='Y'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @228,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @228,559 31x39  text='U'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @264,559 34x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @264,559 34x39  text='I'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @303,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @303,559 31x39  text='O'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @339,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @339,559 33x39  text='P'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      FRAME "Row 2"  @4,608 368x39
+        FRAME "Keys"  @21,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @21,608 33x39  text='A'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @59,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @59,608 32x39  text='S'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @96,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @96,608 33x39  text='D'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @134,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @134,608 33x39  text='F'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @172,608 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @172,608 31x39  text='G'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @208,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @208,608 33x39  text='H'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @246,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @246,608 32x39  text='J'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @283,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,608 33x39  text='K'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @321,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @321,608 32x39  text='L'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      FRAME "Row 3"  @4,657 368x39
+        FRAME "Keys"  @59,657 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @59,657 32x39  text='Z'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @96,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @96,657 33x39  text='X'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @134,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @134,657 33x39  text='C'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @172,657 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @172,657 31x39  text='V'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @208,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @208,657 33x39  text='B'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @246,657 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @246,657 32x39  text='N'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @283,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,657 33x39  text='M'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @4,657 39x39  fill=#0a0a0a  r=4.38084077835083
+          INSTANCE "Icons"  @9,662 28x28
+            VECTOR "on"  @14,668 17x14  fill=#ffffff
+        FRAME "Keys"  @333,657 39x39  fill=#0a0a0a  r=4.38084077835083
+          INSTANCE "Icons"  @338,662 28x28
+            VECTOR "Union"  @342,668 20x15  fill=#ffffff
+      FRAME "Row 4"  @4,706 368x39
+        FRAME "Keys"  @96,706 182x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Label"  @96,706 182x39  text='space'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @321,706 50x39  fill=#ffc71b  r=4.38084077835083
+          TEXT "Label"  @321,706 50x39  text='go'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#1a1a1a
+        FRAME "Keys"  @283,706 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,706 33x39  text='.'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @4,706 87x39  fill=#1d1d1d  r=4.38084077835083
+          TEXT "Label"  @4,706 87x39  text='123'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+    FRAME "Home Indicator"  @0,748 375x63
+      RECTANGLE "Home Indicator"  @118,799 138x4  fill=#ffffff  r=4.38084077835083
+      INSTANCE "Icons"  @315,755 42x42
+        VECTOR "Union"  @329,763 15x25  fill=#50545b
+      INSTANCE "Icons"  @18,755 42x42
+        VECTOR "Icon"  @25,763 26x26  fill=#50545b
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#000000
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#000000  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#000000
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#000000
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+======================================================================
+FRAME 40:2192  "Sign In Page 5"  375x812
+  FRAME "Button"  @25,415 325x50  fill=#ffc71b  r=11
+    TEXT "Text"  @164,435 47x10  text='Signup'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#0a0a0a
+  FRAME "checkmark"  @25,349 334x15
+    FRAME "check"  @25,349 15x15  fill=#ffc71b  r=3
+      VECTOR "Vector 6663"  @30,354 6x5  stroke=#1a1a1a/1  r=[0, 0, 0, 0]
+    FRAME "text"  @50,352 301x10
+      TEXT "Remember me"  @50,352 99x10  text='Remember me'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#aaaaaa
+      TEXT "Forgot Password?"  @230,352 119x10  text='Forgot Password?'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#ffc71b
+  FRAME "email"  @25,174 325x70
+    FRAME "title"  @25,174 325x10
+      TEXT "Your Phone number"  @25,174 325x10  text='Your Phone number'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "email"  @25,194 325x50  fill=#f1ece6  r=11
+      FRAME "手机 2"  @45,209 20x20
+        VECTOR "Vector"  @49,209 12x18  fill=#aaaaaa
+      TEXT "1234444333"  @77,214 257x10  text='1234444333'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+  FRAME "password"  @25,264 325x70
+    FRAME "title"  @25,264 104x10
+      TEXT "Enter Password"  @25,264 104x10  text='Enter Password'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+    FRAME "password"  @25,284 325x50  fill=#f1ece6  r=12
+      INSTANCE "icon"  @45,301 16x16
+        GROUP "Lock"  @47,302 11x13
+          BOOLEAN_OPERATION "Lock"  @47,302 11x13  fill=#aaaaaa
+            VECTOR "Path"  @52,310 1x3  fill=#130f26
+            VECTOR "Path"  @51,303 5x3  fill=#130f26
+            VECTOR "Path"  @47,302 11x13  fill=#130f26
+      FRAME "pass"  @73,306 233x6
+        ELLIPSE "Ellipse 21"  @73,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 22"  @84,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 23"  @95,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 24"  @106,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 25"  @117,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 26"  @128,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 27"  @139,306 6x6  fill=#6d6d6d
+        ELLIPSE "Ellipse 28"  @150,306 6x6  fill=#6d6d6d
+      INSTANCE "hide"  @318,301 16x16
+        GROUP "Hide"  @319,303 13x11
+          BOOLEAN_OPERATION "Hide"  @319,303 13x11  fill=#6d6d6d
+            VECTOR "Fill 1"  @319,304 9x8  fill=#130f26
+            BOOLEAN_OPERATION "Fill 4"  @320,303 12x11  fill=#130f26
+              VECTOR "Path"  @325,308 4x4
+              VECTOR "Path"  @320,303 12x11
+  FRAME "title"  @25,130 138x10
+    TEXT "Sign in your account"  @25,130 138x10  text='Sign in your account'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000
+  FRAME "menu bar"  @25,44 203x48
+    GROUP "Top"  @25,44 48x48
+      GROUP "Arrow Back"  @25,44 48x48
+        ELLIPSE "BG"  @25,44 48x48  fill=#f1ece6
+        FRAME "Arrow - Left"  @37,56 24x24  fill=#f1ece6
+          GROUP "Iconly/Light-Outline/Arrow---Left"  @40,62 16x14
+            GROUP "Arrow---Left"  @40,62 16x14
+              VECTOR "Combined-Shape"  @40,62 16x14  fill=#000000
+  FRAME "Alphanumberic"  @0,513 375x299  fill=#1a1a1a
+    FRAME "Suggestions"  @0,513 375x42
+      TEXT "Suggestion"  @0,513 124x42  text='I'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      RECTANGLE "Divider"  @124,523 1x22  fill=#ffffff
+      TEXT "Suggestion"  @125,513 124x42  text='The'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      RECTANGLE "Divider"  @250,523 1x22  fill=#ffffff
+      TEXT "Suggestion"  @251,513 124x42  text='Go'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+    FRAME "Alphanumeric Keyboard Layout"  @0,555 375x193
+      FRAME "Row 1"  @4,559 368x39
+        FRAME "Keys"  @4,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @4,559 33x39  text='Q'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @41,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @41,559 31x39  text='W'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @78,559 34x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @78,559 34x39  text='E'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @117,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @117,559 31x39  text='R'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @153,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @153,559 33x39  text='T'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @191,559 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @191,559 32x39  text='Y'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @228,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @228,559 31x39  text='U'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @264,559 34x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @264,559 34x39  text='I'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @303,559 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @303,559 31x39  text='O'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @339,559 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @339,559 33x39  text='P'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      FRAME "Row 2"  @4,608 368x39
+        FRAME "Keys"  @21,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @21,608 33x39  text='A'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @59,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @59,608 32x39  text='S'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @96,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @96,608 33x39  text='D'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @134,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @134,608 33x39  text='F'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @172,608 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @172,608 31x39  text='G'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @208,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @208,608 33x39  text='H'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @246,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @246,608 32x39  text='J'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @283,608 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,608 33x39  text='K'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @321,608 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @321,608 32x39  text='L'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+      FRAME "Row 3"  @4,657 368x39
+        FRAME "Keys"  @59,657 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @59,657 32x39  text='Z'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @96,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @96,657 33x39  text='X'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @134,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @134,657 33x39  text='C'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @172,657 31x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @172,657 31x39  text='V'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @208,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @208,657 33x39  text='B'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @246,657 32x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @246,657 32x39  text='N'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @283,657 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,657 33x39  text='M'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @4,657 39x39  fill=#0a0a0a  r=4.38084077835083
+          INSTANCE "Icons"  @9,662 28x28
+            VECTOR "on"  @14,668 17x14  fill=#ffffff
+        FRAME "Keys"  @333,657 39x39  fill=#0a0a0a  r=4.38084077835083
+          INSTANCE "Icons"  @338,662 28x28
+            VECTOR "Union"  @342,668 20x15  fill=#ffffff
+      FRAME "Row 4"  @4,706 368x39
+        FRAME "Keys"  @96,706 182x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Label"  @96,706 182x39  text='space'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @321,706 50x39  fill=#ffc71b  r=4.38084077835083
+          TEXT "Label"  @321,706 50x39  text='go'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#1a1a1a
+        FRAME "Keys"  @283,706 33x39  fill=#0a0a0a  r=4.38084077835083
+          TEXT "Letter"  @283,706 33x39  text='.'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+        FRAME "Keys"  @4,706 87x39  fill=#1d1d1d  r=4.38084077835083
+          TEXT "Label"  @4,706 87x39  text='123'  font=DM Sans 600 14  lh=18.2  align=CENTER  fill=#ffffff
+    FRAME "Home Indicator"  @0,748 375x63
+      RECTANGLE "Home Indicator"  @118,799 138x4  fill=#ffffff  r=4.38084077835083
+      INSTANCE "Icons"  @315,755 42x42
+        VECTOR "Union"  @329,763 15x25  fill=#50545b
+      INSTANCE "Icons"  @18,755 42x42
+        VECTOR "Icon"  @25,763 26x26  fill=#50545b
+  FRAME "status_bar"  @0,0 375x44
+    FRAME "Symbols"  @294,17 68x13
+      GROUP "Battery"  @336,17 24x12  r=[0, 0, 0, 0]
+        BOOLEAN_OPERATION "Rectangle"  @336,17 24x12  fill=#000000
+          BOOLEAN_OPERATION "Exclude"  @336,17 22x12  fill=#dadada
+            VECTOR "Path"  @337,18 20x10  fill=#000000@0.36
+            VECTOR "Path"  @336,17 22x12  fill=#000000@0.36
+          VECTOR "Path"  @359,21 2x4  fill=#000000@0.36
+        RECTANGLE "Rectangle"  @338,19 18x8  fill=#000000  r=1.600000023841858
+      BOOLEAN_OPERATION "Combined Shape"  @294,18 17x11  fill=#000000
+        RECTANGLE "Rectangle"  @294,24 3x4  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @298,22 3x6  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @303,20 3x8  fill=#000000  r=1.2000000476837158
+        RECTANGLE "Rectangle"  @308,18 3x11  fill=#000000  r=1.2000000476837158
+      BOOLEAN_OPERATION "Wi-Fi"  @316,17 15x11  fill=#000000
+        VECTOR "Path"  @316,17 15x5  fill=#000000
+        VECTOR "Path"  @318,21 10x4  fill=#000000
+        VECTOR "Path"  @321,25 5x3  fill=#000000
+    FRAME "Bars/Status/_/Time"  @0,12 180x22
+      TEXT "↳ Time"  @30,22 33x10  text='19:27'  font=DM Sans 600 14  lh=18.2  align=LEFT  fill=#000000

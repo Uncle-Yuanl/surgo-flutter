@@ -1,0 +1,1312 @@
+{
+  "modules": {
+    "listen": {
+      "key": "listen",
+      "prefix": "tf",
+      "total": 12,
+      "answerSec": 20,
+      "style": "locked",
+      "grouped": false,
+      "next": "conv",
+      "segments": [
+        {
+          "sec": 8,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "Yes, I prefer it to driving."
+            ],
+            [
+              "B",
+              "It'll depend on the traffic."
+            ],
+            [
+              "C",
+              "Yes, everyone will be there."
+            ],
+            [
+              "D",
+              "The campus facilities are state-of-the-art."
+            ]
+          ]
+        },
+        {
+          "sec": 6,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "I returned them yesterday."
+            ],
+            [
+              "B",
+              "The library closes at nine."
+            ],
+            [
+              "C",
+              "You can renew them online."
+            ],
+            [
+              "D",
+              "I haven't read that author."
+            ]
+          ]
+        },
+        {
+          "sec": 8,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "The soup is today's special."
+            ],
+            [
+              "B",
+              "I usually eat around noon."
+            ],
+            [
+              "C",
+              "It costs about five dollars."
+            ],
+            [
+              "D",
+              "Sure, I can join you then."
+            ]
+          ]
+        },
+        {
+          "sec": 7,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "The deadline is next Friday."
+            ],
+            [
+              "B",
+              "I found the lecture fascinating."
+            ],
+            [
+              "C",
+              "Professor Lee teaches that course."
+            ],
+            [
+              "D",
+              "It meets in the science building."
+            ]
+          ]
+        },
+        {
+          "sec": 6,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "The bus stops right outside."
+            ],
+            [
+              "B",
+              "I take the subway instead."
+            ],
+            [
+              "C",
+              "Parking permits are expensive."
+            ],
+            [
+              "D",
+              "It takes about twenty minutes."
+            ]
+          ]
+        },
+        {
+          "sec": 7,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "They accept credit cards."
+            ],
+            [
+              "B",
+              "The textbooks are upstairs."
+            ],
+            [
+              "C",
+              "Yes, the used ones are cheaper."
+            ],
+            [
+              "D",
+              "It opens at eight tomorrow."
+            ]
+          ]
+        },
+        {
+          "sec": 6,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "The pool is closed for repairs."
+            ],
+            [
+              "B",
+              "I work out every morning."
+            ],
+            [
+              "C",
+              "You need a membership card."
+            ],
+            [
+              "D",
+              "The class starts in ten minutes."
+            ]
+          ]
+        },
+        {
+          "sec": 8,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "You should schedule an appointment."
+            ],
+            [
+              "B",
+              "The advisor is very helpful."
+            ],
+            [
+              "C",
+              "I changed my major last year."
+            ],
+            [
+              "D",
+              "Registration opens on Monday."
+            ]
+          ]
+        },
+        {
+          "sec": 7,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "The lab report is due Thursday."
+            ],
+            [
+              "B",
+              "I signed up for the morning session."
+            ],
+            [
+              "C",
+              "Safety goggles are required."
+            ],
+            [
+              "D",
+              "You can work with a partner."
+            ]
+          ]
+        },
+        {
+          "sec": 6,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "The fair is in the main hall."
+            ],
+            [
+              "B",
+              "Bring several copies of your resume."
+            ],
+            [
+              "C",
+              "Many companies will attend."
+            ],
+            [
+              "D",
+              "It runs from ten to four."
+            ]
+          ]
+        },
+        {
+          "sec": 7,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "The clinic is free for students."
+            ],
+            [
+              "B",
+              "You can walk in any time."
+            ],
+            [
+              "C",
+              "I felt much better afterward."
+            ],
+            [
+              "D",
+              "The pharmacy is next door."
+            ]
+          ]
+        },
+        {
+          "sec": 8,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "Transcripts take a week to process."
+            ],
+            [
+              "B",
+              "The form is available online."
+            ],
+            [
+              "C",
+              "Yes, you can pick it up in person."
+            ],
+            [
+              "D",
+              "The office closes at five."
+            ]
+          ]
+        }
+      ]
+    },
+    "conv": {
+      "key": "conv",
+      "prefix": "tf2",
+      "total": 6,
+      "answerSec": 20,
+      "style": "playing",
+      "grouped": true,
+      "next": "ann",
+      "segments": [
+        {
+          "sec": 33,
+          "audio": 0,
+          "lead": "Listen to a conversation.",
+          "q": "Why does the student go to see the professor?",
+          "opts": [
+            [
+              "A",
+              "To ask for an extension on a paper"
+            ],
+            [
+              "B",
+              "To discuss a topic for her research project"
+            ],
+            [
+              "C",
+              "To complain about a grade"
+            ],
+            [
+              "D",
+              "To request a letter of recommendation"
+            ]
+          ]
+        },
+        {
+          "sec": 33,
+          "audio": 0,
+          "lead": "Listen to a conversation.",
+          "q": "What does the professor suggest the student do?",
+          "opts": [
+            [
+              "A",
+              "Narrow the scope of the topic"
+            ],
+            [
+              "B",
+              "Choose a completely different subject"
+            ],
+            [
+              "C",
+              "Work with a partner"
+            ],
+            [
+              "D",
+              "Submit the paper a week early"
+            ]
+          ]
+        },
+        {
+          "sec": 31,
+          "audio": 1,
+          "lead": "Listen to a conversation.",
+          "q": "What is the conversation mainly about?",
+          "opts": [
+            [
+              "A",
+              "A problem with a dormitory room"
+            ],
+            [
+              "B",
+              "A change in the meal plan"
+            ],
+            [
+              "C",
+              "A parking permit application"
+            ],
+            [
+              "D",
+              "A lost student ID card"
+            ]
+          ]
+        },
+        {
+          "sec": 31,
+          "audio": 1,
+          "lead": "Listen to a conversation.",
+          "q": "What will the student most likely do next?",
+          "opts": [
+            [
+              "A",
+              "Pay a replacement fee"
+            ],
+            [
+              "B",
+              "Fill out a maintenance request"
+            ],
+            [
+              "C",
+              "Move to a different building"
+            ],
+            [
+              "D",
+              "Speak with a roommate"
+            ]
+          ]
+        },
+        {
+          "sec": 34,
+          "audio": 2,
+          "lead": "Listen to a conversation.",
+          "q": "Why does the woman imply the deadline is flexible?",
+          "opts": [
+            [
+              "A",
+              "Many students have requested extensions."
+            ],
+            [
+              "B",
+              "The system was down for a day."
+            ],
+            [
+              "C",
+              "The professor is out of town."
+            ],
+            [
+              "D",
+              "The assignment was optional."
+            ]
+          ]
+        },
+        {
+          "sec": 34,
+          "audio": 2,
+          "lead": "Listen to a conversation.",
+          "q": "What does the man mean when he says he'll 'sleep on it'?",
+          "opts": [
+            [
+              "A",
+              "He is too tired to decide now."
+            ],
+            [
+              "B",
+              "He will decide later after thinking."
+            ],
+            [
+              "C",
+              "He disagrees with the suggestion."
+            ],
+            [
+              "D",
+              "He needs to ask someone else."
+            ]
+          ]
+        }
+      ]
+    },
+    "ann": {
+      "key": "ann",
+      "prefix": "tf3",
+      "total": 6,
+      "answerSec": 20,
+      "style": "playing",
+      "grouped": true,
+      "next": "talk",
+      "segments": [
+        {
+          "sec": 32,
+          "audio": 0,
+          "lead": "Listen to an announcement in a university classroom.",
+          "q": "What is the purpose of the announcement?",
+          "opts": [
+            [
+              "A",
+              "To recommend a book about networking"
+            ],
+            [
+              "B",
+              "To inform students about a list of resources"
+            ],
+            [
+              "C",
+              "To emphasize the importance of a career in education"
+            ],
+            [
+              "D",
+              "To explain the process of joining professional organizations"
+            ]
+          ]
+        },
+        {
+          "sec": 32,
+          "audio": 0,
+          "lead": "Listen to an announcement in a university classroom.",
+          "q": "What does the speaker recommend students do first?",
+          "opts": [
+            [
+              "A",
+              "Visit the career center in person"
+            ],
+            [
+              "B",
+              "Sign up for a professional organization"
+            ],
+            [
+              "C",
+              "Review the online resource list"
+            ],
+            [
+              "D",
+              "Schedule a meeting with an advisor"
+            ]
+          ]
+        },
+        {
+          "sec": 34,
+          "audio": 1,
+          "lead": "Listen to an announcement about a campus event.",
+          "q": "What is being announced?",
+          "opts": [
+            [
+              "A",
+              "A change to the library hours"
+            ],
+            [
+              "B",
+              "A guest lecture series"
+            ],
+            [
+              "C",
+              "A campus construction project"
+            ],
+            [
+              "D",
+              "A new student club"
+            ]
+          ]
+        },
+        {
+          "sec": 34,
+          "audio": 1,
+          "lead": "Listen to an announcement about a campus event.",
+          "q": "How can students reserve a seat?",
+          "opts": [
+            [
+              "A",
+              "By registering online"
+            ],
+            [
+              "B",
+              "By calling the department office"
+            ],
+            [
+              "C",
+              "By arriving early on the day"
+            ],
+            [
+              "D",
+              "By emailing the speaker"
+            ]
+          ]
+        },
+        {
+          "sec": 31,
+          "audio": 2,
+          "lead": "Listen to an announcement in a dormitory.",
+          "q": "Why is the announcement being made?",
+          "opts": [
+            [
+              "A",
+              "To warn residents about a water shutoff"
+            ],
+            [
+              "B",
+              "To introduce a new resident advisor"
+            ],
+            [
+              "C",
+              "To announce a change in meal times"
+            ],
+            [
+              "D",
+              "To remind residents about quiet hours"
+            ]
+          ]
+        },
+        {
+          "sec": 31,
+          "audio": 2,
+          "lead": "Listen to an announcement in a dormitory.",
+          "q": "What are residents advised to do?",
+          "opts": [
+            [
+              "A",
+              "Store water in advance"
+            ],
+            [
+              "B",
+              "Move to another building"
+            ],
+            [
+              "C",
+              "Contact maintenance directly"
+            ],
+            [
+              "D",
+              "Attend a residents meeting"
+            ]
+          ]
+        }
+      ]
+    },
+    "talk": {
+      "key": "talk",
+      "prefix": "tf4",
+      "total": 8,
+      "answerSec": 30,
+      "style": "playing",
+      "grouped": true,
+      "next": "modEnd",
+      "segments": [
+        {
+          "sec": 105,
+          "audio": 0,
+          "lead": "Listen to a talk in a creative writing class.",
+          "q": "What does the speaker mainly discuss?",
+          "opts": [
+            [
+              "A",
+              "A textbook with many pictures"
+            ],
+            [
+              "B",
+              "A guide to understanding common symbols"
+            ],
+            [
+              "C",
+              "A tool for generating ideas"
+            ],
+            [
+              "D",
+              "A collection of mystery stories"
+            ]
+          ]
+        },
+        {
+          "sec": 105,
+          "audio": 0,
+          "lead": "Listen to a talk in a creative writing class.",
+          "q": "What is different about the dice the speaker discusses compared to traditional dice?",
+          "opts": [
+            [
+              "A",
+              "They have more sides than traditional dice."
+            ],
+            [
+              "B",
+              "They have pictures instead of numbers."
+            ],
+            [
+              "C",
+              "They are made of glass instead of plastic."
+            ],
+            [
+              "D",
+              "They can be adapted to individual needs."
+            ]
+          ]
+        },
+        {
+          "sec": 105,
+          "audio": 0,
+          "lead": "Listen to a talk in a creative writing class.",
+          "q": "According to the speaker, how can the tool help writers who feel stuck?",
+          "opts": [
+            [
+              "A",
+              "By providing a complete plot outline"
+            ],
+            [
+              "B",
+              "By prompting unexpected combinations of ideas"
+            ],
+            [
+              "C",
+              "By correcting grammatical mistakes"
+            ],
+            [
+              "D",
+              "By suggesting published authors to imitate"
+            ]
+          ]
+        },
+        {
+          "sec": 105,
+          "audio": 0,
+          "lead": "Listen to a talk in a creative writing class.",
+          "q": "What does the speaker imply about creativity?",
+          "opts": [
+            [
+              "A",
+              "It cannot be taught in a classroom."
+            ],
+            [
+              "B",
+              "It benefits from structured prompts."
+            ],
+            [
+              "C",
+              "It requires expensive materials."
+            ],
+            [
+              "D",
+              "It is mainly a natural talent."
+            ]
+          ]
+        },
+        {
+          "sec": 112,
+          "audio": 1,
+          "lead": "Listen to a talk in a biology class.",
+          "q": "What is the main topic of the talk?",
+          "opts": [
+            [
+              "A",
+              "The migration patterns of birds"
+            ],
+            [
+              "B",
+              "How certain animals adapt to cold climates"
+            ],
+            [
+              "C",
+              "The classification of mammal species"
+            ],
+            [
+              "D",
+              "The effects of pollution on ecosystems"
+            ]
+          ]
+        },
+        {
+          "sec": 112,
+          "audio": 1,
+          "lead": "Listen to a talk in a biology class.",
+          "q": "Why does the professor mention body size?",
+          "opts": [
+            [
+              "A",
+              "To explain how it affects heat retention"
+            ],
+            [
+              "B",
+              "To compare predators and prey"
+            ],
+            [
+              "C",
+              "To describe growth over a lifetime"
+            ],
+            [
+              "D",
+              "To illustrate differences between sexes"
+            ]
+          ]
+        },
+        {
+          "sec": 112,
+          "audio": 1,
+          "lead": "Listen to a talk in a biology class.",
+          "q": "What example does the professor give of a behavioral adaptation?",
+          "opts": [
+            [
+              "A",
+              "Growing thicker fur in winter"
+            ],
+            [
+              "B",
+              "Huddling together for warmth"
+            ],
+            [
+              "C",
+              "Storing fat under the skin"
+            ],
+            [
+              "D",
+              "Changing color with the seasons"
+            ]
+          ]
+        },
+        {
+          "sec": 112,
+          "audio": 1,
+          "lead": "Listen to a talk in a biology class.",
+          "q": "What can be inferred about physiological adaptations?",
+          "opts": [
+            [
+              "A",
+              "They occur faster than behavioral ones."
+            ],
+            [
+              "B",
+              "They involve internal bodily processes."
+            ],
+            [
+              "C",
+              "They are unique to mammals."
+            ],
+            [
+              "D",
+              "They only happen in extreme cold."
+            ]
+          ]
+        }
+      ]
+    },
+    "m2p1": {
+      "key": "m2p1",
+      "prefix": "tfM2",
+      "total": 3,
+      "answerSec": 20,
+      "style": "locked",
+      "grouped": false,
+      "next": "m2p2",
+      "segments": [
+        {
+          "sec": 7,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "Yes, I prefer it to driving."
+            ],
+            [
+              "B",
+              "It'll depend on the traffic."
+            ],
+            [
+              "C",
+              "Yes, everyone will be there."
+            ],
+            [
+              "D",
+              "The campus facilities are state-of-the-art."
+            ]
+          ]
+        },
+        {
+          "sec": 6,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "I returned them yesterday."
+            ],
+            [
+              "B",
+              "The library closes at nine."
+            ],
+            [
+              "C",
+              "You can renew them online."
+            ],
+            [
+              "D",
+              "I haven't read that author."
+            ]
+          ]
+        },
+        {
+          "sec": 8,
+          "q": "选择最佳回答。",
+          "opts": [
+            [
+              "A",
+              "The soup is today's special."
+            ],
+            [
+              "B",
+              "I usually eat around noon."
+            ],
+            [
+              "C",
+              "It costs about five dollars."
+            ],
+            [
+              "D",
+              "Sure, I can join you then."
+            ]
+          ]
+        }
+      ]
+    },
+    "m2p2": {
+      "key": "m2p2",
+      "prefix": "tfP2",
+      "total": 4,
+      "answerSec": 20,
+      "style": "playing",
+      "grouped": true,
+      "next": "m2p3",
+      "segments": [
+        {
+          "sec": 33,
+          "audio": 0,
+          "lead": "Listen to a conversation.",
+          "q": "Why does the student go to see the professor?",
+          "opts": [
+            [
+              "A",
+              "To ask for an extension on an assignment"
+            ],
+            [
+              "B",
+              "To discuss a topic for a research paper"
+            ],
+            [
+              "C",
+              "To complain about a course grade"
+            ],
+            [
+              "D",
+              "To request a letter of recommendation"
+            ]
+          ]
+        },
+        {
+          "sec": 33,
+          "audio": 0,
+          "lead": "Listen to a conversation.",
+          "q": "What does the professor suggest the student do?",
+          "opts": [
+            [
+              "A",
+              "Narrow the scope of the topic"
+            ],
+            [
+              "B",
+              "Choose a completely different subject"
+            ],
+            [
+              "C",
+              "Work with a partner"
+            ],
+            [
+              "D",
+              "Submit the paper a week early"
+            ]
+          ]
+        },
+        {
+          "sec": 31,
+          "audio": 1,
+          "lead": "Listen to a conversation.",
+          "q": "What is the conversation mainly about?",
+          "opts": [
+            [
+              "A",
+              "A problem with a dormitory room"
+            ],
+            [
+              "B",
+              "A change in the meal plan"
+            ],
+            [
+              "C",
+              "A parking permit application"
+            ],
+            [
+              "D",
+              "A lost student ID card"
+            ]
+          ]
+        },
+        {
+          "sec": 31,
+          "audio": 1,
+          "lead": "Listen to a conversation.",
+          "q": "What will the student most likely do next?",
+          "opts": [
+            [
+              "A",
+              "Pay a replacement fee"
+            ],
+            [
+              "B",
+              "Fill out a maintenance request"
+            ],
+            [
+              "C",
+              "Move to a different building"
+            ],
+            [
+              "D",
+              "Speak with a roommate"
+            ]
+          ]
+        }
+      ]
+    },
+    "m2p3": {
+      "key": "m2p3",
+      "prefix": "tfP3",
+      "total": 8,
+      "answerSec": 30,
+      "style": "playing",
+      "grouped": true,
+      "next": "mark",
+      "segments": [
+        {
+          "sec": 105,
+          "audio": 0,
+          "lead": "Listen to a talk in a creative writing class.",
+          "q": "What does the speaker mainly discuss?",
+          "opts": [
+            [
+              "A",
+              "A textbook with many pictures"
+            ],
+            [
+              "B",
+              "A guide to understanding common symbols"
+            ],
+            [
+              "C",
+              "A tool for generating ideas"
+            ],
+            [
+              "D",
+              "A collection of mystery stories"
+            ]
+          ]
+        },
+        {
+          "sec": 105,
+          "audio": 0,
+          "lead": "Listen to a talk in a creative writing class.",
+          "q": "What is different about the dice the speaker discusses compared to traditional dice?",
+          "opts": [
+            [
+              "A",
+              "They have more sides than traditional dice."
+            ],
+            [
+              "B",
+              "They have pictures instead of numbers."
+            ],
+            [
+              "C",
+              "They are made of glass instead of plastic."
+            ],
+            [
+              "D",
+              "They can be adapted to individual needs."
+            ]
+          ]
+        },
+        {
+          "sec": 105,
+          "audio": 0,
+          "lead": "Listen to a talk in a creative writing class.",
+          "q": "According to the speaker, how can the tool help writers who feel stuck?",
+          "opts": [
+            [
+              "A",
+              "By providing a complete plot outline"
+            ],
+            [
+              "B",
+              "By prompting unexpected combinations of ideas"
+            ],
+            [
+              "C",
+              "By correcting grammatical mistakes"
+            ],
+            [
+              "D",
+              "By suggesting published authors to imitate"
+            ]
+          ]
+        },
+        {
+          "sec": 105,
+          "audio": 0,
+          "lead": "Listen to a talk in a creative writing class.",
+          "q": "What does the speaker imply about creativity?",
+          "opts": [
+            [
+              "A",
+              "It cannot be taught in a classroom."
+            ],
+            [
+              "B",
+              "It benefits from structured prompts."
+            ],
+            [
+              "C",
+              "It requires expensive materials."
+            ],
+            [
+              "D",
+              "It is mainly a natural talent."
+            ]
+          ]
+        },
+        {
+          "sec": 112,
+          "audio": 1,
+          "lead": "Listen to a talk in a biology class.",
+          "q": "What is the main topic of the talk?",
+          "opts": [
+            [
+              "A",
+              "The migration patterns of birds"
+            ],
+            [
+              "B",
+              "How certain animals adapt to cold climates"
+            ],
+            [
+              "C",
+              "The classification of mammal species"
+            ],
+            [
+              "D",
+              "The effects of pollution on ecosystems"
+            ]
+          ]
+        },
+        {
+          "sec": 112,
+          "audio": 1,
+          "lead": "Listen to a talk in a biology class.",
+          "q": "Why does the professor mention body size?",
+          "opts": [
+            [
+              "A",
+              "To explain how it affects heat retention"
+            ],
+            [
+              "B",
+              "To compare predators and prey"
+            ],
+            [
+              "C",
+              "To describe growth over a lifetime"
+            ],
+            [
+              "D",
+              "To illustrate differences between sexes"
+            ]
+          ]
+        },
+        {
+          "sec": 112,
+          "audio": 1,
+          "lead": "Listen to a talk in a biology class.",
+          "q": "What example does the professor give of a behavioral adaptation?",
+          "opts": [
+            [
+              "A",
+              "Growing thicker fur in winter"
+            ],
+            [
+              "B",
+              "Huddling together for warmth"
+            ],
+            [
+              "C",
+              "Storing fat under the skin"
+            ],
+            [
+              "D",
+              "Changing color with the seasons"
+            ]
+          ]
+        },
+        {
+          "sec": 112,
+          "audio": 1,
+          "lead": "Listen to a talk in a biology class.",
+          "q": "What can be inferred about physiological adaptations?",
+          "opts": [
+            [
+              "A",
+              "They occur faster than behavioral ones."
+            ],
+            [
+              "B",
+              "They involve internal bodily processes."
+            ],
+            [
+              "C",
+              "They are unique to mammals."
+            ],
+            [
+              "D",
+              "They only happen in extreme cold."
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "feedback": {
+    "typesM1": [
+      {
+        "key": "r",
+        "name": "Listen and Choose a Response",
+        "score": 5.5
+      },
+      {
+        "key": "c",
+        "name": "Listen to a Conversation",
+        "score": 5
+      },
+      {
+        "key": "t",
+        "name": "Listen to an Academic Talk",
+        "score": 5
+      }
+    ],
+    "typesM2": [
+      {
+        "key": "r",
+        "name": "Listen and Choose a Response",
+        "score": 5.5
+      },
+      {
+        "key": "c",
+        "name": "Listen to a Conversation",
+        "score": 5
+      },
+      {
+        "key": "a",
+        "name": "Listen to an Announcement",
+        "score": 5
+      },
+      {
+        "key": "t",
+        "name": "Listen to an Academic Talk",
+        "score": 4.5
+      }
+    ],
+    "qs": {
+      "r": [
+        {
+          "n": 1,
+          "ok": false,
+          "q": "Why does the student go to see the professor?",
+          "dur": "00:12",
+          "mine": "A. To ask for an extension on an assignment.",
+          "ans": "B. To discuss a topic for a research paper.",
+          "why": "学生明确向教授寻求选择论文题目的建议。",
+          "evi": "\"I'm not sure which topic to choose for my research paper.\""
+        },
+        {
+          "n": 2,
+          "ok": true,
+          "q": "What does the professor suggest the student do?",
+          "dur": "00:12",
+          "mine": "A. Narrow the scope of the topic."
+        }
+      ],
+      "c": [
+        {
+          "n": 1,
+          "ok": false,
+          "q": "Why does the student go to see the professor?",
+          "dur": "00:12",
+          "mine": "A. To ask for an extension on an assignment.",
+          "ans": "B. To discuss a topic for a research paper.",
+          "why": "学生明确向教授寻求选择论文题目的建议。",
+          "evi": "\"I'm not sure which topic to choose for my research paper.\""
+        },
+        {
+          "n": 2,
+          "ok": true,
+          "q": "What does the professor suggest the student do?",
+          "dur": "00:12",
+          "mine": "A. Narrow the scope of the topic."
+        }
+      ],
+      "a": [
+        {
+          "n": 1,
+          "ok": false,
+          "q": "Why does the student go to see the professor?",
+          "dur": "00:12",
+          "mine": "A. To ask for an extension on an assignment.",
+          "ans": "B. To discuss a topic for a research paper.",
+          "why": "学生明确向教授寻求选择论文题目的建议。",
+          "evi": "\"I'm not sure which topic to choose for my research paper.\""
+        },
+        {
+          "n": 2,
+          "ok": true,
+          "q": "What does the professor suggest the student do?",
+          "dur": "00:12",
+          "mine": "A. Narrow the scope of the topic."
+        }
+      ],
+      "t": [
+        {
+          "n": 1,
+          "ok": false,
+          "q": "Why does the student go to see the professor?",
+          "dur": "00:12",
+          "mine": "A. To ask for an extension on an assignment.",
+          "ans": "B. To discuss a topic for a research paper.",
+          "why": "学生明确向教授寻求选择论文题目的建议。",
+          "evi": "\"I'm not sure which topic to choose for my research paper.\""
+        },
+        {
+          "n": 2,
+          "ok": true,
+          "q": "What does the professor suggest the student do?",
+          "dur": "00:12",
+          "mine": "A. Narrow the scope of the topic."
+        }
+      ]
+    },
+    "transcript": [
+      [
+        "Student: Hi Professor Lee, do you have a minute? ",
+        "I'm not sure which topic to choose for my research paper",
+        1,
+        ". Professor: Of course. "
+      ],
+      [
+        "",
+        "I'd suggest you narrow the scope of the topic first",
+        2,
+        " — a focused question is much easier to research well than a broad one. Why don’t you bring me a one-paragraph outline by Friday?"
+      ]
+    ]
+  }
+}

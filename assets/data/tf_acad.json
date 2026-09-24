@@ -1,0 +1,163 @@
+{
+  "TFDA_TITLE": "The Power of Music Therapy",
+  "TFDA_PARAS": [
+    "Music therapy is known for its powerful effects on mental health. By using musical interventions, therapists aim to improve people's emotional well-being and cognitive functioning.",
+    "The roots of music therapy trace back to ancient healing rituals, but its modern form appeared after World War II, when musicians played for veterans suffering from trauma. Research shows that music therapy can reduce anxiety and stress. Listening to calming music can lower heart rates and cortisol levels. This is why music therapy is often used in hospitals. A study found that patients who listened to 30 minutes of music daily experienced significant reductions in anxiety. Engaging with familiar music can also trigger pleasant memories and improve mood. Patients who participated in music therapy showed better memory recall and increased social interaction. A study demonstrated that Alzheimer's patients who listened to music from their youth had improved cognitive function.",
+    "Despite its benefits, music therapy is not a one-size-fits-all solution. Its effectiveness varies depending on the individual and type of music used. Personal musical preferences, cultural background, and the context in which the music is played are crucial to the therapy's success."
+  ],
+  "TFDA_TITLE2": "Urban Heat Islands",
+  "TFDA_PARAS2": [
+    "Cities tend to be significantly warmer than surrounding rural areas, a phenomenon known as the urban heat island effect. This temperature difference can reach 5-10 degrees Celsius on calm, clear nights and has important implications for energy use, public health, and urban planning.",
+    "The primary cause of urban heat islands is the replacement of natural land cover with dense concentrations of pavement, buildings, and other surfaces that absorb and retain heat. Dark-colored materials such as asphalt absorb up to 95 percent of incoming solar radiation, while concrete and brick also store considerable thermal energy. In contrast, vegetation and soil reflect more sunlight and cool the air through evapotranspiration.",
+    "Urban areas also generate heat through human activities — vehicle exhaust, air conditioning systems, and industrial processes all contribute additional thermal energy to the environment. The tall, narrow geometry of city streets can trap radiation through multiple reflections between buildings, preventing heat from escaping to the atmosphere at night.",
+    "Several strategies have been proposed to mitigate urban heat islands. Green roofs covered with vegetation can reduce rooftop temperatures by 30-40 degrees compared to conventional roofs. Increasing tree canopy cover provides shade that keeps pavement cooler, and reflective “cool” pavements redirect solar energy back to the sky.",
+    "However, implementing these solutions at scale presents challenges. Retrofitting existing buildings is expensive, and some cooling strategies may conflict with other urban priorities such as stormwater management or historical preservation. Successful mitigation typically requires coordinated policy efforts across multiple city departments."
+  ],
+  "TFDA_QS": [
+    {
+      "q": "How did music therapy in its modern form begin?",
+      "opts": [
+        "As a way to improve the cognitive functioning of soldiers",
+        "As a result of the careful study of ancient healing practices",
+        "As a means to treat people suffering from Alzheimer's disease",
+        "As a tool to help veterans cope with the effects of the war"
+      ]
+    },
+    {
+      "q": "According to the passage, what physiological effect does music have?",
+      "opts": [
+        "It increases heart rates and cortisol levels",
+        "It lowers heart rates and cortisol levels",
+        "It has no measurable physiological effect",
+        "It raises blood pressure in most patients"
+      ]
+    },
+    {
+      "q": "What does the passage suggest about the effectiveness of music therapy?",
+      "opts": [
+        "It works equally well for all patients.",
+        "It is only effective for young patients.",
+        "It depends on individual preferences and context.",
+        "It requires at least one hour of daily listening."
+      ]
+    },
+    {
+      "q": "Which of the following best describes the organization of the passage?",
+      "opts": [
+        "A comparison of ancient and modern healing methods",
+        "An introduction, historical background, evidence of benefits, and limitations",
+        "A series of case studies arranged chronologically",
+        "A debate between supporters and critics of music therapy"
+      ]
+    },
+    {
+      "q": "The word “crucial” in the last paragraph is closest in meaning to:",
+      "opts": [
+        "harmful",
+        "essential",
+        "unrelated",
+        "temporary"
+      ]
+    },
+    {
+      "src": "uhi",
+      "title": "Urban Heat Islands",
+      "q": "What is the main topic of the passage?",
+      "opts": [
+        "The history of urban planning in major cities",
+        "The causes, effects, and potential solutions for urban heat islands",
+        "A comparison of rural and urban air quality",
+        "The economic benefits of green building technology"
+      ]
+    },
+    {
+      "q": "According to the passage, what is the primary cause of the urban heat island effect?",
+      "opts": [
+        "Increased vehicle traffic in cities",
+        "The replacement of natural surfaces with heat-absorbing materials",
+        "Higher population density in urban areas",
+        "Reduced rainfall in city centers"
+      ]
+    },
+    {
+      "q": "The word “mitigate” in paragraph 4 is closest in meaning to:",
+      "opts": [
+        "measure",
+        "increase",
+        "reduce",
+        "observe"
+      ]
+    },
+    {
+      "q": "Which of the following is mentioned as a challenge to implementing cooling strategies?",
+      "opts": [
+        "Lack of scientific evidence for their effectiveness",
+        "Opposition from environmental groups",
+        "The high cost of retrofitting existing buildings",
+        "Insufficient sunlight in urban areas"
+      ]
+    },
+    {
+      "q": "What can be inferred about evapotranspiration from the passage?",
+      "opts": [
+        "It contributes to higher temperatures in cities.",
+        "It is a process that helps cool the surrounding air.",
+        "It only occurs in tropical climates.",
+        "It is caused primarily by vehicle exhaust."
+      ]
+    }
+  ],
+  "TFDA_SEC": 40,
+  "TFDA_TOTAL": 10,
+  "TFDAFB_WEAK": [
+    {
+      "tags": [
+        "阅读",
+        "细节定位",
+        "否定信息题"
+      ],
+      "q": "第 1 题：漏读 \"ages 2 through 10\"，误判入学年龄范围。",
+      "a": "否定/排除类细节题要回原文逐项核对。建议练习\"NOT/EXCEPT 题定位\"专项。"
+    },
+    {
+      "tags": [
+        "阅读",
+        "学术长句",
+        "主干抓取"
+      ],
+      "q": "学术文章题错在长从句主干判断。",
+      "a": "长句先找主谓宾主干，再处理修饰成分。建议做长难句拆解训练。"
+    }
+  ],
+  "TFDAFB_SRC": [
+    [
+      "Collins University Childcare Center serves students and faculty, ",
+      "providing exceptional care for children ages 2 through 10",
+      1,
+      ". Mostly "
+    ],
+    [
+      "",
+      "staffed by graduate students studying early childhood development",
+      2,
+      ", the center offers music, art activities, outdoor play, and homework-related tutoring. Children enrolled in the program must attend at least three days per week. Hours are Monday to Friday, 7:30 AM to 6:00 PM, with a summer session available from June through August."
+    ]
+  ],
+  "TFDAFB_QS": [
+    {
+      "n": 1,
+      "ok": false,
+      "q": "Which of the following is indicated about the childcare center?",
+      "mine": "A. It is not open to children of part-time students.",
+      "ans": "B. It does not accept children under the age of 2.",
+      "why": "文章说明中心照顾 2 至 10 岁的儿童，因此不接收 2 岁以下的儿童。",
+      "evi": "\"providing exceptional care for children ages 2 through 10\""
+    },
+    {
+      "n": 2,
+      "ok": true,
+      "q": "What can be inferred about the staff at the childcare center?",
+      "mine": "B. Many of them are pursuing advanced degrees."
+    }
+  ]
+}

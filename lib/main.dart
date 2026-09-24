@@ -28,7 +28,8 @@ class SurgoApp extends StatelessWidget {
         // 原型初始值：let examType='ielts' / let uiLang='zh' / let curPage='ielts'
         examType: ExamType.ielts,
         lang: UiLang.zh,
-        current: SurgoPage.ielts,
+        // Source executes render('exam') after declarations.
+        current: SurgoPage.exam,
       ),
       child: MaterialApp(
         title: 'SURGO · 移动端',
@@ -45,13 +46,7 @@ class _Root extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // 真机（窄屏）上整机占满；桌面/平板保持 390x844 画布居中
-    final width = MediaQuery.of(context).size.width;
-    final isPhone = width < 520;
-    return PhoneFitScope(
-      fitToScreen: isPhone,
-      child: const SurgoShell(),
-    );
+    return const SurgoShell();
   }
 }
 

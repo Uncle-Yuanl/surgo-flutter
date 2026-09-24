@@ -1,0 +1,53 @@
+{
+  "SPQ": {
+    "p1": {
+      "n": 10,
+      "sec": 300,
+      "qs": [
+        "Where do you live at the moment?",
+        "Do you like the area you live in?",
+        "What do you usually do at weekends?",
+        "Do you prefer reading books or watching films?",
+        "How often do you use public transport?",
+        "What kind of music do you enjoy?",
+        "Do you like cooking at home?",
+        "How do you usually keep in touch with friends?",
+        "What was the last holiday you took?",
+        "Would you like to learn a new language?"
+      ]
+    },
+    "p2": {
+      "n": 1,
+      "sec": 240,
+      "prep": 60,
+      "rec": 120,
+      "card": {
+        "title": "Describe a place you enjoy visiting",
+        "lead": "你应该谈到:",
+        "bullets": [
+          "where it is",
+          "how often you go there",
+          "what you do there",
+          "and explain why you enjoy visiting it."
+        ]
+      },
+      "qs": [
+        "Describe a place you like to visit in your free time. You should say where it is, how often you go there, what you do there, and explain why you like it."
+      ]
+    },
+    "p3": {
+      "n": 6,
+      "sec": 270,
+      "qs": [
+        "Why do people need places to relax in a city?",
+        "Do you think cities provide enough public space?",
+        "How has the way people spend free time changed?",
+        "Should governments pay for public leisure facilities?",
+        "What are the drawbacks of spending free time online?",
+        "How might leisure activities change in the future?"
+      ]
+    }
+  },
+  "SP3_TOTAL": 270,
+  "SP3_SWAP": 5
+}

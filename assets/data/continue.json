@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "tab": "daily",
+      "ic": "assets/ic3_writing.png",
+      "kicker": "IELTS Writing · Task 2",
+      "name": "学术讨论写作",
+      "pct": 35,
+      "go": "writingDaily"
+    },
+    {
+      "tab": "daily",
+      "ic": "assets/ic3_reading.png",
+      "kicker": "IELTS Reading · Passage 1",
+      "name": "学术长文阅读",
+      "pct": 60,
+      "go": "readingDaily"
+    },
+    {
+      "tab": "daily",
+      "ic": "assets/ic3_listening.png",
+      "kicker": "IELTS Listening · Section 1",
+      "name": "日常对话听力",
+      "pct": 80,
+      "go": "listeningDaily"
+    },
+    {
+      "tab": "mock",
+      "ic": "assets/ic3_speaking.png",
+      "kicker": "IELTS Speaking · Part 2",
+      "name": "个人陈述口语",
+      "pct": 20,
+      "go": "speakingDaily"
+    },
+    {
+      "tab": "mock",
+      "ic": "assets/ic3_reading.png",
+      "kicker": "IELTS Reading · Mock",
+      "name": "阅读模拟考试",
+      "pct": 10,
+      "go": "readingDaily"
+    }
+  ]
+}

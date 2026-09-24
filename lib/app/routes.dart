@@ -149,7 +149,40 @@ enum SurgoPage {
   vocabDone,
   prep,
   examTimer,
+  // 用户 2026-09-25：Figma 文件 gW9DKhEd6UuQQAnv32BlXH 第 5 页的 13 个登录注册页。
+  // 这批不属于原型 H5，是新增设计稿；注释里标的是对应 Figma frame。
+  authSplash, // 40:363  "80"       黄底启动页
+  authSignUp, // 40:388  "81"       注册表单
+  authError, // 40:472  "错误页面"    加载失败重试
+  authWelcome, // 40:500  "82"       欢迎 + 第三方登录
+  authOtp, // 40:1415 "POP UP"   OTP 验证码 + 条款弹窗
+  authCongrats, // 40:1485            注册成功 + 选语言
+  authForgot, // 40:1648            忘记密码：填邮箱
+  authCheckEmail, // 40:1689            去邮箱查收
+  authResetEmail, // 40:1729            邮箱验证码
+  authResetPhone, // 40:1855            手机验证码
+  authNewPassword, // 40:1981            设置新密码
+  authSignIn, // 40:2052            登录（邮箱 + 密码）
+  authSignInAlt, // 40:2192            登录（另一版）
 }
+
+/// 登录注册流程 —— 铺满全屏，没有底部导航、没有右上角全局按钮，
+/// 也不吃 shell 的 18px 内边距（各页按设计稿自己的 25px 边距排版）。
+const kAuthPages = <SurgoPage>{
+  SurgoPage.authSplash,
+  SurgoPage.authSignUp,
+  SurgoPage.authError,
+  SurgoPage.authWelcome,
+  SurgoPage.authOtp,
+  SurgoPage.authCongrats,
+  SurgoPage.authForgot,
+  SurgoPage.authCheckEmail,
+  SurgoPage.authResetEmail,
+  SurgoPage.authResetPhone,
+  SurgoPage.authNewPassword,
+  SurgoPage.authSignIn,
+  SurgoPage.authSignInAlt,
+};
 
 /// 页面键 ↔ 字符串互转。路由状态里存字符串，方便与原型日志、深链对齐。
 extension SurgoPageX on SurgoPage {

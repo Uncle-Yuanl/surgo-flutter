@@ -1,0 +1,18 @@
+{
+  retell: {
+    total: 7,
+    ansSec: 7,
+    segs: 7,
+    rates: [ 0.75, 1, 1.25, 1.5 ],
+    feedback: 7,
+    score: '4.0'
+  },
+  interview: {
+    total: 4,
+    ansSec: 45,
+    segs: 4,
+    rates: [ 0.75, 1, 1.25, 1.5 ],
+    feedback: 4,
+    score: '3.0'
+  }
+}

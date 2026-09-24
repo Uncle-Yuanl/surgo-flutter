@@ -1,0 +1,164 @@
+{
+  "improve": {
+    "title": "ORIGINAL ANNOTATIONS",
+    "bodies": [
+      [
+        {
+          "k": "text",
+          "v": "A data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), "
+        },
+        {
+          "k": "qn",
+          "v": "1"
+        },
+        {
+          "k": "hl",
+          "v": "2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M)."
+        }
+      ],
+      [
+        {
+          "k": "text",
+          "v": "2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. iOS maintains approximately 15-19% share with some recovery after 2020. Other platforms become nearly obsolete, "
+        },
+        {
+          "k": "qn",
+          "v": "2"
+        },
+        {
+          "k": "hl",
+          "v": "declining from 6% to under 0.3% of the market"
+        },
+        {
+          "k": "text",
+          "v": " A data table showing annual smartphone sales market share in millions of units. Android: "
+        },
+        {
+          "k": "hl",
+          "v": "2015 (1,154M), 2017 (1,506M), 2019 (1,368M),"
+        },
+        {
+          "k": "text",
+          "v": " 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. "
+        },
+        {
+          "k": "qn",
+          "v": "3"
+        },
+        {
+          "k": "hl",
+          "v": "iOS maintains approximately 15-19% share with some recovery after 2020."
+        },
+        {
+          "k": "text",
+          "v": " Other platforms become nearly obsolete, declining from 6% to under 0.3% of the marketA data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. "
+        },
+        {
+          "k": "qn",
+          "v": "4"
+        },
+        {
+          "k": "hl",
+          "v": "iOS maintains approximately 15-19% share with some recovery after 2020. Other platforms become nearly obsolete,"
+        },
+        {
+          "k": "text",
+          "v": " declining from 6% to under 0.3% of the marketA data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight "
+        },
+        {
+          "k": "qn",
+          "v": "5"
+        },
+        {
+          "k": "hl",
+          "v": "declining trend. iOS maintains approximately 15-19% share with some recovery after 2020. Other platforms become nearly obsolete, declining from 6%"
+        },
+        {
+          "k": "text",
+          "v": " to under 0.3% of the marketdeclining from 6% to under 0.3% of the marketA data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight"
+        }
+      ]
+    ],
+    "annotations": [
+      {
+        "n": "1",
+        "old": "In my opinion, the most effective approach is a synthesis of both.",
+        "neu": "→ The most effective approach is, therefore, a synthesis of both.",
+        "note": "Overusing 'In my opinion' and 'I believe' weakens academic writing. While expressing personal views is appropriate in IELTS essays, these phrases should appear sparingly (once, typically in the introduction or conclusion) rather than multiple times throughout the essay. Direct assertions with appropriate hedging ('therefore', 'thus', 'consequently') are more effective in academic contexts./过度使用\"In my opinion\""
+      }
+    ]
+  },
+  "bandBackTitle": "Original annotations",
+  "bands": [
+    {
+      "band": "BAND 7.0 – OPENING PARAGRAPH",
+      "stars": 5,
+      "para": "A data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. iOS maintains approximately"
+    },
+    {
+      "band": "BAND 8.0 – OPENING PARAGRAPH",
+      "stars": 4,
+      "para": "A data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. iOS maintains approximately"
+    },
+    {
+      "band": "BAND 6.0 – OPENING PARAGRAPH",
+      "stars": 3,
+      "para": "A data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. iOS maintains approximately"
+    }
+  ],
+  "l1error": {
+    "title": "OVERALL EVALUATION",
+    "stats": [
+      {
+        "label": "Errors",
+        "value": "14",
+        "danger": true
+      },
+      {
+        "label": "Current band",
+        "value": "6.5",
+        "danger": false
+      },
+      {
+        "label": "Ceiling without fixes",
+        "value": "7.0",
+        "danger": false
+      }
+    ],
+    "para": "A data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. iOS maintains approximately"
+  },
+  "l1detail": {
+    "back": "OVERALL EVALUATION",
+    "cats": [
+      {
+        "kind": "vocab",
+        "label": "Vocabulary (4)"
+      },
+      {
+        "kind": "syntax",
+        "label": "Syntax (1)"
+      },
+      {
+        "kind": "style",
+        "label": "Style (2)"
+      }
+    ],
+    "card": {
+      "old": "In my opinion, the most effective approach is a synthesis of both.",
+      "neu": "→ The most effective approach is, therefore, a synthesis of both.",
+      "note": "Overusing 'In my opinion' and 'I believe' weakens academic writing. While expressing personal views is appropriate in IELTS essays, these phrases should appear sparingly (once, typically in the introduction or conclusion) rather than multiple times throughout the essay. Direct assertions with appropriate hedging ('therefore', 'thus', 'consequently') are more effective in academic contexts.",
+      "noteBlue": "This pattern of overusing first-person hedging phrases is one of the most common style weaknesses among Chinese IELTS candidates and can limit scores to 7.0 in Lexical Resource and Coherence and Cohesion. Reducing these to one or two instances and replacing with logical connectors can elevate the score.",
+      "tags": [
+        {
+          "kind": "style",
+          "label": "Style"
+        },
+        {
+          "kind": "low",
+          "label": "Low"
+        }
+      ]
+    },
+    "cardCount": 2
+  }
+}

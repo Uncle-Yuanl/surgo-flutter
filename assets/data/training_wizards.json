@@ -1,0 +1,259 @@
+{
+  "WIZ": {
+    "reading": {
+      "h1": "IELTS 阅读（日常训练）",
+      "sub": "练习整篇文章，或针对性攻克那个总丢分的题型。",
+      "fullTtl": "练习整篇",
+      "fullSub": "随机 3 种题型，最接近真实考试。",
+      "singleSub": "针对性攻克一个薄弱题型。",
+      "ph": "请选择想练习的题型",
+      "topic": true
+    },
+    "listening": {
+      "h1": "IELTS 听力（日常训练）",
+      "sub": "选择要练习的 Part，先听录音再作答。",
+      "topic": false,
+      "cards": [
+        {
+          "key": "s1",
+          "icon": "assets/ic_l_conv.svg",
+          "title": "Part 1 · 日常对话",
+          "sub": "社交情境中两人之间的对话。",
+          "tag": "10 题",
+          "rec": true,
+          "types": [
+            "form",
+            "matching",
+            "short"
+          ]
+        },
+        {
+          "key": "s2",
+          "icon": "assets/ic_l_monologue.svg",
+          "title": "Part 2 · 日常独白",
+          "sub": "一位说话者就熟悉的日常话题发言。",
+          "tag": "10 题",
+          "types": [
+            "matching",
+            "visual",
+            "mc"
+          ]
+        },
+        {
+          "key": "s3",
+          "icon": "assets/ic_l_discussion.svg",
+          "title": "Part 3 · 学术讨论",
+          "sub": "教育情境中最多四位说话者。",
+          "tag": "10 题",
+          "types": [
+            "mc",
+            "matching",
+            "sentence"
+          ]
+        },
+        {
+          "key": "s4",
+          "icon": "assets/ic_l_lecture.svg",
+          "title": "Part 4 · 学术讲座",
+          "sub": "一位说话者就某学术主题发言。",
+          "tag": "10 题",
+          "types": [
+            "note",
+            "summary",
+            "sentence"
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "h1": "IELTS 写作（日常训练）",
+      "sub": "选择要练习的写作任务。",
+      "topic": true,
+      "cards": [
+        {
+          "key": "t1",
+          "icon": "assets/ic_w_task1.svg",
+          "title": "Task 1 · 图表题",
+          "sub": "用至少 150 词描述图表、表格、地图或流程信息。",
+          "tag": "约 20 分钟",
+          "rec": true
+        },
+        {
+          "key": "t2",
+          "icon": "assets/ic_w_task2.svg",
+          "title": "Task 2 · 议论文",
+          "sub": "就某一观点撰写至少 250 词的论证文章。",
+          "tag": "约 40 分钟"
+        }
+      ]
+    },
+    "speaking": {
+      "h1": "IELTS 口语（日常训练）",
+      "sub": "选择要练习的 Part。",
+      "topic": true,
+      "cards": [
+        {
+          "key": "p1",
+          "icon": "assets/ic_s_interview.svg",
+          "title": "Part 1 · 面谈",
+          "sub": "关于家庭、工作、学习和兴趣等熟悉话题。",
+          "tag": "4–5 分钟",
+          "rec": true
+        },
+        {
+          "key": "p2",
+          "icon": "assets/ic_s_monologue.svg",
+          "title": "Part 2 · 长时独白",
+          "sub": "一张提示卡，一分钟准备后独自发言。",
+          "tag": "3–4 分钟"
+        },
+        {
+          "key": "p3",
+          "icon": "assets/ic_s_discussion.svg",
+          "title": "Part 3 · 讨论",
+          "sub": "围绕 Part 2 话题展开的更宽泛、更抽象的问题。",
+          "tag": "4–5 分钟"
+        },
+        {
+          "key": "pron",
+          "icon": "assets/ic_s_pron.svg",
+          "title": "发音专项训练",
+          "sub": "针对音标、连读、重音与语调的专项跟读练习。",
+          "tag": "5–8 分钟"
+        }
+      ]
+    },
+    "vocab": {
+      "h1": "词汇（日常训练）",
+      "sub": "综合复习今日词表，或专项练某种记忆方式。",
+      "fullTtl": "综合练习",
+      "fullSub": "单词卡 + 测验混合，全面巩固。",
+      "singleSub": "专攻一种词汇练习方式。",
+      "ph": "请选择想练习的方式",
+      "topic": false,
+      "opts": [
+        {
+          "value": "flash",
+          "label": "单词卡速记"
+        },
+        {
+          "value": "spell",
+          "label": "拼写测验"
+        },
+        {
+          "value": "match",
+          "label": "词义匹配"
+        },
+        {
+          "value": "cloze",
+          "label": "例句填空"
+        }
+      ]
+    }
+  },
+  "TFWR_TASKS": [
+    {
+      "key": "sent",
+      "n": 1,
+      "title": "组句",
+      "sub": "从词库拖动单词到空格，组成正确的句子。",
+      "tag": "10 题"
+    },
+    {
+      "key": "email",
+      "n": 2,
+      "title": "写邮件",
+      "sub": "针对真实情境回复，覆盖三个要点。",
+      "tag": "1 个任务"
+    },
+    {
+      "key": "disc",
+      "n": 3,
+      "title": "学术讨论",
+      "sub": "以不少于 100 词的帖子参与课堂讨论。",
+      "tag": "1 个任务"
+    }
+  ],
+  "TFLIS_TASKS": [
+    {
+      "key": "respond",
+      "n": 1,
+      "title": "听后选择回应",
+      "sub": "为简短的问题或陈述选出最佳回应。",
+      "tag": "短音频"
+    },
+    {
+      "key": "convo",
+      "n": 2,
+      "title": "听对话",
+      "sub": "回答有关一段简短日常对话的问题。",
+      "tag": "2-3 题"
+    },
+    {
+      "key": "announce",
+      "n": 3,
+      "title": "听通知",
+      "sub": "回答有关校园通知的问题。",
+      "tag": "2-3 题"
+    },
+    {
+      "key": "lecture",
+      "n": 4,
+      "title": "听学术讲座",
+      "sub": "回答有关一段简短学术讲座的问题。",
+      "tag": "3-4 题"
+    }
+  ],
+  "TFLIS_DIFFS": [
+    {
+      "k": "low",
+      "label": "低阶"
+    },
+    {
+      "k": "std",
+      "label": "标准"
+    },
+    {
+      "k": "high",
+      "label": "高阶"
+    }
+  ],
+  "TFSP_TASKS": [
+    {
+      "key": "retell",
+      "n": 1,
+      "title": "听后复述",
+      "sub": "听一句话并原样复述。",
+      "tag": "仅播放一次"
+    },
+    {
+      "key": "interview",
+      "n": 2,
+      "title": "接受访谈",
+      "sub": "用你自己的话回答访谈者的问题。",
+      "tag": "无准备时间"
+    },
+    {
+      "key": "pron",
+      "n": 3,
+      "title": "发音专项训练",
+      "sub": "针对音标、连读、重音与语调的专项跟读练习。",
+      "tag": "5–8 分钟"
+    }
+  ],
+  "TF_TASK_ICON": {
+    "wordfill": "tf_ic_wordfill",
+    "liferead": "tf_ic_liferead",
+    "acadread": "tf_ic_acadread",
+    "respond": "tf_ic_respond",
+    "convo": "tf_ic_convo",
+    "announce": "tf_ic_announce",
+    "lecture": "tf_ic_lecture",
+    "sent": "tf_ic_sent",
+    "email": "tf_ic_email",
+    "disc": "tf_ic_disc",
+    "retell": "tf_ic_retell",
+    "interview": "tf_ic_interview",
+    "pron": "tf_ic_pron"
+  }
+}

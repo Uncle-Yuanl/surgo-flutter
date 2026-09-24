@@ -1,0 +1,157 @@
+{
+  "task1": {
+    "total": 7,
+    "instrSec": 5,
+    "readySec": 1,
+    "segments": [
+      {
+        "sec": 4,
+        "ansSec": 5,
+        "instruct": "You are learning to guide new students on how to use tools in a woodworking class. Listen to the speaker and repeat what she says. Repeat only once."
+      },
+      {
+        "sec": 4,
+        "ansSec": 5,
+        "instruct": "You are learning to guide new students on how to use tools in a woodworking class. Listen to the speaker and repeat what she says. Repeat only once."
+      },
+      {
+        "sec": 4,
+        "ansSec": 5,
+        "instruct": "You are helping at the front desk of a community library. Listen to the speaker and repeat what he says. Repeat only once."
+      },
+      {
+        "sec": 4,
+        "ansSec": 5,
+        "instruct": "You are helping at the front desk of a community library. Listen to the speaker and repeat what he says. Repeat only once."
+      },
+      {
+        "sec": 4,
+        "ansSec": 5,
+        "instruct": "You are volunteering at a campus information booth. Listen to the speaker and repeat what she says. Repeat only once."
+      },
+      {
+        "sec": 4,
+        "ansSec": 5,
+        "instruct": "You are training to be a tour guide at the science museum. Listen to the speaker and repeat what he says. Repeat only once."
+      },
+      {
+        "sec": 4,
+        "ansSec": 12,
+        "instruct": "You are training to be a tour guide at the science museum. Listen to the speaker and repeat what he says. Repeat only once."
+      }
+    ]
+  },
+  "task2": {
+    "total": 4,
+    "intro": {
+      "title": "参加访谈",
+      "sub": "在本任务中，你将参加一场简短的访谈。请听每个问题并用自己的话回答。每题有 45 秒作答时间，不提供准备时间。",
+      "note": "每段音频只播放一次，且无法返回上一题。不提供准备时间。提示音后开始作答。"
+    },
+    "brief": {
+      "title": "参加访谈",
+      "sub": "You have volunteered for a research study at your university about work experience. You will have a short online interview with a researcher. The researcher will ask you some questions."
+    },
+    "segments": [
+      {
+        "sec": 7,
+        "ansSec": 45
+      },
+      {
+        "sec": 7,
+        "ansSec": 45
+      },
+      {
+        "sec": 7,
+        "ansSec": 45
+      },
+      {
+        "sec": 7,
+        "ansSec": 45
+      }
+    ]
+  },
+  "feedback": {
+    "score": "3.6",
+    "description": "表达流畅，需提升复述完整度与用词准确性。",
+    "footnote": "练习估分仅供参考，不代表官方托福分数。",
+    "types": [
+      {
+        "key": "r",
+        "name": "Listen and Repeat",
+        "score": 5
+      },
+      {
+        "key": "i",
+        "name": "Take an Interview",
+        "score": 3.5
+      }
+    ],
+    "subs": [
+      {
+        "n": "Delivery",
+        "v": "4.0",
+        "c": "ok"
+      },
+      {
+        "n": "Language Use",
+        "v": "2.0",
+        "c": "bad"
+      },
+      {
+        "n": "Topic Development",
+        "v": "3.0",
+        "c": ""
+      }
+    ],
+    "questions": {
+      "r": [
+        {
+          "n": 1,
+          "ok": false,
+          "ask": "\"Please put on your safety goggles before you start.\"",
+          "dur": "00:03 / 00:10",
+          "pct": 72,
+          "fb": "The retelling completeness is 72%, missing the key words in the latter half of the sentence. Focus on the sentence ending."
+        },
+        {
+          "n": 2,
+          "ok": true,
+          "ask": "\"Always keep your fingers away from the blade.\"",
+          "dur": "00:03 / 00:10",
+          "pct": 95,
+          "fb": "Accurate and clear delivery. Well done."
+        }
+      ],
+      "i": [
+        {
+          "n": 1,
+          "ok": false,
+          "ask": "\"Have you ever had a part-time job or an internship? Tell me about it.\"",
+          "dur": "00:03 / 00:10",
+          "fb": "Good fluency, but the reasons lack concrete examples. Add one specific example per reason."
+        }
+      ]
+    },
+    "weak": [
+      {
+        "tags": [
+          "口语",
+          "复述完整度",
+          "长句尾部信息"
+        ],
+        "q": "第 4 句：句子后半段 \"early next week\" 未复述出来。",
+        "a": "长句复述时容易漏掉尾部信息。建议练习：先抓主干，再补时间/地点等结尾细节。"
+      },
+      {
+        "tags": [
+          "口语",
+          "内容展开",
+          "理由缺例证"
+        ],
+        "q": "访谈第 2 题：理由罗列但缺少具体例子。",
+        "a": "回答有观点但展开不足。建议做\"每个理由都配一个例子\"的展开训练。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "_source": "surgo-mobile-new/app.js 9609-9842 (TFDW_PARAS / TFDW_SEC / TFDWFB_WEAK / TFDWFB_SRC / TFDWFB_QS)",
+  "TFDW_SEC": 90,
+  "TFDW_PARAS": [
+    [
+      "Every autumn, millions of monarch butterflies ",
+      ["emb", 3, "k"],
+      " on one of the most ",
+      ["rema", 3, "ble"],
+      " journeys in the natural world, travelling up to 4,000 kilometres from Canada to the ",
+      ["mou", 4, "ain"],
+      " forests of central Mexico. What makes this ",
+      ["migra", 4, ""],
+      " so extraordinary is that no single butterfly ",
+      ["comp", 5, ""],
+      " the round trip. Scientists remain ",
+      ["puz", 4, ""],
+      " by how the insects ",
+      ["navi", 4, ""],
+      " across such vast ",
+      ["dist", 5, ""],
+      " using only the position of the sun and an internal ",
+      ["magn", 4, ""],
+      " compass that keeps them on a steady ",
+      ["sou", 6, ""],
+      " course."
+    ],
+    [
+      "The overwintering sites in Mexico were ",
+      ["unkn", 3, ""],
+      " to scientists until 1975, when a research team finally ",
+      ["loca", 3, "d"],
+      " the dense colonies clinging to oyamel fir trees at high ",
+      ["alti", 4, ""],
+      ". The discovery raised urgent ",
+      ["ques", 5, ""],
+      " about conservation, as logging ",
+      ["threa", 4, ""],
+      " the very forests the butterflies ",
+      ["dep", 3, ""],
+      " on. Climate change now poses an additional ",
+      ["thr", 3, ""],
+      ". Warmer temperatures ",
+      ["dis", 4, ""],
+      " the delicate timing of migration, and unusual weather ",
+      ["ev", 4, ""],
+      " can devastate colonies gathered in a single ",
+      ["loca", 4, ""],
+      "."
+    ]
+  ],
+  "TFDWFB_WEAK": [
+    {
+      "tags": ["阅读", "细节定位", "否定信息题"],
+      "q": "第 1 题：漏看 \"ages 2 through 10\"，误判入学年龄范围。",
+      "a": "否定/排除类细节题要回原文逐项核对。建议练习\"NOT/EXCEPT 题定位\"专项。"
+    },
+    {
+      "tags": ["阅读", "学术长句", "主干抓取"],
+      "q": "学术文章题错在长从句主干判断。",
+      "a": "长句先找主谓宾主干，再处理修饰成分。建议做长难句拆解训练。"
+    }
+  ],
+  "TFDWFB_SRC": [
+    ["Every autumn, monarch butterflies ", "embark", 1, " on a remarkable "],
+    ["", "migration", 2, " of up to 4,000 kilometres, travelling from Canada to the forests of central Mexico to escape the cold winter."]
+  ],
+  "TFDWFB_QS": [
+    {
+      "n": 1,
+      "ok": false,
+      "q": "Blank 1 — \"emb___k\"",
+      "mine": "embrace",
+      "ans": "embark",
+      "why": "\"embark on a journey\" 是固定搭配；\"embrace\" 不符合\"开始迁徙\"的语境。",
+      "evi": "\"embark on a remarkable migration\""
+    },
+    {
+      "n": 2,
+      "ok": true,
+      "q": "Blank 2 — \"migra_____\"",
+      "mine": "migration"
+    }
+  ],
+  "TFDWFB_SCORE": {
+    "k": "总体 · 练习估分",
+    "n": "70.0",
+    "den": " / 6.0",
+    "d": "日常阅读稳定，学术文章是主要提升点。",
+    "f": "练习估分仅供参考，不代表官方托福分数。"
+  }
+}

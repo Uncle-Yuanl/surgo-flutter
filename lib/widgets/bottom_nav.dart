@@ -208,7 +208,8 @@ class GlobalButtons extends StatelessWidget {
   static const _settingsRight = 10.0;
   static const _notifyRight = 58.0;
   static const _boxNarrow = 40.0;
-  static const _iconNarrow = 28.0;
+  // User asked for a slight bump on both global icons (2026-09-24): 28 -> 31.
+  static const _iconNarrow = 31.0;
 
   @override
   Widget build(BuildContext context) {
@@ -222,7 +223,7 @@ class GlobalButtons extends StatelessWidget {
           children: [
             if (showNotifications)
               Positioned(
-                right: _notifyRight,
+                right: showSettings ? _notifyRight : _settingsRight,
                 top: 0,
                 child: _GlobalIconButton(
                   asset: 'assets/images/msg_icon.svg',
@@ -268,6 +269,7 @@ class _GlobalIconButton extends StatelessWidget {
       label: semanticLabel,
       button: true,
       child: GestureDetector(
+        key: ValueKey('global-$semanticLabel'),
         // .gset-btn:active{transform:scale(.92)}
         onTap: onTap,
         child: SizedBox(

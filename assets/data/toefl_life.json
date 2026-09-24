@@ -1,0 +1,133 @@
+{
+  "TFDL_AD": [
+    "COLLINS UNIVERSITY CHILDCARE CENTER",
+    "SERVES STUDENTS AND FACULTY,",
+    "PROVIDING EXCEPTIONAL CARE FOR CHILDREN AGES 2 THROUGH 10.",
+    "",
+    "Mostly staffed by graduate students studying early childhood development, the Center offers music, art activities, outdoor play, and homework-related tutoring.",
+    "",
+    "Children enrolled in the program must attend at least three days per week.",
+    "",
+    "Hours: Monday-Friday, 7:30 AM - 6:00 PM",
+    "Summer session available June through August.",
+    "Contact: childcare@collins.edu | (555) 234-8901"
+  ],
+  "TFDL_POST": [
+    "Jordan Miles",
+    "November 3 at 5:37 PM",
+    "",
+    "We're seeking two additional members for our panel at the 2026 Media Studies Conference hosted by Poplar College. Please email jmiles@poplar.edu if interested.",
+    "",
+    "Panel title: Rethinking Documentary—Collaboration and Authorship",
+    "",
+    "Panel description: This panel explores ways to involve participants in documentary production beyond traditional observation. Historically, filmmakers have controlled the narrative, leaving little room for those on camera to shape their own stories. We'll discuss methods for working directly with participants to ensure accuracy and trust, providing strategies for scholars and practitioners interested in building stronger partnerships with the communities they document.",
+    "",
+    "Academic Rationale: Recent scholarship emphasizes participatory and community-driven practices as a response to long-standing concerns about representation and authorship. By examining strategies for collaboration, this panel contributes to debates about ethics and methodological innovation in documentary research and production.",
+    "",
+    "Confirmed Participants: Jordan Miles (Moderator), Poplar College; Taylor Chen, Summit University."
+  ],
+  "TFDL_QS": [
+    {
+      "src": "ad",
+      "title": "Read an advertisement.",
+      "q": "Which of the following is indicated about the childcare center?",
+      "opts": [
+        "It is not open to children of part-time students.",
+        "It does not accept children under the age of 2.",
+        "It is not open during the summer months.",
+        "It does not provide meals or art supplies."
+      ]
+    },
+    {
+      "q": "What can be inferred about the staff at the childcare center?",
+      "opts": [
+        "They are all certified teachers.",
+        "Many of them are pursuing advanced degrees.",
+        "They work only during summer months.",
+        "They are required to have five years of experience."
+      ]
+    },
+    {
+      "src": "post",
+      "title": "Read a social media post.",
+      "q": "What is the main purpose of the social media post?",
+      "opts": [
+        "To advertise a documentary-film screening",
+        "To promote enrollment in a media-studies program",
+        "To announce the publication of a new research article",
+        "To invite scholars to join a panel at an academic conference"
+      ]
+    },
+    {
+      "q": "What is suggested about the panel discussion?",
+      "opts": [
+        "It will focus on traditional filmmaking techniques.",
+        "It will address how documentary subjects can participate in production.",
+        "It requires all participants to be from the same university.",
+        "It has already reached its maximum number of members."
+      ]
+    },
+    {
+      "q": "Who is Taylor Chen?",
+      "opts": [
+        "The moderator of the panel",
+        "A confirmed panelist from Summit University",
+        "The host of the conference",
+        "A documentary filmmaker seeking funding"
+      ]
+    }
+  ],
+  "TFDL_SEC": 40,
+  "TFDL_TOTAL": 5,
+  "TFDLFB_WEAK": [
+    {
+      "tags": [
+        "阅读",
+        "细节定位",
+        "否定信息题"
+      ],
+      "q": "第 1 题：漏读 \"ages 2 through 10\"，误判入学年龄范围。",
+      "a": "否定/排除类细节题要回原文逐项核对。建议练习\"NOT/EXCEPT 题定位\"专项。"
+    },
+    {
+      "tags": [
+        "阅读",
+        "学术长句",
+        "主干抓取"
+      ],
+      "q": "学术文章题错在长从句主干判断。",
+      "a": "长句先找主谓宾主干，再处理修饰成分。建议做长难句拆解训练。"
+    }
+  ],
+  "TFDLFB_SRC": [
+    [
+      "Collins University Childcare Center serves students and faculty, ",
+      "providing exceptional care for children ages 2 through 10",
+      1,
+      ". Mostly "
+    ],
+    [
+      "",
+      "staffed by graduate students studying early childhood development",
+      2,
+      ", the center offers music, art activities, outdoor play, and homework-related tutoring. Children enrolled in the program must attend at least three days per week. Hours are Monday to Friday, 7:30 AM to 6:00 PM, with a summer session available from June through August."
+    ]
+  ],
+  "TFDLFB_QS": [
+    {
+      "n": 1,
+      "ok": false,
+      "q": "Which of the following is indicated about the childcare center?",
+      "mine": "A. It is not open to children of part-time students.",
+      "ans": "B. It does not accept children under the age of 2.",
+      "why": "文章说明中心照顾 2 至 10 岁的儿童，因此不接收 2 岁以下的儿童。",
+      "evi": "\"providing exceptional care for children ages 2 through 10\""
+    },
+    {
+      "n": 2,
+      "ok": true,
+      "q": "What can be inferred about the staff at the childcare center?",
+      "mine": "B. Many of them are pursuing advanced degrees."
+    }
+  ]
+}

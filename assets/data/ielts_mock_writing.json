@@ -1,0 +1,44 @@
+{
+  "task1": {
+    "prompt": "The chart below shows the percentage of urban and rural households with internet access in one country in 2005, 2010, 2015 and 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "minWords": 150,
+    "minutes": 20,
+    "chartTitle": "Households with internet access (%), selected years",
+    "chartYears": [
+      "2005",
+      "2010",
+      "2015",
+      "2020"
+    ],
+    "chartSeries": [
+      {
+        "name": "Urban",
+        "color": "#F5B301",
+        "data": [
+          48,
+          66,
+          81,
+          92
+        ]
+      },
+      {
+        "name": "Rural",
+        "color": "#7cb518",
+        "data": [
+          21,
+          39,
+          58,
+          77
+        ]
+      }
+    ]
+  },
+  "task2": {
+    "prompt": "Some people believe that using animals for scientific research is cruel and should be banned. Others argue that it is essential for medical progress.\n\nDiscuss both views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+    "minWords": 250,
+    "minutes": 40,
+    "chartTitle": "",
+    "chartYears": [],
+    "chartSeries": []
+  }
+}

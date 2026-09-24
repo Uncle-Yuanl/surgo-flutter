@@ -1,0 +1,179 @@
+{
+  "source": "app.js RF_DEMO",
+  "literalSha256": "5ded2bab77f525ad853093231e7745260ae5ed8b9856695ce6e41a8e8fa9ec1a",
+  "passages": {
+    "1": {
+      "title": "The Migration of Monarch Butterflies",
+      "tag": "TRUE / FALSE / NOT GIVEN · 判断题（正确/错误/未提及）",
+      "paras": [
+        [
+          "",
+          "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world, travelling up to 4,000 kilometres. No single butterfly completes the round trip. Scientists believe they navigate using the position of the sun and an internal magnetic compass. The overwintering sites in Mexico were located in 1975."
+        ]
+      ],
+      "qs": [
+        {
+          "no": 1,
+          "typeLbl": "TRUE / FALSE / NOT GIVEN",
+          "kind": "opts",
+          "q": "An individual butterfly makes the entire round trip.",
+          "opts": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correct": "FALSE",
+          "mine": "TRUE",
+          "ev": "No single butterfly completes the round trip.",
+          "en": "The text states no single butterfly completes the trip, so FALSE.",
+          "zh": "原文说没有单只蝴蝶完成整趟，所以是 FALSE。"
+        },
+        {
+          "no": 2,
+          "typeLbl": "TRUE / FALSE / NOT GIVEN",
+          "kind": "opts",
+          "q": "Monarchs navigate using the position of the sun.",
+          "opts": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correct": "TRUE",
+          "mine": "TRUE",
+          "ev": "they navigate using the position of the sun",
+          "en": "Directly supported by the passage.",
+          "zh": "原文直接支持。"
+        },
+        {
+          "no": 3,
+          "typeLbl": "TRUE / FALSE / NOT GIVEN",
+          "kind": "opts",
+          "q": "The Mexican overwintering sites were found before 1970.",
+          "opts": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correct": "FALSE",
+          "mine": "NOT GIVEN",
+          "ev": "The overwintering sites in Mexico were located in 1975.",
+          "en": "1975 is after 1970, so the statement is FALSE, not NOT GIVEN.",
+          "zh": "1975 晚于 1970，所以是 FALSE 而非 NOT GIVEN。"
+        }
+      ]
+    },
+    "2": {
+      "title": "The Rise of Urban Farming",
+      "tag": "Matching headings (choose a heading per paragraph) · 标题匹配（为每段选标题）",
+      "paras": [
+        [
+          "Paragraph A: ",
+          "Urban farming began as small community gardens but has grown into a serious source of fresh food for many cities."
+        ],
+        [
+          "Paragraph B: ",
+          "Rooftop farms and vertical systems now let growers produce vegetables without using any soil at all."
+        ],
+        [
+          "Paragraph C: ",
+          "Critics argue, however, that the high energy cost of indoor lighting may cancel out the environmental benefits."
+        ]
+      ],
+      "qs": [
+        {
+          "no": 4,
+          "typeLbl": "Matching headings",
+          "kind": "pills",
+          "q": "Paragraph A",
+          "opts": [
+            "From hobby to food source",
+            "Growing without soil",
+            "The energy problem"
+          ],
+          "correct": "From hobby to food source",
+          "mine": "From hobby to food source",
+          "ev": "grown into a serious source of fresh food for many cities",
+          "en": "The paragraph traces the shift from gardens to food source.",
+          "zh": "该段描述从社区花园到食物来源的转变。"
+        },
+        {
+          "no": 5,
+          "typeLbl": "Matching headings",
+          "kind": "pills",
+          "q": "Paragraph B",
+          "opts": [
+            "From hobby to food source",
+            "Growing without soil",
+            "The energy problem"
+          ],
+          "correct": "Growing without soil",
+          "mine": "The energy problem",
+          "ev": "produce vegetables without using any soil at all",
+          "en": "Paragraph B is about soil-free growing; the energy heading fits Paragraph C instead.",
+          "zh": "B 段讲无土种植；能耗那个标题其实对应 C 段。"
+        },
+        {
+          "no": 6,
+          "typeLbl": "Matching headings",
+          "kind": "pills",
+          "q": "Paragraph C",
+          "opts": [
+            "From hobby to food source",
+            "Growing without soil",
+            "The energy problem"
+          ],
+          "correct": "The energy problem",
+          "mine": "The energy problem",
+          "ev": "the high energy cost of indoor lighting",
+          "en": "Correct — the paragraph is about the energy cost.",
+          "zh": "正确 — 该段讲能耗问题。"
+        }
+      ]
+    },
+    "3": {
+      "title": "The Invention of the Printing Press",
+      "tag": "Sentence completion (fill in from the text) · 句子填空（从原文填写）",
+      "paras": [
+        [
+          "",
+          "Johannes Gutenberg introduced movable-type printing to Europe around 1440. His press dramatically lowered the cost of books, which had previously been copied by hand. Within fifty years, printing had spread to more than 250 cities across the continent."
+        ]
+      ],
+      "qs": [
+        {
+          "no": 7,
+          "typeLbl": "Sentence completion",
+          "kind": "input",
+          "q": "Gutenberg introduced movable-type printing around ________.",
+          "correct": "1440",
+          "mine": "1440",
+          "ev": "introduced movable-type printing to Europe around 1440",
+          "en": "Correct — 1440.",
+          "zh": "正确 — 1440 年。"
+        },
+        {
+          "no": 8,
+          "typeLbl": "Sentence completion",
+          "kind": "input",
+          "q": "Before the press, books were ________ by hand.",
+          "correct": "copied",
+          "mine": "printed",
+          "ev": "which had previously been copied by hand",
+          "en": "The text says books were copied by hand, not printed.",
+          "zh": "原文说书籍是手工“抄写”，不是印刷。"
+        },
+        {
+          "no": 9,
+          "typeLbl": "Sentence completion",
+          "kind": "input",
+          "q": "Within fifty years printing had spread to more than ________ cities.",
+          "correct": "250",
+          "mine": "250",
+          "ev": "printing had spread to more than 250 cities",
+          "en": "Correct — 250 cities.",
+          "zh": "正确 — 250 座城市。"
+        }
+      ]
+    }
+  }
+}

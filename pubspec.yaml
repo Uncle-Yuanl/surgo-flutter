@@ -19,6 +19,8 @@ dependencies:
   flutter_tts: ^4.2.0
   # 视频素材：ready.mp4 / timeup.mp4 / waiting.mp4
   video_player: ^2.9.2
+  # Media-only Web style adapter; already resolved transitively at this version.
+  web: ^1.1.1
   # 雷达图、环形进度、饼图（对应 H5 里的内联 SVG）
   fl_chart: ^0.69.0
   # 中英切换需要读取 82KB 词典与 62KB 题库，走 assets 异步加载
@@ -40,11 +42,40 @@ flutter:
 
   assets:
     - assets/images/
+    # 登录注册页插画（Figma gW9DKhEd6UuQQAnv32BlXH · Page 5 导出）。
+    - assets/images/auth/
     - assets/video/
     - assets/data/
+    - assets/fonts/Arimo-static-OFL.txt
+    - assets/fonts/Inter-OFL.txt
 
   fonts:
     # @font-face{font-family:'VioletSans';src:url('assets/fonts/violet-sans.ttf')}
     - family: VioletSans
       fonts:
         - asset: assets/fonts/violet-sans.ttf
+    # OFL alternative to source system SF Pro, scoped to review essay text.
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-opsz-wght.ttf
+    # OFL Arial-metric-compatible font, scoped to vocabulary quiz controls.
+    - family: Arimo
+      fonts:
+        - asset: assets/fonts/Arimo-Bold.ttf
+          weight: 700
+    # Titles and subtitles, per user request (OFL, redistributable).
+    - family: Outfit
+      fonts:
+        - asset: assets/fonts/Outfit-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Outfit-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Outfit-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Outfit-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Outfit-Black.ttf
+          weight: 900
+    # Questions and body copy use PingFang SC, resolved from the operating
+    # system by family name exactly like the source CSS does. Apple system
+    # fonts are not redistributable, so no font file is bundled here.

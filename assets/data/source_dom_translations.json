@@ -1,0 +1,2793 @@
+{
+  "provenance": "Detached DOM from source V[route](), original applyLang; current session defaults, not render-entry state hooks",
+  "routes": {
+    "workspace": {
+      "zh": {
+        "Exam Prep": "考试备考",
+        "Everyday English": "日常英语"
+      },
+      "en": {
+        "你想怎么学?": "How do you want to learn?",
+        "选择一个学习空间，我们会为你定制学习路径。": "Pick a learning space and we'll tailor a path for you.",
+        "考试备考": "Exam Prep",
+        "针对雅思、托福等标准化考试，按官方评分标准训练听说读写。": "Train listening, reading, writing and speaking for IELTS and TOEFL, marked against the official band descriptors.",
+        "进入 →": "Enter →",
+        "日常英语": "Everyday English",
+        "在真实场景中练习口语与表达，提升日常沟通自信。": "Practise speaking and expression in real situations and build everyday confidence.",
+        "即将上线": "Coming soon"
+      }
+    },
+    "exam": {
+      "zh": {
+        "Select one that applies to you": "选择适合你的考试"
+      },
+      "en": {
+        "选择考试类型": "Choose your exam",
+        "雅思备考": "IELTS",
+        "学术类雅思，涵盖听力、阅读、写作、口语四项完整训练。": "Academic IELTS with full training across listening, reading, writing and speaking.",
+        "托福备考": "TOEFL",
+        "托福 iBT 综合训练，模拟真实机考环境。": "Integrated TOEFL iBT training that mimics the real computer-delivered test."
+      }
+    },
+    "report": {
+      "zh": {
+        "Writing": "写作",
+        "Reading": "阅读",
+        "Listening": "听力",
+        "Speaking": "口语"
+      },
+      "en": {
+        "Nafis 的": "Nafis's",
+        "雅思能力报告": "IELTS ability report",
+        "当前 Band": "Current band",
+        "你的综合水平为 Band 6.3，属于中高分段。距离目标 7.0 还差 0.7 分，继续加油。": "Your overall level is Band 6.3, in the upper-mid range. You're 0.7 short of your 7.0 target — keep going.",
+        "你的综合得分是": "Your overall score is",
+        "你的得分": "Your score",
+        "同龄人平均": "Peer average",
+        "你的综合水平已超过": "You are ahead of",
+        "的同龄考生": "of your peers",
+        "你的": "Your",
+        "听力": "Listening",
+        "比": "than",
+        "的同龄人更强": "of your peers",
+        "阅读": "Reading",
+        "仅超过": "Ahead of only",
+        "的同龄人": "of your peers",
+        "你的首要提升目标是": "Your top priority is",
+        "Reading 阅读": "Reading",
+        "超过": "More than",
+        "12 万": "120,000",
+        "名考生与你有相同的首要提升目标": "candidates share your top priority",
+        "今日能力点评": "Today's review",
+        "你目前的综合水平为 Band 6.3，属于中高分段。": "Your current overall level is Band 6.3, in the upper-mid range.",
+        "听力（7.0）是你的强项": "Listening (7.0) is your strength",
+        "，细节捕捉与关键信息定位都很稳定，保持这个节奏、继续用真题巩固即可。": "— detail capture and locating key information are steady. Keep this rhythm and consolidate with real papers.",
+        "阅读（5.5）是当前最需要突破的一项": "Reading (5.5) is the area that most needs a breakthrough",
+        "，建议每天精读一篇长文，重点练习段落定位与同义替换。写作与口语处于中游，稳步积累素材和表达框架就能再上一个台阶。距离目标 7.0 还差 0.7 分，坚持每日训练，一个月内很有希望达成。": "— read one long passage closely each day and drill paragraph location and paraphrase. Writing and Speaking are mid-pack; keep building material and frameworks and you'll move up. You are 0.7 short of your 7.0 target — train daily and it is well within reach in a month.",
+        "订阅报告提醒": "Subscribe to report alerts",
+        "每周生成一份最新能力报告": "A fresh ability report every week",
+        "订阅": "Subscribe"
+      }
+    },
+    "ielts": {
+      "zh": {
+        "Welcome back, Nafis!": "欢迎回来，Nafis！",
+        "Continue Writing": "继续写作",
+        "Reading": "阅读",
+        "Listening": "听力",
+        "Writing": "写作",
+        "Speaking": "口语",
+        "Vocabulary": "词汇",
+        "Preparing": "备考",
+        "Today’s train": "今日训练",
+        "READING · SECTION 3": "阅读 · Section 3",
+        "SPEAKING · PART 2": "口语 · Part 2",
+        "WRITING · TASK 2": "写作 · Task 2"
+      },
+      "en": {
+        "距离你的考试还剩": "Your exam is in",
+        "20天": "20 days",
+        "，你的目标是": ", target",
+        "分": "band",
+        "学术长文 阅读理解": "Academic passage reading",
+        "本周进度 2/5": "This week 2/5",
+        "个人陈述 口语训练": "Personal statement speaking",
+        "本周进度 4/5": "This week 4/5",
+        "议论文 写作精练": "Argumentative essay writing",
+        "本周进度 3/5": "This week 3/5",
+        "每日挑战": "Daily challenge",
+        "保持你的 12 天连胜": "Keep your 12-day streak",
+        "听力 · 5 min": "Listening · 5 min",
+        "今日挑战已就绪": "Today's challenge is ready",
+        "继续挑战": "Continue"
+      }
+    },
+    "writingDaily": {
+      "zh": {
+        "Step 1": "第 1 步",
+        "Step 2": "第 2 步",
+        "Step 3": "第 3 步"
+      },
+      "en": {
+        "IELTS 写作（日常训练）": "IELTS Writing (daily training)",
+        "选择要练习的写作任务。": "Choose the writing task you want to practise.",
+        "生成题目": "Generate task",
+        "开始训练": "Start training",
+        "批改与复盘": "Marking & review",
+        "选择要练习的内容": "Choose what to practise",
+        "Task 1 · 图表题": "Task 1 · Chart",
+        "用至少 150 词描述图表、表格、地图或流程信息。": "Describe a chart, table, map or process in at least 150 words.",
+        "约 20 分钟": "About 20 min",
+        "推荐": "Recommended",
+        "Task 2 · 议论文": "Task 2 · Essay",
+        "就某一观点撰写至少 250 词的论证文章。": "Write an argumentative essay of at least 250 words on a given view.",
+        "约 40 分钟": "About 40 min",
+        "话题（选填）": "Topic (optional)",
+        "返回": "Back"
+      }
+    },
+    "writingSession": {
+      "zh": {
+        "Writing Task 1": "写作 Task 1",
+        "150 word": "150 词",
+        "20 min": "20 分钟",
+        "Urban": "城镇",
+        "Rural": "乡村"
+      },
+      "en": {
+        "生成题目": "Generate task",
+        "规划作文": "Plan essay",
+        "提交作文": "Submit essay",
+        "批改与复盘": "Marking & review",
+        "日常训练": "Daily training",
+        "确认题目": "Confirm task"
+      }
+    },
+    "writingPlan": {
+      "zh": {
+        "Opinion Essay": "观点议论文",
+        "Discuss both views and give your own opinion": "讨论双方观点并给出你自己的看法",
+        "This task asks you to consider two opposing views on animal testing and then state your own position. Cover BOTH perspectives fairly before making your opinion clear, and support each point with a reason or example.": "本题要求你考虑关于动物实验的两种对立观点，然后表明自己的立场。在明确表态前要公平覆盖双方视角，并为每个论点配上理由或例子。",
+        "Common pitfalls: Do not give only one side of the argument — you must address both perspectives, then state your own opinion clearly.": "常见失分点：不要只写一方观点——必须兼顾两种视角，再清楚地表明自己的看法。"
+      },
+      "en": {
+        "生成题目": "Generate task",
+        "规划作文": "Plan essay",
+        "提交作文": "Submit essay",
+        "批改与复盘": "Marking & review",
+        "论点选择": "Choose a position",
+        "段落规划": "Paragraph plan",
+        "主题词汇": "Topic vocabulary",
+        "上一步": "Previous",
+        "下一步": "Next"
+      }
+    },
+    "writingCompose": {
+      "zh": {
+        "TOPICS": "题目",
+        "WRITE ESSAY": "撰写作文",
+        "Composition planning": "作文规划",
+        "Essentials": "要点",
+        "Urban": "城镇",
+        "Rural": "乡村",
+        "Data/chart description": "图表描述",
+        "Start Writing": "开始写作"
+      }
+    },
+    "readingSession": {
+      "zh": {
+        "Answered 0 / 14": "已答 0 / 14",
+        "BACK": "上一步",
+        "NEXT": "下一步"
+      },
+      "en": {
+        "本次练习时长": "Session time",
+        "日常训练": "Daily training",
+        "IELTS 阅读 · The Migration of Monarch Butterflies": "IELTS Reading · The Migration of Monarch Butterflies",
+        "题目 1-14": "Questions 1-14",
+        "☰ 题号": "☰ Questions",
+        "已用 0 秒，建议每题不超过 90 秒": "Elapsed 0s — aim for under 90s per question"
+      }
+    },
+    "readingFeedback": {
+      "zh": {
+        "READING MARK": "阅读批改",
+        "FALSE vs NOT GIVEN confusion": "FALSE 与 NOT GIVEN 混淆",
+        "FALSE = the text contradicts the statement; NOT GIVEN = the text is silent.": "FALSE = 原文与陈述矛盾；NOT GIVEN = 原文未提及。",
+        "TRUE / FALSE / NOT GIVEN": "判断题（正确/错误/未提及）",
+        "Directly supported by the passage.": "原文直接支持。"
+      },
+      "en": {
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "33% 正确率": "33% accuracy",
+        "练习集：3 题对 1 题。你混淆了 FALSE 与 NOT GIVEN——当原文给出与陈述矛盾的事实时，答案是 FALSE，不是 NOT GIVEN。": "Practice set: 1 of 3 correct. You're mixing up FALSE and NOT GIVEN — when the passage states a fact that contradicts the claim, the answer is FALSE, not NOT GIVEN.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "🏷 TRUE / FALSE / NOT GIVEN · 判断（正确/错误/未提及）": "🏷 TRUE / FALSE / NOT GIVEN",
+        "原文": "Passage",
+        "高亮句对应每道题——带题号，绿色＝答对，红色＝答错。": "Highlighted sentences map to each question — numbered; green = correct, red = wrong.",
+        "我的作答": "My answers",
+        "原文说没有单只蝴蝶完成整趟，所以是 FALSE。": "The passage says no single butterfly completes the whole journey, so it's FALSE.",
+        "原文直接支持。": "The passage supports this directly.",
+        "1975 晚于 1970，所以是 FALSE 而非 NOT GIVEN。": "1975 is later than 1970, so it's FALSE rather than NOT GIVEN.",
+        "完成，返回首页": "Done, back to home"
+      }
+    },
+    "listeningFeedback": {
+      "zh": {
+        "Distractor traps": "干扰项陷阱",
+        "Speakers often mention a wrong option first — wait for the confirmed one before you commit (cost you Q2 and Q4).": "说话人常先提到错误选项，要等到确认答案再作答（第 2、4 题失分）。",
+        "Exact detail / number capture": "细节 / 数字捕捉",
+        "Practise dictation of numbers and key nouns; the exact figure or word is often tested (cost you Q4).": "练习数字与关键名词的听写；准确的数字或词往往是考点（第 4 题失分）。",
+        "Part 1": "第 1 部分",
+        "Transcript — Hall booking enquiry": "听力原文 · 场地预订咨询",
+        "Form completion": "表格填空",
+        "Main Hall": "主厅",
+        "Garden Room": "花园厅",
+        "Number matched correctly.": "数字匹配正确。"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "50% 正确率": "50% accuracy",
+        "四个部分共 4 题答对 2 题。你对直接陈述的事实可靠，但在干扰项上失分——说话人在确认正确答案前会先提到错误选项（第 2、4 题）。要训练自己等到被确认的答案，并抓住准确数字。": "2 of 4 correct across four parts. You're reliable on directly stated facts but lose marks on distractors — the speaker mentions a wrong option before confirming the right one (Q2 and Q4). Train yourself to wait for the confirmed answer and catch exact numbers.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "🏷 Form completion (fill in the gaps) · 表格填空（填写空缺）": "🏷 Form completion (fill in the gaps)",
+        "原文": "Passage",
+        "高亮句对应每道题——带题号，绿色＝答对，红色＝答错。": "Highlighted sentences map to each question — numbered; green = correct, red = wrong.",
+        "我的作答": "My answers",
+        "从开头一句正确识别。": "Correctly identified from the opening line.",
+        "正确答案": "Correct answer",
+        "经理说的是 Garden Room，不是 Main Hall。": "The manager said Garden Room, not Main Hall.",
+        "数字匹配正确。": "The number matches correctly.",
+        "注意准确数字 — 是 100。": "Watch the exact number — it's 100.",
+        "回到首页": "Back to home"
+      }
+    },
+    "listeningSession": {
+      "zh": {
+        "Answered 0 / 10": "已答 0 / 10",
+        "Questions 1-6": "第 1-6 题",
+        "Choose the correct answer, A, B or C.": "选出正确答案 A、B 或 C。",
+        "Questions 7-10": "第 7-10 题",
+        "Answer the questions below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.": "回答下列问题。每题不超过三个词和/或一个数字。"
+      },
+      "en": {
+        "做题时间": "Time",
+        "日常训练": "Daily training",
+        "听力": "Listening",
+        "IELTS 听力 · Booking a hall for an event": "IELTS Listening · Booking a hall for an event",
+        "Part 1 · 选择题为主，先听录音再作答第 1-6 题。": "Part 1, mostly multiple choice. Listen first, then answer questions 1-6.",
+        "🎧 支持逐句回放，日常训练可反复播放同一题。": "🎧 Sentence-by-sentence replay; in daily training you can replay the same question.",
+        "☰ 题号": "☰ Questions",
+        "返回": "Back",
+        "提交并批改": "Submit for marking"
+      }
+    },
+    "speakingSession": {
+      "zh": {
+        "You should say:": "你需要谈到："
+      },
+      "en": {
+        "本次练习时长": "Session time",
+        "日常训练": "Daily training",
+        "口语": "Speaking",
+        "IELTS 口语 · Part 2 长时独白": "IELTS Speaking · Part 2 · Long turn",
+        "看题卡准备 1 分钟，然后录音陈述 1–2 分钟。": "One minute to prepare from the cue card, then record a 1-2 minute turn.",
+        "🎙️ 支持回放录音，日常训练可反复练习同一题。": "🎙️ Recording playback supported; in daily training you can repeat the same question.",
+        "准备 00:60 · 陈述 02:00": "Prepare 00:60 · Speak 02:00",
+        "进入口语考试": "Enter Speaking test",
+        "查看批改示例": "See a marked example"
+      }
+    },
+    "oralExam": {
+      "zh": {
+        "IELTS SPEAKING · PART 1": "雅思口语 · Part 1",
+        "You should say:": "你需要谈到：",
+        "Play question": "播放题目",
+        "Note": "笔记"
+      },
+      "en": {
+        "日常训练：允许超时；可多次重录": "Daily training: overtime allowed, unlimited re-recording",
+        "↻ 重新录制": "↻ Record again",
+        "提交": "Submit"
+      }
+    },
+    "speakingReview": {
+      "zh": {
+        "Limited lexical variety": "词汇重复",
+        "Hesitation before complex ideas": "复杂观点前有停顿",
+        "Filler words reduce coherence": "填充语影响连贯",
+        "Part 1": "第 1 部分"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "模拟考成绩": "Mock exam result",
+        "今日完成, 14:32 · 24 min": "Completed today, 14:32 · 24 min",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "总体 6.5：你能持续表达、内容切题、词汇范围尚可。要冲 7 分，需要减少复杂观点前的填充停顿、用更多样的动词代替反复的 \"I like\"，并使用更丰富的复合句。发音在本次练习中不评分，因为没有真实音频分析。": "Overall 6.5: you sustain your answers, stay on topic and have a reasonable range of vocabulary. To reach 7, cut the fillers before complex ideas, replace repeated \"I like\" with more varied verbs, and use a wider range of complex sentences. Pronunciation is not scored in this practice because there is no real audio analysis.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "改进建议": "Improvements",
+        "练习你最弱的题型": "Practise your weakest type",
+        "流利度与连贯性": "Fluency & coherence",
+        "你能持续说、没有长时间沉默，也完整覆盖了话题卡，但在给理由前有填充停顿（\"em\"）。练习衔接短语，让你能顺畅地开启一个理由。": "You keep talking without long silences and cover the whole cue card, but you hesitate (\"em\") before giving reasons. Practise linking phrases so you can open a reason smoothly.",
+        "词汇资源": "Lexical resource",
+        "日常词汇使用准确，但\"I like\"重复，限制了词汇范围。加入\"I'm really into\"、\"I'm keen on\"、\"I'm a big fan of\"来展示灵活度。": "Everyday vocabulary is used accurately, but repeating \"I like\" limits your range. Add \"I'm really into\", \"I'm keen on\" and \"I'm a big fan of\" to show flexibility.",
+        "语法多样性与准确性": "Grammatical range & accuracy",
+        "简单句准确，也尝试了一些复杂句。用更多关系从句和条件句能把这项提到 7 分。": "Simple sentences are accurate and you attempt some complex ones. More relative and conditional clauses would lift this to a 7.",
+        "发音": "Pronunciation",
+        "未评分": "Not scored",
+        "本次练习不评分——发音需要真实音频分析，此处不可用。": "Not scored in this practice — pronunciation needs real audio analysis, which is unavailable here.",
+        "逐题分析": "Question-by-question",
+        "Part 1 · 介绍与问答": "Part 1 · Introduction & interview",
+        "关于熟悉话题的日常问答（4–5 分钟）。": "Everyday questions on familiar topics (4-5 min).",
+        "考官": "Examiner",
+        "你的作答（转录）": "Your answer (transcript)",
+        "▶ 播放考官": "▶ Play examiner",
+        "▶ 播放你的作答": "▶ Play your answer",
+        "↻ 连续回放对话": "↻ Replay the conversation",
+        "回答清晰、切题，有理由也有例子。想提分可去掉\"because\"前的填充停顿，再补一个细节。": "Clear, on-topic answers with reasons and examples. To raise the score, drop the filler before \"because\" and add one more detail.",
+        "给理由前有填充停顿（\"em\"）打断了流畅度。练习直接衔接\"because\"。": "Hesitation (\"em\") before reasons breaks fluency. Practise moving straight into \"because\".",
+        "日常表达不错：\"helps me relax\"、\"feel calm\"。": "Nice everyday expressions: \"helps me relax\", \"feel calm\".",
+        "简单句准确，因果从句用对了。": "Simple sentences are accurate and the cause-effect clause is used correctly.",
+        "列举了不同曲风，很好。\"I like\" 重复削弱了词汇多样性 — 可换 \"I'm really into\" 或 \"I'm keen on\"。": "Good range of genres named. The repetition of \"I like\" weakens lexical variety — try \"I'm really into\" or \"I'm keen on\".",
+        "\"I like\" 重复三次。用 \"I'm really into\"、\"I'm a big fan of\" 变换，提升词汇分。": "\"I like\" is repeated three times. Vary with \"I'm really into\", \"I'm a big fan of\" to lift Lexical Resource.",
+        "表达顺畅，无长停顿，观点自然衔接。": "Smooth delivery, no long pauses, ideas connect naturally.",
+        "用 \"when\" 从句对比心情，语法正确。": "Correct use of a \"when\" clause to contrast moods.",
+        "回到首页": "Back to home"
+      }
+    },
+    "oralDiscuss": {
+      "zh": {
+        "IELTS SPEAKING · PART 3": "雅思口语 · Part 3"
+      },
+      "en": {
+        "考官正在提问…": "The examiner is asking…",
+        "问题由语音播出，请仔细听。": "The questions are played aloud — listen carefully.",
+        "第 1 / 10 轮": "Round 1 / 10"
+      }
+    },
+    "pronCourse": {
+      "zh": {
+        "/l/ vs /r/ — articulation": "/l/ 与 /r/ —— 发音要领",
+        "Personalised /l/·/r/ words": "个性化 /l/·/r/ 词汇"
+      },
+      "en": {
+        "发音训练": "Pronunciation training",
+        "9301 个考试词汇的系统发音课程——从单音对比到连读与考试语音": "A systematic pronunciation course across 9301 exam words — from minimal pairs to linking and exam speech",
+        "已完成模块": "Modules completed",
+        "第 1 阶段": "Stage 1",
+        "辅音对比 · Consonant contrasts · 0/1 已完成": "Consonant contrasts · 0/1 complete",
+        "认读与发音要领": "Recognition & pronunciation essentials",
+        "/l/ 与 /r/ 对比": "/l/ vs /r/",
+        "/l/ 与 /r/ —— 发音要领": "/l/ and /r/ — pronunciation essentials",
+        "未开始": "Not started",
+        "第 2 阶段": "Stage 2",
+        "个性化词汇练习": "Personalised vocabulary practice",
+        "个性化 /l/·/r/ 词汇练习": "Personalised /l/ · /r/ vocabulary practice",
+        "个性化选词": "Personalised word selection"
+      }
+    },
+    "pronLesson": {
+      "zh": {
+        "/l/ vs /r/ — articulation": "/l/ 与 /r/ —— 发音要领",
+        "Tell and produce /l/ vs /r/ in word-initial position.": "说出并读出词首的 /l/ 与 /r/。",
+        "For /l/, the tongue tip touches the ridge behind the upper teeth. For /r/, it curls back without touching.": "发 /l/ 时舌尖抵住上齿龈；发 /r/ 时舌尖卷起但不接触。"
+      },
+      "en": {
+        "认读与发音要领": "Recognition & pronunciation essentials",
+        "/l/ 与 /r/ 对比": "/l/ vs /r/",
+        "英音示范": "British model",
+        "/l/ 与 /r/ —— 发音要领": "/l/ and /r/ — pronunciation essentials",
+        "1 讲解": "1 Explain",
+        "2 听辨": "2 Discriminate",
+        "3 单词跟读": "3 Word drill",
+        "4 句子练习": "4 Sentence drill",
+        "5 完成": "5 Done",
+        "本模块目标": "Module goals",
+        "讲解": "Explain",
+        "发音要领": "Pronunciation essentials",
+        "对比词对": "Contrast pair",
+        "下一步：听辨": "Next: discriminate"
+      }
+    },
+    "pronListen": {
+      "zh": {
+        "/l/ vs /r/ — articulation": "/l/ 与 /r/ —— 发音要领",
+        "Listen: same word or different words?": "听辨：是同一个词还是不同的词？"
+      },
+      "en": {
+        "认读与发音要领": "Recognition & pronunciation essentials",
+        "/l/ 与 /r/ 对比": "/l/ vs /r/",
+        "英音示范": "British model",
+        "/l/ 与 /r/ —— 发音要领": "/l/ and /r/ — pronunciation essentials",
+        "1 讲解": "1 Explain",
+        "2 听辨": "2 Discriminate",
+        "3 单词跟读": "3 Word drill",
+        "4 句子练习": "4 Sentence drill",
+        "5 完成": "5 Done",
+        "第 1/4 题": "Question 1/4",
+        "播放两个词": "Play the two words",
+        "相同": "Same",
+        "不同": "Different",
+        "上一步": "Previous",
+        "下一步：单词跟读": "Next: word drill"
+      }
+    },
+    "pronRepeat": {
+      "zh": {
+        "/l/ vs /r/ — articulation": "/l/ 与 /r/ —— 发音要领"
+      },
+      "en": {
+        "认读与发音要领": "Recognition & pronunciation essentials",
+        "/l/ 与 /r/ 对比": "/l/ vs /r/",
+        "英音示范": "British model",
+        "/l/ 与 /r/ —— 发音要领": "/l/ and /r/ — pronunciation essentials",
+        "1 讲解": "1 Explain",
+        "2 听辨": "2 Discriminate",
+        "3 单词跟读": "3 Word drill",
+        "4 句子练习": "4 Sentence drill",
+        "5 完成": "5 Done",
+        "逐个跟读本模块的练习词，点 🔊 听示范。": "Shadow each practice word in this module; tap 🔊 for a model.",
+        "n. 图书馆": "n. library",
+        "点击麦克风朗读：library": "Tap the mic and read: library",
+        "adj. 相关的": "adj. relevant",
+        "点击麦克风朗读：relevant": "Tap the mic and read: relevant",
+        "上一步": "Previous",
+        "下一步：句子练习": "Next: sentence drill"
+      }
+    },
+    "pronSentence": {
+      "zh": {
+        "/l/ vs /r/ — articulation": "/l/ 与 /r/ —— 发音要领"
+      },
+      "en": {
+        "认读与发音要领": "Recognition & pronunciation essentials",
+        "/l/ 与 /r/ 对比": "/l/ vs /r/",
+        "英音示范": "British model",
+        "/l/ 与 /r/ —— 发音要领": "/l/ and /r/ — pronunciation essentials",
+        "1 讲解": "1 Explain",
+        "2 听辨": "2 Discriminate",
+        "3 单词跟读": "3 Word drill",
+        "4 句子练习": "4 Sentence drill",
+        "5 完成": "5 Done",
+        "点击麦克风朗读：Larry really likes reading in the library.": "Tap the mic and read: Larry really likes reading in the library.",
+        "上一步": "Previous",
+        "下一步：完成": "Next: done"
+      }
+    },
+    "pronDone": {
+      "zh": {
+        "/l/ vs /r/ — articulation": "/l/ 与 /r/ —— 发音要领"
+      },
+      "en": {
+        "认读与发音要领": "Recognition & pronunciation essentials",
+        "/l/ 与 /r/ 对比": "/l/ vs /r/",
+        "英音示范": "British model",
+        "/l/ 与 /r/ —— 发音要领": "/l/ and /r/ — pronunciation essentials",
+        "1 讲解": "1 Explain",
+        "2 听辨": "2 Discriminate",
+        "3 单词跟读": "3 Word drill",
+        "4 句子练习": "4 Sentence drill",
+        "5 完成": "5 Done",
+        "完成本模块": "Complete this module",
+        "完成需要至少一次跟读练习记录（Azure 评分或诚实自评均可）。服务端会核对练习证据后解锁后续模块。": "Completion needs at least one shadowing record (Azure scoring or an honest self-assessment). The server checks the evidence before unlocking later modules.",
+        "标记完成": "Mark complete",
+        "上一步": "Previous"
+      }
+    },
+    "pron2Lesson": {
+      "zh": {
+        "Personalised /l/·/r/ words": "个性化 /l/·/r/ 词汇",
+        "Practise your weak /l/·/r/ words.": "练习你的 /l/·/r/ 薄弱词汇。",
+        "A personalised batch drawn from your weak, saved and unseen words for this sound.": "根据你的薄弱、收藏和未学单词，为这个音素生成的个性化词表。"
+      },
+      "en": {
+        "个性化词汇练习": "Personalised vocabulary practice",
+        "/l/ 与 /r/ 对比": "/l/ vs /r/",
+        "英音示范": "British model",
+        "本次为你个性化选词": "Words personalised for you this time",
+        "个性化 /l/·/r/ 词汇练习": "Personalised /l/ · /r/ vocabulary practice",
+        "1 讲解": "1 Explain",
+        "2 单词跟读": "2 Word drill",
+        "3 完成": "3 Done",
+        "本模块目标": "Module goals",
+        "讲解": "Explain",
+        "下一步：单词跟读": "Next: word drill"
+      }
+    },
+    "pron2Repeat": {
+      "zh": {
+        "Personalised /l/·/r/ words": "个性化 /l/·/r/ 词汇"
+      },
+      "en": {
+        "个性化词汇练习": "Personalised vocabulary practice",
+        "/l/ 与 /r/ 对比": "/l/ vs /r/",
+        "英音示范": "British model",
+        "本次为你个性化选词": "Words personalised for you this time",
+        "个性化 /l/·/r/ 词汇练习": "Personalised /l/ · /r/ vocabulary practice",
+        "1 讲解": "1 Explain",
+        "2 单词跟读": "2 Word drill",
+        "3 完成": "3 Done",
+        "本批单词根据你的薄弱发音自动挑选，每次进入都会更新。": "These words are auto-selected from your weak sounds and refresh each time you enter.",
+        "n. 图书馆": "n. library",
+        "点击喇叭听示范 · 点击麦克风朗读：library": "Tap the speaker for a model · tap the mic to read: library",
+        "adj. 相关的": "adj. relevant",
+        "点击喇叭听示范 · 点击麦克风朗读：relevant": "Tap the speaker for a model · tap the mic to read: relevant",
+        "上一步": "Previous",
+        "下一步：完成": "Next: done"
+      }
+    },
+    "pron2Done": {
+      "zh": {
+        "Personalised /l/·/r/ words": "个性化 /l/·/r/ 词汇"
+      },
+      "en": {
+        "个性化词汇练习": "Personalised vocabulary practice",
+        "/l/ 与 /r/ 对比": "/l/ vs /r/",
+        "英音示范": "British model",
+        "本次为你个性化选词": "Words personalised for you this time",
+        "个性化 /l/·/r/ 词汇练习": "Personalised /l/ · /r/ vocabulary practice",
+        "1 讲解": "1 Explain",
+        "2 单词跟读": "2 Word drill",
+        "3 完成": "3 Done",
+        "完成本模块": "Complete this module",
+        "完成需要至少一次跟读练习记录（Azure 评分或诚实自评均可）。服务端会核对练习证据后标记本阶段完成。": "Completion needs at least one shadowing record (Azure scoring or an honest self-assessment). The server checks the evidence before marking this stage complete.",
+        "标记完成": "Mark complete",
+        "上一步": "Previous"
+      }
+    },
+    "typeSession": {
+      "zh": {
+        "Choose the correct letter, A, B or C.": "选出正确答案 A、B 或 C。",
+        "Answered 0 / 6": "已答 0 / 6",
+        "BACK": "上一步",
+        "NEXT": "下一步"
+      },
+      "en": {
+        "本次练习时长": "Session time",
+        "日常训练": "Daily training",
+        "单一题型": "Single type",
+        "IELTS 阅读 · 选择题": "IELTS Reading · Multiple choice",
+        "☰ 题号": "☰ Questions",
+        "已用 0 秒，建议每题不超过 90 秒": "Elapsed 0s — aim for under 90s per question"
+      }
+    },
+    "writingFeedback": {
+      "zh": {
+        "Arguments stay abstract. Support each side with a specific example (e.g. polio vaccine testing, EU cosmetics-testing ban) to fully develop the response.": "论证偏抽象。请为每一方补充具体例子（如小儿麻痹疫苗试验、欧盟化妆品试验禁令）以充分展开。",
+        "Ideas are sequenced logically from 2005 to 2020.": "观点从 2005 到 2020 依次展开，逻辑清晰。",
+        "Sentences are accurate and mostly error-free.": "句子准确，基本没有错误。",
+        "Repeated trend verb — weakens lexical variety.": "趋势动词重复，削弱词汇多样性。",
+        "Informal, imprecise description of a data gap.": "描述数据差距时用词口语化、不精确。",
+        "Informal / vague quantifier.": "口语化、含糊的量词。"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "Task 2 权重是 Task 1 的两倍": "Task 2 is weighted twice as heavily as Task 1",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "Task 1 · 任务完成情况 6.0": "Task 1 · Task achievement 6.0",
+        "Task 2 · 任务完成情况 6.5": "Task 2 · Task achievement 6.5",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "评分与作文": "Scores & essay",
+        "母语负迁移分析": "L1 interference analysis",
+        "题目": "Question",
+        "你准确报告了数据并覆盖了两个群体，稳拿 6 分。要冲 7 分，需要一句清晰的总体概述、更精确地引用数据，以及更丰富的趋势词汇，而不是反复用 \"increased\"。": "You report the data accurately and cover both groups — a solid 6. To push for 7 you need a clear overview sentence, more precise data references, and richer trend vocabulary instead of repeating \"increased\".",
+        "📊 分项评分": "📊 Criterion scores",
+        "任务完成情况": "Task achievement",
+        "城市与农村数据都覆盖了，数值正确。": "Both urban and rural data are covered with correct figures.",
+        "缺少总体概述句。在细节之前加一句总体趋势（两者都上升，城市始终更高），这是任务完成度上 7 分的硬性要求。": "Missing an overview statement. Add one overall trend before the details (both rose, with the city always higher) — it's required for a 7 on task achievement.",
+        "连贯与衔接": "Coherence & cohesion",
+        "内容从 2005 到 2020 的时间顺序合理排列。": "Content is organised sensibly in chronological order from 2005 to 2020.",
+        "衔接偏基础（also、but）。用时间类衔接如 \"over the fifteen-year period\"、\"by contrast\" 来连接数据。": "Cohesion is basic (also, but). Use time-based linkers such as \"over the fifteen-year period\" and \"by contrast\" to connect the data.",
+        "词汇资源": "Lexical resource",
+        "有一些不错的主题词：access、gap、period。": "Some good topic vocabulary: access, gap, period.",
+        "趋势动词重复。用 rose / climbed / surged / edged up 交替，并加副词（sharply、steadily）体现变化速率。": "Trend verbs are repetitive. Alternate rose / climbed / surged / edged up and add adverbs (sharply, steadily) to show the rate of change.",
+        "语法": "Grammar",
+        "句子准确，基本没有语法错误。": "Sentences are accurate with almost no grammatical errors.",
+        "句式偏simple。用关系从句或比较从句把数据合并成复杂句，提升语法多样性。": "Sentence patterns are rather simple. Combine data into complex sentences with relative or comparative clauses to raise grammatical range.",
+        "🔥 提分建议": "🔥 How to improve",
+        "📝 你的作文（含批改）": "📝 Your essay (marked)",
+        "批注详情": "Comment detail",
+        "趋势动词重复，削弱词汇多样性。": "Repetitive trend verbs weaken lexical variety.",
+        "为什么这样更好": "Why this is better",
+        "雅思看重同义表达。换成 climbed、surged 能体现词汇灵活度，直接抬高词汇资源分。": "IELTS rewards paraphrase. Swapping in climbed or surged shows lexical flexibility and lifts your lexical resource score directly.",
+        "对数据差距的描述口语化、不精确。": "The description of the data gap is colloquial and imprecise.",
+        "学术小作文需要精确、正式的描述词，considerable 才是考官期望的 7 分以上语域。": "Academic Task 1 needs precise, formal description words; considerable is the register examiners expect at band 7 and above.",
+        "口语化、含糊的量词。": "Colloquial, vague quantifiers.",
+        "considerable、substantial 这种精确正式的语域，正是 6 分与 7 分总结的分水岭。": "Precise, formal register like considerable and substantial is exactly what separates a band 6 summary from a band 7 one.",
+        "🏠 回到首页": "🏠 Back to home"
+      }
+    },
+    "writingImprove": {
+      "zh": {
+        "WRITING MARK": "写作批改",
+        "IMPROVE": "提分建议",
+        "L1 ERROR": "母语负迁移",
+        "ORIGINAL ANNOTATIONS": "原始批注",
+        "In my opinion, the most effective approach is a synthesis of both.": "我认为最有效的做法是二者结合。",
+        "The most effective approach is, therefore, a synthesis of both.": "因此，最有效的做法是二者结合。",
+        "NEXT": "下一步"
+      },
+      "en": {
+        "Overusing 'In my opinion' and 'I believe' weakens academic writing. While expressing personal views is appropriate in IELTS essays, these phrases should appear sparingly (once, typically in the introduction or conclusion) rather than multiple times throughout the essay. Direct assertions with appropriate hedging ('therefore', 'thus', 'consequently') are more effective in academic contexts./过度使用\"In my opinion\"": "Overusing 'In my opinion' and 'I believe' weakens academic writing. While expressing personal views is appropriate in IELTS essays, these phrases should appear sparingly (once, typically in the introduction or conclusion) rather than multiple times throughout the essay. Direct assertions with appropriate hedging ('therefore', 'thus', 'consequently') are more effective in academic contexts."
+      }
+    },
+    "writingBands": {
+      "zh": {
+        "WRITING MARK": "写作批改",
+        "IMPROVE": "提分建议",
+        "L1 ERROR": "母语负迁移",
+        "Original annotations": "原始批注",
+        "BAND 7.0 – OPENING PARAGRAPH": "Band 7.0 · 开头段",
+        "BAND 8.0 – OPENING PARAGRAPH": "Band 8.0 · 开头段",
+        "BAND 6.0 – OPENING PARAGRAPH": "Band 6.0 · 开头段",
+        "NEXT": "下一步"
+      }
+    },
+    "writingL1Error": {
+      "zh": {
+        "WRITING MARK": "写作批改",
+        "IMPROVE": "提分建议",
+        "L1 ERROR": "母语负迁移",
+        "Errors": "错误",
+        "Current band": "当前 Band",
+        "Ceiling without fixes": "不修正的上限",
+        "OVERALL EVALUATION": "总体评价",
+        "See details": "查看详情"
+      }
+    },
+    "writingL1Detail": {
+      "zh": {
+        "WRITING MARK": "写作批改",
+        "IMPROVE": "提分建议",
+        "L1 ERROR": "母语负迁移",
+        "OVERALL EVALUATION": "总体评价",
+        "Vocabulary (4)": "词汇 (4)",
+        "Syntax (1)": "语法 (1)",
+        "Style (2)": "文体 (2)",
+        "In my opinion, the most effective approach is a synthesis of both.": "我认为最有效的做法是二者结合。",
+        "The most effective approach is, therefore, a synthesis of both.": "因此，最有效的做法是二者结合。",
+        "Style": "文体",
+        "Low": "低",
+        "The end": "结尾"
+      }
+    },
+    "listeningDaily": {
+      "zh": {
+        "Step 1": "第 1 步",
+        "Step 2": "第 2 步",
+        "Step 3": "第 3 步"
+      },
+      "en": {
+        "IELTS 听力（日常训练）": "IELTS Listening (daily training)",
+        "选择要练习的 Part，先听录音再作答。": "Choose the part to practise, listen first, then answer.",
+        "生成题目": "Generate task",
+        "开始训练": "Start training",
+        "批改与复盘": "Marking & review",
+        "选择要练习的内容": "Choose what to practise",
+        "Part 1 · 日常对话": "Part 1 · Everyday conversation",
+        "社交情境中两人之间的对话。": "A conversation between two people in a social situation.",
+        "10 题": "10 questions",
+        "推荐": "Recommended",
+        "Part 2 · 日常独白": "Part 2 · Everyday monologue",
+        "一位说话者就熟悉的日常话题发言。": "One speaker talks about a familiar everyday topic.",
+        "Part 3 · 学术讨论": "Part 3 · Academic discussion",
+        "教育情境中最多四位说话者。": "Up to four speakers in an educational setting.",
+        "Part 4 · 学术讲座": "Part 4 · Academic lecture",
+        "一位说话者就某学术主题发言。": "One speaker gives a talk on an academic topic.",
+        "返回": "Back"
+      }
+    },
+    "readingDaily": {
+      "zh": {
+        "Step 1": "第 1 步",
+        "Step 2": "第 2 步",
+        "Step 3": "第 3 步"
+      },
+      "en": {
+        "IELTS 阅读（日常训练）": "IELTS Reading (daily training)",
+        "练习整篇文章，或针对性攻克那个总丢分的题型。": "Practise a full passage, or target the question type you keep losing marks on.",
+        "生成题目": "Generate task",
+        "开始训练": "Start training",
+        "批改与复盘": "Marking & review",
+        "今天想怎么练？": "How do you want to practise today?",
+        "推荐": "Recommended",
+        "练习整篇": "Full passage",
+        "随机 3 种题型，最接近真实考试。": "Three random question types — closest to the real test.",
+        "专注单一": "Single type",
+        "针对性攻克一个薄弱题型。": "Target one weak question type.",
+        "请选择想练习的题型": "Choose the question type",
+        "选择题": "Multiple choice",
+        "判断信息（正误未提及）": "True / False / Not Given",
+        "判断观点（是否未提及）": "Yes / No / Not Given",
+        "信息匹配": "Matching information",
+        "标题匹配": "Matching headings",
+        "特征匹配": "Matching features",
+        "句尾匹配": "Matching sentence endings",
+        "句子填空": "Sentence completion",
+        "摘要/笔记/表格填空": "Summary / notes / table completion",
+        "示意图标注填空": "Diagram labelling",
+        "简答题": "Short answer",
+        "话题（选填）": "Topic (optional)",
+        "返回": "Back"
+      }
+    },
+    "tfDailyWords": {
+      "zh": {
+        "PARAGRAPH 1 OF 2": "第 1 段 / 2"
+      },
+      "en": {
+        "0 / 10 已填": "0 / 10 filled",
+        "填入缺失的字母，补全每个单词。": "Fill in the missing letters to complete each word.",
+        "小数字表示": "The small number shows",
+        "缺失了几个字母": "how many letters are missing",
+        "。点击任意空格即可跳转填写。": ". Tap any blank to jump to it.",
+        "下一段": "Next section"
+      }
+    },
+    "tfDwFb": {
+      "zh": {
+        "Completed paragraph": "已完成段落",
+        "Blank 1 — \"emb___k\"": "第 1 空 — \"emb___k\"",
+        "Blank 2 — \"migra_____\"": "第 2 空 — \"migra_____\""
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "日常阅读稳定，学术文章是主要提升点。": "Everyday reading is steady; academic passages are the main area to improve.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "阅读": "Reading",
+        "细节定位": "Detail location",
+        "否定信息题": "Negative-fact questions",
+        "第 1 题：漏看 \"ages 2 through 10\"，误判入学年龄范围。": "Q1: you missed \"ages 2 through 10\" and misjudged the enrolment age range.",
+        "否定/排除类细节题要回原文逐项核对。建议练习\"NOT/EXCEPT 题定位\"专项。": "For negative or exclusion detail questions, check each option against the passage. Try the \"NOT/EXCEPT location\" drill.",
+        "学术长句": "Academic long sentences",
+        "主干抓取": "Main-clause extraction",
+        "学术文章题错在长从句主干判断。": "Academic passage mistakes come from misreading the main clause of long sentences.",
+        "长句先找主谓宾主干，再处理修饰成分。建议做长难句拆解训练。": "In long sentences, find subject-verb-object first, then handle modifiers. Try long-sentence parsing drills.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "题目": "Question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "解析": "Explanation",
+        "\"embark on a journey\" 是固定搭配；\"embrace\" 不符合\"开始迁徙\"的语境。": "\"embark on a journey\" is a fixed collocation; \"embrace\" doesn't fit the meaning of starting a migration.",
+        "原文依据：": "Passage evidence:",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfDailyLife": {
+      "zh": {
+        "Read an advertisement.": "阅读一则广告。"
+      },
+      "en": {
+        "第 1 / 5": "1 / 5",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse",
+        "下一段": "Next section",
+        "答题卡": "Answer sheet",
+        "已作答": "Answered"
+      }
+    },
+    "tfDlFb": {
+      "zh": {
+        "Passage": "原文"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "日常阅读稳定，学术文章是主要提升点。": "Everyday reading is steady; academic passages are the main area to improve.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "阅读": "Reading",
+        "细节定位": "Detail location",
+        "否定信息题": "Negative-fact questions",
+        "第 1 题：漏读 \"ages 2 through 10\"，误判入学年龄范围。": "Q1: you misread \"ages 2 through 10\" and misjudged the enrolment age range.",
+        "否定/排除类细节题要回原文逐项核对。建议练习\"NOT/EXCEPT 题定位\"专项。": "For negative or exclusion detail questions, check each option against the passage. Try the \"NOT/EXCEPT location\" drill.",
+        "学术长句": "Academic long sentences",
+        "主干抓取": "Main-clause extraction",
+        "学术文章题错在长从句主干判断。": "Academic passage mistakes come from misreading the main clause of long sentences.",
+        "长句先找主谓宾主干，再处理修饰成分。建议做长难句拆解训练。": "In long sentences, find subject-verb-object first, then handle modifiers. Try long-sentence parsing drills.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "题目": "Question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "解析": "Explanation",
+        "文章说明中心照顾 2 至 10 岁的儿童，因此不接收 2 岁以下的儿童。": "The passage says the centre cares for children aged 2 to 10, so it does not accept under-2s.",
+        "原文依据：": "Passage evidence:",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfDaFb": {
+      "zh": {
+        "Passage": "原文"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "日常阅读稳定，学术文章是主要提升点。": "Everyday reading is steady; academic passages are the main area to improve.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "阅读": "Reading",
+        "细节定位": "Detail location",
+        "否定信息题": "Negative-fact questions",
+        "第 1 题：漏读 \"ages 2 through 10\"，误判入学年龄范围。": "Q1: you misread \"ages 2 through 10\" and misjudged the enrolment age range.",
+        "否定/排除类细节题要回原文逐项核对。建议练习\"NOT/EXCEPT 题定位\"专项。": "For negative or exclusion detail questions, check each option against the passage. Try the \"NOT/EXCEPT location\" drill.",
+        "学术长句": "Academic long sentences",
+        "主干抓取": "Main-clause extraction",
+        "学术文章题错在长从句主干判断。": "Academic passage mistakes come from misreading the main clause of long sentences.",
+        "长句先找主谓宾主干，再处理修饰成分。建议做长难句拆解训练。": "In long sentences, find subject-verb-object first, then handle modifiers. Try long-sentence parsing drills.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "题目": "Question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "解析": "Explanation",
+        "文章说明中心照顾 2 至 10 岁的儿童，因此不接收 2 岁以下的儿童。": "The passage says the centre cares for children aged 2 to 10, so it does not accept under-2s.",
+        "原文依据：": "Passage evidence:",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfRetellFb": {
+      "zh": {
+        "Delivery": "表达",
+        "Language Use": "语言运用",
+        "Topic Development": "话题展开",
+        "Accurate and clear delivery. Well done.": "表达准确清晰，做得很好。",
+        "Clear and complete. Nice pacing.": "清晰完整，节奏很好。",
+        "Accurate delivery with correct word order.": "表达准确，词序正确。"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "表达流利，需提升复述完整度与用词准确性。": "Fluent delivery; retelling completeness and word accuracy need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "口语": "Speaking",
+        "复述完整度": "Retelling completeness",
+        "长句尾部信息": "End-of-sentence information",
+        "第 1 句：句子后半段关键词未复述出来。": "Sentence 1: key words from the second half were not retold.",
+        "长句复述先抓主干，再补结尾细节。": "When retelling long sentences, capture the main clause first, then the ending detail.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "考官提问": "Examiner's question",
+        "考官": "Examiner",
+        "你的作答": "Your answer",
+        "复述完整度 · The retelling completeness is 72%, missing the key words in the latter half of the sentence. Focus on the sentence ending.": "Retelling completeness · 72% — the key words in the latter half were missed. Focus on the sentence ending.",
+        "反馈": "Feedback",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "复述完整度 · Accurate and clear delivery. Well done.": "Retelling completeness · Accurate and clear delivery. Well done.",
+        "第 3": "Q3",
+        "复述完整度 · Good overall retelling; minor hesitation near the middle.": "Retelling completeness · Good overall retelling; minor hesitation near the middle.",
+        "第 4": "Q4",
+        "复述完整度 · Retelling completeness is 65%. The location detail was dropped.": "Retelling completeness · 65% — the location detail was dropped.",
+        "第 5": "Q5",
+        "复述完整度 · Clear and complete. Nice pacing.": "Retelling completeness · Clear and complete. Nice pacing.",
+        "第 6": "Q6",
+        "复述完整度 · Retelling completeness is 70%, missing the time and place details at the end.": "Retelling completeness · 70% — the time and place details at the end were missed.",
+        "第 7": "Q7",
+        "复述完整度 · Accurate delivery with correct word order.": "Retelling completeness · Accurate delivery with correct word order.",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfInterviewFb": {
+      "zh": {
+        "Delivery": "表达",
+        "Language Use": "语言运用",
+        "Topic Development": "话题展开"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "表达流利，需提升复述完整度与用词准确性。": "Fluent delivery; retelling completeness and word accuracy need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "口语": "Speaking",
+        "内容展开": "Content development",
+        "理由缺例证": "Reasons lack examples",
+        "访谈第 2 题：理由罗列但缺少具体例子。": "Interview Q2: reasons are listed but lack concrete examples.",
+        "每个理由配一个具体例子来展开。": "Support each reason with a concrete example.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "考官提问": "Examiner's question",
+        "考官": "Examiner",
+        "你的作答": "Your answer",
+        "反馈": "Feedback",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "第 3": "Q3",
+        "第 4": "Q4",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfDailyConvo": {
+      "zh": {
+        "Listen to a conversation.": "听一段对话。"
+      },
+      "en": {
+        "正在播放...": "Playing...",
+        "播放中不可作答，请先听完这一段。": "You cannot answer while the audio plays — listen to this part first.",
+        "笔记": "Notes"
+      }
+    },
+    "tfDcFb": {
+      "zh": {
+        "Transcript": "听力原文"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "对话把握良好，学术讲座需加强。": "Conversations are handled well; academic lectures need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "听力": "Listening",
+        "目的意图": "Purpose & intent",
+        "对话开头": "Opening of the conversation",
+        "听对话第 1 题：错把附带请求当成主要目的。": "Conversation Q1: you took a side request as the main purpose.",
+        "对话目的题重点听开头 2-3 句。建议练习“开头意图捕捉”。": "For purpose questions, focus on the first 2-3 lines. Try the \"opening intent\" drill.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "题目": "Question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "解析": "Explanation",
+        "学生明确向教授寻求选择论文题目的建议。": "The student clearly asks the professor for advice on choosing an essay topic.",
+        "原文依据：": "Passage evidence:",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfAnFb": {
+      "zh": {
+        "Transcript": "听力原文"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "对话把握良好，学术讲座需加强。": "Conversations are handled well; academic lectures need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "听力": "Listening",
+        "目的意图": "Purpose & intent",
+        "对话开头": "Opening of the conversation",
+        "听对话第 1 题：错把附带请求当成主要目的。": "Conversation Q1: you took a side request as the main purpose.",
+        "对话目的题重点听开头 2-3 句。建议练习“开头意图捕捉”。": "For purpose questions, focus on the first 2-3 lines. Try the \"opening intent\" drill.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "题目": "Question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "解析": "Explanation",
+        "学生明确向教授寻求选择论文题目的建议。": "The student clearly asks the professor for advice on choosing an essay topic.",
+        "原文依据：": "Passage evidence:",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfLcFb": {
+      "zh": {
+        "Transcript": "听力原文"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "对话把握良好，学术讲座需加强。": "Conversations are handled well; academic lectures need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "听力": "Listening",
+        "目的意图": "Purpose & intent",
+        "对话开头": "Opening of the conversation",
+        "听对话第 1 题：错把附带请求当成主要目的。": "Conversation Q1: you took a side request as the main purpose.",
+        "对话目的题重点听开头 2-3 句。建议练习“开头意图捕捉”。": "For purpose questions, focus on the first 2-3 lines. Try the \"opening intent\" drill.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "题目": "Question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "解析": "Explanation",
+        "学生明确向教授寻求选择论文题目的建议。": "The student clearly asks the professor for advice on choosing an essay topic.",
+        "原文依据：": "Passage evidence:",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "speakingDaily": {
+      "zh": {
+        "Step 1": "第 1 步",
+        "Step 2": "第 2 步",
+        "Step 3": "第 3 步"
+      },
+      "en": {
+        "IELTS 口语（日常训练）": "IELTS Speaking (daily training)",
+        "选择要练习的 Part。": "Choose the part to practise.",
+        "生成题目": "Generate task",
+        "开始训练": "Start training",
+        "批改与复盘": "Marking & review",
+        "选择要练习的内容": "Choose what to practise",
+        "Part 1 · 面谈": "Part 1 · Interview",
+        "关于家庭、工作、学习和兴趣等熟悉话题。": "Familiar topics such as family, work, study and interests.",
+        "4–5 分钟": "4-5 min",
+        "推荐": "Recommended",
+        "Part 2 · 长时独白": "Part 2 · Long turn",
+        "一张提示卡，一分钟准备后独自发言。": "A cue card: one minute to prepare, then speak alone.",
+        "3–4 分钟": "3-4 min",
+        "Part 3 · 讨论": "Part 3 · Discussion",
+        "围绕 Part 2 话题展开的更宽泛、更抽象的问题。": "Broader, more abstract questions built on the Part 2 topic.",
+        "发音专项训练": "Pronunciation training",
+        "针对音标、连读、重音与语调的专项跟读练习。": "Shadowing drills for phonemes, linking, stress and intonation.",
+        "5–8 分钟": "5-8 min",
+        "话题（选填）": "Topic (optional)",
+        "返回": "Back"
+      }
+    },
+    "vocabDaily": {
+      "zh": {
+        "Step 1": "第 1 步",
+        "Step 2": "第 2 步",
+        "Step 3": "第 3 步"
+      },
+      "en": {
+        "词汇（日常训练）": "Vocabulary (daily training)",
+        "综合复习今日词表，或专项练某种记忆方式。": "Review today's word list, or drill one specific memory method.",
+        "生成题目": "Generate task",
+        "开始训练": "Start training",
+        "批改与复盘": "Marking & review",
+        "今天想怎么练？": "How do you want to practise today?",
+        "推荐": "Recommended",
+        "综合练习": "Mixed practice",
+        "单词卡 + 测验混合，全面巩固。": "Flashcards mixed with quizzes for all-round consolidation.",
+        "专注单一": "Single type",
+        "专攻一种词汇练习方式。": "Focus on one vocabulary practice method.",
+        "请选择想练习的方式": "Choose the practice method",
+        "单词卡速记": "Flashcard drill",
+        "拼写测验": "Spelling quiz",
+        "词义匹配": "Meaning matching",
+        "例句填空": "Example cloze",
+        "返回": "Back"
+      }
+    },
+    "vocabBook": {
+      "zh": {
+        "Identify": "识别",
+        "Adapt": "适应",
+        "Analyse": "分析",
+        "Context": "语境"
+      },
+      "en": {
+        "我的单词本": "My wordbook",
+        "已收藏 4 个单词": "4 words saved",
+        "开始复习": "Start review",
+        "全部单词": "All words",
+        "已掌握": "Mastered",
+        "学习中": "Learning",
+        "未学习": "Not started",
+        "全部状态 ▾": "All statuses ▾",
+        "🔍 搜索单词或释义": "🔍 Search a word or meaning",
+        "最近添加 ▾": "Recently added ▾",
+        "v. 识别；确认；认出": "v. identify; confirm; recognise",
+        "v. 适应；改编": "v. adapt; adapt to",
+        "v. 分析": "v. analyse",
+        "n. 语境；背景": "n. context; background"
+      }
+    },
+    "vocabWord": {
+      "zh": {
+        "Identify": "识别",
+        "VERB": "动词",
+        "to recognise someone or something and be able to say who or what they are": "认出某人或某物，并能说出其身份"
+      },
+      "en": {
+        "‹ 返回单词本": "‹ Back to wordbook",
+        "学习中": "Learning",
+        "移出单词本": "Remove from wordbook",
+        "v. 识别；确认；认出": "v. identify; confirm; recognise",
+        "例句": "Example",
+        "该研究旨在找出使人们不愿骑车上班的主要因素。": "The study aimed to identify the main factors that discourage people from cycling to work.",
+        "常见搭配": "Common collocations",
+        "中国学生易错点": "Common errors for Chinese learners",
+        "identify somebody / something = 识别出某人或某物": "identify somebody / something = recognise a person or thing",
+        "近义词": "Synonyms",
+        "反义词": "Antonyms",
+        "反义词材料待提供": "Antonym material coming soon",
+        "词族": "Word family",
+        "发音提示": "Pronunciation tips",
+        "发音提示材料待提供": "Pronunciation tips coming soon"
+      }
+    },
+    "vocabWord2": {
+      "zh": {
+        "Adapt": "适应",
+        "VERB": "动词",
+        "to change to suit different conditions or uses": "为适应不同条件或用途而改变"
+      },
+      "en": {
+        "‹ 返回单词本": "‹ Back to wordbook",
+        "学习中": "Learning",
+        "移出单词本": "Remove from wordbook",
+        "v. 适应；改编": "v. adapt; adapt to",
+        "例句": "Example",
+        "例句材料待提供": "Example material coming soon",
+        "常见搭配": "Common collocations",
+        "搭配材料待提供": "Collocation material coming soon",
+        "中国学生易错点": "Common errors for Chinese learners",
+        "易错点材料待提供": "Error material coming soon",
+        "近义词": "Synonyms",
+        "材料待提供": "Material coming soon",
+        "反义词": "Antonyms",
+        "反义词材料待提供": "Antonym material coming soon",
+        "词族": "Word family",
+        "发音提示": "Pronunciation tips",
+        "发音提示材料待提供": "Pronunciation tips coming soon"
+      }
+    },
+    "vocabWord3": {
+      "zh": {
+        "Analyse": "分析",
+        "VERB": "动词",
+        "to examine something carefully": "仔细检查某事"
+      },
+      "en": {
+        "‹ 返回单词本": "‹ Back to wordbook",
+        "学习中": "Learning",
+        "移出单词本": "Remove from wordbook",
+        "v. 分析": "v. analyse",
+        "例句": "Example",
+        "例句材料待提供": "Example material coming soon",
+        "常见搭配": "Common collocations",
+        "搭配材料待提供": "Collocation material coming soon",
+        "中国学生易错点": "Common errors for Chinese learners",
+        "易错点材料待提供": "Error material coming soon",
+        "近义词": "Synonyms",
+        "材料待提供": "Material coming soon",
+        "反义词": "Antonyms",
+        "反义词材料待提供": "Antonym material coming soon",
+        "词族": "Word family",
+        "发音提示": "Pronunciation tips",
+        "发音提示材料待提供": "Pronunciation tips coming soon"
+      }
+    },
+    "vocabWord4": {
+      "zh": {
+        "Context": "语境",
+        "NOUN": "名词",
+        "the situation in which something happens": "某事发生的环境"
+      },
+      "en": {
+        "‹ 返回单词本": "‹ Back to wordbook",
+        "学习中": "Learning",
+        "移出单词本": "Remove from wordbook",
+        "n. 语境；背景": "n. context; background",
+        "例句": "Example",
+        "例句材料待提供": "Example material coming soon",
+        "常见搭配": "Common collocations",
+        "搭配材料待提供": "Collocation material coming soon",
+        "中国学生易错点": "Common errors for Chinese learners",
+        "易错点材料待提供": "Error material coming soon",
+        "近义词": "Synonyms",
+        "材料待提供": "Material coming soon",
+        "反义词": "Antonyms",
+        "反义词材料待提供": "Antonym material coming soon",
+        "词族": "Word family",
+        "发音提示": "Pronunciation tips",
+        "发音提示材料待提供": "Pronunciation tips coming soon"
+      }
+    },
+    "vocabPron": {
+      "zh": {
+        "Identify": "识别",
+        "Adapt": "适应"
+      },
+      "en": {
+        "‹ 返回": "‹ Back",
+        "我的发音本": "My pronunciation book",
+        "已加入 2 个发音训练词": "2 words added to pronunciation training",
+        "开始发音复习": "Start pronunciation review",
+        "全部单词": "All words",
+        "已掌握": "Mastered",
+        "学习中": "Learning",
+        "未学习": "Not started",
+        "全部状态 ▾": "All statuses ▾",
+        "🔍 搜索单词或释义": "🔍 Search a word or meaning",
+        "最近添加 ▾": "Recently added ▾",
+        "v. 识别；确认；认出": "v. identify; confirm; recognise",
+        "词汇训练": "Vocabulary training",
+        "最近 76 · 最佳 84": "Last 76 · Best 84",
+        "v. 适应；改编": "v. adapt; adapt to",
+        "最近 91 · 最佳 94": "Last 91 · Best 94"
+      }
+    },
+    "vocabPronWord": {
+      "zh": {
+        "Identify": "识别",
+        "VERB": "动词",
+        "to recognise someone or something and be able to say who or what they are": "认出某人或某物，并能说出其身份"
+      },
+      "en": {
+        "‹ 返回发音本": "‹ Back to pronunciation book",
+        "学习中": "Learning",
+        "移出单词本": "Remove from wordbook",
+        "v. 识别；确认；认出": "v. identify; confirm; recognise",
+        "例句": "Example",
+        "该研究旨在找出使人们不愿骑车上班的主要因素。": "The study aimed to identify the main factors that discourage people from cycling to work.",
+        "常见搭配": "Common collocations",
+        "中国学生易错点": "Common errors for Chinese learners",
+        "identify somebody / something = 识别出某人或某物": "identify somebody / something = recognise a person or thing",
+        "近义词": "Synonyms",
+        "反义词": "Antonyms",
+        "反义词材料待提供": "Antonym material coming soon",
+        "词族": "Word family",
+        "发音提示": "Pronunciation tips",
+        "发音提示材料待提供": "Pronunciation tips coming soon"
+      }
+    },
+    "vocabPronWord2": {
+      "zh": {
+        "Adapt": "适应",
+        "VERB": "动词",
+        "to change to suit different conditions or uses": "为适应不同条件或用途而改变"
+      },
+      "en": {
+        "‹ 返回发音本": "‹ Back to pronunciation book",
+        "学习中": "Learning",
+        "移出单词本": "Remove from wordbook",
+        "v. 适应；改编": "v. adapt; adapt to",
+        "例句": "Example",
+        "例句材料待提供": "Example material coming soon",
+        "常见搭配": "Common collocations",
+        "搭配材料待提供": "Collocation material coming soon",
+        "中国学生易错点": "Common errors for Chinese learners",
+        "易错点材料待提供": "Error material coming soon",
+        "近义词": "Synonyms",
+        "材料待提供": "Material coming soon",
+        "反义词": "Antonyms",
+        "反义词材料待提供": "Antonym material coming soon",
+        "词族": "Word family",
+        "发音提示": "Pronunciation tips",
+        "发音提示材料待提供": "Pronunciation tips coming soon"
+      }
+    },
+    "vocabPronStudy": {
+      "zh": {
+        "Identify": "识别"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "1/2 · 发音复习": "1/2 · Pronunciation review",
+        "大声朗读这个单词": "Read this word aloud",
+        "无法录音？改用手动评价": "Can't record? Rate manually"
+      }
+    },
+    "vocabPronStudy2": {
+      "zh": {
+        "Identify": "识别"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "1/2 · 发音复习": "1/2 · Pronunciation review",
+        "正在录音…点击停止": "Recording… tap to stop",
+        "无法录音？改用手动评价": "Can't record? Rate manually"
+      }
+    },
+    "vocabPronStudy3": {
+      "zh": {
+        "Identify": "识别"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "1/2 · 发音复习": "1/2 · Pronunciation review",
+        "本次未获得自动评分，请诚实评价这次朗读": "No automatic score this time — please rate this reading honestly.",
+        "自动发音评分暂不可用；你的选择只影响复习计划。": "Automatic pronunciation scoring is unavailable; your choice only affects the review plan.",
+        "没读好": "Not quite",
+        "读对了": "Got it",
+        "重新录音": "Record again"
+      }
+    },
+    "vocabPronStudyB": {
+      "zh": {
+        "Adapt": "适应"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "2/2 · 发音复习": "2/2 · Pronunciation review",
+        "大声朗读这个单词": "Read this word aloud",
+        "无法录音？改用手动评价": "Can't record? Rate manually"
+      }
+    },
+    "vocabPronStudyB2": {
+      "zh": {
+        "Adapt": "适应"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "2/2 · 发音复习": "2/2 · Pronunciation review",
+        "正在录音…点击停止": "Recording… tap to stop",
+        "无法录音？改用手动评价": "Can't record? Rate manually"
+      }
+    },
+    "vocabPronStudyB3": {
+      "zh": {
+        "Adapt": "适应"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "2/2 · 发音复习": "2/2 · Pronunciation review",
+        "本次未获得自动评分，请诚实评价这次朗读": "No automatic score this time — please rate this reading honestly.",
+        "自动发音评分暂不可用；你的选择只影响复习计划。": "Automatic pronunciation scoring is unavailable; your choice only affects the review plan.",
+        "没读好": "Not quite",
+        "读对了": "Got it",
+        "重新录音": "Record again"
+      }
+    },
+    "vocabTier1": {
+      "zh": {
+        "identify": "识别",
+        "adapt": "适应",
+        "analyse": "分析"
+      },
+      "en": {
+        "Tier 1 · 必备": "Tier 1 · Essential",
+        "226 个词 · 必备词汇": "226 words · Essential vocabulary",
+        "继续学习 →": "Continue →",
+        "Tier 1 学习进度": "Tier 1 progress",
+        "已学习": "Learned",
+        "已掌握": "Mastered",
+        "已复习": "Reviewed",
+        "待巩固": "To review",
+        "下一组推荐学习": "Next recommended set",
+        "单词数量与预计时间将在开始学习后确认": "Word count and estimated time are confirmed once you start",
+        "开始学习": "Start learning",
+        "Tier 1 词汇预览": "Tier 1 vocabulary preview",
+        "共 226 个单词，展示部分高频词": "226 words in total — showing a sample of high-frequency words",
+        "查看全部词汇 →": "View all vocabulary →",
+        "坚持每天学习一点点，词汇量会不断增长哦！": "A little every day and your vocabulary keeps growing!"
+      }
+    },
+    "mockReading": {
+      "zh": {
+        "IELTS ACADEMIC READING": "雅思学术阅读",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "3 PASSAGES · 40 QUESTIONS · 60 MIN": "3 篇文章 · 40 题 · 60 分钟",
+        "Academic Reading (Mock Exam)": "学术阅读（模拟考）",
+        "Passage 1": "文章 1",
+        "A general-interest text, usually the most accessible of the three.": "一般性题材的文章，三篇中通常最易读。",
+        "About 13 questions": "约 13 题",
+        "Passage 2": "文章 2",
+        "A work or study related text carrying more detail.": "与工作或学业相关的文章，信息量更大。",
+        "Passage 3": "文章 3",
+        "A longer academic argument, usually the most demanding.": "篇幅更长的学术论述，通常最难。",
+        "About 14 questions": "约 14 题",
+        "I confirm, start Passage 1": "我已确认，开始 Passage 1",
+        "Back": "返回"
+      },
+      "en": {
+        "每篇单独计时": "Each passage is timed separately",
+        "三篇各 20 分钟，当前这篇用完之后才进入下一篇。": "Twenty minutes per passage; the next one starts only after the current one ends.",
+        "篇内自由切换": "Move freely within a passage",
+        "同一篇里可以任意顺序作答，随时回到前面的题目。": "Answer in any order and return to earlier questions at any time.",
+        "批改前可核对": "Review before marking",
+        "三篇都完成后统一提交，提交前都能回头检查。": "All three are submitted together, so you can still check your answers."
+      }
+    },
+    "mockReadingIntro": {
+      "zh": {
+        "IELTS ACADEMIC READING": "雅思学术阅读",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "3 PASSAGES · 40 QUESTIONS · 60 MIN": "3 篇文章 · 40 题 · 60 分钟",
+        "Ready to start Academic Reading?": "准备好开始学术阅读了吗？",
+        "You have sixty minutes to work through three passages and forty questions in total.": "你有 60 分钟完成三篇文章、共 40 题。",
+        "The clock starts as soon as you begin.": "开始作答即开始计时。",
+        "Start Passage 1": "开始 Passage 1",
+        "Back": "返回"
+      }
+    },
+    "mockWritingIntro": {
+      "zh": {
+        "IELTS ACADEMIC WRITING": "雅思学术写作",
+        "MOCK EXAM · ONE SHARED CLOCK": "模拟考 · 共用一个计时器",
+        "2 TASKS · 60 MIN": "2 个任务 · 60 分钟",
+        "Academic Writing (Mock Exam)": "学术写作（模拟考）",
+        "Two tasks share a single sixty-minute clock. Task 2 carries twice the marks of Task 1, so most candidates spend about twenty minutes on Task 1 and forty on Task 2.": "两个任务共用同一个六十分钟计时。Task 2 的分值是 Task 1 的两倍，所以多数考生在 Task 1 上花约二十分钟、在 Task 2 上花约四十分钟。",
+        "Task 1 · Describe visual information": "任务 1 · 描述图表信息",
+        "Summarise a chart, table, map or process in your own words.": "用自己的话概括图表、表格、地图或流程。",
+        "At least 150 words · about 20 min": "至少 150 词 · 约 20 分钟",
+        "Task 2 · Essay": "任务 2 · 议论文",
+        "Respond to a point of view, argument or problem with a structured essay.": "就某一观点、论证或问题撰写结构化文章。",
+        "At least 250 words · about 40 min": "至少 250 词 · 约 40 分钟",
+        "I confirm, start the 60-minute clock": "我已确认，开始 60 分钟计时",
+        "Back": "返回"
+      },
+      "en": {
+        "两个任务共用一个计时，": "One clock runs for both tasks,",
+        "六十分钟由你自行分配。": "you decide how to divide the sixty minutes.",
+        "可自由切换，": "You can move",
+        "提交前在 Task 1 与 Task 2 之间随时来回。": "between Task 1 and Task 2 at any point before submitting.",
+        "低于词数下限会被扣分，": "Answers below the word minimum",
+        "提交前实时字数会提醒你。": "lose marks, the live counter warns you before you submit."
+      }
+    },
+    "mockWritingTf": {
+      "zh": {
+        "TOEFL WRITING": "托福写作",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "3 TASKS · ABOUT 24 MIN": "3 个任务 · 约 24 分钟",
+        "Writing (Mock Exam)": "写作（模拟考）",
+        "Three tasks, exactly like the real test. The timer starts when a task begins and your work is saved automatically after every task.": "三个任务，完全模拟真实考试。计时器在任务开始时启动，每个任务结束后自动保存。",
+        "Build a Sentence": "组句",
+        "Drag words from the bank into the blanks to build correct sentences.": "从词库拖动单词到空格，组成正确的句子。",
+        "10 questions · 6:50": "10 题 · 6:50",
+        "Write an Email": "写电子邮件",
+        "Reply to a real situation, covering three required points.": "针对真实情境回复，覆盖三个要点。",
+        "1 task · 7:00": "1 个任务 · 7:00",
+        "Academic Discussion": "学术讨论",
+        "Join a class discussion with a 100-word-minimum post.": "以不少于 100 词的帖子参与课堂讨论。",
+        "1 task · 10:00": "1 个任务 · 10:00",
+        "I am ready, start task 1": "我已准备好，开始任务 1",
+        "Back": "返回"
+      }
+    },
+    "tfWr1Intro": {
+      "zh": {
+        "TOEFL WRITING": "托福写作",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "TASK 1 OF 3": "任务 1 / 3"
+      },
+      "en": {
+        "组句": "Sentence building",
+        "将单词移动到空格中，组成语法正确、且符合给定语境的句子。": "Move the words into the blanks to build a grammatically correct sentence that fits the context.",
+        "一个合适的句子": "One suitable sentence",
+        "符合书面学术场景的最佳语序": "The best word order for written academic English",
+        "语法正确": "Grammatically correct",
+        "仅使用所提供的标点": "Use only the punctuation provided",
+        "计时器将显示你完成本任务的剩余时间。": "The timer shows how long you have left for this task.",
+        "开始第 1 / 3 项任务": "Start task 1 of 3",
+        "返回": "Back"
+      }
+    },
+    "tfWr1Q": {
+      "zh": {
+        "QUESTION 1 OF 10": "第 1 题 / 10"
+      },
+      "en": {
+        "拖动": "Drag",
+        "词库里的单词到空格。想撤销就把它拖回词库。": "Drag words from the bank into the blanks. To undo, drag them back.",
+        "拖入": "Drop here",
+        "词库 ·": "Word bank ·",
+        "剩余": "Left",
+        "上一题": "Previous",
+        "下一段 →": "Next section →"
+      }
+    },
+    "tfSentFb": {
+      "zh": {
+        "Correct word order and grammar.": "词序与语法正确。"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "观点清晰，需加强语气一致性与结构组织。": "Clear position; tone consistency and structure need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "写作": "Writing",
+        "语气一致性": "Tone consistency",
+        "正式度": "Formality",
+        "邮件在正式与随意之间来回切换。": "The email swings between formal and casual.",
+        "保持统一的半正式语气。建议练习\"邮件语气统一\"专项。": "Keep one consistent semi-formal tone. Try the \"consistent email tone\" drill.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "考官提问": "Examiner's question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "反馈": "Feedback",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfEmailFb": {
+      "zh": {
+        "Development": "展开",
+        "Organization": "组织",
+        "Language Use": "语言运用",
+        "Mechanics": "语言规范",
+        "Clear statement of interest — a good opening move.": "兴趣表达清楚，是个好的开头。",
+        "See the numbered notes below for specific fixes.": "具体修改见下方编号批注。"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "观点清晰，需加强语气一致性与结构组织。": "Clear position; tone consistency and structure need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "写作": "Writing",
+        "语气一致性": "Tone consistency",
+        "正式度": "Formality",
+        "邮件在正式与随意之间来回切换。": "The email swings between formal and casual.",
+        "保持统一的半正式语气，结尾加明确的收束句。": "Keep one consistent semi-formal tone and close with a clear sign-off.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "考官提问": "Examiner's question",
+        "题目": "Question",
+        "清楚说明了兴趣，开头得当。": "States the interest clearly with an appropriate opening.",
+        "\"Hey\" 对半正式邮件过于随意。可改为 \"Could you please tell me the class schedule and the fees?\"": "\"Hey\" is too casual for a semi-formal email. Try \"Could you please tell me the class schedule and the fees?\"",
+        "多个感叹号过于随意。用 \"Thank you for your help.\" 更合适。": "Multiple exclamation marks are too casual. \"Thank you for your help.\" fits better.",
+        "反馈": "Feedback",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfDiscFb": {
+      "zh": {
+        "Development": "展开",
+        "Organization": "组织",
+        "Language Use": "语言运用",
+        "Mechanics": "语言规范",
+        "Your professor asks: Can social media be used effectively as a tool for educational purposes? Why or why not? Express and support your opinion and contribute to the discussion in your own words.": "教授提问：社交媒体能否作为有效的教学工具？为什么？请表达并论证你的观点，用自己的话参与讨论。",
+        "Clear position stated up front.": "开头明确表明立场。",
+        "Concrete example strengthens the argument.": "具体例子增强了论证。",
+        "See the numbered notes below.": "见下方编号批注。"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "观点清晰，需加强语气一致性与结构组织。": "Clear position; tone consistency and structure need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "写作": "Writing",
+        "语气一致性": "Tone consistency",
+        "正式度": "Formality",
+        "邮件在正式与随意之间来回切换。": "The email swings between formal and casual.",
+        "保持统一的半正式语气。建议练习\"邮件语气统一\"专项。": "Keep one consistent semi-formal tone. Try the \"consistent email tone\" drill.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "表现良好": "Good",
+        "考官提问": "Examiner's question",
+        "题目": "Question",
+        "开头明确表明立场。": "Opening states the position clearly.",
+        "具体例子增强了论证。": "The concrete example strengthens the argument.",
+        "\"it is bad\" 太笼统；点明具体问题（如\"降低学习专注度\"）。": "\"it is bad\" is too vague; name the specific problem (e.g. reduced focus in class).",
+        "反馈": "Feedback",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfWr2Intro": {
+      "zh": {
+        "TOEFL WRITING": "托福写作",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "TASK 2 OF 3": "任务 2 / 3",
+        "ABOUT 7 MIN": "约 7 分钟"
+      },
+      "en": {
+        "写电子邮件": "Write an email",
+        "你将阅读一段简短情境并撰写一封电子邮件作为回应。限时 7 分钟。你的邮件应涵盖所有要求点，并使用恰当的语气。": "You'll read a short scenario and write an email in response. You have 7 minutes. Your email should cover all the required points and use an appropriate tone.",
+        "本任务限时 7 分钟。计时器会显示你完成本任务的剩余时间。": "This task is timed at 7 minutes. The timer shows how long you have left.",
+        "开始第 2 / 3 项任务": "Start task 2 of 3",
+        "返回": "Back"
+      }
+    },
+    "tfWr2Q": {
+      "zh": {
+        "TASK 2 · WRITE AN EMAIL": "任务 2 · 写电子邮件",
+        "Student": "学生",
+        "Program coordinator": "课程协调员",
+        "Semi Formal": "半正式"
+      },
+      "en": {
+        "题目": "Question",
+        "写作": "Writing",
+        "你的身份": "Your role",
+        "收件人": "Recipient",
+        "语气": "Tone",
+        "要求": "Requirements"
+      }
+    },
+    "tfWr3Intro": {
+      "zh": {
+        "TOEFL WRITING": "托福写作",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "TASK 3 OF 3": "任务 3 / 3"
+      },
+      "en": {
+        "学术讨论": "Academic discussion",
+        "参与课堂讨论，发表一篇不少于 100 词的帖子。": "Join a class discussion with a post of at least 100 words.",
+        "计时器会显示你完成本任务的剩余时间。": "The timer shows how long you have left for this task.",
+        "开始第 3 / 3 项任务": "Start task 3 of 3",
+        "返回": "Back"
+      }
+    },
+    "tfWr3Q": {
+      "zh": {
+        "Professor": "教授"
+      },
+      "en": {
+        "题目": "Question",
+        "写作": "Writing",
+        "讨论帖": "Discussion post",
+        "有效的回应至少应包含 100 词。": "A valid response must contain at least 100 words."
+      }
+    },
+    "tfWriteFb": {
+      "zh": {
+        "Build a Sentence": "组句",
+        "Write an Email": "写电子邮件",
+        "Academic Discussion": "学术讨论",
+        "Correct word order and grammar.": "词序与语法正确。"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "观点清晰，需加强语气一致性与结构组织。": "Clear position; tone consistency and structure need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "各题型得分": "Scores by question type",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "写作": "Writing",
+        "语气一致性": "Tone consistency",
+        "正式度": "Formality",
+        "邮件在正式与随意之间来回切换。": "The email swings between formal and casual.",
+        "保持统一的半正式语气。建议练习\"邮件语气统一\"专项。": "Keep one consistent semi-formal tone. Try the \"consistent email tone\" drill.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "考官提问": "Examiner's question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "反馈": "Feedback",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "mockWritingQ": {
+      "zh": {
+        "TASK 1": "任务 1",
+        "TASK 2": "任务 2",
+        "Writing Task 1": "写作 Task 1",
+        "150 word": "150 词",
+        "20 min": "20 分钟",
+        "Urban": "城镇",
+        "Rural": "乡村",
+        "words / 150 words": "词 / 150 词"
+      },
+      "en": {
+        "结束考试": "End exam",
+        "提交": "Submit"
+      }
+    },
+    "mockReadingQ": {
+      "zh": {
+        "Questions 1-6": "第 1-6 题",
+        "Choose the correct letter, A, B or C.": "选出正确答案 A、B 或 C。",
+        "Questions 7-11": "第 7-11 题",
+        "Questions 12-14": "第 12-14 题"
+      },
+      "en": {
+        "篇章 1": "Passage 1",
+        "篇章 2": "Passage 2",
+        "篇章 3": "Passage 3",
+        "已作答": "Answered",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse",
+        "部分 1": "Part 1",
+        "部分 2": "Part 2",
+        "部分 3": "Part 3",
+        "⚑ 结束考试": "⚑ End exam"
+      }
+    },
+    "mockSpeaking": {
+      "zh": {
+        "IELTS SPEAKING": "雅思口语",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "3 PARTS · 11-14 MIN · MICROPHONE NEEDED": "3 个部分 · 约 11-14 分钟 · 需要麦克风",
+        "Speaking (Mock Exam)": "口语（模拟考）",
+        "Part 1 · Interview": "Part 1 · 面谈",
+        "Familiar topics such as your home, work, studies and interests.": "围绕住所、工作、学业、兴趣等熟悉话题。",
+        "4-5 min": "4-5 分钟",
+        "Part 2 · Long turn": "Part 2 · 长时独白",
+        "A cue card with one minute to prepare, then you speak alone.": "一张题卡，1 分钟准备，然后独自陈述。",
+        "3-4 min": "3-4 分钟",
+        "Part 3 · Discussion": "Part 3 · 讨论",
+        "I confirm, check my microphone": "我已确认，检查麦克风",
+        "Back": "返回"
+      },
+      "en": {
+        "仅 Part 2 提供准备时间": "Preparation only in Part 2",
+        "1 分钟，且会计时。": "One minute, and it is timed.",
+        "每题只播一次": "Each question plays once",
+        "提示音后自动开始录音。": "Recording starts automatically after the beep.",
+        "现在就检查麦克风": "Check your microphone now",
+        "下一屏会出现音量条。": "A level meter appears on the next screen."
+      }
+    },
+    "mockSpeakingIntro": {
+      "zh": {
+        "IELTS SPEAKING": "雅思口语",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "3 PARTS · 11-14 MIN · MICROPHONE NEEDED": "3 个部分 · 约 11-14 分钟 · 需要麦克风",
+        "Ready to start Speaking?": "准备好开始口语了吗？",
+        "The examiner asks the questions and recording starts automatically after each one. The exam runs through Part 1, Part 2 and Part 3 in order.": "考官提问，每问结束后自动开始录音。考试按 Part 1、Part 2、Part 3 的顺序进行。",
+        "One minute of preparation is given in Part 2 only, and it is timed.": "仅 Part 2 提供 1 分钟准备时间，且计时。",
+        "Start Part 1": "开始第 1 部分",
+        "Back": "返回"
+      }
+    },
+    "mockSpeakingQ": {
+      "zh": {
+        "Part 1": "第 1 部分",
+        "Part 2": "第 2 部分",
+        "Part 3": "第 3 部分"
+      },
+      "en": {
+        "题目": "Question",
+        "考官": "Examiner",
+        "已自动开始录音": "Recording started automatically"
+      }
+    },
+    "mockListening": {
+      "zh": {
+        "IELTS LISTENING": "雅思听力",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "4 PARTS · 40 QUESTIONS · ABOUT 30 MIN": "4 个部分 · 40 题 · 约 30 分钟",
+        "Listening (Mock Exam)": "听力（模拟考）",
+        "Part 1 · Everyday conversation": "Part 1 · 日常对话",
+        "A conversation between two people in a social context.": "两人在社交场景中的对话。",
+        "10 questions": "10 题",
+        "Part 2 · Everyday monologue": "Part 2 · 日常独白",
+        "One speaker on a familiar everyday topic.": "一位说话者讲述熟悉的日常话题。",
+        "Part 3 · Academic discussion": "Part 3 · 学术讨论",
+        "Up to four speakers in an educational context.": "教育场景中最多四位说话者。",
+        "Part 4 · Academic lecture": "Part 4 · 学术讲座",
+        "One speaker on an academic subject.": "一位说话者就某学术主题发言。",
+        "I confirm, start Part 1": "我已确认，开始第 1 部分",
+        "Back": "返回"
+      },
+      "en": {
+        "录音只播一次": "The recording plays once",
+        "不能暂停、后退或重播，请集中注意力。": "You cannot pause, rewind or replay it, so stay focused.",
+        "题目顺序与录音一致": "Questions follow the recording",
+        "答案会在录音中依次出现。": "The answers appear in the same order in the recording.",
+        "拼写计入评分": "Spelling counts",
+        "答案按你实际拼写判分。": "Answers are marked exactly as you write them."
+      }
+    },
+    "mockListeningIntro": {
+      "zh": {
+        "IELTS LISTENING": "雅思听力",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "4 PARTS · 40 QUESTIONS · ABOUT 30 MIN": "4 个部分 · 40 题 · 约 30 分钟",
+        "Ready to start Listening?": "准备好开始听力了吗？",
+        "A short introduction plays first. It explains that the recording plays once only, and the exam then begins at questions 1 to 6.": "先播放一段简短说明，告知录音仅播放一次，随后从第 1 题开始考试。",
+        "The recording plays once only. You cannot pause, rewind or replay it.": "录音仅播放一次。不能暂停、后退或重播。",
+        "Start Part 1": "开始第 1 部分",
+        "Back": "返回"
+      }
+    },
+    "tfConvQ": {
+      "zh": {
+        "Listen to a conversation.": "听一段对话。"
+      },
+      "en": {
+        "第 1 / 6": "1 / 6",
+        "正在播放...": "Playing...",
+        "笔记": "Notes"
+      }
+    },
+    "tfM2P2Q": {
+      "zh": {
+        "Listen to a conversation.": "听一段对话。"
+      },
+      "en": {
+        "第 1 / 4": "1 / 4",
+        "正在播放...": "Playing...",
+        "笔记": "Notes"
+      }
+    },
+    "tfListenFb": {
+      "zh": {
+        "Upper": "高阶",
+        "Listen and Choose a Response": "听后选择回应",
+        "Listen to a Conversation": "听对话",
+        "Listen to an Academic Talk": "听学术讲座"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "最终成绩": "Final result",
+        "最终听力分基于你的 Upper 卷表现。对话是明显强项；学术讲座的推断需加强。": "Your final Listening score is based on your Upper form. Conversations are a clear strength; inference in academic lectures needs work.",
+        "SURGO 练习估分。最终分基于你的正式模块（模块2）表现；模块1用于定级。": "SURGO practice estimate. The final score is based on your operational module (module 2); module 1 was for placement.",
+        "模块1 · 定级": "Module 1 · Placement",
+        "模块2 · Upper": "Module 2 · Upper",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "定级表现良好——你已进入 Upper（高阶）卷。": "Solid placement performance — you've been routed to the Upper form.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "各题型得分": "Scores by question type",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "听力": "Listening",
+        "目的意图": "Purpose & intent",
+        "对话开头": "Opening of the conversation",
+        "听对话第 1 题：错把附带请求当成主要目的。": "Conversation Q1: you took a side request as the main purpose.",
+        "对话目的的题重点听开头 2-3 句。建议练习“开头意图捕捉”。": "For purpose questions, focus on the first 2-3 lines. Try the \"opening intent\" drill.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "题目": "Question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "解析": "Explanation",
+        "学生明确向教授寻求选择论文题目的建议。": "The student clearly asks the professor for advice on choosing an essay topic.",
+        "原文依据：": "Passage evidence:",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfSpk2Intro": {
+      "zh": {
+        "TOEFL SPEAKING": "托福口语",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "TASK 2 OF 2": "任务 2 / 2"
+      },
+      "en": {
+        "参加访谈": "Take the interview",
+        "在本任务中，你将参加一场简短的访谈。请听每个问题并用自己的话回答。每题有 45 秒作答时间，不提供准备时间。": "In this task you'll take a short interview. Listen to each question and answer in your own words. You have 45 seconds per question and no preparation time.",
+        "每段音频只播放一次，且无法返回上一题。不提供准备时间。提示音后开始作答。": "Each clip plays once and you can't return to the previous question. There's no preparation time. Start after the tone.",
+        "开始访谈": "Start interview",
+        "返回": "Back"
+      }
+    },
+    "tfSpk2Brief": {
+      "zh": {
+        "TOEFL SPEAKING": "托福口语",
+        "MOCK EXAM · REAL TIMING": "模拟考 · 真实计时",
+        "TASK 2 OF 2": "任务 2 / 2",
+        "You have volunteered for a research study at your university about work experience. You will have a short online interview with a researcher. The researcher will ask you some questions.": "你报名参加了学校一项关于工作经历的研究。你将在线上接受研究者的简短访谈，研究者会问你一些问题。"
+      },
+      "en": {
+        "参加访谈": "Take the interview",
+        "开始访谈": "Start interview",
+        "返回": "Back"
+      }
+    },
+    "tfSpeakFb": {
+      "zh": {
+        "Listen and Repeat": "听后复述",
+        "Take an Interview": "参加访谈",
+        "Delivery": "表达",
+        "Language Use": "语言运用",
+        "Topic Development": "话题展开",
+        "· Accurate and clear delivery. Well done.": "· 表达准确清晰，做得不错。",
+        "Accurate and clear delivery. Well done.": "表达准确清晰，做得很好。"
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "表达流畅，需提升复述完整度与用词准确性。": "Fluent delivery; retelling completeness and word accuracy need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "各题型得分": "Scores by question type",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "口语": "Speaking",
+        "复述完整度": "Retelling completeness",
+        "长句尾部信息": "End-of-sentence information",
+        "第 4 句：句子后半段 \"early next week\" 未复述出来。": "Sentence 4: \"early next week\" from the second half was not retold.",
+        "长句复述时容易漏掉尾部信息。建议练习：先抓主干，再补时间/地点等结尾细节。": "Tail information is easily dropped when retelling long sentences. Practise capturing the main clause first, then the time and place details at the end.",
+        "内容展开": "Content development",
+        "理由缺例证": "Reasons lack examples",
+        "访谈第 2 题：理由罗列但缺少具体例子。": "Interview Q2: reasons are listed but lack concrete examples.",
+        "回答有观点但展开不足。建议做\"每个理由都配一个例子\"的展开训练。": "The answer has a position but is underdeveloped. Try the \"one example per reason\" drill.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "考官提问": "Examiner's question",
+        "考官": "Examiner",
+        "你的作答": "Your answer",
+        "反馈": "Feedback",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfRead1Q": {
+      "zh": {
+        "Complete the Words": "补全单词",
+        "Read in Daily Life": "日常阅读",
+        "Read an Academic Passage": "阅读学术文章",
+        "PARAGRAPH 1 OF 2": "第 1 段 / 2",
+        "Paragraph 1": "第 1 段",
+        "Paragraph 2": "第 2 段"
+      },
+      "en": {
+        "0 / 10 已填": "0 / 10 filled",
+        "填入缺失的字母，补全每个单词。": "Fill in the missing letters to complete each word.",
+        "小数字表示": "The small number shows",
+        "缺失了几个字母": "how many letters are missing",
+        "。点击任意空格即可跳转填写。": ". Tap any blank to jump to it.",
+        "下一段": "Next section",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse"
+      }
+    },
+    "tfRead2Q": {
+      "zh": {
+        "Complete the Words": "补全单词",
+        "Read in Daily Life": "日常阅读",
+        "Read an Academic Passage": "阅读学术文章",
+        "Read an advertisement.": "阅读一则广告。"
+      },
+      "en": {
+        "第 21 / 35": "21 / 35",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse",
+        "上一题": "Previous",
+        "下一题": "Next",
+        "答题卡": "Answer sheet",
+        "已作答": "Answered"
+      }
+    },
+    "tfRead3Q": {
+      "zh": {
+        "Complete the Words": "补全单词",
+        "Read in Daily Life": "日常阅读",
+        "PARAGRAPH 1 OF 1": "第 1 段 / 1",
+        "Paragraph 1": "第 1 段"
+      },
+      "en": {
+        "0 / 10 已填": "0 / 10 filled",
+        "填入缺失的字母，补全每个单词。": "Fill in the missing letters to complete each word.",
+        "小数字表示": "The small number shows",
+        "缺失了几个字母": "how many letters are missing",
+        "。点击任意空格即可跳转填写。": ". Tap any blank to jump to it.",
+        "下一段": "Next section",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse"
+      }
+    },
+    "tfRead4Q": {
+      "zh": {
+        "Complete the Words": "补全单词",
+        "Read in Daily Life": "日常阅读"
+      },
+      "en": {
+        "第 11 / 15": "11 / 15",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse",
+        "上一题": "Previous",
+        "下一段": "Next section",
+        "答题卡": "Answer sheet",
+        "已作答": "Answered"
+      }
+    },
+    "tfReadFb": {
+      "zh": {
+        "Upper": "高阶",
+        "Complete the Words": "补全单词",
+        "Read in Daily Life": "日常阅读",
+        "Read an Academic Passage": "阅读学术文章",
+        "Completed paragraph": "已完成段落",
+        "Blank 1 — \"emb___k\"": "第 1 空 — \"emb___k\"",
+        "Blank 2 — \"migra_____\"": "第 2 空 — \"migra_____\""
+      },
+      "en": {
+        "练习回顾": "Practice review",
+        "最终成绩": "Final result",
+        "最终阅读分基于你的 Upper 卷表现。日常材料是明显强项；学术文章的细节定位需加强。": "Your final Reading score is based on your Upper form. Everyday materials are a clear strength; detail location in academic passages needs work.",
+        "SURGO 练习估分。最终分基于你的正式模块（模块2）表现；模块1用于定级。": "SURGO practice estimate. The final score is based on your operational module (module 2); module 1 was for placement.",
+        "模块1 · 定级": "Module 1 · Placement",
+        "模块2 · Upper": "Module 2 · Upper",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "定级表现良好——你已进入 Upper（高阶）卷。": "Solid placement performance — you've been routed to the Upper form.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "各题型得分": "Scores by question type",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "阅读": "Reading",
+        "细节定位": "Detail location",
+        "否定信息题": "Negative-fact questions",
+        "第 1 题：漏看 \"ages 2 through 10\"，误判入学年龄范围。": "Q1: you missed \"ages 2 through 10\" and misjudged the enrolment age range.",
+        "否定/排除类细节题要回原文逐项核对。建议练习\"NOT/EXCEPT 题定位\"专项。": "For negative or exclusion detail questions, check each option against the passage. Try the \"NOT/EXCEPT location\" drill.",
+        "学术长句": "Academic long sentences",
+        "主干抓取": "Main-clause extraction",
+        "学术文章题错在长从句主干判断。": "Academic passage mistakes come from misreading the main clause of long sentences.",
+        "长句先找主谓宾主干，再处理修饰成分。建议做长难句拆解训练。": "In long sentences, find subject-verb-object first, then handle modifiers. Try long-sentence parsing drills.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "题目": "Question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "解析": "Explanation",
+        "\"embark on a journey\" 是固定搭配；\"embrace\" 不符合\"开始迁徙\"的语境。": "\"embark on a journey\" is a fixed collocation; \"embrace\" doesn't fit the meaning of starting a migration.",
+        "原文依据：": "Passage evidence:",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "mockListeningQ": {
+      "zh": {
+        "Questions 1-6": "第 1-6 题",
+        "Choose the correct answer, A, B or C.": "选出正确答案 A、B 或 C。",
+        "Questions 7-10": "第 7-10 题",
+        "Answer the questions below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.": "回答下列问题。每题不超过三个词和/或一个数字。",
+        "Part 1": "第 1 部分",
+        "Part 2": "第 2 部分",
+        "0 of 10": "0 / 10",
+        "Part 3": "第 3 部分",
+        "Part 4": "第 4 部分"
+      },
+      "en": {
+        "第 1 部分播放中": "Playing part 1",
+        "结束考试": "End exam",
+        "你有约 20 秒查看题目。 (18s)": "You have about 20s to look at the questions. (18s)",
+        "笔记": "Notes",
+        "进入下一部分 →": "Next section →",
+        "答题卡": "Answer sheet",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse"
+      }
+    },
+    "mockListeningQ2": {
+      "zh": {
+        "Questions 11-16": "第 11-16 题",
+        "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.": "补全下表。每题不超过两个词和/或一个数字。",
+        "Questions 17-20": "第 17-20 题",
+        "Label the map below. Write the correct letter, A-G, next to Questions 17-20.": "标注下图。在第 17-20 题旁写出正确字母 A-G。",
+        "Part 1": "第 1 部分",
+        "0 of 10": "0 / 10",
+        "Part 2": "第 2 部分",
+        "Part 3": "第 3 部分",
+        "Part 4": "第 4 部分"
+      },
+      "en": {
+        "第 2 部分播放中": "Playing part 2",
+        "结束考试": "End exam",
+        "笔记": "Notes",
+        "进入下一部分 →": "Next section →",
+        "答题卡": "Answer sheet",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse"
+      }
+    },
+    "mockListeningQ3": {
+      "zh": {
+        "Questions 21-25": "第 21-25 题",
+        "What comment does each student make about the topics? Choose your answers from the box and write the correct letter, A-F, next to Questions 21-25.": "每位学生对各话题有何评论？从方框中选出答案，在第 21-25 题旁写出正确字母 A-F。",
+        "Questions 26-30": "第 26-30 题",
+        "Choose the correct answer, A, B or C.": "选出正确答案 A、B 或 C。",
+        "Part 1": "第 1 部分",
+        "0 of 10": "0 / 10",
+        "Part 2": "第 2 部分",
+        "Part 3": "第 3 部分",
+        "Part 4": "第 4 部分"
+      },
+      "en": {
+        "第 3 部分播放中": "Playing part 3",
+        "结束考试": "End exam",
+        "笔记": "Notes",
+        "进入下一部分 →": "Next section →",
+        "答题卡": "Answer sheet",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse"
+      }
+    },
+    "mockListeningQ4": {
+      "zh": {
+        "Questions 31-36": "第 31-36 题",
+        "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.": "补全下列笔记。每题不超过两个词和/或一个数字。",
+        "Questions 37-40": "第 37-40 题",
+        "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.": "补全下列句子。每题不超过两个词和/或一个数字。",
+        "Part 1": "第 1 部分",
+        "0 of 10": "0 / 10",
+        "Part 2": "第 2 部分",
+        "Part 3": "第 3 部分",
+        "Part 4": "第 4 部分"
+      },
+      "en": {
+        "第 4 部分播放中": "Playing part 4",
+        "结束考试": "End exam",
+        "你有约 20 秒查看题目。 (15s)": "You have about 20s to look at the questions. (15s)",
+        "笔记": "Notes",
+        "提交 →": "Submit →",
+        "答题卡": "Answer sheet",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse"
+      }
+    },
+    "vocabTestQ": {
+      "zh": {
+        "Identify": "识别"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "选出这个单词的正确释义": "Choose the correct meaning",
+        "识别；确认；认出": "identify; confirm; recognise",
+        "适应；改编": "adapt; adapt to",
+        "分析": "analyse",
+        "语境；背景": "context; background",
+        "不确定，跳过这题": "Not sure — skip this one"
+      }
+    },
+    "vocabStudy": {
+      "zh": {
+        "Identify": "识别"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "1/2 · 系统词汇复习": "1/2 · Vocabulary review",
+        "先在脑中回忆这个词的意思": "Recall the meaning in your head first",
+        "想一想它的中文含义、用法或例句": "Think about its meaning, usage or an example sentence",
+        "查看释义": "Reveal meaning",
+        "小贴士": "Tip",
+        "先回忆，再看释义，能帮你建立更牢固的记忆哦！": "Recall first, then reveal — it builds stronger memories."
+      }
+    },
+    "vocabStudy2": {
+      "zh": {
+        "Adapt": "适应"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "2/3 · 学习中": "2/3 · Learning",
+        "先在脑中回忆这个词的意思": "Recall the meaning in your head first",
+        "想一想它的中文含义、用法或例句": "Think about its meaning, usage or an example sentence",
+        "查看释义": "Reveal meaning",
+        "小贴士": "Tip",
+        "先回忆，再看释义，能帮你建立更牢固的记忆哦！": "Recall first, then reveal — it builds stronger memories."
+      }
+    },
+    "vocabStudy3": {
+      "zh": {
+        "Analyse": "分析"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "2/2 · 系统词汇复习": "2/2 · Vocabulary review",
+        "先在脑中回忆这个词的意思": "Recall the meaning in your head first",
+        "想一想它的中文含义、用法或例句": "Think about its meaning, usage or an example sentence",
+        "查看释义": "Reveal meaning",
+        "小贴士": "Tip",
+        "先回忆，再看释义，能帮你建立更牢固的记忆哦！": "Recall first, then reveal — it builds stronger memories."
+      }
+    },
+    "vocabStudy4": {
+      "zh": {
+        "Context": "语境"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "1/1 · 学习中": "1/1 · Learning",
+        "先在脑中回忆这个词的意思": "Recall the meaning in your head first",
+        "想一想它的中文含义、用法或例句": "Think about its meaning, usage or an example sentence",
+        "查看释义": "Reveal meaning",
+        "小贴士": "Tip",
+        "先回忆，再看释义，能帮你建立更牢固的记忆哦！": "Recall first, then reveal — it builds stronger memories."
+      }
+    },
+    "vocabDetail": {
+      "zh": {
+        "Identify": "识别",
+        "VERB": "动词",
+        "to recognise someone or something and be able to say who or what they are": "认出某人或某物，并能说出其身份"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "1/2 · 系统词汇复习": "1/2 · Vocabulary review",
+        "学习中": "Learning",
+        "★ 已加入单词本": "★ Added to wordbook",
+        "v. 识别；确认；认出": "v. identify; confirm; recognise",
+        "例句": "Example",
+        "该研究旨在找出使人们不愿骑车上班的主要因素。": "The study aimed to identify the main factors that discourage people from cycling to work.",
+        "常见搭配": "Common collocations",
+        "ⓘ 中国学生易错点": "ⓘ Common errors for Chinese learners",
+        "identify somebody / something = 识别出某人或某物": "identify somebody / something = recognise a person or thing",
+        "🔗 近义词": "🔗 Synonyms",
+        "🚫 反义词": "🚫 Antonyms",
+        "反义词材料待提供": "Antonym material coming soon",
+        "🈁 词族": "🈁 Word family",
+        "🗣 发音提示": "🗣 Pronunciation tips",
+        "发音提示材料待提供": "Pronunciation tips coming soon",
+        "你刚才回忆出来了吗？": "Did you recall it just now?",
+        "你的选择会帮助我们安排下次复习时间": "Your choice helps us schedule the next review",
+        "😟 没想起": "😟 Didn't recall",
+        "完全没记起来": "No memory of it at all",
+        "😐 有点模糊": "😐 A bit fuzzy",
+        "有印象但不确定": "Familiar but unsure",
+        "😀 认识": "😀 Know it",
+        "能准确想起来": "Can recall it accurately"
+      }
+    },
+    "vocabDetail2": {
+      "zh": {
+        "Adapt": "适应",
+        "VERB": "动词",
+        "to change to suit different conditions or uses": "为适应不同条件或用途而改变"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "2/3 · 学习中": "2/3 · Learning",
+        "已掌握": "Mastered",
+        "★ 已加入单词本": "★ Added to wordbook",
+        "v. 适应；改编": "v. adapt; adapt to",
+        "例句": "Example",
+        "例句材料待提供": "Example material coming soon",
+        "常见搭配": "Common collocations",
+        "搭配材料待提供": "Collocation material coming soon",
+        "ⓘ 中国学生易错点": "ⓘ Common errors for Chinese learners",
+        "易错点材料待提供": "Error material coming soon",
+        "🔗 近义词": "🔗 Synonyms",
+        "材料待提供": "Material coming soon",
+        "🚫 反义词": "🚫 Antonyms",
+        "反义词材料待提供": "Antonym material coming soon",
+        "🈁 词族": "🈁 Word family",
+        "🗣 发音提示": "🗣 Pronunciation tips",
+        "发音提示材料待提供": "Pronunciation tips coming soon",
+        "你刚才回忆出来了吗？": "Did you recall it just now?",
+        "你的选择会帮助我们安排下次复习时间": "Your choice helps us schedule the next review",
+        "😟 没想起": "😟 Didn't recall",
+        "完全没记起来": "No memory of it at all",
+        "😐 有点模糊": "😐 A bit fuzzy",
+        "有印象但不确定": "Familiar but unsure",
+        "😀 认识": "😀 Know it",
+        "能准确想起来": "Can recall it accurately"
+      }
+    },
+    "vocabDetail3": {
+      "zh": {
+        "Analyse": "分析",
+        "VERB": "动词",
+        "to examine something carefully": "仔细检查某事"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "2/2 · 系统词汇复习": "2/2 · Vocabulary review",
+        "学习中": "Learning",
+        "★ 已加入单词本": "★ Added to wordbook",
+        "v. 分析": "v. analyse",
+        "例句": "Example",
+        "例句材料待提供": "Example material coming soon",
+        "常见搭配": "Common collocations",
+        "搭配材料待提供": "Collocation material coming soon",
+        "ⓘ 中国学生易错点": "ⓘ Common errors for Chinese learners",
+        "易错点材料待提供": "Error material coming soon",
+        "🔗 近义词": "🔗 Synonyms",
+        "材料待提供": "Material coming soon",
+        "🚫 反义词": "🚫 Antonyms",
+        "反义词材料待提供": "Antonym material coming soon",
+        "🈁 词族": "🈁 Word family",
+        "🗣 发音提示": "🗣 Pronunciation tips",
+        "发音提示材料待提供": "Pronunciation tips coming soon",
+        "你刚才回忆出来了吗？": "Did you recall it just now?",
+        "你的选择会帮助我们安排下次复习时间": "Your choice helps us schedule the next review",
+        "😟 没想起": "😟 Didn't recall",
+        "完全没记起来": "No memory of it at all",
+        "😐 有点模糊": "😐 A bit fuzzy",
+        "有印象但不确定": "Familiar but unsure",
+        "😀 认识": "😀 Know it",
+        "能准确想起来": "Can recall it accurately"
+      }
+    },
+    "vocabDetail4": {
+      "zh": {
+        "Context": "语境",
+        "NOUN": "名词",
+        "the situation in which something happens": "某事发生的环境"
+      },
+      "en": {
+        "✕ 退出": "✕ Exit",
+        "演示数据": "Demo data",
+        "1/1 · 学习中": "1/1 · Learning",
+        "学习中": "Learning",
+        "★ 已加入单词本": "★ Added to wordbook",
+        "n. 语境；背景": "n. context; background",
+        "例句": "Example",
+        "例句材料待提供": "Example material coming soon",
+        "常见搭配": "Common collocations",
+        "搭配材料待提供": "Collocation material coming soon",
+        "ⓘ 中国学生易错点": "ⓘ Common errors for Chinese learners",
+        "易错点材料待提供": "Error material coming soon",
+        "🔗 近义词": "🔗 Synonyms",
+        "材料待提供": "Material coming soon",
+        "🚫 反义词": "🚫 Antonyms",
+        "反义词材料待提供": "Antonym material coming soon",
+        "🈁 词族": "🈁 Word family",
+        "🗣 发音提示": "🗣 Pronunciation tips",
+        "发音提示材料待提供": "Pronunciation tips coming soon",
+        "你刚才回忆出来了吗？": "Did you recall it just now?",
+        "你的选择会帮助我们安排下次复习时间": "Your choice helps us schedule the next review",
+        "😟 没想起": "😟 Didn't recall",
+        "完全没记起来": "No memory of it at all",
+        "😐 有点模糊": "😐 A bit fuzzy",
+        "有印象但不确定": "Familiar but unsure",
+        "😀 认识": "😀 Know it",
+        "能准确想起来": "Can recall it accurately"
+      }
+    },
+    "examTimer": {
+      "zh": {
+        "Step 1": "第 1 步",
+        "Step 2": "第 2 步",
+        "Step 3": "第 3 步",
+        "Step 4": "第 4 步"
+      },
+      "en": {
+        "IELTS 听力模拟考": "IELTS Listening mock exam",
+        "四个部分共 40 题 · 录音仅播放一次": "40 questions across four parts · audio plays once only",
+        "S1 · 对话": "S1 · Conversation",
+        "S2 · 独白": "S2 · Monologue",
+        "S3 · 讨论": "S3 · Discussion",
+        "S4 · 讲座": "S4 · Lecture",
+        "开始第 1 部分 →": "Start part 1 →"
+      }
+    },
+    "pronCongrats": {
+      "en": {
+        "发音模块": "Pronunciation module",
+        "完成啦！": "All done!",
+        "「/l/ 与 /r/ —— 发音要领」已收入你的发音进度，后续模块随之解锁～": "\"/l/ and /r/ — pronunciation essentials\" is saved to your progress and later modules are unlocked.",
+        "第 1 阶段": "Stage 1",
+        "所在阶段": "Stage",
+        "练习词数": "Words practised",
+        "自评": "Self-assessment",
+        "最佳准确度": "Best accuracy",
+        "本次未获得自动评分": "No automatic score this time",
+        "返回发音课程": "Back to pronunciation",
+        "返回雅思首页": "Back to IELTS home"
+      }
+    },
+    "pronCongrats2": {
+      "en": {
+        "发音模块": "Pronunciation module",
+        "完成啦！": "All done!",
+        "「个性化 /l/·/r/ 词汇练习」已收入你的发音进度，本阶段全部模块已完成～": "\"Personalised /l/ · /r/ vocabulary practice\" is saved to your progress — this stage is complete.",
+        "第 2 阶段": "Stage 2",
+        "所在阶段": "Stage",
+        "练习词数": "Words practised",
+        "自评": "Self-assessment",
+        "最佳准确度": "Best accuracy",
+        "本次未获得自动评分": "No automatic score this time",
+        "返回发音课程": "Back to pronunciation",
+        "返回雅思首页": "Back to IELTS home"
+      }
+    },
+    "tfDailyAcad": {
+      "en": {
+        "第 1 / 10": "1 / 10",
+        "上拉展开 / 下拉收起": "Drag up to expand / down to collapse",
+        "下一段": "Next section",
+        "答题卡": "Answer sheet",
+        "已作答": "Answered"
+      }
+    },
+    "tfDailyResp": {
+      "en": {
+        "正在播放...": "Playing...",
+        "播放中不可作答，请先听完这一段。": "You cannot answer while the audio plays — listen to this part first.",
+        "选择最佳回答。": "Choose the best response.",
+        "下一段": "Next section",
+        "笔记": "Notes"
+      }
+    },
+    "tfDailyRetell": {
+      "en": {
+        "仔细听，只复述一次。": "Listen carefully and retell only once.",
+        "按需重听提示，然后清晰复述。": "Replay the prompt as needed, then repeat it clearly.",
+        "正在播放...": "Playing...",
+        "本次训练中可按需重播与变速。": "Replay or change speed anytime in this session.",
+        "第 1 / 7": "1 / 7",
+        "播放中...": "Playing..."
+      }
+    },
+    "tfDailyInterview": {
+      "en": {
+        "请听面试官的问题。": "Listen to the interviewer's question.",
+        "听完确认后，再开始作答。": "Confirm you have listened, then start answering.",
+        "正在播放...": "Playing...",
+        "本次训练中可按需重播与变速。": "Replay or change speed anytime in this session.",
+        "第 1 / 4": "1 / 4",
+        "播放中...": "Playing..."
+      }
+    },
+    "tfDrFb": {
+      "en": {
+        "练习回顾": "Practice review",
+        "总体 · 练习估分": "Overall · Practice estimate",
+        "对话把握良好，学术讲座需加强。": "Conversations are handled well; academic lectures need work.",
+        "练习估分仅供参考，不代表官方托福分数。": "Practice estimates are indicative only and are not official TOEFL scores.",
+        "薄弱项分析": "Weakness analysis",
+        "仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。": "Based only on this attempt, with matched practice. Shown in your interface language.",
+        "听力": "Listening",
+        "目的意图": "Purpose & intent",
+        "对话开头": "Opening of the conversation",
+        "听对话第 1 题：错把附带请求当成主要目的。": "Conversation Q1: you took a side request as the main purpose.",
+        "对话目的题重点听开头 2-3 句。建议练习“开头意图捕捉”。": "For purpose questions, focus on the first 2-3 lines. Try the \"opening intent\" drill.",
+        "仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。": "Records only issues clearly visible in this attempt; it does not diagnose accent, listening or equipment problems, nor draw long-term conclusions.",
+        "练习你最弱的题型 →": "Practise your weakest type →",
+        "逐题分析": "Question-by-question",
+        "第 1": "Q1",
+        "错误": "Incorrect",
+        "题目": "Question",
+        "你的作答": "Your answer",
+        "正确答案": "Correct answer",
+        "解析": "Explanation",
+        "学生明确向教授寻求选择论文题目的建议。": "The student clearly asks the professor for advice on choosing an essay topic.",
+        "原文依据：": "Passage evidence:",
+        "第 2": "Q2",
+        "表现良好": "Good",
+        "⌂ 回到首页": "⌂ Back to home"
+      }
+    },
+    "tfDailyAnn": {
+      "en": {
+        "正在播放...": "Playing...",
+        "播放中不可作答，请先听完这一段。": "You cannot answer while the audio plays — listen to this part first.",
+        "笔记": "Notes"
+      }
+    },
+    "tfDailyLect": {
+      "en": {
+        "正在播放...": "Playing...",
+        "播放中不可作答，请先听完这一段。": "You cannot answer while the audio plays — listen to this part first.",
+        "笔记": "Notes"
+      }
+    },
+    "vocab": {
+      "en": {
+        "欢迎来到词汇学习": "Welcome to vocabulary",
+        "按间隔重复计划，完成今天的 IELTS 高频词复习": "Complete today's spaced-repetition review of high-frequency IELTS words",
+        "▥ 测测我的词汇水平": "▥ Test my vocabulary level",
+        "剩余单词": "Words left",
+        "已掌握": "Mastered",
+        "连续天数": "Streak",
+        "个单词": "words",
+        "需今日复习": "due today",
+        "预计 4 分钟完成": "About 4 min",
+        "开始复习": "Start review",
+        "🎤 发音复习 (0)": "🎤 Pronunciation review (0)",
+        "学习中/需巩固": "Learning / review",
+        "需学习": "To learn",
+        "我的单词本": "My wordbook",
+        "已收藏 12 词": "12 words saved",
+        "我的发音本": "My pronunciation book",
+        "0 个单词待复习": "0 words to review",
+        "学习路径": "Learning path",
+        "按词汇难度科学分级，循序渐进提升词汇量": "Levelled by difficulty so your vocabulary grows step by step",
+        "Tier 1 · 必备": "Tier 1 · Essential",
+        "226 词": "226 words",
+        "46% · 继续学习": "46% · Continue",
+        "Tier 2 · 核心": "Tier 2 · Core",
+        "1302 词": "1302 words",
+        "开始学习": "Start learning",
+        "Tier 3 · 重要": "Tier 3 · Important",
+        "1180 词": "1180 words",
+        "Tier 4 · 拓展": "Tier 4 · Extended",
+        "3221 词": "3221 words"
+      }
+    },
+    "vocabPronDone": {
+      "en": {
+        "今天的发音复习": "Today's pronunciation review",
+        "完成啦！": "All done!",
+        "你完成了 30 个单词，记忆提高了不止一点～": "You finished 30 words — your recall just got sharper.",
+        "已复习": "Reviewed",
+        "已掌握": "Mastered",
+        "做得很好！": "Well done!",
+        "待巩固": "To review",
+        "我们会帮助你巩固的！": "We'll help you consolidate these!",
+        "下次复习时间已根据你的选择自动安排，有点模糊的单词，我们会稍后帮你再巩固哦～": "The next review is scheduled from your choices. We'll revisit the words that felt fuzzy.",
+        "返回发音本": "Back to pronunciation book",
+        "复习待巩固单词": "Review words to consolidate"
+      }
+    },
+    "vocabTier2": {
+      "en": {
+        "Tier 2 · 核心": "Tier 2 · Core",
+        "1302 个词 · 核心词汇": "1302 words · Core vocabulary",
+        "继续学习 →": "Continue →",
+        "Tier 2 学习进度": "Tier 2 progress",
+        "已学习": "Learned",
+        "已掌握": "Mastered",
+        "已复习": "Reviewed",
+        "待巩固": "To review",
+        "下一组推荐学习": "Next recommended set",
+        "单词数量与预计时间将在开始学习后确认": "Word count and estimated time are confirmed once you start",
+        "开始学习": "Start learning",
+        "Tier 2 词汇预览": "Tier 2 vocabulary preview",
+        "共 1302 个单词，展示部分高频词": "1302 words in total — showing a sample of high-frequency words",
+        "查看全部词汇 →": "View all vocabulary →",
+        "坚持每天学习一点点，词汇量会不断增长哦！": "A little every day and your vocabulary keeps growing!"
+      }
+    },
+    "vocabNoNew": {
+      "en": {
+        "当前没有新单词": "No new words right now",
+        "返回词汇首页": "Back to vocabulary"
+      }
+    },
+    "vocabTier3": {
+      "en": {
+        "Tier 3 · 重要": "Tier 3 · Important",
+        "1180 个词 · 重要词汇": "1180 words · Important vocabulary",
+        "继续学习 →": "Continue →",
+        "Tier 3 学习进度": "Tier 3 progress",
+        "已学习": "Learned",
+        "已掌握": "Mastered",
+        "已复习": "Reviewed",
+        "待巩固": "To review",
+        "下一组推荐学习": "Next recommended set",
+        "单词数量与预计时间将在开始学习后确认": "Word count and estimated time are confirmed once you start",
+        "词汇材料待提供": "Vocabulary material coming soon",
+        "开始学习": "Start learning",
+        "Tier 3 词汇预览": "Tier 3 vocabulary preview",
+        "共 1180 个单词，展示部分高频词": "1180 words in total — showing a sample of high-frequency words",
+        "查看全部词汇 →": "View all vocabulary →",
+        "坚持每天学习一点点，词汇量会不断增长哦！": "A little every day and your vocabulary keeps growing!"
+      }
+    },
+    "vocabTier4": {
+      "en": {
+        "Tier 4 · 拓展": "Tier 4 · Extended",
+        "3221 个词 · 拓展词汇": "3221 words · Extended vocabulary",
+        "继续学习 →": "Continue →",
+        "Tier 4 学习进度": "Tier 4 progress",
+        "已学习": "Learned",
+        "已掌握": "Mastered",
+        "已复习": "Reviewed",
+        "待巩固": "To review",
+        "下一组推荐学习": "Next recommended set",
+        "单词数量与预计时间将在开始学习后确认": "Word count and estimated time are confirmed once you start",
+        "词汇材料待提供": "Vocabulary material coming soon",
+        "开始学习": "Start learning",
+        "Tier 4 词汇预览": "Tier 4 vocabulary preview",
+        "共 3221 个单词，展示部分高频词": "3221 words in total — showing a sample of high-frequency words",
+        "查看全部词汇 →": "View all vocabulary →",
+        "坚持每天学习一点点，词汇量会不断增长哦！": "A little every day and your vocabulary keeps growing!"
+      }
+    },
+    "tfBrief": {
+      "en": {
+        "题型说明": "Task brief",
+        "写作": "Writing",
+        "排列成句": "Sentence building",
+        "将所有给定词块排列成一个语法正确、语境恰当的句子。": "Arrange all the given chunks into one grammatically correct sentence that fits the context.",
+        "你将完成": "What you will do",
+        "阅读情境，先判断句子需要表达的含义。": "Read the context and work out what the sentence needs to say.",
+        "点击或拖动每个词块到答案区。": "Tap or drag each chunk into the answer area.",
+        "调整词块顺序，并检查语法、语序和标点。": "Reorder the chunks and check grammar, word order and punctuation.",
+        "计时与媒体": "Timing and media",
+        "每个句子显示 40 秒建议用时；这是软提示，超时后仍可继续调整。": "Each sentence shows a suggested 40 seconds. It is a soft prompt — you can keep editing after it passes.",
+        "操作预览": "At a glance",
+        "词块区": "Word bank",
+        "答案区": "Answer area",
+        "拖动排序": "Drag to reorder",
+        "使用全部词块": "Every chunk is used",
+        "作答仅属于本次托福训练，会自动保存，并可在刷新后恢复。": "Your work belongs to this TOEFL session only. It saves automatically and is restored after a refresh.",
+        "开始本项训练": "Start this task",
+        "返回": "Back"
+      }
+    },
+    "tfListenQ": {
+      "en": {
+        "第 1 / 12": "1 / 12",
+        "正在播放...": "Playing...",
+        "选择最佳回答。": "Choose the best response.",
+        "下一段": "Next section",
+        "笔记": "Notes"
+      }
+    },
+    "tfAnnQ": {
+      "en": {
+        "第 1 / 6": "1 / 6",
+        "正在播放...": "Playing...",
+        "笔记": "Notes"
+      }
+    },
+    "tfTalkQ": {
+      "en": {
+        "第 1 / 8": "1 / 8",
+        "正在播放...": "Playing...",
+        "笔记": "Notes"
+      }
+    },
+    "tfModEnd": {
+      "en": {
+        "听力": "Listening",
+        "模块 1 结束": "Module 1 complete",
+        "阅读部分模块 1 的时间已结束。": "Time is up for reading module 1.",
+        "点击“继续”进入模块 2。": "Tap \"Continue\" to start module 2.",
+        "继续": "Continue"
+      }
+    },
+    "tfModLoad": {
+      "en": {
+        "正在进入第二阶段": "Entering the second stage"
+      }
+    },
+    "tfMod2Intro": {
+      "en": {
+        "模块 2": "Module 2",
+        "你即将进入模块 2。难度已根据你在模块 1 的表现进行调整。每道题的音频仅播放一遍，不可重播。": "You're about to start module 2. Difficulty is adjusted from your module 1 performance. Each audio clip plays once and cannot be replayed.",
+        "你已准备好开始本模块。": "You're ready to start this module.",
+        "计时器将显示你完成每道题的剩余时间。": "The timer shows how long you have left for each question.",
+        "你将无法返回之前的题目。": "You won't be able to return to previous questions.",
+        "我已准备好": "I'm ready"
+      }
+    },
+    "tfM2P1Q": {
+      "en": {
+        "第 1 / 3": "1 / 3",
+        "选择最佳回答。": "Choose the best response.",
+        "下一段": "Next section",
+        "笔记": "Notes"
+      }
+    },
+    "tfM2P3Q": {
+      "en": {
+        "第 1 / 8": "1 / 8",
+        "正在播放...": "Playing...",
+        "笔记": "Notes"
+      }
+    },
+    "tfSpk1Q": {
+      "en": {
+        "第 1 / 7": "1 / 7"
+      }
+    },
+    "tfSpk2Q": {
+      "en": {
+        "第 1 / 4": "1 / 4",
+        "请听面试官的问题。": "Listen to the interviewer's question.",
+        "正在播放...": "Playing..."
+      }
+    },
+    "tfReadModEnd": {
+      "en": {
+        "阅读": "Reading",
+        "模块 1 结束": "Module 1 complete",
+        "阅读部分模块 1 的时间已结束。": "Time is up for reading module 1.",
+        "点击“继续”进入模块 2。": "Tap \"Continue\" to start module 2.",
+        "继续": "Continue"
+      }
+    },
+    "tfReadModLoad": {
+      "en": {
+        "正在进入第二阶段": "Entering the second stage"
+      }
+    },
+    "tfReadMod2Intro": {
+      "en": {
+        "模块 2": "Module 2",
+        "你即将进入模块 2。本模块共 15 题，限时 9 分钟。难度已根据你在模块 1 的表现进行调整。": "You're about to start module 2: 15 questions in 9 minutes. Difficulty is adjusted from your module 1 performance.",
+        "你已准备好开始本模块。": "You're ready to start this module.",
+        "计时器将显示你完成本模块的剩余时间。": "The timer shows how long you have left for this module.",
+        "你可以使用“下一题”和“返回”在同一模块内前进或回看。": "Use \"Next\" and \"Back\" to move forward or review within this module.",
+        "你将无法返回上一个模块。": "You won't be able to return to the previous module.",
+        "我已准备好": "I'm ready"
+      }
+    },
+    "vocabTest": {
+      "en": {
+        "词汇分级测试": "Vocabulary placement test",
+        "几分钟的选择题，帮你找到合适的起始难度；答对的单词会直接标记为已掌握。": "A few quick questions to find your starting level; words you get right are marked as mastered.",
+        "开始测试": "Start test",
+        "暂不测试，返回词汇首页": "Skip for now, back to vocabulary"
+      }
+    },
+    "vocabTestPass": {
+      "en": {
+        "推荐从 Tier 2 开始": "Start with Tier 2",
+        "答对 1/1 — 已认识的单词已标记为掌握。": "Correct 1/1 — words you already knew are marked as mastered.",
+        "开始学习": "Start learning",
+        "返回词汇首页": "Back to vocabulary"
+      }
+    },
+    "vocabTestFail": {
+      "en": {
+        "推荐从 Tier 1 开始": "Start with Tier 1",
+        "答对 0/1 — 已认识的单词已标记为掌握。": "Correct 0/1 — words you already knew are marked as mastered.",
+        "开始学习": "Start learning",
+        "返回词汇首页": "Back to vocabulary"
+      }
+    },
+    "vocabDone": {
+      "en": {
+        "今天的词汇复习": "Today's vocabulary review",
+        "完成啦！": "All done!",
+        "你完成了 2 个单词，记忆提高了不止一点～": "You finished 2 words — your recall just got sharper.",
+        "已复习": "Reviewed",
+        "已掌握": "Mastered",
+        "做得很好！": "Well done!",
+        "待巩固": "To review",
+        "我们会帮助你巩固的！": "We'll help you consolidate these!",
+        "下次复习时间已根据你的选择自动安排，有点模糊的单词，我们会稍后帮你再巩固哦～": "The next review is scheduled from your choices. We'll revisit the words that felt fuzzy.",
+        "返回词汇首页": "Back to vocabulary",
+        "复习待巩固单词": "Review words to consolidate"
+      }
+    },
+    "prep": {
+      "en": {
+        "个人中心": "Profile",
+        "目前成绩": "Current score",
+        "目标 7.0": "Target 7.0",
+        "天": "days",
+        "考试倒计时": "Exam countdown",
+        "设置": "Settings",
+        "考试信息": "Exam details",
+        "账号安全": "Account security",
+        "语言设置": "Language",
+        "帮助与支持": "Help & support",
+        "退出登录": "Log out"
+      }
+    }
+  }
+}

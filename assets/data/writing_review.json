@@ -1,0 +1,285 @@
+{
+  "WF_T2": {
+    "band": "6.5",
+    "descEn": "You address both views and state a clear position, giving a strong Band 6.5. The arguments are developed but stay fairly general — add one concrete example per side and sharpen your topic sentences to reach Band 7.5.",
+    "descZh": "你讨论了双方观点并明确表态，稳在 6.5。论证有展开但偏笼统——每一方补一个具体例子、把主题句写得更犀利，就能冲 7.5。",
+    "crit": [
+      {
+        "name": "任务完成情况",
+        "sc": "6.5",
+        "ok": [
+          "Both views are discussed and a clear opinion is given.",
+          "双方观点都讨论了，也给出了明确立场。"
+        ],
+        "up": [
+          "Arguments stay abstract. Support each side with a specific example (e.g. polio vaccine testing, EU cosmetics-testing ban) to fully develop the response.",
+          "论证偏抽象。每一方都用具体例子支撑（如脊髅灰质炎疫苗试验、欧盟化妆品动物试验禁令），才能充分展开。"
+        ]
+      },
+      {
+        "name": "连贯与衔接",
+        "sc": "6.5",
+        "ok": [
+          "Clear four-paragraph structure with an intro and conclusion.",
+          "四段结构清晰，有引言和结论。"
+        ],
+        "up": [
+          "Body paragraphs open directly with the argument. Add an explicit topic sentence to each so the reader sees the point before the detail.",
+          "主体段直接进入论证。每段先加一句明确的主题句，让读者先看到论点再看细节。"
+        ]
+      },
+      {
+        "name": "词汇资源",
+        "sc": "7.0",
+        "ok": [
+          "Good topic vocabulary: \"medical progress\", \"alternatives\".",
+          "主题词用得不错：medical progress、alternatives。"
+        ],
+        "up": [
+          "A few weak adjectives (\"good\") pull the register down. Replace with precise academic choices to consolidate Band 7.",
+          "个别弱形容词（good）拉低语域。换成精确的学术用词，巩固 7 分。"
+        ]
+      },
+      {
+        "name": "语法",
+        "sc": "7.0",
+        "ok": [
+          "A mix of simple and complex sentences, well controlled.",
+          "简单句与复杂句混用，控制得当。"
+        ],
+        "up": [
+          "Punctuation of complex sentences is mostly accurate. Introduce a conditional (\"if testing were banned, ...\") to widen the range.",
+          "复杂句标点基本准确。加入一个条件句（if testing were banned, ...）拓宽句式范围。"
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "name": "任务完成情况",
+        "items": [
+          "To reach Band 8, support your position with a specific example or statistic.",
+          "Make your opinion explicit in the introduction and restate it in the conclusion."
+        ]
+      },
+      {
+        "name": "连贯与衔接",
+        "items": [
+          "Use a wider range of cohesive devices (\"On top of that\", \"In contrast\").",
+          "Start each body paragraph with a clear topic sentence."
+        ]
+      }
+    ]
+  },
+  "WF_T2_ESSAY": "In today's fast-paced world, the debate about animal testing has become increasingly relevant. While some people argue that it is cruel and should be banned, others contend that it leads to important medical progress. In my opinion, testing should be allowed only for essential medical research and never for trivial purposes. On the one hand, animal testing is <span class=\"wf-hl\">good<sup>1</sup></span> because it has helped scientists develop vaccines and treatments that save millions of lives. <span class=\"wf-hl\">A lot of<sup>2</sup></span> medical breakthroughs, such as the polio vaccine and modern cancer drugs, would not have been possible without it. Supporters therefore believe that the benefit to human health outweighs the cost. On the other hand, causing animals to suffer for trivial products such as cosmetics is hard to justify, especially when modern alternatives now exist. Techniques like computer modelling and cell cultures can replace many traditional experiments, so the cruelty is no longer always necessary. Moreover, many people feel that animals also have the right to live without pain. In conclusion, I believe a balanced approach is best: animal testing should be strictly limited to serious medical research where no alternative is available, and it should be completely banned for cosmetics and other non-essential products. In this way, society can continue to benefit from scientific progress while still respecting the welfare of animals.",
+  "WF_T2_NOTES": [
+    {
+      "n": 1,
+      "old": "good",
+      "neu": "beneficial / advantageous / valuable",
+      "en": "Weak, imprecise adjective for an academic essay.",
+      "zh": "学术作文中用词太弱、不精确。",
+      "whyEn": "\"Good\" is a Band 5 word. Precise adjectives like \"beneficial\" signal the academic register examiners look for at Band 7+.",
+      "whyZh": "\"good\" 是 5 分词。\"beneficial\" 这类精确形容词才符合考官在 7 分以上期待的学术语域。"
+    },
+    {
+      "n": 2,
+      "old": "A lot of",
+      "neu": "A considerable number of / Numerous",
+      "en": "Informal quantifier — raise the register.",
+      "zh": "口语化量词，需提升正式度。",
+      "whyEn": "Formal quantifiers show control of academic style, one of the things that separates Band 6 from Band 7 in Lexical Resource.",
+      "whyZh": "正式量词体现对学术文体的掌握，这是词汇资源上 6 分与 7 分的分水岭之一。"
+    }
+  ],
+  "WF_T2_L1_ESSAY": "In today's fast-paced world, the debate about animal testing has become increasingly relevant. While some people argue that it is cruel and should be banned, others contend that it leads to important medical progress. In my opinion, testing should be allowed only for essential medical research and never for trivial purposes. On the one hand, animal testing is good because it has helped scientists develop vaccines and treatments that save millions of lives. A lot of medical breakthroughs, such as the polio vaccine and modern cancer drugs, would not have been possible without it. Supporters therefore believe that the benefit to human health outweighs the cost. On the other hand, causing animals to suffer for trivial products such as cosmetics is hard to justify, especially when modern alternatives now exist. Techniques like computer modelling and cell cultures can replace many traditional experiments, so the cruelty is no longer always necessary. Moreover, many people feel that <span class=\"wf-hl-p\">animals also have the right to live<sup>1</sup></span> without pain. In conclusion, I believe a balanced approach is best: animal testing should be strictly limited to serious medical research where no alternative is available, and it should be completely banned for cosmetics and other non-essential products. In this way, society can continue to benefit from scientific progress while still respecting the welfare of animals.",
+  "WF_T2_L1": [
+    {
+      "n": 1,
+      "title": "Missing plural marker",
+      "zh": "复数标记缺失",
+      "old": "animals also have the right to live",
+      "neu": "animals also have the right to live (✓ plural correct here)",
+      "en": "Watch countable nouns elsewhere — Chinese has no plural -s, so it is easy to write \"many people feel\" but \"many product\" by mistake.",
+      "cn": "注意其它可数名词——中文没有复数 -s，容易写对 \"many people\" 却漏掉 \"many products\" 的 -s。",
+      "whyZh": "中文名词单复数同形（\"一个动物 / 很多动物\" 字形不变），所以复数 -s 是中国考生最高频的遗漏点。",
+      "tip": "交卷前专门扫一遍：凡是 many/several/most + 名词，确认名词带了 -s。"
+    },
+    {
+      "n": 2,
+      "title": "Verb-phrase collocation",
+      "zh": "动词搭配（中式直译）",
+      "old": "it leads to important medical progress",
+      "neu": "it drives important medical progress",
+      "en": "\"Leads to\" is overused; \"drives / fuels progress\" is more idiomatic.",
+      "cn": "\"leads to\" 用得过滥；\"drives / fuels progress\" 更地道。",
+      "whyZh": "中文\"导致/带来进步\"最先想到的对应就是 \"lead to\"，导致这个短语被反复套用。",
+      "tip": "积累主题动词搭配（drive/fuel/accelerate progress），避免一个 \"lead to\" 走天下。"
+    },
+    {
+      "n": 3,
+      "title": "Adverb placement",
+      "zh": "副词语序",
+      "old": "animal testing is good because",
+      "neu": "animal testing is beneficial, primarily because",
+      "en": "Beyond the weak adjective, the clause would read better with a linking adverb to signal the reasoning.",
+      "cn": "除了形容词太弱，加一个逻辑副词能让因果推进更清晰。",
+      "whyZh": "中文靠\"因为…所以\"直接串因果，英文更常用 primarily/largely 等副词锸垫，考生易忽略。",
+      "tip": "在因果句里加 primarily/largely/mainly 等副词，既提升逻辑清晰度也丰富句式。"
+    }
+  ],
+  "task1": {
+    "crit": [
+      {
+        "name": "任务完成情况",
+        "sc": "6.0",
+        "ok": [
+          "Both urban and rural figures are covered with correct values.",
+          "城市与农村数据都覆盖了，数值正确。"
+        ],
+        "up": [
+          "There is no overview sentence. Add one summarising the overall trend (both rose, urban always higher) before the detail — this is required for Band 7 in Task Achievement.",
+          "缺少总体概述句。在细节之前加一句总体趋势（两者都上升，城市始终更高），这是任务完成度上 7 分的硬性要求。"
+        ]
+      },
+      {
+        "name": "连贯与衔接",
+        "sc": "6.0",
+        "ok": [
+          "Ideas are sequenced logically from 2005 to 2020.",
+          "内容从 2005 到 2020 的时间顺序合理排列。"
+        ],
+        "up": [
+          "Linking is basic (also, but). Use time-based cohesion such as \"over the fifteen-year period\" and \"by contrast\" to connect data.",
+          "衔接偏基础（also、but）。用时间类衔接如 \"over the fifteen-year period\"、\"by contrast\" 来连接数据。"
+        ]
+      },
+      {
+        "name": "词汇资源",
+        "sc": "6.5",
+        "ok": [
+          "Some good topic words: \"access\", \"gap\", \"period\".",
+          "有一些不错的主题词：access、gap、period。"
+        ],
+        "up": [
+          "Trend verbs repeat. Vary with \"rose / climbed / surged / edged up\" and add adverbs (\"sharply\", \"steadily\") to show the rate of change.",
+          "趋势动词重复。用 rose / climbed / surged / edged up 交替，并加副词（sharply、steadily）体现变化速率。"
+        ]
+      },
+      {
+        "name": "语法",
+        "sc": "6.0",
+        "ok": [
+          "Sentences are accurate and mostly error-free.",
+          "句子准确，基本没有语法错误。"
+        ],
+        "up": [
+          "Sentence structure is simple. Combine data into complex sentences with relative or comparative clauses to raise grammatical range.",
+          "句式偏simple。用关系从句或比较从句把数据合并成复杂句，提升语法多样性。"
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "name": "任务完成情况",
+        "items": [
+          "Open with an overview sentence stating the overall trend before any detail.",
+          "Quote specific figures (48% -> 92%) to support every comparison you make."
+        ]
+      },
+      {
+        "name": "词汇资源",
+        "items": [
+          "Vary trend verbs: \"rose\", \"climbed\", \"surged\" instead of repeating \"increased\".",
+          "Use adverbs of degree (\"sharply\", \"gradually\") to describe the rate of change."
+        ]
+      }
+    ],
+    "essay": "The chart shows internet access for urban and rural homes over a period of fifteen years. In 2005 urban access was 48% and it <span class=\"wf-hl\">increased<sup>1</sup></span> to 92% in 2020. Rural access also increased during the same time, going from 21% in 2005 to 77% in 2020. We can see that urban access was always higher than rural access in every year on the chart. The gap between them was <span class=\"wf-hl\">very big<sup>2</sup></span> in 2005, which was about 27%, but it became smaller by 2020 because rural areas developed quickly. Between 2010 and 2015 the rural number increased the most, showing that this was the fastest period of change for the countryside. In addition, both lines kept going up and there was no year when the numbers went down. Overall both types of household saw <span class=\"wf-hl\">a lot of growth<sup>3</sup></span> over the period, and the difference between city and countryside became less obvious at the end.",
+    "notes": [
+      {
+        "n": 1,
+        "old": "increased",
+        "neu": "rose / climbed / surged",
+        "en": "Repeated trend verb — weakens lexical variety.",
+        "zh": "趋势动词重复，削弱词汇多样性。",
+        "whyEn": "IELTS rewards a range of synonyms. Swapping in \"climbed\" or \"surged\" shows lexical flexibility and lifts the Lexical Resource band.",
+        "whyZh": "雅思看重同义表达。换成 climbed、surged 能体现词汇灵活度，直接抬高词汇资源分。"
+      },
+      {
+        "n": 2,
+        "old": "very big",
+        "neu": "considerable / substantial",
+        "en": "Informal, imprecise description of a data gap.",
+        "zh": "对数据差距的描述口语化、不精确。",
+        "whyEn": "Academic Task 1 needs precise, formal descriptors. \"Considerable\" is the register examiners expect for Band 7+.",
+        "whyZh": "学术小作文需要精确、正式的描述词，considerable 才是考官期望的 7 分以上语域。"
+      },
+      {
+        "n": 3,
+        "old": "a lot of growth",
+        "neu": "considerable growth / a substantial increase",
+        "en": "Informal / vague quantifier.",
+        "zh": "口语化、含糊的量词。",
+        "whyEn": "\"Considerable\" and \"substantial\" are the precise, formal register that separates a Band 6 summary from a Band 7 one.",
+        "whyZh": "considerable、substantial 这种精确正式的语域，正是 6 分与 7 分总结的分水岭。"
+      }
+    ]
+  },
+  "l1task1": {
+    "essay": "The chart shows internet access for urban and rural homes over a period of fifteen years. In 2005 urban access was 48% and it increased to 92% in 2020. Rural access also increased during the same time, going from 21% in 2005 to 77% in 2020. We can see that urban access was always higher than rural access in every year on the chart. The gap between them was very big in 2005, which was about 27%, but it became smaller by 2020 because rural areas developed quickly. Between 2010 and 2015 the <span class=\"wf-hl-p\">rural number increased<sup>1</sup></span> the most, showing that this was the fastest period of change for the countryside. In addition, both lines kept going up and there was no year when the numbers went down. Both types of household saw a lot of growth over the period, and the difference between city and countryside became less obvious at the end.",
+    "items": [
+      {
+        "n": 1,
+        "title": "Article omission",
+        "zh": "冠词缺失",
+        "old": "rural number increased",
+        "neu": "the rural figure increased",
+        "en": "A specific, previously mentioned countable noun needs \"the\".",
+        "cn": "特指、且前文已提及的可数名词前需要 \"the\"。",
+        "whyZh": "中文没有冠词系统，\"农村的数字\" 里不存在 the/a，所以中国考生常常整句漏掉冠词。",
+        "tip": "写完检查每个单数可数名词前是否该加 the/a；泛指首次出现用 a。"
+      },
+      {
+        "n": 2,
+        "title": "Redundant subject / translationese",
+        "zh": "冗余主语（中式表达）",
+        "old": "We can see that urban access was always higher",
+        "neu": "Urban access remained consistently higher",
+        "en": "\"We can see that\" is filler that adds no meaning in a report.",
+        "cn": "\"We can see that\" 属于赘语，在图表报告里不增加任何信息量。",
+        "whyZh": "对应中文 \"我们可以看到/从图中可以看出\"，习惯性直译成英文，但学术英语讲求简洁。",
+        "tip": "删掉 \"我们可以看到\" 这类开场，直接陈述数据事实，语言更简练、更学术。"
+      },
+      {
+        "n": 3,
+        "title": "Causal connective misuse",
+        "zh": "因果连接词误用",
+        "old": "became smaller by 2020 because rural areas developed quickly",
+        "neu": "narrowed by 2020, as rural areas developed rapidly",
+        "en": "Task 1 describes data, it should not speculate on causes with \"because\"; use neutral phrasing.",
+        "cn": "Task 1 只描述数据，不应用 \"because\" 推测原因，应中性表述。",
+        "whyZh": "中文写作惯用 \"因为…所以…\" 补足逻辑，考生把这种因果链直接搬进只需描述的小作文。",
+        "tip": "Task 1 不要解释 \"为什么\"，只描述 \"是什么\" 和 \"变化多少\"，把因果留给 Task 2。"
+      }
+    ]
+  },
+  "bands": {
+    "para": "A data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. iOS maintains approximately",
+    "bands": [
+      {
+        "band": "BAND 7.0",
+        "stars": 5
+      },
+      {
+        "band": "BAND 8.0",
+        "stars": 4
+      },
+      {
+        "band": "BAND 6.0",
+        "stars": 3
+      }
+    ]
+  },
+  "writingImproveView": "\n    <div class=\"ra-nav\">\n      <div class=\"ra-home\" onclick=\"go('ielts')\"><img src=\"assets/home_icon.svg\" alt=\"首页\"></div>\n      <div class=\"ra-tabs\">\n        <span class=\"ra-tab\" onclick=\"go('writingFeedback')\">WRITING MARK</span>\n        <span class=\"ra-tab on\">IMPROVE</span>\n        <span class=\"ra-tab\">L1 ERROR</span>\n      </div>\n    </div>\n    <div class=\"wi-wrap\">\n      <div class=\"ra-h-wrap\"><span class=\"ra-h\">ORIGINAL ANNOTATIONS</span></div>\n      <div class=\"wi-body\">\n        A data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), <span class=\"wi-qn\">1</span><span class=\"wi-hl\">2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M).</span>\n      </div>\n      <div class=\"wi-anno\">\n        <div class=\"wi-anno-old\"><span class=\"wi-anno-n\">1</span><span>In my opinion, the most effective approach is a synthesis of both.</span></div>\n        <div class=\"wi-anno-new\">→ <b>The most effective approach is, therefore, a synthesis of both.</b></div>\n        <div class=\"wi-anno-note\">Overusing 'In my opinion' and 'I believe' weakens academic writing. While expressing personal views is appropriate in IELTS essays, these phrases should appear sparingly (once, typically in the introduction or conclusion) rather than multiple times throughout the essay. Direct assertions with appropriate hedging ('therefore', 'thus', 'consequently') are more effective in academic contexts./过度使用\"In my opinion\"</div>\n      </div>\n      <div class=\"wi-body\">\n        2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. iOS maintains approximately 15-19% share with some recovery after 2020. Other platforms become nearly obsolete, <span class=\"wi-qn\">2</span><span class=\"wi-hl\">declining from 6% to under 0.3% of the market</span> A data table showing annual smartphone sales market share in millions of units. Android: <span class=\"wi-hl\">2015 (1,154M), 2017 (1,506M), 2019 (1,368M),</span> 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. <span class=\"wi-qn\">3</span><span class=\"wi-hl\">iOS maintains approximately 15-19% share with some recovery after 2020.</span> Other platforms become nearly obsolete, declining from 6% to under 0.3% of the marketA data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. <span class=\"wi-qn\">4</span><span class=\"wi-hl\">iOS maintains approximately 15-19% share with some recovery after 2020. Other platforms become nearly obsolete,</span> declining from 6% to under 0.3% of the marketA data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight <span class=\"wi-qn\">5</span><span class=\"wi-hl\">declining trend. iOS maintains approximately 15-19% share with some recovery after 2020. Other platforms become nearly obsolete, declining from 6%</span> to under 0.3% of the marketdeclining from 6% to under 0.3% of the marketA data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight\n      </div>\n      <button class=\"ra-next\" onclick=\"go('writingBands')\">NEXT</button>\n    </div>",
+  "writingL1DetailView": "\n    <div class=\"ra-nav\">\n      <div class=\"ra-home\" onclick=\"go('ielts')\"><img src=\"assets/home_icon.svg\" alt=\"首页\"></div>\n      <div class=\"ra-tabs\">\n        <span class=\"ra-tab\" onclick=\"go('writingFeedback')\">WRITING MARK</span>\n        <span class=\"ra-tab\" onclick=\"go('writingImprove')\">IMPROVE</span>\n        <span class=\"ra-tab on\">L1 ERROR</span>\n      </div>\n    </div>\n    <div class=\"wb-hd\" onclick=\"go('writingL1Error')\">\n      <span class=\"wb-back\">←</span><span class=\"wb-ttl\">OVERALL EVALUATION</span>\n    </div>\n    <div class=\"ld-cats\">\n      <span class=\"ld-cat vocab\">Vocabulary (4)</span>\n      <span class=\"ld-cat syntax\">Syntax (1)</span>\n      <span class=\"ld-cat style\">Style (2)</span>\n    </div>\n    \n    <div class=\"ra-card\">\n      <div class=\"ld-old\">In my opinion, the most effective approach is a synthesis of both.</div>\n      <div class=\"ld-new\">→ <b>The most effective approach is, therefore, a synthesis of both.</b></div>\n      <div class=\"ld-note\">Overusing 'In my opinion' and 'I believe' weakens academic writing. While expressing personal views is appropriate in IELTS essays, these phrases should appear sparingly (once, typically in the introduction or conclusion) rather than multiple times throughout the essay. Direct assertions with appropriate hedging ('therefore', 'thus', 'consequently') are more effective in academic contexts.</div>\n      <div class=\"ld-note blue\">This pattern of overusing first-person hedging phrases is one of the most common style weaknesses among Chinese IELTS candidates and can limit scores to 7.0 in Lexical Resource and Coherence and Cohesion. Reducing these to one or two instances and replacing with logical connectors can elevate the score.</div>\n      <div class=\"ld-tags\"><span class=\"ld-tag style\">Style</span><span class=\"ld-tag low\">Low</span></div>\n    </div>\n    \n    <div class=\"ra-card\">\n      <div class=\"ld-old\">In my opinion, the most effective approach is a synthesis of both.</div>\n      <div class=\"ld-new\">→ <b>The most effective approach is, therefore, a synthesis of both.</b></div>\n      <div class=\"ld-note\">Overusing 'In my opinion' and 'I believe' weakens academic writing. While expressing personal views is appropriate in IELTS essays, these phrases should appear sparingly (once, typically in the introduction or conclusion) rather than multiple times throughout the essay. Direct assertions with appropriate hedging ('therefore', 'thus', 'consequently') are more effective in academic contexts.</div>\n      <div class=\"ld-note blue\">This pattern of overusing first-person hedging phrases is one of the most common style weaknesses among Chinese IELTS candidates and can limit scores to 7.0 in Lexical Resource and Coherence and Cohesion. Reducing these to one or two instances and replacing with logical connectors can elevate the score.</div>\n      <div class=\"ld-tags\"><span class=\"ld-tag style\">Style</span><span class=\"ld-tag low\">Low</span></div>\n    </div>\n    <button class=\"ra-next\" onclick=\"go('ielts')\">The end</button>"
+}

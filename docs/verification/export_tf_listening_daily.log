@@ -1,0 +1,6 @@
+{
+  respond: { questions: 12, seconds: 20, feedback: 2 },
+  convo: { questions: 6, seconds: 20, feedback: 2 },
+  announce: { questions: 6, seconds: 20, feedback: 2 },
+  lecture: { questions: 8, seconds: 30, feedback: 2 }
+}

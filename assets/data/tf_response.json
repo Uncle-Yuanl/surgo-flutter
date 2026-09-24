@@ -1,0 +1,300 @@
+{
+  "TFDR_SEGS": [
+    {
+      "sec": 7,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "Yes, I prefer it to driving."
+        ],
+        [
+          "B",
+          "It'll depend on the traffic."
+        ],
+        [
+          "C",
+          "Yes, everyone will be there."
+        ],
+        [
+          "D",
+          "The campus facilities are state-of-the-art."
+        ]
+      ]
+    },
+    {
+      "sec": 6,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "The library closes at ten."
+        ],
+        [
+          "B",
+          "I borrowed three books."
+        ],
+        [
+          "C",
+          "You'll need your student ID."
+        ],
+        [
+          "D",
+          "The study rooms are upstairs."
+        ]
+      ]
+    },
+    {
+      "sec": 8,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "The soup is today's special."
+        ],
+        [
+          "B",
+          "I usually eat around noon."
+        ],
+        [
+          "C",
+          "It costs about five dollars."
+        ],
+        [
+          "D",
+          "Sure, I can join you then."
+        ]
+      ]
+    },
+    {
+      "sec": 7,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "The deadline is next Friday."
+        ],
+        [
+          "B",
+          "I found the lecture fascinating."
+        ],
+        [
+          "C",
+          "Professor Lee teaches that course."
+        ],
+        [
+          "D",
+          "It meets in the science building."
+        ]
+      ]
+    },
+    {
+      "sec": 6,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "My roommate is from Canada."
+        ],
+        [
+          "B",
+          "I'll ask the resident advisor."
+        ],
+        [
+          "C",
+          "The rent is due on the first."
+        ],
+        [
+          "D",
+          "There are two beds in the room."
+        ]
+      ]
+    },
+    {
+      "sec": 7,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "The bus stop is across the street."
+        ],
+        [
+          "B",
+          "It's about a twenty-minute walk."
+        ],
+        [
+          "C",
+          "I take the shuttle every day."
+        ],
+        [
+          "D",
+          "The parking lot is always full."
+        ]
+      ]
+    },
+    {
+      "sec": 6,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "The pool is closed for repairs."
+        ],
+        [
+          "B",
+          "I work out every morning."
+        ],
+        [
+          "C",
+          "You need a membership card."
+        ],
+        [
+          "D",
+          "The class starts in ten minutes."
+        ]
+      ]
+    },
+    {
+      "sec": 8,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "You should schedule an appointment."
+        ],
+        [
+          "B",
+          "The advisor is very helpful."
+        ],
+        [
+          "C",
+          "I changed my major last year."
+        ],
+        [
+          "D",
+          "Registration opens on Monday."
+        ]
+      ]
+    },
+    {
+      "sec": 7,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "The experiment takes two hours."
+        ],
+        [
+          "B",
+          "Safety goggles are required."
+        ],
+        [
+          "C",
+          "Yes, I'll email you the results."
+        ],
+        [
+          "D",
+          "The lab is on the third floor."
+        ]
+      ]
+    },
+    {
+      "sec": 6,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "The fair is in the main hall."
+        ],
+        [
+          "B",
+          "Bring several copies of your resume."
+        ],
+        [
+          "C",
+          "Many companies will attend."
+        ],
+        [
+          "D",
+          "It runs from ten to four."
+        ]
+      ]
+    },
+    {
+      "sec": 7,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "The clinic is free for students."
+        ],
+        [
+          "B",
+          "You can walk in any time."
+        ],
+        [
+          "C",
+          "I felt much better afterward."
+        ],
+        [
+          "D",
+          "The pharmacy is next door."
+        ]
+      ]
+    },
+    {
+      "sec": 8,
+      "q": "选择最佳回答。",
+      "opts": [
+        [
+          "A",
+          "Transcripts take a week to process."
+        ],
+        [
+          "B",
+          "The form is available online."
+        ],
+        [
+          "C",
+          "Yes, you can pick it up in person."
+        ],
+        [
+          "D",
+          "The office closes at five."
+        ]
+      ]
+    }
+  ],
+  "TFDR_SEC": 20,
+  "TFDR_TOTAL": 12,
+  "TFDRFB_WEAK": [
+    {
+      "tags": [
+        "听力",
+        "目的意图",
+        "对话开头"
+      ],
+      "q": "听对话第 1 题：错把附带请求当成主要目的。",
+      "a": "对话目的题重点听开头 2-3 句。建议练习“开头意图捕捉”。"
+    }
+  ],
+  "TFDRFB_QS": [
+    {
+      "n": 1,
+      "ok": false,
+      "dur": "00:12",
+      "q": "Why does the student go to see the professor?",
+      "mine": "A. To ask for an extension on an assignment.",
+      "ans": "B. To discuss a topic for a research paper.",
+      "why": "学生明确向教授寻求选择论文题目的建议。",
+      "evi": "\"I'm not sure which topic to choose for my research paper.\""
+    },
+    {
+      "n": 2,
+      "ok": true,
+      "dur": "00:12",
+      "q": "What does the professor suggest the student do?",
+      "mine": "A. Narrow the scope of the topic."
+    }
+  ]
+}

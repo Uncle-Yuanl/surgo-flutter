@@ -1,0 +1,270 @@
+{
+  "TFW1_QS": [
+    {
+      "q": "What is your favorite place to relax?",
+      "parts": [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "is",
+        "my",
+        "favorite spot"
+      ],
+      "tail": ".",
+      "bank": [
+        "my",
+        "park",
+        "that",
+        "The",
+        "is close",
+        "to campus",
+        "the",
+        "is"
+      ]
+    },
+    {
+      "q": "Why are you taking that course?",
+      "parts": [
+        "The",
+        "class",
+        "covers",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "tail": ".",
+      "bank": [
+        "topics",
+        "need",
+        "advanced",
+        "I",
+        "covers",
+        "that"
+      ]
+    },
+    {
+      "q": "Your presentation yesterday was really impressive. Thanks!",
+      "parts": [
+        "Do",
+        "you want",
+        "me",
+        "_",
+        "_",
+        "a copy",
+        "_"
+      ],
+      "tail": "?",
+      "bank": [
+        "you want",
+        "me",
+        "to send",
+        "you",
+        "a copy",
+        "of it",
+        "sending"
+      ]
+    },
+    {
+      "q": "When will the library reopen?",
+      "parts": [
+        "It",
+        "will",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "tail": ".",
+      "bank": [
+        "open",
+        "again",
+        "next",
+        "Monday",
+        "week",
+        "will"
+      ]
+    },
+    {
+      "q": "How did you find the lecture?",
+      "parts": [
+        "I",
+        "thought",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "tail": ".",
+      "bank": [
+        "it",
+        "was",
+        "very",
+        "informative",
+        "boring",
+        "thought"
+      ]
+    },
+    {
+      "q": "Can you help me move this weekend?",
+      "parts": [
+        "I",
+        "would",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "tail": ".",
+      "bank": [
+        "be",
+        "happy",
+        "to",
+        "help",
+        "glad",
+        "would"
+      ]
+    },
+    {
+      "q": "Where should we meet for the study group?",
+      "parts": [
+        "Let",
+        "us",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "tail": ".",
+      "bank": [
+        "meet",
+        "at",
+        "the",
+        "coffee shop",
+        "library",
+        "us"
+      ]
+    },
+    {
+      "q": "Did you finish the assignment?",
+      "parts": [
+        "I",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "tail": ".",
+      "bank": [
+        "still",
+        "have",
+        "a few",
+        "questions",
+        "left",
+        "answers"
+      ]
+    },
+    {
+      "q": "What do you think of the new schedule?",
+      "parts": [
+        "The",
+        "new",
+        "schedule",
+        "_",
+        "_",
+        "_"
+      ],
+      "tail": ".",
+      "bank": [
+        "works",
+        "better",
+        "for me",
+        "worse",
+        "schedule"
+      ]
+    },
+    {
+      "q": "Are you coming to the event tonight?",
+      "parts": [
+        "I",
+        "will",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "tail": ".",
+      "bank": [
+        "try",
+        "to",
+        "be",
+        "there",
+        "here",
+        "will"
+      ]
+    }
+  ],
+  "TFW1_SEC": 410,
+  "TFW1_TOTAL": 10,
+  "TFW2": {
+    "tag": "TASK 2 · WRITE AN EMAIL",
+    "title": "Language Course Schedule and Fees Inquiry",
+    "ctx": "You saw an advertisement for a language course at a local college, and you are interested in joining. However, the advertisement did not include enough details about the schedule and fees. You want to get more information before deciding.",
+    "meta": [
+      [
+        "你的身份",
+        "Student"
+      ],
+      [
+        "收件人",
+        "Program coordinator"
+      ],
+      [
+        "语气",
+        "Semi Formal"
+      ]
+    ],
+    "reqs": [
+      "Explain why you are interested in the course.",
+      "Ask for details about the class schedule and fees.",
+      "Request any materials you may have missed."
+    ],
+    "to": "Program coordinator",
+    "subjPh": "Course schedule and fees",
+    "bodyPh": "在此撰写你的邮件…",
+    "min": 20
+  },
+  "TFW2_SEC": 420,
+  "TFW3": {
+    "kicker": "讨论帖",
+    "prompt": "Your professor is teaching a class on technology. Write a post responding to the professor's question. Many believe that social media platforms have potential for use in education. However, concerns about misinformation and privacy raise questions about their appropriateness. What do you think? Can social media be used effectively as a tool for educational purposes? Why or why not?",
+    "note": "有效的回应至少应包含 100 词。",
+    "posts": [
+      {
+        "ini": "P",
+        "cls": "p",
+        "name": "Professor",
+        "txt": "Many believe that social media platforms, where users exchange information and ideas in virtual communities, have potential for use in education. However, concerns about misinformation and privacy raise questions about their appropriateness. What do you think?"
+      },
+      {
+        "ini": "K",
+        "cls": "k",
+        "name": "Kelly",
+        "txt": "I don't think we should be relying on social media for learning. It can alienate students who lack access to these platforms. Many students simply do not have the luxury of constant Internet or social media access, and that could lead to unequal learning opportunities and widen the gap in educational equity."
+      },
+      {
+        "ini": "U",
+        "cls": "u",
+        "name": "Paul",
+        "txt": "Using social media for educational purposes offers the advantage of real-time feedback and communication. It allows students to interact with their instructors outside of regular class times. The learning process could therefore be enhanced through immediate clarification and discussion, making education more dynamic and accessible."
+      }
+    ],
+    "bodyPh": "在此撰写你的回应…",
+    "min": 100
+  },
+  "TFW3_SEC": 600
+}

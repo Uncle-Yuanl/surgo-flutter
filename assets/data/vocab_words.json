@@ -1,0 +1,99 @@
+{
+  "_source": "surgo-mobile-new/app.js 2592-2879 (vocabBookView / vocabWordView / vocabWord2View / vocabWord3View / vocabWord4View)",
+  "book": {
+    "heroTitle": "我的单词本",
+    "heroSub": "已收藏 4 个单词",
+    "heroGo": "开始复习",
+    "stats": [
+      {"n": "4", "l": "全部单词", "tone": "y"},
+      {"n": "0", "l": "已掌握", "tone": "g"},
+      {"n": "4", "l": "学习中", "tone": "y"},
+      {"n": "0", "l": "未学习", "tone": "gray"}
+    ],
+    "toolbar": {
+      "filter": "全部状态 ▾",
+      "search": " 搜索单词或释义",
+      "sort": "最近添加 ▾",
+      "view": "☰"
+    },
+    "cards": [
+      {"word": "Identify", "ipa": "/aɪˈden.tɪ.faɪ/", "def": "v. 识别；确认；认出", "tier": "Tier 1", "tag": "学习中", "page": "vocabWord"},
+      {"word": "Adapt", "ipa": "/əˈdæpt/", "def": "v. 适应；改编", "tier": "Tier 1", "tag": "学习中", "page": "vocabWord2"},
+      {"word": "Analyse", "ipa": "/ˈæn.əl.aɪz/", "def": "v. 分析", "tier": "Tier 1", "tag": "学习中", "page": "vocabWord3"},
+      {"word": "Context", "ipa": "/ˈkɒn.tekst/", "def": "n. 语境；背景", "tier": "Tier 2", "tag": "学习中", "page": "vocabWord4"}
+    ]
+  },
+  "words": {
+    "vocabWord": {
+      "word": "Identify",
+      "pos": "VERB",
+      "learn": "学习中",
+      "book": "移出单词本",
+      "ipa": "/aɪˈden.tɪ.faɪ/",
+      "lvl": "B1 / Tier 1",
+      "defZh": "v. 识别；确认；认出",
+      "defEn": "to recognise someone or something and be able to say who or what they are",
+      "example": {
+        "en": "The study aimed to identify the main factors that discourage people from cycling to work.",
+        "zh": "该研究旨在找出使人们不愿骑车上班的主要因素。"
+      },
+      "collocations": ["identify a problem", "identify the cause", "correctly identify", "identify factors"],
+      "pitfall": "identify somebody / something = 识别出某人或某物",
+      "synonyms": ["recognise", "distinguish", "pinpoint"],
+      "antonyms": "反义词材料待提供",
+      "family": ["identification (n.)", "identity (n.)"],
+      "pron": "发音提示材料待提供"
+    },
+    "vocabWord2": {
+      "word": "Adapt",
+      "pos": "VERB",
+      "learn": "学习中",
+      "book": "移出单词本",
+      "ipa": "/əˈdæpt/",
+      "lvl": "B2 / Tier 1",
+      "defZh": "v. 适应；改编",
+      "defEn": "to change to suit different conditions or uses",
+      "example": {"muted": "例句材料待提供"},
+      "collocations": {"muted": "搭配材料待提供"},
+      "pitfall": "易错点材料待提供",
+      "synonyms": {"muted": "材料待提供"},
+      "antonyms": "反义词材料待提供",
+      "family": {"muted": "材料待提供"},
+      "pron": "发音提示材料待提供"
+    },
+    "vocabWord3": {
+      "word": "Analyse",
+      "pos": "VERB",
+      "learn": "学习中",
+      "book": "移出单词本",
+      "ipa": "/ˈæn.əl.aɪz/",
+      "lvl": "B2 / Tier 1",
+      "defZh": "v. 分析",
+      "defEn": "to examine something carefully",
+      "example": {"muted": "例句材料待提供"},
+      "collocations": {"muted": "搭配材料待提供"},
+      "pitfall": "易错点材料待提供",
+      "synonyms": {"muted": "材料待提供"},
+      "antonyms": "反义词材料待提供",
+      "family": {"muted": "材料待提供"},
+      "pron": "发音提示材料待提供"
+    },
+    "vocabWord4": {
+      "word": "Context",
+      "pos": "NOUN",
+      "learn": "学习中",
+      "book": "移出单词本",
+      "ipa": "/ˈkɒn.tekst/",
+      "lvl": "B2 / Tier 2",
+      "defZh": "n. 语境；背景",
+      "defEn": "the situation in which something happens",
+      "example": {"muted": "例句材料待提供"},
+      "collocations": {"muted": "搭配材料待提供"},
+      "pitfall": "易错点材料待提供",
+      "synonyms": {"muted": "材料待提供"},
+      "antonyms": "反义词材料待提供",
+      "family": {"muted": "材料待提供"},
+      "pron": "发音提示材料待提供"
+    }
+  }
+}

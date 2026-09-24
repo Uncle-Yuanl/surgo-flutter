@@ -1,0 +1,377 @@
+{
+  "sharedTimerSec": 1800,
+  "reviewSec": 118,
+  "markLabelTemplate": "正在批改任务 {n} / 4, Part {n}",
+  "mapSvg": "<svg class=\"lmap-svg\" viewBox=\"0 0 460 300\" xmlns=\"http://www.w3.org/2000/svg\">\n    <rect x=\"0\" y=\"0\" width=\"460\" height=\"300\" rx=\"10\" fill=\"#eef1e5\"/>\n    <rect x=\"210\" y=\"55\" width=\"42\" height=\"200\" fill=\"#d9d3c4\"/>\n    <rect x=\"30\" y=\"150\" width=\"400\" height=\"34\" fill=\"#d9d3c4\"/>\n    <rect x=\"45\" y=\"75\" width=\"120\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"105\" cy=\"105\" r=\"13\" fill=\"#e8a90c\"/><text x=\"105\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">A</text>\n    <rect x=\"285\" y=\"75\" width=\"130\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"350\" cy=\"105\" r=\"13\" fill=\"#e8a90c\"/><text x=\"350\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">B</text>\n    <rect x=\"45\" y=\"200\" width=\"120\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"105\" cy=\"230\" r=\"13\" fill=\"#e8a90c\"/><text x=\"105\" y=\"235\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">C</text>\n    <rect x=\"300\" y=\"205\" width=\"115\" height=\"55\" rx=\"16\" fill=\"#c9e2f0\" stroke=\"#9fc7de\"/>\n    <circle cx=\"357\" cy=\"232\" r=\"13\" fill=\"#e8a90c\"/><text x=\"357\" y=\"237\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">F</text>\n    <circle cx=\"200\" cy=\"167\" r=\"13\" fill=\"#e8a90c\"/><text x=\"200\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">D</text>\n    <circle cx=\"285\" cy=\"167\" r=\"13\" fill=\"#e8a90c\"/><text x=\"285\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">E</text>\n    <circle cx=\"231\" cy=\"120\" r=\"13\" fill=\"#e8a90c\"/><text x=\"231\" y=\"125\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">G</text>\n    <text x=\"231\" y=\"278\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7a7566\">ENTRANCE</text>\n  </svg>",
+  "parts": [
+    {
+      "no": 1,
+      "audioTitle": "第 1 部分播放中",
+      "audioBarPct": 0,
+      "audioTime": "00:00/07:00",
+      "tip": "你有约 20 秒查看题目。 (18s)",
+      "dotFrom": 1,
+      "next": "mockListeningQ2",
+      "groups": [
+        {
+          "label": "Questions 1-6",
+          "sub": "Choose the correct answer, A, B or C."
+        },
+        {
+          "label": "Questions 7-10",
+          "sub": "Answer the questions below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer."
+        }
+      ],
+      "mc": [
+        {
+          "n": "1",
+          "q": "The customer wants to book the hall for a",
+          "opts": [
+            "birthday party.",
+            "wedding reception.",
+            "company event."
+          ]
+        },
+        {
+          "n": "2",
+          "q": "The event will take place in",
+          "opts": [
+            "the Garden Room.",
+            "the Main Hall.",
+            "the Terrace Room."
+          ]
+        },
+        {
+          "n": "3",
+          "q": "The party is booked for",
+          "opts": [
+            "Friday.",
+            "Saturday.",
+            "Sunday."
+          ]
+        },
+        {
+          "n": "4",
+          "q": "The hall can hold a maximum of",
+          "opts": [
+            "80 people.",
+            "100 people.",
+            "120 people."
+          ]
+        },
+        {
+          "n": "5",
+          "q": "Parking is",
+          "opts": [
+            "free for all guests.",
+            "available for a fee.",
+            "not available."
+          ]
+        },
+        {
+          "n": "6",
+          "q": "The customer is most concerned about",
+          "opts": [
+            "the cost.",
+            "the catering.",
+            "the timing."
+          ]
+        }
+      ],
+      "fills": [
+        {
+          "n": "7",
+          "q": "What deposit is required?"
+        },
+        {
+          "n": "8",
+          "q": "How should the customer pay?"
+        },
+        {
+          "n": "9",
+          "q": "What food option was chosen?"
+        },
+        {
+          "n": "10",
+          "q": "What is the best contact time?"
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "audioTitle": "第 2 部分播放中",
+      "audioBarPct": 17,
+      "audioTime": "01:12/07:00",
+      "dotFrom": 11,
+      "next": "mockListeningQ3",
+      "groups": [
+        {
+          "label": "Questions 11-16",
+          "sub": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+        },
+        {
+          "label": "Questions 17-20",
+          "sub": "Label the map below. Write the correct letter, A-G, next to Questions 17-20."
+        }
+      ],
+      "tableTitle": "MISSING PERSON DESCRIPTION",
+      "table": [
+        {
+          "key": "Age",
+          "val": "Early 20s",
+          "n": 0
+        },
+        {
+          "key": "Height",
+          "val": "About 1 m 83 cms",
+          "n": 0
+        },
+        {
+          "key": "Build",
+          "val": "",
+          "n": 11
+        },
+        {
+          "key": "Hair",
+          "val": "Red",
+          "n": 0
+        },
+        {
+          "key": "Face",
+          "val": "Clean shaven",
+          "n": 0
+        },
+        {
+          "key": "Clothing",
+          "val": "Dark blue sweater",
+          "n": 0
+        },
+        {
+          "key": "",
+          "val": "",
+          "n": 12
+        },
+        {
+          "key": "",
+          "val": "Motorbike helmet",
+          "n": 0
+        },
+        {
+          "key": "Age of bike",
+          "val": "",
+          "n": 13
+        },
+        {
+          "key": "Colour",
+          "val": "",
+          "n": 14
+        },
+        {
+          "key": "Last seen",
+          "val": "",
+          "n": 15
+        },
+        {
+          "key": "Reference",
+          "val": "",
+          "n": 16
+        }
+      ],
+      "mapQs": [
+        {
+          "n": 17,
+          "label": "Car park"
+        },
+        {
+          "n": 18,
+          "label": "Ticket office"
+        },
+        {
+          "n": 19,
+          "label": "Cafe"
+        },
+        {
+          "n": 20,
+          "label": "Gift shop"
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "audioTitle": "第 3 部分播放中",
+      "audioBarPct": 5,
+      "audioTime": "00:19/07:00",
+      "dotFrom": 21,
+      "next": "mockListeningQ4",
+      "groups": [
+        {
+          "label": "Questions 21-25",
+          "sub": "What comment does each student make about the topics? Choose your answers from the box and write the correct letter, A-F, next to Questions 21-25."
+        },
+        {
+          "label": "Questions 26-30",
+          "sub": "Choose the correct answer, A, B or C."
+        }
+      ],
+      "matchBox": [
+        "A  needs more research",
+        "B  was surprisingly easy",
+        "C  took too long",
+        "D  was well organised",
+        "E  should be repeated",
+        "F  lacked good data"
+      ],
+      "matchLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "match": [
+        {
+          "n": 21,
+          "q": "The literature review"
+        },
+        {
+          "n": 22,
+          "q": "The questionnaire design"
+        },
+        {
+          "n": 23,
+          "q": "The data collection"
+        },
+        {
+          "n": 24,
+          "q": "The interviews"
+        },
+        {
+          "n": 25,
+          "q": "The final analysis"
+        }
+      ],
+      "mc": [
+        {
+          "n": 26,
+          "q": "In which year will Robert gain work experience?",
+          "opts": [
+            "First year",
+            "Second year",
+            "Third year"
+          ]
+        },
+        {
+          "n": 27,
+          "q": "Robert will produce extended written work in",
+          "opts": [
+            "first year",
+            "second year",
+            "third year"
+          ]
+        },
+        {
+          "n": 28,
+          "q": "The number of exams at the end of the year is",
+          "opts": [
+            "five",
+            "six",
+            "eight"
+          ]
+        },
+        {
+          "n": 29,
+          "q": "Robert chose the university mainly for its",
+          "opts": [
+            "location.",
+            "reputation.",
+            "facilities."
+          ]
+        },
+        {
+          "n": 30,
+          "q": "The tutor suggests Robert should",
+          "opts": [
+            "join a club.",
+            "start early.",
+            "contact staff."
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "audioTitle": "第 4 部分播放中",
+      "audioBarPct": 0,
+      "audioTime": "00:00/07:00",
+      "tip": "你有约 20 秒查看题目。 (15s)",
+      "dotFrom": 31,
+      "next": null,
+      "groups": [
+        {
+          "label": "Questions 31-36",
+          "sub": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+        },
+        {
+          "label": "Questions 37-40",
+          "sub": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+        }
+      ],
+      "notesTitle": "SURVEY METHODS",
+      "notes": [
+        {
+          "n": 31,
+          "head": "The lecture is useful for students writing",
+          "tail": "and theses."
+        },
+        {
+          "n": 32,
+          "head": "Modernised countries are described as now being",
+          "tail": ""
+        },
+        {
+          "n": 33,
+          "head": "The size of a sample depends on the",
+          "tail": "required."
+        },
+        {
+          "n": 34,
+          "head": "Mail surveys are relatively",
+          "tail": "and good for particular groups."
+        },
+        {
+          "n": 35,
+          "head": "Telephone surveys are good when time is",
+          "tail": ""
+        },
+        {
+          "n": 36,
+          "head": "In-person surveys can mean lots of",
+          "tail": ""
+        }
+      ],
+      "sents": [
+        {
+          "n": 37,
+          "head": "Street interviews are not considered",
+          "tail": "sampling."
+        },
+        {
+          "n": 38,
+          "head": "Questions can be open-ended or of a",
+          "tail": "type."
+        },
+        {
+          "n": 39,
+          "head": "A survey can use a",
+          "tail": "to reach more people."
+        },
+        {
+          "n": 40,
+          "head": "Results must not be used for",
+          "tail": "purposes."
+        }
+      ]
+    }
+  ]
+}

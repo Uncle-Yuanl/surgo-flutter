@@ -1,0 +1,17 @@
+{
+  "check": true,
+  "tables": {
+    "SURGO_EN": 949,
+    "SURGO_EN_RE": 62,
+    "SURGO_ZH": 428,
+    "SURGO_ZH_RE": 32
+  },
+  "cases": 2862,
+  "regex": 102,
+  "sourceFiles": {
+    "app.js": "21a8e34203c3376a36afbfad6e8152adc9c6edccf064704d77780ec97300eb32",
+    "index.html": "1c6efae1d7045151e6ef392912cdcc9f26c62d8e83f61301f0d3fddc8c5c7a72",
+    "questions.js": "bd56e12faf049ee894e6e1351888a37e8e5f410e56d55b6769e0d68cb440ea6b",
+    "i18n.js": "04630583c0a1dc8cffdd02fe085138392b8a13cc56c7761689b7115029f55f9b"
+  }
+}

@@ -1,0 +1,464 @@
+{
+  "TFWFB_TYPES": [
+    {
+      "key": "s",
+      "name": "Build a Sentence",
+      "score": 5.5
+    },
+    {
+      "key": "e",
+      "name": "Write an Email",
+      "score": 3.5
+    },
+    {
+      "key": "d",
+      "name": "Academic Discussion",
+      "score": 4
+    }
+  ],
+  "TFWFB_QS": {
+    "s": [
+      {
+        "n": 1,
+        "ok": false,
+        "q": "\"What is your favorite place to relax?\"",
+        "chips": [
+          [
+            "That",
+            1
+          ],
+          [
+            "is",
+            0
+          ],
+          [
+            "the park",
+            1
+          ],
+          [
+            "close to campus",
+            0
+          ],
+          [
+            "is",
+            0
+          ],
+          [
+            "my",
+            0
+          ],
+          [
+            "favorite spot",
+            0
+          ]
+        ],
+        "ans": "The park that is close to campus is my favorite spot.",
+        "fb": "The subject \"The park\" should come first, and \"close to campus\" is a modifier that follows \"that is\". Word order affected grammar."
+      },
+      {
+        "n": 2,
+        "ok": true,
+        "q": "\"Why are you taking that course?\"",
+        "chips": [
+          [
+            "The",
+            0
+          ],
+          [
+            "class",
+            0
+          ],
+          [
+            "covers",
+            0
+          ],
+          [
+            "advanced",
+            0
+          ],
+          [
+            "topics",
+            0
+          ],
+          [
+            "I",
+            0
+          ],
+          [
+            "need",
+            0
+          ]
+        ],
+        "ans": "The class covers advanced topics I need.",
+        "fb": "Correct word order and grammar."
+      }
+    ],
+    "e": [
+      {
+        "n": 1,
+        "ok": false,
+        "q": "Language Course Schedule and Fees Inquiry",
+        "mine": "Hi, I want to know the schedule and how much it costs. Send me the stuff I missed. Thanks.",
+        "ans": "Dear Program Coordinator,\n\nI am writing to express my interest in the language course advertised by your college. Could you please provide details about the class schedule and the tuition fees? I would also appreciate any materials I may have missed.\n\nThank you for your time.",
+        "fb": "语气偏随意（\"the stuff\"、\"how much it costs\"），与半正式要求不符。三个要求点都提到了，但需要更完整的称呼与结尾。"
+      }
+    ],
+    "d": [
+      {
+        "n": 1,
+        "ok": true,
+        "q": "\"Academic Discussion — Social media in education\"",
+        "subs": [
+          [
+            "Development",
+            "3.0",
+            "bad"
+          ],
+          [
+            "Organization",
+            "2.0",
+            "bad"
+          ],
+          [
+            "Language Use",
+            "4.0",
+            "ok"
+          ],
+          [
+            "Mechanics",
+            "4.5",
+            "ok"
+          ]
+        ],
+        "task": "Your professor asks: Can social media be used effectively as a tool for educational purposes? Why or why not? Express and support your opinion and contribute to the discussion in your own words.",
+        "seg": [
+          [
+            "hit",
+            "I believe social media can be an effective learning tool",
+            1
+          ],
+          [
+            "txt",
+            ". For example, students can join subject groups where they get real-time feedback from peers and teachers",
+            0
+          ],
+          [
+            "num",
+            "",
+            2
+          ],
+          [
+            "txt",
+            ". ",
+            0
+          ],
+          [
+            "bad",
+            "But some people think it is bad because of distraction",
+            3
+          ],
+          [
+            "txt",
+            ". In my opinion, with clear rules the benefits outweigh the risks.",
+            0
+          ]
+        ],
+        "notes": [
+          [
+            1,
+            "ok",
+            "Clear position stated up front.",
+            "开头明确表明立场。"
+          ],
+          [
+            2,
+            "ok",
+            "Concrete example strengthens the argument.",
+            "具体例子增强了论证。"
+          ],
+          [
+            3,
+            "bad",
+            "\"it is bad\" is vague; name the specific concern (e.g. \"reduces focus during study\").",
+            "\"it is bad\" 太笼统；点明具体问题（如\"降低学习专注度\"）。"
+          ]
+        ],
+        "fb": "See the numbered notes below."
+      }
+    ]
+  },
+  "TFWFB_WEAK": [
+    {
+      "tags": [
+        "写作",
+        "语气一致性",
+        "正式度"
+      ],
+      "q": "邮件在正式与随意之间来回切换。",
+      "a": "保持统一的半正式语气。建议练习\"邮件语气统一\"专项。"
+    }
+  ],
+  "TFSENT_FB": [
+    {
+      "n": 1,
+      "ok": false,
+      "q": "\"What is your favorite place to relax?\"",
+      "chips": [
+        [
+          "That",
+          1
+        ],
+        [
+          "is",
+          0
+        ],
+        [
+          "the park",
+          1
+        ],
+        [
+          "close to campus",
+          0
+        ],
+        [
+          "is",
+          0
+        ],
+        [
+          "my",
+          0
+        ],
+        [
+          "favorite spot",
+          0
+        ]
+      ],
+      "ans": "The park that is close to campus is my favorite spot.",
+      "fb": "The subject \"The park\" should come first, and \"close to campus\" is a modifier that follows \"that is\". Word order affected grammar."
+    },
+    {
+      "n": 2,
+      "ok": true,
+      "q": "\"Why are you taking that course?\"",
+      "chips": [
+        [
+          "The",
+          0
+        ],
+        [
+          "class",
+          0
+        ],
+        [
+          "covers",
+          0
+        ],
+        [
+          "advanced",
+          0
+        ],
+        [
+          "topics",
+          0
+        ],
+        [
+          "I",
+          0
+        ],
+        [
+          "need",
+          0
+        ]
+      ],
+      "ans": "The class covers advanced topics I need.",
+      "fb": "Correct word order and grammar."
+    }
+  ],
+  "tfEmailFbView": {
+    "seg": [
+      [
+        "plain",
+        "Dear Coordinator,"
+      ],
+      [
+        "br",
+        ""
+      ],
+      [
+        "br",
+        ""
+      ],
+      [
+        "hl",
+        "I am very interested in your language course",
+        "ok",
+        1
+      ],
+      [
+        "plain",
+        " that I saw advertised. "
+      ],
+      [
+        "hl",
+        "Hey, can you tell me the schedule and how much it costs?",
+        "bad",
+        2
+      ],
+      [
+        "plain",
+        " I would also like to receive any materials I might have missed. "
+      ],
+      [
+        "hl",
+        "Thanks a lot!!!",
+        "bad",
+        3
+      ],
+      [
+        "br",
+        ""
+      ],
+      [
+        "br",
+        ""
+      ],
+      [
+        "plain",
+        "Best regards,"
+      ],
+      [
+        "br",
+        ""
+      ],
+      [
+        "plain",
+        "Alex"
+      ]
+    ],
+    "notes": [
+      [
+        1,
+        "ok",
+        "Clear statement of interest — a good opening move.",
+        "清楚说明了兴趣，开头得当。"
+      ],
+      [
+        2,
+        "bad",
+        "\"Hey\" is too casual for a semi-formal email. Use e.g. \"Could you please tell me the class schedule and the fees?\"",
+        "\"Hey\" 对半正式邮件过于随意。可改为 \"Could you please tell me the class schedule and the fees?\""
+      ],
+      [
+        3,
+        "bad",
+        "Multiple exclamation marks are too informal. A simple \"Thank you for your help.\" fits the register.",
+        "多个感叹号过于随意。用 \"Thank you for your help.\" 更合适。"
+      ]
+    ],
+    "subs": [
+      [
+        "Development",
+        "3.0",
+        "bad"
+      ],
+      [
+        "Organization",
+        "2.0",
+        "bad"
+      ],
+      [
+        "Language Use",
+        "4.0",
+        "ok"
+      ],
+      [
+        "Mechanics",
+        "4.5",
+        "ok"
+      ]
+    ],
+    "task": "You saw an advertisement for a language course at a local college and are interested in joining. The advertisement did not include enough details about the schedule and fees. Write an email to the program coordinator: explain why you are interested, ask about the class schedule and fees, and request any materials you may have missed.",
+    "q": "\"Write an Email — Language Course Schedule and Fees Inquiry\"",
+    "fb": "See the numbered notes below for specific fixes.",
+    "weak": "保持统一的半正式语气，结尾加明确的收束句。"
+  },
+  "tfDiscFbView": {
+    "seg": [
+      [
+        "hl",
+        "I believe social media can be an effective learning tool",
+        "ok",
+        1
+      ],
+      [
+        "plain",
+        ". For example, students can join subject groups where they get real-time feedback from peers and teachers"
+      ],
+      [
+        "num",
+        "",
+        2
+      ],
+      [
+        "plain",
+        ". "
+      ],
+      [
+        "hl",
+        "But some people think it is bad because of distraction",
+        "bad",
+        3
+      ],
+      [
+        "plain",
+        ". In my opinion, with clear rules the benefits outweigh the risks."
+      ]
+    ],
+    "notes": [
+      [
+        1,
+        "ok",
+        "Clear position stated up front.",
+        "开头明确表明立场。"
+      ],
+      [
+        2,
+        "ok",
+        "Concrete example strengthens the argument.",
+        "具体例子增强了论证。"
+      ],
+      [
+        3,
+        "bad",
+        "\"it is bad\" is vague; name the specific concern (e.g. \"reduces focus during study\").",
+        "\"it is bad\" 太笼统；点明具体问题（如\"降低学习专注度\"）。"
+      ]
+    ],
+    "subs": [
+      [
+        "Development",
+        "3.0",
+        "bad"
+      ],
+      [
+        "Organization",
+        "2.0",
+        "bad"
+      ],
+      [
+        "Language Use",
+        "4.0",
+        "ok"
+      ],
+      [
+        "Mechanics",
+        "4.5",
+        "ok"
+      ]
+    ],
+    "task": "Your professor asks: Can social media be used effectively as a tool for educational purposes? Why or why not? Express and support your opinion and contribute to the discussion in your own words.",
+    "q": "\"Academic Discussion — Social media in education\"",
+    "fb": "See the numbered notes below.",
+    "weak": "保持统一的半正式语气。建议练习\"邮件语气统一\"专项。"
+  }
+}
