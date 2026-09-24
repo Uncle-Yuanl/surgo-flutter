@@ -96,19 +96,10 @@ class _AuthOtpPageState extends State<AuthOtpPage> {
                   key: const ValueKey('auth-otp-continue'),
                   onTap: () => app.go(SurgoPage.authCongrats)),
               const SizedBox(height: 18),
-              GestureDetector(
+              AuthInlineLink(
                   key: const ValueKey('auth-otp-resend'),
-                  onTap: () {},
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SourceText('Didn’t receive code? ',
-                            style: AuthTokens.text(color: AuthTokens.muted)),
-                        SourceText('Resend Code',
-                            style: AuthTokens.text(
-                                color: AuthTokens.accent,
-                                weight: FontWeight.w700)),
-                      ])),
+                  prefix: 'Didn’t receive code? ',
+                  link: 'Resend Code'),
             ]));
   }
 }
@@ -178,6 +169,19 @@ class _AuthCongratsPageState extends State<AuthCongratsPage> {
               ]))));
 
   @override
-  Widget build(BuildContext context) => const ColoredBox(
-      key: ValueKey('auth-congrats'), color: Color(0xfffcf8f5));
+  Widget build(BuildContext context) => Padding(
+      key: const ValueKey('auth-congrats'),
+      padding: const EdgeInsets.symmetric(horizontal: AuthTokens.pad),
+      child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Image.asset('assets/images/auth/congrats.png',
+            width: 199, height: 172, fit: BoxFit.contain),
+        const SizedBox(height: 18),
+        SourceText('Congratulations!',
+            style: AuthTokens.text(size: 20, weight: FontWeight.w700)),
+        const SizedBox(height: 12),
+        SourceText(
+            '"Account successfully created. Choose your region and language～',
+            textAlign: TextAlign.center,
+            style: AuthTokens.text(color: AuthTokens.muted, height: 1.55)),
+      ]));
 }

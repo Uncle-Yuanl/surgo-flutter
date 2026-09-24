@@ -168,8 +168,40 @@ class AuthAltButton extends StatelessWidget {
               Icon(icon, size: 18, color: Colors.black),
               const SizedBox(width: 12),
             ],
-            SourceText(label, style: AuthTokens.text(height: 18.2 / 14)),
+            // "Continue with Phone number" 在测试字体下比设计字体更宽，
+            // 用 Flexible 收住，避免撑破固定高度的按钮。
+            Flexible(
+                child: SourceText(label,
+                    maxLines: 1,
+                    style: AuthTokens.text(height: 18.2 / 14))),
           ])));
+}
+
+/// "前缀 + 高亮链接" 一行（Don't have an account? Register）。
+///
+/// 用 RichText 而不是两个并排的 Text —— 后者在字宽变化时会撑破 Row。
+class AuthInlineLink extends StatelessWidget {
+  const AuthInlineLink(
+      {super.key, required this.prefix, required this.link, this.onTap});
+
+  final String prefix, link;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) => GestureDetector(
+      onTap: onTap,
+      behavior: HitTestBehavior.opaque,
+      child: SourceText.rich(
+          TextSpan(children: [
+            TextSpan(
+                text: prefix,
+                style: AuthTokens.text(color: AuthTokens.muted)),
+            TextSpan(
+                text: link,
+                style: AuthTokens.text(
+                    color: AuthTokens.accent, weight: FontWeight.w700)),
+          ]),
+          textAlign: TextAlign.center));
 }
 
 /// 左上角圆形返回键（48×48 浅底 + 左箭头）。
@@ -179,16 +211,21 @@ class AuthBack extends StatelessWidget {
   final VoidCallback? onTap;
 
   @override
-  Widget build(BuildContext context) => GestureDetector(
-      onTap: onTap,
-      behavior: HitTestBehavior.opaque,
-      child: Container(
-          width: 48,
-          height: 48,
-          alignment: Alignment.center,
-          decoration: const BoxDecoration(
-              shape: BoxShape.circle, color: AuthTokens.field),
-          child: const Icon(Icons.arrow_back, size: 20, color: Colors.black)));
+  Widget build(BuildContext context) => Align(
+      // 外层常是 CrossAxisAlignment.stretch，会把 48×48 拉成整行宽，
+      // 导致箭头被 Container 的 center 推到页面正中。这里钉在左侧。
+      alignment: Alignment.centerLeft,
+      child: GestureDetector(
+          onTap: onTap,
+          behavior: HitTestBehavior.opaque,
+          child: Container(
+              width: 48,
+              height: 48,
+              alignment: Alignment.center,
+              decoration: const BoxDecoration(
+                  shape: BoxShape.circle, color: AuthTokens.field),
+              child: const Icon(Icons.arrow_back,
+                  size: 20, color: Colors.black))));
 }
 
 /// 验证码格子：一格一位，已填黄底，当前位显示竖线光标。
@@ -203,10 +240,11 @@ class AuthOtpBoxes extends StatelessWidget {
   Widget build(BuildContext context) =>
       Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         for (var i = 0; i < length; i++)
-          Container(
+          Expanded(
+              child: Container(
               key: ValueKey('auth-otp-$i'),
-              width: 70,
               height: 60,
+              margin: EdgeInsets.only(right: i == length - 1 ? 0 : 10),
               alignment: Alignment.center,
               decoration: BoxDecoration(
                   color: i < digits.length
@@ -219,6 +257,6 @@ class AuthOtpBoxes extends StatelessWidget {
                       weight: FontWeight.w700,
                       color: i < digits.length
                           ? Colors.black
-                          : AuthTokens.muted))),
+                          : AuthTokens.muted)))),
       ]);
 }

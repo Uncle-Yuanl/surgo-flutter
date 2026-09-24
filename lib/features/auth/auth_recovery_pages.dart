@@ -30,12 +30,19 @@ class _AuthScaffold extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              AuthBack(onTap: () => app.go(back ?? SurgoPage.authSignIn)),
-              const SizedBox(height: 34),
-              SourceText(title,
-                  style: AuthTokens.text(size: 20, weight: FontWeight.w700)),
-              const SizedBox(height: 12),
+              // 设计稿：返回键与页面标题同一行。
+              Row(children: [
+                AuthBack(onTap: () => app.go(back ?? SurgoPage.authSignIn)),
+                const SizedBox(width: 14),
+                Expanded(
+                    child: SourceText(title,
+                        maxLines: 1,
+                        style: AuthTokens.text(
+                            size: 20, weight: FontWeight.w700))),
+              ]),
+              const SizedBox(height: 22),
               SourceText(desc,
+                  textAlign: TextAlign.center,
                   style:
                       AuthTokens.text(color: AuthTokens.muted, height: 1.6)),
               const SizedBox(height: 28),
@@ -90,8 +97,8 @@ class AuthCheckEmailPage extends StatelessWidget {
         children: [
           Center(
               child: Image.asset('assets/images/auth/check_email.png',
-                  width: 220, height: 220, fit: BoxFit.contain)),
-          const SizedBox(height: 24),
+                  width: 300, height: 300, fit: BoxFit.contain)),
+          const SizedBox(height: 18),
           AuthButton('Open Email App',
               key: const ValueKey('auth-check-open'),
               onTap: () => app.go(SurgoPage.authResetEmail)),
@@ -216,8 +223,9 @@ class _AuthNewPasswordPageState extends State<AuthNewPasswordPage> {
                                 size: 11, color: Color(0xff1a1a1a))
                             : null),
                     const SizedBox(width: 10),
-                    SourceText('Remember me',
-                        style: AuthTokens.text(color: AuthTokens.hint)),
+                    Expanded(
+                        child: SourceText('Remember me',
+                            style: AuthTokens.text(color: AuthTokens.hint))),
                   ])),
               const SizedBox(height: 26),
               AuthButton('Continue',

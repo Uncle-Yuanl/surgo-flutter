@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T00:33:49.496667+08:00",
+  "generated": "2026-09-25T03:55:30.490830+08:00",
   "allPassed": true,
   "originalHashes": {
     "app.js": "21a8e34203c3376a36afbfad6e8152adc9c6edccf064704d77780ec97300eb32",
@@ -27,7 +27,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.03,
+      "seconds": 0.02,
       "log": "export_ielts_listening.log"
     },
     {
@@ -38,7 +38,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.03,
+      "seconds": 0.02,
       "log": "export_ielts_mock_listening.log"
     },
     {
@@ -93,7 +93,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.03,
+      "seconds": 0.02,
       "log": "export_oral_daily.log"
     },
     {
@@ -115,7 +115,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.03,
+      "seconds": 0.02,
       "log": "export_reading_feedback.log"
     },
     {
@@ -148,7 +148,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.03,
+      "seconds": 0.02,
       "log": "export_task_brief.log"
     },
     {
@@ -181,7 +181,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.03,
+      "seconds": 0.02,
       "log": "export_tf_listening_mock.log"
     },
     {
@@ -214,7 +214,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.03,
+      "seconds": 0.02,
       "log": "export_tf_speaking_daily.log"
     },
     {
@@ -312,7 +312,7 @@
         "analyze"
       ],
       "exit": 0,
-      "seconds": 34.21,
+      "seconds": 43.77,
       "log": "analyze.log"
     },
     {
@@ -324,7 +324,7 @@
         "expanded"
       ],
       "exit": 0,
-      "seconds": 47.8,
+      "seconds": 64.99,
       "log": "test.log"
     },
     {
@@ -347,7 +347,7 @@
         "--no-web-resources-cdn"
       ],
       "exit": 0,
-      "seconds": 22.91,
+      "seconds": 25.18,
       "log": "build_web.log"
     }
   ]

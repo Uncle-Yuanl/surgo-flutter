@@ -79,27 +79,21 @@ class _AuthSignUpPageState extends State<AuthSignUpPage> {
                                 size: 11, color: Color(0xff1a1a1a))
                             : null),
                     const SizedBox(width: 10),
-                    SourceText('I agree with Terms & Condition',
-                        style: AuthTokens.text(color: AuthTokens.hint)),
+                    // 文字占满剩余宽度：窄屏或字体回落导致字宽膨胀时不会撑破 Row。
+                    Expanded(
+                        child: SourceText('I agree with Terms & Condition',
+                            style: AuthTokens.text(color: AuthTokens.hint))),
                   ])),
               const SizedBox(height: 22),
               AuthButton('Signup',
                   key: const ValueKey('auth-signup-submit'),
                   onTap: () => app.go(SurgoPage.authOtp)),
               const SizedBox(height: 18),
-              GestureDetector(
+              AuthInlineLink(
                   key: const ValueKey('auth-signup-signin'),
-                  onTap: () => app.go(SurgoPage.authSignIn),
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SourceText('have an account? ',
-                            style: AuthTokens.text(color: AuthTokens.muted)),
-                        SourceText('Sign In',
-                            style: AuthTokens.text(
-                                color: AuthTokens.accent,
-                                weight: FontWeight.w700)),
-                      ])),
+                  prefix: 'have an account? ',
+                  link: 'Sign In',
+                  onTap: () => app.go(SurgoPage.authSignIn)),
             ]));
   }
 }
@@ -148,7 +142,8 @@ class _AuthSignInPageState extends State<AuthSignInPage> {
                       size: 16, color: AuthTokens.muted)),
               const SizedBox(height: 22),
               Row(children: [
-                GestureDetector(
+                Expanded(
+                    child: GestureDetector(
                     key: ValueKey('auth-signin-remember-$tag'),
                     onTap: () => setState(() => remember = !remember),
                     behavior: HitTestBehavior.opaque,
@@ -167,10 +162,12 @@ class _AuthSignInPageState extends State<AuthSignInPage> {
                                   size: 11, color: Color(0xff1a1a1a))
                               : null),
                       const SizedBox(width: 10),
-                      SourceText('Remember me',
-                          style: AuthTokens.text(color: AuthTokens.hint)),
-                    ])),
-                const Spacer(),
+                      Expanded(
+                          child: SourceText('Remember me',
+                              style:
+                                  AuthTokens.text(color: AuthTokens.hint))),
+                    ]))),
+                const SizedBox(width: 10),
                 GestureDetector(
                     key: ValueKey('auth-signin-forgot-$tag'),
                     onTap: () => app.go(SurgoPage.authForgot),

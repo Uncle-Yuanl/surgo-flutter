@@ -127,20 +127,11 @@ class AuthWelcomePage extends StatelessWidget {
                     icon: Icons.apple,
                     onTap: () => app.go(SurgoPage.authSignIn)),
                 const SizedBox(height: 16),
-                GestureDetector(
+                AuthInlineLink(
                     key: const ValueKey('auth-welcome-register'),
-                    onTap: () => app.go(SurgoPage.authSignUp),
-                    child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          SourceText('Don’t have an account? ',
-                              style:
-                                  AuthTokens.text(color: AuthTokens.muted)),
-                          SourceText('Register',
-                              style: AuthTokens.text(
-                                  color: AuthTokens.accent,
-                                  weight: FontWeight.w700)),
-                        ])),
+                    prefix: 'Don’t have an account? ',
+                    link: 'Register',
+                    onTap: () => app.go(SurgoPage.authSignUp)),
               ])),
     ]);
   }

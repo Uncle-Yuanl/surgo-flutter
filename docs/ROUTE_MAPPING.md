@@ -147,3 +147,23 @@
 |`vocabDone`|`lib/features/vocab_quiz/vocab_done_view.dart`<br>`lib/features/vocab_quiz/vocab_quiz_module.dart`<br>`lib/features/vocab_quiz/vocab_test_views.dart`<br>`lib/features/vocab_tiers/vocab_tiers_module.dart`<br>`lib/features/vocab_words/book_list_view.dart`|
 |`prep`|`lib/features/profile/profile_page.dart`|
 |`examTimer`|`lib/features/legacy_entry/module.dart`|
+
+## 新增：登录注册（Figma gW9DKhEd6UuQQAnv32BlXH · Page 5）
+
+原型 H5 里没有这批页面，属于新增设计稿，共13条。
+
+|路由|原生Widget文件|
+|---|---|
+|`authSplash`|`lib/features/auth/auth_entry_pages.dart`|
+|`authSignUp`|`lib/features/auth/auth_form_pages.dart`<br>`lib/features/auth/auth_kit.dart`|
+|`authError`|`lib/features/auth/auth_entry_pages.dart`<br>`lib/features/auth/auth_kit.dart`|
+|`authWelcome`|`lib/features/auth/auth_entry_pages.dart`<br>`lib/features/auth/auth_kit.dart`|
+|`authOtp`|`lib/features/auth/auth_kit.dart`<br>`lib/features/auth/auth_result_pages.dart`|
+|`authCongrats`|`lib/features/auth/auth_kit.dart`<br>`lib/features/auth/auth_result_pages.dart`|
+|`authForgot`|`lib/features/auth/auth_kit.dart`<br>`lib/features/auth/auth_recovery_pages.dart`|
+|`authCheckEmail`|`lib/features/auth/auth_kit.dart`<br>`lib/features/auth/auth_recovery_pages.dart`|
+|`authResetEmail`|`lib/features/auth/auth_kit.dart`<br>`lib/features/auth/auth_recovery_pages.dart`|
+|`authResetPhone`|`lib/features/auth/auth_kit.dart`<br>`lib/features/auth/auth_recovery_pages.dart`|
+|`authNewPassword`|`lib/features/auth/auth_kit.dart`<br>`lib/features/auth/auth_recovery_pages.dart`|
+|`authSignIn`|`lib/features/auth/auth_form_pages.dart`<br>`lib/features/auth/auth_kit.dart`|
+|`authSignInAlt`|`lib/features/auth/auth_form_pages.dart`<br>`lib/features/auth/auth_kit.dart`|

@@ -10,7 +10,14 @@ import 'package:surgo_flutter/app/routes.dart';
 void main() {
   group('页面清单与原型对齐', () {
     test('页面总数是 141（原型 V 注册表条目数）', () {
-      expect(SurgoPage.values.length, 141);
+      // 用户 2026-09-25：新增 13 个登录注册页（Figma gW9DKhEd6UuQQAnv32BlXH · Page 5）。
+      // 原型 app.js 里没有这批页面，所以它们不计入 141。
+      // 这条断言守的仍然是「原型页面一个不少、一个不多」——把新增页排除后再比。
+      final prototype =
+          SurgoPage.values.where((p) => !kAuthPages.contains(p)).toList();
+      expect(prototype.length, 141);
+      expect(kAuthPages.length, 13);
+      expect(SurgoPage.values.length, 141 + 13);
     });
 
     test('页面键唯一', () {

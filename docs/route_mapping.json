@@ -1034,5 +1034,95 @@
     "files": [
       "lib/features/legacy_entry/module.dart"
     ]
+  },
+  {
+    "route": "authSplash",
+    "files": [
+      "lib/features/auth/auth_entry_pages.dart"
+    ]
+  },
+  {
+    "route": "authSignUp",
+    "files": [
+      "lib/features/auth/auth_form_pages.dart",
+      "lib/features/auth/auth_kit.dart"
+    ]
+  },
+  {
+    "route": "authError",
+    "files": [
+      "lib/features/auth/auth_entry_pages.dart",
+      "lib/features/auth/auth_kit.dart"
+    ]
+  },
+  {
+    "route": "authWelcome",
+    "files": [
+      "lib/features/auth/auth_entry_pages.dart",
+      "lib/features/auth/auth_kit.dart"
+    ]
+  },
+  {
+    "route": "authOtp",
+    "files": [
+      "lib/features/auth/auth_kit.dart",
+      "lib/features/auth/auth_result_pages.dart"
+    ]
+  },
+  {
+    "route": "authCongrats",
+    "files": [
+      "lib/features/auth/auth_kit.dart",
+      "lib/features/auth/auth_result_pages.dart"
+    ]
+  },
+  {
+    "route": "authForgot",
+    "files": [
+      "lib/features/auth/auth_kit.dart",
+      "lib/features/auth/auth_recovery_pages.dart"
+    ]
+  },
+  {
+    "route": "authCheckEmail",
+    "files": [
+      "lib/features/auth/auth_kit.dart",
+      "lib/features/auth/auth_recovery_pages.dart"
+    ]
+  },
+  {
+    "route": "authResetEmail",
+    "files": [
+      "lib/features/auth/auth_kit.dart",
+      "lib/features/auth/auth_recovery_pages.dart"
+    ]
+  },
+  {
+    "route": "authResetPhone",
+    "files": [
+      "lib/features/auth/auth_kit.dart",
+      "lib/features/auth/auth_recovery_pages.dart"
+    ]
+  },
+  {
+    "route": "authNewPassword",
+    "files": [
+      "lib/features/auth/auth_kit.dart",
+      "lib/features/auth/auth_recovery_pages.dart"
+    ]
+  },
+  {
+    "route": "authSignIn",
+    "files": [
+      "lib/features/auth/auth_form_pages.dart",
+      "lib/features/auth/auth_kit.dart"
+    ]
+  },
+  {
+    "route": "authSignInAlt",
+    "files": [
+      "lib/features/auth/auth_form_pages.dart",
+      "lib/features/auth/auth_kit.dart"
+    ]
   }
 ]
