@@ -28,13 +28,13 @@ class AuthSplashPage extends StatelessWidget {
         // 黑 logo 压在建筑群上同样发糊。所以在白 logo 下面垫一层模糊的黑色剪影：
         // 用 ColorFiltered 把同一张图染黑再模糊，得到贴合形状的阴影
         // （BoxShadow 只按矩形盒子投影，透明 PNG 会出现方形暗块，不能用）。
-        // 用户 2026-09-25：logo 上移 150px，完全进入蓝天区域。
+        // 用户 2026-09-25：logo 上移 200px（先 150，再追加 50）。
         // 实测原先居中（中心 y=422）时 SURGO 压在亮白石碑上，上移 50px（y=372）
         // 只是换成压玻璃幕墙，对比度改善有限；150px 才真正进到干净的天空里。
         Align(
             alignment: Alignment.center,
             child: Transform.translate(
-                offset: const Offset(0, -150),
+                offset: const Offset(0, -200),
                 child: SizedBox(
                 width: 140,
                 height: 140 * 607 / 595,
