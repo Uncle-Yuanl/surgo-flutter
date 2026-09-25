@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T03:55:30.490830+08:00",
+  "generated": "2026-09-25T13:19:18.773307+08:00",
   "allPassed": true,
   "originalHashes": {
     "app.js": "21a8e34203c3376a36afbfad6e8152adc9c6edccf064704d77780ec97300eb32",
@@ -16,7 +16,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.09,
+      "seconds": 0.03,
       "log": "export_continue.log"
     },
     {
@@ -27,7 +27,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.02,
+      "seconds": 0.03,
       "log": "export_ielts_listening.log"
     },
     {
@@ -38,7 +38,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.02,
+      "seconds": 0.03,
       "log": "export_ielts_mock_listening.log"
     },
     {
@@ -49,7 +49,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.02,
+      "seconds": 0.03,
       "log": "export_ielts_mock_reading.log"
     },
     {
@@ -93,7 +93,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.02,
+      "seconds": 0.03,
       "log": "export_oral_daily.log"
     },
     {
@@ -126,7 +126,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.07,
+      "seconds": 0.08,
       "log": "export_source.log"
     },
     {
@@ -148,7 +148,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.02,
+      "seconds": 0.03,
       "log": "export_task_brief.log"
     },
     {
@@ -214,7 +214,7 @@
         "--check"
       ],
       "exit": 0,
-      "seconds": 0.02,
+      "seconds": 0.03,
       "log": "export_tf_speaking_daily.log"
     },
     {
@@ -312,7 +312,7 @@
         "analyze"
       ],
       "exit": 0,
-      "seconds": 43.77,
+      "seconds": 35.66,
       "log": "analyze.log"
     },
     {
@@ -324,7 +324,7 @@
         "expanded"
       ],
       "exit": 0,
-      "seconds": 64.99,
+      "seconds": 33.56,
       "log": "test.log"
     },
     {
@@ -334,7 +334,7 @@
         "/Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/tool/generate_route_mapping.py"
       ],
       "exit": 0,
-      "seconds": 0.08,
+      "seconds": 0.06,
       "log": "route_mapping.log"
     },
     {
@@ -347,7 +347,7 @@
         "--no-web-resources-cdn"
       ],
       "exit": 0,
-      "seconds": 25.18,
+      "seconds": 18.72,
       "log": "build_web.log"
     }
   ]

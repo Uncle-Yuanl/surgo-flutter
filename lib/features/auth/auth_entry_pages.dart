@@ -72,18 +72,18 @@ class AuthWelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final app = context.read<AppState>();
     return Column(children: [
-      // 上半区是设计稿里的插画位。插画素材未随稿提供，这里留同色占位，
-      // 不臆造图形；接入真图时替换这一块即可。
+      // 用户 2026-09-25：上半区换成桌面素材 3333.png（SURGO 校园插画，941x1672 竖图）。
       Expanded(
           child: Container(
               width: double.infinity,
               color: AuthTokens.field,
-              alignment: Alignment.center,
-              child: SourceText('Surgo',
-                  style: AuthTokens.text(
-                      size: 32,
-                      weight: FontWeight.w400,
-                      color: AuthTokens.hint)))),
+              child: Image.asset('assets/images/auth/welcome_hero.jpg',
+                  fit: BoxFit.cover,
+                  // 竖构图（941x1672）。裁切位越小＝取景越靠上＝画面内容视觉下移，
+                  // 且始终铺满不留白（平移会露底色，所以用 alignment 而非 translate）。
+                  alignment: const Alignment(0, .05),
+                  width: double.infinity,
+                  height: double.infinity))),
       Container(
           width: double.infinity,
           decoration: const BoxDecoration(

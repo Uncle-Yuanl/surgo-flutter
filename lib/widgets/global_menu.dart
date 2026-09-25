@@ -123,9 +123,11 @@ class GlobalMenu extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 17, color: Color(0xFF6B7078))),
                             onTap: () => go(SurgoPage.prep)),
+                        // 用户 2026-09-25：退出登录后回到开屏页（原来去的是选科页 exam）。
                         _row(Icons.logout, zh ? '退出登录' : 'Log out',
                             const SizedBox.shrink(),
-                            danger: true, onTap: () => go(SurgoPage.exam)),
+                            danger: true,
+                            onTap: () => go(SurgoPage.authSplash)),
                       ])));
   }
 

@@ -93,7 +93,11 @@ class _PhoneBodyState extends State<_PhoneBody> {
         fontFamilyFallback:SurgoFontFamily.fallback,fontSize:14,
         height:kTextHeightNone,letterSpacing:0,color:SurgoColors.ink),
       child:Stack(children:[
-      Positioned.fill(top:SurgoDevice.statusBarHeight,child:AnimatedSwitcher(
+      // 用户 2026-09-25：欢迎页的插画要铺到状态栏后面。
+      // 状态栏图（status_bar.png）是透明 PNG，所以让这一页从 top:0 起画，
+      // 时间与信号图标就浮在插画上。只放开这一页 —— 其余登录页与 141 条原型路由
+      // 仍从 52px 起，避免内容被状态栏压住。
+      Positioned.fill(top:page==SurgoPage.authWelcome?0:SurgoDevice.statusBarHeight,child:AnimatedSwitcher(
         duration:const Duration(milliseconds:300),
         // Default AnimatedSwitcher centers short children. H5 .screen always
         // fills the viewport; retain tight bounds even when a page fits.

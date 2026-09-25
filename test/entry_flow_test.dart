@@ -43,7 +43,8 @@ void main(){
     await tap(t,find.text('Profile'));
     expect(find.byType(ProfilePage),findsOneWidget);
     await tap(t,find.byKey(const ValueKey('profile-logout')));
-    expect(state.current,SurgoPage.exam);expect(t.takeException(),isNull);
+    // 用户 2026-09-25：退出登录回到开屏页（原型此处去的是选科页 exam）。
+    expect(state.current,SurgoPage.authSplash);expect(t.takeException(),isNull);
   });
   testWidgets('notification fixture opens report and subscription toggles', (t) async {
     final state=await pump(t,page:SurgoPage.ielts);

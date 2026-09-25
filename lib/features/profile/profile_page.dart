@@ -154,7 +154,10 @@ class ProfilePage extends StatelessWidget {
       GestureDetector(
           behavior: HitTestBehavior.opaque,
           key: const ValueKey('profile-logout'),
-          onTap: () => state.go(SurgoPage.exam),
+          // 用户 2026-09-25：退出登录后回到开屏页。
+          // 原型这里去的是选科页（exam），现在有了登录注册流程，改为开屏页，
+          // 与全局菜单里的「退出登录」保持一致。
+          onTap: () => state.go(SurgoPage.authSplash),
           child: const Padding(
               padding: EdgeInsets.only(top: 20, bottom: 8),
               child: T('退出登录',

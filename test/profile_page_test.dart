@@ -44,9 +44,12 @@ void main(){
     final state=await pump(tester);
     await tester.ensureVisible(find.byKey(const ValueKey('profile-logout')));
     await tester.tap(find.byKey(const ValueKey('profile-logout')));await tester.pump();
-    expect(state.current,SurgoPage.exam);
+    // 用户 2026-09-25：退出登录回到开屏页（原型此处去的是选科页 exam）。
+    expect(state.current,SurgoPage.authSplash);
+    // 退出后个人中心已不在视图里，返回键要重新挂载页面才能验证。
+    final back=await pump(tester);
     await tester.ensureVisible(find.byKey(const ValueKey('profile-back')));
     await tester.tap(find.byKey(const ValueKey('profile-back')));await tester.pump();
-    expect(state.current,SurgoPage.ielts);
+    expect(back.current,SurgoPage.ielts);
   });
 }
