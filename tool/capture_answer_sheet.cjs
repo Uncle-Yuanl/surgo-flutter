@@ -39,9 +39,12 @@ async function main() {
       await wait(120);
     }
   }
-  await send('Input.dispatchMouseEvent', { type: 'mousePressed', button: 'left', clickCount: 1, x: Number(cx), y: Number(cy) });
-  await send('Input.dispatchMouseEvent', { type: 'mouseReleased', button: 'left', clickCount: 1, x: Number(cx), y: Number(cy) });
-  await wait(900);
+  // 坐标传 -1 表示只截图不点击 —— 开屏页点一下就会跳走，必须跳过点击。
+  if (Number(cx) >= 0 && Number(cy) >= 0) {
+    await send('Input.dispatchMouseEvent', { type: 'mousePressed', button: 'left', clickCount: 1, x: Number(cx), y: Number(cy) });
+    await send('Input.dispatchMouseEvent', { type: 'mouseReleased', button: 'left', clickCount: 1, x: Number(cx), y: Number(cy) });
+    await wait(900);
+  }
   const shot = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false, clip: { x: 0, y: 0, width: 390, height: 844, scale: 1 } });
   fs.mkdirSync(path.dirname(path.join(ROOT, out)), { recursive: true });
   fs.writeFileSync(path.join(ROOT, out), Buffer.from(shot.data, 'base64'));

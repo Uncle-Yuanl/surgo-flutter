@@ -7,7 +7,10 @@ import '../../theme/tokens.dart';
 import '../../widgets/source_text.dart';
 import 'auth_kit.dart';
 
-/// Figma 40:363 "80" —— 黄底启动页，居中品牌名。
+/// Figma 40:363 "80" —— 黄底启动页。
+///
+/// 用户 2026-09-25：品牌文字换成桌面 icon/logo.jpg（已抠白转透明 PNG）；
+/// 黄色要连状态栏一起铺满（shell 对本页从 top:0 起画）。
 class AuthSplashPage extends StatelessWidget {
   const AuthSplashPage({super.key});
 
@@ -17,14 +20,9 @@ class AuthSplashPage extends StatelessWidget {
       onTap: () => context.read<AppState>().go(SurgoPage.authWelcome),
       child: ColoredBox(
           color: AuthTokens.accent,
-          child: const Center(
-              child: SourceText('Surgo',
-                  style: TextStyle(
-                      fontFamily: AuthTokens.family,
-                      fontFamilyFallback: SurgoFontFamily.fallback,
-                      fontSize: 32,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.black)))));
+          child: Center(
+              child: Image.asset('assets/images/auth/logo.png',
+                  width: 190, fit: BoxFit.contain))));
 }
 
 /// Figma 40:472 "错误页面" —— 加载失败 + RETRY。

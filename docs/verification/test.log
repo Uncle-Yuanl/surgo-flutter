@@ -1,89 +1,88 @@
 00:00 +0: loading /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart
 00:00 +0: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: (setUpAll)
-00:00 +0: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_ready_intro_test.dart: (setUpAll)
 00:00 +0: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: card selection alone does not switch exam; arrow enters selected exam
 00:00 +1: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: card selection alone does not switch exam; arrow enters selected exam
 00:00 +2: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: card selection alone does not switch exam; arrow enters selected exam
 00:00 +3: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: card selection alone does not switch exam; arrow enters selected exam
-00:00 +4: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: card selection alone does not switch exam; arrow enters selected exam
-00:00 +5: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: card selection alone does not switch exam; arrow enters selected exam
-00:00 +6: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: card selection alone does not switch exam; arrow enters selected exam
-00:00 +7: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
-00:00 +8: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
-00:00 +9: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
-00:00 +10: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
-00:00 +11: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
-00:00 +12: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:00 +13: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:00 +14: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:00 +15: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:00 +16: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +17: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +18: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +19: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +20: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +21: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +22: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +23: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +24: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +25: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +26: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +27: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +28: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +29: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +30: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +31: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +32: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +33: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +34: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +35: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +36: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +37: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
+00:00 +4: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_ready_intro_test.dart: list pages keep their full-page layout
+00:00 +5: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: settings language -> exam switch -> profile -> logout
+00:00 +6: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: settings language -> exam switch -> profile -> logout
+00:00 +7: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: settings language -> exam switch -> profile -> logout
+00:00 +8: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/entry_flow_test.dart: settings language -> exam switch -> profile -> logout
+00:00 +9: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_home_test.dart: 页面内容 fixture 逐字呈现 hero / 统计 / 复习 / 单词本 / 分级文案全部出现
+00:01 +10: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +11: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +12: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +13: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +14: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +15: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +16: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +17: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +18: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +19: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +20: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +21: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +22: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +23: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +24: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +25: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +26: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +27: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +28: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +29: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +30: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +31: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +32: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +33: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +34: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +35: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +36: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
+00:01 +37: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_visual_revision_test.dart: zh pronunciation uses fixed home and source round controls; recording/judgment unchanged
 00:01 +38: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
 00:01 +39: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
 00:01 +40: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
 00:01 +41: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
 00:01 +42: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
 00:01 +43: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
-00:01 +44: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/training_wizards_test.dart: TOEFL 向导：listening/writing/speaking 始终先进 tfBrief，vocab 无托福版式 托福默认选择：sent / respond+std / retell
-00:01 +45: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 zh bounds, modules, draft and inactive source clock
-00:01 +46: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 zh bounds, modules, draft and inactive source clock
-00:01 +47: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_ready_sheet_test.dart: ready sheet keeps a margin from the phone edges
-00:02 +48: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_ready_sheet_test.dart: ready sheet keeps a margin from the phone edges
+00:01 +44: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
+00:01 +45: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 zh bounds, modules, draft and inactive source clock
+00:02 +46: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 zh bounds, modules, draft and inactive source clock
+00:02 +47: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 zh bounds, modules, draft and inactive source clock
+00:02 +48: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 zh bounds, modules, draft and inactive source clock
 00:02 +49: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_ready_sheet_test.dart: ready sheet keeps a margin from the phone edges
-00:02 +50: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_ready_sheet_test.dart: ready sheet keeps a margin from the phone edges
-00:02 +51: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh home white compact banner matches reference2 CTA overlaps IP
-00:02 +52: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh home white compact banner matches reference2 CTA overlaps IP
-00:02 +53: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh home white compact banner matches reference2 CTA overlaps IP
-00:02 +54: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh home white compact banner matches reference2 CTA overlaps IP
-00:02 +55: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh home white compact banner matches reference2 CTA overlaps IP
-00:02 +56: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
-00:02 +57: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
-00:02 +58: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
-00:02 +59: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
-00:02 +60: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
-00:03 +61: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
-00:03 +62: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
+00:02 +50: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
+00:02 +51: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
+00:02 +52: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
+00:02 +53: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
+00:03 +54: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
+00:03 +55: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_mock_test.dart: all 11 mock listening route bodies render natively at 390px
+00:03 +56: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh see all opens native page, back restores home, fixture opens report
+00:03 +57: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh see all opens native page, back restores home, fixture opens report
+00:03 +58: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh see all opens native page, back restores home, fixture opens report
+00:03 +59: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh see all opens native page, back restores home, fixture opens report
+00:03 +60: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh see all opens native page, back restores home, fixture opens report
+00:03 +61: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh see all opens native page, back restores home, fixture opens report
+00:03 +62: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh see all opens native page, back restores home, fixture opens report
 00:03 +63: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: zh see all opens native page, back restores home, fixture opens report
-00:03 +64: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_quiz_visual_test.dart: zh quiz node translation and all original branches
-00:03 +65: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 en bounds, modules, draft and inactive source clock
-00:03 +66: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 en bounds, modules, draft and inactive source clock
-00:03 +67: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_quiz_visual_test.dart: zh result true horizontal actions and fixed target
-00:03 +68: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: en see all opens native page, back restores home, fixture opens report
-00:03 +69: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: en see all opens native page, back restores home, fixture opens report
-00:03 +70: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: en see all opens native page, back restores home, fixture opens report
-00:03 +71: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: en see all opens native page, back restores home, fixture opens report
-00:03 +72: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose letter en bounds, modules, draft and inactive source clock
-00:03 +73: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose letter en bounds, modules, draft and inactive source clock
-00:03 +74: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose letter en bounds, modules, draft and inactive source clock
-00:03 +75: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_quiz_visual_test.dart: en intro source card, ruler and three exits
-00:03 +76: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_course_test.dart: pronCourse 页渲染与解锁规则 未完成：徽章 0/2、两模块均“未开始”
-00:03 +77: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_course_test.dart: pronCourse 页渲染与解锁规则 未完成：徽章 0/2、两模块均“未开始”
+00:03 +64: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 en bounds, modules, draft and inactive source clock
+00:03 +65: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t2 en bounds, modules, draft and inactive source clock
+00:03 +66: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/home_notifications_revision_test.dart: en home white compact banner matches reference2 CTA overlaps IP
+00:03 +67: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_quiz_visual_test.dart: zh result false horizontal actions and fixed target
+00:03 +68: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 en bounds, modules, draft and inactive source clock
+00:03 +69: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 en bounds, modules, draft and inactive source clock
+00:04 +70: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 en bounds, modules, draft and inactive source clock
+00:04 +71: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 en bounds, modules, draft and inactive source clock
+00:04 +72: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose t1 en bounds, modules, draft and inactive source clock
+00:04 +73: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_quiz_visual_test.dart: en quiz node translation and all original branches
+00:04 +74: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_quiz_visual_test.dart: en quiz node translation and all original branches
+00:04 +75: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_quiz_visual_test.dart: en quiz node translation and all original branches
+00:04 +76: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose letter en bounds, modules, draft and inactive source clock
+00:04 +77: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_compose_visual_test.dart: compose letter en bounds, modules, draft and inactive source clock
 00:04 +78: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_course_test.dart: pronCourse 页渲染与解锁规则 未完成：徽章 0/2、两模块均“未开始”
 00:04 +79: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_course_test.dart: pronCourse 页渲染与解锁规则 未完成：徽章 0/2、两模块均“未开始”
 00:04 +80: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_course_test.dart: pronCourse 页渲染与解锁规则 未完成：徽章 0/2、两模块均“未开始”
 00:04 +81: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_course_test.dart: pronCourse 页渲染与解锁规则 未完成：徽章 0/2、两模块均“未开始”
-00:04 +82: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_course_test.dart: pronCourse 页渲染与解锁规则 未完成：徽章 0/2、两模块均“未开始”
+00:04 +82: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review long essays use scoped licensed font and source dimensions
 00:04 +83: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review long essays use scoped licensed font and source dimensions
 00:04 +84: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review long essays use scoped licensed font and source dimensions
 00:04 +85: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review long essays use scoped licensed font and source dimensions
@@ -95,63 +94,62 @@
 00:04 +91: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review long essays use scoped licensed font and source dimensions
 00:04 +92: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review long essays use scoped licensed font and source dimensions
 00:04 +93: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review long essays use scoped licensed font and source dimensions
-00:04 +94: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review long essays use scoped licensed font and source dimensions
-00:04 +95: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review long essays use scoped licensed font and source dimensions
-00:04 +96: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/toefl_life_test.dart: all life question pages and source feedback render at390px
-00:05 +97: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
-00:05 +98: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
+00:05 +94: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/toefl_life_test.dart: all life question pages and source feedback render at390px
+00:05 +95: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/toefl_life_test.dart: all life question pages and source feedback render at390px
+00:05 +96: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/toefl_life_test.dart: all life question pages and source feedback render at390px
+00:05 +97: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review zh geometry and home navigation
+00:05 +98: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review zh geometry and home navigation
 00:05 +99: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
 00:05 +100: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
-00:05 +101: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
-00:05 +102: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
-00:05 +103: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
-00:05 +104: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
-00:05 +105: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
-00:05 +106: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
-00:05 +107: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
-00:05 +108: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
-00:05 +109: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: daily zh source content, banner geometry and highlights
-00:05 +110: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: daily zh source content, banner geometry and highlights
-00:05 +111: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review zh task1 tab switching with scroll reset
-00:05 +112: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review zh task1 tab switching with scroll reset
-00:05 +113: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock zh passage tabs reset source route and keep fixed score
+00:06 +101: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
+00:06 +102: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
+00:06 +103: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
+00:06 +104: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
+00:06 +105: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_listening_daily_test.dart: all8daily listening route bodies at390px
+00:06 +106: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock zh passage tabs reset source route and keep fixed score
+00:06 +107: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock zh passage tabs reset source route and keep fixed score
+00:06 +108: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock zh passage tabs reset source route and keep fixed score
+00:06 +109: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock zh passage tabs reset source route and keep fixed score
+00:06 +110: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock zh passage tabs reset source route and keep fixed score
+00:06 +111: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock zh passage tabs reset source route and keep fixed score
+00:06 +112: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock zh passage tabs reset source route and keep fixed score
+00:06 +113: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock zh passage tabs reset source route and keep fixed score
 00:06 +114: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review zh task1 task switching
 00:06 +115: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review zh task1 task switching
 00:06 +116: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock en passage tabs reset source route and keep fixed score
-00:06 +117: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock en passage tabs reset source route and keep fixed score
-00:06 +118: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: (setUpAll)
-00:06 +118: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/exam_exit_dialog_test.dart: exit dialog uses the shared sheet style, not AlertDialog
-00:06 +119: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/exam_exit_dialog_test.dart: exit dialog uses the shared sheet style, not AlertDialog
-00:06 +120: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/exam_exit_dialog_test.dart: exit dialog uses the shared sheet style, not AlertDialog
-00:06 +121: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/exam_exit_dialog_test.dart: exit dialog uses the shared sheet style, not AlertDialog
-00:06 +122: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:06 +123: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:06 +124: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:06 +125: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:06 +126: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:06 +127: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:06 +128: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:06 +117: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review zh task2 data and prompt from QuestionBank
+00:06 +118: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/reading_feedback_revision_test.dart: mock pills preserve source widths and input labels remain source nodes
+00:06 +119: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review zh task2 tab switching with scroll reset
+00:07 +120: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review zh task2 tab switching with scroll reset
+00:07 +121: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_visual_test.dart: review zh task2 task switching
+00:07 +122: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:07 +123: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:07 +124: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:07 +125: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:07 +126: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:07 +127: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:07 +128: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:07 +129: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:07 +130: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:07 +131: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:07 +132: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:07 +133: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:07 +134: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:07 +135: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:07 +136: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:07 +137: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:07 +138: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:07 +139: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:08 +130: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:08 +131: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:08 +132: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:08 +133: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:08 +134: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:08 +135: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:08 +136: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:08 +137: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:08 +138: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:08 +139: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:08 +140: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:08 +141: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:08 +142: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:08 +143: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:08 +144: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:08 +145: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:08 +146: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:08 +147: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:08 +148: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:08 +149: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:09 +144: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:09 +145: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:09 +146: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:09 +147: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:09 +148: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:09 +149: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:09 +150: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:09 +151: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:09 +152: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
@@ -159,140 +157,141 @@
 00:09 +154: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:09 +155: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:09 +156: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:09 +157: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:09 +158: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:09 +159: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:09 +160: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:09 +161: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:09 +162: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:09 +163: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:09 +164: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:09 +165: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:10 +157: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:10 +158: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:10 +159: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:10 +160: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:10 +161: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:10 +162: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:10 +163: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:10 +164: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:10 +165: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:10 +166: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:10 +167: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:10 +168: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:10 +169: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:10 +170: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:10 +171: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:10 +172: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:10 +173: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:11 +169: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:11 +170: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:11 +171: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:11 +172: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:11 +173: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:11 +174: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:11 +175: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:11 +176: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
 00:11 +177: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:11 +178: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
-00:11 +179: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_legacy_test.dart: writingImprove zh content fits390
-00:11 +180: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_legacy_test.dart: writingImprove zh content fits390
-00:11 +181: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
-00:11 +182: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
-00:11 +183: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
-00:11 +184: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
-00:11 +185: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
-00:11 +186: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
-00:11 +187: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
-00:11 +188: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
-00:11 +189: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
-00:11 +190: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
+00:12 +178: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:12 +179: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:12 +180: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:12 +181: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:12 +182: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:12 +183: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:12 +184: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_coverage_test.dart: audit every registered route at390px; write actual missing list
+00:12 +185: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
+00:12 +186: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
+00:12 +187: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
+00:12 +188: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
+00:12 +189: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
+00:12 +190: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
 00:12 +191: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
 00:12 +192: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: home continues or exits without marking; exit stops both clocks
-00:12 +193: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession zh: prepare60s no mic, manual enter retains notes
-00:12 +194: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession zh: prepare60s no mic, manual enter retains notes
-00:13 +195: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession zh: prepare60s no mic, manual enter retains notes
-00:13 +196: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession zh: prepare60s no mic, manual enter retains notes
-00:13 +197: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord zh vw layout and inert controls
-00:13 +198: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord zh vw layout and inert controls
-00:13 +199: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord zh vw layout and inert controls
-00:13 +200: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord zh vw layout and inert controls
-00:13 +201: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord zh vw layout and inert controls
-00:13 +202: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord zh vw layout and inert controls
-00:13 +203: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
-00:13 +204: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
-00:13 +205: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
-00:13 +206: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
-00:13 +207: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_study_visual_test.dart: vocabStudy3 zh: source layout and actions
-00:13 +208: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 oralExam en: prepare60s no mic, manual enter retains notes
-00:13 +209: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord2 zh vw layout and inert controls
-00:13 +210: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord2 zh vw layout and inert controls
-00:13 +211: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: Part 3 shows 10 rounds plus the examiner overall card
-00:13 +212: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: Part 3 shows 10 rounds plus the examiner overall card
-00:13 +213: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: Part 3 shows 10 rounds plus the examiner overall card
-00:13 +214: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: Part 3 shows 10 rounds plus the examiner overall card
-00:13 +215: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord3 zh vw layout and inert controls
-00:13 +216: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_study_visual_test.dart: vocabStudy4 en: source layout and actions
-00:13 +217: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_study_visual_test.dart: vocabStudy4 en: source layout and actions
-00:13 +218: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord3 en vw layout and inert controls
-00:13 +219: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord4 zh vw layout and inert controls
-00:14 +220: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord4 en vw layout and inert controls
+00:13 +193: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_study_visual_test.dart: vocabStudy zh: source layout and actions
+00:13 +194: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/mock_listening_lifecycle_test.dart: repeat Part4 submit resets 118s; marks only below zero
+00:13 +195: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
+00:13 +196: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
+00:13 +197: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
+00:13 +198: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
+00:13 +199: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
+00:14 +200: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
+00:14 +201: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: fixed speaking review renders every Part tab natively at 390px
+00:14 +202: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord zh vw layout and inert controls
+00:14 +203: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession zh: prepare60s no mic, manual enter retains notes
+00:14 +204: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession zh: prepare60s no mic, manual enter retains notes
+00:14 +205: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession zh: prepare60s no mic, manual enter retains notes
+00:14 +206: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession zh: prepare60s no mic, manual enter retains notes
+00:14 +207: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession zh: prepare60s no mic, manual enter retains notes
+00:14 +208: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: Part 3 shows 10 rounds plus the examiner overall card
+00:14 +209: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/speaking_review_test.dart: Part 3 shows 10 rounds plus the examiner overall card
+00:14 +210: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_study_visual_test.dart: vocabStudy4 en: source layout and actions
+00:14 +211: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession en: prepare60s no mic, manual enter retains notes
+00:14 +212: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession en: prepare60s no mic, manual enter retains notes
+00:14 +213: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 speakingSession en: prepare60s no mic, manual enter retains notes
+00:14 +214: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord3 zh vw layout and inert controls
+00:14 +215: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 oralExam zh: prepare60s no mic, manual enter retains notes
+00:14 +216: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 oralExam zh: prepare60s no mic, manual enter retains notes
+00:14 +217: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabWord4 zh vw layout and inert controls
+00:14 +218: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 oralExam en: prepare60s no mic, manual enter retains notes
+00:14 +219: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_part2_preparation_test.dart: Part2 oralExam en: prepare60s no mic, manual enter retains notes
+00:14 +220: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabPronWord zh vw layout and inert controls
 00:14 +221: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabPronWord zh vw layout and inert controls
-00:14 +222: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: Part1 source260ms speech then auto record; 10 turns then600ms Part2
-00:14 +223: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: Part1 source260ms speech then auto record; 10 turns then600ms Part2
-00:14 +224: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: Part1 source260ms speech then auto record; 10 turns then600ms Part2
-00:14 +225: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabPronWord2 en vw layout and inert controls
-00:14 +226: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabPronWord2 en vw layout and inert controls
-00:14 +227: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabPronWord2 en vw layout and inert controls
-00:14 +228: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: all three parts390: audio-only P1, cue notes P2, no extra next P3
-00:14 +229: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: all three parts390: audio-only P1, cue notes P2, no extra next P3
-00:14 +230: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: all three parts390: audio-only P1, cue notes P2, no extra next P3
-00:14 +231: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: all three parts390: audio-only P1, cue notes P2, no extra next P3
-00:14 +232: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: all three parts390: audio-only P1, cue notes P2, no extra next P3
-00:14 +233: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: all three parts390: audio-only P1, cue notes P2, no extra next P3
-00:14 +234: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_words_test.dart: selection state + route switching tapping a card records selection and navigates
-00:15 +235: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_plan_visual_test.dart: plan zh gated steps, source selection lifecycle and footer
-00:15 +236: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_plan_visual_test.dart: plan zh gated steps, source selection lifecycle and footer
-00:15 +237: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_plan_visual_test.dart: plan zh gated steps, source selection lifecycle and footer
-00:15 +238: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
-00:15 +239: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:15 +240: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:15 +241: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:15 +242: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:16 +243: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:16 +244: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:16 +245: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:16 +246: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:16 +247: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:16 +248: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:16 +249: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:16 +250: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:16 +251: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:16 +252: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:17 +253: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:17 +254: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:17 +255: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:17 +256: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:17 +257: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:17 +258: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:17 +259: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:17 +260: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:14 +222: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabPronWord en vw layout and inert controls
+00:14 +223: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabPronWord2 zh vw layout and inert controls
+00:14 +224: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/word_detail_visual_test.dart: vocabPronWord2 en vw layout and inert controls
+00:15 +225: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: (setUpAll)
+00:15 +225: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_speaking_test.dart: Part1 source260ms speech then auto record; 10 turns then600ms Part2
+00:15 +226: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:15 +227: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:15 +228: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:15 +229: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:15 +230: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:15 +231: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:15 +232: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:15 +233: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:15 +234: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:15 +235: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:16 +236: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:16 +237: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/book_list_visual_test.dart: book false zh source grid fixed nav cards and targets
+00:16 +238: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_plan_visual_test.dart: plan zh gated steps, source selection lifecycle and footer
+00:16 +239: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:16 +240: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:16 +241: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:16 +242: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:17 +243: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:17 +244: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:17 +245: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:17 +246: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:17 +247: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:17 +248: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:17 +249: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:17 +250: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:17 +251: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:18 +252: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:18 +253: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:18 +254: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:18 +255: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:18 +256: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:18 +257: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:18 +258: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:18 +259: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:18 +260: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:18 +261: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:18 +262: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:18 +263: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:18 +264: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:18 +265: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:18 +266: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +267: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +268: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +269: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +270: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +271: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +272: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +273: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +274: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +275: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +276: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +277: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +278: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +279: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:18 +280: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +267: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +268: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +269: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +270: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +271: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +272: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +273: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +274: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +275: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +276: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +277: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +278: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +279: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:19 +280: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:19 +281: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:19 +282: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:19 +283: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:19 +284: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:19 +285: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:19 +286: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:19 +287: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:19 +288: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:19 +289: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:19 +290: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:20 +284: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:20 +285: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:20 +286: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:20 +287: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:20 +288: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:20 +289: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:20 +290: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:20 +291: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:20 +292: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:20 +293: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
@@ -300,201 +299,203 @@
 00:20 +295: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:20 +296: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:20 +297: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +298: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +299: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +300: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +301: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +302: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +303: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +304: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +305: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +306: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +307: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +308: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +309: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +310: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +311: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +312: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +313: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +314: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +315: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +316: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:20 +317: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +298: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +299: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +300: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +301: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +302: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +303: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +304: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +305: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +306: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +307: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +308: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +309: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +310: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +311: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +312: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +313: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +314: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +315: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +316: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:21 +317: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:21 +318: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:21 +319: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:21 +320: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:21 +321: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:21 +322: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +323: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +324: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +325: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +326: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +327: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +328: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +329: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +330: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +331: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +332: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +333: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +334: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +335: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +336: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:21 +337: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +323: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +324: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +325: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +326: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +327: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +328: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +329: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +330: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +331: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +332: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +333: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +334: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +335: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +336: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:22 +337: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
 00:22 +338: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +339: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +340: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +341: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +342: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +343: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +344: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +345: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +346: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +347: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +348: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:22 +349: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:23 +350: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:23 +351: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:23 +352: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
-00:23 +353: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
-00:23 +354: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
-00:23 +355: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
-00:23 +356: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
-00:23 +357: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
-00:23 +358: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_visual_test.dart: vocabPronStudy zh source card and static state actions
-00:23 +359: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_visual_test.dart: vocabPronStudy zh source card and static state actions
-00:23 +360: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: learning report toefl/en renders all5states without zeros or overflow
-00:23 +361: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_visual_test.dart: vocabPronStudy2 zh source card and static state actions
-00:24 +362: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: radar selects only; skill row toggles evidence; sources explain5/90/30
-00:24 +363: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: radar selects only; skill row toggles evidence; sources explain5/90/30
-00:24 +364: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: radar selects only; skill row toggles evidence; sources explain5/90/30
-00:24 +365: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: radar selects only; skill row toggles evidence; sources explain5/90/30
-00:24 +366: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: radar selects only; skill row toggles evidence; sources explain5/90/30
-00:24 +367: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: radar selects only; skill row toggles evidence; sources explain5/90/30
-00:24 +368: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: radar selects only; skill row toggles evidence; sources explain5/90/30
-00:24 +369: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: radar selects only; skill row toggles evidence; sources explain5/90/30
-00:24 +370: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:24 +371: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:24 +372: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:24 +373: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:24 +374: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:24 +375: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:24 +376: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:24 +377: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:24 +378: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:25 +379: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:25 +380: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:25 +381: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:25 +382: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:25 +383: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
-00:25 +384: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 2 renders table + map svg at 390px
-00:25 +385: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 2 renders table + map svg at 390px
-00:25 +386: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail en source geometry, content, recall and exit
-00:25 +387: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail en source geometry, content, recall and exit
-00:25 +388: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail en source geometry, content, recall and exit
-00:25 +389: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail en source geometry, content, recall and exit
-00:25 +390: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail en source geometry, content, recall and exit
-00:25 +391: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +392: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +393: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +394: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +395: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +396: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +397: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +398: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +399: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +400: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +401: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +402: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 zh source geometry, content, recall and exit
-00:25 +403: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_book_test.dart: (setUpAll)
-00:25 +403: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 en source geometry, content, recall and exit
-00:25 +404: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 en source geometry, content, recall and exit
-00:25 +405: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 en source geometry, content, recall and exit
-00:25 +406: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 en source geometry, content, recall and exit
-00:25 +407: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 en source geometry, content, recall and exit
-00:25 +408: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 en source geometry, content, recall and exit
-00:25 +409: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 en source geometry, content, recall and exit
-00:25 +410: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail2 en source geometry, content, recall and exit
-00:25 +411: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_book_test.dart: list page interactions renders hero, stats, toolbar and both cards
-00:26 +412: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_book_test.dart: list page interactions renders hero, stats, toolbar and both cards
-00:26 +413: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
-00:26 +414: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: (setUpAll)
-00:26 +414: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_book_test.dart: list page interactions back arrow returns to vocab
-00:26 +415: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_book_test.dart: list page interactions back arrow returns to vocab
-00:26 +416: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_book_test.dart: list page interactions back arrow returns to vocab
-00:26 +417: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail4 zh source geometry, content, recall and exit
-00:26 +418: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail4 zh source geometry, content, recall and exit
-00:26 +419: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:26 +420: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:26 +421: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:26 +422: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:26 +423: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:26 +424: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:26 +425: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:26 +426: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:26 +427: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:27 +428: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:27 +429: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
-00:27 +430: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_test.dart: (setUpAll)
-00:27 +430: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_test.dart: fixed original Task1/Task2 and L1 feedback render at390px
-00:28 +431: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_test.dart: fixed original Task1/Task2 and L1 feedback render at390px
-00:28 +432: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_test.dart: fixed original Task1/Task2 and L1 feedback render at390px
-00:28 +433: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_test.dart: fixed original Task1/Task2 and L1 feedback render at390px
-00:28 +434: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_test.dart: fixed original Task1/Task2 and L1 feedback render at390px
-00:28 +435: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/report_page_test.dart: ReportPage renders with fixture data
-00:28 +436: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/report_page_test.dart: ReportPage renders with fixture data
-00:28 +437: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/report_page_test.dart: ReportPage renders with fixture data
-00:28 +438: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
-00:28 +439: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
-00:28 +440: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
-00:28 +441: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
-00:28 +442: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
-00:28 +443: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
-00:28 +444: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
-00:28 +445: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
-00:28 +446: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
-00:28 +447: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
-00:29 +448: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
-00:29 +449: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
-00:29 +450: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
-00:29 +451: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
-00:29 +452: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
-00:29 +453: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
-00:29 +454: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_quiz_test.dart: quiz grading — known / fuzzy / unknown paths (vocabTestQView) tapping A routes to Tier 2, tapping B routes to Tier 1
-00:29 +455: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +456: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +457: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +458: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +459: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +460: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +461: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +462: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +463: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +464: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +465: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +466: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +467: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +468: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +469: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:29 +470: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:30 +471: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:30 +472: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:30 +473: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:30 +474: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:30 +475: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
-00:30 +476: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_tiers_test.dart: tier page renders + navigation Tier 1 shows verbatim text and stat numbers
-00:30 +477: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: Part1 audio-only, no notes, record stop/retake/next at390px
-00:30 +478: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation renders the recall prompt, three buttons and word card
-00:30 +479: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation renders the recall prompt, three buttons and word card
-00:30 +480: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation renders the recall prompt, three buttons and word card
-00:30 +481: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation renders the recall prompt, three buttons and word card
-00:30 +482: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation renders the recall prompt, three buttons and word card
-00:30 +483: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation renders the recall prompt, three buttons and word card
-00:30 +484: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_tiers_test.dart: tier page renders + navigation 查看全部词汇 → routes to vocabBook
-00:30 +485: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: interview native bounds and controls
-00:30 +486: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation current detail route is recorded in session
-00:30 +487: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation current detail route is recorded in session
-00:30 +488: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation exit routes to vocab
-00:30 +489: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation recall buttons on vocabDetail route to vocabStudy3
-00:30 +490: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: rendering + navigation recall buttons on vocabDetail3 route to vocabDone
-00:30 +491: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_details_test.dart: (tearDownAll)
-00:30 +491: All tests passed!
+00:23 +339: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +340: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +341: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +342: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +343: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +344: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +345: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +346: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +347: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +348: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +349: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/route_bilingual_audit_test.dart: 141 routes x2 UI languages: loaded bodies and layout errors recorded
+00:23 +350: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
+00:23 +351: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
+00:24 +352: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
+00:24 +353: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
+00:24 +354: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
+00:24 +355: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_writing_test.dart: mock writing task switching retains drafts, first warning cannot submit
+00:24 +356: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_visual_test.dart: vocabPronStudy zh source card and static state actions
+00:24 +357: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_visual_test.dart: vocabPronStudy zh source card and static state actions
+00:24 +358: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_visual_test.dart: vocabPronStudy zh source card and static state actions
+00:24 +359: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_pron_visual_test.dart: vocabPronStudy zh source card and static state actions
+00:24 +360: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: learning report toefl/en renders all5states without zeros or overflow
+00:24 +361: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:24 +362: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:24 +363: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +364: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +365: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +366: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +367: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +368: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +369: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +370: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +371: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +372: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +373: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +374: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +375: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail zh source geometry, content, recall and exit
+00:25 +376: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: estimate modal closes both ways; goal edits report; advice and week selection
+00:25 +377: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/learning_report_integration_test.dart: estimate modal closes both ways; goal edits report; advice and week selection
+00:25 +378: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 1 page renders exact Qs at 390px with next button
+00:25 +379: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 1 page renders exact Qs at 390px with next button
+00:25 +380: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 1 page renders exact Qs at 390px with next button
+00:26 +381: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 1 page renders exact Qs at 390px with next button
+00:26 +382: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 1 page renders exact Qs at 390px with next button
+00:26 +383: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 1 page renders exact Qs at 390px with next button
+00:26 +384: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 1 page renders exact Qs at 390px with next button
+00:26 +385: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 1 page renders exact Qs at 390px with next button
+00:26 +386: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 1 page renders exact Qs at 390px with next button
+00:26 +387: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 1 page renders exact Qs at 390px with next button
+00:26 +388: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/pron_course_visual_revision_test.dart: en lesson has fixed 24px home, source pair rules and inner scroll
+00:26 +389: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 zh source geometry, content, recall and exit
+00:26 +390: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 zh source geometry, content, recall and exit
+00:26 +391: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 zh source geometry, content, recall and exit
+00:26 +392: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_listening_test.dart: Part 3 renders matching box + MC at 390px
+00:26 +393: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +394: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +395: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +396: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +397: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +398: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +399: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +400: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +401: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +402: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +403: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +404: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +405: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail3 en source geometry, content, recall and exit
+00:26 +406: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail4 zh source geometry, content, recall and exit
+00:27 +407: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: vocabDetail4 en source geometry, content, recall and exit
+00:27 +408: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_detail_visual_test.dart: (tearDownAll)
+00:27 +408: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: (setUpAll)
+00:27 +408: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: retell playback, overtime once, next retains source residual until begin
+00:27 +409: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: retell rendered play clock follows pos not total
+00:27 +410: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: retell rendered play clock follows pos not total
+00:27 +411: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: retell rendered play clock follows pos not total
+00:27 +412: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: retell rendered play clock follows pos not total
+00:27 +413: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: retell rendered play clock follows pos not total
+00:27 +414: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: retell rendered play clock follows pos not total
+00:27 +415: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: retell rendered play clock follows pos not total
+00:27 +416: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: retell rendered play clock follows pos not total
+00:27 +417: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_daily_test.dart: retell rendered play clock follows pos not total
+00:27 +418: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:27 +419: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +420: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +421: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +422: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +423: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +424: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +425: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +426: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +427: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +428: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +429: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +430: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +431: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +432: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_mock_reading_test.dart: all three passages390, answers survive switches, sheet drag works
+00:28 +433: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/report_page_test.dart: Radar chart renders with CustomPainter inside a 236x236 box
+00:28 +434: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/report_page_test.dart: Overall score calculation is correct
+00:28 +435: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/report_page_test.dart: (tearDownAll)
+00:28 +435: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_test.dart: (setUpAll)
+00:28 +435: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_test.dart: fixed original Task1/Task2 and L1 feedback render at390px
+00:29 +436: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_test.dart: fixed original Task1/Task2 and L1 feedback render at390px
+00:29 +437: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_review_test.dart: fixed original Task1/Task2 and L1 feedback render at390px
+00:29 +438: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_mock_test.dart: tfSpk1Q shell390 and noninitial speaking phases
+00:29 +439: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_mock_test.dart: tfSpk2Intro shell390 and noninitial speaking phases
+00:29 +440: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_mock_test.dart: tfSpk2Intro shell390 and noninitial speaking phases
+00:29 +441: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: task mapping and argument gate preserve source
+00:29 +442: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/tf_speaking_mock_test.dart: tfSpk2Brief shell390 and noninitial speaking phases
+00:29 +443: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:29 +444: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +445: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +446: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +447: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +448: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +449: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +450: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +451: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +452: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +453: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +454: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +455: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +456: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +457: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +458: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +459: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +460: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +461: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +462: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +463: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +464: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +465: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +466: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +467: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +468: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +469: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/writing_workspace_test.dart: confirm -> inline planning -> draft persists between tabs
+00:30 +470: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
+00:30 +471: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
+00:30 +472: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
+00:30 +473: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
+00:30 +474: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
+00:31 +475: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
+00:31 +476: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
+00:31 +477: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
+00:31 +478: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: full reading -> select -> next/back loses DOM selection -> submit -> fixed source feedback
+00:31 +479: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/vocab_tiers_test.dart: tier page renders + navigation Tier 1 开始学习 routes to vocabStudy4
+00:31 +480: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
+00:31 +481: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
+00:31 +482: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
+00:31 +483: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/ielts_reading_test.dart: all11single-type pages render at390px without loss of task content
+00:31 +484: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: (setUpAll)
+00:31 +484: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: oral source oracle ielts p1
+00:31 +485: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: oral source oracle toefl interview
+00:31 +486: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: oral source oracle ielts p3
+00:31 +487: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: Part1 audio-only, no notes, record stop/retake/next at390px
+00:32 +488: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: p2 native bounds and controls
+00:32 +489: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: p3 native bounds and controls
+00:32 +490: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: interview native bounds and controls
+00:32 +491: /Users/mikijin/Library/Application Support/violoop/workspace/outputs/surgo_flutter/test/oral_daily_test.dart: (tearDownAll)
+00:32 +491: All tests passed!
