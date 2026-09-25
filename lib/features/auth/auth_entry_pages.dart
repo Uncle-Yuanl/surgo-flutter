@@ -22,7 +22,7 @@ class AuthSplashPage extends StatelessWidget {
           color: AuthTokens.accent,
           child: Center(
               child: Image.asset('assets/images/auth/logo.png',
-                  width: 190, fit: BoxFit.contain))));
+                  width: 140, fit: BoxFit.contain))));
 }
 
 /// Figma 40:472 "错误页面" —— 加载失败 + RETRY。
