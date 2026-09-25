@@ -1,3 +1,5 @@
+import 'dart:ui' show ImageFilter;
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -7,10 +9,11 @@ import '../../theme/tokens.dart';
 import '../../widgets/source_text.dart';
 import 'auth_kit.dart';
 
-/// Figma 40:363 "80" —— 黄底启动页。
+/// Figma 40:363 "80" —— 启动页。
 ///
 /// 用户 2026-09-25：品牌文字换成桌面 icon/logo.jpg（已抠白转透明 PNG）；
-/// 黄色要连状态栏一起铺满（shell 对本页从 top:0 起画）。
+/// 底色由黄色改为桌面素材 3333.png（与欢迎页同一张校园插画）；
+/// 图片连状态栏一起铺满（shell 对本页从 top:0 起画）。
 class AuthSplashPage extends StatelessWidget {
   const AuthSplashPage({super.key});
 
@@ -18,11 +21,34 @@ class AuthSplashPage extends StatelessWidget {
   Widget build(BuildContext context) => GestureDetector(
       key: const ValueKey('auth-splash'),
       onTap: () => context.read<AppState>().go(SurgoPage.authWelcome),
-      child: ColoredBox(
-          color: AuthTokens.accent,
-          child: Center(
-              child: Image.asset('assets/images/auth/logo.png',
-                  width: 140, fit: BoxFit.contain))));
+      child: Stack(fit: StackFit.expand, children: [
+        Image.asset('assets/images/auth/welcome_hero.jpg',
+            fit: BoxFit.cover, alignment: const Alignment(0, .05)),
+        // 这张插画中部（石碑、水獬）本身是亮白的，白 logo 压上去读不出来，
+        // 黑 logo 压在建筑群上同样发糊。所以在白 logo 下面垫一层模糊的黑色剪影：
+        // 用 ColorFiltered 把同一张图染黑再模糊，得到贴合形状的阴影
+        // （BoxShadow 只按矩形盒子投影，透明 PNG 会出现方形暗块，不能用）。
+        // 用户 2026-09-25：logo 上移 50px。
+        Align(
+            alignment: Alignment.center,
+            child: Transform.translate(
+                offset: const Offset(0, -50),
+                child: SizedBox(
+                width: 140,
+                height: 140 * 607 / 595,
+                child: Stack(fit: StackFit.expand, children: [
+                  ImageFiltered(
+                      imageFilter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                      child: ColorFiltered(
+                          colorFilter: const ColorFilter.mode(
+                              Color(0xcc000000), BlendMode.srcIn),
+                          child: Image.asset(
+                              'assets/images/auth/logo_white.png',
+                              fit: BoxFit.contain))),
+                  Image.asset('assets/images/auth/logo_white.png',
+                      fit: BoxFit.contain),
+                ])))),
+      ]));
 }
 
 /// Figma 40:472 "错误页面" —— 加载失败 + RETRY。
