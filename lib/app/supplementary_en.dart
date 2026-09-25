@@ -12,4 +12,6 @@ const supplementaryEn = <String, String>{
   '题号导航': 'Question navigator',
   '未作答': 'Unanswered',
   '交卷': 'Submit',
+  // 用户 2026-09-25：开屏页的黄色登录按钮。
+  '登录': 'Log In',
 };

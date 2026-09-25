@@ -7,6 +7,7 @@ import '../../app/app_state.dart';
 import '../../app/routes.dart';
 import '../../theme/tokens.dart';
 import '../../widgets/source_text.dart';
+import '../../widgets/t.dart';
 import 'auth_kit.dart';
 
 /// Figma 40:363 "80" —— 启动页。
@@ -18,10 +19,11 @@ class AuthSplashPage extends StatelessWidget {
   const AuthSplashPage({super.key});
 
   @override
-  Widget build(BuildContext context) => GestureDetector(
-      key: const ValueKey('auth-splash'),
-      onTap: () => context.read<AppState>().go(SurgoPage.authWelcome),
-      child: Stack(fit: StackFit.expand, children: [
+  Widget build(BuildContext context) {
+    final app = context.read<AppState>();
+    // 用户 2026-09-25：加了明确的「登录」按钮，所以收掉原来「点整页任意处
+    // 进欢迎页」的手势 —— 两者共存容易误触。key 保留在根节点上。
+    return Stack(key: const ValueKey('auth-splash'), fit: StackFit.expand, children: [
         Image.asset('assets/images/auth/welcome_hero.jpg',
             fit: BoxFit.cover, alignment: const Alignment(0, .05)),
         // 这张插画中部（石碑、水獬）本身是亮白的，白 logo 压上去读不出来，
@@ -50,7 +52,37 @@ class AuthSplashPage extends StatelessWidget {
                   Image.asset('assets/images/auth/logo_white.png',
                       fit: BoxFit.contain),
                 ])))),
-      ]));
+      // 黄色登录按钮：放底部，避开中部的水獠主体。
+      // 用 T 而不是 SourceText，因为这是界面文案，需跟随中英文模式
+      // （英文译文已补在 supplementary_en.dart）。
+      Positioned(
+          left: AuthTokens.pad,
+          right: AuthTokens.pad,
+          bottom: 54,
+          child: GestureDetector(
+              key: const ValueKey('auth-splash-login'),
+              onTap: () => app.go(SurgoPage.authWelcome),
+              behavior: HitTestBehavior.opaque,
+              child: Container(
+                  height: AuthTokens.fieldHeight,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                      color: AuthTokens.accent,
+                      borderRadius:
+                          BorderRadius.circular(AuthTokens.radius),
+                      boxShadow: const [
+                        BoxShadow(
+                            color: Color(0x40000000),
+                            blurRadius: 16,
+                            offset: Offset(0, 6))
+                      ]),
+                  child: T('登录',
+                      style: AuthTokens.text(
+                          size: 15,
+                          weight: FontWeight.w800,
+                          color: const Color(0xff0a0a0a)))))),
+    ]);
+  }
 }
 
 /// Figma 40:472 "错误页面" —— 加载失败 + RETRY。
