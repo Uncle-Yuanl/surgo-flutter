@@ -9,6 +9,7 @@ import '../../theme/tokens.dart';
 import '../../widgets/source_text.dart';
 import '../../widgets/t.dart';
 import 'auth_kit.dart';
+import 'auth_rise.dart';
 
 /// Figma 40:363 "80" —— 启动页。
 ///
@@ -33,7 +34,11 @@ class AuthSplashPage extends StatelessWidget {
         // 用户 2026-09-25：logo 上移 200px（先 150，再追加 50）。
         // 实测原先居中（中心 y=422）时 SURGO 压在亮白石碑上，上移 50px（y=372）
         // 只是换成压玻璃幕墙，对比度改善有限；150px 才真正进到干净的天空里。
-        Align(
+        // 用户 2026-09-25：logo 入场动效（淡入 + 小幅上升）。
+        AuthRise(
+            offsetY: 18,
+            duration: const Duration(milliseconds: 640),
+            child: Align(
             alignment: Alignment.center,
             child: Transform.translate(
                 offset: const Offset(0, -200),
@@ -51,7 +56,7 @@ class AuthSplashPage extends StatelessWidget {
                               fit: BoxFit.contain))),
                   Image.asset('assets/images/auth/logo_white.png',
                       fit: BoxFit.contain),
-                ])))),
+                ]))))),
       // 黄色登录按钮：放底部，避开中部的水獠主体。
       // 用 T 而不是 SourceText，因为这是界面文案，需跟随中英文模式
       // （英文译文已补在 supplementary_en.dart）。
@@ -59,7 +64,11 @@ class AuthSplashPage extends StatelessWidget {
           left: AuthTokens.pad,
           right: AuthTokens.pad,
           bottom: 54,
-          child: GestureDetector(
+          // 按钮晚于 logo 入场，错峰更自然。
+          child: AuthRise(
+              delay: const Duration(milliseconds: 260),
+              offsetY: 34,
+              child: GestureDetector(
               key: const ValueKey('auth-splash-login'),
               onTap: () => app.go(SurgoPage.authWelcome),
               behavior: HitTestBehavior.opaque,
@@ -80,7 +89,7 @@ class AuthSplashPage extends StatelessWidget {
                       style: AuthTokens.text(
                           size: 15,
                           weight: FontWeight.w800,
-                          color: const Color(0xff0a0a0a)))))),
+                          color: const Color(0xff0a0a0a))))))),
     ]);
   }
 }
@@ -129,9 +138,11 @@ class AuthWelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final app = context.read<AppState>();
-    return Column(children: [
+    // 面板用 Stack 叠在插画上，而不是占 Column 的布局位：
+    // 否则面板上升时会在原位置露出一条空白底色（已在中途帧里见到）。
+    return Stack(children: [
       // 用户 2026-09-25：上半区换成桌面素材 3333.png（SURGO 校园插画，941x1672 竖图）。
-      Expanded(
+      Positioned.fill(
           child: Container(
               width: double.infinity,
               color: AuthTokens.field,
@@ -142,7 +153,19 @@ class AuthWelcomePage extends StatelessWidget {
                   alignment: const Alignment(0, .05),
                   width: double.infinity,
                   height: double.infinity))),
-      Container(
+      // 用户 2026-09-25：登录面板从下往上升。位移给大值（整块升起），
+      // 时长略长、稍延迟，让上方插画先站住再推面板。
+      Positioned(
+          left: 0,
+          right: 0,
+          bottom: 0,
+          child: AuthRise(
+          delay: const Duration(milliseconds: 120),
+          duration: const Duration(milliseconds: 620),
+          offsetY: 220,
+          // 面板不做淡入：升起途中若半透明会透见插画，像幽灵。
+          fade: false,
+          child: Container(
           width: double.infinity,
           decoration: const BoxDecoration(
               color: Color(0xfffcf8f5),
@@ -190,7 +213,7 @@ class AuthWelcomePage extends StatelessWidget {
                     prefix: 'Don’t have an account? ',
                     link: 'Register',
                     onTap: () => app.go(SurgoPage.authSignUp)),
-              ])),
+              ])))),
     ]);
   }
 }

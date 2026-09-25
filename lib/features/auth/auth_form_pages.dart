@@ -5,6 +5,7 @@ import '../../app/app_state.dart';
 import '../../app/routes.dart';
 import '../../widgets/source_text.dart';
 import 'auth_kit.dart';
+import 'auth_rise.dart';
 
 /// Figma 40:388 "81" —— 注册表单（姓名 / 邮箱 / 密码 / 确认密码 + 条款勾选）。
 class AuthSignUpPage extends StatefulWidget {
@@ -126,6 +127,13 @@ class _AuthSignInPageState extends State<AuthSignInPage> {
                 AuthBack(onTap: () => app.go(SurgoPage.authWelcome)),
               ]),
               const SizedBox(height: 38),
+              // 用户 2026-09-25：登录页内容从下往上升（返回键不动）。
+              AuthRise(
+                  offsetY: 120,
+                  duration: const Duration(milliseconds: 560),
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
               SourceText('Sign in your account', style: AuthTokens.text()),
               const SizedBox(height: 24),
               const AuthField(
@@ -178,6 +186,7 @@ class _AuthSignInPageState extends State<AuthSignInPage> {
               AuthButton('Signup',
                   key: ValueKey('auth-signin-submit-$tag'),
                   onTap: () => app.go(SurgoPage.authCongrats)),
+                      ])),
             ]));
   }
 }
