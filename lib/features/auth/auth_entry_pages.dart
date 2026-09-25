@@ -153,6 +153,58 @@ class AuthWelcomePage extends StatelessWidget {
                   alignment: const Alignment(0, .05),
                   width: double.infinity,
                   height: double.infinity))),
+      // 用户 2026-09-25：左上角加返回箭头（回开屏页）。
+      // 这一页从 top:0 起画，所以要自己避开 52px 的状态栏。
+      Positioned(
+          left: AuthTokens.pad,
+          top: SurgoDevice.statusBarHeight + 6,
+          child: AuthRise(
+              offsetY: 14,
+              child: GestureDetector(
+                  key: const ValueKey('auth-welcome-back'),
+                  onTap: () => app.go(SurgoPage.authSplash),
+                  behavior: HitTestBehavior.opaque,
+                  child: Container(
+                      width: 40,
+                      height: 40,
+                      alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Color(0xe6ffffff),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Color(0x33000000),
+                                blurRadius: 10,
+                                offset: Offset(0, 3))
+                          ]),
+                      child: const Icon(Icons.arrow_back,
+                          size: 20, color: Colors.black))))),
+      // 用户 2026-09-25：补上 logo（此前只有开屏页有）。白色版压在蓝天上，
+      // 与开屏页同款：下垫一层贴合形状的模糊黑剪影保证任何底色都可辨。
+      Positioned(
+          left: 0,
+          right: 0,
+          top: SurgoDevice.statusBarHeight + 78,
+          child: AuthRise(
+              offsetY: 18,
+              duration: const Duration(milliseconds: 640),
+              child: Center(
+                  child: SizedBox(
+                      width: 116,
+                      height: 116 * 607 / 595,
+                      child: Stack(fit: StackFit.expand, children: [
+                        ImageFiltered(
+                            imageFilter:
+                                ImageFilter.blur(sigmaX: 9, sigmaY: 9),
+                            child: ColorFiltered(
+                                colorFilter: const ColorFilter.mode(
+                                    Color(0xcc000000), BlendMode.srcIn),
+                                child: Image.asset(
+                                    'assets/images/auth/logo_white.png',
+                                    fit: BoxFit.contain))),
+                        Image.asset('assets/images/auth/logo_white.png',
+                            fit: BoxFit.contain),
+                      ]))))),
       // 用户 2026-09-25：登录面板从下往上升。位移给大值（整块升起），
       // 时长略长、稍延迟，让上方插画先站住再推面板。
       Positioned(
