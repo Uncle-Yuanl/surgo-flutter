@@ -8,8 +8,11 @@ import 'demo_audio.dart';
 import 'primitives.dart';
 import 't.dart';
 
-Future<void> showMarking(BuildContext context,SurgoPage target,String label) => showDialog<void>(
- context:context,useRootNavigator:false,barrierDismissible:false,builder:(_)=>_Marking(target:target,label:label));
+Future<void> showMarking(BuildContext context,SurgoPage target,String label) {
+ demoAudio.stop(); // 交卷了，还在放的录音这就停（不等两秒后换页）
+ return showDialog<void>(
+  context:context,useRootNavigator:false,barrierDismissible:false,builder:(_)=>_Marking(target:target,label:label));
+}
 class _Marking extends StatefulWidget {
  const _Marking({required this.target,required this.label});
  final SurgoPage target;
@@ -21,8 +24,7 @@ class _MarkingState extends State<_Marking> with SingleTickerProviderStateMixin 
  late final AnimationController progress;
  Timer? tail;
  @override
- void initState(){super.initState();demoAudio.stop(); // 交卷了，还在放的录音这就停（不等两秒后换页）
-  progress=AnimationController(vsync:this,duration:const Duration(seconds:2))
+ void initState(){super.initState();progress=AnimationController(vsync:this,duration:const Duration(seconds:2))
  ..addStatusListener((status){if(status==AnimationStatus.completed)tail=Timer(const Duration(milliseconds:200),(){if(mounted)_go(widget.target);});})..forward();}
  void _go(SurgoPage page){final state=context.read<AppState>();Navigator.pop(context);state.go(page);}
  @override

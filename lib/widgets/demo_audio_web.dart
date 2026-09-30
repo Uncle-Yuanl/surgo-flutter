@@ -55,6 +55,7 @@ class DemoAudio extends ChangeNotifier {
       _el.src = ui_web.assetManager.getAssetUrl(asset);
     }
     _seconds = seconds;
+    _silentAt = from;
     _ended = false;
     _el.defaultPlaybackRate = _rate;
     _el.playbackRate = _rate;
@@ -104,34 +105,41 @@ class DemoAudio extends ChangeNotifier {
     if (_silentTick != null) _runSilent();
   }
 
-  /// 离开页面时调用：停下，忘掉当前这一段和倍速。不通知监听者（调用方多半正在 dispose）。
+  /// 停下，忘掉当前这一段和倍速。换页（AppState.go）和交卷时统一调，页面不要在 dispose 里调
+  /// （见 tool/demo_export/README.md「音频」）。
   void stop() {
+    _rate = 1; // 倍速是跟着页面的：没放过也要复位，不然带到下一页去
+    if (_asset == null) return;
     _wanted = false;
     _stopSilent();
     _el.pause();
     _asset = null;
     _ended = false;
-    _rate = 1;
+    // 调用方可能正在 build / dispose，监听者这时不能 setState：等这一轮过去再通知。
+    scheduleMicrotask(notifyListeners);
   }
 
   /// 应用启动时调用一次，见类注释。
   void unlockOnFirstTap() {
     final handler = ((web.Event _) {
+      if (!_unlocked) {
+        try {
+          web.window.speechSynthesis.speak(web.SpeechSynthesisUtterance(''));
+        } catch (_) {
+          // 这个浏览器没有朗读接口。
+        }
+      }
+      if (_asset != null) {
+        // 有一段被拦下、正空走进度（还没点过屏幕就自动开始的，或被系统打断后再放被拒的）：
+        // 这次点击把它真的放出来。
+        if (_silent && _wanted) _resume();
+        return;
+      }
       if (_unlocked) return;
-      try {
-        web.window.speechSynthesis.speak(web.SpeechSynthesisUtterance(''));
-      } catch (_) {
-        // 这个浏览器没有朗读接口。
-      }
-      if (_asset == null) {
-        _el.src = _silence;
-        _el.play().toDart.then((_) {
-          _unlocked = true;
-        }, onError: (Object _) {});
-      } else if (_silent && _wanted) {
-        // 有一段在点击之前被拦下、正空走进度：这次点击把它真的放出来。
-        _resume();
-      }
+      _el.src = _silence;
+      _el.play().toDart.then((_) {
+        _unlocked = true;
+      }, onError: (Object _) {});
     }).toJS;
     // 一次点击会依次触发其中几种，哪一种算「用户手势」各浏览器不同，所以每种都试，直到放成功。
     for (final type in const ['touchend', 'pointerup', 'mouseup', 'click', 'keydown']) {
@@ -169,8 +177,9 @@ class DemoAudio extends ChangeNotifier {
   void _goSilent() {
     if (_asset == null || _silent) return;
     _silent = true;
+    // 从真的放到的地方接着空走；只往前不往后（加载失败的元素位置会回到 0）。
     final at = _el.currentTime;
-    _silentAt = at.isFinite ? at : 0;
+    if (at.isFinite && at > _silentAt) _silentAt = at;
     if (_wanted) _runSilent();
     notifyListeners();
   }
