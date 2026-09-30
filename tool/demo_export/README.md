@@ -39,6 +39,9 @@ JSON，不调接口，也不现场生成任何内容。
    ```
 
    每个页面显示了哪些文字在 `build/audit/bilingual_routes.json`，可以核对真实数据有没有上屏。
+   某页报「一直转圈」多半是它自己加载的 JSON 换成真实数据后超过了约 50 KB：`rootBundle.loadString`
+   会把大文件放到 isolate 里解码，widget 测试里永远等不到。改用 `rootBundle.load` + `utf8.decode`
+   （见 `lib/features/tf_listening_mock/data.dart`）。
 3. 原型数据下（不覆盖）跑相关页面的测试：`flutter test -j 2 test/<相关>_test.dart`。
 4. 看图：同第 2 步先覆盖，`flutter build web --release --no-web-resources-cdn -t lib/main_visual_audit.dart -o build/audit-web`，
    换回原型数据，再把 `build/web/fonts` 拷进 `build/audit-web/` 后起静态服务。网址参数见
