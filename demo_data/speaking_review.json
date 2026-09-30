@@ -1,0 +1,873 @@
+{
+ "score": "6.5",
+ "criteria": [
+  {
+   "zh": "流利度与连贯性",
+   "sc": "6.5",
+   "en": "You keep going without long silences and cover the cue card fully, but there are filled pauses (\"em\") before reasons. Practise linking phrases so you can launch a reason smoothly.",
+   "zhNote": "你能持续说、没有长时间沉默，也完整覆盖了话题卡，但在给理由前有填充停顿（\"em\"）。练习衔接短语，让你能顺畅地开启一个理由。",
+   "quotes": [
+    "\"because... em... because it makes me relax\"",
+    "\"and then, you know, I just go there\""
+   ]
+  },
+  {
+   "zh": "词汇资源",
+   "sc": "6.0",
+   "en": "Everyday vocabulary is used accurately, but \"I like\" repeats and limits the range. Bring in \"I'm really into\", \"I'm keen on\", \"I'm a big fan of\" to show flexibility.",
+   "zhNote": "日常词汇使用准确，但\"I like\"重复，限制了词汇范围。加入\"I'm really into\"、\"I'm keen on\"、\"I'm a big fan of\"来展示灵活度。",
+   "quotes": [
+    "\"I like pop, I like rock, and I like jazz\""
+   ]
+  },
+  {
+   "zh": "语法多样性与准确性",
+   "sc": "6.5",
+   "en": "Simple sentences are accurate, and you attempt some complex forms. A wider range of relative and conditional clauses would raise this to Band 7.",
+   "zhNote": "简单句准确，也尝试了一些复杂句。用更多关系从句和条件句能把这项提到 7 分。",
+   "quotes": [
+    "\"It is a place where I can relax when I feel tired\""
+   ]
+  },
+  {
+   "zh": "发音",
+   "sc": null,
+   "en": "Not assessed in this practice run — pronunciation requires real audio analysis, which is not available here.",
+   "zhNote": "本次练习不评分——发音需要真实音频分析，此处不可用。",
+   "quotes": []
+  }
+ ],
+ "weaks": [
+  {
+   "en": "Limited lexical variety",
+   "quote": "\"I like pop, I like rock, and I like jazz\"",
+   "tip": "Vary your verbs and intensifiers instead of repeating \"I like\": \"I'm really into...\", \"I'm a big fan of...\"."
+  },
+  {
+   "en": "Hesitation before complex ideas",
+   "quote": "\"because... em... because it makes me relax\"",
+   "tip": "Practise linking phrases so you can start a reason smoothly without filled pauses."
+  },
+  {
+   "en": "Filler words reduce coherence",
+   "quote": "\"you know, it is a good escape\"",
+   "tip": "Replace fillers like \"you know\" and \"em\" with real discourse markers (\"on top of that\", \"in other words\")."
+  }
+ ],
+ "items": {
+  "p1": [
+   {
+    "band": "6.0-6.5 /9",
+    "dur": "18s",
+    "ans": "Yes, I like music a lot. I listen to it every day, especially when I am on the bus. It helps me relax because... em... because it makes me feel calm after a long day.",
+    "en": "Clear, relevant answer with a reason and an example. To push higher, remove the filled pause before \"because\" and extend with one more detail.",
+    "zh": "回答清晰、切题，有理由也有例子。想提分可去掉\"because\"前的填充停顿，再补一个细节。",
+    "tags": [
+     [
+      "流利度与连贯性",
+      "A filled pause (\"em\") interrupts the flow before your reason. Practise linking straight into \"because\".",
+      "给理由前有填充停顿（\"em\"）打断了流畅度。练习直接衔接\"because\"。",
+      "warn"
+     ],
+     [
+      "词汇资源",
+      "Good everyday phrasing: \"helps me relax\", \"feel calm\".",
+      "日常表达不错：\"helps me relax\"、\"feel calm\"。",
+      "ok"
+     ],
+     [
+      "语法多样性与准确性",
+      "Accurate simple sentences with a correct causal clause.",
+      "简单句准确，因果从句用对了。",
+      "ok"
+     ]
+    ]
+   },
+   {
+    "band": "6.0-6.5 /9",
+    "dur": "22s",
+    "ans": "I like pop, I like rock, and I like jazz. It depends on my mood. When I am happy I like pop, and when I want to relax I like jazz music.",
+    "en": "Good range of genres named. The repetition of \"I like\" weakens lexical variety — try \"I'm really into\" or \"I'm keen on\".",
+    "zh": "列举了不同曲风，很好。\"I like\" 重复削弱了词汇多样性 — 可换 \"I'm really into\" 或 \"I'm keen on\"。",
+    "tags": [
+     [
+      "词汇资源",
+      "\"I like\" is repeated three times. Vary with \"I'm really into\", \"I'm a big fan of\" to lift Lexical Resource.",
+      "\"I like\" 重复三次。用 \"I'm really into\"、\"I'm a big fan of\" 变换，提升词汇分。",
+      "warn"
+     ],
+     [
+      "流利度与连贯性",
+      "Smooth delivery, no long pauses, ideas connect naturally.",
+      "表达顺畅，无长停顿，观点自然衔接。",
+      "ok"
+     ],
+     [
+      "语法多样性与准确性",
+      "Correct use of a \"when\" clause to contrast moods.",
+      "用 \"when\" 从句对比心情，语法正确。",
+      "ok"
+     ]
+    ]
+   }
+  ],
+  "p2": [
+   {
+    "band": "6.5-7.0 /9",
+    "dur": "1:45",
+    "ans": "I would like to talk about a small park near my home. It is a place where I can relax when I feel tired. I go there almost every weekend, usually on Sunday morning. When I am there I walk around the lake, take some photos, and sometimes read a book on a bench. I enjoy it because it is quiet and the air is fresh, and, you know, it is a good escape from the busy city life.",
+    "en": "A strong long turn: all four cue-card points are covered and the answer runs the full 1–2 minutes. Good use of one relative clause. To reach Band 7, add a wider range of complex sentences and cut fillers (\"you know\").",
+    "zh": "很棒的长陈述：话题卡四个要点全覆盖，时长撑满 1–2 分钟，用了一个关系从句。要冲 7 分，多用复杂句、去掉填充语（\"you know\"）。",
+    "tags": [
+     [
+      "流利度与连贯性",
+      "You sustain the full long turn without hesitation — strong fluency for the cue card.",
+      "你能撑满整段长陈述且无迟疑——话题卡的流利度很好。",
+      "ok"
+     ],
+     [
+      "词汇资源",
+      "The filler \"you know\" recurs. Replace with real discourse markers (\"in fact\", \"for instance\").",
+      "填充语 \"you know\" 反复出现。换成真正的衔接语（\"in fact\"、\"for instance\"）。",
+      "warn"
+     ],
+     [
+      "语法多样性与准确性",
+      "Mostly simple sentences. Add relative/conditional clauses to widen grammatical range for Band 7.",
+      "以简单句为主。加入关系从句/条件从句拓宽句式，冲 7 分。",
+      "warn"
+     ]
+    ]
+   }
+  ],
+  "p3": [
+   {
+    "band": "6.0-6.5 /9",
+    "dur": "26s",
+    "q": "Why do people like to visit different places?",
+    "ans": "I think people like to visit different places because they want to experience new things. Em… also they can learn about different cultures and try different food.",
+    "en": "Good reasons, but \"em\" and the lack of an example keep this at Band 6. Add one concrete example (e.g. a trip you took).",
+    "zh": "理由不错，但 \"em\" 和缺少例子让它停在 6 分。补一个具体例子（比如你去过的一次旅行）。",
+    "tags": [
+     [
+      "流利度与连贯性",
+      "Ideas connect with \"because\" and \"also\", but the filled pause \"Em…\" breaks the flow.",
+      "观点用 \"because\"、\"also\" 衔接，但填充停顿 \"Em…\" 打断了流畅度。",
+      "warn"
+     ],
+     [
+      "词汇资源",
+      "Basic but accurate: \"experience new things\", \"different cultures\".",
+      "基础但准确：\"experience new things\"、\"different cultures\"。",
+      "ok"
+     ]
+    ]
+   },
+   {
+    "band": "6.5-7.0 /9",
+    "dur": "31s",
+    "q": "Do you think tourism can harm local cultures?",
+    "ans": "Yes, sometimes. When too many tourists come, local traditions may become just a show for money, and prices go up for local people.",
+    "en": "Strong turn — a clear position with two developed consequences. This is Band 7 quality; do this consistently.",
+    "zh": "很棒的一回合——立场清晰，还展开了两个后果。这已是 7 分水平，保持稳定即可。",
+    "tags": [
+     [
+      "流利度与连贯性",
+      "Two consequences in one breath, no fillers — coherent and controlled.",
+      "一口气给出两个后果、没有填充词——连贯且控制得当。",
+      "ok"
+     ],
+     [
+      "语法多样性与准确性",
+      "Well-formed \"when\" clause plus a coordinated second clause.",
+      "\"when\" 从句结构完整，第二个分句并列得当。",
+      "ok"
+     ]
+    ]
+   },
+   {
+    "band": "6.0-6.5 /9",
+    "dur": "20s",
+    "q": "How might tourism change in the future?",
+    "ans": "Maybe it will be more online, like virtual reality tours, so people can see places without travelling so much.",
+    "en": "A clear prediction with an example. Use a stronger future form (\"is likely to\", \"may well\") instead of \"maybe\" to lift grammar.",
+    "zh": "预测明确还带了例子。把 \"maybe\" 换成更强的将来表达（\"is likely to\"、\"may well\"）能提升语法分。",
+    "tags": [
+     [
+      "语法多样性与准确性",
+      "\"Maybe\" plus \"will\" is safe but limited; try \"is likely to\".",
+      "\"Maybe\" 加 \"will\" 稳妥但单一；可试 \"is likely to\"。",
+      "warn"
+     ],
+     [
+      "流利度与连贯性",
+      "Short but complete, with a supporting example.",
+      "简短但完整，且带例子支撑。",
+      "ok"
+     ]
+    ]
+   },
+   {
+    "band": "6.0-6.5 /9",
+    "dur": "18s",
+    "q": "What are the differences between travelling in your own country and abroad?",
+    "ans": "Travelling at home is cheaper and easier because there is no language problem, but abroad you see completely different buildings and food, so it feels more exciting.",
+    "en": "A clear comparison with two sides. Link them with a discourse marker (\"On the other hand\") instead of \"but\" to show a wider range.",
+    "zh": "对比清楚、两面都谈到了。把 \"but\" 换成衔接语（\"On the other hand\"）能展示更宽的句式范围。",
+    "tags": [
+     [
+      "词汇资源",
+      "\"cheaper and easier\", \"completely different\" are natural everyday collocations.",
+      "\"cheaper and easier\"、\"completely different\" 是很自然的日常搭配。",
+      "ok"
+     ],
+     [
+      "语法多样性与准确性",
+      "Two clauses joined by \"because\" and \"so\" — accurate but simple.",
+      "用 \"because\"、\"so\" 连接两个分句，准确但偏简单。",
+      "warn"
+     ]
+    ]
+   },
+   {
+    "band": "6.0-6.5 /9",
+    "dur": "22s",
+    "q": "How has the way people travel changed over the past few decades?",
+    "ans": "Nowadays people book everything online and they travel much more often, because flights are cheaper than before.",
+    "en": "Relevant and well organised. Add a second change (e.g. shorter trips, social media) so the answer does not rely on one idea.",
+    "zh": "切题、结构清楚。再补一个变化（比如短途旅行、社交媒体）会让回答不只依赖一个观点。",
+    "tags": [
+     [
+      "流利度与连贯性",
+      "A single developed idea; a second point would strengthen the turn.",
+      "只有一个展开的观点；再补一点会更有力。",
+      "warn"
+     ],
+     [
+      "词汇资源",
+      "\"book everything online\", \"much more often\" show good range.",
+      "\"book everything online\"、\"much more often\" 用词不错。",
+      "ok"
+     ]
+    ]
+   },
+   {
+    "band": "6.5-7.0 /9",
+    "dur": "24s",
+    "q": "Should governments invest more in local tourism?",
+    "ans": "I think they should, because tourism creates jobs for local people, and it also helps to protect traditional culture.",
+    "en": "A clear position with two benefits. Add \"for instance\" before an example to make the structure even clearer.",
+    "zh": "立场明确、给出两点好处。在例子前加 \"for instance\" 会让结构更清晰。",
+    "tags": [
+     [
+      "流利度与连贯性",
+      "Two benefits presented in parallel — good signposting.",
+      "两点好处并列呈现——衔接到位。",
+      "ok"
+     ],
+     [
+      "词汇资源",
+      "\"creates jobs\", \"protect traditional culture\" are topic-appropriate.",
+      "\"creates jobs\"、\"protect traditional culture\" 用词贴题。",
+      "ok"
+     ]
+    ]
+   },
+   {
+    "band": "6.0-6.5 /9",
+    "dur": "28s",
+    "q": "What are the negative effects of too much tourism?",
+    "ans": "Too many visitors can damage natural areas. For example, beaches and mountains get polluted, and wildlife is disturbed by crowds.",
+    "en": "Good use of \"For example\" and two consequences. Push to Band 7 by adding a conditional (\"unless we limit numbers\").",
+    "zh": "\"For example\" 用得好，也给了两个后果。想冲 7 分可补一个条件句（\"unless we limit numbers\"）。",
+    "tags": [
+     [
+      "流利度与连贯性",
+      "The example marker \"For example\" lifts coherence.",
+      "例子标记 \"For example\" 提升了连贯性。",
+      "ok"
+     ],
+     [
+      "语法多样性与准确性",
+      "Passive form \"is disturbed\" used correctly.",
+      "被动语态 \"is disturbed\" 使用正确。",
+      "ok"
+     ]
+    ]
+   },
+   {
+    "band": "6.0-6.5 /9",
+    "dur": "21s",
+    "q": "Why do some people prefer to stay at home rather than travel?",
+    "ans": "Some people feel safe at home. They do not like changes, and travelling can be expensive, so they just relax in their own city.",
+    "en": "Reasons are listed but a little general. Extend one of them with a personal detail to sound less rehearsed.",
+    "zh": "理由列出来了但偏笼统。挑一个补上个人细节，听起来才不像背答案。",
+    "tags": [
+     [
+      "词汇资源",
+      "Repetition of \"they\" and simple verbs keeps this at Band 6.",
+      "\"they\" 反复出现、动词偏简单，停在 6 分。",
+      "warn"
+     ],
+     [
+      "流利度与连贯性",
+      "Ideas are listed rather than developed.",
+      "观点是罗列而非展开。",
+      "warn"
+     ]
+    ]
+   },
+   {
+    "band": "6.5-7.0 /9",
+    "dur": "25s",
+    "q": "How important is tourism to a country’s economy?",
+    "ans": "It is quite important, because tourists spend money on hotels, food and transport, which supports many small businesses.",
+    "en": "A well-built answer: a clear claim plus a relative clause (\"which supports…\") that shows grammatical range.",
+    "zh": "结构完整：先给结论，再用关系从句（\"which supports…\"）展示句式范围。",
+    "tags": [
+     [
+      "语法多样性与准确性",
+      "Non-defining \"which\" clause used correctly — Band 7 feature.",
+      "非限定 \"which\" 从句用得正确——7 分特征。",
+      "ok"
+     ],
+     [
+      "词汇资源",
+      "\"small businesses\", \"spend money on\" are precise and natural.",
+      "\"small businesses\"、\"spend money on\" 准确自然。",
+      "ok"
+     ]
+    ]
+   },
+   {
+    "band": "6.0-6.5 /9",
+    "dur": "19s",
+    "q": "Do you think travel will become more popular in the future?",
+    "ans": "I believe it will become more popular, because travelling is getting cheaper, and more people can afford to see other countries.",
+    "en": "A confident close with a reason. Finish with a short summary of your view to end the discussion cleanly.",
+    "zh": "结尾自信并给了理由。最后用一句话小结你的观点，能让整段讨论收得更干净。",
+    "tags": [
+     [
+      "流利度与连贯性",
+      "A clear closing position, but the turn ends without a summary.",
+      "立场清晰，但没有小结就结束了。",
+      "warn"
+     ],
+     [
+      "词汇资源",
+      "\"afford to see other countries\" is a good range marker.",
+      "\"afford to see other countries\" 是很好的词汇范围标记。",
+      "ok"
+     ]
+    ]
+   }
+  ]
+ },
+ "p3Overall": {
+  "en": "A genuine two-way discussion: you engage with each follow-up and give reasons, which suits Part 3. Ideas stay a little general and there is some hesitation (\"em\"). To reach Band 7, extend each point with an example and use discourse markers (\"On top of that\", \"That said\") instead of fillers.",
+  "zh": "这是一段真正的双向讨论：你对每个追问都有回应并给出理由，符合 Part 3 的要求。观点偏笼统、且有迟疑（\"em\"）。要冲 7 分，每个观点补一个例子，并用衔接语（\"On top of that\"、\"That said\"）代替填充词。"
+ },
+ "cuePoints": [
+  [
+   "where it is",
+   "它在哪里"
+  ],
+  [
+   "how often you go there",
+   "你多久去一次"
+  ],
+  [
+   "what you do there",
+   "你在那里做什么"
+  ],
+  [
+   "why you enjoy it",
+   "你为什么喜欢它"
+  ]
+ ],
+ "daily": {
+  "p1": {
+   "score": "5.5",
+   "meta": [
+    "Completed 16 Sep, 15:42 · 2 min",
+    "9月16日完成, 15:42 · 2 min"
+   ],
+   "summary": "Stabilise tense choice between present simple and present perfect when discussing routines and past experience",
+   "criteria": [
+    {
+     "zh": "流利度与连贯性",
+     "sc": "5.5",
+     "en": "You addressed all five questions, but hesitations and false starts, such as 'then to do some profession', disrupt the natural flow expected at this level.",
+     "quotes": [
+      "\"then to do some profession for today's work\""
+     ]
+    },
+    {
+     "zh": "词汇资源",
+     "sc": "5.5",
+     "en": "Vocabulary relevant to the topic is present, yet terms like 'profession' and 'over hides' are used inaccurately, limiting the lexical range shown.",
+     "quotes": [
+      "\"to do some profession for today's work\"",
+      "\"I prefer to learn some over hides and some\""
+     ]
+    },
+    {
+     "zh": "语法多样性与准确性",
+     "sc": "5.0",
+     "en": "Sentence structures are mostly simple and contain frequent subject-verb agreement and tense errors, which reduce clarity.",
+     "quotes": [
+      "\"then makes makes sound like everything's mostly and on two time\"",
+      "\"I preferred to make a plan of 1/2 of day\""
+     ]
+    },
+    {
+     "zh": "发音",
+     "sc": null,
+     "en": "Based on provider pronunciation metrics as evidence, not converted to an official band. Provider accuracy score: 86.4 (evidence only, not a band). Provider prosody score: 71.5. Words to review (provider): always, coffee, profession, for, i, sound, like, 's.",
+     "quotes": []
+    }
+   ],
+   "weaks": [
+    {
+     "en": [
+      "Spoken collocation error",
+      "口语搭配错误"
+     ],
+     "quote": "\"I prefer to learn some over hides and some\"",
+     "tip": [
+      "The chunk 'over hides' is not a natural English collocation, showing instability in adjective-noun and noun combinations. Collocation-chunk speaking drill.",
+      "'over hides' 不是自然的英语搭配，说明你在形容词名词组合上还不够稳定。进行搭配词块口语练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken article error",
+      "口语冠词错误"
+     ],
+     "quote": "\"a plan of 1/2 of day\"",
+     "tip": [
+      "The learner omits the required article and uses the wrong preposition in 'a plan of 1/2 of day', where 'a plan for half the day' is needed. Chunked article-noun practice.",
+      "在 'a plan of 1/2 of day' 中你漏掉了必要冠词，也用错了介词，应改为 'a plan for half the day'。进行冠词与名词词块练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken preposition error",
+      "口语介词错误"
+     ],
+     "quote": "\"relax myself without with doing nothing\"",
+     "tip": [
+      "The phrase 'without with doing nothing' shows an unstable prepositional chunk where a single preposition is required. Preposition-collocation speaking drill.",
+      "'without with doing nothing' 出现了重复介词，说明你在固定介词搭配上不稳定。进行介词搭配口语练习。"
+     ]
+    },
+    {
+     "en": [
+      "Inaccurate word choice",
+      "选词不准确"
+     ],
+     "quote": "\"to do some profession for today's work\"",
+     "tip": [
+      "The learner uses the noun 'profession' where 'professional work' is needed, so the chosen word does not fit the intended meaning. Near-synonym oral contrast.",
+      "你把名词 'profession' 用在了需要 'professional work' 的位置，所选词无法准确表达原意。进行近义词口头辨析。"
+     ]
+    }
+   ],
+   "items": {
+    "p1": [
+     {
+      "dur": "10s",
+      "ans": "i always make a coffee for myself and then to do some profession for today's work",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"then to do some profession for today's work\" → \"then do some professional work for today\"",
+        "'profession' is a noun; the intended phrase requires an adjective or noun phrase such as 'professional work', and the infinitive after 'then' should be the bare form 'do'.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "dur": "18s",
+      "ans": "yeah i preferred to make a plan of a half of day or the whole day and i preferred to follow the scheduled task and then makes makes sound like everything 's mostly and on two time",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"then makes makes sound like everything's mostly and on two time\" → \"then it makes sure that everything runs mostly on time\"",
+        "The verb should agree with the subject and a clearer structure is needed to express that tasks stay on schedule.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "dur": "36s",
+      "ans": "five years ago i was a fresh new a man of this uh industry and i think i need to learn some very foundation knowledge about my work and then now after five years i prefer to learn some over hides and some principle of this the technology",
+      "tags": []
+     },
+     {
+      "dur": "30s",
+      "ans": "yes and sometimes i play game for three or two hours in the evening and i think it's a very very enough time for the entertainments and i think i need to reduce the gaming time and relax myself without with doing nothing",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"I need to reduce the gaming time and relax myself without with doing nothing\" → \"I need to reduce my gaming time and relax by doing nothing\"",
+        "The prepositions 'without with' are incorrect, and the reflexive pronoun should be 'myself' after a clear prepositional phrase.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "dur": "23s",
+      "ans": "i usually spend the business time with my coworkers and the sometimes we get most of time we just communicate online with each other and every everyone will plan their task and we may meet every day",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"every everyone will plan their task and we may meet every day\" → \"everyone plans their tasks and we meet every day\"",
+        "The extra 'every' is unnecessary, 'plan' should match the present simple, and 'task' should be the plural 'tasks'.",
+        "warn"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "p2": {
+   "score": "5.0",
+   "meta": [
+    "Completed 27 Aug, 18:32 · 2 min",
+    "8月27日完成, 18:32 · 2 min"
+   ],
+   "summary": "Plan a two-sentence opening that directly states the topic and when it happened.",
+   "criteria": [
+    {
+     "zh": "流利度与连贯性",
+     "sc": "4.5",
+     "en": "You speak at length and attempt to develop a point about memory and agents, but the delivery is hard to follow. The opening line is unintelligible, and you repeat words and false starts such as 'multiply. Impose multiplied communications' and 'within within'. Coherence is weak because ideas are not signposted and the conclusion does not clearly relate back to the topic.",
+     "quotes": [
+      "\"Hi should I learned us here to show the memory and experience between different. Agents within the club codes or Codex application\"",
+      "\"within within different chat sessions\"",
+      "\"I think that this is very important\""
+     ]
+    },
+    {
+     "zh": "词汇资源",
+     "sc": "4.5",
+     "en": "Vocabulary is limited and often inaccurate for the topic. 'Multiplying communications' is not a natural phrase, and 'final final codes' suggests you are searching for a precise term. You do not paraphrase or use topic-specific vocabulary effectively.",
+     "quotes": [
+      "\"multiply. Impose multiplied communications\"",
+      "\"the final final codes\"",
+      "\"the short time memory\"",
+      "\"a longtime file\""
+     ]
+    },
+    {
+     "zh": "语法多样性与准确性",
+     "sc": "4.0",
+     "en": "There are frequent grammatical errors in both basic and complex structures. Subject-verb agreement is missing in 'should I learned', articles are missing in 'the uh scale make me remind', and word order breaks down in 'free from communicating with the code agent'. Error density reduces clarity.",
+     "quotes": [
+      "\"Hi should I learned us here to show\"",
+      "\"the uh scale make me remind much of time\"",
+      "\"free from communicating with the code agent\""
+     ]
+    },
+    {
+     "zh": "发音",
+     "sc": null,
+     "en": "Based on provider pronunciation metrics as evidence, not converted to an official band. Provider accuracy score: 87.8 (evidence only, not a band). Provider prosody score: 76.2. Words to review (provider): memory, experience, agents, codex, application, such, agents, help.",
+     "quotes": []
+    }
+   ],
+   "weaks": [
+    {
+     "en": [
+      "Long turn underdeveloped",
+      "长段回答展开不足"
+     ],
+     "quote": "\"the final final codes\"",
+     "tip": [
+      "The same point is restated in similar wording and the turn does not develop a clear, organised narrative about the skill. Cue-card expansion and timed long turn.",
+      "同一观点用相似措辞重复出现，长答没有围绕该技能展开清晰有条理的内容。进行提示卡展开与限时长答练习。"
+     ]
+    },
+    {
+     "en": [
+      "Inaccurate word choice",
+      "选词不准确"
+     ],
+     "quote": "\"the uh scale make me remind much of time\"",
+     "tip": [
+      "The words 'scale' and 'multiply' are not the intended meaning and create confusion in place of precise vocabulary such as 'skill' or 'multiple'. Near-synonym oral contrast.",
+      "'scale' 和 'multiply' 并非说话者想表达的意思，造成理解偏差，缺少像 skill 或 multiple 这样准确的词。进行近义词口头辨析。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken preposition error",
+      "口语介词错误"
+     ],
+     "quote": "\"free from communicating with the code agent and I just need to focus Lee targets and the direction of our final objective\"",
+     "tip": [
+      "Preposition use is unstable: 'free from communicating' and 'focus Lee targets' show missing or wrong prepositions, and the dependent clause 'and the direction of our final objective' trails off without a clear preposition link. Preposition-collocation speaking drill.",
+      "介词使用不稳定：'free from communicating' 和 'focus Lee targets' 中介词缺失或错误，从句 'and the direction of our final objective' 也缺少清楚的介词衔接。进行介词搭配口语练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken article error",
+      "口语冠词错误"
+     ],
+     "quote": "\"the uh scale make me remind much of time to uh to let me free\"",
+     "tip": [
+      "Articles are dropped or selected incorrectly in recurring patterns such as 'the uh scale' and 'free from communicating', which breaks the natural noun-phrase shape. Chunked article-noun practice.",
+      "冠词在 'the uh scale'、'free from communicating' 等反复出现的结构中漏掉或选错，破坏了名词短语的自然形式。进行冠词与名词词块练习。"
+     ]
+    },
+    {
+     "en": [
+      "Opinion without reason",
+      "观点没有理由"
+     ],
+     "quote": "\"I think the reason why it's very useful is to avoid me. Chatting too much\"",
+     "tip": [
+      "A reason is offered for why the skill is useful, but the explanation stays vague and does not justify why the skill matters to the learner. Opinion-reason rapid response.",
+      "虽然给出了有用的理由，但解释很模糊，没有说明这个技能为什么对说话者重要。进行观点加理由的快速回答练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken collocation error",
+      "口语搭配错误"
+     ],
+     "quote": "\"free from communicating with the code agent and I just need to focus Lee targets\"",
+     "tip": [
+      "The verb-noun and preposition chunks 'focus Lee' and 'free from communicating' are produced unnaturally instead of the expected 'focus on the target'. Collocation-chunk speaking drill.",
+      "动词名词和介词搭配 'focus Lee' 和 'free from communicating' 用得不自然，缺少应有的 'focus on the target'。进行搭配词块口语练习。"
+     ]
+    },
+    {
+     "en": [
+      "Idea sequence unclear",
+      "观点顺序不清晰"
+     ],
+     "quote": "\"multiply. Impose multiplied communications about within within different chat sessions\"",
+     "tip": [
+      "The sequence of explanation, example and reflection is hard to follow, with no clear signposting between when the skill was learned, how, and why it matters. Answer-frame sequencing.",
+      "解释、例子和反思的顺序难以理解，技能是什么时候学的、怎么学的、为什么重要之间没有清楚衔接。进行回答框架排序练习。"
+     ]
+    },
+    {
+     "en": [
+      "Off-topic response",
+      "回答偏题"
+     ],
+     "quote": "\"Hi should I learned us here to show the memory and experience between different. Agents within the club codes or Codex application\"",
+     "tip": [
+      "The opening is unintelligible and the content about code agents does not remain tied to describing a useful personal skill in a clear way. Relevance-boundary and answer-trimming drill.",
+      "开头难以听懂，并且关于代码智能体的内容与清楚描述一个有用的个人技能这一题目脱节。进行相关性边界与删减练习。"
+     ]
+    }
+   ],
+   "items": {
+    "p2": [
+     {
+      "dur": "1:23",
+      "ans": "Hi should I learned us here to show the memory and experience between different. Agents within the club codes or Codex application and I learned it when I trying to use such code coding agents to help me develop a application. I learned after suffering from a multiply. Impose multiplied communications about within within different chat sessions and use them to work on the same target. And I think the reason why it's very useful is to avoid me. Chatting too much and I think it is a very efficient mechanism to let the agents communicate with each other internally and. And so you see target as the only one. Only Wang Funimation for file the final final codes.",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"Hi should I learned us here to show the memory and experience\" → \"Hi, I should share what I learned about memory and an experience\"",
+        "Subject and verb form are incorrect, and the noun phrase is awkward.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"multiply. Impose multiplied communications\" → \"multiple communications\"",
+        "The intended adjective is 'multiple', and the noun should be 'communications' or 'messages'.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"the final final codes\" → \"the final code\"",
+        "Remove the repeated word; a single 'final' is enough.",
+        "warn"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "p3": {
+   "score": "5.0",
+   "meta": [
+    "Completed 27 Aug, 17:47 · 1 min",
+    "8月27日完成, 17:47 · 1 min"
+   ],
+   "summary": "Address every Part 3 prompt directly with a clear position and a reason.",
+   "criteria": [
+    {
+     "zh": "流利度与连贯性",
+     "sc": "4.0",
+     "en": "You did not address any of the five Part 3 prompts directly, so the examiner cannot credit development of ideas. The transcript reads as a sequence of short, loosely connected thoughts rather than a coherent response. Cohesive devices are largely absent, and the closing line shifts to a meta-comment about the question rather than answering it. Sustained speech is limited, with frequent pauses and self-corrections such as 'they they experienced differently'.",
+     "quotes": [
+      "\"They usually gathered, scattered to hike and, uh, some outdoor exercise.\"",
+      "\"So I think technology can help people to organize this things.\"",
+      "\"So it's not all fixed question and I think every people will have their own answer.\""
+     ]
+    },
+    {
+     "zh": "词汇资源",
+     "sc": "4.5",
+     "en": "Vocabulary is basic and imprecise, with words like 'things' and 'stuff' used in place of more specific terms. 'Gathered, scattered to hike' shows an unclear word choice, and phrases such as 'different rules' and 'fixed question' appear to substitute for intended words like 'routines' or 'fixed answer'. Paraphrasing of the prompts is limited, so lexical flexibility cannot be credited.",
+     "quotes": [
+      "\"they are facing too much things\"",
+      "\"every people will have their own answer\"",
+      "\"different generations may have different rules\""
+     ]
+    },
+    {
+     "zh": "语法多样性与准确性",
+     "sc": "4.0",
+     "en": "A wide range of grammatical errors affects clarity. Subject-verb agreement breaks down in 'most almost 3 disagree', article use is missing in 'the priority of different stuff' and 'this things', and prepositions are wrong in 'regardless the targets'. Sentence structure is often fragmented, for example 'I think the life is life itself'. Errors are persistent enough to slow the listener.",
+     "quotes": [
+      "\"most almost 3 disagree about this option you\"",
+      "\"cannot organize the priority of different stuff\"",
+      "\"We need to enjoy our life regardless the targets of this\"",
+      "\"I think the life is life itself\""
+     ]
+    },
+    {
+     "zh": "发音",
+     "sc": null,
+     "en": "Based on provider pronunciation metrics as evidence, not converted to an official band. Provider accuracy score: 84.7 (evidence only, not a band). Provider prosody score: 76.3. Words to review (provider): usually, gathered, scattered, outdoor, organize, the, priority, so.",
+     "quotes": []
+    }
+   ],
+   "weaks": [
+    {
+     "en": [
+      "Off-topic response",
+      "回答偏题"
+     ],
+     "quote": "\"So it's not all fixed question and I think every people will have their own answer.\"",
+     "tip": [
+      "The response drifts away from the Part 3 prompts into a meta-comment about the question itself, losing relevance while developing the answer. Relevance-boundary and answer-trimming drill.",
+      "回答在展开时逐渐偏离 Part 3 的题目方向，转而对题目本身作元评论，与问题目的脱节。进行相关性边界与删减练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken preposition error",
+      "口语介词错误"
+     ],
+     "quote": "\"We need to enjoy our life regardless the targets of this\"",
+     "tip": [
+      "The fixed preposition 'regardless of' is missing, showing unstable prepositional chunks during speech. Preposition-collocation speaking drill.",
+      "固定搭配 'regardless of' 缺少介词 'of'，说明口语中介词词块不稳定。进行介词搭配口语练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken article error",
+      "口语冠词错误"
+     ],
+     "quote": "\"cannot organize the priority of different stuff\"",
+     "tip": [
+      "Articles are missing or mis-selected across recurring patterns such as 'this things' and 'the priority of different stuff'. Chunked article-noun practice.",
+      "在 'this things' 和 'the priority of different stuff' 等常见结构中，冠词被遗漏或选错。进行冠词与名词词块练习。"
+     ]
+    },
+    {
+     "en": [
+      "Inaccurate word choice",
+      "选词不准确"
+     ],
+     "quote": "\"different generations may have different rules\"",
+     "tip": [
+      "Words like 'rules' and 'fixed question' do not match the intended meaning of 'routines' or 'fixed answer', showing imprecise spoken vocabulary choice. Near-synonym oral contrast.",
+      "'rules' 和 'fixed question' 并不是想表达的 'routines' 或 'fixed answer'，所选词汇与本意不符。进行近义词口头辨析。"
+     ]
+    }
+   ],
+   "items": {
+    "p3": [
+     {
+      "q": "How do most people in your country typically organise their daily schedules?",
+      "dur": "9s",
+      "ans": "they usually gathered scattered to hike and uh some outdoor exercise",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"They usually gathered, scattered to hike and, uh, some outdoor exercise.\" → \"They usually gather in groups to hike or do outdoor exercise.\"",
+        "Use the simple present for habitual actions, and complete the verb phrase with a clear activity.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "q": "Why do you think some people find it difficult to stick to a daily routine?",
+      "dur": "9s",
+      "ans": "i think sometimes they are facing too much things and cannot organize the priority of different stuff so",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"they are facing too much things\" → \"they are facing too many things\"",
+        "'Many' is used with countable plural nouns like 'things'.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"cannot organize the priority of different stuff\" → \"cannot organise the priorities of different tasks\"",
+        "Use the plural 'priorities' and a more precise noun than 'stuff'.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "q": "Do you think technology has made it easier or harder for people to manage their time? Give reasons for your view.",
+      "dur": "8s",
+      "ans": "i think technology can help people to organize this things",
+      "tags": []
+     },
+     {
+      "q": "Some people believe that a busy life is a fulfilling life. To what extent do you agree?",
+      "dur": "13s",
+      "ans": "uh and most almost three disagree about this option you because i think the life is life itself we need to enjoy our life regardless the targets of this",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"the life is life itself\" → \"life is fulfilling in itself\"",
+        "Restructure to form a complete and logical sentence.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"regardless the targets of this\" → \"regardless of these goals\"",
+        "The fixed preposition is 'regardless of', and 'goals' fits the meaning better than 'targets' here.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "q": "How might the way people organise their daily lives change in the future compared with how their parents did?",
+      "dur": "18s",
+      "ans": "i think different generations may have different rules because they they experienced differently during their grow up so it's not all fixed question and i think every people will have their own answer",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"every people will have their own answer\" → \"every person will have their own answer\"",
+        "'Every' takes a singular countable noun.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"they experienced differently during their grow up\" → \"they had different experiences while growing up\"",
+        "Use the past tense and the gerund form 'growing up'.",
+        "warn"
+       ]
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

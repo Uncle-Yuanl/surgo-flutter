@@ -1176,47 +1176,37 @@
    ],
    "daily": {
     "part1": {
-     "topic": "Your studies and daily routine",
+     "topic": "daily routine",
      "questions": [
-      "Do you like music?",
-      "What kind of music do you like to listen to?",
-      "Do you prefer sad or happy music?",
-      "Does happy music make you feel more excited?",
-      "Has the music you listen to changed since you were young?",
-      "Where is your hometown?",
-      "What do you like most about your hometown?",
-      "Has your hometown changed much in recent years?",
-      "Would you like to live in your hometown in the future?",
-      "Do many tourists visit your hometown?"
+      "What is a typical morning like for you?",
+      "Do you prefer to plan your day in advance or decide things as you go?",
+      "How has your daily routine changed compared to five years ago?",
+      "Is there anything in your daily routine you would like to change?",
+      "Who do you usually spend the busiest parts of your day with?"
      ]
     },
     "part2": {
-     "cue": "Describe a person you know who has a healthy lifestyle",
+     "cue": "Describe a useful skill you learned.",
      "points": [
-      "where it is",
-      "how often you go there",
-      "what you do there",
-      "and explain why you enjoy visiting it."
+      "what the skill is",
+      "when and where you learned it",
+      "how you learned it",
+      "and explain why you think it is useful."
      ],
-     "pointsZh": [
-      "它在哪里",
-      "你多久去一次",
-      "你在那里做什么",
-      "你为什么喜欢它"
-     ],
+     "pointsZh": [],
      "prepSeconds": 60,
      "minutes": 2
     },
     "part3": {
-     "topic": "Skills, work and the future",
+     "topic": "Daily Routines and Time Management",
      "questions": [
-      "Why do people like to visit different places?",
-      "What are the differences between travelling in your own country and abroad?",
-      "Do you think tourism can harm local communities?",
-      "How has the way people travel changed over the past few decades?",
-      "Will virtual travel ever replace real travel in the future?",
-      "Should governments invest more in local tourism?"
-     ]
+      "How do most people in your country typically organise their daily schedules?",
+      "Why do you think some people find it difficult to stick to a daily routine?",
+      "Do you think technology has made it easier or harder for people to manage their time? Give reasons for your view.",
+      "Some people believe that a busy life is a fulfilling life. To what extent do you agree?",
+      "How might the way people organise their daily lives change in the future compared with how their parents did?"
+     ],
+     "rounds": 5
     }
    },
    "mock": {

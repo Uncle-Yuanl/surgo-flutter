@@ -1,0 +1,43 @@
+{
+ "SPQ": {
+  "p1": {
+   "n": 5,
+   "sec": 300,
+   "qs": [
+    "What do you like about the area where you live?",
+    "How long have you been living in your current neighbourhood?",
+    "Are there any facilities near your home that you use regularly?",
+    "Has your neighbourhood changed much since you first lived there?",
+    "Do you think your area is a good place for families with children?"
+   ]
+  },
+  "p2": {
+   "n": 1,
+   "sec": 240,
+   "prep": 60,
+   "rec": 120,
+   "card": {
+    "title": "Describe a book or film that you have enjoyed recently.",
+    "lead": "Prepare for 60 seconds, then speak for up to 120 seconds.",
+    "bullets": []
+   },
+   "qs": [
+    "Describe a book or film that you have enjoyed recently."
+   ]
+  },
+  "p3": {
+   "n": 6,
+   "sec": 300,
+   "qs": [
+    "What aspects of the book or film made it particularly memorable for you?",
+    "Do you think books and films have different strengths as storytelling mediums?",
+    "How do you think technology has changed the way people enjoy stories today?",
+    "Some people say that classic literature is being replaced by films and television shows. To what extent do you agree?",
+    "How might storytelling evolve in the future with new technologies such as virtual reality?",
+    "Do you think the stories we consume influence the values and beliefs of society?"
+   ]
+  }
+ },
+ "SP3_TOTAL": 300,
+ "SP3_SWAP": 5
+}
