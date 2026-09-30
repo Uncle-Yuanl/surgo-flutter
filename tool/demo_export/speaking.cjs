@@ -142,6 +142,8 @@ exports.build = () => {
     },
     'speaking_review.json': {
       daily: Object.fromEntries(Object.entries(a).map(([part, x]) => [part, review(part, x)])),
+      // 顶层是原型那份示例评语；三个 Part 都有 daily，页面用不到它，清空，免得示例内容混进演示包。
+      score: '', criteria: [], weaks: [], items: { p1: [], p2: [], p3: [] }, cuePoints: [], p3Overall: null,
     },
     'ielts_mock_speaking.json': {
       SPQ: {
