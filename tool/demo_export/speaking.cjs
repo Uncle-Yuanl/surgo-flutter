@@ -24,7 +24,8 @@ const CRITERIA = [
 ];
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-function attempt(id) {
+/** 只认演示学员自己的作答：号主同意公开的是这一位，id 写成别人的就查不到、直接报错。 */
+function attempt(id, learner) {
   return one(
     `select jsonb_build_object(
       'at', a.attempted_at, 'item', g.content,
@@ -44,12 +45,12 @@ function attempt(id) {
                      and o.analysis_run_id = (select r.id from assessment_analysis_runs r where r.user_id = a.user_id
                        and r.source_type = 'ielts_practice' and r.source_result_id = a.id order by r.created_at desc limit 1)))
      from ielts_attempts a join ielts_generated_items g on g.id = a.generated_item_id
-     where a.id = ${lit(id)} and a.module = 'speaking'`,
+     where a.id = ${lit(id)} and a.module = 'speaking' and a.user_id::text like ${lit(`${learner}%`)}`,
     `speaking attempt ${id}`,
   );
 }
 
-function mockSession(id) {
+function mockSession(id, learner) {
   return one(
     `select jsonb_build_object(
       'groups', s.exam_plan_snapshot->'groups',
@@ -57,7 +58,8 @@ function mockSession(id) {
                  'qs', (select jsonb_agg(i.public_content->>'prompt' order by i.ordinal)
                         from ielts_mock_exam_items i where i.section_id = sc.id)) order by sc.ordinal)
                 from ielts_mock_exam_sections sc where sc.session_id = s.id))
-     from ielts_mock_exam_sessions s where s.id = ${lit(id)} and s.module = 'speaking' and s.status = 'completed'`,
+     from ielts_mock_exam_sessions s where s.id = ${lit(id)} and s.module = 'speaking' and s.status = 'completed'
+       and s.user_id::text like ${lit(`${learner}%`)}`,
     `speaking mock session ${id}`,
   );
 }
@@ -124,10 +126,10 @@ function review(part, a) {
 const questions = (item) => item.questions.map((q) => q.question);
 const seconds = (groups, id) => groups.find((g) => g.id === id).timing_policy.duration_seconds;
 
-exports.build = () => {
-  const a = Object.fromEntries(Object.entries(ATTEMPTS).map(([part, id]) => [part, attempt(id)]));
+exports.build = ({ learner }) => {
+  const a = Object.fromEntries(Object.entries(ATTEMPTS).map(([part, id]) => [part, attempt(id, learner)]));
   const cue = a.p2.item.cue_card;
-  const mock = mockSession(MOCK_SESSION);
+  const mock = mockSession(MOCK_SESSION, learner);
   const [m1, m2, m3] = mock.parts;
   return {
     'questions.json': {

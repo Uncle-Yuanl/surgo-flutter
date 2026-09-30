@@ -10,7 +10,8 @@ const { review, weakest } = require('./writing.cjs');
 // Task 1 要表格题：答题页只会原生画表格（其余几场是折线图）。
 const SESSION = 'c5feac82-c276-4046-93d3-434086ce7c62';
 
-function session(id) {
+/** 只认演示学员自己的场次：号主同意公开的是这一位，id 写成别人的就查不到、直接报错。 */
+function session(id, learner) {
   return one(
     `select jsonb_build_object(
       'score', r.section_score, 'detail', r.score_detail,
@@ -20,7 +21,8 @@ function session(id) {
                 left join ielts_mock_exam_responses x on x.item_id = i.id
                 left join ielts_mock_exam_marking_keys k on k.item_id = i.id where sc.session_id = s.id))
      from ielts_mock_exam_sessions s join ielts_mock_exam_results r on r.session_id = s.id
-     where s.id = ${lit(id)} and s.module = 'writing' and s.status = 'completed'`,
+     where s.id = ${lit(id)} and s.module = 'writing' and s.status = 'completed'
+       and s.user_id::text like ${lit(`${learner}%`)}`,
     `mock writing session ${id}`,
   );
 }
@@ -59,8 +61,8 @@ function scored(m, n) {
   };
 }
 
-exports.build = () => {
-  const m = session(SESSION);
+exports.build = ({ learner }) => {
+  const m = session(SESSION, learner);
   const t1 = scored(m, 1);
   const t2 = scored(m, 2);
   const r1 = review(t1);
