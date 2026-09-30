@@ -19,6 +19,7 @@ class NativeOralSpeech implements OralSpeech {
   static const startWithin = Duration(milliseconds: 2500);
   Timer? _watch;
   VoidCallback? _clip;
+  String? _asset;
   int _turn = 0;
   @override
   Future<void> speak(String text, {required VoidCallback started,
@@ -40,7 +41,7 @@ class NativeOralSpeech implements OralSpeech {
       _clip = watch;
       demoAudio.addListener(watch);
       started();
-      demoAudio.play(clip['asset'] as String, seconds: (clip['sec'] as num).toDouble());
+      demoAudio.play(_asset = clip['asset'] as String, seconds: (clip['sec'] as num).toDouble());
       return;
     }
     try {
@@ -66,7 +67,8 @@ class NativeOralSpeech implements OralSpeech {
     if (watch == null) return;
     _clip = null;
     demoAudio.removeListener(watch);
-    demoAudio.stop();
+    // 只停自己那一段：这里可能是在页面 dispose 时被调到的，那时播放器里也许已经是下一页的音频了。
+    if (demoAudio.asset == _asset) demoAudio.stop();
   }
   @override
   Future<void> stop() async { _turn++; _watch?.cancel(); _dropClip(); try { await tts.stop(); } catch (_) {} }

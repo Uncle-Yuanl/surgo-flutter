@@ -67,7 +67,6 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
   @override
   void dispose() {
     demoAudio.removeListener(_next);
-    demoAudio.stop();
     super.dispose();
   }
 

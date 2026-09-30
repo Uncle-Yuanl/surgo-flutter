@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 
 import 'routes.dart';
+import '../widgets/demo_audio.dart';
 
 /// 全局会话状态 —— 对应原型 `app.js` 顶层的可变全局变量。
 ///
@@ -79,6 +80,9 @@ class AppState extends ChangeNotifier {
   /// 跟读计时与录音状态。那是"页面入场副作用"，在 Flutter 里由
   /// 各模块控制器承接；这里仅负责换页和触发重新构建。
   void go(SurgoPage page) {
+    // 换页（包括 go 到同一页重建）先把演示音频停掉：页面切换有 300 毫秒的过渡，旧页面的 dispose 比新页面
+    // 开始放音频还晚，让页面各自在 dispose 里停的话，会把新页面刚放起来的那一段掐掉。
+    demoAudio.stop();
     _revision++;
     if (_current == page) {
       // 原型里 go() 到同一页也会重渲染（用于刷新数据），保持一致

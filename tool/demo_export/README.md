@@ -47,7 +47,11 @@ JSON，不调接口，也不现场生成任何内容。
     走页面原来的计时模拟，一行都不改。参考 `lib/features/ielts_listening/listening_data.dart`。
   - 进度、是否在放、是否放完都读 `demoAudio`（`position` / `playing` / `ended`），别自己另算一份；
     被浏览器拦下或文件加载失败时它按 `sec` 空走进度、照常 `ended`（`silent` 为 true），页面不会卡住。
-  - 离开页面（`dispose`）调 `demoAudio.stop()`。
+  - 离开页面不用管：换页（`AppState.go`，包括 go 到同一页重建）和交卷（`showMarking`）时统一停。**页面自己
+    不要在 `dispose` 里调 `demoAudio.stop()`**：换页有 300 毫秒的过渡，旧页面的 dispose 比新页面开始放音频
+    还晚，这一停会把新页面刚放起来的那一段掐掉。进页面就自动放的，在 `initState` 之后放都行（go 已经先停过了）。
+  - 一张卡要连着放几段（回顾页：提问接着作答、Part 2 三轮连放）：监听 `demoAudio`，上一段 `ended` 了就放
+    下一段，见 `lib/features/speaking_review/speaking_review_page.dart` 的 `_queue`。
   - 考官提问：题库 `ielts.speaking.examinerAudio`（题目原文 → `{ asset, sec }`），
     `NativeOralSpeech` 见到就放它、不用浏览器朗读；放不出声（或浏览器朗读 2.5 秒还没开始）就把题目文字
     显示出来，流程照走（`test/speaking_unheard_test.dart`）。

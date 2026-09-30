@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../app/app_state.dart';
 import '../app/routes.dart';
 import '../theme/tokens.dart';
+import 'demo_audio.dart';
 import 'primitives.dart';
 import 't.dart';
 
@@ -20,7 +21,8 @@ class _MarkingState extends State<_Marking> with SingleTickerProviderStateMixin 
  late final AnimationController progress;
  Timer? tail;
  @override
- void initState(){super.initState();progress=AnimationController(vsync:this,duration:const Duration(seconds:2))
+ void initState(){super.initState();demoAudio.stop(); // 交卷了，还在放的录音这就停（不等两秒后换页）
+  progress=AnimationController(vsync:this,duration:const Duration(seconds:2))
  ..addStatusListener((status){if(status==AnimationStatus.completed)tail=Timer(const Duration(milliseconds:200),(){if(mounted)_go(widget.target);});})..forward();}
  void _go(SurgoPage page){final state=context.read<AppState>();Navigator.pop(context);state.go(page);}
  @override
