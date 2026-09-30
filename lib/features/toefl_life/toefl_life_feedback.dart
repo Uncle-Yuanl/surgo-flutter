@@ -40,6 +40,11 @@ const _expLine = Color(0xFFF2E8CF);
 const _expBInk = Color(0xFF3A352C);
 const _expQInk = Color(0xFF6A6357);
 
+/// 内容文字：原型数据是字符串，照旧走 [SourceText]；演示用真实数据
+/// （tool/demo_export）给 `[英文, 中文]` 一对，交给 [T] 按界面语言取。
+Widget _text(Object v, TextStyle style) =>
+    v is List ? T(v, style: style) : SourceText('$v', style: style);
+
 /// tfDlFb 反馈页。返回自然高度 Column（外层 shell 滚动）。
 ///
 /// 对应 app.js 10075-10135 的 tfDlFbView：估分卡文案为原型内联硬编码
@@ -74,9 +79,10 @@ class TfDlFbView extends StatelessWidget {
                   style: TextStyle(fontSize: 13.5, color: _scoreK)),
               const SizedBox(height: 6),
               // .tffb-score-n：80.0 / 6.0（分数是内容 → Text）
+              // 演示用真实数据带这一场的估分（content.score）；原型数据用原来写死的值。
               SourceText.rich(TextSpan(children: [
                 TextSpan(
-                  text: academic?'60.0':'80.0',
+                  text: content.score ?? (academic?'60.0':'80.0'),
                   style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                     fontSize: 36,
                     fontWeight: FontWeight.w900,
@@ -93,12 +99,14 @@ class TfDlFbView extends StatelessWidget {
                   ),
                 ),
               ])),
-              const SizedBox(height: 10),
-              // .tffb-score-d
-              const T(
-                '\u65e5\u5e38\u9605\u8bfb\u7a33\u5b9a\uff0c\u5b66\u672f\u6587\u7ae0\u662f\u4e3b\u8981\u63d0\u5347\u70b9\u3002',
-                style: TextStyle(fontSize: 13.5, height: 1.6, color: _scoreD),
-              ),
+              // .tffb-score-d \u2014\u2014 \u539f\u578b\u7684\u56fa\u5b9a\u8bc4\u8bed\uff1b\u540e\u7aef\u4e0d\u51fa\u6574\u573a\u8bc4\u8bed\uff0c\u771f\u5b9e\u6570\u636e\u4e0b\u4e0d\u753b\u8fd9\u4e00\u884c\u3002
+              if (content.score == null) ...[
+                const SizedBox(height: 10),
+                const T(
+                  '\u65e5\u5e38\u9605\u8bfb\u7a33\u5b9a\uff0c\u5b66\u672f\u6587\u7ae0\u662f\u4e3b\u8981\u63d0\u5347\u70b9\u3002',
+                  style: TextStyle(fontSize: 13.5, height: 1.6, color: _scoreD),
+                ),
+              ],
               const SizedBox(height: 8),
               // .tffb-score-f
               const T(
@@ -267,9 +275,9 @@ class _WeakCard extends StatelessWidget {
               border:
                   Border(left: BorderSide(color: SurgoColors.yellow, width: 3)),
             ),
-            child: SourceText(
+            child: _text(
               w.q,
-              style: const TextStyle(
+              const TextStyle(
                 fontSize: 13.5,
                 fontStyle: FontStyle.italic,
                 color: _weakQInk,
@@ -278,9 +286,8 @@ class _WeakCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          SourceText(w.a,
-              style: const TextStyle(
-                  fontSize: 13.5, height: 1.65, color: _weakQInk)),
+          _text(w.a,
+              const TextStyle(fontSize: 13.5, height: 1.65, color: _weakQInk)),
         ],
       ),
     );
@@ -289,7 +296,7 @@ class _WeakCard extends StatelessWidget {
 
 class _WTag extends StatelessWidget {
   const _WTag(this.text, this.bg, this.ink);
-  final String text;
+  final Object text;
   final Color bg;
   final Color ink;
   @override
@@ -298,8 +305,7 @@ class _WTag extends StatelessWidget {
       decoration:
           BoxDecoration(color: bg, borderRadius: BorderRadius.circular(8)),
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-      child: SourceText(text,
-          style:
+      child: _text(text,
               TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 13, fontWeight: FontWeight.w700, color: ink)),
     );
   }
@@ -489,7 +495,7 @@ class _AnsRow extends StatelessWidget {
 
 class _ExpBlock extends StatelessWidget {
   const _ExpBlock({required this.why, required this.evi});
-  final String why;
+  final Object why;
   final String evi;
   @override
   Widget build(BuildContext context) {
@@ -512,9 +518,8 @@ class _ExpBlock extends StatelessWidget {
                   color: SurgoColors.ink)),
           const SizedBox(height: 7),
           // 解析正文内容 → Text
-          SourceText(why,
-              style:
-                  const TextStyle(fontSize: 13.5, height: 1.65, color: _expBInk)),
+          _text(why,
+              const TextStyle(fontSize: 13.5, height: 1.65, color: _expBInk)),
           const SizedBox(height: 9),
           // 「原文依据：」标签 chrome
           const T('\u539f\u6587\u4f9d\u636e\uff1a',

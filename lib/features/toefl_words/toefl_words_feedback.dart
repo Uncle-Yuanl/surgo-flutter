@@ -40,6 +40,11 @@ const _expLine = Color(0xFFF2E8CF);
 const _expBInk = Color(0xFF3A352C);
 const _expQInk = Color(0xFF6A6357);
 
+/// 内容文字：原型数据是字符串，照旧走 [SourceText]；演示用真实数据
+/// （tool/demo_export）给 `[英文, 中文]` 一对，交给 [T] 按界面语言取。
+Widget _text(Object v, TextStyle style) =>
+    v is List ? T(v, style: style) : SourceText('$v', style: style);
+
 /// tfDwFb 反馈页。返回自然高度 Column（外层 shell 滚动）。
 class TfDwFbView extends StatelessWidget {
   const TfDwFbView({super.key, required this.content});
@@ -88,10 +93,13 @@ class TfDwFbView extends StatelessWidget {
                   ),
                 ),
               ])),
-              const SizedBox(height: 10),
-              T(s.d,
-                  style: const TextStyle(
-                      fontSize: 13.5, height: 1.6, color: _scoreD)),
+              // 评语：演示用真实数据里是空串（后端不出整场评语），这一行就不画。
+              if (s.d.isNotEmpty) ...[
+                const SizedBox(height: 10),
+                T(s.d,
+                    style: const TextStyle(
+                        fontSize: 13.5, height: 1.6, color: _scoreD)),
+              ],
               const SizedBox(height: 8),
               T(s.f, style: const TextStyle(fontSize: 13, color: _scoreF)),
             ],
@@ -252,9 +260,9 @@ class _WeakCard extends StatelessWidget {
             decoration: const BoxDecoration(
               border: Border(left: BorderSide(color: SurgoColors.yellow, width: 3)),
             ),
-            child: SourceText(
+            child: _text(
               w.q,
-              style: const TextStyle(
+              const TextStyle(
                 fontSize: 13.5,
                 fontStyle: FontStyle.italic,
                 color: _weakQInk,
@@ -263,8 +271,8 @@ class _WeakCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          SourceText(w.a,
-              style: const TextStyle(fontSize: 13.5, height: 1.65, color: _weakQInk)),
+          _text(w.a,
+              const TextStyle(fontSize: 13.5, height: 1.65, color: _weakQInk)),
         ],
       ),
     );
@@ -273,7 +281,7 @@ class _WeakCard extends StatelessWidget {
 
 class _WTag extends StatelessWidget {
   const _WTag(this.text, this.bg, this.ink);
-  final String text;
+  final Object text;
   final Color bg;
   final Color ink;
   @override
@@ -281,8 +289,8 @@ class _WTag extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(color: bg, borderRadius: BorderRadius.circular(8)),
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-      child: SourceText(text,
-          style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 13, fontWeight: FontWeight.w700, color: ink)),
+      child: _text(text,
+          TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 13, fontWeight: FontWeight.w700, color: ink)),
     );
   }
 }
@@ -412,8 +420,8 @@ class _QCard extends StatelessWidget {
               style: TextStyle(fontSize: 13, color: SurgoColors.muted)),
           const SizedBox(height: 4),
           // 题干内容 → Text
-          SourceText(q.q,
-              style: const TextStyle(
+          _text(q.q,
+              const TextStyle(
                   fontSize: 14, height: 1.55, color: SurgoColors.ink)),
           const SizedBox(height: 12),
           _AnsRow(label: '\u4f60\u7684\u4f5c\u7b54', value: q.mine, ink: q.ok ? _ansOk : _ansBad),
@@ -458,7 +466,7 @@ class _AnsRow extends StatelessWidget {
 
 class _ExpBlock extends StatelessWidget {
   const _ExpBlock({required this.why, required this.evi});
-  final String why;
+  final Object why;
   final String evi;
   @override
   Widget build(BuildContext context) {
@@ -479,8 +487,8 @@ class _ExpBlock extends StatelessWidget {
                   fontSize: 13.5, fontWeight: FontWeight.w800, color: SurgoColors.ink)),
           const SizedBox(height: 7),
           // 解析正文内容 → Text
-          SourceText(why,
-              style: const TextStyle(fontSize: 13.5, height: 1.65, color: _expBInk)),
+          _text(why,
+              const TextStyle(fontSize: 13.5, height: 1.65, color: _expBInk)),
           const SizedBox(height: 9),
           // 「原文依据：」标签 chrome
           const T('\u539f\u6587\u4f9d\u636e\uff1a',
