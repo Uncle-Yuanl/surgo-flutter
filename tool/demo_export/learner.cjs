@@ -481,11 +481,11 @@ exports.build = (config) => {
     'tz', study_timezone) from user_profiles where user_id = ${lit(user)}`, 'learner profile');
   const tz = profile.tz || 'Asia/Shanghai';
   const now = Date.parse(AS_OF), at = `${lit(AS_OF)}::timestamptz`, today = localDay(now, tz);
-  // 只用「还剩几天」，不出具体日期；考试日已过就不显示倒计时。
+  // 只用「还剩几天」，不出具体日期；考试日已到或已过就不显示倒计时（「还剩 0 天」只在导出当天成立）。
   const days = profile.examDate ? (Date.parse(`${profile.examDate}T00:00:00Z`) - today) / DAY : null;
 
   const learner = {
-    daysToExam: days != null && days >= 0 ? days : null,
+    daysToExam: days != null && days > 0 ? days : null,
     profile: { name: 'Nafis', email: null },
     notifications: notifications(user, at, tz),
   };
