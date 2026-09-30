@@ -11,6 +11,10 @@
    "segments": [
     {
      "sec": 6,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_1.mp3",
+      "sec": 5.6
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -33,6 +37,10 @@
     },
     {
      "sec": 6,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_1.mp3",
+      "sec": 5.6
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -55,6 +63,10 @@
     },
     {
      "sec": 6,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_1.mp3",
+      "sec": 5.6
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -77,6 +89,10 @@
     },
     {
      "sec": 6,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_1.mp3",
+      "sec": 5.6
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -99,6 +115,10 @@
     },
     {
      "sec": 7,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_2.mp3",
+      "sec": 7
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -121,6 +141,10 @@
     },
     {
      "sec": 7,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_2.mp3",
+      "sec": 7
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -143,6 +167,10 @@
     },
     {
      "sec": 7,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_2.mp3",
+      "sec": 7
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -165,6 +193,10 @@
     },
     {
      "sec": 7,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_2.mp3",
+      "sec": 7
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -187,6 +219,10 @@
     },
     {
      "sec": 7,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_3.mp3",
+      "sec": 6.9
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -209,6 +245,10 @@
     },
     {
      "sec": 7,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_3.mp3",
+      "sec": 6.9
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -231,6 +271,10 @@
     },
     {
      "sec": 7,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_3.mp3",
+      "sec": 6.9
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -253,6 +297,10 @@
     },
     {
      "sec": 7,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_3.mp3",
+      "sec": 6.9
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -288,6 +336,10 @@
      "sec": 67,
      "audio": 0,
      "lead": "A conversation between two students",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_1.mp3",
+      "sec": 67
+     },
      "q": "Why is the student returning the biology textbook?",
      "opts": [
       [
@@ -312,6 +364,10 @@
      "sec": 54,
      "audio": 1,
      "lead": "A conversation between two students",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_2.mp3",
+      "sec": 54
+     },
      "q": "What do the students plan to do if the teammate does not respond?",
      "opts": [
       [
@@ -333,9 +389,13 @@
      ]
     },
     {
-     "sec": 41,
+     "sec": 42,
      "audio": 2,
      "lead": "A conversation between a student and a dining services manager",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_3.mp3",
+      "sec": 41.7
+     },
      "q": "Why did the dining services manager say portions were reduced?",
      "opts": [
       [
@@ -357,9 +417,13 @@
      ]
     },
     {
-     "sec": 42,
+     "sec": 43,
      "audio": 3,
      "lead": "A conversation between a student and a campus security officer",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_4.mp3",
+      "sec": 42.6
+     },
      "q": "What does the officer suggest the student do to prevent the lost card from being misused?",
      "opts": [
       [
@@ -381,9 +445,13 @@
      ]
     },
     {
-     "sec": 46,
+     "sec": 47,
      "audio": 4,
      "lead": "A conversation between two students",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_5.mp3",
+      "sec": 46.5
+     },
      "q": "What change did the publishing company offer to the internship?",
      "opts": [
       [
@@ -408,6 +476,10 @@
      "sec": 45,
      "audio": 5,
      "lead": "A conversation between two students",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_6.mp3",
+      "sec": 44.9
+     },
      "q": "What did the professor ask the students to do for the field trip?",
      "opts": [
       [
@@ -443,6 +515,10 @@
      "sec": 57,
      "audio": 0,
      "lead": "A campus announcement",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_1.mp3",
+      "sec": 56.9
+     },
      "q": "What change is being introduced on the third floor?",
      "opts": [
       [
@@ -467,6 +543,10 @@
      "sec": 48,
      "audio": 1,
      "lead": "A campus announcement",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_2.mp3",
+      "sec": 48
+     },
      "q": "When will the central dining hall be closed?",
      "opts": [
       [
@@ -491,6 +571,10 @@
      "sec": 50,
      "audio": 2,
      "lead": "A campus announcement",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_3.mp3",
+      "sec": 50
+     },
      "q": "Why is the shuttle route being changed?",
      "opts": [
       [
@@ -515,6 +599,10 @@
      "sec": 51,
      "audio": 3,
      "lead": "A campus announcement",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_4.mp3",
+      "sec": 51.4
+     },
      "q": "What is the new student ticket price for mainstage productions?",
      "opts": [
       [
@@ -539,6 +627,10 @@
      "sec": 51,
      "audio": 4,
      "lead": "A campus announcement",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_5.mp3",
+      "sec": 51.1
+     },
      "q": "What should students do before attending the networking event?",
      "opts": [
       [
@@ -560,9 +652,13 @@
      ]
     },
     {
-     "sec": 51,
+     "sec": 52,
      "audio": 5,
      "lead": "A campus announcement",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_6.mp3",
+      "sec": 51.5
+     },
      "q": "What must students bring to receive a flu shot at the clinic?",
      "opts": [
       [
@@ -595,9 +691,13 @@
    "next": "modEnd",
    "segments": [
     {
-     "sec": 74,
+     "sec": 75,
      "audio": 0,
      "lead": "An academic lecture on speleothem formation",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_1.mp3",
+      "sec": 74.5
+     },
      "q": "According to the lecture, why does calcium carbonate stop remaining in solution once cave water is exposed to air?",
      "opts": [
       [
@@ -626,6 +726,10 @@
      "sec": 71,
      "audio": 1,
      "lead": "An academic lecture on signaling theory in animals",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_2.mp3",
+      "sec": 71
+     },
      "q": "What does the lecturer mean by the term signaling tradeoff?",
      "opts": [
       [
@@ -654,6 +758,10 @@
      "sec": 75,
      "audio": 2,
      "lead": "An academic lecture on memory and forgetting",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_3.mp3",
+      "sec": 75.2
+     },
      "q": "According to the lecture, what does the shape of the classic forgetting curve imply for study scheduling?",
      "opts": [
       [
@@ -682,6 +790,10 @@
      "sec": 75,
      "audio": 3,
      "lead": "An academic lecture on seismic engineering",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_4.mp3",
+      "sec": 75.2
+     },
      "q": "Why do engineers try to lengthen a building's natural period during seismic design?",
      "opts": [
       [
@@ -707,9 +819,13 @@
      ]
     },
     {
-     "sec": 68,
+     "sec": 69,
      "audio": 4,
      "lead": "An academic lecture on mangrove ecology",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_5.mp3",
+      "sec": 68.5
+     },
      "q": "What point does the lecturer make about the ecological influence of mangroves?",
      "opts": [
       [
@@ -738,6 +854,10 @@
      "sec": 72,
      "audio": 5,
      "lead": "An academic lecture on cognitive load theory",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_6.mp3",
+      "sec": 72.1
+     },
      "q": "According to the lecture, what is the main goal of managing cognitive load in instructional design?",
      "opts": [
       [
@@ -766,6 +886,10 @@
      "sec": 74,
      "audio": 6,
      "lead": "An academic lecture on historical epidemiology",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_7.mp3",
+      "sec": 74.1
+     },
      "q": "What is the lecturer's main point about the connection between urbanisation and disease?",
      "opts": [
       [
@@ -794,6 +918,10 @@
      "sec": 73,
      "audio": 7,
      "lead": "An academic lecture on glaciology and sea level rise",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_8.mp3",
+      "sec": 72.8
+     },
      "q": "According to the lecture, why does melting sea ice contribute little to sea level rise?",
      "opts": [
       [
@@ -831,6 +959,10 @@
    "segments": [
     {
      "sec": 3,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_1.mp3",
+      "sec": 2.8
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -853,6 +985,10 @@
     },
     {
      "sec": 3,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_2.mp3",
+      "sec": 3
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -875,6 +1011,10 @@
     },
     {
      "sec": 3,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_3.mp3",
+      "sec": 3.2
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -897,6 +1037,10 @@
     },
     {
      "sec": 3,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_4.mp3",
+      "sec": 3.4
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -918,7 +1062,11 @@
      ]
     },
     {
-     "sec": 3,
+     "sec": 4,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_5.mp3",
+      "sec": 3.5
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -941,6 +1089,10 @@
     },
     {
      "sec": 3,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_6.mp3",
+      "sec": 3.3
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -963,6 +1115,10 @@
     },
     {
      "sec": 4,
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_7.mp3",
+      "sec": 3.8
+     },
      "q": "Choose the most appropriate response.",
      "opts": [
       [
@@ -998,6 +1154,10 @@
      "sec": 68,
      "audio": 0,
      "lead": "A student asks a librarian about a book on hold",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p2_1.mp3",
+      "sec": 68.3
+     },
      "q": "Why does the student go to the library desk?",
      "opts": [
       [
@@ -1022,6 +1182,10 @@
      "sec": 68,
      "audio": 1,
      "lead": "Two classmates discuss plans for a group project",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p2_2.mp3",
+      "sec": 67.9
+     },
      "q": "What will the students most likely do next?",
      "opts": [
       [
@@ -1046,6 +1210,10 @@
      "sec": 60,
      "audio": 2,
      "lead": "A student speaks with a professor about a submitted file",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p2_3.mp3",
+      "sec": 60.1
+     },
      "q": "What is the main purpose of the student's visit?",
      "opts": [
       [
@@ -1070,6 +1238,10 @@
      "sec": 57,
      "audio": 3,
      "lead": "A student calls her manager to change a work shift",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p2_4.mp3",
+      "sec": 57.2
+     },
      "q": "Why is the student calling the bookstore?",
      "opts": [
       [
@@ -1105,6 +1277,10 @@
      "sec": 53,
      "audio": 0,
      "lead": "A campus announcement about library hours",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p3_1.mp3",
+      "sec": 53.4
+     },
      "q": "What change is being introduced at the library?",
      "opts": [
       [
@@ -1129,6 +1305,10 @@
      "sec": 49,
      "audio": 1,
      "lead": "A campus announcement about cafeteria payments",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p3_2.mp3",
+      "sec": 49
+     },
      "q": "What will the cashier stations begin to accept?",
      "opts": [
       [
@@ -1153,6 +1333,10 @@
      "sec": 50,
      "audio": 2,
      "lead": "A campus announcement about shuttle routes",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p3_3.mp3",
+      "sec": 50.1
+     },
      "q": "How long will the temporary shuttle change last?",
      "opts": [
       [
@@ -1177,6 +1361,10 @@
      "sec": 54,
      "audio": 3,
      "lead": "A campus announcement about a career fair",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p3_4.mp3",
+      "sec": 54.1
+     },
      "q": "Where will the career fair be held?",
      "opts": [
       [
@@ -1246,6 +1434,10 @@
      "n": 1,
      "ok": true,
      "dur": "00:06",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_1.mp3",
+      "sec": 5.6
+     },
      "q": "\"Are you going to the open library hours tonight, or are you planning to head back to your dorm early?\"",
      "mine": "A. I have a paper due at midnight, so I'll probably stay in the library until closing time."
     },
@@ -1253,6 +1445,10 @@
      "n": 2,
      "ok": false,
      "dur": "00:06",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_1.mp3",
+      "sec": 5.6
+     },
      "q": "\"Are you going to the open library hours tonight, or are you planning to head back to your dorm early?\"",
      "mine": "B. Not really, but I think the lab opens later on Fridays.",
      "ans": "A. Yeah, I just got back from the advising office, and my schedule is finally settled for next semester."
@@ -1261,6 +1457,10 @@
      "n": 3,
      "ok": true,
      "dur": "00:06",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_1.mp3",
+      "sec": 5.6
+     },
      "q": "\"Are you going to the open library hours tonight, or are you planning to head back to your dorm early?\"",
      "mine": "B. Sure, do you want to walk over together around seven?"
     },
@@ -1268,6 +1468,10 @@
      "n": 4,
      "ok": true,
      "dur": "00:06",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_1.mp3",
+      "sec": 5.6
+     },
      "q": "\"Are you going to the open library hours tonight, or are you planning to head back to your dorm early?\"",
      "mine": "B. I think I'm staying on campus because the shuttle back home doesn't run on Sundays."
     },
@@ -1275,6 +1479,10 @@
      "n": 5,
      "ok": false,
      "dur": "00:07",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_2.mp3",
+      "sec": 7
+     },
      "q": "\"I missed the deadline to add that linguistics seminar, so now I'm scrambling to find a replacement course before Friday.\"",
      "mine": "C. My roommate is taking an extra history elective, and she says it's really relaxed.",
      "ans": "A. That sounds rough, but you could try talking to the registrar first thing tomorrow."
@@ -1283,6 +1491,10 @@
      "n": 6,
      "ok": false,
      "dur": "00:07",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_2.mp3",
+      "sec": 7
+     },
      "q": "\"I missed the deadline to add that linguistics seminar, so now I'm scrambling to find a replacement course before Friday.\"",
      "mine": "—",
      "ans": "B. I actually have a friend who dropped that exact course, and she said it was a lot of work."
@@ -1291,6 +1503,10 @@
      "n": 7,
      "ok": false,
      "dur": "00:07",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_2.mp3",
+      "sec": 7
+     },
      "q": "\"I missed the deadline to add that linguistics seminar, so now I'm scrambling to find a replacement course before Friday.\"",
      "mine": "C. The campus shuttle only runs every half hour on weekends, which is kind of annoying.",
      "ans": "A. Do you want me to check the course catalog later tonight to see what's still open?"
@@ -1299,6 +1515,10 @@
      "n": 8,
      "ok": false,
      "dur": "00:07",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_2.mp3",
+      "sec": 7
+     },
      "q": "\"I missed the deadline to add that linguistics seminar, so now I'm scrambling to find a replacement course before Friday.\"",
      "mine": "—",
      "ans": "B. That really stinks, but at least the add deadline for spring isn't until next month."
@@ -1307,6 +1527,10 @@
      "n": 9,
      "ok": false,
      "dur": "00:07",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_3.mp3",
+      "sec": 6.9
+     },
      "q": "\"I left my laptop charger in the practice room yesterday, and I was wondering if anyone turned it in to the front desk.\"",
      "mine": "B. I have a spare charger you can borrow until you find yours, if that helps.",
      "ans": "A. The front desk usually keeps lost items in a bin by the printer station, so it's worth checking there."
@@ -1315,6 +1539,10 @@
      "n": 10,
      "ok": false,
      "dur": "00:07",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_3.mp3",
+      "sec": 6.9
+     },
      "q": "\"I left my laptop charger in the practice room yesterday, and I was wondering if anyone turned it in to the front desk.\"",
      "mine": "—",
      "ans": "B. I think I saw something like that on the counter this morning when I walked in, actually."
@@ -1323,6 +1551,10 @@
      "n": 11,
      "ok": false,
      "dur": "00:07",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_3.mp3",
+      "sec": 6.9
+     },
      "q": "\"I left my laptop charger in the practice room yesterday, and I was wondering if anyone turned it in to the front desk.\"",
      "mine": "—",
      "ans": "A. Are you sure it wasn't in your bag the whole time? It happens to me all the time."
@@ -1331,6 +1563,10 @@
      "n": 12,
      "ok": false,
      "dur": "00:07",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_listen_3.mp3",
+      "sec": 6.9
+     },
      "q": "\"I left my laptop charger in the practice room yesterday, and I was wondering if anyone turned it in to the front desk.\"",
      "mine": "—",
      "ans": "A. I can ask the desk staff for you when I get there in a few minutes, if you want."
@@ -1341,6 +1577,10 @@
      "n": 1,
      "ok": false,
      "dur": "01:07",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_1.mp3",
+      "sec": 67
+     },
      "q": "Why is the student returning the biology textbook?",
      "mine": "—",
      "ans": "A. The textbook is overdue and another student has placed a hold on it."
@@ -1349,6 +1589,10 @@
      "n": 2,
      "ok": false,
      "dur": "00:54",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_2.mp3",
+      "sec": 54
+     },
      "q": "What do the students plan to do if the teammate does not respond?",
      "mine": "—",
      "ans": "A. Wait one more day, then ask the professor to intervene."
@@ -1356,7 +1600,11 @@
     {
      "n": 3,
      "ok": false,
-     "dur": "00:41",
+     "dur": "00:42",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_3.mp3",
+      "sec": 41.7
+     },
      "q": "Why did the dining services manager say portions were reduced?",
      "mine": "—",
      "ans": "A. To reduce food waste on campus."
@@ -1364,7 +1612,11 @@
     {
      "n": 4,
      "ok": false,
-     "dur": "00:42",
+     "dur": "00:43",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_4.mp3",
+      "sec": 42.6
+     },
      "q": "What does the officer suggest the student do to prevent the lost card from being misused?",
      "mine": "—",
      "ans": "A. Flag the account so the card cannot be used for purchases."
@@ -1372,7 +1624,11 @@
     {
      "n": 5,
      "ok": false,
-     "dur": "00:46",
+     "dur": "00:47",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_5.mp3",
+      "sec": 46.5
+     },
      "q": "What change did the publishing company offer to the internship?",
      "mine": "—",
      "ans": "A. The student can work remotely for the first week and then in the office."
@@ -1381,6 +1637,10 @@
      "n": 6,
      "ok": false,
      "dur": "00:45",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_conv_6.mp3",
+      "sec": 44.9
+     },
      "q": "What did the professor ask the students to do for the field trip?",
      "mine": "—",
      "ans": "A. Bring waterproof boots and a rain jacket for the rainy weather."
@@ -1391,6 +1651,10 @@
      "n": 1,
      "ok": false,
      "dur": "00:57",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_1.mp3",
+      "sec": 56.9
+     },
      "q": "What change is being introduced on the third floor?",
      "mine": "—",
      "ans": "A. Extended opening hours on weeknights and weekends."
@@ -1399,6 +1663,10 @@
      "n": 2,
      "ok": false,
      "dur": "00:48",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_2.mp3",
+      "sec": 48
+     },
      "q": "When will the central dining hall be closed?",
      "mine": "—",
      "ans": "A. On Saturday for maintenance."
@@ -1407,6 +1675,10 @@
      "n": 3,
      "ok": false,
      "dur": "00:50",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_3.mp3",
+      "sec": 50
+     },
      "q": "Why is the shuttle route being changed?",
      "mine": "—",
      "ans": "A. Because of construction at the engineering building."
@@ -1415,6 +1687,10 @@
      "n": 4,
      "ok": false,
      "dur": "00:51",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_4.mp3",
+      "sec": 51.4
+     },
      "q": "What is the new student ticket price for mainstage productions?",
      "mine": "—",
      "ans": "A. Five dollars for any seat."
@@ -1423,6 +1699,10 @@
      "n": 5,
      "ok": false,
      "dur": "00:51",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_5.mp3",
+      "sec": 51.1
+     },
      "q": "What should students do before attending the networking event?",
      "mine": "—",
      "ans": "A. Register online in advance to receive a name tag."
@@ -1430,7 +1710,11 @@
     {
      "n": 6,
      "ok": false,
-     "dur": "00:51",
+     "dur": "00:52",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_ann_6.mp3",
+      "sec": 51.5
+     },
      "q": "What must students bring to receive a flu shot at the clinic?",
      "mine": "—",
      "ans": "A. A student ID and a completed consent form."
@@ -1440,7 +1724,11 @@
     {
      "n": 1,
      "ok": false,
-     "dur": "01:14",
+     "dur": "01:15",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_1.mp3",
+      "sec": 74.5
+     },
      "q": "According to the lecture, why does calcium carbonate stop remaining in solution once cave water is exposed to air?",
      "mine": "—",
      "ans": "B. Carbon dioxide escapes from the water and the pH rises."
@@ -1449,6 +1737,10 @@
      "n": 2,
      "ok": false,
      "dur": "01:11",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_2.mp3",
+      "sec": 71
+     },
      "q": "What does the lecturer mean by the term signaling tradeoff?",
      "mine": "—",
      "ans": "B. A signal must be both effective for its receiver and hard for competitors to exploit."
@@ -1457,6 +1749,10 @@
      "n": 3,
      "ok": false,
      "dur": "01:15",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_3.mp3",
+      "sec": 75.2
+     },
      "q": "According to the lecture, what does the shape of the classic forgetting curve imply for study scheduling?",
      "mine": "—",
      "ans": "C. Review within the first day yields large gains, and further review gives smaller benefits."
@@ -1465,6 +1761,10 @@
      "n": 4,
      "ok": false,
      "dur": "01:15",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_4.mp3",
+      "sec": 75.2
+     },
      "q": "Why do engineers try to lengthen a building's natural period during seismic design?",
      "mine": "—",
      "ans": "A. To keep the structure from resonating with the dominant ground frequencies."
@@ -1472,7 +1772,11 @@
     {
      "n": 5,
      "ok": false,
-     "dur": "01:08",
+     "dur": "01:09",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_5.mp3",
+      "sec": 68.5
+     },
      "q": "What point does the lecturer make about the ecological influence of mangroves?",
      "mine": "—",
      "ans": "A. Mangroves influence coastal systems well beyond the narrow band they occupy."
@@ -1481,6 +1785,10 @@
      "n": 6,
      "ok": false,
      "dur": "01:12",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_6.mp3",
+      "sec": 72.1
+     },
      "q": "According to the lecture, what is the main goal of managing cognitive load in instructional design?",
      "mine": "—",
      "ans": "A. To reduce extraneous load while preserving the inherent complexity of the material."
@@ -1489,6 +1797,10 @@
      "n": 7,
      "ok": false,
      "dur": "01:14",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_7.mp3",
+      "sec": 74.1
+     },
      "q": "What is the lecturer's main point about the connection between urbanisation and disease?",
      "mine": "—",
      "ans": "C. Sustained urbanisation depends on sanitation practices or acquired immunity."
@@ -1497,6 +1809,10 @@
      "n": 8,
      "ok": false,
      "dur": "01:13",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_talk_8.mp3",
+      "sec": 72.8
+     },
      "q": "According to the lecture, why does melting sea ice contribute little to sea level rise?",
      "mine": "—",
      "ans": "B. Because floating ice already displaces its own weight in water."
@@ -1507,6 +1823,10 @@
      "n": 1,
      "ok": false,
      "dur": "00:03",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_1.mp3",
+      "sec": 2.8
+     },
      "q": "\"Excuse me, do you have the time?\"",
      "mine": "—",
      "ans": "A. Sure, it is a little after three."
@@ -1515,6 +1835,10 @@
      "n": 2,
      "ok": false,
      "dur": "00:03",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_2.mp3",
+      "sec": 3
+     },
      "q": "\"I cannot find the library on this map.\"",
      "mine": "—",
      "ans": "A. It is the large building next to the cafe."
@@ -1523,6 +1847,10 @@
      "n": 3,
      "ok": false,
      "dur": "00:03",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_3.mp3",
+      "sec": 3.2
+     },
      "q": "\"Thanks for helping me move the boxes yesterday.\"",
      "mine": "—",
      "ans": "A. No problem, it was not heavy at all."
@@ -1531,6 +1859,10 @@
      "n": 4,
      "ok": false,
      "dur": "00:03",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_4.mp3",
+      "sec": 3.4
+     },
      "q": "\"Would you like to join us for lunch at the student centre?\"",
      "mine": "—",
      "ans": "A. Sure, I will meet you there at noon."
@@ -1538,7 +1870,11 @@
     {
      "n": 5,
      "ok": false,
-     "dur": "00:03",
+     "dur": "00:04",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_5.mp3",
+      "sec": 3.5
+     },
      "q": "\"I missed the bus and now I am late for class.\"",
      "mine": "—",
      "ans": "A. That is too bad, maybe you can explain to the teacher."
@@ -1547,6 +1883,10 @@
      "n": 6,
      "ok": false,
      "dur": "00:03",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_6.mp3",
+      "sec": 3.3
+     },
      "q": "\"Do you know if the campus bookstore sells notebooks?\"",
      "mine": "—",
      "ans": "A. Yes, they have a whole section near the front door."
@@ -1555,6 +1895,10 @@
      "n": 7,
      "ok": false,
      "dur": "00:04",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p1_7.mp3",
+      "sec": 3.8
+     },
      "q": "\"I am feeling a bit nervous about my presentation tomorrow.\"",
      "mine": "—",
      "ans": "A. That is normal, practising a few times usually helps."
@@ -1565,6 +1909,10 @@
      "n": 1,
      "ok": false,
      "dur": "01:08",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p2_1.mp3",
+      "sec": 68.3
+     },
      "q": "Why does the student go to the library desk?",
      "mine": "—",
      "ans": "B. To ask about the status of a book she placed on hold."
@@ -1573,6 +1921,10 @@
      "n": 2,
      "ok": false,
      "dur": "01:08",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p2_2.mp3",
+      "sec": 67.9
+     },
      "q": "What will the students most likely do next?",
      "mine": "—",
      "ans": "B. Meet on Thursday to work on the report together."
@@ -1581,6 +1933,10 @@
      "n": 3,
      "ok": false,
      "dur": "01:00",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p2_3.mp3",
+      "sec": 60.1
+     },
      "q": "What is the main purpose of the student's visit?",
      "mine": "—",
      "ans": "B. To explain a problem with a file she submitted."
@@ -1589,6 +1945,10 @@
      "n": 4,
      "ok": false,
      "dur": "00:57",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p2_4.mp3",
+      "sec": 57.2
+     },
      "q": "Why is the student calling the bookstore?",
      "mine": "—",
      "ans": "B. To ask whether a coworker can cover one of her shifts."
@@ -1599,6 +1959,10 @@
      "n": 1,
      "ok": false,
      "dur": "00:53",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p3_1.mp3",
+      "sec": 53.4
+     },
      "q": "What change is being introduced at the library?",
      "mine": "—",
      "ans": "B. Extending weekday opening hours"
@@ -1607,6 +1971,10 @@
      "n": 2,
      "ok": false,
      "dur": "00:49",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p3_2.mp3",
+      "sec": 49
+     },
      "q": "What will the cashier stations begin to accept?",
      "mine": "—",
      "ans": "A. Only the new student ID card and the campus payment app"
@@ -1615,6 +1983,10 @@
      "n": 3,
      "ok": false,
      "dur": "00:50",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p3_3.mp3",
+      "sec": 50.1
+     },
      "q": "How long will the temporary shuttle change last?",
      "mine": "—",
      "ans": "C. Three weeks"
@@ -1623,6 +1995,10 @@
      "n": 4,
      "ok": false,
      "dur": "00:54",
+     "clip": {
+      "asset": "assets/data/aud_tf_listening_mock_m2p3_4.mp3",
+      "sec": 54.1
+     },
      "q": "Where will the career fair be held?",
      "mine": "—",
      "ans": "B. In the main gymnasium"

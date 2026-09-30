@@ -5,6 +5,10 @@
   "segments": [
    {
     "sec": 4,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_1.mp3",
+     "sec": 4.2
+    },
     "q": "Choose the most appropriate response.",
     "opts": [
      [
@@ -27,6 +31,10 @@
    },
    {
     "sec": 4,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_2.mp3",
+     "sec": 3.9
+    },
     "q": "Choose the most appropriate response.",
     "opts": [
      [
@@ -49,6 +57,10 @@
    },
    {
     "sec": 5,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_3.mp3",
+     "sec": 5
+    },
     "q": "Choose the most appropriate response.",
     "opts": [
      [
@@ -71,6 +83,10 @@
    },
    {
     "sec": 4,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_4.mp3",
+     "sec": 3.9
+    },
     "q": "Choose the most appropriate response.",
     "opts": [
      [
@@ -93,6 +109,10 @@
    },
    {
     "sec": 4,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_5.mp3",
+     "sec": 4
+    },
     "q": "Choose the most appropriate response.",
     "opts": [
      [
@@ -115,6 +135,10 @@
    },
    {
     "sec": 3,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_6.mp3",
+     "sec": 2.9
+    },
     "q": "Choose the most appropriate response.",
     "opts": [
      [
@@ -137,6 +161,10 @@
    },
    {
     "sec": 4,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_7.mp3",
+     "sec": 4.2
+    },
     "q": "Choose the most appropriate response.",
     "opts": [
      [
@@ -159,6 +187,10 @@
    },
    {
     "sec": 5,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_8.mp3",
+     "sec": 4.7
+    },
     "q": "Choose the most appropriate response.",
     "opts": [
      [
@@ -204,6 +236,10 @@
     "n": 1,
     "ok": true,
     "dur": "00:04",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_1.mp3",
+     "sec": 4.2
+    },
     "q": "\"Would you mind if I borrowed your notes from yesterday's biology lecture?\"",
     "mine": "A. Sure, I can lend them to you right after class."
    },
@@ -211,6 +247,10 @@
     "n": 2,
     "ok": true,
     "dur": "00:04",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_2.mp3",
+     "sec": 3.9
+    },
     "q": "\"Could you tell me when the next shuttle to the science building leaves?\"",
     "mine": "B. It leaves from the main quad in fifteen minutes."
    },
@@ -218,6 +258,10 @@
     "n": 3,
     "ok": true,
     "dur": "00:05",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_3.mp3",
+     "sec": 5
+    },
     "q": "\"I'm having trouble accessing the online reading list for our psychology course.\"",
     "mine": "C. The site has been down since this morning."
    },
@@ -225,6 +269,10 @@
     "n": 4,
     "ok": false,
     "dur": "00:04",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_4.mp3",
+     "sec": 3.9
+    },
     "q": "\"Would you like to join our study group for the economics midterm?\"",
     "mine": "C. I took economics last year and did fairly well.",
     "ans": "D. That sounds helpful, thanks for thinking of me.",
@@ -238,6 +286,10 @@
     "n": 5,
     "ok": false,
     "dur": "00:04",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_5.mp3",
+     "sec": 4
+    },
     "q": "\"I missed the deadline to register for the art history seminar.\"",
     "mine": "D. Registration usually opens at the start of the term.",
     "ans": "A. I might be able to get you an add slip from the department.",
@@ -251,6 +303,10 @@
     "n": 6,
     "ok": true,
     "dur": "00:03",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_6.mp3",
+     "sec": 2.9
+    },
     "q": "\"Could you point me toward the campus bookstore?\"",
     "mine": "A. It's just past the student center, on your left."
    },
@@ -258,6 +314,10 @@
     "n": 7,
     "ok": false,
     "dur": "00:04",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_7.mp3",
+     "sec": 4.2
+    },
     "q": "\"Are you planning to attend the guest lecture on climate research tonight?\"",
     "mine": "B. The lecture hall will probably be packed.",
     "ans": "C. I wouldn't miss it; the speaker is excellent.",
@@ -271,6 +331,10 @@
     "n": 8,
     "ok": false,
     "dur": "00:05",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_respond_8.mp3",
+     "sec": 4.7
+    },
     "q": "\"I can't find the article Professor Thompson assigned for tomorrow's discussion.\"",
     "mine": "B. It's a really long article, isn't it?",
     "ans": "D. I can forward you the PDF once I'm back in my dorm.",
@@ -298,6 +362,10 @@
     "sec": 65,
     "aud": 0,
     "lead": "Two students, Emma and Jake, discuss finishing a chemistry lab write-up before the deadline and making plans to attend a professor's office hours.",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_convo_1.mp3",
+     "sec": 65.4
+    },
     "q": "What is the main reason Jake has not finished the chemistry lab write-up?",
     "opts": [
      [
@@ -321,6 +389,10 @@
    {
     "sec": 65,
     "aud": 0,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_convo_1.mp3",
+     "sec": 65.4
+    },
     "q": "What do Emma and Jake plan to do after working on the write-up?",
     "opts": [
      [
@@ -366,6 +438,10 @@
     "n": 1,
     "ok": false,
     "dur": "01:05",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_convo_1.mp3",
+     "sec": 65.4
+    },
     "q": "What is the main reason Jake has not finished the chemistry lab write-up?",
     "mine": "B. He missed the previous lecture.",
     "ans": "A. His calculator stopped working.",
@@ -379,6 +455,10 @@
     "n": 2,
     "ok": true,
     "dur": "01:05",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_convo_1.mp3",
+     "sec": 65.4
+    },
     "q": "What do Emma and Jake plan to do after working on the write-up?",
     "mine": "B. Meet at the library to finish the assignment."
    }
@@ -413,9 +493,13 @@
   "seconds": 20,
   "segments": [
    {
-    "sec": 61,
+    "sec": 62,
     "aud": 0,
     "lead": "A short campus announcement from the university library describing upcoming changes to weekend hours, access, and study room policies.",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_announce_1.mp3",
+     "sec": 61.5
+    },
     "q": "What change to the main library building's weekend schedule is being announced?",
     "opts": [
      [
@@ -437,8 +521,12 @@
     ]
    },
    {
-    "sec": 61,
+    "sec": 62,
     "aud": 0,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_announce_1.mp3",
+     "sec": 61.5
+    },
     "q": "Why is the entrance to the twenty-four hour study wing being moved?",
     "opts": [
      [
@@ -460,8 +548,12 @@
     ]
    },
    {
-    "sec": 61,
+    "sec": 62,
     "aud": 0,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_announce_1.mp3",
+     "sec": 61.5
+    },
     "q": "What is new about reserving group study rooms on the second floor?",
     "opts": [
      [
@@ -523,7 +615,11 @@
    {
     "n": 1,
     "ok": false,
-    "dur": "01:01",
+    "dur": "01:02",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_announce_1.mp3",
+     "sec": 61.5
+    },
     "q": "What change to the main library building's weekend schedule is being announced?",
     "mine": "B. It will open one hour later and close at ten p.m. on both weekend days.",
     "ans": "A. It will open one hour earlier and close at midnight on both weekend days.",
@@ -536,7 +632,11 @@
    {
     "n": 2,
     "ok": false,
-    "dur": "01:01",
+    "dur": "01:02",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_announce_1.mp3",
+     "sec": 61.5
+    },
     "q": "Why is the entrance to the twenty-four hour study wing being moved?",
     "mine": "C. Because the wing is being expanded to include additional study rooms.",
     "ans": "B. Because the front staircase is undergoing routine maintenance.",
@@ -549,7 +649,11 @@
    {
     "n": 3,
     "ok": false,
-    "dur": "01:01",
+    "dur": "01:02",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_announce_1.mp3",
+     "sec": 61.5
+    },
     "q": "What is new about reserving group study rooms on the second floor?",
     "mine": "A. They can only be reserved in person on the day of use.",
     "ans": "C. They can be reserved online up to seventy-two hours in advance, with some held for walk-ins.",
@@ -599,6 +703,10 @@
     "sec": 76,
     "aud": 0,
     "lead": "Brief excerpt from a university lecture on archaeology, focusing on recent reassessments of early Mesopotamian urbanization.",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_lecture_1.mp3",
+     "sec": 76.1
+    },
     "q": "According to the speaker, what long-held assumption about early Mesopotamian cities is being questioned?",
     "opts": [
      [
@@ -622,6 +730,10 @@
    {
     "sec": 76,
     "aud": 0,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_lecture_1.mp3",
+     "sec": 76.1
+    },
     "q": "What does the speaker say recent survey work in the northern alluvial plain has revealed?",
     "opts": [
      [
@@ -645,6 +757,10 @@
    {
     "sec": 76,
     "aud": 0,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_lecture_1.mp3",
+     "sec": 76.1
+    },
     "q": "Why does the speaker mention the clay sealing practices found at a previously dismissed hamlet?",
     "opts": [
      [
@@ -668,6 +784,10 @@
    {
     "sec": 76,
     "aud": 0,
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_lecture_1.mp3",
+     "sec": 76.1
+    },
     "q": "What is the speaker's main point about the standard textbook story?",
     "opts": [
      [
@@ -730,6 +850,10 @@
     "n": 1,
     "ok": true,
     "dur": "01:16",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_lecture_1.mp3",
+     "sec": 76.1
+    },
     "q": "According to the speaker, what long-held assumption about early Mesopotamian cities is being questioned?",
     "mine": "B. That large urban centers appeared suddenly around 3500 BCE, driven mainly by writing and centralized administration."
    },
@@ -737,6 +861,10 @@
     "n": 2,
     "ok": false,
     "dur": "01:16",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_lecture_1.mp3",
+     "sec": 76.1
+    },
     "q": "What does the speaker say recent survey work in the northern alluvial plain has revealed?",
     "mine": "D. That agriculture failed in the northern plain.",
     "ans": "B. That communities coordinated irrigation, storage, and craft specialization across considerable distances before monumental architecture emerged.",
@@ -750,6 +878,10 @@
     "n": 3,
     "ok": false,
     "dur": "01:16",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_lecture_1.mp3",
+     "sec": 76.1
+    },
     "q": "Why does the speaker mention the clay sealing practices found at a previously dismissed hamlet?",
     "mine": "B. To show that writing began in the north.",
     "ans": "A. To argue that administrative behavior existed in places once thought marginal, before the rise of palace economies.",
@@ -763,6 +895,10 @@
     "n": 4,
     "ok": true,
     "dur": "01:16",
+    "clip": {
+     "asset": "assets/data/aud_tf_listening_lecture_1.mp3",
+     "sec": 76.1
+    },
     "q": "What is the speaker's main point about the standard textbook story?",
     "mine": "C. It likely underestimates the organization that existed before the first cities appeared."
    }

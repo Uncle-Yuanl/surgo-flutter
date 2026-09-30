@@ -96,6 +96,8 @@ class _TfMockQuestionPageState extends State<TfMockQuestionPage> {
         c = TfMockController(app, (raw['modules'] as Map)[key] as Map<String, dynamic>);
       });
       notes.text = c!.notes[c!.index] ?? '';
+      // 进页面就在放录音的阶段：真音频这就放起来（接着上次离开的位置）；原型数据这一句什么都不做。
+      if (c!.phase == 'play') c!.listen();
       _startPhase();
     });
   }
@@ -106,7 +108,9 @@ class _TfMockQuestionPageState extends State<TfMockQuestionPage> {
     _timer?.cancel();
     final x = c!;
     if (x.phase == 'play') {
-      _audio = Timer.periodic(const Duration(seconds: 1), (_) {
+      // 真音频的进度和放完读播放器（controller 的 audioTick），每 250 毫秒看一次；原型是每秒走 1 秒。
+      _audio = Timer.periodic(
+          Duration(milliseconds: x.clip == null ? 1000 : 250), (_) {
         if (!mounted) return;
         setState(x.audioTick);
         if (x.phase != 'play') {
@@ -207,6 +211,7 @@ class _TfMockQuestionPageState extends State<TfMockQuestionPage> {
           SourceText('第 ${x.index + 1} / ${x.total}', style: SurgoText.cardDesc),
           const SizedBox(height: 10),
           // Audio row (progress simulation — no real audio).
+          // 演示用真实数据带着录音时放的是真音频，时间和进度由 controller 从播放器读。
           Row(children: [
             Icon(playing ? Icons.graphic_eq : Icons.check_circle,
                 color: playing ? SurgoColors.goldInk : SurgoColors.ok),
@@ -216,7 +221,7 @@ class _TfMockQuestionPageState extends State<TfMockQuestionPage> {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: LinearProgressIndicator(
-                    value: (x.audio / x.curSec).clamp(0, 1),
+                    value: x.progress.clamp(0, 1),
                     color: SurgoColors.yellow,
                     backgroundColor: SurgoColors.track),
               ),
