@@ -1,11 +1,11 @@
 {
-    "name": "surgo_flutter",
-    "short_name": "surgo_flutter",
+    "name": "SURGO",
+    "short_name": "SURGO",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FCF8F5",
+    "theme_color": "#FCF8F5",
+    "description": "SURGO · 雅思 / 托福 AI 备考演示",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

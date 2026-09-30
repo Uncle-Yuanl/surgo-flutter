@@ -1,3 +1,5 @@
+// Flutter 3.44 起 material 不再导出这个类（3.27 仍导出，show 一个没导出的名字只是提示）。
+import 'package:flutter/cupertino.dart' show CupertinoPageTransitionsBuilder;
 import 'package:flutter/material.dart';
 
 import 'tokens.dart';
