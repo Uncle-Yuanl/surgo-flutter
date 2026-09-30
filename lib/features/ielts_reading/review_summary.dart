@@ -12,10 +12,17 @@ class RfSummary extends StatelessWidget {
       required this.total,
       required this.mock,
       this.english,
-      this.chinese});
+      this.chinese,
+      this.band = '6.5',
+      this.text});
   final int right, total;
   final bool mock;
   final String? english, chinese;
+
+  /// 演示用真实数据（tool/demo_export）：估分没有就不画；[text] 是字符串或
+  /// `[英文, 中文]`，给了就代替下面两句原型文案，空串表示这次作答没有总评。
+  final String? band;
+  final Object? text;
   @override
   Widget build(BuildContext context) => Container(
       key: const ValueKey('rf-summary'),
@@ -39,17 +46,19 @@ class RfSummary extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.baseline,
                             textBaseline: TextBaseline.alphabetic,
                             children: [
-                              const Text('6.5',
-                                  style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
-                                      fontSize: 40,
-                                      height: 1.1,
-                                      fontWeight: FontWeight.w800)),
-                              const SizedBox(width: 2),
-                              const RfText('/ 9.0',
-                                  size: 14,
-                                  height: 1.1,
-                                  weight: FontWeight.w700,
-                                  color: Color(0xff9a7a00)),
+                              if (band != null) ...[
+                                Text(band!,
+                                    style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
+                                        fontSize: 40,
+                                        height: 1.1,
+                                        fontWeight: FontWeight.w800)),
+                                const SizedBox(width: 2),
+                                const RfText('/ 9.0',
+                                    size: 14,
+                                    height: 1.1,
+                                    weight: FontWeight.w700,
+                                    color: Color(0xff9a7a00)),
+                              ],
                               const Spacer(),
                               RfText('$right/$total',
                                   size: 14,
@@ -70,6 +79,13 @@ class RfSummary extends StatelessWidget {
                                       weight: FontWeight.w700,
                                       color: const Color(0xff9a7a00))),
                             ]))))),
+        if (text != null) ...[
+          if (text != '') ...[
+            const SizedBox(height: 8),
+            RfText(text!,
+                size: 10.5, height: 1.55, color: const Color(0xff6b5d2e)),
+          ]
+        ] else ...[
         const SizedBox(height: 8),
         RfText(
             english ??
@@ -88,21 +104,31 @@ class RfSummary extends StatelessWidget {
             size: 10.5,
             height: 1.55,
             color: const Color(0xff8a7a45)),
+        ],
       ]));
 }
 
 class RfWeakness extends StatelessWidget {
-  const RfWeakness({super.key, required this.mock});
+  const RfWeakness({super.key, required this.mock, this.items});
   final bool mock;
+
+  /// 演示用真实数据：`[{label, text}]`（各为字符串或 `[英文, 中文]`）。给了就代替
+  /// 下面写死的原型薄弱项；这次作答没有分析（空列表）就整块不画。
+  final List? items;
   @override
-  Widget build(BuildContext context) => RfCard(children: [
+  Widget build(BuildContext context) => items != null && items!.isEmpty
+      ? const SizedBox.shrink()
+      : RfCard(children: [
         // Source ra-h-wrap is29px (17+12), then subtitle margin-top8.
         const RfHeading('薄弱项分析'),
         const SizedBox(height: 8),
         const RfText('仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。',
             size: 10.5, color: rfMuted),
         const SizedBox(height: 14),
-        if (mock) ...[
+        if (items != null) ...[
+          for (final w in items!) _weak(w['label'], w['text']),
+          const SizedBox(height: 6),
+        ] else if (mock) ...[
           _weak('FALSE vs NOT GIVEN confusion',
               'FALSE = the text contradicts the statement; NOT GIVEN = the text is silent. Q3 was contradicted, so FALSE.'),
           _weak('Surface word-matching',
@@ -124,7 +150,7 @@ class RfWeakness extends StatelessWidget {
           app.go(SurgoPage.readingDaily);
         }),
       ]);
-  Widget _weak(String title, String evidence) => Container(
+  Widget _weak(Object title, Object evidence) => Container(
       margin: const EdgeInsets.only(bottom: 11),
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
       decoration: BoxDecoration(

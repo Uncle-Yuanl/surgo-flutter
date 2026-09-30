@@ -200,7 +200,9 @@ class _IeltsReadingPageState extends State<IeltsReadingPage> {
                                                               FontWeight.w700,
                                                           color: SurgoColors
                                                               .onYellowStrong))
-                                                  : T('Answered 0 / ${widget.single ? x.total : 14}',
+                                                  // 原型雅思日常是 14 题；演示用真实数据的题数不同，
+                                                  // 取实际题数（托福沿用原型写死的 14）。
+                                                  : T('Answered 0 / ${widget.single || x.state.examType == ExamType.ielts ? x.total : 14}',
                                                       style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                                                           fontSize: 13,
                                                           fontWeight:

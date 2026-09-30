@@ -59,145 +59,172 @@
     }
    ],
    "daily": {
-    "title": "The Migration of Monarch Butterflies",
+    "title": "The Quiet Revolution of Urban Beekeeping",
     "passage": [
      [
       "A",
-      "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world, travelling up to 4,000 kilometres from Canada and the northern United States to the forests of central Mexico. What makes this migration so extraordinary is that no single butterfly completes the round trip."
+      "Cities are sometimes imagined as places hostile to wildlife, yet a growing body of evidence suggests that some species do exceptionally well in urban environments. Among the most surprising of these urban adapters is the honeybee. Across Europe, North America and parts of Asia, beekeepers are placing hives on rooftops, in allotments, beside railway lines and inside community gardens, creating a movement that researchers have begun to describe as a quiet revolution in the way cities relate to nature."
      ],
      [
       "B",
-      "Scientists have long been puzzled by how the insects navigate. Recent research suggests that monarchs rely on a combination of the position of the sun and an internal magnetic compass that allows them to maintain a consistent southward bearing even on cloudy days."
+      "The scale of the trend is hard to overstate. In London alone, the number of registered beekeepers has more than tripled over the last fifteen years, and similar growth has been reported in Paris, Berlin and New York. Industry estimates suggest that there are now well over fifty thousand managed urban hives across these four cities. Although exact figures vary because registration is voluntary, surveys of equipment suppliers consistently show a steady rise in sales of beginner kits, suggesting that the trend is not driven solely by established professionals."
      ],
      [
       "C",
-      "The overwintering sites in Mexico were unknown to scientists until 1975, when a research team finally located the dense colonies clinging to oyamel fir trees at high altitude. The discovery raised urgent questions about conservation, as logging threatened the very forests the butterflies depend on."
+      "Researchers have proposed several explanations for why bees thrive in towns. Urban areas offer an unusually long flowering season because parks, road verges and ornamental gardens contain plants selected to bloom at different times of the year. The heat trapped by buildings and pavements also raises overnight temperatures, allowing colonies to forage earlier in spring and later in autumn than they would in surrounding farmland. Crucially, urban environments tend to have a lower density of industrial farms, which means that the pesticide pressure experienced by foraging bees is often much reduced compared with the countryside."
      ],
      [
       "D",
-      "Climate change now poses an additional threat. Warmer temperatures disrupt the delicate timing of migration, and unusual weather events can devastate colonies that have gathered in a single location. Only monarchs born in late summer make the migration, and it may be their great-grandchildren that return the following year."
+      "The honey produced in cities has become a small but visible symbol of this movement. Urban honey frequently commands a premium price, partly because of its novelty and partly because some laboratory analyses have shown that it contains a wider range of pollen types than rural samples. Beekeepers describe their honey with vivid place names, often tied to a particular park, street or landmark, and consumers appear willing to pay several times the supermarket rate for jars that carry a recognisable local story. Small bakeries, restaurants and independent shops have been quick to incorporate urban honey into their products, reinforcing the sense that a city can produce something distinctive rather than simply consuming the output of distant rural areas."
+     ],
+     [
+      "E",
+      "The movement is not without concerns. Some entomologists caution that densely packed urban hives can compete with the wild solitary bees that already live in cities, potentially reducing the food available to those species. Others worry that beginners may abandon hives when colonies become aggressive or fail to survive the winter, leaving equipment to deteriorate in back gardens. Local authorities have responded with mixed strategies: some have issued formal guidelines on hive numbers per square kilometre, while others have left the question to neighbourhood associations. The regulatory landscape, in short, remains uneven."
+     ],
+     [
+      "F",
+      "Education has emerged as one of the most important responses to these challenges. Community workshops, run by experienced beekeepers in partnership with libraries and environmental groups, now teach newcomers how to inspect a colony, recognise common diseases and harvest honey without harming the bees. Several cities have also launched schemes that place hives in schools, where pupils monitor the insects as part of broader lessons on pollination, food systems and climate change. Early evaluations suggest that participants in these programmes retain a more accurate understanding of bee behaviour than people who learn only from online videos, although the long-term effects on actual beekeeping practice are still being studied."
+     ],
+     [
+      "G",
+      "For all the enthusiasm, the broader ecological significance of urban beekeeping remains a matter of debate. Honeybees are not native to many of the cities where they are now kept, and some ecologists argue that resources spent supporting managed colonies could be better directed at restoring wildflower habitat for native pollinators. Defenders counter that urban hives act as ambassadors, drawing public attention to the plight of pollinators in general, and that the honey produced provides a small economic incentive for city dwellers who might otherwise have little contact with agriculture. The two positions are not necessarily incompatible, but reconciling them will require careful monitoring of both managed and wild bee populations over the coming decade."
+     ],
+     [
+      "H",
+      "What is beyond doubt is that the appearance of hives on balconies and rooftops has changed the way many urban residents think about their environment. A beehive is a tangible, working reminder that food production does not end at the city boundary, and that even a small green space can host a complex web of relationships between insects, plants and people. Whether the trend expands, stabilises or fades, it has already left a clear mark on the cultural landscape of the modern city."
      ]
     ],
     "questions": [
      {
       "type": "mchoice",
-      "group": "Questions 1-6",
-      "instr": "Choose the correct letter, A, B or C.",
-      "q": "What is most remarkable about the monarch migration?",
+      "q": "Paragraph A",
       "opts": [
-       "A) Its total distance",
-       "B) No single butterfly completes it",
-       "C) It happens in spring"
+       "i. The commercial appeal of city honey",
+       "ii. A surprising urban success story",
+       "iii. Education as a response to the risks",
+       "iv. Comparing urban and rural beekeeping",
+       "v. The unresolved ecological debate",
+       "vi. Rules and regulations for urban hives",
+       "vii. Practical advice for beginner beekeepers"
       ],
-      "a": "B",
-      "why": "Paragraph A: \"no single butterfly completes the round trip.\""
+      "group": "Questions 1-7",
+      "instr": "Choose the correct heading for each paragraph from the list of headings below."
      },
      {
       "type": "mchoice",
-      "q": "Monarchs are believed to navigate using",
+      "q": "Paragraph B",
       "opts": [
-       "A) the stars",
-       "B) the sun and a magnetic compass",
-       "C) wind direction"
-      ],
-      "a": "B",
-      "why": "Paragraph B: the position of the sun and an internal magnetic compass."
+       "i. The commercial appeal of city honey",
+       "ii. A surprising urban success story",
+       "iii. Education as a response to the risks",
+       "iv. Comparing urban and rural beekeeping",
+       "v. The unresolved ecological debate",
+       "vi. Rules and regulations for urban hives",
+       "vii. Practical advice for beginner beekeepers"
+      ]
      },
      {
       "type": "mchoice",
-      "q": "The Mexican overwintering sites were located in",
+      "q": "Paragraph C",
       "opts": [
-       "A) 1965",
-       "B) 1975",
-       "C) 1985"
-      ],
-      "a": "B",
-      "why": "Paragraph C: unknown to scientists until 1975."
+       "i. The commercial appeal of city honey",
+       "ii. A surprising urban success story",
+       "iii. Education as a response to the risks",
+       "iv. Comparing urban and rural beekeeping",
+       "v. The unresolved ecological debate",
+       "vi. Rules and regulations for urban hives",
+       "vii. Practical advice for beginner beekeepers"
+      ]
      },
      {
       "type": "mchoice",
-      "q": "The butterflies gather on",
+      "q": "Paragraph D",
       "opts": [
-       "A) oyamel fir trees",
-       "B) oak trees",
-       "C) milkweed plants"
-      ],
-      "a": "A",
-      "why": "Paragraph C: colonies clinging to oyamel fir trees."
+       "i. The commercial appeal of city honey",
+       "ii. A surprising urban success story",
+       "iii. Education as a response to the risks",
+       "iv. Comparing urban and rural beekeeping",
+       "v. The unresolved ecological debate",
+       "vi. Rules and regulations for urban hives",
+       "vii. Practical advice for beginner beekeepers"
+      ]
      },
      {
       "type": "mchoice",
-      "q": "The main early threat to the colonies was",
+      "q": "Paragraph E",
       "opts": [
-       "A) tourism",
-       "B) logging",
-       "C) disease"
-      ],
-      "a": "B",
-      "why": "Paragraph C: logging threatened the forests."
+       "i. The commercial appeal of city honey",
+       "ii. A surprising urban success story",
+       "iii. Education as a response to the risks",
+       "iv. Comparing urban and rural beekeeping",
+       "v. The unresolved ecological debate",
+       "vi. Rules and regulations for urban hives",
+       "vii. Practical advice for beginner beekeepers"
+      ]
      },
      {
       "type": "mchoice",
-      "q": "Climate change is said to affect migration by",
+      "q": "Paragraph F",
       "opts": [
-       "A) disrupting its timing",
-       "B) shortening the route",
-       "C) increasing numbers"
+       "i. The commercial appeal of city honey",
+       "ii. A surprising urban success story",
+       "iii. Education as a response to the risks",
+       "iv. Comparing urban and rural beekeeping",
+       "v. The unresolved ecological debate",
+       "vi. Rules and regulations for urban hives",
+       "vii. Practical advice for beginner beekeepers"
+      ]
+     },
+     {
+      "type": "mchoice",
+      "q": "Paragraph G",
+      "opts": [
+       "i. The commercial appeal of city honey",
+       "ii. A surprising urban success story",
+       "iii. Education as a response to the risks",
+       "iv. Comparing urban and rural beekeeping",
+       "v. The unresolved ecological debate",
+       "vi. Rules and regulations for urban hives",
+       "vii. Practical advice for beginner beekeepers"
+      ]
+     },
+     {
+      "type": "mchoice",
+      "q": "What is the writer's main point in the first paragraph?",
+      "opts": [
+       "A) Cities are generally harmful to most animal species.",
+       "B) Honeybees have unexpectedly become common in cities.",
+       "C) Beekeeping in cities is a well-organised industry.",
+       "D) Researchers have fully explained the rise of urban beekeeping."
       ],
-      "a": "A",
-      "why": "Paragraph D: warmer temperatures disrupt the delicate timing of migration."
+      "group": "Question 8",
+      "instr": "Choose the correct letter, A, B, C or D."
      },
      {
-      "type": "ynng",
-      "group": "Questions 7-11",
-      "instr": "Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.",
-      "q": "The writer believes the monarch migration is unique among insects.",
-      "a": "NOT GIVEN",
-      "why": "The passage calls it remarkable but never compares it with other insects."
+      "type": "tfng",
+      "q": "The number of registered beekeepers in London has more than doubled in the last fifteen years.",
+      "group": "Questions 9-10",
+      "instr": "Do the following statements agree with the information given in the passage?"
      },
      {
-      "type": "ynng",
-      "q": "Scientists fully understand monarch navigation.",
-      "a": "NO",
-      "why": "Paragraph B: scientists \"have long been puzzled\"; research only \"suggests\"."
-     },
-     {
-      "type": "ynng",
-      "q": "Monarchs migrate more successfully than birds.",
-      "a": "NOT GIVEN",
-      "why": "No comparison with birds appears in the text."
-     },
-     {
-      "type": "ynng",
-      "q": "Conservation became a concern after 1975.",
-      "a": "YES",
-      "why": "Paragraph C: the 1975 discovery \"raised urgent questions about conservation\"."
-     },
-     {
-      "type": "ynng",
-      "q": "Climate change is the only threat to monarchs.",
-      "a": "NO",
-      "why": "Logging is also named as a threat, so climate change is not the only one."
+      "type": "tfng",
+      "q": "Urban honey always contains a wider range of pollen than rural honey."
      },
      {
       "type": "gap",
-      "group": "Questions 12-14",
-      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
-      "q": "Monarchs travel up to ______ kilometres on their journey.",
-      "a": "4,000",
-      "why": "Paragraph A: travelling up to 4,000 kilometres."
+      "q": "Beginners who give up may leave their equipment to deteriorate in ______",
+      "group": "Questions 11-12",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
      },
      {
       "type": "gap",
-      "q": "They spend the winter clinging to ______ in Mexico.",
-      "a": "oyamel fir trees",
-      "why": "Paragraph C: clinging to oyamel fir trees."
+      "q": "School schemes allow pupils to monitor the insects as part of broader lessons on pollination, food systems and ______"
      },
      {
       "type": "gap",
-      "q": "Only monarchs born in ______ make the migration.",
-      "a": "late summer",
-      "why": "Paragraph D: only monarchs born in late summer make the migration."
+      "q": "According to industry estimates, how many managed urban hives are there across London, Paris, Berlin and New York combined?",
+      "group": "Question 13",
+      "instr": "Answer the questions below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer."
      }
     ]
    },
@@ -266,54 +293,369 @@
    },
    "passages": {
     "monarch": {
-     "title": "The Migration of Monarch Butterflies",
+     "title": "The Quiet Revolution of Urban Beekeeping",
      "passage": [
       [
-       "",
-       "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world. Leaving the cooling forests of southern Canada and the northern United States, they travel up to 4,000 kilometres to reach the warm mountain forests of central Mexico, where they spend the winter."
+       "Paragraph A: ",
+       "Cities are sometimes imagined as places hostile to wildlife, yet a growing body of evidence suggests that some species do exceptionally well in urban environments. Among the most surprising of these urban adapters is the honeybee. Across Europe, North America and parts of Asia, beekeepers are placing hives on rooftops, in allotments, beside railway lines and inside community gardens, creating a movement that researchers have begun to describe as a quiet revolution in the way cities relate to nature."
       ],
       [
-       "",
-       "What makes the migration so extraordinary is that no single butterfly completes the round trip. The insects that fly south in the autumn are three or four generations removed from those that made the journey the previous year, yet they return to the very same groves of trees — sometimes even the same individual trees — that their ancestors used. How they achieve this has puzzled scientists for decades."
+       "Paragraph B: ",
+       "The scale of the trend is hard to overstate. In London alone, the number of registered beekeepers has more than tripled over the last fifteen years, and similar growth has been reported in Paris, Berlin and New York. Industry estimates suggest that there are now well over fifty thousand managed urban hives across these four cities. Although exact figures vary because registration is voluntary, surveys of equipment suppliers consistently show a steady rise in sales of beginner kits, suggesting that the trend is not driven solely by established professionals."
       ],
       [
-       "",
-       "Research suggests that the butterflies rely on more than one method of navigation. They appear to use the position of the sun as a compass, correcting for the way it moves across the sky during the day with the help of an internal clock. In addition, experiments indicate that they can sense the Earth's magnetic field, which may guide them on cloudy days when the sun is hidden."
+       "Paragraph C: ",
+       "Researchers have proposed several explanations for why bees thrive in towns. Urban areas offer an unusually long flowering season because parks, road verges and ornamental gardens contain plants selected to bloom at different times of the year. The heat trapped by buildings and pavements also raises overnight temperatures, allowing colonies to forage earlier in spring and later in autumn than they would in surrounding farmland. Crucially, urban environments tend to have a lower density of industrial farms, which means that the pesticide pressure experienced by foraging bees is often much reduced compared with the countryside."
       ],
       [
-       "",
-       "The Mexican overwintering sites themselves were unknown to scientists until relatively recently. Although local communities had long been aware of the butterflies, the location of the main colonies was only formally documented by researchers in 1975. Today these sites are protected, but the species still faces threats from habitat loss and a changing climate."
+       "Paragraph D: ",
+       "The honey produced in cities has become a small but visible symbol of this movement. Urban honey frequently commands a premium price, partly because of its novelty and partly because some laboratory analyses have shown that it contains a wider range of pollen types than rural samples. Beekeepers describe their honey with vivid place names, often tied to a particular park, street or landmark, and consumers appear willing to pay several times the supermarket rate for jars that carry a recognisable local story. Small bakeries, restaurants and independent shops have been quick to incorporate urban honey into their products, reinforcing the sense that a city can produce something distinctive rather than simply consuming the output of distant rural areas."
+      ],
+      [
+       "Paragraph E: ",
+       "The movement is not without concerns. Some entomologists caution that densely packed urban hives can compete with the wild solitary bees that already live in cities, potentially reducing the food available to those species. Others worry that beginners may abandon hives when colonies become aggressive or fail to survive the winter, leaving equipment to deteriorate in back gardens. Local authorities have responded with mixed strategies: some have issued formal guidelines on hive numbers per square kilometre, while others have left the question to neighbourhood associations. The regulatory landscape, in short, remains uneven."
+      ],
+      [
+       "Paragraph F: ",
+       "Education has emerged as one of the most important responses to these challenges. Community workshops, run by experienced beekeepers in partnership with libraries and environmental groups, now teach newcomers how to inspect a colony, recognise common diseases and harvest honey without harming the bees. Several cities have also launched schemes that place hives in schools, where pupils monitor the insects as part of broader lessons on pollination, food systems and climate change. Early evaluations suggest that participants in these programmes retain a more accurate understanding of bee behaviour than people who learn only from online videos, although the long-term effects on actual beekeeping practice are still being studied."
+      ],
+      [
+       "Paragraph G: ",
+       "For all the enthusiasm, the broader ecological significance of urban beekeeping remains a matter of debate. Honeybees are not native to many of the cities where they are now kept, and some ecologists argue that resources spent supporting managed colonies could be better directed at restoring wildflower habitat for native pollinators. Defenders counter that urban hives act as ambassadors, drawing public attention to the plight of pollinators in general, and that the honey produced provides a small economic incentive for city dwellers who might otherwise have little contact with agriculture. The two positions are not necessarily incompatible, but reconciling them will require careful monitoring of both managed and wild bee populations over the coming decade."
+      ],
+      [
+       "Paragraph H: ",
+       "What is beyond doubt is that the appearance of hives on balconies and rooftops has changed the way many urban residents think about their environment. A beehive is a tangible, working reminder that food production does not end at the city boundary, and that even a small green space can host a complex web of relationships between insects, plants and people. Whether the trend expands, stabilises or fades, it has already left a clear mark on the cultural landscape of the modern city."
       ]
      ],
      "questions": [
       {
-       "type": "tfng",
-       "q": "An individual butterfly makes the entire round trip.",
-       "a": "FALSE",
-       "mine": "TRUE",
-       "evidence": "No single butterfly completes the round trip.",
-       "why": "The text states no single butterfly completes the trip, so FALSE.",
-       "whyZh": "原文说没有单只蝴蝶完成整趟，所以是 FALSE。"
+       "typeLbl": [
+        "Matching headings",
+        "标题匹配"
+       ],
+       "q": "Paragraph A",
+       "ok": false,
+       "evidence": "yet a growing body of evidence suggests that some species do exceptionally well in urban environments. Among the most surprising of these urban adapters is the honeybee.",
+       "anchor": "yet a growing body of evidence suggests that some species do exceptionally well in urban environments. Among the most surprising of these urban adapters is the honeybee.",
+       "why": [
+        "You chose heading i for Paragraph A, but the correct heading is ii. Paragraph A introduces the idea that cities, often seen as hostile to wildlife, are actually home to a surprising urban adapter: the honeybee. It frames the trend as a 'quiet revolution', which fits the 'surprising urban success story' theme rather than the commercial appeal of city honey, which is only developed later in Paragraph D.",
+        "你为第一段选了标题 i，但正确答案是 ii。第一段先讲城市常被认为不适宜野生动物，随后引出蜜蜂这种“出乎意料的城市适应者”，并把这一趋势形容为一场“安静革命”。这对应的是“令人意外的城市成功故事”，而城市蜂蜜的商业吸引力要到 D 段才出现。"
+       ],
+       "type": "mchoice",
+       "opts": [
+        "i. The commercial appeal of city honey",
+        "ii. A surprising urban success story",
+        "iii. Education as a response to the risks",
+        "iv. Comparing urban and rural beekeeping",
+        "v. The unresolved ecological debate",
+        "vi. Rules and regulations for urban hives",
+        "vii. Practical advice for beginner beekeepers"
+       ],
+       "a": "ii. A surprising urban success story",
+       "mine": "i. The commercial appeal of city honey"
       },
       {
+       "typeLbl": [
+        "Matching headings",
+        "标题匹配"
+       ],
+       "q": "Paragraph B",
+       "ok": true,
+       "evidence": "the number of registered beekeepers has more than tripled over the last fifteen years",
+       "anchor": "the number of registered beekeepers has more than tripled over the last fifteen years",
+       "why": [
+        "Paragraph B gives statistics to support the growing trend introduced in Paragraph A.",
+        "B 段用统计数据支撑 A 段提出的城市养蜂趋势。"
+       ],
+       "type": "mchoice",
+       "opts": [
+        "i. The commercial appeal of city honey",
+        "ii. A surprising urban success story",
+        "iii. Education as a response to the risks",
+        "iv. Comparing urban and rural beekeeping",
+        "v. The unresolved ecological debate",
+        "vi. Rules and regulations for urban hives",
+        "vii. Practical advice for beginner beekeepers"
+       ],
+       "a": "ii. A surprising urban success story",
+       "mine": "ii. A surprising urban success story"
+      },
+      {
+       "typeLbl": [
+        "Matching headings",
+        "标题匹配"
+       ],
+       "q": "Paragraph C",
+       "ok": false,
+       "evidence": "urban environments tend to have a lower density of industrial farms, which means that the pesticide pressure experienced by foraging bees is often much reduced compared with the countryside.",
+       "anchor": "urban environments tend to have a lower density of industrial farms, which means that the pesticide pressure experienced by foraging bees is often much reduced compared with the countryside.",
+       "why": [
+        "You selected heading iii for Paragraph C, but the correct answer is iv. Paragraph C compares urban and rural conditions for bees, describing the longer flowering season, warmer urban nights and lower pesticide pressure compared with surrounding farmland. It is a direct comparison of urban and rural beekeeping environments, not a discussion of education as a response to risks, which appears in Paragraph F.",
+        "你为 C 段选了标题 iii，但正确答案是 iv。C 段把城市与乡村的环境条件进行对比，包括更长的花期、夜间温度更高、农药压力更低。这是对城市与乡村养蜂环境的比较，而“教育作为对风险的回应”出现在 F 段。"
+       ],
+       "type": "mchoice",
+       "opts": [
+        "i. The commercial appeal of city honey",
+        "ii. A surprising urban success story",
+        "iii. Education as a response to the risks",
+        "iv. Comparing urban and rural beekeeping",
+        "v. The unresolved ecological debate",
+        "vi. Rules and regulations for urban hives",
+        "vii. Practical advice for beginner beekeepers"
+       ],
+       "a": "iv. Comparing urban and rural beekeeping",
+       "mine": "iii. Education as a response to the risks"
+      },
+      {
+       "typeLbl": [
+        "Matching headings",
+        "标题匹配"
+       ],
+       "q": "Paragraph D",
+       "ok": false,
+       "evidence": "Urban honey frequently commands a premium price, partly because of its novelty and partly because some laboratory analyses have shown that it contains a wider range of pollen types than rural samples.",
+       "anchor": "Urban honey frequently commands a premium price, partly because of its novelty and partly because some laboratory analyses have shown that it contains a wider range of pollen types than rural samples.",
+       "why": [
+        "You chose heading iv for Paragraph D, but the correct answer is i. Paragraph D focuses on urban honey as a commercial product: it commands a premium price, carries vivid place names, and is used by bakeries, restaurants and shops. This is the commercial appeal of city honey, not a comparison of urban and rural beekeeping, which is the theme of Paragraph C.",
+        "你为 D 段选了标题 iv，但正确答案是 i。D 段讲的是城市蜂蜜作为商品的市场表现，包括高价、以地名命名以及被面包店、餐厅采用等。这属于“城市蜂蜜的商业吸引力”，而不是城市与乡村养蜂的对比，后者是 C 段的内容。"
+       ],
+       "type": "mchoice",
+       "opts": [
+        "i. The commercial appeal of city honey",
+        "ii. A surprising urban success story",
+        "iii. Education as a response to the risks",
+        "iv. Comparing urban and rural beekeeping",
+        "v. The unresolved ecological debate",
+        "vi. Rules and regulations for urban hives",
+        "vii. Practical advice for beginner beekeepers"
+       ],
+       "a": "i. The commercial appeal of city honey",
+       "mine": "iv. Comparing urban and rural beekeeping"
+      },
+      {
+       "typeLbl": [
+        "Matching headings",
+        "标题匹配"
+       ],
+       "q": "Paragraph E",
+       "ok": false,
+       "evidence": "some have issued formal guidelines on hive numbers per square kilometre, while others have left the question to neighbourhood associations. The regulatory landscape, in short, remains uneven.",
+       "anchor": "some have issued formal guidelines on hive numbers per square kilometre, while others have left the question to neighbourhood associations. The regulatory landscape, in short, remains uneven.",
+       "why": [
+        "You selected heading v for Paragraph E, but the correct answer is vi. Paragraph E discusses concerns about urban beekeeping and the mixed regulatory response, with some local authorities issuing guidelines on hive density while others leave the question to neighbourhood associations. This matches the 'rules and regulations for urban hives' theme. The unresolved ecological debate between honeybees and native pollinators is covered in Paragraph G.",
+        "你为 E 段选了标题 v，但正确答案是 vi。E 段讨论的是对城市养蜂的担忧以及各地不一的监管方式，有的当局发布每平方公里蜂箱数量的指引，有的交给社区自行处理。这对应的是“蜂箱的规则与监管”，而关于本地传粉者的“未解生态争论”出现在 G 段。"
+       ],
+       "type": "mchoice",
+       "opts": [
+        "i. The commercial appeal of city honey",
+        "ii. A surprising urban success story",
+        "iii. Education as a response to the risks",
+        "iv. Comparing urban and rural beekeeping",
+        "v. The unresolved ecological debate",
+        "vi. Rules and regulations for urban hives",
+        "vii. Practical advice for beginner beekeepers"
+       ],
+       "a": "vi. Rules and regulations for urban hives",
+       "mine": "v. The unresolved ecological debate"
+      },
+      {
+       "typeLbl": [
+        "Matching headings",
+        "标题匹配"
+       ],
+       "q": "Paragraph F",
+       "ok": false,
+       "evidence": "Community workshops, run by experienced beekeepers in partnership with libraries and environmental groups, now teach newcomers how to inspect a colony, recognise common diseases and harvest honey without harming the bees.",
+       "anchor": "Community workshops, run by experienced beekeepers in partnership with libraries and environmental groups, now teach newcomers how to inspect a colony, recognise common diseases and harvest honey without harming the bees.",
+       "why": [
+        "You chose heading vii for Paragraph F, but the correct answer is iii. Paragraph F describes community workshops and school schemes that teach newcomers how to inspect colonies, recognise diseases and harvest honey. This is education as a response to the risks described in the previous paragraph, not practical advice for beginner beekeepers, which is not the main focus of the passage.",
+        "你为 F 段选了标题 vii，但正确答案是 iii。F 段讲的是社区工作坊和学校项目如何教新手检查蜂群、识别疾病和正确取蜜。这是“对风险的教育回应”，而不是面向初学者的实操建议。"
+       ],
+       "type": "mchoice",
+       "opts": [
+        "i. The commercial appeal of city honey",
+        "ii. A surprising urban success story",
+        "iii. Education as a response to the risks",
+        "iv. Comparing urban and rural beekeeping",
+        "v. The unresolved ecological debate",
+        "vi. Rules and regulations for urban hives",
+        "vii. Practical advice for beginner beekeepers"
+       ],
+       "a": "iii. Education as a response to the risks",
+       "mine": "vii. Practical advice for beginner beekeepers"
+      },
+      {
+       "typeLbl": [
+        "Matching headings",
+        "标题匹配"
+       ],
+       "q": "Paragraph G",
+       "ok": false,
+       "evidence": "the broader ecological significance of urban beekeeping remains a matter of debate.",
+       "anchor": "the broader ecological significance of urban beekeeping remains a matter of debate.",
+       "why": [
+        "You selected heading vi for Paragraph G, but the correct answer is v. Paragraph G presents the debate between ecologists, who argue that resources should support wild pollinators, and defenders of urban hives, who see them as ambassadors for pollinator awareness. The paragraph explicitly notes that 'the broader ecological significance of urban beekeeping remains a matter of debate', which matches the unresolved ecological debate heading. The rules and regulations theme belongs to Paragraph E.",
+        "你为 G 段选了标题 vi，但正确答案是 v。G 段呈现的是生态学家与城市养蜂支持者之间的争论，一方认为资源应支持野生传粉者，另一方认为城市蜂箱是传粉者保护的“代言人”。原文明确写道“城市养蜂更广泛的生态意义仍是一个有争议的问题”，对应“未解的生态争论”。关于规则与监管的内容在 E 段。"
+       ],
+       "type": "mchoice",
+       "opts": [
+        "i. The commercial appeal of city honey",
+        "ii. A surprising urban success story",
+        "iii. Education as a response to the risks",
+        "iv. Comparing urban and rural beekeeping",
+        "v. The unresolved ecological debate",
+        "vi. Rules and regulations for urban hives",
+        "vii. Practical advice for beginner beekeepers"
+       ],
+       "a": "v. The unresolved ecological debate",
+       "mine": "vi. Rules and regulations for urban hives"
+      },
+      {
+       "typeLbl": [
+        "Multiple choice",
+        "选择题"
+       ],
+       "q": "What is the writer's main point in the first paragraph?",
+       "ok": true,
+       "evidence": "Among the most surprising of these urban adapters is the honeybee.",
+       "anchor": "Among the most surprising of these urban adapters is the honeybee.",
+       "why": [
+        "The paragraph describes honeybees as surprising urban adapters and frames the trend as a quiet revolution.",
+        "第一段把蜜蜂称为令人意外的城市适应者，介绍了这一趋势。"
+       ],
+       "type": "mchoice",
+       "opts": [
+        "A. Cities are generally harmful to most animal species.",
+        "B. Honeybees have unexpectedly become common in cities.",
+        "C. Beekeeping in cities is a well-organised industry.",
+        "D. Researchers have fully explained the rise of urban beekeeping."
+       ],
+       "a": "B. Honeybees have unexpectedly become common in cities.",
+       "mine": "B. Honeybees have unexpectedly become common in cities."
+      },
+      {
+       "typeLbl": [
+        "True / False / Not Given",
+        "判断信息（正误未提及）"
+       ],
+       "q": "The number of registered beekeepers in London has more than doubled in the last fifteen years.",
+       "ok": true,
+       "evidence": "the number of registered beekeepers has more than tripled over the last fifteen years",
+       "anchor": "the number of registered beekeepers has more than tripled over the last fifteen years",
+       "why": [
+        "The passage states the number has more than tripled, which agrees with more than doubled.",
+        "文中说伦敦登记养蜂人的数量在过去十五年里翻了两番多，与翻一番多一致。"
+       ],
        "type": "tfng",
-       "q": "Monarchs navigate using the position of the sun.",
        "a": "TRUE",
-       "mine": "TRUE",
-       "evidence": "they navigate using the position of the sun",
-       "why": "Directly supported by the passage.",
-       "whyZh": "原文直接支持。"
+       "mine": "True"
       },
       {
+       "typeLbl": [
+        "True / False / Not Given",
+        "判断信息（正误未提及）"
+       ],
+       "q": "Urban honey always contains a wider range of pollen than rural honey.",
+       "ok": true,
+       "evidence": "some laboratory analyses have shown that it contains a wider range of pollen types than rural samples",
+       "anchor": "some laboratory analyses have shown that it contains a wider range of pollen types than rural samples",
+       "why": [
+        "The passage says some laboratory analyses have shown this, not that it is always the case.",
+        "文中只说一些实验室分析显示如此，并非所有城市蜂蜜都如此。"
+       ],
        "type": "tfng",
-       "q": "The Mexican overwintering sites were found before 1970.",
        "a": "FALSE",
-       "mine": "NOT GIVEN",
-       "evidence": "The overwintering sites in Mexico were located in 1975.",
-       "why": "1975 is after 1970, so the statement is FALSE, not NOT GIVEN.",
-       "whyZh": "1975 晚于 1970，所以是 FALSE 而非 NOT GIVEN。"
+       "mine": "False"
+      },
+      {
+       "typeLbl": [
+        "Sentence completion",
+        "句子填空"
+       ],
+       "q": "Beginners who give up may leave their equipment to deteriorate in ______",
+       "ok": true,
+       "evidence": "leaving equipment to deteriorate in back gardens",
+       "anchor": "leaving equipment to deteriorate in back gardens",
+       "why": [
+        "The passage mentions abandoned equipment in back gardens.",
+        "文中提到被遗弃在后院的养蜂设备。"
+       ],
+       "type": "gap",
+       "kind": "input",
+       "a": "back gardens",
+       "mine": "back gardens"
+      },
+      {
+       "typeLbl": [
+        "Sentence completion",
+        "句子填空"
+       ],
+       "q": "School schemes allow pupils to monitor the insects as part of broader lessons on pollination, food systems and ______",
+       "ok": true,
+       "evidence": "pupils monitor the insects as part of broader lessons on pollination, food systems and climate change",
+       "anchor": "pupils monitor the insects as part of broader lessons on pollination, food systems and climate change",
+       "why": [
+        "The passage names these three topics in the school scheme description.",
+        "文中提到学校项目的相关课程主题。"
+       ],
+       "type": "gap",
+       "kind": "input",
+       "a": "climate change",
+       "mine": "climate change"
+      },
+      {
+       "typeLbl": [
+        "Short answer",
+        "简答题"
+       ],
+       "q": "According to industry estimates, how many managed urban hives are there across London, Paris, Berlin and New York combined?",
+       "ok": false,
+       "evidence": "Industry estimates suggest that there are now well over fifty thousand managed urban hives across these four cities.",
+       "anchor": "Industry estimates suggest that there are now well over fifty thousand managed urban hives across these four cities.",
+       "why": [
+        "You wrote '4', but the passage states the figure as a quantity rather than a number of cities. The question asks for the number of managed urban hives, and the passage says there are 'well over fifty thousand managed urban hives across these four cities'. The word 'four' refers to the cities, not to the hive count, which is the answer required.",
+        "你写了“4”，但题目问的是城市蜂箱的总数，原文给的是数量而不是城市个数。文中明确写道“well over fifty thousand managed urban hives across these four cities”。“four”指的是城市数量，并不是题目所问的蜂箱数量。"
+       ],
+       "type": "gap",
+       "kind": "input",
+       "a": "fifty thousand",
+       "mine": "4"
       }
-     ]
+     ],
+     "tag": [
+      "🏷 Matching headings · Multiple choice · True / False / Not Given · Sentence completion · Short answer",
+      "🏷 标题匹配 · 选择题 · 判断信息（正误未提及） · 句子填空 · 简答题"
+     ],
+     "review": {
+      "band": "5.0",
+      "text": [
+       "Predicted band: 4.5-5.5 (approximate practice estimate)",
+       "预估分数：4.5-5.5 (approximate practice estimate)"
+      ],
+      "weak": [
+       {
+        "label": [
+         "Matching headings",
+         "标题匹配"
+        ],
+        "text": [
+         "You chose heading i for Paragraph A, but the correct heading is ii. Paragraph A introduces the idea that cities, often seen as hostile to wildlife, are actually home to a surprising urban adapter: the honeybee. It frames the trend as a 'quiet revolution', which fits the 'surprising urban success story' theme rather than the commercial appeal of city honey, which is only developed later in Paragraph D.",
+         "你为第一段选了标题 i，但正确答案是 ii。第一段先讲城市常被认为不适宜野生动物，随后引出蜜蜂这种“出乎意料的城市适应者”，并把这一趋势形容为一场“安静革命”。这对应的是“令人意外的城市成功故事”，而城市蜂蜜的商业吸引力要到 D 段才出现。"
+        ]
+       },
+       {
+        "label": [
+         "Short answer",
+         "简答题"
+        ],
+        "text": [
+         "You wrote '4', but the passage states the figure as a quantity rather than a number of cities. The question asks for the number of managed urban hives, and the passage says there are 'well over fifty thousand managed urban hives across these four cities'. The word 'four' refers to the cities, not to the hive count, which is the answer required.",
+         "你写了“4”，但题目问的是城市蜂箱的总数，原文给的是数量而不是城市个数。文中明确写道“well over fifty thousand managed urban hives across these four cities”。“four”指的是城市数量，并不是题目所问的蜂箱数量。"
+        ]
+       }
+      ]
+     }
     }
    },
    "mock": {
