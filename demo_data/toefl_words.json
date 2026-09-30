@@ -1,0 +1,132 @@
+{
+ "_source": "tool/demo_export/toefl_rw.cjs",
+ "TFDW_SEC": 90,
+ "TFDW_PARAS": [
+  [
+   "A new wind farm is being built along the coastal hills north of the city, and it is already changing the appearance of the landscape. ",
+   [
+    "Loc",
+    2,
+    ""
+   ],
+   " engineers ",
+   [
+    "desi",
+    4,
+    ""
+   ],
+   " the ",
+   [
+    "turb",
+    4,
+    ""
+   ],
+   " to ",
+   [
+    "mat",
+    2,
+    ""
+   ],
+   " the ",
+   [
+    "loc",
+    2,
+    ""
+   ],
+   " climate, where strong, steady winds arrive for most of the year. Each tower is taller than a ten-storey building, and the blades are long enough to sweep through a wide circle of air. Together, the machines are expected to provide enough electricity for tens of thousands of homes. Many residents welcome the project because the region has depended on imported fuel for decades. They also point out that the turbines will reduce pollution from older power plants. Some neighbours, however, have raised concerns about noise during the night and the effect on migrating birds. The developers have promised to study those issues carefully and to adjust the layout if early monitoring shows serious problems. Visitors who climb the nearby viewpoint can see the installation from a safe distance and read signs that explain how the energy is generated, transmitted and delivered. School groups are already booking tours, hoping that students will learn how engineering and environmental care can work together."
+  ]
+ ],
+ "TFDWFB_WEAK": [],
+ "TFDWFB_SRC": [
+  [
+   "A new wind farm is being built along the coastal hills north of the city, and it is already changing the appearance of the landscape. ",
+   "Local",
+   1,
+   ""
+  ],
+  [
+   " engineers ",
+   "designed",
+   2,
+   ""
+  ],
+  [
+   " the ",
+   "turbines",
+   3,
+   ""
+  ],
+  [
+   " to ",
+   "match",
+   4,
+   ""
+  ],
+  [
+   " the ",
+   "local",
+   5,
+   ""
+  ],
+  [
+   " climate, where strong, steady winds arrive for most of the year. Each tower is taller than a ten-storey building, and the blades are long enough to sweep through a wide circle of air. Together, the machines are expected to provide enough electricity for tens of thousands of homes. Many residents welcome the project because the region has depended on imported fuel for decades. They also point out that the turbines will reduce pollution from older power plants. Some neighbours, however, have raised concerns about noise during the night and the effect on migrating birds. The developers have promised to study those issues carefully and to adjust the layout if early monitoring shows serious problems. Visitors who climb the nearby viewpoint can see the installation from a safe distance and read signs that explain how the energy is generated, transmitted and delivered. School groups are already booking tours, hoping that students will learn how engineering and environmental care can work together.",
+   "",
+   0,
+   ""
+  ]
+ ],
+ "TFDWFB_QS": [
+  {
+   "n": 1,
+   "ok": true,
+   "q": [
+    "Blank 1 — \"Loc__\"",
+    "第 1 空 — \"Loc__\""
+   ],
+   "mine": "Local"
+  },
+  {
+   "n": 2,
+   "ok": true,
+   "q": [
+    "Blank 2 — \"desi____\"",
+    "第 2 空 — \"desi____\""
+   ],
+   "mine": "designed"
+  },
+  {
+   "n": 3,
+   "ok": true,
+   "q": [
+    "Blank 3 — \"turb____\"",
+    "第 3 空 — \"turb____\""
+   ],
+   "mine": "turbines"
+  },
+  {
+   "n": 4,
+   "ok": true,
+   "q": [
+    "Blank 4 — \"mat__\"",
+    "第 4 空 — \"mat__\""
+   ],
+   "mine": "match"
+  },
+  {
+   "n": 5,
+   "ok": true,
+   "q": [
+    "Blank 5 — \"loc__\"",
+    "第 5 空 — \"loc__\""
+   ],
+   "mine": "local"
+  }
+ ],
+ "TFDWFB_SCORE": {
+  "k": "总体 · 练习估分",
+  "n": "6.0",
+  "den": " / 6.0",
+  "d": "",
+  "f": "练习估分仅供参考，不代表官方托福分数。"
+ }
+}

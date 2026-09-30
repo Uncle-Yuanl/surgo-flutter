@@ -48,16 +48,19 @@ class TfDlQuestion {
 }
 
 /// 反馈页薄弱项，对应 TFDLFB_WEAK 元素。
+///
+/// 三个字段在原型数据里是字符串；演示用真实数据（tool/demo_export）给的是
+/// `[英文, 中文]` 一对，由页面按界面语言取。
 class TfDlWeak {
   const TfDlWeak({required this.tags, required this.q, required this.a});
-  final List<String> tags; // 恰好 3 个：tags[0..2]
-  final String q;
-  final String a;
+  final List<Object> tags; // 恰好 3 个：tags[0..2]
+  final Object q;
+  final Object a;
 
   factory TfDlWeak.fromJson(Map<String, dynamic> j) => TfDlWeak(
-        tags: (j['tags'] as List).map((e) => e as String).toList(),
-        q: j['q'] as String,
-        a: j['a'] as String,
+        tags: (j['tags'] as List).cast<Object>(),
+        q: j['q'] as Object,
+        a: j['a'] as Object,
       );
 }
 
@@ -101,7 +104,7 @@ class TfDlQ {
   final String q;
   final String mine;
   final String? ans; // 缺省表示不显示「正确答案」行（原型 q.ans 假值）
-  final String? why; // 缺省表示不显示解析块（原型 q.why 假值）
+  final Object? why; // 缺省表示不显示解析块（原型 q.why 假值）；字符串或 [英文, 中文]
   final String? evi; // 原文依据，与 why 同块
 
   factory TfDlQ.fromJson(Map<String, dynamic> j) => TfDlQ(
@@ -110,7 +113,7 @@ class TfDlQ {
         q: j['q'] as String,
         mine: j['mine'] as String,
         ans: j['ans'] as String?,
-        why: j['why'] as String?,
+        why: j['why'],
         evi: j['evi'] as String?,
       );
 }
@@ -128,7 +131,12 @@ class TfDlContent {
     required this.weak,
     required this.src,
     required this.qs,
+    this.score,
   });
+
+  /// 这一场的练习估分（TFDLFB_SCORE，如 "2.0"）。只有演示用真实数据带；
+  /// 原型数据没有，反馈页照旧显示写死的分数和评语。
+  final String? score;
 
   /// 原型 TFDL_AD —— 广告原文行（'' 表示段落间隔）。
   final List<String> ad;
@@ -176,6 +184,7 @@ class TfDlContent {
       qs: (j['TFDLFB_QS'] as List)
           .map((q) => TfDlQ.fromJson(q as Map<String, dynamic>))
           .toList(),
+      score: j['TFDLFB_SCORE'] as String?,
     );
   }
 }

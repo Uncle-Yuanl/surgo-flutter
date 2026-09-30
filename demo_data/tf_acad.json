@@ -1,0 +1,253 @@
+{
+ "TFDA_TITLE": "Read an Academic Passage",
+ "TFDA_PARAS": [
+  "The Carnegia robusta, an extinct species of columnar cactus, once thrived in the dry lowlands of what is now the Sonoran Desert. Paleobotanical evidence suggests that during the late Pleistocene, this species grew as a single, unbranched column reaching heights of over twenty meters, making it one of the tallest cacti ever documented. Its range extended across coastal plains and inland basins where seasonal rainfall provided brief but reliable pulses of moisture. Fossilized tissue samples indicate that Carnegia robusta possessed a thick, waxy cuticle and an extensive shallow root system, adaptations that would have allowed it to collect water rapidly during monsoon storms while minimizing evaporative loss.",
+  "The disappearance of Carnegia robusta has long puzzled ecologists. Pollen records show a sharp decline beginning roughly eleven thousand years ago, a period that coincides with the arrival of human populations in the region and with a shift toward a warmer, drier climate at the end of the last ice age. Some researchers argue that human harvesting of the cactus for its moisture-rich stems may have hastened its extinction, while others emphasize the role of prolonged drought. A third hypothesis suggests that competition with smaller, more flexible modern cacti gradually displaced the giant.",
+  "Recent isotopic analyses of stem tissue have provided new evidence in this debate. By measuring ratios of carbon and oxygen isotopes preserved in fossilized cactus spines, scientists can reconstruct past water-use efficiency and growing-season temperatures. The results indicate that Carnegia robusta experienced increasing water stress during the final millennia of its existence, consistent with a drying climate rather than direct human exploitation. However, the same analyses show that populations near human settlement sites displayed a sudden shift in growth patterns shortly before the species vanished, hinting that people may have harvested the plants before they reached reproductive maturity.",
+  "Taken together, the evidence suggests that no single cause can fully account for the disappearance of Carnegia robusta. Climate change weakened the species by reducing seedling survival, while human activity may have prevented the remaining adults from reproducing. The combined pressure of environmental change and human exploitation offers the most complete explanation for the loss of one of the desert's most remarkable plants."
+ ],
+ "TFDA_TITLE2": "",
+ "TFDA_PARAS2": [],
+ "TFDA_QS": [
+  {
+   "q": "According to the passage, which of the following is true of Carnegia robusta?",
+   "opts": [
+    "It grew as a single, unbranched column more than twenty meters tall.",
+    "It produced several branches that spread outward from a short trunk.",
+    "It was limited to mountainous regions with year-round rainfall.",
+    "It was the smallest cactus species in the Sonoran Desert."
+   ]
+  },
+  {
+   "q": "Which of the following can be inferred about the thick, waxy cuticle of Carnegia robusta?",
+   "opts": [
+    "It probably helped the plant survive periods of high evaporation.",
+    "It was unique among cacti of the Pleistocene period.",
+    "It made the cactus easy for humans to harvest.",
+    "It developed only after humans arrived in the region."
+   ]
+  },
+  {
+   "q": "According to the passage, the sharp decline of Carnegia robusta began approximately how many years ago?",
+   "opts": [
+    "1,100 years ago",
+    "11,000 years ago",
+    "110,000 years ago",
+    "1,100,000 years ago"
+   ]
+  },
+  {
+   "q": "What does the author mean by stating that climate change \"weakened the species by reducing seedling survival\"?",
+   "opts": [
+    "Older plants continued to thrive while young ones failed to establish.",
+    "Adult plants were killed instantly by hotter temperatures.",
+    "Seeds germinated more often than usual but grew slowly.",
+    "The species was unaffected by drought but damaged by flooding."
+   ]
+  },
+  {
+   "q": "Which of the following best expresses the essential information in the highlighted sentence: \"The combined pressure of environmental change and human exploitation offers the most complete explanation for the loss of one of the desert's most remarkable plants\"?",
+   "opts": [
+    "Environmental change alone fully explains why the cactus disappeared.",
+    "Human exploitation alone fully explains why the cactus disappeared.",
+    "Both environmental change and human activity together best explain the disappearance.",
+    "Neither environmental change nor human activity played a role in the disappearance."
+   ]
+  }
+ ],
+ "TFDA_SEC": 40,
+ "TFDA_TOTAL": 5,
+ "TFDAFB_WEAK": [
+  {
+   "tags": [
+    [
+     "Reading",
+     "阅读"
+    ],
+    [
+     "Prompt interpretation",
+     "题目理解"
+    ],
+    [
+     "Question focus misread",
+     "误读问题焦点"
+    ]
+   ],
+   "q": [
+    "Q1: The learner selected option B, which describes a branched form, instead of option A, which matches the passage detail that the species grew as a single, unbranched column over twenty meters tall.",
+    "第 1 题：学习者选择了描述多分枝形态的 B 选项，而正确选项 A 对应原文中该物种以单一直立无分枝柱状生长且超过二十米的描述。"
+   ],
+   "a": [
+    "Question-focus paraphrase drill.",
+    "进行题目焦点改述练习。"
+   ]
+  },
+  {
+   "tags": [
+    [
+     "Reading",
+     "阅读"
+    ],
+    [
+     "Inference",
+     "推断"
+    ],
+    [
+     "Unsupported inference",
+     "无依据推断"
+    ]
+   ],
+   "q": [
+    "Q2: The learner selected an inference about human harvest, which the passage never supports as a function of the cuticle. A passage-supported inference about water conservation was available instead.",
+    "第 2 题：学习者选择了与人类收割相关的推断，但文章并未将这种功能归于角质层。文章支持的是关于减少水分蒸腾的推断。"
+   ],
+   "a": [
+    "Inference-threshold drill.",
+    "进行推断证据阈值练习。"
+   ]
+  },
+  {
+   "tags": [
+    [
+     "Reading",
+     "阅读"
+    ],
+    [
+     "Information location",
+     "信息定位"
+    ],
+    [
+     "Key detail not found",
+     "未找到关键细节"
+    ]
+   ],
+   "q": [
+    "Q3: The learner chose option C with the value 110,000 years ago instead of the passage-stated 11,000 years ago, so the supporting fact required by the item was not located correctly.",
+    "第 3 题：学习者选择了 110,000 years ago 的 C 选项，而原文明确指出约 11,000 years ago，因此题目所需的支持事实未被正确定位。"
+   ],
+   "a": [
+    "Targeted scanning drill.",
+    "进行目标细节扫描。"
+   ]
+  },
+  {
+   "tags": [
+    [
+     "Reading",
+     "阅读"
+    ],
+    [
+     "Selection and prioritisation",
+     "信息筛选与优先级"
+    ],
+    [
+     "Main idea and detail confused",
+     "混淆主旨与细节"
+    ]
+   ],
+   "q": [
+    "Q4: The learner selected an option describing a germination-and-growth pattern, while the passage supports the distinction that adults survived but seedlings failed, showing the supporting evidence was misread as a narrower point.",
+    "第 4 题：学习者选择了描述发芽与生长过程的选项，而原文实际区分的是成体存活、幼苗难以存活，表明把支持信息误读为范围更窄的内容。"
+   ],
+   "a": [
+    "Paragraph-gist compression.",
+    "进行段落主旨压缩。"
+   ]
+  }
+ ],
+ "TFDAFB_SRC": [
+  [
+   "The Carnegia robusta, an extinct species of columnar cactus, once thrived in the dry lowlands of what is now the Sonoran Desert. Paleobotanical evidence suggests that ",
+   "during the late Pleistocene, this species grew as a single, unbranched column reaching heights of over twenty meters, making it one of the tallest cacti ever documented.",
+   1,
+   ""
+  ],
+  [
+   " Its range extended across coastal plains and inland basins where seasonal rainfall provided brief but reliable pulses of moisture. Fossilized tissue samples indicate that Carnegia robusta possessed a thick, waxy cuticle and an extensive shallow root system, ",
+   "adaptations that would have allowed it to collect water rapidly during monsoon storms while minimizing evaporative loss.",
+   2,
+   ""
+  ],
+  [
+   "\n\nThe disappearance of Carnegia robusta has long puzzled ecologists. ",
+   "Pollen records show a sharp decline beginning roughly eleven thousand years ago",
+   3,
+   ""
+  ],
+  [
+   ", a period that coincides with the arrival of human populations in the region and with a shift toward a warmer, drier climate at the end of the last ice age. Some researchers argue that human harvesting of the cactus for its moisture-rich stems may have hastened its extinction, while others emphasize the role of prolonged drought. A third hypothesis suggests that competition with smaller, more flexible modern cacti gradually displaced the giant.\n\nRecent isotopic analyses of stem tissue have provided new evidence in this debate. By measuring ratios of carbon and oxygen isotopes preserved in fossilized cactus spines, scientists can reconstruct past water-use efficiency and growing-season temperatures. The results indicate that Carnegia robusta experienced increasing water stress during the final millennia of its existence, consistent with a drying climate rather than direct human exploitation. However, the same analyses show that populations near human settlement sites displayed a sudden shift in growth patterns shortly before the species vanished, hinting that people may have harvested the plants before they reached reproductive maturity.\n\nTaken together, the evidence suggests that no single cause can fully account for the disappearance of Carnegia robusta. ",
+   "Climate change weakened the species by reducing seedling survival, while human activity may have prevented the remaining adults from reproducing.",
+   4,
+   ""
+  ],
+  [
+   " ",
+   "The combined pressure of environmental change and human exploitation offers the most complete explanation for the loss of one of the desert's most remarkable plants.",
+   5,
+   ""
+  ]
+ ],
+ "TFDAFB_QS": [
+  {
+   "n": 1,
+   "ok": false,
+   "q": "According to the passage, which of the following is true of Carnegia robusta?",
+   "mine": "B. It produced several branches that spread outward from a short trunk.",
+   "ans": "A. It grew as a single, unbranched column more than twenty meters tall.",
+   "why": [
+    "You selected B (“It produced several branches that spread outward from a short trunk.”). The passage describes the cactus as unbranched, not as producing several spreading branches. The accepted answer is A (“It grew as a single, unbranched column more than twenty meters tall.”). The passage states directly that Carnegia robusta grew as a single, unbranched column exceeding twenty meters in height, which matches option A exactly.",
+    "你选择了 B (“It produced several branches that spread outward from a short trunk.”)。文章将这种仙人掌描述为不分枝,而非长出多条向外伸展的分枝。正确答案是 A (“It grew as a single, unbranched column more than twenty meters tall.”)。文章明确指出 Carnegia robusta 生长为单一不分枝的柱状,高度超过二十米,与选项 A 的描述完全一致。"
+   ],
+   "evi": "\"during the late Pleistocene, this species grew as a single, unbranched column reaching heights of over twenty meters, making it one of the tallest cacti ever documented.\""
+  },
+  {
+   "n": 2,
+   "ok": false,
+   "q": "Which of the following can be inferred about the thick, waxy cuticle of Carnegia robusta?",
+   "mine": "C. It made the cactus easy for humans to harvest.",
+   "ans": "A. It probably helped the plant survive periods of high evaporation.",
+   "why": [
+    "You selected C (“It made the cactus easy for humans to harvest.”). Nothing in the passage connects the waxy cuticle to ease of human harvesting. The accepted answer is A (“It probably helped the plant survive periods of high evaporation.”). The passage links the thick cuticle and root system to adaptations that minimized evaporative loss, so it is reasonable to infer that the cuticle helped the plant cope with high evaporation.",
+    "你选择了 C (“It made the cactus easy for humans to harvest.”)。文章没有任何内容将蜡质角质层与人类易于采收联系起来。正确答案是 A (“It probably helped the plant survive periods of high evaporation.”)。文章将厚厚的蜡质角质层与减少水分蒸腾的适应特征联系起来,因此可以合理推断该角质层帮助植物应对高蒸发环境。"
+   ],
+   "evi": "\"adaptations that would have allowed it to collect water rapidly during monsoon storms while minimizing evaporative loss.\""
+  },
+  {
+   "n": 3,
+   "ok": false,
+   "q": "According to the passage, the sharp decline of Carnegia robusta began approximately how many years ago?",
+   "mine": "C. 110,000 years ago",
+   "ans": "B. 11,000 years ago",
+   "why": [
+    "You selected C (“110,000 years ago”). 110,000 years ago is ten times the period cited in the passage. The accepted answer is B (“11,000 years ago”). The passage states that pollen records show a sharp decline beginning roughly eleven thousand years ago, which corresponds to option B.",
+    "你选择了 C (“110,000 years ago”)。110,000 年是文章所述时段的十倍。正确答案是 B (“11,000 years ago”)。文章指出花粉记录显示其数量大约在一万一千年前开始急剧下降,与选项 B 一致。"
+   ],
+   "evi": "\"Pollen records show a sharp decline beginning roughly eleven thousand years ago\""
+  },
+  {
+   "n": 4,
+   "ok": false,
+   "q": "What does the author mean by stating that climate change \"weakened the species by reducing seedling survival\"?",
+   "mine": "C. Seeds germinated more often than usual but grew slowly.",
+   "ans": "A. Older plants continued to thrive while young ones failed to establish.",
+   "why": [
+    "You selected C (“Seeds germinated more often than usual but grew slowly.”). The passage says reproduction was limited, not that germination increased with slow growth. The accepted answer is A (“Older plants continued to thrive while young ones failed to establish.”). Reducing seedling survival means fewer young plants replaced older ones, leaving established adults in place while new generations failed, which matches option A.",
+    "你选择了 C (“Seeds germinated more often than usual but grew slowly.”)。文章指出繁殖受到限制,并未说发芽增加且生长缓慢。正确答案是 A (“Older plants continued to thrive while young ones failed to establish.”)。“幼苗存活率降低”意味着能够替代老植株的新生个体减少,成年植株仍然存活但后代难以延续,与选项 A 相符。"
+   ],
+   "evi": "\"Climate change weakened the species by reducing seedling survival, while human activity may have prevented the remaining adults from reproducing.\""
+  },
+  {
+   "n": 5,
+   "ok": false,
+   "q": "Which of the following best expresses the essential information in the highlighted sentence: \"The combined pressure of environmental change and human exploitation offers the most complete explanation for the loss of one of the desert's most remarkable plants\"?",
+   "mine": "D. Neither environmental change nor human activity played a role in the disappearance.",
+   "ans": "C. Both environmental change and human activity together best explain the disappearance.",
+   "why": [
+    "You selected D (“Neither environmental change nor human activity played a role in the disappearance.”). The passage clearly attributes a role to both factors, so neither is dismissed. The accepted answer is C (“Both environmental change and human activity together best explain the disappearance.”). The phrase \"combined pressure\" indicates that both factors together provide the fullest account, which corresponds to option C.",
+    "你选择了 D (“Neither environmental change nor human activity played a role in the disappearance.”)。文章明确指出两个因素都起了作用,并没有否认其中任何一个。正确答案是 C (“Both environmental change and human activity together best explain the disappearance.”)。“combined pressure”(共同压力)一词表明两种因素共同作用才提供最完整的解释,与选项 C 一致。"
+   ],
+   "evi": "\"The combined pressure of environmental change and human exploitation offers the most complete explanation for the loss of one of the desert's most remarkable plants.\""
+  }
+ ],
+ "TFDAFB_SCORE": "1.0"
+}

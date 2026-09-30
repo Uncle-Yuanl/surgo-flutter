@@ -1,0 +1,170 @@
+{
+ "TFDL_AD": [
+  "The campus writing center has updated its drop-in tutoring policy for the fall term. Beginning September 5, students may sign up for a thirty-minute session either online through the center's booking portal or in person at the front desk on the day of their visit. Each appointment is limited to one student and one tutor, and the center asks that students bring a draft of at least one page so that tutors can give focused feedback. Tutors will not review work longer than eight pages during a single visit, and they cannot read assignments that have not yet been started. Sessions are offered Monday through Thursday from 10 a.m. to 4 p.m. and Friday from 10 a.m. to 1 p.m. The center is closed on weekends and on university holidays.",
+  "",
+  "Students who arrive more than ten minutes late will be counted as no-shows, and a second no-show in the same term will block further bookings for the rest of that term. The center reminds visitors that tutors can help with thesis development, organization, grammar, and citation, but they do not proofread entire papers, and they cannot guarantee improved grades. Walk-in students without an appointment will be seated only if a tutor happens to be free, so the center strongly recommends reserving a slot in advance.",
+  "",
+  "Because demand is high in October, the center is also piloting small-group workshops on academic paragraph structure. Each workshop lasts forty-five minutes, welcomes up to six students, and requires preregistration through the same booking portal. Workshop topics rotate weekly and are listed on the center's website, and students who miss two workshops without canceling will lose workshop privileges for the remainder of the term, although they can still use regular tutoring sessions."
+ ],
+ "TFDL_POST": [],
+ "TFDL_QS": [
+  {
+   "src": "ad",
+   "title": "Read in Daily Life",
+   "q": "According to the passage, when does the writing center begin its new fall tutoring policy?",
+   "opts": [
+    "September 5",
+    "The first Monday of September",
+    "October 1",
+    "The start of the fall term"
+   ]
+  },
+  {
+   "q": "Which of the following best describes how a student can sign up for a tutoring session?",
+   "opts": [
+    "By booking online through the center's portal",
+    "By calling the center after 4 p.m.",
+    "By emailing a personal tutor directly",
+    "By submitting a form at the campus library"
+   ]
+  },
+  {
+   "q": "What will happen if a student arrives more than ten minutes late to a scheduled session?",
+   "opts": [
+    "The tutor will shorten the session to twenty minutes.",
+    "The student will be marked as a no-show.",
+    "The student can reschedule without penalty the same day.",
+    "The center will transfer the slot to a walk-in student."
+   ]
+  },
+  {
+   "q": "Based on the passage, what is true about the small-group workshops being piloted?",
+   "opts": [
+    "They run for forty-five minutes and accept up to six students.",
+    "They are held every day of the week including weekends.",
+    "They replace regular one-on-one tutoring sessions.",
+    "They do not require preregistration through the portal."
+   ]
+  },
+  {
+   "q": "What consequence does the passage describe for students who miss two workshops without canceling?",
+   "opts": [
+    "They must pay a fine before re-registering.",
+    "They lose workshop privileges for the rest of the term but can still use regular tutoring.",
+    "They are banned from all writing center services permanently.",
+    "They are required to write an apology to the director."
+   ]
+  }
+ ],
+ "TFDL_SEC": 40,
+ "TFDL_TOTAL": 5,
+ "TFDLFB_WEAK": [
+  {
+   "tags": [
+    [
+     "Reading",
+     "阅读"
+    ],
+    [
+     "Prompt interpretation",
+     "题目理解"
+    ],
+    [
+     "Question focus misread",
+     "误读问题焦点"
+    ]
+   ],
+   "q": [
+    "Q5: The learner picked an option about a permanent ban instead of the specific consequence stated in the passage, so the precise information requested was not identified.",
+    "第 5 题：学习者选择了关于永久禁用所有服务的选项，而没有选择原文明确写明的具体后果，因此没有识别出题目真正要求的信息。"
+   ],
+   "a": [
+    "Question-focus paraphrase drill.",
+    "进行题目焦点改述练习。"
+   ]
+  }
+ ],
+ "TFDLFB_SRC": [
+  [
+   "The campus writing center has updated its drop-in tutoring policy for the fall term. ",
+   "Beginning September 5, students may sign up for a thirty-minute session either online through the center's booking portal or in person at the front desk on the day of their visit.",
+   1,
+   ""
+  ],
+  [
+   " Each appointment is limited to one student and one tutor, and the center asks that students bring a draft of at least one page so that tutors can give focused feedback. Tutors will not review work longer than eight pages during a single visit, and they cannot read assignments that have not yet been started. Sessions are offered Monday through Thursday from 10 a.m. to 4 p.m. and Friday from 10 a.m. to 1 p.m. The center is closed on weekends and on university holidays.\n\n",
+   "Students who arrive more than ten minutes late will be counted as no-shows, and a second no-show in the same term will block further bookings for the rest of that term.",
+   3,
+   ""
+  ],
+  [
+   " The center reminds visitors that tutors can help with thesis development, organization, grammar, and citation, but they do not proofread entire papers, and they cannot guarantee improved grades. Walk-in students without an appointment will be seated only if a tutor happens to be free, so the center strongly recommends reserving a slot in advance.\n\nBecause demand is high in October, the center is also piloting small-group workshops on academic paragraph structure. ",
+   "Each workshop lasts forty-five minutes, welcomes up to six students, and requires preregistration through the same booking portal.",
+   4,
+   ""
+  ],
+  [
+   " Workshop topics rotate weekly and are listed on the center's website, and ",
+   "students who miss two workshops without canceling will lose workshop privileges for the remainder of the term, although they can still use regular tutoring sessions.",
+   5,
+   ""
+  ]
+ ],
+ "TFDLFB_QS": [
+  {
+   "n": 1,
+   "ok": true,
+   "q": "According to the passage, when does the writing center begin its new fall tutoring policy?",
+   "mine": "A. September 5"
+  },
+  {
+   "n": 2,
+   "ok": false,
+   "q": "Which of the following best describes how a student can sign up for a tutoring session?",
+   "mine": "C. By emailing a personal tutor directly",
+   "ans": "A. By booking online through the center's portal",
+   "why": [
+    "You selected C (“By emailing a personal tutor directly”). The passage does not describe emailing a personal tutor; appointments are made through the portal or the front desk. The accepted answer is A (“By booking online through the center's portal”). The passage states that students can sign up online through the center's booking portal (or in person at the front desk), which matches option A. None of the other options reflect a method described in the passage.",
+    "你选择了 C (“By emailing a personal tutor directly”)。文章没有提到给私人导师发邮件,而是通过门户网站或前台预约。正确答案是 A (“By booking online through the center's portal”)。文章指出学生可以通过中心的预约门户网站在线报名(或在当天到前台现场报名),这与选项A一致。其他选项都不是文中描述的报名方式。"
+   ],
+   "evi": "\"students may sign up for a thirty-minute session either online through the center's booking portal or in person at the front desk on the day of their visit.\""
+  },
+  {
+   "n": 3,
+   "ok": false,
+   "q": "What will happen if a student arrives more than ten minutes late to a scheduled session?",
+   "mine": "C. The student can reschedule without penalty the same day.",
+   "ans": "B. The student will be marked as a no-show.",
+   "why": [
+    "You selected C (“The student can reschedule without penalty the same day.”). There is no mention in the passage of rescheduling without penalty after a late arrival. The accepted answer is B (“The student will be marked as a no-show.”). The passage explicitly says that arriving more than ten minutes late results in being counted as a no-show, which matches option B. The other options describe consequences that the passage does not state.",
+    "你选择了 C (“The student can reschedule without penalty the same day.”)。文章没有提到迟到后可以当天无罚改期。正确答案是 B (“The student will be marked as a no-show.”)。文章明确指出,迟到超过10分钟将被记为缺席(no-show),这与选项B一致。其他选项描述的后果在文中并未提及。"
+   ],
+   "evi": "\"Students who arrive more than ten minutes late will be counted as no-shows, and a second no-show in the same term will block further bookings for the rest of that term.\""
+  },
+  {
+   "n": 4,
+   "ok": false,
+   "q": "Based on the passage, what is true about the small-group workshops being piloted?",
+   "mine": "D. They do not require preregistration through the portal.",
+   "ans": "A. They run for forty-five minutes and accept up to six students.",
+   "why": [
+    "You selected D (“They do not require preregistration through the portal.”). The passage explicitly says workshops require preregistration through the same booking portal. The accepted answer is A (“They run for forty-five minutes and accept up to six students.”). The passage states that each workshop lasts forty-five minutes, welcomes up to six students, and requires preregistration through the booking portal, which matches option A. The other options contradict details in the passage.",
+    "你选择了 D (“They do not require preregistration through the portal.”)。文章明确指出工作坊需要通过同一个预约门户进行预注册。正确答案是 A (“They run for forty-five minutes and accept up to six students.”)。文章指出每个工作坊持续45分钟,接收最多6名学生,并需要通过预约门户进行预注册,这与选项A一致。其他选项与文中的细节相矛盾。"
+   ],
+   "evi": "\"Each workshop lasts forty-five minutes, welcomes up to six students, and requires preregistration through the same booking portal.\""
+  },
+  {
+   "n": 5,
+   "ok": false,
+   "q": "What consequence does the passage describe for students who miss two workshops without canceling?",
+   "mine": "C. They are banned from all writing center services permanently.",
+   "ans": "B. They lose workshop privileges for the rest of the term but can still use regular tutoring.",
+   "why": [
+    "You selected C (“They are banned from all writing center services permanently.”). The passage limits the consequence to losing workshop privileges; regular tutoring is still available, and the ban is not permanent. The accepted answer is B (“They lose workshop privileges for the rest of the term but can still use regular tutoring.”). The passage states that missing two workshops without canceling causes students to lose workshop privileges for the remainder of the term, while they can still use regular tutoring, matching option B exactly. The other options are not mentioned.",
+    "你选择了 C (“They are banned from all writing center services permanently.”)。文章中后果仅限于失去工作坊资格,常规辅导仍可使用,且并非永久禁用。正确答案是 B (“They lose workshop privileges for the rest of the term but can still use regular tutoring.”)。文章指出,未取消而缺席两次工作坊的学生将在本学期剩余时间内失去工作坊参与资格,但仍然可以使用常规辅导,这正好与选项B一致。其他选项文中并未提及。"
+   ],
+   "evi": "\"students who miss two workshops without canceling will lose workshop privileges for the remainder of the term, although they can still use regular tutoring sessions.\""
+  }
+ ],
+ "TFDLFB_SCORE": "2.0"
+}

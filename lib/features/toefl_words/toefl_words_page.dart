@@ -224,7 +224,10 @@ class _TfDailyWordsViewState extends State<TfDailyWordsView> {
                 // .tr1-foot：上一题（可选）+ 下一段/下一部分
                 _Foot(
                   showPrev: _c.canPrev,
-                  nextLabel: _c.nextLabel(),
+                  // 词典里没有「下一部分」的英文（只有带箭头的那条），最后一段直接给 [英文, 中文]。
+                  nextLabel: _c.isLast
+                      ? const ['Next part', '\u4e0b\u4e00\u90e8\u5206']
+                      : _c.nextLabel(),
                   onPrev: _prev,
                   onNext: _next,
                 ),
@@ -324,7 +327,8 @@ class _Header extends StatelessWidget {
             children: [
               Flexible(
                 child: T(
-                  '$done / $totalBlanks \u5df2\u586b',
+                  // 词典只收了原型第一屏的「0 / 10 已填」，其它数字直接给 [英文, 中文]。
+                  ['$done / $totalBlanks filled', '$done / $totalBlanks \u5df2\u586b'],
                   style: const TextStyle(fontSize: 10, color: SurgoColors.muted),
                   maxLines: 1,
                 ),
@@ -539,7 +543,7 @@ class _Foot extends StatelessWidget {
     required this.onNext,
   });
   final bool showPrev;
-  final String nextLabel;
+  final Object nextLabel; // 字符串或 [英文, 中文]
   final VoidCallback onPrev;
   final VoidCallback onNext;
 
@@ -568,7 +572,7 @@ class _PillButton extends StatelessWidget {
     required this.onTap,
     required this.filled,
   });
-  final String label;
+  final Object label; // 字符串或 [英文, 中文]
   final VoidCallback onTap;
   final bool filled;
 

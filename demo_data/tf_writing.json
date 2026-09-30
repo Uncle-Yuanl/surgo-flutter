@@ -1,0 +1,677 @@
+{
+ "TFW1_QS": [
+  {
+   "q": "Form a logical sentence using the given tokens.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "library",
+    "to",
+    "study."
+   ],
+   "tail": "",
+   "bank": [
+    "to",
+    "students",
+    "went",
+    "the",
+    "The"
+   ]
+  },
+  {
+   "q": "Form a logical sentence using the given tokens.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "about",
+    "biology."
+   ],
+   "tail": "",
+   "bank": [
+    "The",
+    "a",
+    "gave",
+    "lecture",
+    "professor"
+   ]
+  },
+  {
+   "q": "Form a logical sentence using the given tokens.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "at",
+    "nine."
+   ],
+   "tail": "",
+   "bank": [
+    "will",
+    "morning",
+    "The",
+    "class",
+    "begin"
+   ]
+  },
+  {
+   "q": "Form a logical sentence using the given tokens.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "on",
+    "campus."
+   ],
+   "tail": "",
+   "bank": [
+    "research",
+    "The",
+    "organized",
+    "was",
+    "project"
+   ]
+  },
+  {
+   "q": "Form a logical sentence using the given tokens.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "the",
+    "exam."
+   ],
+   "tail": "",
+   "bank": [
+    "for",
+    "The",
+    "prepared",
+    "students",
+    "carefully"
+   ]
+  },
+  {
+   "q": "Form a logical sentence using the given tokens.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "in",
+    "history."
+   ],
+   "tail": "",
+   "bank": [
+    "a",
+    "course",
+    "university",
+    "offers",
+    "The"
+   ]
+  },
+  {
+   "q": "Form a logical sentence using the given tokens.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "every",
+    "morning."
+   ],
+   "tail": "",
+   "bank": [
+    "campus",
+    "opens",
+    "early",
+    "cafeteria",
+    "The"
+   ]
+  },
+  {
+   "q": "Form a logical sentence using the given tokens.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "in",
+    "the",
+    "office."
+   ],
+   "tail": "",
+   "bank": [
+    "The",
+    "students",
+    "teacher",
+    "her",
+    "met"
+   ]
+  },
+  {
+   "q": "Form a logical sentence using the given tokens.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "to",
+    "the",
+    "library."
+   ],
+   "tail": "",
+   "bank": [
+    "return",
+    "the",
+    "need",
+    "to",
+    "I",
+    "book"
+   ]
+  },
+  {
+   "q": "Form a logical sentence using the given tokens.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "late",
+    "May."
+   ],
+   "tail": "",
+   "bank": [
+    "semester",
+    "finish",
+    "in",
+    "The",
+    "classes"
+   ]
+  }
+ ],
+ "TFW1_SEC": 410,
+ "TFW1_TOTAL": 10,
+ "TFW2": {
+  "tag": "TASK 2 · WRITE AN EMAIL",
+  "title": "Course planning for next term",
+  "ctx": "You are a university student. An academic advisor has contacted you about the upcoming course registration period and wants to know whether you plan to take a research seminar or a standard elective in the coming term. You have a strong preference, and you also need one additional piece of information from the advisor before registration opens. Write a clear, polite reply that answers the question and asks for the information you need.",
+  "meta": [
+   [
+    "From",
+    "Advisor: Dr. L. Mehta"
+   ],
+   [
+    "Subject",
+    "Course planning for next term"
+   ]
+  ],
+  "reqs": [
+   "Read the email and the professor's reply. Then write a reply to your professor in which you respond to the question asked and add one specific request related to the topic of the exchange. Support your ideas with reasons and examples. Write between 100 and 200 words."
+  ],
+  "to": "Advisor: Dr. L. Mehta",
+  "subjPh": "Course planning for next term",
+  "bodyPh": "在此撰写你的邮件…",
+  "min": 80
+ },
+ "TFW2_SEC": 420,
+ "TFW3": {
+  "kicker": "讨论帖",
+  "prompt": "You have 10 minutes to write a response to the discussion. Your response should be 120 words or more. In your response, you should add your own point of view to what has already been written. You should also respond to at least one of the other points raised by the other students. You can agree or disagree with the other students' points. Make sure to use your own words and provide reasons and examples to support your response.",
+  "note": "有效的回应至少应包含 100 词。",
+  "posts": [
+   {
+    "ini": "P",
+    "cls": "p",
+    "name": "Professor",
+    "txt": "As part of their undergraduate degree, students at many universities are required to take a number of courses outside their primary field of study. For example, an engineering student might enroll in a literature seminar, or a music major might take a statistics class. Supporters argue that this broadens students' perspectives and helps them connect ideas across disciplines. Opponents argue that it pulls attention away from the deep expertise that employers and graduate programs expect. Should universities keep this general education requirement, or should they let students focus entirely on their chosen field? Explain which position you find more convincing and why."
+   },
+   {
+    "ini": "A",
+    "cls": "k",
+    "name": "Alex",
+    "txt": "I think the requirement should stay. Most of the real problems in the world sit at the intersection of several fields, and students who only study one subject miss those connections. A computer science student who also takes a psychology class is more likely to design software that people actually find easy to use. Exposure to other fields builds a kind of flexibility that no single major can offer."
+   },
+   {
+    "ini": "S",
+    "cls": "u",
+    "name": "Sam",
+    "txt": "I lean the other way. If a student wants to become a civil engineer, those four years of study are already packed with required math, physics, and design courses. Adding unrelated classes can push the degree to five years or force students to choose depth over breadth. Employers tend to look for specific skills, and a graduate who has taken extra geology or art history does not automatically stand out in a hiring pool for engineering roles."
+   }
+  ],
+  "bodyPh": "在此撰写你的回应…",
+  "min": 100
+ },
+ "TFW3_SEC": 600,
+ "TFW1_QS_MOCK": [
+  {
+   "q": "Build a grammatically correct sentence using all the given tokens in the correct order.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "tide",
+    "reversed",
+    "its",
+    "direction"
+   ],
+   "tail": ".",
+   "bank": [
+    "analyzed",
+    "the",
+    "from",
+    "carefully",
+    "the",
+    "estuary",
+    "The",
+    "the",
+    "morning",
+    "yesterday",
+    "before",
+    "researchers",
+    "samples",
+    "river",
+    "collected",
+    "water"
+   ]
+  },
+  {
+   "q": "Build a grammatically correct sentence using all the given tokens in the correct order.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "within",
+    "the",
+    "allotted",
+    "time."
+   ],
+   "tail": "",
+   "bank": [
+    "every",
+    "ambitious,",
+    "managed",
+    "the",
+    "conference",
+    "presenter",
+    "stay",
+    "was",
+    "schedule",
+    "Although",
+    "to"
+   ]
+  },
+  {
+   "q": "Build a grammatically correct sentence using all the given tokens in the correct order.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "examination",
+    "period",
+    "in",
+    "December"
+   ],
+   "tail": ".",
+   "bank": [
+    "The",
+    "during",
+    "will",
+    "the",
+    "midnight",
+    "remain",
+    "final",
+    "open",
+    "until",
+    "library"
+   ]
+  },
+  {
+   "q": "Build a grammatically correct sentence using all the given tokens in the correct order.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "harbor",
+    "since",
+    "early",
+    "spring"
+   ],
+   "tail": ".",
+   "bank": [
+    "organizing",
+    "weekly",
+    "small",
+    "group",
+    "cleanups",
+    "of",
+    "has",
+    "A",
+    "along",
+    "volunteers",
+    "the",
+    "been"
+   ]
+  },
+  {
+   "q": "Build a grammatically correct sentence using all the given tokens in the correct order.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "to",
+    "the",
+    "nearby",
+    "auditorium."
+   ],
+   "tail": "",
+   "bank": [
+    "weather",
+    "be",
+    "lecture",
+    "moved",
+    "the",
+    "will",
+    "forecast",
+    "proves",
+    "the",
+    "If",
+    "accurate,",
+    "outdoor"
+   ]
+  },
+  {
+   "q": "Build a grammatically correct sentence using all the given tokens in the correct order.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "learning",
+    "center",
+    "next",
+    "semester"
+   ],
+   "tail": ".",
+   "bank": [
+    "expand",
+    "considering",
+    "proposal",
+    "to",
+    "language",
+    "a",
+    "university",
+    "the",
+    "The",
+    "is"
+   ]
+  },
+  {
+   "q": "Build a grammatically correct sentence using all the given tokens in the correct order.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "recommendation",
+    "from",
+    "their",
+    "supervisor"
+   ],
+   "tail": ".",
+   "bank": [
+    "letter",
+    "certificate",
+    "the",
+    "a",
+    "of",
+    "internship",
+    "complete",
+    "receive",
+    "a",
+    "and",
+    "who",
+    "Students"
+   ]
+  },
+  {
+   "q": "Build a grammatically correct sentence using all the given tokens in the correct order.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "generators",
+    "for",
+    "their",
+    "homes"
+   ],
+   "tail": ".",
+   "bank": [
+    "in",
+    "reliable",
+    "frequent",
+    "The",
+    "prompted",
+    "backup",
+    "residents",
+    "power",
+    "have",
+    "outages",
+    "to",
+    "invest"
+   ]
+  },
+  {
+   "q": "Build a grammatically correct sentence using all the given tokens in the correct order.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "the",
+    "faculty",
+    "concerns",
+    "directly."
+   ],
+   "tail": "",
+   "bank": [
+    "scheduled",
+    "report,",
+    "meeting",
+    "committee",
+    "to",
+    "dean",
+    "reviewing",
+    "After",
+    "the",
+    "an",
+    "address",
+    "open",
+    "the"
+   ]
+  },
+  {
+   "q": "Build a grammatically correct sentence using all the given tokens in the correct order.",
+   "parts": [
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "_",
+    "response",
+    "to",
+    "student",
+    "requests."
+   ],
+   "tail": "",
+   "bank": [
+    "cafeteria",
+    "options",
+    "in",
+    "new",
+    "campus",
+    "introduced",
+    "The",
+    "plant-based",
+    "several",
+    "has"
+   ]
+  }
+ ],
+ "TFW2_MOCK": {
+  "tag": "TASK 2 · WRITE AN EMAIL",
+  "title": "Quick trip to your city",
+  "ctx": "You received an email from a friend who is planning to visit your city for a short vacation. She asks for recommendations and help with planning. Write an email that responds to all of her questions and requests.",
+  "meta": [
+   [
+    "From",
+    "Priya"
+   ],
+   [
+    "Subject",
+    "Quick trip to your city"
+   ],
+   [
+    "Date received",
+    "Tuesday, March 11"
+   ],
+   [
+    "Message",
+    "Hi! I just found out I have a long weekend in early April, and I would love to visit your city for a few days. I have never been there before, so I really need your advice. Could you suggest two or three places I should not miss? Also, I will only have a carry-on bag, so I am wondering what the weather is usually like and what I should pack. Finally, is there a comfortable and affordable neighborhood you would recommend for a hotel? Thanks so much, and I hope we can meet up while I am there."
+   ]
+  ],
+  "reqs": [
+   "Read the email from your friend and write a response. Respond to all the questions and requests in the email."
+  ],
+  "to": "Priya",
+  "subjPh": "Quick trip to your city",
+  "bodyPh": "在此撰写你的邮件…",
+  "min": 80
+ },
+ "TFW3_MOCK": {
+  "kicker": "讨论帖",
+  "prompt": "Your professor is asking the class to discuss a topic related to this week's lesson. Read what the professor and two classmates have already written, then add your own response. In your response, be sure to add new ideas and examples, and respond to at least one of your classmates' posts. Do not summarize the discussion so far.",
+  "note": "有效的回应至少应包含 100 词。",
+  "posts": [
+   {
+    "ini": "P",
+    "cls": "p",
+    "name": "Professor",
+    "txt": "Our city has just announced that, starting next month, retail stores may no longer provide free single-use plastic bags. Some stores will charge a small fee for paper or reusable bags, while others are expected to stop offering bags altogether. Supporters argue that this will sharply reduce plastic waste, while critics worry about the inconvenience for shoppers and the impact on small businesses. How effective do you think this kind of policy really is, and what factors should local officials consider before expanding it further?"
+   },
+   {
+    "ini": "T",
+    "cls": "k",
+    "name": "Tomas",
+    "txt": "I think the policy is a good first step. Most plastic pollution in our area comes from packaging, and bags are an easy target. If people get used to bringing their own reusable bags, the long-term effect on waste should be significant. I would also like to see similar rules for takeout containers."
+   },
+   {
+    "ini": "M",
+    "cls": "u",
+    "name": "Maya",
+    "txt": "I am not sure the impact will be as large as people hope. A lot of shoppers will probably just buy paper bags, and producing those still uses energy and water. I am also concerned about small businesses that cannot easily absorb the cost of switching to alternative packaging. The city should probably offer some kind of support before expanding the policy."
+   }
+  ],
+  "bodyPh": "在此撰写你的回应…",
+  "min": 100
+ }
+}

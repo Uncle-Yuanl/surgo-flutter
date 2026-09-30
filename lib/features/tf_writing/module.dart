@@ -77,7 +77,7 @@ class _TfWritingPageState extends State<TfWritingPage>{
   ]);
  }
  Widget _slot(int i)=>DragTarget<(int,int?)>(onWillAcceptWithDetails:(v)=>v.data.$2!=i,onAcceptWithDetails:(v)=>setState(()=>sentence!.drop(v.data.$1,i,from:v.data.$2)),builder:(_,candidate,__)=>Container(key:ValueKey('sentence-slot-$i'),constraints:const BoxConstraints(minWidth:60,minHeight:40),decoration:BoxDecoration(color:candidate.isNotEmpty?SurgoColors.yellowTint:Colors.white,border:Border.all(color:SurgoColors.yellow),borderRadius:BorderRadius.circular(10)),child:sentence!.slots[i]==null?const Padding(padding:EdgeInsets.all(10),child:T('拖入',style:SurgoText.cardDesc)):draggable(sentence!.slots[i]!,slot:i)));
- Widget _topic(){final item=d![task==2?'TFW2':'TFW3'];return SurgoCard(child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
+ Widget _topic(){final item=TfWritingData.item(app,d!,task,task==2?'TFW2':'TFW3');return SurgoCard(child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
   // 用户 2026-09-24：Part 2 这整块都是题目，所以全部保持英文（不过词典）；
   // 正文段显式用正文字体族。meta 的标签在源数据里是中文，这里改用英文。
   if(task==2)...[const Text('Essentials',style:SurgoText.cardEn),const SizedBox(height:10),Text(item['title'],style:SurgoText.cardTitle),const SizedBox(height:15),Text(item['ctx'],style:const TextStyle(fontFamily:SurgoFontFamily.body,fontFamilyFallback:SurgoFontFamily.fallback,fontSize:15,height:1.7)),const SizedBox(height:18),
@@ -91,7 +91,7 @@ class _TfWritingPageState extends State<TfWritingPage>{
    for(final post in item['posts'])Padding(padding:const EdgeInsets.only(top:18),child:Row(crossAxisAlignment:CrossAxisAlignment.start,children:[CircleAvatar(child:Text(post['ini'])),const SizedBox(width:10),Expanded(child:Column(crossAxisAlignment:CrossAxisAlignment.start,children:[Text(post['name'],style:SurgoText.rowLabel),Text(post['txt'],style:const TextStyle(fontFamily:SurgoFontFamily.body,fontFamilyFallback:SurgoFontFamily.fallback,fontSize:14,height:1.6))]))])),
   ]
  ]));}
- Widget _editor(){final item=d![task==2?'TFW2':'TFW3'];return Column(children:[SurgoCard(child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
+ Widget _editor(){final item=TfWritingData.item(app,d!,task,task==2?'TFW2':'TFW3');return Column(children:[SurgoCard(child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
   if(task==2)...[T('收件人  ${item['to']}',style:SurgoText.rowLabel),TextField(controller:subject,decoration:InputDecoration(hintText:item['subjPh']),onChanged:(v)=>app.session['tfw2Subj']=v)],
   if(task==3)const T('你的回应',style:SurgoText.cardTitle),
   TextField(key:const ValueKey('tf-writing-body'),controller:body,minLines:13,maxLines:null,decoration:InputDecoration(hintText:item['bodyPh'],border:InputBorder.none),style:const TextStyle(fontSize:15,height:1.7),onChanged:(v)=>setState(()=>app.session['tfw${task}Body']=v)),
