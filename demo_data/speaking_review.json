@@ -110,6 +110,18 @@
         "'profession' is a noun; the intended phrase requires an adjective or noun phrase such as 'professional work', and the infinitive after 'then' should be the bare form 'do'.",
         "warn"
        ]
+      ],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_examiner_p1_1.mp3",
+        "sec": 2.9
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p1_1.mp3",
+        "sec": 10.4
+       }
       ]
      },
      {
@@ -123,13 +135,37 @@
         "The verb should agree with the subject and a clearer structure is needed to express that tasks stay on schedule.",
         "warn"
        ]
+      ],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_examiner_p1_2.mp3",
+        "sec": 4.4
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p1_2.mp3",
+        "sec": 18
+       }
       ]
      },
      {
       "q": "How has your daily routine changed compared to five years ago?",
       "dur": "36s",
       "ans": "five years ago i was a fresh new a man of this uh industry and i think i need to learn some very foundation knowledge about my work and then now after five years i prefer to learn some over hides and some principle of this the technology",
-      "tags": []
+      "tags": [],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_examiner_p1_3.mp3",
+        "sec": 4.3
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p1_3.mp3",
+        "sec": 35.7
+       }
+      ]
      },
      {
       "q": "Is there anything in your daily routine you would like to change?",
@@ -142,6 +178,18 @@
         "The prepositions 'without with' are incorrect, and the reflexive pronoun should be 'myself' after a clear prepositional phrase.",
         "warn"
        ]
+      ],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_examiner_p1_4.mp3",
+        "sec": 3.8
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p1_4.mp3",
+        "sec": 29.8
+       }
       ]
      },
      {
@@ -155,6 +203,18 @@
         "The extra 'every' is unnecessary, 'plan' should match the present simple, and 'task' should be the plural 'tasks'.",
         "warn"
        ]
+      ],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_examiner_p1_5.mp3",
+        "sec": 3.8
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p1_5.mp3",
+        "sec": 22.9
+       }
       ]
      }
     ]
@@ -333,6 +393,30 @@
         "Use 'coding agent', add the preposition 'on', and correct 'focus Lee' to 'focus on the'.",
         "warn"
        ]
+      ],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_speaking_examiner_p2_2.mp3",
+        "sec": 4.3
+       },
+       {
+        "asset": "assets/data/aud_speaking_examiner_p2_3.mp3",
+        "sec": 6.1
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p2_1.mp3",
+        "sec": 83.2
+       },
+       {
+        "asset": "assets/data/aud_speaking_answer_p2_2.mp3",
+        "sec": 15.6
+       },
+       {
+        "asset": "assets/data/aud_speaking_answer_p2_3.mp3",
+        "sec": 23.5
+       }
       ]
      }
     ]
@@ -443,6 +527,18 @@
         "Use the simple present for habitual actions, and complete the verb phrase with a clear activity.",
         "warn"
        ]
+      ],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_examiner_p3_1.mp3",
+        "sec": 4.7
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p3_1.mp3",
+        "sec": 9
+       }
       ]
      },
      {
@@ -462,13 +558,37 @@
         "Use the plural 'priorities' and a more precise noun than 'stuff'.",
         "warn"
        ]
+      ],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_examiner_p3_2.mp3",
+        "sec": 4.5
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p3_2.mp3",
+        "sec": 9.2
+       }
       ]
      },
      {
       "q": "Do you think technology has made it easier or harder for people to manage their time? Give reasons for your view.",
       "dur": "8s",
       "ans": "i think technology can help people to organize this things",
-      "tags": []
+      "tags": [],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_examiner_p3_3.mp3",
+        "sec": 7.4
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p3_3.mp3",
+        "sec": 7.7
+       }
+      ]
      },
      {
       "q": "Some people believe that a busy life is a fulfilling life. To what extent do you agree?",
@@ -487,6 +607,18 @@
         "The fixed preposition is 'regardless of', and 'goals' fits the meaning better than 'targets' here.",
         "warn"
        ]
+      ],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_examiner_p3_4.mp3",
+        "sec": 6.3
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p3_4.mp3",
+        "sec": 12.9
+       }
       ]
      },
      {
@@ -506,6 +638,18 @@
         "Use the past tense and the gerund form 'growing up'.",
         "warn"
        ]
+      ],
+      "qAudio": [
+       {
+        "asset": "assets/data/aud_examiner_p3_5.mp3",
+        "sec": 6.3
+       }
+      ],
+      "ansAudio": [
+       {
+        "asset": "assets/data/aud_speaking_answer_p3_5.mp3",
+        "sec": 17.9
+       }
       ]
      }
     ]

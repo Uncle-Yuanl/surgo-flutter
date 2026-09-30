@@ -50,10 +50,12 @@ class _MockListeningPageState extends State<MockListeningPage> {
     MockListeningData.load().then((d) {
       if (!mounted) return;
       setState(() => c = MockListeningController(app, d, partNo));
+      c!.audioTick(); // 进来就放这一 Part 的录音；之后每秒跟一次，见下面的计时。
       // startMockTimer: Part 1 resets; Parts 2–4 retain the shared clock.
       timer = Timer.periodic(const Duration(seconds: 1), (_) {
         if (!mounted) return;
         final expired = c!.tick();
+        c!.audioTick();
         setState(() {});
         if (expired) {
           timer?.cancel();
@@ -82,6 +84,8 @@ class _MockListeningPageState extends State<MockListeningPage> {
 
   void _mark() {
     if (!mounted) return;
+    // 交卷了，录音不再放。要记下来：批改弹窗开着时考试计时还在走，不记的话下一秒又把它放起来。
+    c!.endAudio();
     // H5 replaces modal.innerHTML. Do not stack a marking dialog above a
     // still-open exit/end dialog when either countdown expires.
     final pageRoute = ModalRoute.of(context);
@@ -130,6 +134,7 @@ class _MockListeningPageState extends State<MockListeningPage> {
   void _submitPart4() {
     review
         ?.cancel(); // Source repeat-submit replaces the interval and resets 118s.
+    c!.endAudio(); // 页面接着写「第 4 部分结束」：录音跟着停。
     setState(() {
       reviewing = true;
       reviewLeft = c!.data.reviewSec;
@@ -392,9 +397,17 @@ class _MockListeningPageState extends State<MockListeningPage> {
         submitKey: const ValueKey('mock-listening-nav-submit'));
   }
 
+  static const _audioTitle = TextStyle(
+      fontFamily: 'Outfit',
+      fontFamilyFallback: SurgoFontFamily.fallback,
+      fontSize: 15,
+      fontWeight: FontWeight.w700);
+
   // ---- audio state card (fixed pct / time from source per part) ----
   // 用户 2026-09-24：卡片样式对齐日常训练的白卡（白底 / 圆角22 / 软阴影）。
   // 下边距交给外层统一的 SizedBox(16)，本卡不再自带 margin。
+  // 演示用真实数据在网页上真的放这一 Part 的录音（c.clip）：标题、进度条、时间跟着它走，
+  // 放完（或交卷停下）后标题换成「播放已完成」；否则三项都是 JSON 里写死的。
   Widget _audioCard(Map m) => Container(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
         decoration: BoxDecoration(
@@ -414,16 +427,19 @@ class _MockListeningPageState extends State<MockListeningPage> {
                 height: 26),
             const SizedBox(width: 12),
             Flexible(
-                child: SourceText(m['audioTitle'] as String,
-                    style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
-                        fontSize: 15, fontWeight: FontWeight.w700))),
+                child: c!.audioOver
+                    ? const T('播放已完成', style: _audioTitle)
+                    : SourceText(m['audioTitle'] as String,
+                        style: _audioTitle)),
             const SizedBox(width: 12),
             Expanded(
                 child: ClipRRect(
                     borderRadius: BorderRadius.circular(4),
                     child: LinearProgressIndicator(
                         minHeight: 6,
-                        value: (m['audioBarPct'] as num) / 100,
+                        value: c!.clip == null
+                            ? (m['audioBarPct'] as num) / 100
+                            : c!.audioAt / c!.audioLength,
                         color: SurgoColors.yellow,
                         backgroundColor: const Color(0xffefe9dd)))),
           ]),
@@ -432,7 +448,10 @@ class _MockListeningPageState extends State<MockListeningPage> {
               spacing: 12,
               crossAxisAlignment: WrapCrossAlignment.center,
               children: [
-                SourceText(m['audioTime'] as String,
+                SourceText(
+                    c!.clip == null
+                        ? m['audioTime'] as String
+                        : '${_mmss(c!.audioAt.floor())}/${_mmss(c!.audioLength.floor())}',
                     style: const TextStyle(
                         fontSize: 12, color: Color(0xff8a8378))),
                 OutlinedButton.icon(

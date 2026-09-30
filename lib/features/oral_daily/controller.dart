@@ -19,6 +19,7 @@ class NativeOralSpeech implements OralSpeech {
   static const startWithin = Duration(milliseconds: 2500);
   Timer? _watch;
   VoidCallback? _clip;
+  String? _asset;
   int _turn = 0;
   @override
   Future<void> speak(String text, {required VoidCallback started,
@@ -40,7 +41,7 @@ class NativeOralSpeech implements OralSpeech {
       _clip = watch;
       demoAudio.addListener(watch);
       started();
-      demoAudio.play(clip['asset'] as String, seconds: (clip['sec'] as num).toDouble());
+      demoAudio.play(_asset = clip['asset'] as String, seconds: (clip['sec'] as num).toDouble());
       return;
     }
     try {
@@ -66,7 +67,8 @@ class NativeOralSpeech implements OralSpeech {
     if (watch == null) return;
     _clip = null;
     demoAudio.removeListener(watch);
-    demoAudio.stop();
+    // 只停自己那一段：这里可能是在页面 dispose 时被调到的，那时播放器里也许已经是下一页的音频了。
+    if (demoAudio.asset == _asset) demoAudio.stop();
   }
   @override
   Future<void> stop() async { _turn++; _watch?.cancel(); _dropClip(); try { await tts.stop(); } catch (_) {} }
@@ -119,6 +121,8 @@ class OralController extends ChangeNotifier {
   int index=0, recSec=0, round=1, answerSec=0, askSec=0, audioSec=0, prepLeft=60;
   bool get preparing => task.kind=='cue' && phase=='note';
   bool speaking=false, disposed=false;
+  /// 讨论题「考官提问」这一轮的时间已到，只等题目读完。
+  bool askOver=false;
   int speechEpoch=0;
   String? get card => app.session['selWizCard'] as String?;
   OralTask get task=>OralTask.fromBank(app.examType,card);
@@ -162,10 +166,12 @@ class OralController extends ChangeNotifier {
       ended:(){if(!valid())return;speaking=false;heard.add(index);barTimer?.cancel();audioSec=secondsOf(text);
         // 原型在讨论题第一轮读完题时也会跳去 oralExam（H5 的行为，测试固定住了）。放考官原音频时不跳：
         // 音频常常在「提问」那几秒之后才放完，一跳就把整轮作答留在了错的页面上。
-        if(phase=='note'&&!cue){phase='ready';if(app.current!=SurgoPage.oralExam&&!(card=='p3'&&NativeOralSpeech.clipFor(text)!=null))app.go(SurgoPage.oralExam);}emit();},
+        if(phase=='note'&&!cue){phase='ready';if(app.current!=SurgoPage.oralExam&&!(card=='p3'&&NativeOralSpeech.clipFor(text)!=null))app.go(SurgoPage.oralExam);}emit();
+        if(askOver)answerTurn();},
       // 读不出来就不等了：问答题把题目显示出来、直接可以作答；讨论题（按计时推进）只显示题目。
       failed:(e){if(!valid())return;speaking=false;barTimer?.cancel();if(!cue)unheard=text;
-        if(phase=='note'&&!cue&&card!='p3'){heard.add(index);phase='ready';}emit();});
+        if(phase=='note'&&!cue&&card!='p3'){heard.add(index);phase='ready';}emit();
+        if(askOver)answerTurn();});
   }
   void mic(){
     if(phase=='ready'){phase='rec';recSec=0;recTimer?.cancel();recTimer=Timer.periodic(const Duration(seconds:1),(t){recSec++;if(recSec>=recMax){t.cancel();phase='done';}emit();});emit();}
@@ -178,14 +184,19 @@ class OralController extends ChangeNotifier {
   }
   /// 讨论题「考官提问」这一轮的秒数：原型固定 5 秒；考官的原音频比它长时，等它读完。
   int get askSeconds=>math.max(5,NativeOralSpeech.clipFor(spokenText)==null?0:duration);
-  void stopDiscussion(){discussionTimer?.cancel();discussionTick?.cancel();askSec=0;}
+  void stopDiscussion(){discussionTimer?.cancel();discussionTick?.cancel();askSec=0;askOver=false;}
+  void answerTurn(){if(disposed||turn!='ask')return;turn='answer';answerSec=0;app.go(SurgoPage.oralDiscuss);scheduleDiscussion();emit();}
   void scheduleDiscussion(){
     stopDiscussion();
     if(turn=='ask'){
       later(200,play);askSec=0;
       final ask=askSeconds;
       discussionTick=Timer.periodic(const Duration(seconds:1),(t){askSec++;emit();if(askSec>=ask)t.cancel();});
-      discussionTimer=Timer(Duration(seconds:ask),(){turn='answer';answerSec=0;app.go(SurgoPage.oralDiscuss);scheduleDiscussion();emit();});
+      discussionTimer=Timer(Duration(seconds:ask),(){
+        // 原型到点就换人。放考官原音频时例外：音频要先下载，网络慢时晚几秒才出声，到点还没读完就等它读完，
+        // 最多再等 10 秒。
+        if(!speaking||NativeOralSpeech.clipFor(spokenText)==null){answerTurn();return;}
+        askOver=true;discussionTimer=Timer(const Duration(seconds:10),answerTurn);});
     }else{answerSec=0;discussionTick=Timer.periodic(const Duration(seconds:1),(t){answerSec++;if(answerSec>=30){t.cancel();answered();}emit();});}
   }
   void answered(){stopDiscussion();if(round>=task.rounds){app.go(SurgoPage.speakingReview);return;}

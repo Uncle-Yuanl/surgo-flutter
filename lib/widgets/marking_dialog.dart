@@ -4,11 +4,15 @@ import 'package:provider/provider.dart';
 import '../app/app_state.dart';
 import '../app/routes.dart';
 import '../theme/tokens.dart';
+import 'demo_audio.dart';
 import 'primitives.dart';
 import 't.dart';
 
-Future<void> showMarking(BuildContext context,SurgoPage target,String label) => showDialog<void>(
- context:context,useRootNavigator:false,barrierDismissible:false,builder:(_)=>_Marking(target:target,label:label));
+Future<void> showMarking(BuildContext context,SurgoPage target,String label) {
+ demoAudio.stop(); // 交卷了，还在放的录音这就停（不等两秒后换页）
+ return showDialog<void>(
+  context:context,useRootNavigator:false,barrierDismissible:false,builder:(_)=>_Marking(target:target,label:label));
+}
 class _Marking extends StatefulWidget {
  const _Marking({required this.target,required this.label});
  final SurgoPage target;

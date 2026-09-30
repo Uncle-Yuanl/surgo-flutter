@@ -2,9 +2,11 @@
 // 数据全部来自后端已存的结果：ielts_attempts（逐题的题目与转写、评分、语法问题）、ielts_generated_items（题目）、
 // 能力分析的弱项（assessment_observations + assessment_error_tags，中英两份）、
 // ielts_mock_exam_sessions（模考的计时方案）。
+// 回顾页的播放键放的也是存着的原音频：学员每一轮作答的录音（后端文件存储，file_objects 记着哈希和大小），
+// 考官的提问（Part 1 / 3 是朗读缓存里那一份，Part 2 的追问记在 ielts_speaking_dialogue_turns）。
 const { one, lit } = require('./db.cjs');
 const { band, pair } = require('./text.cjs');
-const { spoken, audio, clip } = require('./media.cjs');
+const { object, spoken, audio, clip } = require('./media.cjs');
 
 // 演示学员的哪三次日常作答（ielts_attempts.id），每个 Part 一次：挑质量检查通过、没有质量警告、
 // 转写最完整的一次。回顾页按 Part 显示对应那一次的分数、分项、弱项和逐题。
@@ -40,8 +42,18 @@ function attempt(id, learner) {
       'range', a.detail->'estimated_band_range', 'criteria', a.detail->'criterion_estimates',
       'fixes', a.detail->'priority_fixes', 'grammar', a.detail->'grammar_issues',
       'pron', a.detail->'pronunciation_evidence', 'seconds', a.detail->'speech_metrics'->'durationSeconds',
-      'turns', (select jsonb_agg(jsonb_build_object('q', t->>'question_text', 'a', t->>'transcript', 'ms', t->'duration_ms'))
+      -- 每一轮的录音在哪：整场录音（recording）里的起止，或这一轮自己存的那一份（said）；
+      -- asked 是对话表里这一轮考官那一问的音频和原话。对象键带着 id，只用来读文件，不进输出。
+      'turns', (select jsonb_agg(jsonb_build_object('q', t->>'question_text', 'a', t->>'transcript', 'ms', t->'duration_ms',
+                  'from', t->'start_ms', 'to', t->'end_ms',
+                  'said', (select jsonb_build_object('key', f.storage_key, 'sha256', f.sha256, 'size', f.size_bytes)
+                           from file_objects f where f.user_id = a.user_id and f.storage_key = t->>'audio_object_key'),
+                  'asked', (select jsonb_build_object('q', d.question_text, 'key', d.question_audio_key)
+                            from ielts_speaking_dialogue_turns d
+                            where d.user_id = a.user_id and d.answer_audio_key = t->>'audio_object_key')))
                 from jsonb_array_elements(a.detail->'dialogue_turns') t),
+      'recording', (select jsonb_build_object('key', f.storage_key, 'sha256', f.sha256, 'size', f.size_bytes)
+                    from file_objects f where f.user_id = a.user_id and f.storage_key = a.detail->'recording'->>'storage_key'),
       -- 与正式客户端的弱项面板同一来源：这次作答最新一轮能力分析里的负向弱项，按出现顺序。
       'findings', (select coalesce(jsonb_agg(jsonb_build_object(
                      'label', coalesce(t.labels, o.evidence->'layer2'->'label', o.evidence->'layer1'->'label'),
@@ -90,13 +102,46 @@ const words = (s) => ` ${String(s).toLowerCase().replace(/\s+'/g, "'").replace(/
 /** 这一题的回答里出现了的语法问题（与正式客户端相同：按词比对原句，找不到的不挂到任何一题上）。 */
 const grammarIn = (answer, issues) => (issues || []).filter((g) => words(answer).includes(words(g.original)));
 
-/** 回顾页的一个 Part：总分、分项、弱项、逐题。 */
-function review(part, a) {
+/**
+ * 回顾页的播放键放什么：这次作答的每一轮，考官的提问（asked，没存就是 null）和学员的作答（said），各一段 { asset, sec }。
+ * 学员的录音：Part 1 / Part 3 整场存了一份，每一轮按它记的起止切出来；Part 2 每轮各存一份。都按 file_objects
+ * 记的 sha256 和大小核对，库里没有这条记录就不导。
+ * 考官的提问：Part 1 / Part 3 就是练习页放的那一份（examiner：题目原文 → { asset, sec }），这里只引用，不再导一遍；
+ * Part 2 的追问存在对话表里，库里没记它的哈希和大小，凭的是它挂在这一轮上、这一轮问的原话和回顾页写的一字不差；
+ * 题卡没有音频。新导出的文件写进 sounds。
+ */
+function recordings(part, a, examiner, sounds) {
+  const keep = (name, sound) => { sounds[name] = sound.bytes; return clip(name, sound.sec); };
+  const whole = a.recording && object({ scope: 'user', ...a.recording }, `speaking ${part} recording`);
+  return a.turns.map((t, i) => {
+    const what = `speaking ${part} turn ${i + 1}`;
+    if (t.asked && t.asked.q !== t.q) throw new Error(`${what}: the stored question is not the one on the review page, pick another attempt`);
+    const asked = examiner[t.q] || (t.asked?.key
+      ? keep(`aud_speaking_examiner_${part}_${i + 1}.mp3`, audio(object({ scope: 'user', key: t.asked.key }, `${what} question`), `${what} question`))
+      : null);
+    if (!t.said && !whole) throw new Error(`${what}: no stored recording, pick another attempt`);
+    const said = t.said ? audio(object({ scope: 'user', ...t.said }, what), what) : audio(whole, what, { cut: { fromMs: t.from, toMs: t.to } });
+    // 导出来的这一段得和库里记的这一轮一样长（起止写错、切到录音外面都会对不上）。MP3 按帧补齐，成品会长出
+    // 0.1 秒左右（16 kHz 一帧 36 毫秒，编码器前后各垫一点），时长又只记到一位小数，所以放宽到 0.25 秒。
+    if (Math.abs(said.sec - Number(t.ms) / 1000) > 0.25) throw new Error(`${what}: the recording is ${said.sec}s, the turn is ${t.ms} ms`);
+    return { asked, said: keep(`aud_speaking_answer_${part}_${i + 1}.mp3`, said) };
+  });
+}
+
+/** 一张卡的播放键：qAudio 是考官说的，ansAudio 是学员答的，各是一串 { asset, sec }，页面按顺序连着放；没有考官音频就不带 qAudio。 */
+function heard(clips) {
+  const asked = clips.map((c) => c.asked).filter(Boolean);
+  return { ...(asked.length ? { qAudio: asked } : {}), ansAudio: clips.map((c) => c.said) };
+}
+
+/** 回顾页的一个 Part：总分、分项、弱项、逐题；clips 是 recordings() 给的每一轮的录音。 */
+function review(part, a, clips) {
   // Part 2 回顾页只有一张卡：放整段 Part 2 的作答（长陈述加追问的回答）。评分、引文、弱项看的都是这一整段，
   // 只放长陈述那一轮的话，一半引文在页面上找不到出处。考官那一栏相应地列出题卡和后面的追问，一句一行。
+  // 录音也一样：这张卡的播放键把三轮的作答连着放，考官那一条放两句追问（题卡没有音频）。
   const turns = part === 'p2'
-    ? [{ q: a.turns.map((t) => t.q).join('\n'), a: a.response, ms: Number(a.seconds) * 1000 }]
-    : a.turns;
+    ? [{ q: a.turns.map((t) => t.q).join('\n'), a: a.response, ms: Number(a.seconds) * 1000, sound: heard(clips) }]
+    : a.turns.map((t, i) => ({ ...t, sound: heard([clips[i]]) }));
   // 没有转写的那一轮在页面上是一张空卡：换一次作答，别悄悄导出去。
   if (turns.some((t) => !t.a)) throw new Error(`speaking ${part}: a turn has no transcript, pick another attempt`);
   return {
@@ -126,6 +171,7 @@ function review(part, a) {
         dur: duration(t.ms),
         ans: t.a,
         tags: grammarIn(t.a, a.grammar).map((g) => ['语法多样性与准确性', `"${g.original}" → "${g.correction}"`, g.explanation, 'warn']),
+        ...t.sound,
       })),
     },
   };
@@ -167,6 +213,7 @@ exports.build = ({ learner }) => {
       examiner[q] = clip(name, sound.sec);
     });
   }
+  const clips = Object.fromEntries(Object.entries(a).map(([part, x]) => [part, recordings(part, x, examiner, sounds)]));
   return {
     ...sounds,
     'questions.json': {
@@ -183,7 +230,7 @@ exports.build = ({ learner }) => {
       },
     },
     'speaking_review.json': {
-      daily: Object.fromEntries(Object.entries(a).map(([part, x]) => [part, review(part, x)])),
+      daily: Object.fromEntries(Object.entries(a).map(([part, x]) => [part, review(part, x, clips[part])])),
       // 顶层是原型那份示例评语；三个 Part 都有 daily，页面用不到它，清空，免得示例内容混进演示包。
       score: '', criteria: [], weaks: [], items: { p1: [], p2: [], p3: [] }, cuePoints: [], p3Overall: null,
     },
@@ -221,5 +268,12 @@ if (require.main === module) {
     grammarIn(answer, [{ original: "Then makes makes sound like everything's mostly." }, { original: 'a plan of 1/2 of day' }]),
     [{ original: "Then makes makes sound like everything's mostly." }],
   );
+  // 回顾页的播放键：没有考官音频的那一轮（Part 2 的题卡）不带 qAudio；Part 2 那一张卡把各轮按顺序连起来。
+  const [A1, A2, Q2] = ['a1', 'a2', 'q2'].map((n) => clip(`${n}.mp3`, 1));
+  assert.deepStrictEqual(heard([{ asked: null, said: A1 }]), { ansAudio: [A1] });
+  assert.deepStrictEqual(heard([{ asked: null, said: A1 }, { asked: Q2, said: A2 }]), { qAudio: [Q2], ansAudio: [A1, A2] });
+  // 对话表里那一问和回顾页写的不是同一句、或者这一轮没有存录音：报错，不导（都在读文件之前）。
+  assert.throws(() => recordings('p2', { turns: [{ q: 'A?', asked: { q: 'B?', key: 'k' } }] }, {}, {}), /turn 1: the stored question/);
+  assert.throws(() => recordings('p1', { turns: [{ q: 'A?', ms: 1000 }] }, { 'A?': Q2 }, {}), /turn 1: no stored recording/);
   console.log('speaking.cjs self-check ok');
 }

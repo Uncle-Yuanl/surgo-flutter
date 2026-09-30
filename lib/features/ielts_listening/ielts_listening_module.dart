@@ -11,7 +11,6 @@ import '../../widgets/primitives.dart';
 import '../../widgets/t.dart';
 import '../../widgets/marking_dialog.dart';
 import '../../widgets/answer_sheet_dialog.dart';
-import '../../widgets/demo_audio.dart';
 import '../ielts_reading/exam_figure.dart';
 import '../ielts_reading/reading_measure.dart';
 import 'listening_data.dart';
@@ -63,7 +62,6 @@ class _IeltsListeningPageState extends State<IeltsListeningPage> {
   void dispose() {
     timer?.cancel();
     audio?.cancel();
-    demoAudio.stop();
     questionScroll.dispose();
     super.dispose();
   }
