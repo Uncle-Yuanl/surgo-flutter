@@ -109,6 +109,8 @@ class ReviewNote extends StatelessWidget {
                     fontWeight: FontWeight.w800,
                     color: const Color(0xff2f7a2a))),
           ]);
+  // 演示用真实数据只有一条中英理由，没有的行和说明块就不画（原型数据每项都有）。
+  bool has(String key) => '${note[key] ?? ''}'.isNotEmpty;
   @override
   Widget build(BuildContext context) => Container(
       padding: EdgeInsets.symmetric(horizontal: l1 ? 16 : 16, vertical: 15),
@@ -135,10 +137,13 @@ class ReviewNote extends StatelessWidget {
         ],
         fix(),
         const SizedBox(height: 9),
-        T(note['en'], style: reviewText),
-        const SizedBox(height: 3),
-        T(note[l1 ? 'cn' : 'zh'], style: reviewChinese),
-        Container(
+        if (has('en')) T(note['en'], style: reviewText),
+        if (has(l1 ? 'cn' : 'zh')) ...[
+          const SizedBox(height: 3),
+          T(note[l1 ? 'cn' : 'zh'], style: reviewChinese),
+        ],
+        if (l1 ? has('whyZh') || has('tip') : has('whyEn') || has('whyZh'))
+          Container(
             margin: const EdgeInsets.only(top: 10),
             padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 11),
             decoration: BoxDecoration(
@@ -156,8 +161,9 @@ class ReviewNote extends StatelessWidget {
                               : const Color(0xff3f7a2e))),
                   const SizedBox(height: 5),
                   if (l1) ...[
-                    T(note['whyZh'], style: reviewChinese),
-                    Container(
+                    if (has('whyZh')) T(note['whyZh'], style: reviewChinese),
+                    if (has('tip'))
+                      Container(
                         margin: const EdgeInsets.only(top: 8),
                         padding: const EdgeInsets.symmetric(
                             horizontal: 11, vertical: 9),
@@ -170,9 +176,9 @@ class ReviewNote extends StatelessWidget {
                                 height: 1.65,
                                 color: Color(0xff5a4b9e))))
                   ] else ...[
-                    T(note['whyEn'], style: reviewText),
-                    const SizedBox(height: 3),
-                    T(note['whyZh'], style: reviewChinese)
+                    if (has('whyEn')) T(note['whyEn'], style: reviewText),
+                    if (has('whyEn') && has('whyZh')) const SizedBox(height: 3),
+                    if (has('whyZh')) T(note['whyZh'], style: reviewChinese)
                   ],
                 ])),
       ]));

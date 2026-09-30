@@ -1,0 +1,1601 @@
+{
+ "ielts": {
+  "reading": {
+   "types": [
+    {
+     "key": "tfng",
+     "name": "True / False / Not Given",
+     "instr": "Do the statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN."
+    },
+    {
+     "key": "ynng",
+     "name": "Yes / No / Not Given",
+     "instr": "Do the statements agree with the views of the writer? Write YES, NO or NOT GIVEN."
+    },
+    {
+     "key": "mchoice",
+     "name": "Multiple choice",
+     "instr": "Choose the correct letter, A, B, C or D."
+    },
+    {
+     "key": "matchinfo",
+     "name": "Matching information",
+     "instr": "Which paragraph contains the following information? Write the correct letter, A-E."
+    },
+    {
+     "key": "headings",
+     "name": "Matching headings",
+     "instr": "Choose the correct heading for each paragraph from the list of headings below."
+    },
+    {
+     "key": "matchfeat",
+     "name": "Matching features",
+     "instr": "Match each statement with the correct feature. Write the correct letter."
+    },
+    {
+     "key": "sentend",
+     "name": "Matching sentence endings",
+     "instr": "Complete each sentence with the correct ending, A-D, below."
+    },
+    {
+     "key": "sentcomp",
+     "name": "Sentence completion",
+     "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+    },
+    {
+     "key": "summary",
+     "name": "Summary / note / table completion",
+     "instr": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+    },
+    {
+     "key": "diagram",
+     "name": "Diagram label completion",
+     "instr": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage."
+    },
+    {
+     "key": "shortans",
+     "name": "Short-answer questions",
+     "instr": "Answer the questions below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+    }
+   ],
+   "daily": {
+    "title": "The Migration of Monarch Butterflies",
+    "passage": [
+     [
+      "A",
+      "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world, travelling up to 4,000 kilometres from Canada and the northern United States to the forests of central Mexico. What makes this migration so extraordinary is that no single butterfly completes the round trip."
+     ],
+     [
+      "B",
+      "Scientists have long been puzzled by how the insects navigate. Recent research suggests that monarchs rely on a combination of the position of the sun and an internal magnetic compass that allows them to maintain a consistent southward bearing even on cloudy days."
+     ],
+     [
+      "C",
+      "The overwintering sites in Mexico were unknown to scientists until 1975, when a research team finally located the dense colonies clinging to oyamel fir trees at high altitude. The discovery raised urgent questions about conservation, as logging threatened the very forests the butterflies depend on."
+     ],
+     [
+      "D",
+      "Climate change now poses an additional threat. Warmer temperatures disrupt the delicate timing of migration, and unusual weather events can devastate colonies that have gathered in a single location. Only monarchs born in late summer make the migration, and it may be their great-grandchildren that return the following year."
+     ]
+    ],
+    "questions": [
+     {
+      "type": "mchoice",
+      "group": "Questions 1-6",
+      "instr": "Choose the correct letter, A, B or C.",
+      "q": "What is most remarkable about the monarch migration?",
+      "opts": [
+       "A) Its total distance",
+       "B) No single butterfly completes it",
+       "C) It happens in spring"
+      ],
+      "a": "B",
+      "why": "Paragraph A: \"no single butterfly completes the round trip.\""
+     },
+     {
+      "type": "mchoice",
+      "q": "Monarchs are believed to navigate using",
+      "opts": [
+       "A) the stars",
+       "B) the sun and a magnetic compass",
+       "C) wind direction"
+      ],
+      "a": "B",
+      "why": "Paragraph B: the position of the sun and an internal magnetic compass."
+     },
+     {
+      "type": "mchoice",
+      "q": "The Mexican overwintering sites were located in",
+      "opts": [
+       "A) 1965",
+       "B) 1975",
+       "C) 1985"
+      ],
+      "a": "B",
+      "why": "Paragraph C: unknown to scientists until 1975."
+     },
+     {
+      "type": "mchoice",
+      "q": "The butterflies gather on",
+      "opts": [
+       "A) oyamel fir trees",
+       "B) oak trees",
+       "C) milkweed plants"
+      ],
+      "a": "A",
+      "why": "Paragraph C: colonies clinging to oyamel fir trees."
+     },
+     {
+      "type": "mchoice",
+      "q": "The main early threat to the colonies was",
+      "opts": [
+       "A) tourism",
+       "B) logging",
+       "C) disease"
+      ],
+      "a": "B",
+      "why": "Paragraph C: logging threatened the forests."
+     },
+     {
+      "type": "mchoice",
+      "q": "Climate change is said to affect migration by",
+      "opts": [
+       "A) disrupting its timing",
+       "B) shortening the route",
+       "C) increasing numbers"
+      ],
+      "a": "A",
+      "why": "Paragraph D: warmer temperatures disrupt the delicate timing of migration."
+     },
+     {
+      "type": "ynng",
+      "group": "Questions 7-11",
+      "instr": "Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.",
+      "q": "The writer believes the monarch migration is unique among insects.",
+      "a": "NOT GIVEN",
+      "why": "The passage calls it remarkable but never compares it with other insects."
+     },
+     {
+      "type": "ynng",
+      "q": "Scientists fully understand monarch navigation.",
+      "a": "NO",
+      "why": "Paragraph B: scientists \"have long been puzzled\"; research only \"suggests\"."
+     },
+     {
+      "type": "ynng",
+      "q": "Monarchs migrate more successfully than birds.",
+      "a": "NOT GIVEN",
+      "why": "No comparison with birds appears in the text."
+     },
+     {
+      "type": "ynng",
+      "q": "Conservation became a concern after 1975.",
+      "a": "YES",
+      "why": "Paragraph C: the 1975 discovery \"raised urgent questions about conservation\"."
+     },
+     {
+      "type": "ynng",
+      "q": "Climate change is the only threat to monarchs.",
+      "a": "NO",
+      "why": "Logging is also named as a threat, so climate change is not the only one."
+     },
+     {
+      "type": "gap",
+      "group": "Questions 12-14",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+      "q": "Monarchs travel up to ______ kilometres on their journey.",
+      "a": "4,000",
+      "why": "Paragraph A: travelling up to 4,000 kilometres."
+     },
+     {
+      "type": "gap",
+      "q": "They spend the winter clinging to ______ in Mexico.",
+      "a": "oyamel fir trees",
+      "why": "Paragraph C: clinging to oyamel fir trees."
+     },
+     {
+      "type": "gap",
+      "q": "Only monarchs born in ______ make the migration.",
+      "a": "late summer",
+      "why": "Paragraph D: only monarchs born in late summer make the migration."
+     }
+    ]
+   },
+   "_oldDaily": {
+    "title": "The Rise of Urban Vertical Farming",
+    "passage": [
+     [
+      "A",
+      "Vertical farming, the practice of growing crops in stacked layers inside controlled environments, has moved from science fiction to commercial reality in under two decades. Proponents argue that it answers three of agriculture's most pressing problems: land scarcity, water consumption and food miles."
+     ],
+     [
+      "B",
+      "Because crops are grown hydroponically — their roots bathed in nutrient-rich water rather than soil — vertical farms can use up to 95 per cent less water than conventional agriculture. Stacking growing trays also multiplies the productive area of a single urban plot many times over, and locating farms inside cities cuts the distance food travels to consumers dramatically."
+     ],
+     [
+      "C",
+      "Critics, however, point to the industry's Achilles' heel: energy. Replacing sunlight with LED lighting is expensive, and unless the electricity comes from renewable sources, the carbon footprint of a lettuce grown indoors can exceed that of one trucked in from a distant field. Several high-profile start-ups have collapsed after underestimating operating costs."
+     ],
+     [
+      "D",
+      "The sector's future most likely lies in a narrower niche than early evangelists imagined: high-value, fast-growing crops such as herbs and salad leaves, grown close to dense urban markets where freshness commands a premium."
+     ],
+     [
+      "E",
+      ""
+     ]
+    ],
+    "questions": [
+     {
+      "type": "tfng",
+      "q": "The writer states that all vertical farms have a lower carbon footprint than conventional farms.",
+      "a": "FALSE",
+      "why": "Paragraph C says indoor lighting can make crops carbon intensive, so the claim of \"all\" is contradicted."
+     },
+     {
+      "type": "tfng",
+      "q": "Some vertical-farming companies have gone out of business.",
+      "a": "TRUE",
+      "why": "\"Several high-profile start-ups have collapsed.\""
+     },
+     {
+      "type": "tfng",
+      "q": "Most vertical farms are owned by supermarket chains.",
+      "a": "NOT GIVEN",
+      "why": "The passage never discusses who owns vertical farms."
+     },
+     {
+      "type": "mchoice",
+      "q": "Which crops does the writer suggest suit vertical farming best?",
+      "opts": [
+       "A) Root vegetables",
+       "B) Cereal grains",
+       "C) Herbs and salad leaves",
+       "D) Tropical fruit"
+      ],
+      "a": "C",
+      "why": "Paragraph D names herbs and salad leaves."
+     },
+     {
+      "type": "shortans",
+      "q": "What technology replaces sunlight in vertical farms? (NO MORE THAN TWO WORDS)",
+      "a": "artificial lighting",
+      "why": "The final paragraph names artificial lighting."
+     }
+    ]
+   },
+   "passages": {
+    "monarch": {
+     "title": "The Migration of Monarch Butterflies",
+     "passage": [
+      [
+       "",
+       "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world. Leaving the cooling forests of southern Canada and the northern United States, they travel up to 4,000 kilometres to reach the warm mountain forests of central Mexico, where they spend the winter."
+      ],
+      [
+       "",
+       "What makes the migration so extraordinary is that no single butterfly completes the round trip. The insects that fly south in the autumn are three or four generations removed from those that made the journey the previous year, yet they return to the very same groves of trees — sometimes even the same individual trees — that their ancestors used. How they achieve this has puzzled scientists for decades."
+      ],
+      [
+       "",
+       "Research suggests that the butterflies rely on more than one method of navigation. They appear to use the position of the sun as a compass, correcting for the way it moves across the sky during the day with the help of an internal clock. In addition, experiments indicate that they can sense the Earth's magnetic field, which may guide them on cloudy days when the sun is hidden."
+      ],
+      [
+       "",
+       "The Mexican overwintering sites themselves were unknown to scientists until relatively recently. Although local communities had long been aware of the butterflies, the location of the main colonies was only formally documented by researchers in 1975. Today these sites are protected, but the species still faces threats from habitat loss and a changing climate."
+      ]
+     ],
+     "questions": [
+      {
+       "type": "tfng",
+       "q": "An individual butterfly makes the entire round trip.",
+       "a": "FALSE",
+       "mine": "TRUE",
+       "evidence": "No single butterfly completes the round trip.",
+       "why": "The text states no single butterfly completes the trip, so FALSE.",
+       "whyZh": "原文说没有单只蝴蝶完成整趟，所以是 FALSE。"
+      },
+      {
+       "type": "tfng",
+       "q": "Monarchs navigate using the position of the sun.",
+       "a": "TRUE",
+       "mine": "TRUE",
+       "evidence": "they navigate using the position of the sun",
+       "why": "Directly supported by the passage.",
+       "whyZh": "原文直接支持。"
+      },
+      {
+       "type": "tfng",
+       "q": "The Mexican overwintering sites were found before 1970.",
+       "a": "FALSE",
+       "mine": "NOT GIVEN",
+       "evidence": "The overwintering sites in Mexico were located in 1975.",
+       "why": "1975 is after 1970, so the statement is FALSE, not NOT GIVEN.",
+       "whyZh": "1975 晚于 1970，所以是 FALSE 而非 NOT GIVEN。"
+      }
+     ]
+    }
+   },
+   "mock": {
+    "intro": "You have 60 minutes to answer 40 questions across 3 passages. The timer starts when you click OK. You may answer in any order and move freely between passages.",
+    "summary": "Three passages, forty questions, sixty minutes."
+   }
+  },
+  "listening": {
+   "types": [
+    {
+     "key": "form",
+     "name": "Form / note completion",
+     "instr": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+    },
+    {
+     "key": "mchoice",
+     "name": "Multiple choice",
+     "instr": "Choose the correct answer, A, B or C."
+    },
+    {
+     "key": "map",
+     "name": "Map / plan labelling",
+     "instr": "Label the map below. Write the correct letter, A-G, next to the questions."
+    },
+    {
+     "key": "match",
+     "name": "Matching",
+     "instr": "What comment does each student make? Choose your answers from the box and write the correct letter."
+    },
+    {
+     "key": "table",
+     "name": "Table / flow-chart completion",
+     "instr": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+    }
+   ],
+   "daily": {
+    "title": "Campus accommodation enquiry",
+    "context": "Campus accommodation enquiry",
+    "audioTitle": "Conversation: Booking a Studio Flat",
+    "transcript": "Good morning, Hartley Student Housing, how can I help? Hi, I'm calling about the studio flats on Mill Lane. Could you tell me the monthly rent? Of course. The studios are 725 pounds a month, and that includes all utility bills, but not the internet, which is 18 pounds extra. And is there a deposit? Yes, one month's rent, refundable at the end of the tenancy. Viewings run Tuesday to Saturday, from ten until four. Great, could I book one for Thursday at eleven? Let me check. Yes, Thursday at eleven is fine. Could I take your name? It's Wei Zhang, that's Z H A N G.",
+    "questions": [
+     {
+      "type": "form",
+      "q": [
+       "The studios cost ",
+       " pounds per month."
+      ],
+      "a": "725"
+     },
+     {
+      "type": "form",
+      "q": [
+       "The deposit equals ",
+       " rent."
+      ],
+      "a": "one month’s"
+     },
+     {
+      "type": "form",
+      "q": [
+       "Viewings are available from Tuesday to ",
+       "."
+      ],
+      "a": "Saturday"
+     },
+     {
+      "type": "form",
+      "q": [
+       "The student books a viewing on Thursday at ",
+       "."
+      ],
+      "a": "11 / eleven"
+     }
+    ]
+   },
+   "mock": {
+    "intro": "Four parts, forty questions, about thirty minutes. The recording plays once only, exactly as it does in the real test. You cannot pause, rewind or replay it.",
+    "summary": "All four parts and 40 questions, the recording playing once only."
+   }
+  },
+  "writing": {
+   "types": [
+    {
+     "key": "t1chart",
+     "name": "Task 1 · 图表描述",
+     "instr": "Report the main features of the data objectively and compare them where relevant. Cover the overall trend before details."
+    },
+    {
+     "key": "t1letter",
+     "name": "Task 1 · 书信（General）",
+     "instr": "Address every bullet point, use a tone appropriate for the recipient, and organise the letter into clear paragraphs."
+    },
+    {
+     "key": "t2opinion",
+     "name": "Task 2 · 观点论证",
+     "instr": "Take a clear position, support each idea with a developed example, and address the opposing view before concluding."
+    },
+    {
+     "key": "t2discuss",
+     "name": "Task 2 · 讨论双方",
+     "instr": "Discuss both views and give your own opinion. Balance both perspectives before stating your position."
+    }
+   ],
+   "analysis": {
+    "t1chart": {
+     "label": [
+      "Academic Task 1 - multi-country comparison across two time points",
+      "学术类 Task 1 - 多个国家在两个时间点的对比"
+     ],
+     "requirement": [
+      "Select and report the main features, compare where relevant, write at least 150 words",
+      "选取并报告主要特征,在相关处进行比较,字数不少于 150 词"
+     ],
+     "detail": [
+      "You need an overview of the overall pattern, plus the most useful groupings. Norway and Australia rose moderately, South Korea rose sharply and overtook Norway, and Mexico stayed lowest while still growing. Pairing South Korea with Norway shows the leadership swap, while Australia and Mexico show a steady but smaller growth pattern.",
+      "你需要先给出整体趋势的概述,再按最有用的分组展开。挪威和澳大利亚涨幅较平缓,韩国涨幅最大并反超挪威,墨西哥起点最低但同样上升。把韩国与挪威配对可以突出排名变化,把澳大利亚与墨西哥配对可以呈现稳步上升的另一组。"
+     ],
+     "pitfall": [
+      "Do not list every figure separately or treat the task as four country stories. Do not invent causes, opinions, predictions or a conclusion that just repeats the overview.",
+      "不要逐国罗列所有数字,也不要把它写成四个国家的独立故事。不要编造原因、观点、预测,也不要写一段只重复概述的结尾。"
+     ]
+    },
+    "t1letter": {
+     "label": "书信写作题",
+     "requirement": "用恰当的语气回应全部三个要点",
+     "detail": "题目里的三个要点就是评分清单，每一条都要单独成段。先定语气：收信人姓名已知或是熟悉的机构用半正式语气；不知姓名的官方对象用 Dear Sir or Madam 配 Yours faithfully。提出的解决方案必须具体可执行，而不是笼统的抱怨。",
+     "pitfall": "不要漏掉任何一个要点，也不要把正式称呼和非正式落款混用"
+    },
+    "t2opinion": {
+     "label": "Opinion Essay",
+     "requirement": "Discuss both views and give your own opinion",
+     "detail": "This task asks you to consider two opposing views on animal testing and then state your own position. Cover BOTH perspectives fairly before making your opinion clear, and support each point with a reason or example.",
+     "pitfall": "Common pitfalls: Do not give only one side of the argument — you must address both perspectives, then state your own opinion clearly."
+    },
+    "t2discuss": {
+     "label": [
+      "Discussion essay with opinion",
+      "讨论类作文,需表明观点"
+     ],
+     "requirement": [
+      "Discuss both views and give your own opinion",
+      "讨论两种观点并给出你自己的看法"
+     ],
+     "detail": [
+      "The prompt asks you to present two contrasting positions on whether university students should study outside their main field. You must summarise both sides fairly, then state and justify your own view in the conclusion. A clear position is required, supported by reasons and examples drawn from real study or work contexts.",
+      "题目要求你呈现两种对比立场,关于大学生是否应学习主修以外的内容。你必须公平概括双方观点,然后在结尾表明并论证自己的看法。需要有明确立场,并用源自真实学习或工作情境的理由和例子支撑。"
+     ],
+     "pitfall": [
+      "Do not spend the whole essay on one view and ignore the other. Do not mention your opinion only in the introduction and leave it unsupported in a final paragraph.",
+      "不要整篇只写一种观点而忽略另一种。不要只在开头提及立场,却在结尾段不进行支撑论证。"
+     ]
+    }
+   },
+   "plan": {
+    "task2": {
+     "args": [
+      {
+       "band": "选择理由",
+       "text": [
+        "Universities should require all students to take courses outside their main field, because broad learning produces more adaptable graduates.",
+        "大学应要求所有学生学习主修以外的课程,因为广博学习能培养更具适应力的毕业生。"
+       ],
+       "note": [
+        "This position lets you argue that interdisciplinary exposure builds critical thinking, supports innovation, and meets employer demand for flexible skills. It also gives you a clear structure. You can explain the broad-education view, acknowledge the specialisation case, then defend your own view with reasons and a short example.",
+        "这一立场让你论证跨学科接触能培养批判性思维,推动创新,契合雇主对灵活技能的需求。同时也能清晰安排结构,先解释广泛教育的观点,再承认专精的论点,最后用理由和简短例子捍卫自己的立场。"
+       ]
+      },
+      {
+       "band": "选择理由",
+       "text": [
+        "Students should be free to focus on their chosen specialisation, with optional access to other fields for those who want it.",
+        "学生应自由专注于所选专业,有需要者可以选修其他领域。"
+       ],
+       "note": [
+        "This route lets you defend depth over breadth while still appearing balanced. You acknowledge the value of other subjects, then explain why forced broad study is inefficient and why student choice preserves motivation. It suits prompts where you want a sharper, less common opinion that still respects the other side.",
+        "这条路线让你捍卫深度优于广度,同时仍显得平衡。你承认其他学科的价值,再解释为什么强制广泛学习效率不高,以及为什么学生自主选择能保护学习动力。它适合想要更鲜明且不常见立场,又仍尊重对方的题目。"
+       ]
+      },
+      {
+       "band": "选择理由",
+       "text": [
+        "Universities should blend both approaches by requiring a small core of outside subjects while keeping the main focus on specialisation.",
+        "大学应融合两种做法,要求少量主修以外的核心课,同时保留专业主修。"
+       ],
+       "note": [
+        "This balanced view is often the safest route for the Writing test because it lets you credit both sides and then explain a precise middle position. You can argue that a small, well-chosen outside core gives breadth without the costs of full broad study, and that free specialisation protects depth.",
+        "这种平衡观点在写作考试中常是最稳妥的路线,既肯定双方,又能阐明一个精确的中间立场。你可以论证少量精选的外围核心课带来广度,又避免完全广泛学习的代价,而自由的专业学习则保护了深度。"
+       ]
+      }
+     ],
+     "parasByArg": [
+      [
+       {
+        "tag": [
+         "Introduction",
+         "引言"
+        ],
+        "text": [
+         "There is ongoing debate about whether university students should study subjects beyond their main specialisation.",
+         "关于大学生是否应学习主修以外的课程,争论仍在继续。"
+        ],
+        "bullets": [
+         "- Briefly outline the two views in the debate",
+         "- State your own clear position in the final sentence",
+         "example: Some institutions already make general education compulsory, while others leave choice to faculties."
+        ]
+       },
+       {
+        "tag": [
+         "First view: students should focus only on their specialisation",
+         "第一种观点:学生应只专注于专业"
+        ],
+        "text": [
+         "Many academics and employers argue that deep specialisation is the most efficient path to expertise.",
+         "许多学者和雇主认为深度专精是通往专业能力的高效路径。"
+        ],
+        "bullets": [
+         "- Specialised study builds technical depth and professional competence",
+         "- Extra courses may lengthen study time without clear career benefit",
+         "example: Medical and engineering programmes often defend a tightly structured curriculum."
+        ]
+       },
+       {
+        "tag": [
+         "Second view: students should study outside their main field",
+         "第二种观点:学生应学习主修以外的内容"
+        ],
+        "text": [
+         "Others contend that exposure to other disciplines produces graduates who can solve wider problems.",
+         "另一些人认为接触其他学科能培养能解决更广问题的毕业生。"
+        ],
+        "bullets": [
+         "- Interdisciplinary study improves critical thinking and creativity",
+         "- Modern workplaces value flexible, transferable skills",
+         "example: Graduates who combine data science with psychology often lead user-experience teams."
+        ]
+       },
+       {
+        "tag": [
+         "Your opinion and conclusion",
+         "你的观点与结尾"
+        ],
+        "text": [
+         "In my view, universities should require a modest set of courses outside the main field.",
+         "在我看来,大学应要求学生选修少量主修以外的课程。"
+        ],
+        "bullets": [
+         "- A broad base strengthens, rather than weakens, specialist study",
+         "- It also prepares graduates for careers that keep changing",
+         "example: A business student who understands environmental science can later lead sustainability projects."
+        ]
+       }
+      ],
+      [
+       {
+        "tag": [
+         "Introduction",
+         "引言"
+        ],
+        "text": [
+         "Universities differ sharply in how far they should shape a student's course choices.",
+         "大学在应多大程度上决定学生选课上存在明显分歧。"
+        ],
+        "bullets": [
+         "- Outline the two competing views in the debate",
+         "- Make your own position explicit at the end",
+         "example: Some degrees prescribe half of each year's modules, while others allow almost pure specialisation."
+        ]
+       },
+       {
+        "tag": [
+         "First view: students should study outside their main field",
+         "第一种观点:学生应学习主修以外的内容"
+        ],
+        "text": [
+         "Supporters of broader study argue that real-world problems cross disciplinary lines.",
+         "支持广泛学习者认为现实问题跨越学科边界。"
+        ],
+        "bullets": [
+         "- Cross-disciplinary study supports creativity and innovation",
+         "- It also builds communication skills across professions",
+         "example: Climate research draws on physics, economics and policy at the same time."
+        ]
+       },
+       {
+        "tag": [
+         "Second view: students should focus on their specialisation",
+         "第二种观点:学生应专注于专业"
+        ],
+        "text": [
+         "However, deep competence usually comes from sustained focus on a single field.",
+         "然而,深度能力往往来自对单一领域的持续投入。"
+        ],
+        "bullets": [
+         "- Specialist depth is what employers and research labs actually need",
+         "- Mandatory outside courses can lower motivation and delay graduation",
+         "example: Architecture students often resent history modules that crowd out design studio time."
+        ]
+       },
+       {
+        "tag": [
+         "Your opinion and conclusion",
+         "你的观点与结尾"
+        ],
+        "text": [
+         "I believe students should focus on their specialisation, with other subjects available but not required.",
+         "我认为学生应专注于专业,其他课程可选但不作要求。"
+        ],
+        "bullets": [
+         "- Freedom respects personal motivation and career plans",
+         "- Optional breadth still gives curious students room to explore",
+         "example: A law student who loves music can take electives without losing exam preparation time."
+        ]
+       }
+      ],
+      [
+       {
+        "tag": [
+         "Introduction",
+         "引言"
+        ],
+        "text": [
+         "Whether university students need study outside their main field is a long-running debate.",
+         "大学生是否需要学习主修以外的内容,是一个长期争论。"
+        ],
+        "bullets": [
+         "- Present both views in the debate",
+         "- End with your own balanced position",
+         "example: Many top universities already require a small distribution requirement alongside the major."
+        ]
+       },
+       {
+        "tag": [
+         "First view: study outside the main field",
+         "第一种观点:学习主修以外的内容"
+        ],
+        "text": [
+         "Proponents of outside study stress the value of cross-disciplinary thinking.",
+         "支持外围学习者强调跨学科思维的价值。"
+        ],
+        "bullets": [
+         "- Other subjects broaden perspective and question assumptions",
+         "- They also build skills that transfer between careers",
+         "example: A chemistry student studying philosophy often reasons more clearly about research ethics."
+        ]
+       },
+       {
+        "tag": [
+         "Second view: focus only on the specialisation",
+         "第二种观点:只专注于专业"
+        ],
+        "text": [
+         "Others hold that forced breadth weakens the deep expertise that professions need.",
+         "另一些人认为强制广度会削弱职业所需的深度专长。"
+        ],
+        "bullets": [
+         "- Heavy outside loads delay entry to regulated professions",
+         "- Motivation often drops when modules feel irrelevant",
+         "example: Medical licensing bodies tightly limit non-medical courses in clinical years."
+        ]
+       },
+       {
+        "tag": [
+         "Your opinion and conclusion",
+         "你的观点与结尾"
+        ],
+        "text": [
+         "In my opinion, a small required outside core combined with free specialisation is the best balance.",
+         "在我看来,少量必修的外围核心课加上自由的专业学习,是最好的平衡。"
+        ],
+        "bullets": [
+         "- A compact core gives breadth without slowing the degree",
+         "- Free specialisation protects depth and motivation",
+         "example: Several leading universities already use this distribution model with positive results."
+        ]
+       }
+      ]
+     ],
+     "vocab": [
+      {
+       "en": "interdisciplinary",
+       "zh": "跨学科的",
+       "ex": "Modern employers value an interdisciplinary mindset."
+      },
+      {
+       "en": "specialisation",
+       "zh": "专精,专业化",
+       "ex": "Early specialisation helps students enter technical careers sooner."
+      },
+      {
+       "en": "transferable skills",
+       "zh": "可迁移技能",
+       "ex": "Communication and analysis are transferable skills across fields."
+      },
+      {
+       "en": "critical thinking",
+       "zh": "批判性思维",
+       "ex": "Studying philosophy sharpens critical thinking in any major."
+      },
+      {
+       "en": "curriculum",
+       "zh": "课程体系",
+       "ex": "A flexible curriculum lets students shape their own degree."
+      },
+      {
+       "en": "depth vs breadth",
+       "zh": "深度与广度",
+       "ex": "Universities must balance depth vs breadth in every programme."
+      },
+      {
+       "en": "graduate employability",
+       "zh": "毕业生就业能力",
+       "ex": "Broader study can raise graduate employability in changing markets."
+      }
+     ]
+    },
+    "task1": {
+     "args": [
+      {
+       "band": "选择理由",
+       "text": [
+        "Overall, full-time higher education enrolment rose in all four countries between 2010 and 2020, with South Korea showing the steepest increase and overtaking Norway as the leader.",
+        "总体来看,2010 到 2020 年四国全日制高等教育入学率均有所上升,其中韩国增幅最大并反超挪威成为最高。"
+       ],
+       "note": [
+        "Framing the overview around the universal rise plus the South Korea-Norway leadership swap gives you one clear overall pattern. It then justifies a detail structure that contrasts the two leaders on one side and the two lower-ranked countries on the other.",
+        "把概述聚焦在四国共同上升以及韩国反超挪威这一整体走势,可以给出一个清晰的整体模式,也方便在细节段把两位领先国与两位较低国家分开对比。"
+       ]
+      },
+      {
+       "band": "选择理由",
+       "text": [
+        "Full-time higher education enrolment was higher in every country in 2020 than in 2010, with the largest jump in South Korea and the smallest in Mexico.",
+        "2020 年四国全日制高等教育入学率均高于 2010 年,韩国涨幅最大,墨西哥涨幅最小。"
+       ],
+       "note": [
+        "Leading with the universal increase highlights the most defensible overall pattern and lets the detail paragraphs rank the four growth rates. This structure keeps comparisons explicit and avoids four separate country stories.",
+        "先用四国共同上升作为整体模式,再在细节段按增幅大小排序比较,可以突出对比,也避免变成四个国家的独立叙述。"
+       ]
+      },
+      {
+       "band": "选择理由",
+       "text": [
+        "Between 2010 and 2020, every country saw a rise in full-time higher education enrolment, with South Korea overtaking Norway and Mexico staying the lowest throughout.",
+        "2010 至 2020 年,所有国家的全日制高等教育入学率均上升,韩国反超挪威,墨西哥始终最低。"
+       ],
+       "note": [
+        "Opening the overview with both the universal rise and the rank stability of Mexico gives two anchoring features. The detail paragraphs can then focus on the leadership change and on the consistent gap between the lower pair and the leaders.",
+        "概述同时点出共同上升和墨西哥始终最低这两个稳定特征,细节段就可以重点写排名变化,以及较低两国与领先国家之间持续存在的差距。"
+       ]
+      }
+     ],
+     "parasByArg": [
+      [
+       {
+        "tag": [
+         "Introduce the chart topic, time points and the four countries without giving all figures.",
+         "介绍图表主题、时间和四个国家,不给出全部数字。"
+        ],
+        "text": [
+         "The chart compares the share of 18- to 24-year-olds enrolled in full-time higher education in four countries in 2010 and 2020.",
+         "该图表比较了 2010 年和 2020 年四个国家 18 至 24 岁人群的全日制高等教育入学比例。"
+        ],
+        "bullets": [
+         "- State the four countries and the two reference years clearly.",
+         "example: Norway, South Korea, Australia and Mexico in 2010 and 2020."
+        ]
+       },
+       {
+        "tag": [
+         "Give a source-grounded overview of the main pattern and ranking change.",
+         "给出基于数据的整体趋势概述和排名变化。"
+        ],
+        "text": [
+         "Enrolment rose in every country, and South Korea moved from third place to first.",
+         "四国入学率均上升,韩国从第三位升至第一位。"
+        ],
+        "bullets": [
+         "- All four countries recorded an increase between 2010 and 2020.",
+         "- South Korea overtook Norway to become the highest at 41% in 2020.",
+         "example: South Korea climbed from 28% to 41%, while Norway moved from 32% to 39%."
+        ]
+       },
+       {
+        "tag": [
+         "Compare the two leading countries and their growth rates.",
+         "比较两个领先国家及其增长速度。"
+        ],
+        "text": [
+         "Norway and South Korea were the clear leaders, though South Korea grew much faster.",
+         "挪威和韩国明显领先,但韩国的增速远高于挪威。"
+        ],
+        "bullets": [
+         "- Norway rose by 7 percentage points from 32% to 39%.",
+         "- South Korea rose by 13 percentage points from 28% to 41%, the largest gain.",
+         "example: South Korea added roughly twice as many percentage points as Norway."
+        ]
+       },
+       {
+        "tag": [
+         "Compare the two lower-ranked countries and their more modest growth.",
+         "比较排名较低的两国及其较平缓的增长。"
+        ],
+        "text": [
+         "Australia and Mexico also increased, but remained below the two leaders.",
+         "澳大利亚和墨西哥同样上升,但仍低于两位领先国家。"
+        ],
+        "bullets": [
+         "- Australia rose from 26% to 34%, gaining 8 percentage points.",
+         "- Mexico rose from 21% to 27%, staying the lowest throughout.",
+         "example: Mexico was about 12 percentage points below Norway in 2020."
+        ]
+       }
+      ],
+      [
+       {
+        "tag": [
+         "Paraphrase the task and identify the countries and years covered.",
+         "改写题目,点明所涉及的国家和年份。"
+        ],
+        "text": [
+         "The chart shows full-time higher education enrolment among 18- to 24-year-olds in four countries in 2010 and 2020.",
+         "该图表展示了 2010 年和 2020 年四个国家 18 至 24 岁人群的全日制高等教育入学率。"
+        ],
+        "bullets": [
+         "- Mention the four countries and the two years compared.",
+         "example: Norway, South Korea, Australia and Mexico across 2010 and 2020."
+        ]
+       },
+       {
+        "tag": [
+         "Provide a source-grounded overview of the universal rise and the gap between countries.",
+         "给出基于数据的共同上升概述及国家间差距。"
+        ],
+        "text": [
+         "Enrolment was higher in 2020 than in 2010 in every country shown.",
+         "图中所有国家 2020 年的入学率均高于 2010 年。"
+        ],
+        "bullets": [
+         "- All four countries recorded an increase of at least 6 percentage points.",
+         "- The spread between the highest and lowest country widened only slightly.",
+         "example: The gap between leader and lowest country was 11 points in 2010 and 14 points in 2020."
+        ]
+       },
+       {
+        "tag": [
+         "Compare the two countries with the largest increases.",
+         "比较增幅最大的两个国家。"
+        ],
+        "text": [
+         "South Korea and Australia recorded the strongest growth.",
+         "韩国和澳大利亚的增幅最为明显。"
+        ],
+        "bullets": [
+         "- South Korea rose 13 points from 28% to 41%, the largest gain.",
+         "- Australia rose 8 points from 26% to 34%, the second largest gain.",
+         "example: South Korea added about 5 percentage points more than Australia."
+        ]
+       },
+       {
+        "tag": [
+         "Compare the two countries with the smallest increases and their stable ranking.",
+         "比较增幅最小的两个国家及其较稳定的排名。"
+        ],
+        "text": [
+         "Norway and Mexico showed more modest increases and kept their relative positions.",
+         "挪威和墨西哥增幅较平缓,相对位次基本未变。"
+        ],
+        "bullets": [
+         "- Norway rose 7 points from 32% to 39%, staying near the top.",
+         "- Mexico rose 6 points from 21% to 27%, staying at the bottom.",
+         "example: Mexico remained the lowest of the four in both years."
+        ]
+       }
+      ],
+      [
+       {
+        "tag": [
+         "Introduce the chart, countries, time points and the comparison nature of the task.",
+         "介绍图表、国家、时间和对比性质。"
+        ],
+        "text": [
+         "The chart compares full-time higher education enrolment among 18- to 24-year-olds in four countries in 2010 and 2020.",
+         "该图表比较了 2010 年和 2020 年四个国家 18 至 24 岁人群的全日制高等教育入学率。"
+        ],
+        "bullets": [
+         "- State the four countries and the two years clearly.",
+         "example: Norway, South Korea, Australia and Mexico across 2010 and 2020."
+        ]
+       },
+       {
+        "tag": [
+         "Provide an overview of the universal rise and the stable position of Mexico.",
+         "给出四国共同上升及墨西哥位置稳定的概述。"
+        ],
+        "text": [
+         "Enrolment rose in all four countries, while Mexico stayed at the bottom in both years.",
+         "四国入学率均上升,而墨西哥在两年中始终最低。"
+        ],
+        "bullets": [
+         "- All four countries recorded higher figures in 2020 than in 2010.",
+         "- Mexico was the lowest in both years, at 21% in 2010 and 27% in 2020.",
+         "example: Mexico's rank did not change between the two years."
+        ]
+       },
+       {
+        "tag": [
+         "Detail the leadership change between Norway and South Korea.",
+         "详细说明挪威和韩国之间的排名变化。"
+        ],
+        "text": [
+         "The most striking change was South Korea overtaking Norway to take the top position.",
+         "最显著的变化是韩国反超挪威升至首位。"
+        ],
+        "bullets": [
+         "- Norway led in 2010 at 32%, ahead of South Korea at 28%.",
+         "- South Korea led in 2020 at 41%, ahead of Norway at 39%.",
+         "example: The two countries swapped places despite Norway also rising."
+        ]
+       },
+       {
+        "tag": [
+         "Compare the two lower-ranked countries with the leaders and note the persistent gap.",
+         "将排名较低的两国与领先国家比较,并指出持续存在的差距。"
+        ],
+        "text": [
+         "Australia and Mexico remained clearly below Norway and South Korea throughout the period.",
+         "澳大利亚和墨西哥在整个时期内仍明显低于挪威和韩国。"
+        ],
+        "bullets": [
+         "- Australia stayed third, moving from 26% to 34%.",
+         "- Mexico stayed fourth, with a gap of about 12 points behind Norway in 2020.",
+         "example: Australia and Mexico never reached the 40% level reached by the leaders."
+        ]
+       }
+      ]
+     ],
+     "vocab": [
+      {
+       "en": "enrolment",
+       "zh": "入学率",
+       "ex": "Enrolment rose in all four countries between 2010 and 2020."
+      },
+      {
+       "en": "full-time higher education",
+       "zh": "全日制高等教育",
+       "ex": "The chart focuses on full-time higher education among 18- to 24-year-olds."
+      },
+      {
+       "en": "proportion",
+       "zh": "比例",
+       "ex": "South Korea recorded the highest proportion of enrolled students in 2020."
+      },
+      {
+       "en": "percentage point",
+       "zh": "百分点",
+       "ex": "South Korea increased by 13 percentage points over the decade."
+      },
+      {
+       "en": "overtake",
+       "zh": "超过",
+       "ex": "South Korea overtook Norway to become the leader in 2020."
+      },
+      {
+       "en": "modest",
+       "zh": "平缓的",
+       "ex": "Mexico showed a more modest increase compared with the other three countries."
+      },
+      {
+       "en": "consistent",
+       "zh": "持续的",
+       "ex": "There was a consistent gap between the lower pair and the leaders."
+      },
+      {
+       "en": "ranking",
+       "zh": "排名",
+       "ex": "Mexico's ranking at the bottom remained unchanged across the period."
+      }
+     ]
+    },
+    "letter": {
+     "args": [
+      {
+       "band": "Band 7",
+       "text": "The evening timetable was the reason you enrolled — it fitted around daytime work."
+      },
+      {
+       "band": "Band 7",
+       "text": "The cancellation leaves you with no suitable local alternative after rearranging your schedule."
+      },
+      {
+       "band": "Band 8",
+       "text": "Request a specific remedy: a place on an equivalent online course or the next evening class."
+      }
+     ],
+     "paras": [
+      {
+       "tag": "Greeting",
+       "text": "Dear Sir or Madam,",
+       "note": "不知收信人姓名时用 Dear Sir or Madam 配 Yours faithfully"
+      },
+      {
+       "tag": "Body 1",
+       "text": "Explain why you chose this course — timetable fit and relevant syllabus.",
+       "note": "要点 1 —— 集中在一段里写完"
+      },
+      {
+       "tag": "Body 2",
+       "text": "Describe the concrete impact: no local alternative, work schedule already rearranged.",
+       "note": "要点 2 —— 写具体后果，不要笼统抱怨"
+      },
+      {
+       "tag": "Body 3 + sign-off",
+       "text": "Request an equivalent online course or a transfer to the next evening class.",
+       "note": "要点 3 —— 解决方案要可执行，然后礼貌收尾"
+      }
+     ],
+     "vocab": [
+      {
+       "en": "I am writing regarding",
+       "zh": "我写信是关于",
+       "ex": "I am writing regarding the cancellation of the evening course.",
+       "exZh": "我写信是关于晚间课程被取消的事。"
+      },
+      {
+       "en": "fit around",
+       "zh": "与…时间相配",
+       "ex": "The timetable fitted around my daytime work.",
+       "exZh": "该课表与我白天的工作时间相配。"
+      },
+      {
+       "en": "leave me without",
+       "zh": "使我失去",
+       "ex": "The cancellation leaves me without a suitable alternative.",
+       "exZh": "课程取消使我失去了合适的替代选择。"
+      },
+      {
+       "en": "I would appreciate",
+       "zh": "我将不胜感激",
+       "ex": "I would appreciate a place on an equivalent course.",
+       "exZh": "若能安排同等课程的名额，我将不胜感激。"
+      },
+      {
+       "en": "equivalent",
+       "zh": "同等的",
+       "ex": "Please transfer me to an equivalent online course.",
+       "exZh": "请将我转到同等的线上课程。"
+      },
+      {
+       "en": "Yours faithfully",
+       "zh": "谨上（不知姓名时）",
+       "ex": "Yours faithfully, Alex Morgan",
+       "exZh": "谨上，Alex Morgan"
+      }
+     ]
+    }
+   },
+   "daily": {
+    "task1": {
+     "type": "t1chart",
+     "title": "Full-time higher education enrolment among 18- to 24-year-olds, 2010 and 2020",
+     "prompt": "The chart below shows the percentage of 18- to 24-year-olds in four countries who were enrolled in full-time higher education in 2010 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+     "minWords": 150,
+     "minutes": 20,
+     "chartTitle": "Full-time higher education enrolment among 18- to 24-year-olds, 2010 and 2020 (%)",
+     "chartYears": [
+      "Norway",
+      "South Korea",
+      "Australia",
+      "Mexico"
+     ],
+     "chartSeries": [
+      {
+       "name": "2010",
+       "color": "#F5B301",
+       "data": [
+        32,
+        28,
+        26,
+        21
+       ]
+      },
+      {
+       "name": "2020",
+       "color": "#7cb518",
+       "data": [
+        39,
+        41,
+        34,
+        27
+       ]
+      }
+     ],
+     "chartDesc": "In 2010, full-time higher education enrolment among 18- to 24-year-olds was 32% in Norway, 28% in South Korea, 26% in Australia and 21% in Mexico. In 2020, the figures were 39% in Norway, 41% in South Korea, 34% in Australia and 27% in Mexico.",
+     "keyPoints": [],
+     "hints": [
+      "In Task 1, an overview should come after the introduction and before the detail paragraphs, and it should state the main trend, here that enrolment rose in all four countries.",
+      "Compare values across countries and across years using approximate language and percentage points, for example rose by 13 percentage points or climbed to roughly 41%.",
+      "Group the countries by rank or by size of change rather than describing each bar in sequence, so the reader sees the pattern."
+     ]
+    },
+    "letter": {
+     "type": "t1letter",
+     "title": "A letter about a cancelled course",
+     "titleZh": "关于课程取消的书信",
+     "prompt": "You recently enrolled in an evening course, but the course has been cancelled. Write a letter to the course organiser. In your letter, explain why you enrolled, describe how the cancellation affects you, and suggest a suitable solution.",
+     "promptZh": "你最近报名参加了一门晚间课程，但课程被取消了。请写信给课程组织者，说明你报名的原因、课程取消对你的影响，并提出合适的解决方案。",
+     "minWords": 150,
+     "minutes": 20,
+     "keyPoints": [
+      "Reason for enrolling in the course",
+      "Effect of the cancellation",
+      "A practical requested solution"
+     ],
+     "hints": [
+      "Use an appropriate greeting and sign-off for the recipient",
+      "Cover all three bullet points in separate, clear paragraphs",
+      "Keep the tone polite while making the requested solution specific"
+     ]
+    },
+    "task2": {
+     "type": "t2discuss",
+     "title": [
+      "Discussion essay with opinion",
+      "讨论类作文,需表明观点"
+     ],
+     "prompt": "Some people believe that university students should be required to study subjects outside their main field of study. Others think that students should focus only on their chosen specialisation. Discuss both views and give your own opinion.",
+     "minWords": 250,
+     "minutes": 40,
+     "keyPoints": [],
+     "hints": [
+      "Plan your structure before writing. One paragraph for each view, one for your opinion, plus a short conclusion.",
+      "Support each view with a concrete reason or brief example, not just a general claim.",
+      "Use a range of linking devices naturally. Overusing \"Firstly, Secondly, Finally\" lowers the coherence score."
+     ]
+    }
+   },
+   "mock": {
+    "intro": "Two tasks share a single sixty-minute clock. Task 2 carries twice the marks of Task 1, so most candidates spend about twenty minutes on Task 1 and forty on Task 2.",
+    "summary": "Both tasks under one 60-minute clock, at least 150 words then at least 250 words."
+   }
+  },
+  "speaking": {
+   "types": [
+    {
+     "key": "p1",
+     "name": "Part 1 · 日常问答",
+     "instr": "Familiar topics such as your home, work, studies and interests."
+    },
+    {
+     "key": "p2",
+     "name": "Part 2 · 个人陈述（Cue Card）",
+     "instr": "A cue card with one minute to prepare, then you speak alone for one to two minutes."
+    },
+    {
+     "key": "p3",
+     "name": "Part 3 · 深入讨论",
+     "instr": "Broader, more abstract questions linked to the Part 2 topic."
+    }
+   ],
+   "daily": {
+    "part1": {
+     "topic": "Your studies and daily routine",
+     "questions": [
+      "Do you like music?",
+      "What kind of music do you like to listen to?",
+      "Do you prefer sad or happy music?",
+      "Does happy music make you feel more excited?",
+      "Has the music you listen to changed since you were young?",
+      "Where is your hometown?",
+      "What do you like most about your hometown?",
+      "Has your hometown changed much in recent years?",
+      "Would you like to live in your hometown in the future?",
+      "Do many tourists visit your hometown?"
+     ]
+    },
+    "part2": {
+     "cue": "Describe a person you know who has a healthy lifestyle",
+     "points": [
+      "where it is",
+      "how often you go there",
+      "what you do there",
+      "and explain why you enjoy visiting it."
+     ],
+     "pointsZh": [
+      "它在哪里",
+      "你多久去一次",
+      "你在那里做什么",
+      "你为什么喜欢它"
+     ],
+     "prepSeconds": 60,
+     "minutes": 2
+    },
+    "part3": {
+     "topic": "Skills, work and the future",
+     "questions": [
+      "Why do people like to visit different places?",
+      "What are the differences between travelling in your own country and abroad?",
+      "Do you think tourism can harm local communities?",
+      "How has the way people travel changed over the past few decades?",
+      "Will virtual travel ever replace real travel in the future?",
+      "Should governments invest more in local tourism?"
+     ]
+    }
+   },
+   "mock": {
+    "intro": "Three parts, eleven to fourteen minutes. The examiner’s questions play as audio and your spoken answers are recorded. One minute of preparation is given in Part 2 only.",
+    "summary": "All three parts back to back, with one minute of preparation in Part 2 only."
+   }
+  }
+ },
+ "toefl": {
+  "reading": {
+   "types": [
+    {
+     "key": "factual",
+     "name": "Factual information",
+     "instr": "Choose the correct answer according to the passage."
+    },
+    {
+     "key": "infer",
+     "name": "Inference",
+     "instr": "Choose the answer that can be inferred from the passage."
+    },
+    {
+     "key": "vocab",
+     "name": "Vocabulary",
+     "instr": "Choose the word or phrase closest in meaning to the highlighted word."
+    },
+    {
+     "key": "purpose",
+     "name": "Rhetorical purpose",
+     "instr": "Choose the answer that best describes why the author includes this information."
+    },
+    {
+     "key": "summary",
+     "name": "Prose summary",
+     "instr": "Choose the answer that best summarises the passage."
+    }
+   ],
+   "daily": {
+    "title": "The Migration of Monarch Butterflies",
+    "passage": [
+     [
+      "A",
+      "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world, travelling up to 4,000 kilometres from Canada and the northern United States to the forests of central Mexico. What makes this migration so extraordinary is that no single butterfly completes the round trip."
+     ],
+     [
+      "B",
+      "Scientists have long been puzzled by how the insects navigate. Recent research suggests that monarchs rely on a combination of the position of the sun and an internal magnetic compass that allows them to maintain a consistent southward bearing even on cloudy days."
+     ],
+     [
+      "C",
+      "The overwintering sites in Mexico were unknown to scientists until 1975, when a research team finally located the dense colonies clinging to oyamel fir trees at high altitude. The discovery raised urgent questions about conservation, as logging threatened the very forests the butterflies depend on."
+     ],
+     [
+      "D",
+      "Climate change now poses an additional threat. Warmer temperatures disrupt the delicate timing of migration, and unusual weather events can devastate colonies that have gathered in a single location. Only monarchs born in late summer make the migration, and it may be their great-grandchildren that return the following year."
+     ]
+    ],
+    "questions": [
+     {
+      "type": "mchoice",
+      "q": "What is most remarkable about the monarch migration?",
+      "opts": [
+       "Its total distance",
+       "No single butterfly completes it",
+       "It happens in spring"
+      ],
+      "a": "No single butterfly completes it"
+     },
+     {
+      "type": "mchoice",
+      "q": "Monarchs are believed to navigate using",
+      "opts": [
+       "the stars",
+       "the sun and a magnetic compass",
+       "wind direction"
+      ],
+      "a": "the sun and a magnetic compass"
+     },
+     {
+      "type": "mchoice",
+      "q": "The Mexican overwintering sites were located in",
+      "opts": [
+       "1965",
+       "1975",
+       "1985"
+      ],
+      "a": "1975"
+     },
+     {
+      "type": "mchoice",
+      "q": "The butterflies gather on",
+      "opts": [
+       "oyamel fir trees",
+       "oak trees",
+       "milkweed plants"
+      ],
+      "a": "oyamel fir trees"
+     },
+     {
+      "type": "mchoice",
+      "q": "The main early threat to the colonies was",
+      "opts": [
+       "tourism",
+       "logging",
+       "disease"
+      ],
+      "a": "logging"
+     },
+     {
+      "type": "mchoice",
+      "q": "Climate change is said to affect migration by",
+      "opts": [
+       "disrupting its timing",
+       "shortening the route",
+       "increasing numbers"
+      ],
+      "a": "disrupting its timing"
+     }
+    ]
+   },
+   "passages": {
+    "monarch": {
+     "title": "The Migration of Monarch Butterflies",
+     "passage": [
+      [
+       "",
+       "Every autumn, millions of monarch butterflies embark on one of the most remarkable journeys in the natural world. Leaving the cooling forests of southern Canada and the northern United States, they travel up to 4,000 kilometres to reach the warm mountain forests of central Mexico, where they spend the winter."
+      ],
+      [
+       "",
+       "What makes the migration so extraordinary is that no single butterfly completes the round trip. The insects that fly south in the autumn are three or four generations removed from those that made the journey the previous year, yet they return to the very same groves of trees — sometimes even the same individual trees — that their ancestors used. How they achieve this has puzzled scientists for decades."
+      ],
+      [
+       "",
+       "Research suggests that the butterflies rely on more than one method of navigation. They appear to use the position of the sun as a compass, correcting for the way it moves across the sky during the day with the help of an internal clock. In addition, experiments indicate that they can sense the Earth's magnetic field, which may guide them on cloudy days when the sun is hidden."
+      ],
+      [
+       "",
+       "The Mexican overwintering sites themselves were unknown to scientists until relatively recently. Although local communities had long been aware of the butterflies, the location of the main colonies was only formally documented by researchers in 1975. Today these sites are protected, but the species still faces threats from habitat loss and a changing climate."
+      ]
+     ],
+     "questions": [
+      {
+       "type": "tfng",
+       "q": "An individual butterfly makes the entire round trip.",
+       "a": "FALSE",
+       "mine": "TRUE",
+       "evidence": "No single butterfly completes the round trip.",
+       "why": "The text states no single butterfly completes the trip, so FALSE.",
+       "whyZh": "原文说没有单只蝴蝶完成整趟，所以是 FALSE。"
+      },
+      {
+       "type": "tfng",
+       "q": "Monarchs navigate using the position of the sun.",
+       "a": "TRUE",
+       "mine": "TRUE",
+       "evidence": "they navigate using the position of the sun",
+       "why": "Directly supported by the passage.",
+       "whyZh": "原文直接支持。"
+      },
+      {
+       "type": "tfng",
+       "q": "The Mexican overwintering sites were found before 1970.",
+       "a": "FALSE",
+       "mine": "NOT GIVEN",
+       "evidence": "The overwintering sites in Mexico were located in 1975.",
+       "why": "1975 is after 1970, so the statement is FALSE, not NOT GIVEN.",
+       "whyZh": "1975 晚于 1970，所以是 FALSE 而非 NOT GIVEN。"
+      }
+     ]
+    }
+   },
+   "_oldDaily": {
+    "title": "The Development of Writing Systems",
+    "passage": [
+     [
+      "A",
+      "The invention of writing is widely regarded as one of humanity's most transformative achievements. The earliest known writing systems emerged independently in at least three regions: Mesopotamia around 3200 BCE, Egypt shortly thereafter, and China by approximately 1200 BCE. Each system arose in response to specific administrative and social needs, though the paths they followed differed considerably."
+     ],
+     [
+      "B",
+      "In Mesopotamia, writing began as a system of accounting. Temple administrators needed to track goods — quantities of grain, numbers of livestock, and volumes of trade. The earliest tablets from Uruk contain nothing resembling literature or history; they are inventories and receipts. Over several centuries, these pictographic symbols became increasingly abstract, evolving into the wedge-shaped marks we call cuneiform. Only after the system had been in use for administrative purposes for roughly 500 years did scribes begin recording myths, laws, and diplomatic correspondence."
+     ],
+     [
+      "C",
+      "Egyptian hieroglyphs present a different developmental pattern. From their earliest appearance, hieroglyphs served both practical and ceremonial functions. Royal monuments bore inscriptions that combined record-keeping with religious and political propaganda. The Egyptians also developed cursive scripts — hieratic and later demotic — for everyday administrative use, while reserving the elaborate hieroglyphic forms for formal contexts."
+     ],
+     [
+      "D",
+      "Chinese writing followed yet another trajectory. The earliest confirmed Chinese characters appear on oracle bones used for divination during the Shang dynasty. These inscriptions record questions posed to ancestors and deities about warfare, harvests, and royal health. The system was already quite sophisticated by the time of these earliest surviving examples, suggesting an earlier developmental phase that has not been preserved."
+     ],
+     [
+      "E",
+      "What these three traditions share is a common pattern: writing systems tend to begin with narrow, specialized uses before expanding to serve broader communicative purposes. The technology of writing, once invented, proved remarkably adaptable, eventually transforming not just administration but human thought itself."
+     ]
+    ],
+    "questions": [
+     {
+      "type": "factual",
+      "q": "According to the passage, what was the primary initial purpose of writing in Mesopotamia?",
+      "opts": [
+       "Recording religious myths",
+       "Tracking goods and trade",
+       "Writing diplomatic letters",
+       "Preserving historical events"
+      ],
+      "a": "Tracking goods and trade"
+     },
+     {
+      "type": "factual",
+      "q": "How did Egyptian hieroglyphs differ from early Mesopotamian writing?",
+      "opts": [
+       "They were used exclusively for trade.",
+       "They served both practical and ceremonial purposes from the start.",
+       "They were simpler and easier to learn.",
+       "They were only used by common people."
+      ],
+      "a": "They served both practical and ceremonial purposes from the start."
+     },
+     {
+      "type": "infer",
+      "q": "What does the passage suggest about the earliest Chinese writing?",
+      "opts": [
+       "It was borrowed from Mesopotamian cuneiform.",
+       "It was primarily used for poetry.",
+       "It likely had an earlier stage that did not survive.",
+       "It was simpler than Egyptian hieroglyphs."
+      ],
+      "a": "It likely had an earlier stage that did not survive."
+     },
+     {
+      "type": "summary",
+      "q": "Which of the following best summarizes the main argument of the passage?",
+      "opts": [
+       "Writing was invented only once and spread globally.",
+       "Different writing systems emerged independently but share a pattern of expanding from narrow to broad use.",
+       "Chinese writing is older than previously believed.",
+       "Administrative needs are less important than religious ones."
+      ],
+      "a": "Different writing systems emerged independently but share a pattern of expanding from narrow to broad use."
+     }
+    ]
+   },
+   "mock": {
+    "intro": "The reading section contains two modules with up to 50 questions. Difficulty adapts based on your Module 1 performance.",
+    "summary": "Two adaptive modules, timed per question."
+   }
+  },
+  "listening": {
+   "types": [
+    {
+     "key": "convo",
+     "name": "Conversation",
+     "instr": "Answer questions about a short everyday conversation."
+    },
+    {
+     "key": "announce",
+     "name": "Announcement",
+     "instr": "Answer questions about a campus announcement."
+    },
+    {
+     "key": "talk",
+     "name": "Academic talk",
+     "instr": "Answer questions about a short academic talk."
+    }
+   ],
+   "daily": {
+    "title": "TOEFL 听力 · Conversation",
+    "context": "Listen to a conversation.",
+    "transcript": "Student: Hi Professor Lee, do you have a minute? I'm not sure which topic to choose for my research paper. Professor: Of course. I’d suggest you narrow the scope of the topic first — a focused question is much easier to research well than a broad one. Why don’t you bring me a one-paragraph outline by Friday?",
+    "questions": [
+     {
+      "type": "convo",
+      "q": "Why does the student go to see the professor?",
+      "opts": [
+       "To ask for an extension on an assignment",
+       "To discuss a topic for a research paper",
+       "To complain about a course grade",
+       "To request a letter of recommendation"
+      ],
+      "a": "To discuss a topic for a research paper"
+     },
+     {
+      "type": "convo",
+      "q": "What does the professor suggest the student do?",
+      "opts": [
+       "Narrow the scope of the topic",
+       "Choose a completely different subject",
+       "Submit the paper a week early",
+       "Interview other students"
+      ],
+      "a": "Narrow the scope of the topic"
+     }
+    ]
+   },
+   "mock": {
+    "intro": "The listening section contains two modules with up to 47 questions. Audio for each question plays once and cannot be replayed.",
+    "summary": "Two modules, timed per question, audio plays once."
+   }
+  },
+  "writing": {
+   "types": [
+    {
+     "key": "buildsent",
+     "name": "Build a Sentence",
+     "instr": "Move the words to the blanks to create a grammatical sentence appropriate in the context provided."
+    },
+    {
+     "key": "email",
+     "name": "Write an Email",
+     "instr": "Write an email in response to a given situation. Address all required points and use an appropriate tone."
+    },
+    {
+     "key": "discussion",
+     "name": "Academic Discussion",
+     "instr": "Write a response to an online academic discussion. An effective response contains at least 100 words."
+    }
+   ],
+   "daily": {
+    "email": {
+     "type": "email",
+     "title": "Course enquiry email",
+     "minutes": 7,
+     "minWords": 100,
+     "prompt": "You saw an advertisement for a language course at a local college and are interested in joining. The advertisement did not include enough details. Write an email to the program coordinator: explain why you are interested, ask about the class schedule and fees, and request any materials you may have missed.",
+     "points": [
+      "Explain why you are interested in the course.",
+      "Ask for details about the class schedule and fees.",
+      "Request any materials you may have missed."
+     ]
+    },
+    "discussion": {
+     "type": "discussion",
+     "title": "Academic discussion · Social media in education",
+     "minWords": 100,
+     "prompt": "Your professor asks: Can social media be used effectively as a tool for educational purposes? Why or why not? Express and support your opinion and contribute to the discussion in your own words."
+    }
+   },
+   "mock": {
+    "intro": "Three task types across two parts. The clock shows how much time you have to complete each task.",
+    "summary": "Three tasks, saved automatically after every task."
+   }
+  },
+  "speaking": {
+   "types": [
+    {
+     "key": "repeat",
+     "name": "Listen and Repeat",
+     "instr": "Listen to a sentence and repeat it exactly as you heard it. No preparation time; begin speaking after the beep."
+    },
+    {
+     "key": "interview",
+     "name": "Take an Interview",
+     "instr": "Listen to each question and answer in your own words. You have 45 seconds to answer each question."
+    }
+   ],
+   "daily": {
+    "repeat": {
+     "type": "repeat",
+     "context": "You are helping at the front desk of a community library. Listen to the speaker and repeat what he says. Repeat only once.",
+     "sentences": [
+      "You can borrow up to five books at a time for three weeks.",
+      "Please return the books to the desk on the second floor."
+     ]
+    },
+    "interview": {
+     "type": "interview",
+     "topic": "Skills, work and the future",
+     "questions": [
+      "What is one skill you learned from work or study that you think is important? Why?",
+      "Some people prefer working in a team, while others prefer working alone. Which do you prefer, and why?",
+      "What kind of work would you like to do in the future, and how are you preparing for it?"
+     ]
+    }
+   },
+   "mock": {
+    "intro": "Seven Listen and Repeat questions then the interview, recorded with no preparation time.",
+    "summary": "Two task types recorded under exam conditions."
+   }
+  }
+ }
+}

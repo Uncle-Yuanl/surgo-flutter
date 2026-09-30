@@ -25,8 +25,9 @@ class T extends StatelessWidget {
     this.uppercase = false,
   });
 
-  /// 中文模式下的原文（也是词典的 key）
-  final String text;
+  /// 中文模式下的原文（也是词典的 key）；也可以是 `[英文, 中文]` 一对
+  /// （演示用真实数据，tool/demo_export 导出），按界面语言取一项再过词典。
+  final Object text;
   final TextStyle? style;
   final TextAlign? textAlign;
   final int? maxLines;
@@ -42,7 +43,11 @@ class T extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final lang = context.select<AppState, UiLang>((s) => s.lang);
-    var out = Translator.instance.translate(text, lang) ?? text;
+    final t = text;
+    final raw = t is List
+        ? '${t[lang == UiLang.zh && t.length > 1 ? 1 : 0]}'
+        : '$t';
+    var out = Translator.instance.translate(raw, lang) ?? raw;
     if (uppercase) out = out.toUpperCase();
     return Text(out, style: style, textAlign: textAlign, maxLines: maxLines);
   }

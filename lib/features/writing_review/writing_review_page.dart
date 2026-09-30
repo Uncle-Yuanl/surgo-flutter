@@ -38,7 +38,7 @@ class _WritingReviewPageState extends State<WritingReviewPage> {
         l1 = context.watch<AppState>().session['wfTab'] == 'l1';
     final content =
         Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-      WritingReviewHeader(task: task, l1: l1),
+      WritingReviewHeader(task: task, l1: l1, data: d),
       WritingReviewContent(data: d, task: task, l1: l1, app: app),
       Padding(
           padding: const EdgeInsets.only(top: 4),
