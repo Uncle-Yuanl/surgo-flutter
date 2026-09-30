@@ -14,6 +14,7 @@ import 'learning_details.dart';
 import 'learning_overview.dart';
 import 'learning_advice.dart';
 import 'learning_trends.dart';
+import '../../widgets/t.dart' show langText;
 
 /// 雅思能力报告页 —— 原型 report.js 215-322 行。
 ///
@@ -86,6 +87,7 @@ class _ReportPageState extends State<ReportPage> {
     final overallStr = data.overallText;
     const beat = 62;
     final max = data.maxScore;
+    final goalIsReading = data.real == null || data.weakest == 'reading';
 
     return Container(
       // Source report has 130px padding + subscription 18px bottom margin;
@@ -165,6 +167,8 @@ class _ReportPageState extends State<ReportPage> {
 
           // 首要提升目标 rp-goal —— 原型 onclick="examType='ielts';selReadType=null;go('readingDaily')"
           if (!data.toefl && data.scenario == 'full') ...[
+            // 这张卡写死的是阅读；真实数据下只在最弱的一科确实是阅读时画。
+            if (goalIsReading)
             GestureDetector(
               key: const ValueKey('report-goal'),
               onTap: () {
@@ -227,7 +231,9 @@ class _ReportPageState extends State<ReportPage> {
                 ),
               ),
             ),
-            const SizedBox(height: 8),
+            // 「超过 12 万名考生…」是同龄人数据，没有就不画。
+            if (goalIsReading && peers.isNotEmpty) const SizedBox(height: 8),
+            if (goalIsReading && peers.isNotEmpty)
             SourceText.rich(
               TextSpan(
                 children: [
@@ -249,24 +255,32 @@ class _ReportPageState extends State<ReportPage> {
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 22),
+            if (goalIsReading) const SizedBox(height: 22),
 
-            // 今日能力点评 rp-review
-            _ReviewCard(overall: overallStr, scores: scores, T: T),
-            const SizedBox(height: 16),
+            // 今日能力点评 rp-review（真实数据下四科没出齐就没有这段点评）
+            if (data.real == null || data.review != null) ...[
+              _ReviewCard(
+                  overall: overallStr,
+                  scores: scores,
+                  T: T,
+                  review: data.review),
+              const SizedBox(height: 16),
+            ],
           ],
           LearningAdvice(
               chinese: zh,
               selectedSkill: _selectedSkill,
               onSelectSkill: (v) => setState(() => _selectedSkill = v),
-              onPractice: _practice),
+              onPractice: _practice,
+              real: data.real),
           const SizedBox(height: 18),
           LearningTrends(
               scores: data.weeklyScores,
               practices: data.weeklyPractice,
               maxScore: max.toDouble(),
               target: data.target,
-              chinese: zh),
+              chinese: zh,
+              weekLabels: (data.real?['weekLabels'] as List?)?.cast<String>()),
           const SizedBox(height: 18),
 
           // 订阅提醒条 rp-sub
@@ -452,7 +466,11 @@ class _HeroCard extends StatelessWidget {
               ),
               const SizedBox(height: 14),
               SourceText(
-                data.scenario == 'full' && !data.toefl && data.target == 7.0
+                // 「属于中高分段」是原型那组分数的说法；真实数据走下面按数字拼的句子。
+                data.scenario == 'full' &&
+                        !data.toefl &&
+                        data.target == 7.0 &&
+                        data.real == null
                     ? T('你的综合水平为 Band $overall，属于中高分段。距离目标 7.0 还差 ${(7.0 - double.parse(overall)).toStringAsFixed(1)} 分，继续加油。')
                     : lang == UiLang.zh
                         ? (data.overall == null
@@ -581,7 +599,9 @@ class _ScoreCard extends StatelessWidget {
                           color: Color(0xFF8A8378))),
                 ],
               ),
-              const SizedBox(width: 22),
+              // 图例的「同龄人平均」跟着虚线走：没有同龄人数据就不画。
+              if (peers.isNotEmpty) const SizedBox(width: 22),
+              if (peers.isNotEmpty)
               Row(
                 children: [
                   Container(
@@ -712,7 +732,8 @@ class _ScoreCard extends StatelessWidget {
               onSelect: onSelect,
               onExpand: onExpand),
           const SizedBox(height: 18),
-          if (data.scenario == 'full' && !data.toefl)
+          // 「超过 62% 的同龄考生」这一块全是同龄人比较，没有同龄人数据就不画。
+          if (data.scenario == 'full' && !data.toefl && peers.isNotEmpty)
             Container(
               key: const ValueKey('report-compare'),
               width: double.infinity,
@@ -886,10 +907,17 @@ class _AxisLabel extends StatelessWidget {
 
 class _ReviewCard extends StatelessWidget {
   const _ReviewCard(
-      {required this.overall, required this.scores, required this.T});
+      {required this.overall,
+      required this.scores,
+      required this.T,
+      this.review});
   final String overall;
   final Map<String, double> scores;
   final String Function(String) T;
+
+  /// 演示用真实数据的点评：`[{text: [英文, 中文], bold}]`，只写数字能说明的几句；
+  /// 没有就是下面原型那段（听力强、阅读弱的固定叙述）。
+  final List? review;
 
   @override
   Widget build(BuildContext context) {
@@ -938,9 +966,25 @@ class _ReviewCard extends StatelessWidget {
     final lang = context.read<AppState>().lang;
     String tr(String text) =>
         (Translator.instance.translate(text, lang) ?? text).trimLeft();
+    const body =
+        TextStyle(fontSize: 14, color: Color(0xFF4A4640), height: 1.85);
+    const strong = TextStyle(
+        fontFamily: 'Outfit',
+        fontFamilyFallback: SurgoFontFamily.fallback,
+        fontSize: 12,
+        fontWeight: FontWeight.w800,
+        color: SurgoColors.ink);
+    final real = review;
+    if (real != null) {
+      return TextSpan(style: body, children: [
+        for (final part in real)
+          TextSpan(
+              text: langText(part['text'], lang),
+              style: part['bold'] == true ? strong : null)
+      ]);
+    }
     final original = TextSpan(
-      style:
-          const TextStyle(fontSize: 14, color: Color(0xFF4A4640), height: 1.85),
+      style: body,
       children: [
         TextSpan(text: '你目前的综合水平为 Band $overall，属于中高分段。'),
         TextSpan(
@@ -1076,27 +1120,31 @@ class _RadarPainter extends CustomPainter {
       }
     }
 
-    // 同龄人虚线 —— 原型 stroke-dasharray="5 4"，用 PathMetrics 手绘虚线
-    final peerPath = Path()
-      ..moveTo(pt('top', peers['writing']!).dx, pt('top', peers['writing']!).dy)
-      ..lineTo(
-          pt('right', peers['reading']!).dx, pt('right', peers['reading']!).dy)
-      ..lineTo(pt('bottom', peers['listening']!).dx,
-          pt('bottom', peers['listening']!).dy)
-      ..lineTo(
-          pt('left', peers['speaking']!).dx, pt('left', peers['speaking']!).dy)
-      ..close();
-    _drawDashedPath(
-      canvas,
-      peerPath,
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 2 * scale
-        ..color = const Color(0xFFB9AFF2)
-        ..strokeJoin = StrokeJoin.round,
-      dash: 5 * scale,
-      gap: 4 * scale,
-    );
+    // 同龄人虚线 —— 原型 stroke-dasharray="5 4"，用 PathMetrics 手绘虚线。
+    // 真实数据没有同龄人数据（peers 为空），这条线不画。
+    if (peers.length == 4) {
+      final peerPath = Path()
+        ..moveTo(
+            pt('top', peers['writing']!).dx, pt('top', peers['writing']!).dy)
+        ..lineTo(pt('right', peers['reading']!).dx,
+            pt('right', peers['reading']!).dy)
+        ..lineTo(pt('bottom', peers['listening']!).dx,
+            pt('bottom', peers['listening']!).dy)
+        ..lineTo(pt('left', peers['speaking']!).dx,
+            pt('left', peers['speaking']!).dy)
+        ..close();
+      _drawDashedPath(
+        canvas,
+        peerPath,
+        Paint()
+          ..style = PaintingStyle.stroke
+          ..strokeWidth = 2 * scale
+          ..color = const Color(0xFFB9AFF2)
+          ..strokeJoin = StrokeJoin.round,
+        dash: 5 * scale,
+        gap: 4 * scale,
+      );
+    }
 
     canvas.saveLayer(Offset.zero & size,
         Paint()..color = Colors.white.withAlpha((255 * alpha).round()));

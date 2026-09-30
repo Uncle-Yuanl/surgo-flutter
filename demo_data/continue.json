@@ -1,0 +1,182 @@
+{
+ "items": [
+  {
+   "exam": "ielts",
+   "tab": "daily",
+   "ic": "assets/ic3_listening.png",
+   "name": [
+    "IELTS Listening · Part 3",
+    "雅思听力 · Part 3"
+   ],
+   "kicker": [
+    "Not started",
+    "未开始"
+   ],
+   "pct": 0,
+   "go": "listeningDaily",
+   "session": {
+    "lisPart": "s3"
+   }
+  },
+  {
+   "exam": "ielts",
+   "tab": "daily",
+   "ic": "assets/ic3_listening.png",
+   "name": [
+    "IELTS Listening · Part 2",
+    "雅思听力 · Part 2"
+   ],
+   "kicker": [
+    "Not started",
+    "未开始"
+   ],
+   "pct": 0,
+   "go": "listeningDaily",
+   "session": {
+    "lisPart": "s2"
+   }
+  },
+  {
+   "exam": "ielts",
+   "tab": "daily",
+   "ic": "assets/ic3_writing.png",
+   "name": [
+    "IELTS Writing · Task 2",
+    "雅思写作 · Task 2"
+   ],
+   "kicker": [
+    "Not started",
+    "未开始"
+   ],
+   "pct": 0,
+   "go": "writingDaily",
+   "session": {
+    "selWizCard": "t2"
+   }
+  },
+  {
+   "exam": "ielts",
+   "tab": "daily",
+   "ic": "assets/ic3_speaking.png",
+   "name": [
+    "IELTS Speaking · Part 2",
+    "雅思口语 · Part 2"
+   ],
+   "kicker": [
+    "In progress · 2/3 answered",
+    "进行中 · 已作答 2/3"
+   ],
+   "pct": 67,
+   "go": "speakingDaily",
+   "session": {
+    "selWizCard": "p2"
+   }
+  },
+  {
+   "exam": "ielts",
+   "tab": "daily",
+   "ic": "assets/ic3_reading.png",
+   "name": [
+    "IELTS Reading",
+    "雅思阅读"
+   ],
+   "kicker": [
+    "Not started",
+    "未开始"
+   ],
+   "pct": 0,
+   "go": "readingDaily",
+   "session": {}
+  },
+  {
+   "exam": "toefl",
+   "tab": "daily",
+   "ic": "assets/ic3_speaking.png",
+   "name": [
+    "TOEFL Speaking · Take an Interview",
+    "托福口语 · 访谈"
+   ],
+   "kicker": [
+    "In progress · 3/4 answered",
+    "进行中 · 已作答 3/4"
+   ],
+   "pct": 75,
+   "go": "tfBrief",
+   "session": {
+    "tfBriefMod": "speaking"
+   }
+  },
+  {
+   "exam": "toefl",
+   "tab": "daily",
+   "ic": "assets/ic3_writing.png",
+   "name": [
+    "TOEFL Writing · Build a Sentence",
+    "托福写作 · 排列成句"
+   ],
+   "kicker": [
+    "Not started",
+    "未开始"
+   ],
+   "pct": 0,
+   "go": "tfBrief",
+   "session": {
+    "tfBriefMod": "writing"
+   }
+  },
+  {
+   "exam": "toefl",
+   "tab": "daily",
+   "ic": "assets/ic3_writing.png",
+   "name": [
+    "TOEFL Writing · Build a Sentence",
+    "托福写作 · 排列成句"
+   ],
+   "kicker": [
+    "Not started",
+    "未开始"
+   ],
+   "pct": 0,
+   "go": "tfBrief",
+   "session": {
+    "tfBriefMod": "writing"
+   }
+  },
+  {
+   "exam": "toefl",
+   "tab": "daily",
+   "ic": "assets/ic3_reading.png",
+   "name": [
+    "TOEFL Reading · Complete the Words",
+    "托福阅读 · 补全单词"
+   ],
+   "kicker": [
+    "In progress",
+    "进行中"
+   ],
+   "pct": 0,
+   "go": "tfBrief",
+   "session": {
+    "tfBriefMod": "reading"
+   }
+  },
+  {
+   "exam": "toefl",
+   "tab": "mock",
+   "ic": "assets/ic3_writing.png",
+   "name": [
+    "TOEFL Writing Mock Exam",
+    "托福写作模拟考试"
+   ],
+   "kicker": [
+    "In progress",
+    "进行中"
+   ],
+   "pct": 0,
+   "go": "mockWritingTf",
+   "session": {
+    "sessionMode": "mock"
+   }
+  }
+ ]
+}

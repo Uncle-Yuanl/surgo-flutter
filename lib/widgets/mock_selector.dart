@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../app/app_state.dart';
+import '../app/learner_profile.dart';
 import '../app/routes.dart';
 import '../theme/tokens.dart';
 import 'primitives.dart';
@@ -33,6 +34,12 @@ class _MockSelector extends StatefulWidget {
 }
 class _MockSelectorState extends State<_MockSelector> {
   String chosen='listening';
+  // 每科下面那行分数：原型是写死的；演示数据（learner_profile.json 的 mocks）里是该科
+  // 最近一次真作答过的模考分 / 满分，没考过就不画。
+  String? _score(String key,String prototype){
+    final real=LearnerProfile.exam(context.read<AppState>().examType)['mocks'] as Map?;
+    return real==null?prototype:real[key] as String?;
+  }
   @override
   Widget build(BuildContext context)=>Padding(padding:const EdgeInsets.fromLTRB(22,12,22,30),child:Column(mainAxisSize:MainAxisSize.min,children:[
     Container(width:40,height:4,decoration:BoxDecoration(color:const Color(0xFFE3E7EC),borderRadius:BorderRadius.circular(3))),
@@ -43,7 +50,7 @@ class _MockSelectorState extends State<_MockSelector> {
         decoration:BoxDecoration(color:chosen==m.$1?SurgoColors.yellowTint:Colors.white,border:Border.all(color:chosen==m.$1?SurgoColors.yellow:SurgoColors.line,width:1.5),borderRadius:BorderRadius.circular(18)),
         child:Stack(children:[Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
           Image.asset('assets/images/${m.$4}',height:44,width:44),const SizedBox(height:7),T(m.$2,style:const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize:14,fontWeight:FontWeight.w800)),
-          const SizedBox(height:4),Text(m.$3,style:const TextStyle(fontSize:11,color:SurgoColors.muted))])),
+          if(_score(m.$1,m.$3)!=null)...[const SizedBox(height:4),Text(_score(m.$1,m.$3)!,style:const TextStyle(fontSize:11,color:SurgoColors.muted))]])),
           if(chosen==m.$1) const Positioned(right:10,top:8,child:Icon(Icons.check_circle,size:18,color:SurgoColors.yellow)),
         ])))]),
     const SizedBox(height:22),SurgoButton('Start learning',onTap:(){

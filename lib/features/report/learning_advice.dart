@@ -37,12 +37,18 @@ class LearningAdvice extends StatefulWidget {
     required this.selectedSkill,
     required this.onSelectSkill,
     required this.onPractice,
+    this.real,
   });
 
   final bool chinese;
   final String selectedSkill;
   final ValueChanged<String> onSelectSkill;
   final void Function(String skill, int rank) onPractice;
+
+  /// 演示用真实数据（learner_profile.json 的 `<考试>.report`）：`advice` 是各科的
+  /// 可进步项（后端能力画像里掌握度最低的三项 `top` + 其余 `more`），`teacher` 是后端存的
+  /// 能力点评（没有就不画点评卡）。为 null 时用下面写死的演示内容。
+  final Map<String, dynamic>? real;
 
   @override
   State<LearningAdvice> createState() => _LearningAdviceState();
@@ -51,6 +57,20 @@ class LearningAdvice extends StatefulWidget {
 class _LearningAdviceState extends State<LearningAdvice> {
   bool _teacherExpanded = false;
   bool _moreSuggestionsExpanded = false;
+
+  String _pick(Object pair) => '${(pair as List)[widget.chinese ? 1 : 0]}';
+  Map? get _teacher => widget.real?['teacher'] as Map?;
+  Map? get _area => (widget.real?['advice'] as Map?)?[widget.selectedSkill];
+  List<String> get _more => widget.real != null
+      ? [for (final label in (_area?['more'] as List? ?? const [])) _pick(label)]
+      : widget.chinese
+          ? _demoMoreSuggestions
+          : const [
+              'Identify intent',
+              'Follow structure',
+              'Separate facts and views',
+              'Record numbers and times'
+            ];
 
   // DEMO DATA - Clearly marked as demonstration content not from actual analysis
   static const Map<String, List<_DemoAdviceItem>> _demoAdviceData = {
@@ -159,10 +179,14 @@ class _LearningAdviceState extends State<LearningAdvice> {
     '记录数字与时间',
   ];
 
-  String _getTeacherComment() => widget.chinese
+  String _getTeacherComment() => _teacher != null
+      ? _pick(_teacher!['full'])
+      : widget.chinese
       ? '最近的练习中，你已经能更稳定地捕捉主要信息，阅读中的定位过程也更清楚了。接下来可以把重点放在“论点展开”和“段落衔接”：写完一个观点后，补充具体例子，再解释例子为什么能支持这个观点。听力继续关注转折后的关键信息，不必同时增加太多练习内容。每次练完回看一个最想改进的地方，逐步把方法用熟。'
       : 'You identify main ideas more consistently and locate reading details more clearly. Focus next on argument development and paragraph cohesion: add a concrete example after each claim, then explain how it supports that claim. In listening, notice key information after a contrast. Review one priority after each practice and use the method repeatedly.';
-  String _getTeacherCommentSummary() => widget.chinese
+  String _getTeacherCommentSummary() => _teacher != null
+      ? _pick(_teacher!['summary'])
+      : widget.chinese
       ? '主要信息捕捉与阅读定位更稳定。接下来优先练习论点展开和段落衔接。'
       : 'Main-idea identification and reading location are improving. Prioritize argument development and paragraph cohesion next.';
 
@@ -198,6 +222,9 @@ class _LearningAdviceState extends State<LearningAdvice> {
 
   Widget _buildTrendIcon(String trend) {
     switch (trend) {
+      // 真实数据里证据还不够看出走向的项：不画趋势。
+      case 'unknown':
+        return const SizedBox.shrink();
       case 'improving':
         return const Text('↗',
             style: TextStyle(
@@ -223,6 +250,7 @@ class _LearningAdviceState extends State<LearningAdvice> {
   }
 
   String _trendText(String trend) {
+    if (trend == 'unknown') return '';
     if (widget.chinese) {
       switch (trend) {
         case 'improving':
@@ -274,16 +302,18 @@ class _LearningAdviceState extends State<LearningAdvice> {
         const SizedBox(height: 8),
         Text(
           widget.chinese
-              ? '按科目查看前三项重点，其余建议收在下方。以下为演示分析，不代表真实测评结果。'
+              ? '按科目查看前三项重点，其余建议收在下方。${widget.real == null ? '以下为演示分析，不代表真实测评结果。' : ''}'
               : 'Tap subjects above to switch. Each shows key items, '
                   'with suggestions and follow-ups below. Practice first then return.',
           style: const TextStyle(fontSize: 13, color: Color(0xFF8A8378)),
         ),
         const SizedBox(height: 16),
 
-        // Teacher comment card
-        _buildTeacherCommentCard(),
-        const SizedBox(height: 18),
+        // Teacher comment card（真实数据里学员没生成过能力点评就不画）
+        if (widget.real == null || _teacher != null) ...[
+          _buildTeacherCommentCard(),
+          const SizedBox(height: 18),
+        ],
 
         // Skill tabs
         _buildSkillTabs(),
@@ -293,8 +323,10 @@ class _LearningAdviceState extends State<LearningAdvice> {
         ..._buildAdviceItems(),
 
         // More suggestions
-        const SizedBox(height: 18),
-        _buildMoreSuggestions(),
+        if (_more.isNotEmpty) ...[
+          const SizedBox(height: 18),
+          _buildMoreSuggestions(),
+        ],
       ],
     );
   }
@@ -380,8 +412,13 @@ class _LearningAdviceState extends State<LearningAdvice> {
             runSpacing: 8,
             children: [
               _buildYellowPill(widget.chinese ? '点评提到的是' : 'Review criteria'),
-              _buildYellowPill(widget.chinese ? '论点展开' : 'Arguments'),
-              _buildYellowPill(widget.chinese ? '段落衔接' : 'Cohesion'),
+              if (_teacher != null)
+                for (final tag in _teacher!['tags'] as List)
+                  _buildYellowPill(_pick(tag))
+              else ...[
+                _buildYellowPill(widget.chinese ? '论点展开' : 'Arguments'),
+                _buildYellowPill(widget.chinese ? '段落衔接' : 'Cohesion'),
+              ],
             ],
           ),
         ],
@@ -462,7 +499,18 @@ class _LearningAdviceState extends State<LearningAdvice> {
   }
 
   List<Widget> _buildAdviceItems() {
-    final items = _demoAdviceData[widget.selectedSkill] ?? [];
+    final top = _area?['top'] as List?;
+    final items = widget.real != null
+        ? [
+            for (final a in top ?? const [])
+              _DemoAdviceItem(
+                  title: _pick(a['title']),
+                  trend: a['trend'] as String? ?? 'unknown',
+                  observationCount: a['count'] as int,
+                  progress: (a['progress'] as num).toDouble(),
+                  practiceText: '')
+          ]
+        : _demoAdviceData[widget.selectedSkill] ?? [];
     final widgets = <Widget>[];
 
     for (var i = 0; i < items.length; i++) {
@@ -474,6 +522,8 @@ class _LearningAdviceState extends State<LearningAdvice> {
   }
 
   String _adviceTitle(int rank) {
+    final top = _area?['top'] as List?;
+    if (top != null) return _pick(top[rank - 1]['title']);
     final map = widget.chinese
         ? {
             'listening': ['识别转折信息', '捕捉关键细节', '理解同义替换'],
@@ -760,16 +810,8 @@ class _LearningAdviceState extends State<LearningAdvice> {
             Wrap(
               spacing: 8,
               runSpacing: 8,
-              children: (widget.chinese
-                      ? _demoMoreSuggestions
-                      : const [
-                          'Identify intent',
-                          'Follow structure',
-                          'Separate facts and views',
-                          'Record numbers and times'
-                        ])
-                  .map((text) => _buildYellowPill(text))
-                  .toList(),
+              children:
+                  _more.map((text) => _buildYellowPill(text)).toList(),
             ),
           ],
         ],
