@@ -29,6 +29,9 @@ class LearningTrends extends StatefulWidget {
   final double? target;
   final bool chinese;
 
+  /// 八周各自周一的日期（"8/10"）；演示用真实数据带上，没有就用图里原来写死的那组。
+  final List<String>? weekLabels;
+
   const LearningTrends({
     super.key,
     required this.scores,
@@ -36,6 +39,7 @@ class LearningTrends extends StatefulWidget {
     required this.maxScore,
     required this.target,
     required this.chinese,
+    this.weekLabels,
   });
 
   @override
@@ -136,6 +140,7 @@ class _LearningTrendsState extends State<LearningTrends> {
                 chinese: widget.chinese,
                 selectedWeek: _selectedWeek,
                 onWeekSelected: (week) => setState(() => _selectedWeek = week),
+                weekLabels: widget.weekLabels,
               ),
             ),
             const SizedBox(height: 16),
@@ -383,6 +388,7 @@ class _ScoreChart extends StatelessWidget {
   final bool chinese;
   final int? selectedWeek;
   final ValueChanged<int> onWeekSelected;
+  final List<String>? weekLabels;
 
   const _ScoreChart({
     required this.scores,
@@ -391,6 +397,7 @@ class _ScoreChart extends StatelessWidget {
     required this.chinese,
     required this.selectedWeek,
     required this.onWeekSelected,
+    this.weekLabels,
   });
 
   @override
@@ -484,7 +491,7 @@ class _ScoreChart extends StatelessWidget {
 
   Widget _buildWeekLabel(int index, bool chinese) {
     // Generate date labels (mock - would come from actual data)
-    final weekLabels = [
+    final weekLabels = this.weekLabels ?? const [
       '7/27',
       '8/3',
       '8/10',

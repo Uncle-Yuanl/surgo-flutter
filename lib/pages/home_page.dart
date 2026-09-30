@@ -2,7 +2,11 @@ import '../widgets/source_text.dart';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../app/app_state.dart';
+import '../app/learner_profile.dart';
+import '../app/routes.dart';
 import '../theme/tokens.dart';
 import '../widgets/t.dart';
 
@@ -44,8 +48,42 @@ class HomePage extends StatelessWidget {
   final void Function(String page, String? variant) onTrain;
   final VoidCallback onLogo;
 
+  /// 三张训练卡的原型值。演示数据（learner_profile.json 的 weekly）里是学员本周
+  /// 推荐计划的三项：科目 · 题型、弱项名、本周完成数 / 目标数。
+  static const _prototypeWeekly = <Map<String, dynamic>>[
+    {
+      'module': 'reading',
+      'kicker': 'READING · SECTION 3',
+      'head': '学术长文 阅读理解',
+      'done': 2,
+      'of': 5,
+      'card': null
+    },
+    {
+      'module': 'speaking',
+      'kicker': 'SPEAKING · PART 2',
+      'head': '个人陈述 口语训练',
+      'done': 4,
+      'of': 5,
+      'card': 'p2'
+    },
+    {
+      'module': 'writing',
+      'kicker': 'WRITING · TASK 2',
+      'head': '议论文 写作精练',
+      'done': 3,
+      'of': 5,
+      'card': 't2'
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
+    final me = _me(context);
+    // 键在而值是 null：这周还没有推荐计划，三张卡不画。
+    final weekly = me.containsKey('weekly')
+        ? (me['weekly'] as List? ?? const [])
+        : _prototypeWeekly;
     return DefaultTextStyle.merge(
         style: const TextStyle(
             letterSpacing: 0,
@@ -121,30 +159,19 @@ class HomePage extends StatelessWidget {
             const _SectionHeader('Today’s train'),
 
             // 三张大卡 + 每日挑战
-            _CourseCard(
-              variant: _CourseVariant.yellow,
-              kicker: 'READING · SECTION 3',
-              head: '学术长文 阅读理解',
-              waveOn: 40,
-              meta: '本周进度 2/5',
-              onTap: () => onTrain('readingDaily', null),
-            ),
-            _CourseCard(
-              variant: _CourseVariant.dark,
-              kicker: 'SPEAKING · PART 2',
-              head: '个人陈述 口语训练',
-              waveOn: 80,
-              meta: '本周进度 4/5',
-              onTap: () => onTrain('speakingDaily', 'p2'),
-            ),
-            _CourseCard(
-              variant: _CourseVariant.yellow,
-              kicker: 'WRITING · TASK 2',
-              head: '议论文 写作精练',
-              waveOn: 60,
-              meta: '本周进度 3/5',
-              onTap: () => onTrain('writingDaily', 't2'),
-            ),
+            for (final (i, w) in weekly.indexed)
+              _CourseCard(
+                variant: i == 1 ? _CourseVariant.dark : _CourseVariant.yellow,
+                kicker: w['kicker'],
+                head: w['head'],
+                waveOn: w['of'] > 0 ? (100 * w['done'] / w['of']).round() : 0,
+                meta: [
+                  'This week ${w['done']}/${w['of']}',
+                  '本周进度 ${w['done']}/${w['of']}'
+                ],
+                onTap: () =>
+                    onTrain('${w['module']}Daily', w['card'] as String?),
+              ),
             _ChallengeCard(
               onTap: () => onTrain('listeningDaily', 's1'),
               onContinue: () => onTrain('listeningDaily', 's1'),
@@ -153,6 +180,10 @@ class HomePage extends StatelessWidget {
         ));
   }
 }
+
+/// 当前考试的学员数据（learner_profile.json）；原型数据下是空表，各处用原来写死的值。
+Map<String, dynamic> _me(BuildContext context) => LearnerProfile.exam(
+    context.select<AppState, ExamType>((s) => s.examType));
 
 // ============================================================ 继续学习卡
 
@@ -166,6 +197,10 @@ class _ContinueCourseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final me = _me(context);
+    final days = LearnerProfile.daysToExam;
+    // 键在而值是 null：没设目标分，目标那半句不画。
+    final target = me.containsKey('target') ? me['target'] as String? : '7.0';
     return GestureDetector(
       onTap: onTapBody,
       child: Container(
@@ -200,7 +235,7 @@ class _ContinueCourseCard extends StatelessWidget {
                       height: 1.2,
                       letterSpacing: -0.3,
                     ))),
-            const Positioned(
+            Positioned(
                 left: 18,
                 right: 122,
                 top: 47,
@@ -209,13 +244,22 @@ class _ContinueCourseCard extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: TSpan(
                       parts: [
-                        ('距离你的考试还剩', false),
-                        ('20天', true),
-                        ('，你的目标是', false),
-                        ('7.0', true),
-                        ('分', false),
+                        if (days != null) ...[
+                          ('距离你的考试还剩', false),
+                          (['$days days', '$days天'], true),
+                        ],
+                        if (target != null) ...[
+                          (
+                            days != null
+                                ? '，你的目标是'
+                                : const ['Your target is ', '你的目标是'],
+                            false
+                          ),
+                          (target, true),
+                          ('分', false),
+                        ],
                       ],
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 10,
                         color: Color(0xFF817969),
                         height: 1.5,
@@ -246,8 +290,8 @@ class _ContinueCourseCard extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 18, vertical: 13),
                     alignment: Alignment.center,
-                    child: const T('Continue Writing',
-                        style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
+                    child: T(me['continue'] ?? 'Continue Writing',
+                        style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback,
                           fontSize: 12,
                           fontWeight: FontWeight.w800,
                           color: SurgoColors.onYellowStrong,
@@ -375,10 +419,12 @@ class _CourseCard extends StatelessWidget {
   });
 
   final _CourseVariant variant;
-  final String kicker;
-  final String head;
+
+  /// kicker / head / meta：字符串或 [英文, 中文]，由 [T] 按界面语言取。
+  final Object kicker;
+  final Object head;
   final int waveOn;
-  final String meta;
+  final Object meta;
   final VoidCallback onTap;
 
   @override
@@ -591,6 +637,8 @@ class _ChallengeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // 每日挑战的连胜天数：原型 12；演示数据里是学员真实的连续完成天数。
+    final streak = _me(context)['streak'] as int? ?? 12;
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -632,8 +680,8 @@ class _ChallengeCard extends StatelessWidget {
                           color: SurgoColors.yellow,
                         )),
                     const SizedBox(height: 6),
-                    const T('保持你的 12 天连胜',
-                        style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
+                    T(['Keep your $streak-day streak', '保持你的 $streak 天连胜'],
+                        style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback,
                           fontSize: 15,
                           fontWeight: FontWeight.w800,
                           color: Colors.white,
@@ -648,7 +696,7 @@ class _ChallengeCard extends StatelessWidget {
                           color: Color(0x80FFFFFF),
                         )),
                     const SizedBox(height: 9),
-                    // .dash：14 格，前 12 格点亮
+                    // .dash：14 格，前 12 格（连胜天数）点亮
                     Row(
                       children: List.generate(14, (i) {
                         return Expanded(
@@ -657,7 +705,7 @@ class _ChallengeCard extends StatelessWidget {
                             child: Container(
                               height: 6,
                               decoration: BoxDecoration(
-                                color: i < 12
+                                color: i < streak
                                     ? SurgoColors.yellow
                                     : const Color(0x2EFFFFFF),
                                 borderRadius: BorderRadius.circular(3),

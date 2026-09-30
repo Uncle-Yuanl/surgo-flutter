@@ -77,9 +77,12 @@ class LearningOverview extends StatelessWidget {
                           title: t('最近练了多少', 'Recent practice'),
                           badge: t('近30天', 'Last30d'),
                           value: '${data.last30Practices} ${t('次', 'done')}',
-                          caption: t(
-                              '比前30天多${data.last30Practices - data.prior30Practices}次',
-                              '+${data.last30Practices - data.prior30Practices}vs prior'))),
+                          // 真实数据可能比前 30 天少（原型的演示值总是多）。
+                          caption: data.last30Practices < data.prior30Practices
+                              ? t('比前30天少${data.prior30Practices - data.last30Practices}次',
+                                  '-${data.prior30Practices - data.last30Practices}vs prior')
+                              : t('比前30天多${data.last30Practices - data.prior30Practices}次',
+                                  '+${data.last30Practices - data.prior30Practices}vs prior'))),
                 ])),
         Wrap(spacing: 12, children: [
           TextButton(
