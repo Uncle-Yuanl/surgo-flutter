@@ -204,7 +204,7 @@ function practiceType(t, item, only, addFigure) {
         instr,
         article,
         groupLabel: label(n(qs[0]), n(qs[qs.length - 1])),
-        figure: addFigure('fig_reading_diagram.png', image, 'reading diagram figure'),
+        figure: addFigure('fig_reading_diagram.jpg', image, 'reading diagram figure'),
         items: qs.map((q) => [`${n(q)}. ${q.question} `, '']),
       };
     }
@@ -271,7 +271,7 @@ function mock(s, addFigure) {
         // 这篇没存图的话页面画它自带的示意图。
         figureShown = true;
         const image = (Array.isArray(sec.media) ? sec.media : []).find((x) => x.id === pc.media_id)?.image;
-        q = { type: 'diagram', ...(image?.base64 ? { figure: addFigure(`fig_mock_reading_p${si + 1}.png`, image, `mock reading passage ${si + 1} figure`) } : {}) };
+        q = { type: 'diagram', ...(image?.base64 ? { figure: addFigure(`fig_mock_reading_p${si + 1}.jpg`, image, `mock reading passage ${si + 1} figure`) } : {}) };
       } else q = { type: pc.type === 'short_answer' ? 'shortans' : 'gap' };
       exam.push({ ...q, ...head, q: pc.prompt });
 

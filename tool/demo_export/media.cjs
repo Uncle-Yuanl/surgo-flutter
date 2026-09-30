@@ -1,7 +1,27 @@
 // 只读取后端存下来的题图：库里内嵌的 base64，或者本机后端栈的文件存储（docker 容器 surgo-app）。
-// 取出来的字节按库里记的 sha256 / 大小核对，对不上就报错；不转码，原样用。
+// 取出来的字节按库里记的 sha256 / 大小核对，对不上就报错；核对过再缩成网页用的大小。
 const crypto = require('crypto');
 const { execFileSync } = require('child_process');
+
+// 原图是 2048×1536 的 PNG（约 2.5 MB），手机页面最宽只画 350 多像素：缩到 1200 宽、转成 JPEG，
+// 一张一两百 KB，国内打开才不用等。用 python + Pillow（tool/ 下的脚本本来就依赖它）。
+const SHRINK = `
+import io, sys
+from PIL import Image
+im = Image.open(io.BytesIO(sys.stdin.buffer.read())).convert('RGB')
+if im.width > 1200:
+    im = im.resize((1200, round(im.height * 1200 / im.width)), Image.LANCZOS)
+out = io.BytesIO()
+im.save(out, 'JPEG', quality=85, optimize=True)
+sys.stdout.buffer.write(out.getvalue())
+`;
+function shrink(buf, what) {
+  try {
+    return execFileSync('python', ['-c', SHRINK], { input: buf, encoding: 'buffer', maxBuffer: 64 << 20, stdio: ['pipe', 'pipe', 'pipe'] });
+  } catch {
+    throw new Error(`${what}: cannot shrink the figure (needs python with Pillow on PATH)`);
+  }
+}
 
 // 后端本地存储的根目录（后端 src/services/storage.js）：scope 'user' 在 uploads/user-data/ 下，
 // 'cache' 直接在 uploads/ 下。
@@ -12,10 +32,10 @@ function checked(buf, { sha256, size }, what) {
   if (size != null && buf.length !== Number(size)) throw new Error(`${what}: ${buf.length} bytes, the database row says ${size}`);
   if (sha256 && crypto.createHash('sha256').update(buf).digest('hex') !== sha256) throw new Error(`${what}: sha256 differs from the database row`);
   if (!buf.subarray(0, PNG.length).equals(PNG)) throw new Error(`${what}: not a PNG`);
-  return buf;
+  return shrink(buf, what);
 }
 
-/** 按 object_key 读一个存储对象，返回 Buffer（只读：docker exec … cat）。 */
+/** 按 object_key 读一个存储对象，返回缩好的 JPEG（只读：docker exec … cat）。 */
 function stored({ scope, key, sha256, size }, what) {
   if (!ROOTS[scope] || key.split('/').includes('..')) throw new Error(`${what}: unexpected storage location`);
   let buf;
@@ -28,7 +48,7 @@ function stored({ scope, key, sha256, size }, what) {
   return checked(buf, { sha256, size }, what);
 }
 
-/** 库里内嵌的图（阅读题的 media[].image：{ base64, sha256, … }），返回 Buffer。 */
+/** 库里内嵌的图（阅读题的 media[].image：{ base64, sha256, … }），返回缩好的 JPEG。 */
 const inline = (image, what) => checked(Buffer.from(image.base64, 'base64'), { sha256: image.sha256 }, what);
 
 /**

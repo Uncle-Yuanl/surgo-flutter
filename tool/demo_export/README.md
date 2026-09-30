@@ -27,12 +27,13 @@ JSON，不调接口，也不现场生成任何内容。
   `demo.config.json` 只放学员前缀。
 - 参考 `writing.cjs`（雅思写作：题目、柱状图、规划、评分页、批注、母语负迁移）；各模块管哪些页面写在
   它自己的文件头。
-- 题图：模块返回的值是 Buffer 就是二进制文件（`{ 'fig_xxx.png': 字节 }`），原样写进 `demo_data/`，构建时和
-  JSON 一起盖进 `assets/data/`，页面用 `assets/data/fig_xxx.png`。图用 `media.cjs` 读：题目里内嵌的
-  base64（`inline`），或后端文件存储里的对象（`stored`，只读 `docker exec surgo-app cat`），都按库里记的
-  sha256 / 大小核对，不转码。文件名里不许带库里的 id。JSON 里记 `figure: { asset, width, height, alt }`
-  （`media.cjs` 的 `figure`），页面见 `lib/features/ielts_reading/exam_figure.dart`；没有 `figure` 时页面
-  画原型自带的示意图。
+- 题图：模块返回的值是 Buffer 就是二进制文件（`{ 'fig_xxx.jpg': 字节 }`），原样写进 `demo_data/`，构建时和
+  JSON 一起盖进 `assets/data/`，页面用 `assets/data/fig_xxx.jpg`。图用 `media.cjs` 读：题目里内嵌的
+  base64（`inline`），或后端文件存储里的对象（`stored`，只读 `docker exec surgo-app cat`），先按库里记的
+  sha256 / 大小核对原图，再缩到 1200 宽、转成 JPEG（原图一张 2.5 MB；这一步要本机有 python + Pillow）。
+  文件名里不许带库里的 id。JSON 里记 `figure: { asset, width, height, alt }`（`media.cjs` 的 `figure`，
+  宽高是原图像素，页面只用它的比例），页面见 `lib/features/ielts_reading/exam_figure.dart`；没有 `figure`
+  时页面画原型自带的示意图。
 
 ## 验证
 

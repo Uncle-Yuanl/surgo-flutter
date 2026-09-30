@@ -132,7 +132,7 @@ function sessionPart(n, id, learner) {
     named(type);
     // 这组题的图：题目快照里可能还写着 pending，以媒体表为准。对象键带着 id，只用来读文件，不进输出。
     const visual = (s.visuals || []).find((v) => v.group === g.group_id && v.mime === 'image/png');
-    const name = `fig_listening_p${n}.png`;
+    const name = `fig_listening_p${n}.jpg`;
     if (visual) {
       if (figures[name]) throw new Error(`listening part ${n}: more than one figure`);
       figures[name] = stored(visual, `listening part ${n} figure`);
