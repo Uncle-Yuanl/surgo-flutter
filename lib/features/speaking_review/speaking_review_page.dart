@@ -1,5 +1,7 @@
+import '../../widgets/demo_audio.dart';
 import '../../widgets/source_text.dart';
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -39,10 +41,17 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
   Map<String, dynamic>? d;
   // let spReviewPart='p1'; — the currently displayed Part tab.
   String spReviewPart = 'p1';
+  // 演示用真实数据（tool/demo_export/speaking.cjs）每张卡带着原录音：qAudio 是考官的提问，ansAudio 是学员的
+  // 作答，各是一串 { asset, sec }。网页上点播放键就真的放（全站共用的 demoAudio，同一时间只放一段）。
+  // 一个播放键对应一串，按顺序放完：多数只有一段，「连续回放对话」是提问接着作答，Part 2 那张卡是几轮连着放。
+  // 原型数据没有这两项、或不在网页上（widget 测试、原生端），播放键照旧只是摆设。
+  List<Map> _queue = const []; // 正在放的那一串
+  int _at = 0; // 放到其中第几段
 
   @override
   void initState() {
     super.initState();
+    demoAudio.addListener(_next);
     // Daily training: land on the Part the user just practised (selWizCard).
     final s = context.read<AppState>().session;
     spReviewPart = s['spReviewPart'] as String? ?? 'p1';
@@ -54,6 +63,65 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
       if (mounted) setState(() => d = jsonDecode(raw) as Map<String, dynamic>);
     });
   }
+
+  @override
+  void dispose() {
+    demoAudio.removeListener(_next);
+    demoAudio.stop();
+    super.dispose();
+  }
+
+  /// 这张卡的一串录音（[key]：qAudio / ansAudio）；数据里没有、或这里放不了真音频就是空的。
+  List<Map> _clips(Map<String, dynamic> it, String key) =>
+      demoAudio.available ? (it[key] as List? ?? const []).cast<Map>() : const [];
+
+  /// 播放器里现在是不是这一串（在放、暂停着或刚放完）。
+  bool _loaded(List<Map> clips) =>
+      clips.isNotEmpty && listEquals(clips, _queue) && demoAudio.asset == _queue[_at]['asset'];
+
+  /// 这个播放键是不是正在放：只认播放器的状态，放完、被别的键换掉、被拦下后空走完，都会回到没在放。
+  bool _on(List<Map> clips) => _loaded(clips) && demoAudio.playing;
+
+  void _start() => demoAudio.play(_queue[_at]['asset'] as String, seconds: (_queue[_at]['sec'] as num).toDouble());
+
+  /// 点播放键：这一串正在放就暂停，暂停着就接着放；别的键在放、或这一串已经放完，就从第一段放起。
+  void _tap(List<Map> clips) {
+    if (_loaded(clips) && !demoAudio.ended) {
+      demoAudio.toggle(_queue[_at]['asset'] as String, seconds: (_queue[_at]['sec'] as num).toDouble());
+    } else {
+      _queue = clips;
+      _at = 0;
+      _start();
+    }
+  }
+
+  /// 一段放完，接着放这一串的下一段。
+  void _next() {
+    if (_queue.isEmpty || demoAudio.asset != _queue[_at]['asset'] || !demoAudio.ended || _at + 1 == _queue.length) return;
+    _at++;
+    _start();
+  }
+
+  /// 这一串放到第几秒：前面放完的几段加上当前这一段的位置。播放器里不是这一串、或已经放完，就是 0
+  /// （放完回到没放过的样子，不停在末尾）。
+  double _elapsed(List<Map> clips) => !_loaded(clips) || demoAudio.ended
+      ? 0
+      : demoAudio.position + _queue.take(_at).fold<double>(0, (sum, c) => sum + (c['sec'] as num));
+
+  /// 这一串放了多少（0–1），波形拿它当进度条。
+  double _played(List<Map> clips) {
+    final at = _elapsed(clips);
+    return at == 0 ? 0 : (at / clips.fold<double>(0, (sum, c) => sum + (c['sec'] as num))).clamp(0, 1).toDouble();
+  }
+
+  /// 83.2 → "01:23"（长陈述播放器左边那个时间）。
+  static String _clock(double seconds) =>
+      '${(seconds ~/ 60).toString().padLeft(2, '0')}:${(seconds.floor() % 60).toString().padLeft(2, '0')}';
+
+  /// 有真录音的播放键才点得动（点一下放，再点一下停）；没有就原样返回，和原型一样只是摆设。
+  Widget _playable(List<Map> clips, Widget child) => clips.isEmpty
+      ? child
+      : InkWell(onTap: () => _tap(clips), borderRadius: BorderRadius.circular(14), child: child);
 
   @override
   Widget build(BuildContext context) {
@@ -208,8 +276,8 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
             T(partInfo[1], style: TextStyle(fontSize: SurgoText.css(13.5), color: const Color(0xFFA08A4A))),
           ])),
         ])),
-      // Per-question cards.
-      for (var i = 0; i < curItems.length; i++) _questionCard(curItems[i], i, en, cuePoints),
+      // Per-question cards. 卡里的播放键要跟着播放器变（在放 / 停了 / 进度），所以每张卡听 demoAudio。
+      for (var i = 0; i < curItems.length; i++) ListenableBuilder(listenable: demoAudio, builder: (context, _) => _questionCard(curItems[i], i, en, cuePoints)),
       // Part 3 examiner overall comment, after the final round.
       if (spReviewPart == 'p3' && overall != null) Container(
         margin: const EdgeInsets.only(bottom: 14), padding: const EdgeInsets.fromLTRB(18, 17, 18, 17),
@@ -302,7 +370,7 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
       Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         T('考官', style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(13.5), fontWeight: FontWeight.w800, color: const Color(0xFF3A352C))),
         const SizedBox(height: 5),
-        _audioBar(const Color(0xFFFDF6E3), SurgoColors.yellow, const Color(0xFF3A2E00), const Color(0xFFE6B93A), 26, 22, 30, playLabel: '▶'),
+        _audioBar(const Color(0xFFFDF6E3), SurgoColors.yellow, const Color(0xFF3A2E00), const Color(0xFFE6B93A), 26, 22, 30, playLabel: '▶', clips: _clips(it, 'qAudio')),
         // 真实数据每张卡都带考官问的原话（Part 2 是题卡加追问，一句一行），写在音频条下面，
         // 字体同 Part 3 那行；原型的 Part 1 / 2 没有 q，仍只有音频条。
         if (it['q'] != null) ...[
@@ -316,7 +384,8 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
   // Answer block: Part 2 shows cue-card coverage + long-turn recording;
   // other Parts show the transcript text.
   Widget _answerBlock(Map<String, dynamic> it, List<List> cuePoints) {
-    if (spReviewPart == 'p2') return _p2Body(it, cuePoints);
+    final asked = _clips(it, 'qAudio'), said = _clips(it, 'ansAudio');
+    if (spReviewPart == 'p2') return _p2Body(it, cuePoints, said);
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       Container(margin: const EdgeInsets.only(bottom: 11), padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
         decoration: BoxDecoration(color: const Color(0xFFEEF7E9), borderRadius: BorderRadius.circular(12)),
@@ -331,12 +400,14 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
           SourceText(it['ans'] as String, style: TextStyle(fontSize: SurgoText.css(13.5), height: 1.6, color: const Color(0xFF3A352C))),
         ])),
       Padding(padding: const EdgeInsets.only(bottom: 12), child: Wrap(spacing: 8, runSpacing: 8, children: [
-        _op('▶ 播放考官'), _op('▶ 播放你的作答'), _op('↻ 连续回放对话'),
+        // 连续回放：考官的提问放完接着放作答；两样有一样没存就连不起来。
+        _op('▶ 播放考官', asked), _op('▶ 播放你的作答', said), _op('↻ 连续回放对话', asked.isEmpty || said.isEmpty ? const [] : [...asked, ...said]),
       ])),
     ]);
   }
 
-  Widget _p2Body(Map<String, dynamic> it, List<List> cuePoints) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+  // [said]：真实数据的这张卡是整段 Part 2（长陈述加追问的回答，转写也是这一整段），录音是几轮连着放。
+  Widget _p2Body(Map<String, dynamic> it, List<List> cuePoints, List<Map> said) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
     // Cue-card coverage.
     if (cuePoints.isNotEmpty) Container(margin: const EdgeInsets.only(bottom: 12), padding: const EdgeInsets.fromLTRB(15, 13, 15, 13),
       decoration: BoxDecoration(color: const Color(0xFFF4F2FD), borderRadius: BorderRadius.circular(12)),
@@ -364,16 +435,16 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
             child: T('长录音 · 独白', style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(12.5), fontWeight: FontWeight.w700, color: const Color(0xFF4F9E3A)))),
         ]),
         const SizedBox(height: 11),
-        Row(children: [
+        _playable(said, Row(children: [
           Container(width: 38, height: 38, alignment: Alignment.center,
             decoration: const BoxDecoration(color: Color(0xFF3F8F34), shape: BoxShape.circle),
-            child: const SourceText('▶', style: TextStyle(fontSize: 13.5, color: Colors.white))),
+            child: _on(said) ? const Icon(Icons.pause, size: 18, color: Colors.white) : const SourceText('▶', style: TextStyle(fontSize: 13.5, color: Colors.white))),
           const SizedBox(width: 11),
-          Expanded(child: _wave(40, 26, const Color(0xFF8FCE7F))),
-        ]),
+          Expanded(child: _wave(40, 26, const Color(0xFF8FCE7F), played: _played(said), on: const Color(0xFF3F8F34))),
+        ])),
         const SizedBox(height: 7),
         Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          SourceText('00:00', style: TextStyle(fontSize: SurgoText.css(13), color: const Color(0xFF6A8A62))),
+          SourceText(_clock(_elapsed(said)), style: TextStyle(fontSize: SurgoText.css(13), color: const Color(0xFF6A8A62))),
           SourceText(it['dur'] as String, style: TextStyle(fontSize: SurgoText.css(13), color: const Color(0xFF6A8A62))),
         ]),
       ])),
@@ -392,7 +463,8 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
         SourceText(it['ans'] as String, style: TextStyle(fontSize: SurgoText.css(13), height: 1.75, color: const Color(0xFF3A352C))),
       ])),
     Padding(padding: const EdgeInsets.only(bottom: 12), child: Wrap(spacing: 8, runSpacing: 8, children: [
-      _op('▶ 播放话题卡'), _op('🎙 播放你的长陈述'),
+      // 题卡没有音频（当时也只是显示在屏幕上），这个键仍是摆设。
+      _op('▶ 播放话题卡'), _op('🎙 播放你的长陈述', said),
     ])),
   ]);
 
@@ -413,27 +485,29 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
     ]));
   }
 
-  Widget _op(String label) => Container(
+  // [clips]：这个键放的那一串录音（真实数据才有）；正在放的键填成黄色。
+  Widget _op(String label, [List<Map> clips = const []]) => _playable(clips, Container(
     padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 7),
-    decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(14), border: Border.all(color: SurgoColors.yellowTint)),
-    child: T(label, style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(13), fontWeight: FontWeight.w700, color: const Color(0xFFA08A4A))));
+    decoration: BoxDecoration(color: _on(clips) ? SurgoColors.yellow : Colors.white, borderRadius: BorderRadius.circular(14), border: Border.all(color: _on(clips) ? SurgoColors.yellow : SurgoColors.yellowTint)),
+    child: T(label, style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(13), fontWeight: FontWeight.w700, color: _on(clips) ? const Color(0xFF3A2E00) : const Color(0xFFA08A4A)))));
 
-  Widget _audioBar(Color bg, Color playBg, Color playFg, Color waveColor, int bars, double height, double playSize, {required String playLabel}) => Container(
+  Widget _audioBar(Color bg, Color playBg, Color playFg, Color waveColor, int bars, double height, double playSize, {required String playLabel, List<Map> clips = const []}) => _playable(clips, Container(
     padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 10),
     decoration: BoxDecoration(color: bg, borderRadius: BorderRadius.circular(12), border: Border.all(color: SurgoColors.yellowTint)),
     child: Row(children: [
       Container(width: playSize, height: playSize, alignment: Alignment.center,
         decoration: BoxDecoration(color: playBg, shape: BoxShape.circle),
-        child: SourceText(playLabel, style: TextStyle(fontSize: 13, color: playFg))),
+        child: _on(clips) ? Icon(Icons.pause, size: 16, color: playFg) : SourceText(playLabel, style: TextStyle(fontSize: 13, color: playFg))),
       const SizedBox(width: 11),
-      Expanded(child: _wave(bars, height, waveColor)),
-    ]));
+      Expanded(child: _wave(bars, height, waveColor, played: _played(clips), on: const Color(0xFF9A7A00))),
+    ])));
 
   // Decorative waveform — heights vary per bar as in the source nth-child rules.
-  Widget _wave(int bars, double height, Color color) => SizedBox(height: height, child: Row(children: [
+  // 真录音在放时，已经放过的那一段（played：0–1）换成 [on] 色，当进度条看。
+  Widget _wave(int bars, double height, Color color, {double played = 0, Color? on}) => SizedBox(height: height, child: Row(children: [
     for (var i = 0; i < bars; i++) ...[
       Expanded(child: FractionallySizedBox(heightFactor: _waveFactor(i), child: Container(
-        decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(2))))),
+        decoration: BoxDecoration(color: i < played * bars ? on : color, borderRadius: BorderRadius.circular(2))))),
       if (i < bars - 1) const SizedBox(width: 2),
     ],
   ]));
