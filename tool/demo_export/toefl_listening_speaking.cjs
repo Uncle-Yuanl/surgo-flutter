@@ -184,6 +184,21 @@ function dailyListening(kind, learner) {
   };
 }
 
+// ---------- 口语的音频 ----------
+// 考官的原音频（存档的 MP3，原样带走）和学员的作答录音（WAV，转成 MP3）：页面的「正在播放」和批改页的
+// 两个播放键放的就是它们。都是后端文件存储里这位学员名下的对象（键以 u/<学员 id> 开头），按库里记的
+// sha256 / 大小核对过才导出；不在他名下、或库里没有这一行就报错，不拿别的顶替。
+// 文件收在 speakingSounds 里，由 exports.build 一起返回；文件名不带库里的 id。
+const media = require('./media.cjs');
+const speakingSounds = {};
+/** 导出一段存着的音频，返回页面认的 { asset, sec }。row: { scope, key, sha256, size }。 */
+function sound(name, row, learner) {
+  if (!row || !row.key || !row.key.startsWith(`u/${learner}`)) throw new Error(`${name}: no stored audio under this learner`);
+  const { bytes, sec } = media.audio(media.object(row, name), name);
+  speakingSounds[name] = bytes;
+  return media.clip(name, sec);
+}
+
 /** 口语四项的分（各题平均后换算成 1–6），平均分最高的一项标绿、最低的标红。 */
 function criterionScores(type, results) {
   const scored = CRITERIA[type].map((key) => {
@@ -199,13 +214,19 @@ function criterionScores(type, results) {
   }));
 }
 
-/** 口语逐题卡：考官说的原句、两段录音的时长、这一题的分和反馈；复述题带完整度（语音评测的 0–100）。 */
+/**
+ * 口语逐题卡：考官说的原句、考官音频和学员录音（x.q / x.a，两个播放键各放一段）及各自的时长、这一题的分
+ * 和反馈；复述题带完整度（语音评测的 0–100）。时长是导出的那两个文件的：模考的录音库里不记时长，
+ * 音频分析记的只是开口说话的那一段，比播放键放的整段录音短。
+ */
 function speakingCard(n, x, result, completeness) {
   return {
     n,
     score: toeflBand(result.task_score),
-    dur: `00:00 / ${clock(x.ms)}`,
-    myDur: `00:00 / ${clock(x.recMs)}`,
+    dur: `00:00 / ${clock(x.q.sec * 1000)}`,
+    myDur: `00:00 / ${clock(x.a.sec * 1000)}`,
+    audio: x.q,
+    myAudio: x.a,
     ...(completeness == null ? {} : { pct: Math.round(Number(completeness)) }),
     fb: pair(result.feedback_en, result.feedback_cn),
   };
@@ -216,23 +237,34 @@ function dailySpeaking(kind, learner) {
   const items = rows(
     `select jsonb_build_object(
       'n', i.ordinal, 'type', i.item_type, 'text', i.marking_key->>'source_text',
-      'ansSec', (i.public_content->>'response_seconds')::int, 'ms', m.duration_ms, 'recMs', rc.duration_ms,
+      'ansSec', (i.public_content->>'response_seconds')::int, 'ms', m.duration_ms,
+      'prompt', case when m.purpose = 'speaking_prompt' and m.state = 'attached' and m.user_id = s.user_id
+        then jsonb_build_object('scope', 'user', 'key', m.object_key, 'sha256', m.sha256, 'size', m.size_bytes) end,
+      'answer', jsonb_build_object('scope', 'user', 'key', ans.object_key, 'sha256', ans.sha256, 'size', ans.size_bytes),
       'result', a.result_detail - 'training_context')
      from toefl_daily_training_items i
      join toefl_daily_training_sessions s on s.id = i.session_id
      join toefl_daily_training_attempts a on a.item_id = i.id
      left join toefl_daily_training_recordings rc on rc.id = a.recording_id
      left join toefl_daily_training_media_assets m on m.id::text = i.marking_key->>'media_asset_id'
+     left join toefl_daily_training_media_assets ans on ans.file_object_id = rc.file_object_id
+       and ans.purpose = 'speaking_response' and ans.state = 'attached' and ans.user_id = s.user_id
      where s.id = ${lit(id)} and s.status = 'completed' and s.user_id::text like ${lit(`${learner}%`)}
      order by i.ordinal`,
   );
   if (!items.length) throw new Error(`toefl daily ${kind} ${id}: no scored items for this learner`);
+  // 日常训练可以重录（访谈那一场第 3 问存了两段）：导出的是判分用的那一段，也就是 attempts.recording_id
+  // 指着的录音，和上面导出的分数、反馈是同一次作答。这张表没有存储范围一列，对象都在 user 范围下。
+  for (const x of items) {
+    x.q = sound(`aud_tf_speaking_${kind}_q${x.n}.mp3`, x.prompt, learner);
+    x.a = sound(`aud_tf_speaking_${kind}_a${x.n}.mp3`, x.answer, learner);
+  }
   // 口语整场只分析一次，分析挂在场次上。
   const found = one(`select ${findingsOf('toefl_daily', lit(id))}`, `toefl daily ${kind} findings`);
   const results = items.map((x) => x.result);
   return {
     total: items.length,
-    segments: items.map((x) => ({ sec: secs(x.ms), ansSec: x.ansSec })),
+    segments: items.map((x) => ({ sec: secs(x.ms), ansSec: x.ansSec, audio: x.q })),
     feedback: {
       score: toeflBand(mean(results.map((r) => Number(r.task_score)))),
       description: null,
@@ -346,13 +378,18 @@ function mockSpeaking(learner) {
     `select jsonb_build_object(
       'type', i.item_type, 'instruction', i.public_content->>'instruction', 'intro', i.public_content->>'intro_summary',
       'ansSec', (i.public_content->>'response_seconds')::int, 'text', k.marking_key->>'source_text', 'ms', m.duration_ms,
-      'recMs', (c.private_payload#>>'{analysis,durationSeconds}')::numeric * 1000,
+      'prompt', case when m.purpose = 'speaking_prompt' and m.state = 'attached' and m.user_id = i.user_id
+        then jsonb_build_object('scope', m.storage_scope, 'key', m.object_key, 'sha256', m.sha256, 'size', m.size_bytes) end,
+      'answer', jsonb_build_object('scope', ans.storage_scope, 'key', ans.object_key, 'sha256', ans.sha256, 'size', ans.size_bytes),
       'completeness', c.private_payload#>'{analysis,pronunciation,completeness}')
      from toefl_mock_exam_items i
      join toefl_mock_exam_marking_keys k on k.item_id = i.id
      left join toefl_mock_exam_media_assets m on m.id::text = k.marking_key->>'media_asset_id'
      left join toefl_mock_exam_scoring_checkpoints c on c.item_id = i.id and c.phase = 'audio_analysed'
-     where i.session_id = ${lit(id)}
+     left join toefl_mock_exam_recordings rc on rc.turn_id = i.id and rc.session_id = i.session_id and rc.user_id = i.user_id
+     left join toefl_mock_exam_media_assets ans on ans.object_key = rc.object_key
+       and ans.purpose = 'speaking_response' and ans.state = 'attached' and ans.user_id = i.user_id
+     where i.session_id = ${lit(id)} and i.user_id::text like ${lit(`${learner}%`)}
      order by i.ordinal`,
   );
   // 结果里的 task_scores 按题型依次对应各题（后端 examReviewBundle.resultForMockItem 的同一规则）。
@@ -362,8 +399,14 @@ function mockSpeaking(learner) {
     if (!list.length || list.length !== scores.length) throw new Error(`toefl mock speaking ${id}: ${type} turns and scores differ`);
     return list.map((x, i) => ({ ...x, result: scores[i] }));
   };
-  const repeat = part('listen_and_repeat');
-  const interview = part('take_an_interview');
+  // 模考一题只收一段录音（toefl_mock_exam_recordings 每题一行），评分用的就是它。
+  const sounds = (list, key) => list.map((x, i) => ({
+    ...x,
+    q: sound(`aud_tf_speaking_mock_${key}_q${i + 1}.mp3`, x.prompt, learner),
+    a: sound(`aud_tf_speaking_mock_${key}_a${i + 1}.mp3`, x.answer, learner),
+  }));
+  const repeat = sounds(part('listen_and_repeat'), 'repeat');
+  const interview = sounds(part('take_an_interview'), 'interview');
   const typeScore = (list) => Number(toeflBand(mean(list.map((x) => Number(x.result.task_score)))));
   const cards = (list, withPct) => list.map((x, i) => ({
     ...speakingCard(i + 1, x, x.result, withPct ? x.completeness : null),
@@ -372,13 +415,13 @@ function mockSpeaking(learner) {
   return {
     task1: {
       total: repeat.length,
-      segments: repeat.map((x) => ({ sec: secs(x.ms), ansSec: x.ansSec, instruct: x.instruction })),
+      segments: repeat.map((x) => ({ sec: secs(x.ms), ansSec: x.ansSec, instruct: x.instruction, audio: x.q })),
     },
     task2: {
       total: interview.length,
       // 访谈开始前学员看到的是第一问的情境简介。
       brief: { sub: interview[0].intro || interview[0].instruction },
-      segments: interview.map((x) => ({ sec: secs(x.ms), ansSec: x.ansSec })),
+      segments: interview.map((x) => ({ sec: secs(x.ms), ansSec: x.ansSec, audio: x.q })),
     },
     feedback: {
       score: band(result.score),
@@ -406,11 +449,15 @@ exports.build = ({ learner }) => ({
     ['retell', 'interview'].map((kind) => [kind, dailySpeaking(kind, learner)]),
   ),
   'tf_speaking_mock.json': mockSpeaking(learner),
+  ...speakingSounds, // 口语的音频文件：上面两项读库时收下的
 });
 
 // 自检：node tool/demo_export/toefl_listening_speaking.cjs（不连库）。
 if (require.main === module) {
   const assert = require('assert');
+  // 不在这位学员名下的对象不导出（在读存储之前就拒绝）。
+  assert.throws(() => sound('x.mp3', { scope: 'user', key: 'u/0000/x.mp3' }, 'ffff'), /under this learner/);
+  assert.throws(() => sound('x.mp3', null, 'ffff'), /under this learner/);
   assert.deepStrictEqual(
     transcriptRows([
       { text: 'A b c. D e.', marks: [{ n: 2, span: 'D e.' }, { n: 1, span: 'b c' }, { n: 3, span: 'c. D' }, { n: 4, span: 'zzz' }] },

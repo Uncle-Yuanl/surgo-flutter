@@ -6,31 +6,59 @@
   "segments": [
    {
     "sec": 3,
-    "ansSec": 8
+    "ansSec": 8,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_retell_q1.mp3",
+     "sec": 3.4
+    }
    },
    {
     "sec": 4,
-    "ansSec": 8
+    "ansSec": 8,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_retell_q2.mp3",
+     "sec": 4.3
+    }
    },
    {
     "sec": 4,
-    "ansSec": 10
+    "ansSec": 10,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_retell_q3.mp3",
+     "sec": 4.2
+    }
    },
    {
     "sec": 5,
-    "ansSec": 10
+    "ansSec": 10,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_retell_q4.mp3",
+     "sec": 4.7
+    }
    },
    {
     "sec": 5,
-    "ansSec": 10
+    "ansSec": 10,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_retell_q5.mp3",
+     "sec": 5.3
+    }
    },
    {
     "sec": 6,
-    "ansSec": 12
+    "ansSec": 12,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_retell_q6.mp3",
+     "sec": 6
+    }
    },
    {
     "sec": 5,
-    "ansSec": 12
+    "ansSec": 12,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_retell_q7.mp3",
+     "sec": 5.3
+    }
    }
   ],
   "rates": [
@@ -86,6 +114,14 @@
      "score": "4.0",
      "dur": "00:00 / 00:03",
      "myDur": "00:00 / 00:06",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_retell_q1.mp3",
+      "sec": 3.4
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_retell_a1.mp3",
+      "sec": 6.1
+     },
      "pct": 62,
      "fb": [
       "Your weakest dimension this turn is prosody (2.4/5); completeness is your strongest (3.1/5). Replay \"open\", \"library\", \"open\" in the audio review.",
@@ -98,6 +134,14 @@
      "score": "4.5",
      "dur": "00:00 / 00:04",
      "myDur": "00:00 / 00:06",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_retell_q2.mp3",
+      "sec": 4.3
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_retell_a2.mp3",
+      "sec": 6.2
+     },
      "pct": 73,
      "fb": [
       "Your weakest dimension this turn is prosody (3.2/5); completeness is your strongest (3.7/5). Replay \"textbook\", \"desk\", \"please\" in the audio review.",
@@ -110,6 +154,14 @@
      "score": "4.5",
      "dur": "00:00 / 00:04",
      "myDur": "00:00 / 00:06",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_retell_q3.mp3",
+      "sec": 4.2
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_retell_a3.mp3",
+      "sec": 5.6
+     },
      "pct": 70,
      "fb": [
       "Your weakest dimension this turn is prosody (3.3/5); intelligibility is your strongest (3.5/5). Replay \"during\", \"twenty\", \"every\" in the audio review.",
@@ -122,6 +174,14 @@
      "score": "3.5",
      "dur": "00:00 / 00:05",
      "myDur": "00:00 / 00:06",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_retell_q4.mp3",
+      "sec": 4.7
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_retell_a4.mp3",
+      "sec": 6.4
+     },
      "pct": 29,
      "fb": [
       "Your weakest dimension this turn is completeness (1.5/5); prosody is your strongest (3.3/5). Replay \"online\", \"students\", \"sign\" in the audio review.",
@@ -134,6 +194,14 @@
      "score": "3.5",
      "dur": "00:00 / 00:05",
      "myDur": "00:00 / 00:05",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_retell_q5.mp3",
+      "sec": 5.3
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_retell_a5.mp3",
+      "sec": 5.4
+     },
      "pct": 44,
      "fb": [
       "Your weakest dimension this turn is accuracy (2.0/5); prosody is your strongest (3.5/5). Replay \"in\", \"in\", \"is\" in the audio review.",
@@ -146,6 +214,14 @@
      "score": "3.5",
      "dur": "00:00 / 00:06",
      "myDur": "00:00 / 00:08",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_retell_q6.mp3",
+      "sec": 6
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_retell_a6.mp3",
+      "sec": 8.2
+     },
      "pct": 47,
      "fb": [
       "Your weakest dimension this turn is accuracy (2.3/5); prosody is your strongest (3.1/5). Replay \"afternoon\", \"have\", \"assignment\" in the audio review.",
@@ -158,6 +234,14 @@
      "score": "3.5",
      "dur": "00:00 / 00:05",
      "myDur": "00:00 / 00:07",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_retell_q7.mp3",
+      "sec": 5.3
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_retell_a7.mp3",
+      "sec": 7.1
+     },
      "pct": 41,
      "fb": [
       "Your weakest dimension this turn is accuracy (2.0/5); prosody is your strongest (3.1/5). Replay \"copy\", \"student\", \"essay\" in the audio review.",
@@ -175,19 +259,35 @@
   "segments": [
    {
     "sec": 29,
-    "ansSec": 45
+    "ansSec": 45,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_interview_q1.mp3",
+     "sec": 29.1
+    }
    },
    {
     "sec": 28,
-    "ansSec": 45
+    "ansSec": 45,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_interview_q2.mp3",
+     "sec": 28.1
+    }
    },
    {
     "sec": 29,
-    "ansSec": 45
+    "ansSec": 45,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_interview_q3.mp3",
+     "sec": 28.7
+    }
    },
    {
     "sec": 29,
-    "ansSec": 45
+    "ansSec": 45,
+    "audio": {
+     "asset": "assets/data/aud_tf_speaking_interview_q4.mp3",
+     "sec": 28.7
+    }
    }
   ],
   "rates": [
@@ -295,6 +395,14 @@
      "score": "2.5",
      "dur": "00:00 / 00:29",
      "myDur": "00:00 / 00:07",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_interview_q1.mp3",
+      "sec": 29.1
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_interview_a1.mp3",
+      "sec": 7.1
+     },
      "fb": [
       "Your SURGO practice estimate for this Take an Interview response is 0.5 out of 5. You said, \"I just want annoying,\" which does not answer the advisor's question about who you are or why you chose this university. Relevance and development are both too thin to support the task. On delivery, the word \"annoying\" was marked as a Mispronunciation, and the long \"uh\" filler at the start lowers fluency. Next action: before recording, write two or three short sentences that name your major, your reason for choosing the university, and one study habit you want to build, then practise reading them aloud without fillers.",
       "这次 Take an Interview 的 SURGO 练习估分为 0.5 分（满分 5 分）。你的回答是 “I just want annoying.”，既没有介绍你自己，也没有说明选择本校的原因，因此相关性和展开都不够。发音方面，“annoying” 被判为 Mispronunciation，开头的 “uh” 停顿也让流利度下降。下一步建议：录音前先写好两三句话，至少包括专业、选择该校的原因和你想养成的一个学习习惯，然后练习不加入语气词地朗读。"
@@ -305,7 +413,15 @@
      "n": 2,
      "score": "2.5",
      "dur": "00:00 / 00:28",
-     "myDur": "00:00 / 00:02",
+     "myDur": "00:00 / 00:03",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_interview_q2.mp3",
+      "sec": 28.1
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_interview_a2.mp3",
+      "sec": 2.6
+     },
      "fb": [
       "Your reply, 'It's a dark simile,' did not address the advisor's question about a fall class you want to take. The task needed a class name, a reason it appeals to you, and at least one supporting detail, and none of that appeared. The audio also showed clear pronunciation problems on words like 'simile' and on several consonants, so even the short reply was hard to hear clearly. For a SURGO practice estimate, the task score is 0.5 out of 5. Next step: re-record and directly name a class, then give one specific reason it appeals to you, for example, 'I am most interested in Introduction to Psychology because I want to understand how memory works, and the lab sessions look hands-on.'",
       "你说的“It's a dark simile.” 没有回答导师关于这学期想选哪门课的问题。题目需要说出课程名称、为什么感兴趣，以及至少一个支持细节，这些内容都没有出现。音频分析也显示“simile”等词和多个音素存在明显发音问题，句子虽短却不够清楚。SURGO 练习估分为 5 分制中的 0.5 分。下一步：重新录音，直接说出课程名称，再给出一个具体理由，例如“我最想选 Introduction to Psychology，因为我想了解记忆的原理，而且实验课看起来很动手。”"
@@ -317,6 +433,14 @@
      "score": "2.5",
      "dur": "00:00 / 00:29",
      "myDur": "00:00 / 00:03",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_interview_q3.mp3",
+      "sec": 28.7
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_interview_a3.mp3",
+      "sec": 3.1
+     },
      "fb": [
       "You said only one sentence, \"This is something new to the data.\" It does not answer the advisor's question about a student activity you would like to join, so the response cannot earn credit for relevance or development. The audio shows clear pronunciation issues on \"data\" and weak stress across the turn, which lowers delivery. For the next attempt, name one specific club or organisation on campus, give one reason it fits your goals, and add one short example or follow-up question to the advisor.",
       "你只说了一句 \"This is something new to the data.\"，并没有回答导师关于想加入哪项学生社团或活动的问题，因此在相关性和内容展开上无法得分。音频显示 \"data\" 的发音明显有问题，整句话的重音也比较弱，影响了表达分数。下一次练习时，请直接说出你感兴趣的一个具体社团或组织，给出一个适合你目标的理由，并补充一个简短的例子或向导师提出的跟进问题。SURGO 练习估分：0.5 / 5。"
@@ -328,6 +452,14 @@
      "score": "3.0",
      "dur": "00:00 / 00:29",
      "myDur": "00:00 / 00:07",
+     "audio": {
+      "asset": "assets/data/aud_tf_speaking_interview_q4.mp3",
+      "sec": 28.7
+     },
+     "myAudio": {
+      "asset": "assets/data/aud_tf_speaking_interview_a4.mp3",
+      "sec": 7.4
+     },
      "fb": [
       "You named the library, which fits the question, but you stopped there. Add one short reason and one personal detail, for example: \"I plan to study in the main library because it is quiet and close to my dorm, so I can focus for two hours after dinner.\" Fix \"most good\" to just \"the best.\" Watch the /l/ sound in words like place and library so it stays clear.",
       "你提到了图书馆，方向是对的，但回答只到这里就结束了。请补一个简短原因和一个个人细节，例如：我打算在主图书馆学习，因为那里安静，而且离宿舍近，晚饭后我可以专注地看两个小时的书。把 most good 改成 the best。注意 place、library 这类词里 /l/ 的发音，要发清楚。"

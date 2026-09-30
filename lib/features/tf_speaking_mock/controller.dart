@@ -7,6 +7,10 @@ import 'package:flutter/services.dart';
 /// 推进阶段，没有任何真实音频、录音、后端或评分调用。此处严格照搬这套计时机，不引入真实媒体。
 /// 与「日常训练」不同：模考没有倍速/重播/重录，只有单向推进；时长也不同（Task1 指令 5s、播放
 /// seg.sec、准备 1s、作答 seg.ansSec；Task2 播放 seg.sec、作答 seg.ansSec）。
+///
+/// 例外只有一处：演示用真实数据（tool/demo_export）每题带着考官的原音频，网页上的播放阶段由页面真的放它、
+/// 放完时调 heard()（见 module.dart 的 clip / hear）。原型数据、widget 测试和原生端仍是这里的 step() 计时；
+/// 作答（录音）在哪种数据下都是模拟的。
 class TfSpeakingMockData {
   static Map<String, dynamic>? cache;
   static Future<Map<String, dynamic>> load() async =>
@@ -58,10 +62,7 @@ class TfSpk1Controller {
     }
     if (phase == 'play') {
       audio = tick;
-      if (tick >= sec) {
-        tick = 0;
-        phase = 'ready';
-      }
+      if (tick >= sec) heard();
       return null;
     }
     if (phase == 'ready') {
@@ -79,6 +80,13 @@ class TfSpk1Controller {
       return 'answer-done';
     }
     return null;
+  }
+
+  /// 这一句播完了，进「准备」：计时播满时到这里，真音频放完时页面也调它。
+  void heard() {
+    audio = sec;
+    tick = 0;
+    phase = 'ready';
   }
 
   /// 推进到下一题（源 tfS1Advance）。返回 false 表示已到最后一题（应跳 Task 2 准备页）。
@@ -126,11 +134,7 @@ class TfSpk2Controller {
     tick++;
     if (phase == 'play') {
       audio = tick;
-      if (tick >= sec) {
-        tick = 0;
-        phase = 'answer';
-        left = ansSec;
-      }
+      if (tick >= sec) heard();
       return null;
     }
     left--;
@@ -139,6 +143,14 @@ class TfSpk2Controller {
       return 'answer-done';
     }
     return null;
+  }
+
+  /// 这一问播完了，直接进作答：计时播满时到这里，真音频放完时页面也调它。
+  void heard() {
+    audio = sec;
+    tick = 0;
+    phase = 'answer';
+    left = ansSec;
   }
 
   /// 源 tfS2Advance。返回 false 表示已到最后一题（应打开批改反馈）。
