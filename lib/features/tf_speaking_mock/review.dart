@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../../app/app_state.dart';
 import '../../app/routes.dart';
 import '../../theme/tokens.dart';
+import '../../widgets/demo_audio.dart';
 import '../../widgets/primitives.dart';
 import '../../widgets/t.dart';
 
@@ -20,6 +21,12 @@ class TfSpeakFbReview extends StatefulWidget {
 
 class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
   String type = 'r'; // 源 tfSfType 默认 'r'
+
+  @override
+  void dispose() {
+    demoAudio.stop();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -75,7 +82,8 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
       SurgoCard(child: Wrap(spacing: 8, runSpacing: 8, children: [
         for (final t in types)
           ChoiceChip(label: SourceText(t['name'] as String), selected: type == t['key'],
-            onSelected: (_) => setState(() => type = t['key'] as String)),
+            // 换题型时停掉正在放的那一段：它的播放键已经不在页面上了。
+            onSelected: (_) => setState(() { if (type != t['key']) demoAudio.stop(); type = t['key'] as String; })),
       ])),
       // Delivery / Language Use / Topic Development 子分（源 tsf-subs）
       SurgoCard(child: Wrap(spacing: 12, runSpacing: 8, children: [
@@ -114,11 +122,11 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
       const SizedBox(height: 10),
       const T('考官提问', style: SurgoText.cardDesc),
       SourceText(q['ask'] as String, style: SurgoText.rowLabel),
-      // 考官 / 你的作答 两条模拟音频波形（源 tsf-row，静态展示，无真实播放）
+      // 考官 / 你的作答 两条模拟音频波形（源 tsf-row，原型里是静态展示，无真实播放）
       const SizedBox(height: 10),
-      _audio('考官', q['dur'] as String),
+      _audio('考官', q['dur'] as String, q['audio'] as Map?),
       const SizedBox(height: 6),
-      _audio('你的作答', (q['myDur'] ?? q['dur']) as String),
+      _audio('你的作答', (q['myDur'] ?? q['dur']) as String, q['myAudio'] as Map?),
       if (pct != null) ...[
         const SizedBox(height: 12),
         Row(children: [
@@ -142,11 +150,29 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
     ]));
   }
 
-  Widget _audio(String who, String dur) => Container(
+  /// 演示用真实数据每题带着这两段音频（audio / myAudio：{ asset, sec }，tool/demo_export 导出）：考官那一行是
+  /// 题目的原音频，你的作答那一行是学员这一题的录音。在网页上点这一行真的放它，再点暂停；全站同一时间只放
+  /// 一段，所以只有播放器里正是这一段时才显示暂停键和进度。原型数据没有这两项、或不在网页上，就是原来的静态展示。
+  Widget _audio(String who, String dur, Map? clip) {
+    if (clip == null || !demoAudio.available) return _audioRow(who, dur, false);
+    final asset = clip['asset'] as String;
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: () => demoAudio.toggle(asset, seconds: (clip['sec'] as num).toDouble()),
+      child: ListenableBuilder(listenable: demoAudio, builder: (_, __) {
+        // 放完回到原样：时长那一栏本来就是「00:00 / 总长」。
+        final on = demoAudio.asset == asset && !demoAudio.ended;
+        final at = demoAudio.position.floor();
+        return _audioRow(who, on ? '${(at ~/ 60).toString().padLeft(2, '0')}:${(at % 60).toString().padLeft(2, '0')} / ${dur.split(' / ').last}' : dur, on && demoAudio.playing);
+      }),
+    );
+  }
+
+  Widget _audioRow(String who, String dur, bool playing) => Container(
     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
     decoration: BoxDecoration(color: SurgoColors.bg, borderRadius: BorderRadius.circular(12)),
     child: Wrap(spacing:6,runSpacing:6,crossAxisAlignment:WrapCrossAlignment.center,children: [
-      const Icon(Icons.play_arrow, size: 18),
+      Icon(playing ? Icons.pause : Icons.play_arrow, size: 18),
       const SizedBox(width: 6),
       SourceText(who, style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 13, fontWeight: FontWeight.w700)),
       const SizedBox(width: 8),
