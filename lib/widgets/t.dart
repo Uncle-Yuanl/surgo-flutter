@@ -43,10 +43,7 @@ class T extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final lang = context.select<AppState, UiLang>((s) => s.lang);
-    final t = text;
-    final raw = t is List
-        ? '${t[lang == UiLang.zh && t.length > 1 ? 1 : 0]}'
-        : '$t';
+    final raw = langText(text, lang);
     var out = Translator.instance.translate(raw, lang) ?? raw;
     if (uppercase) out = out.toUpperCase();
     return Text(out, style: style, textAlign: textAlign, maxLines: maxLines);
