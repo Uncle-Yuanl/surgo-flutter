@@ -26,7 +26,8 @@ const L1_TYPES = {
 };
 const COLORS = ['#F5B301', '#7cb518', '#5b8def', '#e4572e']; // 原型的两色 + 备用
 
-function attempt(id) {
+/** 只认演示学员自己的作答：id 写成别人的，这里查不到就报错。 */
+function attempt(id, learner) {
   return one(
     `select jsonb_build_object(
       'band', a.band, 'detail', a.detail, 'essay', a.response_text, 'topic', g.topic,
@@ -37,7 +38,7 @@ function attempt(id) {
              and w.user_id = a.user_id and w.kind = 'l1_check' order by w.created_at desc limit 1))
      from ielts_attempts a join ielts_generated_items g on g.id = a.generated_item_id
      left join ielts_generated_item_private_material m on m.generated_item_id = a.generated_item_id
-     where a.id = ${lit(id)} and a.module = 'writing'`,
+     where a.id = ${lit(id)} and a.module = 'writing' and a.user_id::text like ${lit(`${learner}%`)}`,
     `writing attempt ${id}`,
   );
 }
@@ -148,9 +149,9 @@ function analysis(p) {
   };
 }
 
-exports.build = () => {
-  const t1 = attempt(ATTEMPTS.task1);
-  const t2 = attempt(ATTEMPTS.task2);
+exports.build = (config) => {
+  const t1 = attempt(ATTEMPTS.task1, config.learner);
+  const t2 = attempt(ATTEMPTS.task2, config.learner);
   const r1 = review(t1);
   const r2 = review(t2);
   return {
