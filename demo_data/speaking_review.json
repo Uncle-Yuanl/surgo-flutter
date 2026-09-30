@@ -294,8 +294,8 @@
    "items": {
     "p2": [
      {
-      "dur": "1:23",
-      "ans": "Hi should I learned us here to show the memory and experience between different. Agents within the club codes or Codex application and I learned it when I trying to use such code coding agents to help me develop a application. I learned after suffering from a multiply. Impose multiplied communications about within within different chat sessions and use them to work on the same target. And I think the reason why it's very useful is to avoid me. Chatting too much and I think it is a very efficient mechanism to let the agents communicate with each other internally and. And so you see target as the only one. Only Wang Funimation for file the final final codes.",
+      "dur": "2:02",
+      "ans": "Hi should I learned us here to show the memory and experience between different. Agents within the club codes or Codex application and I learned it when I trying to use such code coding agents to help me develop a application. I learned after suffering from a multiply. Impose multiplied communications about within within different chat sessions and use them to work on the same target. And I think the reason why it's very useful is to avoid me. Chatting too much and I think it is a very efficient mechanism to let the agents communicate with each other internally and. And so you see target as the only one. Only Wang Funimation for file the final final codes. Yes, and my experience is to use the a longtime file in replace instead of the. Short time memory and I think that this is very important. I think the uh scale make me remind much of time to uh to let me free from communicating with the code agent and I just need to focus Lee targets and the direction of our final objective.",
       "tags": [
        [
         "语法多样性与准确性",
@@ -313,6 +313,18 @@
         "语法多样性与准确性",
         "\"the final final codes\" → \"the final code\"",
         "Remove the repeated word; a single 'final' is enough.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"the uh scale make me remind much of time\" → \"the skill reminds me how much time\"",
+        "Use the noun 'skill' instead of 'scale' and a correct clause structure.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"free from communicating with the code agent and I just need to focus Lee targets\" → \"free from communicating with the coding agent, and I just need to focus on the target\"",
+        "Use 'coding agent', add the preposition 'on', and correct 'focus Lee' to 'focus on the'.",
         "warn"
        ]
       ]

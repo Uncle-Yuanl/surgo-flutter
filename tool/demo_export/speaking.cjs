@@ -28,7 +28,7 @@ const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 function attempt(id, learner) {
   return one(
     `select jsonb_build_object(
-      'at', a.attempted_at, 'item', g.content,
+      'at', a.attempted_at, 'item', g.content, 'response', a.response_text,
       'range', a.detail->'estimated_band_range', 'criteria', a.detail->'criterion_estimates',
       'fixes', a.detail->'priority_fixes', 'grammar', a.detail->'grammar_issues',
       'pron', a.detail->'pronunciation_evidence', 'seconds', a.detail->'speech_metrics'->'durationSeconds',
@@ -88,8 +88,10 @@ const grammarIn = (answer, issues) => (issues || []).filter((g) => words(answer)
 
 /** 回顾页的一个 Part：总分、分项、弱项、逐题。 */
 function review(part, a) {
-  const turns = part === 'p2' ? a.turns.slice(0, 1) : a.turns; // Part 2 回顾页只有长陈述一张卡，追问不在这页
-  // 早期的 Part 2 作答没有逐题转写，页面上会是一张空卡：换一次作答，别悄悄导出去。
+  // Part 2 回顾页只有一张卡：放整段 Part 2 的作答（长陈述加追问的回答）。评分、引文、弱项看的都是这一整段，
+  // 只放长陈述那一轮的话，一半引文在页面上找不到出处。
+  const turns = part === 'p2' ? [{ a: a.response, ms: Number(a.seconds) * 1000 }] : a.turns;
+  // 没有转写的那一轮在页面上是一张空卡：换一次作答，别悄悄导出去。
   if (turns.some((t) => !t.a)) throw new Error(`speaking ${part}: a turn has no transcript, pick another attempt`);
   return {
     // 2026-09-25 以前存的是 ±0.5 的区间，后端与正式客户端都取中点作为唯一的练习估分。
