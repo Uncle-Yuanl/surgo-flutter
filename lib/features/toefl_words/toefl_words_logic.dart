@@ -52,11 +52,14 @@ class TfDwToken {
 }
 
 /// 反馈页薄弱项，对应 TFDWFB_WEAK 元素。
+///
+/// 三个字段在原型数据里是字符串；演示用真实数据（tool/demo_export）给的是
+/// `[英文, 中文]` 一对，由页面按界面语言取。
 class TfDwWeak {
   const TfDwWeak({required this.tags, required this.q, required this.a});
-  final List<String> tags; // 恰好 3 个：tags[0..2]
-  final String q;
-  final String a;
+  final List<Object> tags; // 恰好 3 个：tags[0..2]
+  final Object q;
+  final Object a;
 }
 
 /// 反馈页「Completed paragraph」原文回看片段，对应 TFDWFB_SRC 元素
@@ -89,10 +92,10 @@ class TfDwQ {
   });
   final int n;
   final bool ok;
-  final String q;
+  final Object q; // 字符串或 [英文, 中文]
   final String mine;
   final String? ans; // 缺省表示不显示「正确答案」行（原型 q.ans 假值）
-  final String? why; // 缺省表示不显示解析块（原型 q.why 假值）
+  final Object? why; // 缺省表示不显示解析块（原型 q.why 假值）；字符串或 [英文, 中文]
   final String? evi; // 原文依据，与 why 同块
 }
 
@@ -170,9 +173,9 @@ class TfDwContent {
     final weak = (j['TFDWFB_WEAK'] as List).map((w) {
       final m = w as Map<String, dynamic>;
       return TfDwWeak(
-        tags: (m['tags'] as List).map((e) => e as String).toList(),
-        q: m['q'] as String,
-        a: m['a'] as String,
+        tags: (m['tags'] as List).cast<Object>(),
+        q: m['q'] as Object,
+        a: m['a'] as Object,
       );
     }).toList();
 
@@ -191,10 +194,10 @@ class TfDwContent {
       return TfDwQ(
         n: (m['n'] as num).toInt(),
         ok: m['ok'] as bool,
-        q: m['q'] as String,
+        q: m['q'] as Object,
         mine: m['mine'] as String,
         ans: m['ans'] as String?,
-        why: m['why'] as String?,
+        why: m['why'],
         evi: m['evi'] as String?,
       );
     }).toList();

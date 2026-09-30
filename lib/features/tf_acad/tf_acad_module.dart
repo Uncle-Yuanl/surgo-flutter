@@ -22,6 +22,8 @@ class TfAcademicData {
   return _cache=TfDlContent.fromJson({
    'TFDL_AD':raw['TFDA_PARAS'],'TFDL_POST':raw['TFDA_PARAS2'],'TFDL_QS':qs,'TFDL_SEC':raw['TFDA_SEC'],
    'TFDLFB_WEAK':raw['TFDAFB_WEAK'],'TFDLFB_SRC':raw['TFDAFB_SRC'],'TFDLFB_QS':raw['TFDAFB_QS'],
+   // 演示用真实数据带这一场的估分；原型数据没有这个键，反馈页用原来写死的分数。
+   'TFDLFB_SCORE':raw['TFDAFB_SCORE'],
   });
  }
 }

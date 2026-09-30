@@ -1,0 +1,1425 @@
+{
+ "parts": {
+  "1": {
+   "paras": [
+    [
+     "Cities around the world are searching for new ways to manage stormwater as climate change intensifies rainfall. ",
+     [
+      "Ma",
+      2,
+      ""
+     ],
+     " municipalities are ",
+     [
+      "repla",
+      4,
+      ""
+     ],
+     " paved ",
+     [
+      "surf",
+      4,
+      ""
+     ],
+     " with ",
+     [
+      "perme",
+      4,
+      ""
+     ],
+     " materials ",
+     [
+      "th",
+      2,
+      ""
+     ],
+     " allow ",
+     [
+      "wat",
+      2,
+      ""
+     ],
+     " to ",
+     [
+      "se",
+      2,
+      ""
+     ],
+     " into the ",
+     [
+      "gro",
+      3,
+      ""
+     ],
+     " rather ",
+     [
+      "th",
+      2,
+      ""
+     ],
+     " running ",
+     [
+      "in",
+      2,
+      ""
+     ],
+     " drains. Green roofs are another popular option, since the plants and soil absorb heavy rain and slowly release it through evaporation. Local governments often pair these upgrades with public education campaigns so that residents understand how small actions, such as clearing gutters, can prevent flooding during storms. Together, these measures aim to reduce damage to infrastructure while keeping neighborhoods safer for everyone."
+    ],
+    [
+     "The passage below introduces the topic that follows. ",
+     "The community ",
+     [
+      "cent",
+      4,
+      ""
+     ],
+     " will host a ",
+     [
+      "four-",
+      4,
+      ""
+     ],
+     " workshop on urban gardening. Sessions take place every Saturday from 10 a.m. to noon in the main ",
+     [
+      "hal",
+      4,
+      ""
+     ],
+     ". Participants will learn how to prepare small raised beds, choose suitable crops for limited spaces, and ",
+     [
+      "mana",
+      4,
+      ""
+     ],
+     " common pests without harsh chemicals. Materials such as seeds, basic ",
+     [
+      "tool",
+      4,
+      ""
+     ],
+     " and reference handouts will be provided on the first day at no extra cost. Anyone interested in joining may ",
+     [
+      "sig",
+      4,
+      ""
+     ],
+     " up at the front desk before the start of the second ",
+     [
+      "wee",
+      4,
+      ""
+     ],
+     ". A brief welcome talk will be held fifteen ",
+     [
+      "minu",
+      4,
+      ""
+     ],
+     " before the opening session to introduce the instructors and ",
+     [
+      "outl",
+      4,
+      ""
+     ],
+     " the schedule for the ",
+     [
+      "work",
+      4,
+      ""
+     ]
+    ]
+   ],
+   "total": 2,
+   "sec": 1800
+  },
+  "2": {
+   "qs": [
+    {
+     "no": 21,
+     "title": "Apartment building notice about package lockers",
+     "ad": [
+      "The building has installed a new set of package lockers in the main lobby. When a courier delivers a parcel that fits, the system sends a code to the resident's phone. The code opens only the assigned locker and works for twenty-four hours. Residents should remove the parcel before the code expires, because an uncollected parcel is moved to the manager's office the next morning. Oversized parcels still go to the office immediately, and the manager will leave a paper notice in the resident's mailbox. Please report any damaged packaging to the manager on the same day you pick up the item."
+     ],
+     "q": "According to the notice, where is the new package locker system located?",
+     "opts": [
+      "In the main lobby",
+      "In the manager's office",
+      "In each resident's apartment",
+      "In the building's basement",
+      "Outside the front entrance"
+     ]
+    },
+    {
+     "no": 22,
+     "q": "How long does a pickup code remain valid?",
+     "opts": [
+      "Twelve hours",
+      "Twenty-four hours",
+      "Forty-eight hours",
+      "Until the next morning",
+      "Until the end of the week"
+     ]
+    },
+    {
+     "no": 23,
+     "q": "What happens to a parcel that is not collected before the code expires?",
+     "opts": [
+      "It is returned to the courier.",
+      "It is donated to a neighbour.",
+      "It is moved to the manager's office the next morning.",
+      "It is left in the assigned locker indefinitely.",
+      "It is placed in the resident's mailbox."
+     ]
+    },
+    {
+     "no": 24,
+     "q": "Where does the manager leave a paper notice for an oversized parcel?",
+     "opts": [
+      "On the resident's door",
+      "Under the resident's door",
+      "In the resident's mailbox",
+      "In the parcel locker",
+      "In the main lobby mailbox"
+     ]
+    },
+    {
+     "no": 25,
+     "q": "When should a resident report a damaged parcel?",
+     "opts": [
+      "Within one week of delivery",
+      "Only if the courier is present",
+      "The same day the item is picked up",
+      "Before opening the parcel",
+      "Only after the code expires"
+     ]
+    },
+    {
+     "no": 26,
+     "title": "The ecology of seasonal wetlands in dryland landscapes",
+     "ad": [
+      "Seasonal wetlands are shallow depressions that fill with water for only part of the year. In dryland regions, where rainfall is low and unpredictable, these temporary ponds support a distinctive group of plants and animals that have adapted to the alternation between wet and dry phases. The biological communities of seasonal wetlands differ sharply from those of permanent lakes, because the inhabitants must complete their life cycles in the interval between flooding events. Many species respond to the arrival of water by emerging from drought-resistant eggs or by germinating from long-lived seeds, a strategy that allows populations to persist across years when the wetland never fills. The drying phase is equally important. As water levels fall, predators such as fish are excluded, and the remaining pool becomes a refuge for animals that cannot coexist with fish. The wet phase favours rapid growth and reproduction, while the dry phase favours dispersal and survival in resting stages. Because the timing of filling and drying is variable, species in seasonal wetlands often invest in broad tolerance rather than narrow specialisation. Conservation of these habitats depends on maintaining the natural hydrological cycle, including the periods of drying that are often disrupted by human water use. Restoring lost seasonal wetlands also requires reconnecting them to their catchments so that runoff can reach the basin during heavy rains."
+     ],
+     "q": "According to the passage, what is one way in which seasonal wetlands in dryland regions differ from permanent lakes?",
+     "opts": [
+      "They contain water throughout the year.",
+      "They support communities that must finish their life cycles between floods.",
+      "They are located at higher elevations.",
+      "They have a larger variety of fish species."
+     ]
+    },
+    {
+     "no": 27,
+     "q": "The word \"distinctive\" in paragraph 1 is closest in meaning to",
+     "opts": [
+      "common",
+      "widespread",
+      "characteristic",
+      "unattractive"
+     ]
+    },
+    {
+     "no": 28,
+     "q": "What does the passage say about many species in seasonal wetlands when water arrives?",
+     "opts": [
+      "They migrate to permanent lakes.",
+      "They emerge from eggs or germinate from seeds.",
+      "They become dormant underground.",
+      "They compete with fish for food."
+     ]
+    },
+    {
+     "no": 29,
+     "q": "Why are predators such as fish excluded from seasonal wetlands as water levels fall?",
+     "opts": [
+      "The water becomes too cold for them.",
+      "The remaining pool is too small to support them.",
+      "The remaining pool becomes a refuge for animals that cannot coexist with fish.",
+      "They are caught by birds during the dry season."
+     ]
+    },
+    {
+     "no": 30,
+     "q": "According to the passage, what does the wet phase of a seasonal wetland favour?",
+     "opts": [
+      "Dispersal of resting stages",
+      "Rapid growth and reproduction",
+      "Drought-resistant seed formation",
+      "Predation by fish"
+     ]
+    },
+    {
+     "no": 31,
+     "q": "What can be inferred about species in seasonal wetlands?",
+     "opts": [
+      "They are highly specialised to a single set of conditions.",
+      "They tend to develop broad tolerance because timing is variable.",
+      "They cannot survive long periods without water.",
+      "They are unaffected by changes in the hydrological cycle."
+     ]
+    },
+    {
+     "no": 32,
+     "q": "The word \"narrow\" in the phrase \"narrow specialisation\" is closest in meaning to",
+     "opts": [
+      "limited",
+      "strict",
+      "tight",
+      "steep"
+     ]
+    },
+    {
+     "no": 33,
+     "q": "What is mentioned as a threat to the conservation of seasonal wetlands?",
+     "opts": [
+      "Introduction of non-native plants",
+      "Disruption of the natural hydrological cycle by human water use",
+      "Increased frequency of droughts due to climate change alone",
+      "Conversion of wetlands into permanent reservoirs"
+     ]
+    },
+    {
+     "no": 34,
+     "q": "According to the passage, what is required for the restoration of lost seasonal wetlands?",
+     "opts": [
+      "Planting native trees around the basin",
+      "Introducing fish to control insect populations",
+      "Reconnecting them to their catchments so runoff can reach the basin",
+      "Building small dams to store water year-round"
+     ]
+    },
+    {
+     "no": 35,
+     "q": "Which of the following best expresses the essential information in the highlighted sentence: \"The drying phase is equally important\"?",
+     "opts": [
+      "The dry season is the most important phase for wildlife.",
+      "The period when water disappears is as significant as the period when water is present.",
+      "The wetland dries more quickly than expected.",
+      "Drying damages many species in the wetland."
+     ]
+    }
+   ],
+   "total": 35,
+   "sec": 360,
+   "ad": [
+    "The building has installed a new set of package lockers in the main lobby. When a courier delivers a parcel that fits, the system sends a code to the resident's phone. The code opens only the assigned locker and works for twenty-four hours. Residents should remove the parcel before the code expires, because an uncollected parcel is moved to the manager's office the next morning. Oversized parcels still go to the office immediately, and the manager will leave a paper notice in the resident's mailbox. Please report any damaged packaging to the manager on the same day you pick up the item."
+   ],
+   "title": "Apartment building notice about package lockers"
+  },
+  "3": {
+   "paras": [
+    [
+     "The central branch of the city library will close for two weeks while crews replace the front steps. ",
+     [
+      "Dur",
+      3,
+      ""
+     ],
+     " the ",
+     [
+      "clos",
+      3,
+      ""
+     ],
+     ", patrons can ",
+     [
+      "pi",
+      2,
+      ""
+     ],
+     " up ",
+     [
+      "hol",
+      2,
+      ""
+     ],
+     " at the ",
+     [
+      "si",
+      2,
+      ""
+     ],
+     " entrance on ",
+     [
+      "Map",
+      2,
+      ""
+     ],
+     " Street. A ",
+     [
+      "tempo",
+      4,
+      ""
+     ],
+     " drop box is ",
+     [
+      "avail",
+      4,
+      ""
+     ],
+     " near the ",
+     [
+      "park",
+      3,
+      ""
+     ],
+     " lot for ",
+     [
+      "retu",
+      4,
+      ""
+     ],
+     " items. Library card holders may also use their accounts to renew books online. Staff will host a short open house the week the building reopens so visitors can see the repaired entrance and ask questions about future programs. Notices about the schedule will be posted at both entrances and on the library website each Friday until the work is finished."
+    ]
+   ],
+   "total": 1,
+   "sec": 540
+  },
+  "4": {
+   "qs": [
+    {
+     "no": 11,
+     "title": "Library notice about weekend opening hours",
+     "ad": [
+      "Starting this Saturday, the Whitfield Community Library will begin a trial of weekend opening hours. The building will open at 9:00 a.m. and close at 6:00 p.m. on both Saturday and Sunday for the next eight weeks. During the trial, the reading room on the second floor will remain closed on Sundays because of ongoing shelf repairs. The first-floor help desk will be staffed throughout the weekend, and members can request book returns, new library cards, and inter-branch transfers at that desk. Printed notices with the new hours are available near the entrance, and staff will hand out a short survey card to anyone who visits on Saturday or Sunday. The library hopes that the trial will show whether weekend visits are popular enough to become a permanent part of the schedule."
+     ],
+     "q": "What is being tried at the library?",
+     "opts": [
+      "A longer weekday schedule",
+      "A trial of weekend opening hours",
+      "A new reading room on the second floor",
+      "A change to the help desk location"
+     ]
+    },
+    {
+     "no": 12,
+     "q": "How long will the trial last?",
+     "opts": [
+      "Four weeks",
+      "Six weeks",
+      "Eight weeks",
+      "Twelve weeks"
+     ]
+    },
+    {
+     "no": 13,
+     "q": "On Sundays during the trial, which part of the library will be closed?",
+     "opts": [
+      "The first-floor help desk",
+      "The main entrance",
+      "The reading room on the second floor",
+      "The inter-branch transfer office"
+     ]
+    },
+    {
+     "no": 14,
+     "q": "What will staff hand out to weekend visitors?",
+     "opts": [
+      "A printed notice with new hours",
+      "A new library card",
+      "A short survey card",
+      "A book return form"
+     ]
+    },
+    {
+     "no": 15,
+     "q": "According to the notice, what does the library hope the trial will show?",
+     "opts": [
+      "That the help desk needs more staff",
+      "That the second floor needs more repairs",
+      "That weekend visits are popular enough to become permanent",
+      "That printed notices should be placed near the entrance"
+     ]
+    }
+   ],
+   "total": 15,
+   "sec": 540,
+   "ad": [
+    "Starting this Saturday, the Whitfield Community Library will begin a trial of weekend opening hours. The building will open at 9:00 a.m. and close at 6:00 p.m. on both Saturday and Sunday for the next eight weeks. During the trial, the reading room on the second floor will remain closed on Sundays because of ongoing shelf repairs. The first-floor help desk will be staffed throughout the weekend, and members can request book returns, new library cards, and inter-branch transfers at that desk. Printed notices with the new hours are available near the entrance, and staff will hand out a short survey card to anyone who visits on Saturday or Sunday. The library hopes that the trial will show whether weekend visits are popular enough to become a permanent part of the schedule."
+   ],
+   "title": "Library notice about weekend opening hours"
+  }
+ },
+ "feedback": {
+  "m1": {
+   "types": [
+    {
+     "key": "w",
+     "name": "Complete the Words",
+     "score": 1
+    },
+    {
+     "key": "d",
+     "name": "Read in Daily Life",
+     "score": 2
+    },
+    {
+     "key": "p",
+     "name": "Read an Academic Passage",
+     "score": 2.5
+    }
+   ],
+   "src": {
+    "w": {
+     "label": "Completed paragraph",
+     "rows": [
+      [
+       "Cities around the world are searching for new ways to manage stormwater as climate change intensifies rainfall. ",
+       "Many",
+       1,
+       ""
+      ],
+      [
+       " municipalities are ",
+       "replacing",
+       2,
+       ""
+      ],
+      [
+       " paved ",
+       "surfaces",
+       3,
+       ""
+      ],
+      [
+       " with ",
+       "permeable",
+       4,
+       ""
+      ],
+      [
+       " materials ",
+       "that",
+       5,
+       ""
+      ],
+      [
+       " allow ",
+       "water",
+       6,
+       ""
+      ],
+      [
+       " to ",
+       "seep",
+       7,
+       ""
+      ],
+      [
+       " into the ",
+       "ground",
+       8,
+       ""
+      ],
+      [
+       " rather ",
+       "than",
+       9,
+       ""
+      ],
+      [
+       " running ",
+       "into",
+       10,
+       " drains. Green roofs are another popular option, since the plants and soil absorb heavy rain and slowly release it through evaporation. Local governments often pair these upgrades with public education campaigns so that residents understand how small actions, such as clearing gutters, can prevent flooding during storms. Together, these measures aim to reduce damage to infrastructure while keeping neighborhoods safer for everyone."
+      ],
+      [
+       "\n\nThe passage below introduces the topic that follows. The community ",
+       "centre",
+       11,
+       ""
+      ],
+      [
+       " will host a ",
+       "four-week",
+       12,
+       ""
+      ],
+      [
+       " workshop on urban gardening. Sessions take place every Saturday from 10 a.m. to noon in the main ",
+       "hall",
+       13,
+       ""
+      ],
+      [
+       ". Participants will learn how to prepare small raised beds, choose suitable crops for limited spaces, and ",
+       "manage",
+       14,
+       ""
+      ],
+      [
+       " common pests without harsh chemicals. Materials such as seeds, basic ",
+       "tools",
+       15,
+       ""
+      ],
+      [
+       " and reference handouts will be provided on the first day at no extra cost. Anyone interested in joining may ",
+       "sign",
+       16,
+       ""
+      ],
+      [
+       " up at the front desk before the start of the second ",
+       "week",
+       17,
+       ""
+      ],
+      [
+       ". A brief welcome talk will be held fifteen ",
+       "minutes",
+       18,
+       ""
+      ],
+      [
+       " before the opening session to introduce the instructors and ",
+       "outline",
+       19,
+       ""
+      ],
+      [
+       " the schedule for the ",
+       "workshop",
+       20,
+       ""
+      ]
+     ]
+    },
+    "d": {
+     "label": "Passage",
+     "rows": [
+      [
+       "",
+       "The building has installed a new set of package lockers in the main lobby.",
+       1,
+       ""
+      ],
+      [
+       " When a courier delivers a parcel that fits, the system sends a code to the resident's phone. ",
+       "The code opens only the assigned locker and works for twenty-four hours.",
+       2,
+       ""
+      ],
+      [
+       " Residents should remove the parcel before the code expires, ",
+       "because an uncollected parcel is moved to the manager's office the next morning.",
+       3,
+       ""
+      ],
+      [
+       " Oversized parcels still go to the office immediately, and ",
+       "the manager will leave a paper notice in the resident's mailbox.",
+       4,
+       ""
+      ],
+      [
+       " ",
+       "Please report any damaged packaging to the manager on the same day you pick up the item.",
+       5,
+       ""
+      ]
+     ]
+    },
+    "p": {
+     "label": "Passage",
+     "rows": [
+      [
+       "Seasonal wetlands are shallow depressions that fill with water for only part of the year. ",
+       "In dryland regions, where rainfall is low and unpredictable, these temporary ponds support a distinctive group of plants and animals that have adapted to the alternation between wet and dry phases.",
+       2,
+       ""
+      ],
+      [
+       " ",
+       "The biological communities of seasonal wetlands differ sharply from those of permanent lakes, because the inhabitants must complete their life cycles in the interval between flooding events.",
+       1,
+       ""
+      ],
+      [
+       " ",
+       "Many species respond to the arrival of water by emerging from drought-resistant eggs or by germinating from long-lived seeds, a strategy that allows populations to persist across years when the wetland never fills.",
+       3,
+       ""
+      ],
+      [
+       " The drying phase is equally important. ",
+       "As water levels fall, predators such as fish are excluded, and the remaining pool becomes a refuge for animals that cannot coexist with fish.",
+       4,
+       ""
+      ],
+      [
+       " ",
+       "The wet phase favours rapid growth and reproduction, while the dry phase favours dispersal and survival in resting stages.",
+       5,
+       ""
+      ],
+      [
+       " ",
+       "Because the timing of filling and drying is variable, species in seasonal wetlands often invest in broad tolerance rather than narrow specialisation.",
+       6,
+       ""
+      ],
+      [
+       " ",
+       "Conservation of these habitats depends on maintaining the natural hydrological cycle, including the periods of drying that are often disrupted by human water use.",
+       8,
+       ""
+      ],
+      [
+       " ",
+       "Restoring lost seasonal wetlands also requires reconnecting them to their catchments so that runoff can reach the basin during heavy rains.",
+       9,
+       ""
+      ]
+     ]
+    }
+   },
+   "qs": {
+    "w": [
+     {
+      "n": 1,
+      "ok": false,
+      "q": [
+       "Blank 1 — \"Ma__\"",
+       "第 1 空 — \"Ma__\""
+      ],
+      "mine": "Math",
+      "ans": "Many",
+      "why": [
+       "The submitted letters were “th”. The missing letters are “ny”, completing the word “many”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "你填写的字母是“th”。缺失字母应为“ny”，补全后的单词是“many”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"many\""
+     },
+     {
+      "n": 2,
+      "ok": false,
+      "q": [
+       "Blank 2 — \"repla____\"",
+       "第 2 空 — \"repla____\""
+      ],
+      "mine": "replaced",
+      "ans": "replacing",
+      "why": [
+       "The submitted letters were “ced”. The missing letters are “cing”, completing the word “replacing”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "你填写的字母是“ced”。缺失字母应为“cing”，补全后的单词是“replacing”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"replacing\""
+     },
+     {
+      "n": 3,
+      "ok": false,
+      "q": [
+       "Blank 3 — \"surf____\"",
+       "第 3 空 — \"surf____\""
+      ],
+      "mine": "—",
+      "ans": "surfaces",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “aces”, completing the word “surfaces”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“aces”，补全后的单词是“surfaces”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"surfaces\""
+     },
+     {
+      "n": 4,
+      "ok": false,
+      "q": [
+       "Blank 4 — \"perme____\"",
+       "第 4 空 — \"perme____\""
+      ],
+      "mine": "—",
+      "ans": "permeable",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “able”, completing the word “permeable”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“able”，补全后的单词是“permeable”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"permeable\""
+     },
+     {
+      "n": 5,
+      "ok": false,
+      "q": [
+       "Blank 5 — \"th__\"",
+       "第 5 空 — \"th__\""
+      ],
+      "mine": "—",
+      "ans": "that",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “at”, completing the word “that”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“at”，补全后的单词是“that”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"that\""
+     },
+     {
+      "n": 6,
+      "ok": false,
+      "q": [
+       "Blank 6 — \"wat__\"",
+       "第 6 空 — \"wat__\""
+      ],
+      "mine": "—",
+      "ans": "water",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “er”, completing the word “water”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“er”，补全后的单词是“water”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"water\""
+     },
+     {
+      "n": 7,
+      "ok": false,
+      "q": [
+       "Blank 7 — \"se__\"",
+       "第 7 空 — \"se__\""
+      ],
+      "mine": "—",
+      "ans": "seep",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “ep”, completing the word “seep”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“ep”，补全后的单词是“seep”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"seep\""
+     },
+     {
+      "n": 8,
+      "ok": false,
+      "q": [
+       "Blank 8 — \"gro___\"",
+       "第 8 空 — \"gro___\""
+      ],
+      "mine": "—",
+      "ans": "ground",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “und”, completing the word “ground”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“und”，补全后的单词是“ground”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"ground\""
+     },
+     {
+      "n": 9,
+      "ok": false,
+      "q": [
+       "Blank 9 — \"th__\"",
+       "第 9 空 — \"th__\""
+      ],
+      "mine": "—",
+      "ans": "than",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “an”, completing the word “than”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“an”，补全后的单词是“than”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"than\""
+     },
+     {
+      "n": 10,
+      "ok": false,
+      "q": [
+       "Blank 10 — \"in__\"",
+       "第 10 空 — \"in__\""
+      ],
+      "mine": "—",
+      "ans": "into",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “to”, completing the word “into”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“to”，补全后的单词是“into”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"into\""
+     },
+     {
+      "n": 11,
+      "ok": false,
+      "q": [
+       "Blank 11 — \"cent____\"",
+       "第 11 空 — \"cent____\""
+      ],
+      "mine": "—",
+      "ans": "centre",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “re”, completing the word “centre”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“re”，补全后的单词是“centre”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"centre\""
+     },
+     {
+      "n": 12,
+      "ok": false,
+      "q": [
+       "Blank 12 — \"four-____\"",
+       "第 12 空 — \"four-____\""
+      ],
+      "mine": "—",
+      "ans": "four-week",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “week”, completing the word “four-week”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“week”，补全后的单词是“four-week”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"four-week\""
+     },
+     {
+      "n": 13,
+      "ok": false,
+      "q": [
+       "Blank 13 — \"hal____\"",
+       "第 13 空 — \"hal____\""
+      ],
+      "mine": "—",
+      "ans": "hall",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “l”, completing the word “hall”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“l”，补全后的单词是“hall”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"hall\""
+     },
+     {
+      "n": 14,
+      "ok": false,
+      "q": [
+       "Blank 14 — \"mana____\"",
+       "第 14 空 — \"mana____\""
+      ],
+      "mine": "—",
+      "ans": "manage",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “ge”, completing the word “manage”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“ge”，补全后的单词是“manage”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"manage\""
+     },
+     {
+      "n": 15,
+      "ok": false,
+      "q": [
+       "Blank 15 — \"tool____\"",
+       "第 15 空 — \"tool____\""
+      ],
+      "mine": "—",
+      "ans": "tools",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “s”, completing the word “tools”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“s”，补全后的单词是“tools”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"tools\""
+     },
+     {
+      "n": 16,
+      "ok": false,
+      "q": [
+       "Blank 16 — \"sig____\"",
+       "第 16 空 — \"sig____\""
+      ],
+      "mine": "—",
+      "ans": "sign",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “n”, completing the word “sign”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“n”，补全后的单词是“sign”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"sign\""
+     },
+     {
+      "n": 17,
+      "ok": false,
+      "q": [
+       "Blank 17 — \"wee____\"",
+       "第 17 空 — \"wee____\""
+      ],
+      "mine": "—",
+      "ans": "week",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “k”, completing the word “week”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“k”，补全后的单词是“week”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"week\""
+     },
+     {
+      "n": 18,
+      "ok": false,
+      "q": [
+       "Blank 18 — \"minu____\"",
+       "第 18 空 — \"minu____\""
+      ],
+      "mine": "—",
+      "ans": "minutes",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “tes”, completing the word “minutes”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“tes”，补全后的单词是“minutes”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"minutes\""
+     },
+     {
+      "n": 19,
+      "ok": false,
+      "q": [
+       "Blank 19 — \"outl____\"",
+       "第 19 空 — \"outl____\""
+      ],
+      "mine": "—",
+      "ans": "outline",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “ine”, completing the word “outline”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“ine”，补全后的单词是“outline”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"outline\""
+     },
+     {
+      "n": 20,
+      "ok": false,
+      "q": [
+       "Blank 20 — \"work____\"",
+       "第 20 空 — \"work____\""
+      ],
+      "mine": "—",
+      "ans": "workshop",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “shop”, completing the word “workshop”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“shop”，补全后的单词是“workshop”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"workshop\""
+     }
+    ],
+    "d": [
+     {
+      "n": 1,
+      "ok": false,
+      "q": "According to the notice, where is the new package locker system located?",
+      "mine": "C. In each resident's apartment",
+      "ans": "A. In the main lobby",
+      "why": [
+       "You selected C (“In each resident's apartment”). The accepted answer is A (“In the main lobby”). The source evidence states: “The building has installed a new set of package lockers in the main lobby.”.",
+       "你选择了 C (“In each resident's apartment”)。正确答案是 A (“In the main lobby”)。原文依据是：“The building has installed a new set of package lockers in the main lobby.”。"
+      ],
+      "evi": "\"The building has installed a new set of package lockers in the main lobby.\""
+     },
+     {
+      "n": 2,
+      "ok": false,
+      "q": "How long does a pickup code remain valid?",
+      "mine": "D. Until the next morning",
+      "ans": "B. Twenty-four hours",
+      "why": [
+       "You selected D (“Until the next morning”). The accepted answer is B (“Twenty-four hours”). The source evidence states: “The code opens only the assigned locker and works for twenty-four hours.”.",
+       "你选择了 D (“Until the next morning”)。正确答案是 B (“Twenty-four hours”)。原文依据是：“The code opens only the assigned locker and works for twenty-four hours.”。"
+      ],
+      "evi": "\"The code opens only the assigned locker and works for twenty-four hours.\""
+     },
+     {
+      "n": 3,
+      "ok": true,
+      "q": "What happens to a parcel that is not collected before the code expires?",
+      "mine": "C. It is moved to the manager's office the next morning."
+     },
+     {
+      "n": 4,
+      "ok": false,
+      "q": "Where does the manager leave a paper notice for an oversized parcel?",
+      "mine": "B. Under the resident's door",
+      "ans": "C. In the resident's mailbox",
+      "why": [
+       "You selected B (“Under the resident's door”). The accepted answer is C (“In the resident's mailbox”). The source evidence states: “the manager will leave a paper notice in the resident's mailbox.”.",
+       "你选择了 B (“Under the resident's door”)。正确答案是 C (“In the resident's mailbox”)。原文依据是：“the manager will leave a paper notice in the resident's mailbox.”。"
+      ],
+      "evi": "\"the manager will leave a paper notice in the resident's mailbox.\""
+     },
+     {
+      "n": 5,
+      "ok": false,
+      "q": "When should a resident report a damaged parcel?",
+      "mine": "D. Before opening the parcel",
+      "ans": "C. The same day the item is picked up",
+      "why": [
+       "You selected D (“Before opening the parcel”). The accepted answer is C (“The same day the item is picked up”). The source evidence states: “Please report any damaged packaging to the manager on the same day you pick up the item.”.",
+       "你选择了 D (“Before opening the parcel”)。正确答案是 C (“The same day the item is picked up”)。原文依据是：“Please report any damaged packaging to the manager on the same day you pick up the item.”。"
+      ],
+      "evi": "\"Please report any damaged packaging to the manager on the same day you pick up the item.\""
+     }
+    ],
+    "p": [
+     {
+      "n": 1,
+      "ok": false,
+      "q": "According to the passage, what is one way in which seasonal wetlands in dryland regions differ from permanent lakes?",
+      "mine": "D. They have a larger variety of fish species.",
+      "ans": "B. They support communities that must finish their life cycles between floods.",
+      "why": [
+       "You selected D (“They have a larger variety of fish species.”). The accepted answer is B (“They support communities that must finish their life cycles between floods.”). The source evidence states: “The biological communities of seasonal wetlands differ sharply from those of permanent lakes, because the inhabitants must complete their life cycles in the interval between flooding events.”.",
+       "你选择了 D (“They have a larger variety of fish species.”)。正确答案是 B (“They support communities that must finish their life cycles between floods.”)。原文依据是：“The biological communities of seasonal wetlands differ sharply from those of permanent lakes, because the inhabitants must complete their life cycles in the interval between flooding events.”。"
+      ],
+      "evi": "\"The biological communities of seasonal wetlands differ sharply from those of permanent lakes, because the inhabitants must complete their life cycles in the interval between flooding events.\""
+     },
+     {
+      "n": 2,
+      "ok": true,
+      "q": "The word \"distinctive\" in paragraph 1 is closest in meaning to",
+      "mine": "C. characteristic"
+     },
+     {
+      "n": 3,
+      "ok": false,
+      "q": "What does the passage say about many species in seasonal wetlands when water arrives?",
+      "mine": "C. They become dormant underground.",
+      "ans": "B. They emerge from eggs or germinate from seeds.",
+      "why": [
+       "You selected C (“They become dormant underground.”). The accepted answer is B (“They emerge from eggs or germinate from seeds.”). The source evidence states: “Many species respond to the arrival of water by emerging from drought-resistant eggs or by germinating from long-lived seeds, a strategy that allows populations to persist across years when the wetland never fills.”.",
+       "你选择了 C (“They become dormant underground.”)。正确答案是 B (“They emerge from eggs or germinate from seeds.”)。原文依据是：“Many species respond to the arrival of water by emerging from drought-resistant eggs or by germinating from long-lived seeds, a strategy that allows populations to persist across years when the wetland never fills.”。"
+      ],
+      "evi": "\"Many species respond to the arrival of water by emerging from drought-resistant eggs or by germinating from long-lived seeds, a strategy that allows populations to persist across years when the wetland never fills.\""
+     },
+     {
+      "n": 4,
+      "ok": false,
+      "q": "Why are predators such as fish excluded from seasonal wetlands as water levels fall?",
+      "mine": "D. They are caught by birds during the dry season.",
+      "ans": "C. The remaining pool becomes a refuge for animals that cannot coexist with fish.",
+      "why": [
+       "You selected D (“They are caught by birds during the dry season.”). The accepted answer is C (“The remaining pool becomes a refuge for animals that cannot coexist with fish.”). The source evidence states: “As water levels fall, predators such as fish are excluded, and the remaining pool becomes a refuge for animals that cannot coexist with fish.”.",
+       "你选择了 D (“They are caught by birds during the dry season.”)。正确答案是 C (“The remaining pool becomes a refuge for animals that cannot coexist with fish.”)。原文依据是：“As water levels fall, predators such as fish are excluded, and the remaining pool becomes a refuge for animals that cannot coexist with fish.”。"
+      ],
+      "evi": "\"As water levels fall, predators such as fish are excluded, and the remaining pool becomes a refuge for animals that cannot coexist with fish.\""
+     },
+     {
+      "n": 5,
+      "ok": false,
+      "q": "According to the passage, what does the wet phase of a seasonal wetland favour?",
+      "mine": "C. Drought-resistant seed formation",
+      "ans": "B. Rapid growth and reproduction",
+      "why": [
+       "You selected C (“Drought-resistant seed formation”). The accepted answer is B (“Rapid growth and reproduction”). The source evidence states: “The wet phase favours rapid growth and reproduction, while the dry phase favours dispersal and survival in resting stages.”.",
+       "你选择了 C (“Drought-resistant seed formation”)。正确答案是 B (“Rapid growth and reproduction”)。原文依据是：“The wet phase favours rapid growth and reproduction, while the dry phase favours dispersal and survival in resting stages.”。"
+      ],
+      "evi": "\"The wet phase favours rapid growth and reproduction, while the dry phase favours dispersal and survival in resting stages.\""
+     },
+     {
+      "n": 6,
+      "ok": true,
+      "q": "What can be inferred about species in seasonal wetlands?",
+      "mine": "B. They tend to develop broad tolerance because timing is variable."
+     },
+     {
+      "n": 7,
+      "ok": false,
+      "q": "The word \"narrow\" in the phrase \"narrow specialisation\" is closest in meaning to",
+      "mine": "C. tight",
+      "ans": "A. limited",
+      "why": [
+       "You selected C (“tight”). The accepted answer is A (“limited”). The source evidence states: “Because the timing of filling and drying is variable, species in seasonal wetlands often invest in broad tolerance rather than narrow specialisation.”.",
+       "你选择了 C (“tight”)。正确答案是 A (“limited”)。原文依据是：“Because the timing of filling and drying is variable, species in seasonal wetlands often invest in broad tolerance rather than narrow specialisation.”。"
+      ],
+      "evi": "\"Because the timing of filling and drying is variable, species in seasonal wetlands often invest in broad tolerance rather than narrow specialisation.\""
+     },
+     {
+      "n": 8,
+      "ok": false,
+      "q": "What is mentioned as a threat to the conservation of seasonal wetlands?",
+      "mine": "D. Conversion of wetlands into permanent reservoirs",
+      "ans": "B. Disruption of the natural hydrological cycle by human water use",
+      "why": [
+       "You selected D (“Conversion of wetlands into permanent reservoirs”). The accepted answer is B (“Disruption of the natural hydrological cycle by human water use”). The source evidence states: “Conservation of these habitats depends on maintaining the natural hydrological cycle, including the periods of drying that are often disrupted by human water use.”.",
+       "你选择了 D (“Conversion of wetlands into permanent reservoirs”)。正确答案是 B (“Disruption of the natural hydrological cycle by human water use”)。原文依据是：“Conservation of these habitats depends on maintaining the natural hydrological cycle, including the periods of drying that are often disrupted by human water use.”。"
+      ],
+      "evi": "\"Conservation of these habitats depends on maintaining the natural hydrological cycle, including the periods of drying that are often disrupted by human water use.\""
+     },
+     {
+      "n": 9,
+      "ok": true,
+      "q": "According to the passage, what is required for the restoration of lost seasonal wetlands?",
+      "mine": "C. Reconnecting them to their catchments so runoff can reach the basin"
+     },
+     {
+      "n": 10,
+      "ok": false,
+      "q": "Which of the following best expresses the essential information in the highlighted sentence: \"The drying phase is equally important\"?",
+      "mine": "—",
+      "ans": "B. The period when water disappears is as significant as the period when water is present.",
+      "why": [
+       "No response was submitted for this question. The accepted answer is B (“The period when water disappears is as significant as the period when water is present.”). The source evidence states: “The drying phase is equally important. As water levels fall, predators such as fish are excluded, and the remaining pool becomes a refuge for animals that cannot coexist with fish.”.",
+       "本题未作答。正确答案是 B (“The period when water disappears is as significant as the period when water is present.”)。原文依据是：“The drying phase is equally important. As water levels fall, predators such as fish are excluded, and the remaining pool becomes a refuge for animals that cannot coexist with fish.”。"
+      ],
+      "evi": "\"The drying phase is equally important. As water levels fall, predators such as fish are excluded, and the remaining pool becomes a refuge for animals that cannot coexist with fish.\""
+     }
+    ]
+   },
+   "weak": [],
+   "score": "1.5"
+  },
+  "m2": {
+   "types": [
+    {
+     "key": "w",
+     "name": "Complete the Words"
+    },
+    {
+     "key": "d",
+     "name": "Read in Daily Life"
+    }
+   ],
+   "src": {
+    "w": {
+     "label": "Completed paragraph",
+     "rows": [
+      [
+       "The central branch of the city library will close for two weeks while crews replace the front steps. ",
+       "During",
+       1,
+       ""
+      ],
+      [
+       " the ",
+       "closure",
+       2,
+       ""
+      ],
+      [
+       ", patrons can ",
+       "pick",
+       3,
+       ""
+      ],
+      [
+       " up ",
+       "holds",
+       4,
+       ""
+      ],
+      [
+       " at the ",
+       "side",
+       5,
+       ""
+      ],
+      [
+       " entrance on ",
+       "Maple",
+       6,
+       ""
+      ],
+      [
+       " Street. A ",
+       "temporary",
+       7,
+       ""
+      ],
+      [
+       " drop box is ",
+       "available",
+       8,
+       ""
+      ],
+      [
+       " near the ",
+       "parking",
+       9,
+       ""
+      ],
+      [
+       " lot for ",
+       "returned",
+       10,
+       " items. Library card holders may also use their accounts to renew books online. Staff will host a short open house the week the building reopens so visitors can see the repaired entrance and ask questions about future programs. Notices about the schedule will be posted at both entrances and on the library website each Friday until the work is finished."
+      ]
+     ]
+    },
+    "d": {
+     "label": "Passage",
+     "rows": [
+      [
+       "",
+       "Starting this Saturday, the Whitfield Community Library will begin a trial of weekend opening hours.",
+       1,
+       ""
+      ],
+      [
+       " ",
+       "The building will open at 9:00 a.m. and close at 6:00 p.m. on both Saturday and Sunday for the next eight weeks.",
+       2,
+       ""
+      ],
+      [
+       " ",
+       "During the trial, the reading room on the second floor will remain closed on Sundays because of ongoing shelf repairs.",
+       3,
+       ""
+      ],
+      [
+       " The first-floor help desk will be staffed throughout the weekend, and members can request book returns, new library cards, and inter-branch transfers at that desk. Printed notices with the new hours are available near the entrance, and ",
+       "staff will hand out a short survey card to anyone who visits on Saturday or Sunday.",
+       4,
+       ""
+      ],
+      [
+       " ",
+       "The library hopes that the trial will show whether weekend visits are popular enough to become a permanent part of the schedule.",
+       5,
+       ""
+      ]
+     ]
+    }
+   },
+   "qs": {
+    "w": [
+     {
+      "n": 1,
+      "ok": true,
+      "q": [
+       "Blank 1 — \"Dur___\"",
+       "第 1 空 — \"Dur___\""
+      ],
+      "mine": "During"
+     },
+     {
+      "n": 2,
+      "ok": true,
+      "q": [
+       "Blank 2 — \"clos___\"",
+       "第 2 空 — \"clos___\""
+      ],
+      "mine": "closure"
+     },
+     {
+      "n": 3,
+      "ok": true,
+      "q": [
+       "Blank 3 — \"pi__\"",
+       "第 3 空 — \"pi__\""
+      ],
+      "mine": "pick"
+     },
+     {
+      "n": 4,
+      "ok": false,
+      "q": [
+       "Blank 4 — \"hol__\"",
+       "第 4 空 — \"hol__\""
+      ],
+      "mine": "—",
+      "ans": "holds",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “ds”, completing the word “holds”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“ds”，补全后的单词是“holds”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"holds\""
+     },
+     {
+      "n": 5,
+      "ok": false,
+      "q": [
+       "Blank 5 — \"si__\"",
+       "第 5 空 — \"si__\""
+      ],
+      "mine": "—",
+      "ans": "side",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “de”, completing the word “side”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“de”，补全后的单词是“side”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"side\""
+     },
+     {
+      "n": 6,
+      "ok": false,
+      "q": [
+       "Blank 6 — \"Map__\"",
+       "第 6 空 — \"Map__\""
+      ],
+      "mine": "—",
+      "ans": "Maple",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “le”, completing the word “maple”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“le”，补全后的单词是“maple”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"maple\""
+     },
+     {
+      "n": 7,
+      "ok": false,
+      "q": [
+       "Blank 7 — \"tempo____\"",
+       "第 7 空 — \"tempo____\""
+      ],
+      "mine": "—",
+      "ans": "temporary",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “rary”, completing the word “temporary”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“rary”，补全后的单词是“temporary”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"temporary\""
+     },
+     {
+      "n": 8,
+      "ok": true,
+      "q": [
+       "Blank 8 — \"avail____\"",
+       "第 8 空 — \"avail____\""
+      ],
+      "mine": "available"
+     },
+     {
+      "n": 9,
+      "ok": false,
+      "q": [
+       "Blank 9 — \"park___\"",
+       "第 9 空 — \"park___\""
+      ],
+      "mine": "—",
+      "ans": "parking",
+      "why": [
+       "No response was submitted for this blank. The missing letters are “ing”, completing the word “parking”. Read the completed word in its surrounding sentence to confirm the spelling and meaning.",
+       "本题未作答。缺失字母应为“ing”，补全后的单词是“parking”。请把完整单词放回原句，结合拼写和上下文核对。"
+      ],
+      "evi": "\"parking\""
+     },
+     {
+      "n": 10,
+      "ok": true,
+      "q": [
+       "Blank 10 — \"retu____\"",
+       "第 10 空 — \"retu____\""
+      ],
+      "mine": "returned"
+     }
+    ],
+    "d": [
+     {
+      "n": 1,
+      "ok": true,
+      "q": "What is being tried at the library?",
+      "mine": "B. A trial of weekend opening hours"
+     },
+     {
+      "n": 2,
+      "ok": true,
+      "q": "How long will the trial last?",
+      "mine": "C. Eight weeks"
+     },
+     {
+      "n": 3,
+      "ok": true,
+      "q": "On Sundays during the trial, which part of the library will be closed?",
+      "mine": "C. The reading room on the second floor"
+     },
+     {
+      "n": 4,
+      "ok": true,
+      "q": "What will staff hand out to weekend visitors?",
+      "mine": "C. A short survey card"
+     },
+     {
+      "n": 5,
+      "ok": false,
+      "q": "According to the notice, what does the library hope the trial will show?",
+      "mine": "—",
+      "ans": "C. That weekend visits are popular enough to become permanent",
+      "why": [
+       "No response was submitted for this question. The accepted answer is C (“That weekend visits are popular enough to become permanent”). The source evidence states: “The library hopes that the trial will show whether weekend visits are popular enough to become a permanent part of the schedule.”.",
+       "本题未作答。正确答案是 C (“That weekend visits are popular enough to become permanent”)。原文依据是：“The library hopes that the trial will show whether weekend visits are popular enough to become a permanent part of the schedule.”。"
+      ],
+      "evi": "\"The library hopes that the trial will show whether weekend visits are popular enough to become a permanent part of the schedule.\""
+     }
+    ]
+   },
+   "weak": []
+  },
+  "result": {
+   "band": "1.5",
+   "branch": "Lower"
+  }
+ }
+}

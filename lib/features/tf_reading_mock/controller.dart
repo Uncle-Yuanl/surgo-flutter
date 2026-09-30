@@ -4,7 +4,9 @@ import '../../app/app_state.dart';
 import '../../app/routes.dart';
 class TfReadingMockData {
  static Map<String,dynamic>? cache;
- static Future<Map<String,dynamic>> load()async=>cache??=jsonDecode(await rootBundle.loadString('assets/data/tf_reading_mock.json')) as Map<String,dynamic>;
+ // 不用 loadString：文件到 50 KB 它就丢给 isolate 解码，路由审计（假时钟）等不到结果，页面一直
+ // 转圈。原型数据 30 KB 没事，演示用真实数据（一整场模考 + 逐题讲解）有 53 KB。
+ static Future<Map<String,dynamic>> load()async=>cache??=jsonDecode(utf8.decode(Uint8List.sublistView(await rootBundle.load('assets/data/tf_reading_mock.json')))) as Map<String,dynamic>;
 }
 class TfReadingMockController {
  TfReadingMockController(this.app,this.data,this.part){index=app.session['$prefix${words?'Para':'Idx'}'] as int? ?? 0;
