@@ -1,0 +1,804 @@
+{
+ "respond": {
+  "total": 8,
+  "seconds": 20,
+  "segments": [
+   {
+    "sec": 4,
+    "q": "Choose the most appropriate response.",
+    "opts": [
+     [
+      "A",
+      "Sure, I can lend them to you right after class."
+     ],
+     [
+      "B",
+      "Biology is my favorite subject this semester."
+     ],
+     [
+      "C",
+      "The lecture hall is on the third floor."
+     ],
+     [
+      "D",
+      "I usually study in the library on weekends."
+     ]
+    ]
+   },
+   {
+    "sec": 4,
+    "q": "Choose the most appropriate response.",
+    "opts": [
+     [
+      "A",
+      "The cafeteria is closed for renovations."
+     ],
+     [
+      "B",
+      "It leaves from the main quad in fifteen minutes."
+     ],
+     [
+      "C",
+      "My chemistry class is also in that building."
+     ],
+     [
+      "D",
+      "Shuttles are usually crowded around lunchtime."
+     ]
+    ]
+   },
+   {
+    "sec": 5,
+    "q": "Choose the most appropriate response.",
+    "opts": [
+     [
+      "A",
+      "Psychology textbooks are quite expensive this term."
+     ],
+     [
+      "B",
+      "Professor Hayes publishes most of her articles in journals."
+     ],
+     [
+      "C",
+      "The site has been down since this morning."
+     ],
+     [
+      "D",
+      "We should probably skip the reading for today."
+     ]
+    ]
+   },
+   {
+    "sec": 4,
+    "q": "Choose the most appropriate response.",
+    "opts": [
+     [
+      "A",
+      "I haven't started reviewing the chapters yet."
+     ],
+     [
+      "B",
+      "The midterm is scheduled for next Friday afternoon."
+     ],
+     [
+      "C",
+      "I took economics last year and did fairly well."
+     ],
+     [
+      "D",
+      "That sounds helpful, thanks for thinking of me."
+     ]
+    ]
+   },
+   {
+    "sec": 4,
+    "q": "Choose the most appropriate response.",
+    "opts": [
+     [
+      "A",
+      "I might be able to get you an add slip from the department."
+     ],
+     [
+      "B",
+      "The art gallery downtown has a new exhibition."
+     ],
+     [
+      "C",
+      "Most seminars meet twice a week in the evening."
+     ],
+     [
+      "D",
+      "Registration usually opens at the start of the term."
+     ]
+    ]
+   },
+   {
+    "sec": 3,
+    "q": "Choose the most appropriate response.",
+    "opts": [
+     [
+      "A",
+      "It's just past the student center, on your left."
+     ],
+     [
+      "B",
+      "The library has a small selection of textbooks."
+     ],
+     [
+      "C",
+      "I usually buy my supplies online instead."
+     ],
+     [
+      "D",
+      "Bookstores tend to be busiest in the morning."
+     ]
+    ]
+   },
+   {
+    "sec": 4,
+    "q": "Choose the most appropriate response.",
+    "opts": [
+     [
+      "A",
+      "Climate research requires a lot of field data."
+     ],
+     [
+      "B",
+      "The lecture hall will probably be packed."
+     ],
+     [
+      "C",
+      "I wouldn't miss it; the speaker is excellent."
+     ],
+     [
+      "D",
+      "I have a part-time job on weekday evenings."
+     ]
+    ]
+   },
+   {
+    "sec": 5,
+    "q": "Choose the most appropriate response.",
+    "opts": [
+     [
+      "A",
+      "I think I left my paper in the cafeteria."
+     ],
+     [
+      "B",
+      "It's a really long article, isn't it?"
+     ],
+     [
+      "C",
+      "Discussions usually last about an hour."
+     ],
+     [
+      "D",
+      "I can forward you the PDF once I'm back in my dorm."
+     ]
+    ]
+   }
+  ],
+  "weak": [
+   {
+    "tags": [
+     "听力",
+     [
+      "Task fulfilment",
+      "任务完成度"
+     ]
+    ],
+    "q": [
+     "Q4, Q5, Q7, Q8 · Prompt interpretation → Speech act misidentified",
+     "第 4、5、7、8 题 · 题目理解 → 误判言语行为"
+    ],
+    "a": [
+     "The chosen reply is grammatical but responds to a past-experience topic instead of the invitation, showing the question was misread as small talk rather than an offer.",
+     "所选回应语法通顺，但回答了过往经历的话题，没有回应邀请，说明原句被误读为寒暄而非邀请提议。"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "n": 1,
+    "ok": true,
+    "dur": "00:04",
+    "q": "\"Would you mind if I borrowed your notes from yesterday's biology lecture?\"",
+    "mine": "A. Sure, I can lend them to you right after class."
+   },
+   {
+    "n": 2,
+    "ok": true,
+    "dur": "00:04",
+    "q": "\"Could you tell me when the next shuttle to the science building leaves?\"",
+    "mine": "B. It leaves from the main quad in fifteen minutes."
+   },
+   {
+    "n": 3,
+    "ok": true,
+    "dur": "00:05",
+    "q": "\"I'm having trouble accessing the online reading list for our psychology course.\"",
+    "mine": "C. The site has been down since this morning."
+   },
+   {
+    "n": 4,
+    "ok": false,
+    "dur": "00:04",
+    "q": "\"Would you like to join our study group for the economics midterm?\"",
+    "mine": "C. I took economics last year and did fairly well.",
+    "ans": "D. That sounds helpful, thanks for thinking of me.",
+    "why": [
+     "The chosen reply is grammatical but responds to a past-experience topic instead of the invitation, showing the question was misread as small talk rather than an offer.",
+     "所选回应语法通顺，但回答了过往经历的话题，没有回应邀请，说明原句被误读为寒暄而非邀请提议。"
+    ],
+    "evi": "\"Would you like to join our study group for the economics midterm?\""
+   },
+   {
+    "n": 5,
+    "ok": false,
+    "dur": "00:04",
+    "q": "\"I missed the deadline to register for the art history seminar.\"",
+    "mine": "D. Registration usually opens at the start of the term.",
+    "ans": "A. I might be able to get you an add slip from the department.",
+    "why": [
+     "The learner treated the speaker's statement about missing a registration deadline as a request that could be answered with general schedule information, rather than recognising it as a problem needing an offer of help such as an add slip.",
+     "学习者把说话者关于错过注册截止日期的陈述当作可以用一般时间安排信息回答的请求，而没有把它理解为需要提供加课单等帮助的问题。"
+    ],
+    "evi": "\"I missed the deadline to register for the art history seminar.\""
+   },
+   {
+    "n": 6,
+    "ok": true,
+    "dur": "00:03",
+    "q": "\"Could you point me toward the campus bookstore?\"",
+    "mine": "A. It's just past the student center, on your left."
+   },
+   {
+    "n": 7,
+    "ok": false,
+    "dur": "00:04",
+    "q": "\"Are you planning to attend the guest lecture on climate research tonight?\"",
+    "mine": "B. The lecture hall will probably be packed.",
+    "ans": "C. I wouldn't miss it; the speaker is excellent.",
+    "why": [
+     "The chosen reply comments on crowd size rather than responding to a social invitation, so the planning question's communicative function was misread.",
+     "所选回应在评论人数规模，而不是对社交邀请作出回应，说明未正确识别这个计划性提问的交际功能。"
+    ],
+    "evi": "\"Are you planning to attend the guest lecture on climate research tonight?\""
+   },
+   {
+    "n": 8,
+    "ok": false,
+    "dur": "00:05",
+    "q": "\"I can't find the article Professor Thompson assigned for tomorrow's discussion.\"",
+    "mine": "B. It's a really long article, isn't it?",
+    "ans": "D. I can forward you the PDF once I'm back in my dorm.",
+    "why": [
+     "The learner treated the speaker's statement about a missing article as an opening for a tag question, rather than recognising it as a request for help, so the response did not address the need for the article.",
+     "学习者把说话者关于找不到文章的话当作可以接话的话题，而没有识别这是一个求助，因此回应没有满足对方对文章的需求。"
+    ],
+    "evi": "\"I can't find the article Professor Thompson assigned for tomorrow's discussion.\""
+   }
+  ],
+  "source": [],
+  "lead": "",
+  "score": "3.5",
+  "description": [
+   "4 of 8 correct",
+   "答对 4 / 8 题"
+  ],
+  "prefix": "tfDr"
+ },
+ "convo": {
+  "total": 2,
+  "seconds": 20,
+  "segments": [
+   {
+    "sec": 65,
+    "aud": 0,
+    "lead": "Two students, Emma and Jake, discuss finishing a chemistry lab write-up before the deadline and making plans to attend a professor's office hours.",
+    "q": "What is the main reason Jake has not finished the chemistry lab write-up?",
+    "opts": [
+     [
+      "A",
+      "His calculator stopped working."
+     ],
+     [
+      "B",
+      "He missed the previous lecture."
+     ],
+     [
+      "C",
+      "He could not find a reference."
+     ],
+     [
+      "D",
+      "The instructions were unclear."
+     ]
+    ]
+   },
+   {
+    "sec": 65,
+    "aud": 0,
+    "q": "What do Emma and Jake plan to do after working on the write-up?",
+    "opts": [
+     [
+      "A",
+      "Attend Professor Alvarez's office hours the next day."
+     ],
+     [
+      "B",
+      "Meet at the library to finish the assignment."
+     ],
+     [
+      "C",
+      "Submit the report to the teaching assistant."
+     ],
+     [
+      "D",
+      "Borrow another calculator from the library."
+     ]
+    ]
+   }
+  ],
+  "weak": [
+   {
+    "tags": [
+     "听力",
+     [
+      "Reasoning and development",
+      "推理与展开"
+     ]
+    ],
+    "q": [
+     "Q1 · Critical reasoning → Plausible response unsupported",
+     "第 1 题 · 批判性推理 → 合理回应缺乏录音支持"
+    ],
+    "a": [
+     "The learner chose a plausible but unsupported reason (missing the lecture) instead of the audio-supported reason that the calculator stopped working.",
+     "学习者选择了一个看似合理但录音未支持的理由（缺课），而不是录音中支持的计算器没电这一原因。"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "n": 1,
+    "ok": false,
+    "dur": "01:05",
+    "q": "What is the main reason Jake has not finished the chemistry lab write-up?",
+    "mine": "B. He missed the previous lecture.",
+    "ans": "A. His calculator stopped working.",
+    "why": [
+     "The learner chose a plausible but unsupported reason (missing the lecture) instead of the audio-supported reason that the calculator stopped working.",
+     "学习者选择了一个看似合理但录音未支持的理由（缺课），而不是录音中支持的计算器没电这一原因。"
+    ],
+    "evi": "\"I just need to double-check the data from part two, but my calculator died.\""
+   },
+   {
+    "n": 2,
+    "ok": true,
+    "dur": "01:05",
+    "q": "What do Emma and Jake plan to do after working on the write-up?",
+    "mine": "B. Meet at the library to finish the assignment."
+   }
+  ],
+  "source": [
+   [
+    "Emma: Hey Jake, are you almost done with the chemistry lab write-up? It's due in an hour.\nJake: Almost. ",
+    "I just need to double-check the data from part two, but my calculator died.",
+    1,
+    ""
+   ],
+   [
+    "\nEmma: That's annoying. Do you want to borrow my spare one? It's in my backpack.\nJake: Actually, that would be great. Also, I can't remember whether Professor Alvarez said the conclusion needs one paragraph or two.\nEmma: She mentioned in the lecture that one paragraph is enough, but we should reference the hypothesis clearly.\nJake: Okay, that makes it simpler. By the way, are you planning to attend her office hours tomorrow?\nEmma: I was thinking about it. I want to ask her about the optional reading for next week.\nJake: Good idea. I'll probably go too, since I missed last week's discussion.\nEmma: ",
+    "Let's meet at the library later and finish the write-up together.",
+    2,
+    ""
+   ],
+   [
+    "\nJake: Sounds perfect. I owe you one for lending the calculator."
+   ]
+  ],
+  "lead": "Listen to a conversation.",
+  "score": "3.5",
+  "description": [
+   "1 of 2 correct",
+   "答对 1 / 2 题"
+  ],
+  "prefix": "tfDc"
+ },
+ "announce": {
+  "total": 3,
+  "seconds": 20,
+  "segments": [
+   {
+    "sec": 61,
+    "aud": 0,
+    "lead": "A short campus announcement from the university library describing upcoming changes to weekend hours, access, and study room policies.",
+    "q": "What change to the main library building's weekend schedule is being announced?",
+    "opts": [
+     [
+      "A",
+      "It will open one hour earlier and close at midnight on both weekend days."
+     ],
+     [
+      "B",
+      "It will open one hour later and close at ten p.m. on both weekend days."
+     ],
+     [
+      "C",
+      "It will open at ten a.m. and close at midnight only on Sundays."
+     ],
+     [
+      "D",
+      "It will remain open around the clock starting this Saturday."
+     ]
+    ]
+   },
+   {
+    "sec": 61,
+    "aud": 0,
+    "q": "Why is the entrance to the twenty-four hour study wing being moved?",
+    "opts": [
+     [
+      "A",
+      "Because a new café is being built on the west side of the building."
+     ],
+     [
+      "B",
+      "Because the front staircase is undergoing routine maintenance."
+     ],
+     [
+      "C",
+      "Because the wing is being expanded to include additional study rooms."
+     ],
+     [
+      "D",
+      "Because weekend ID checks are being discontinued."
+     ]
+    ]
+   },
+   {
+    "sec": 61,
+    "aud": 0,
+    "q": "What is new about reserving group study rooms on the second floor?",
+    "opts": [
+     [
+      "A",
+      "They can only be reserved in person on the day of use."
+     ],
+     [
+      "B",
+      "They are available exclusively to graduate students during peak hours."
+     ],
+     [
+      "C",
+      "They can be reserved online up to seventy-two hours in advance, with some held for walk-ins."
+     ],
+     [
+      "D",
+      "They are being closed for renovation for the rest of the semester."
+     ]
+    ]
+   }
+  ],
+  "weak": [
+   {
+    "tags": [
+     "听力",
+     [
+      "Reasoning and development",
+      "推理与展开"
+     ]
+    ],
+    "q": [
+     "Q1, Q3 · Critical reasoning → First-mention distractor",
+     "第 1、3 题 · 批判性推理 → 首个提及项干扰"
+    ],
+    "a": [
+     "The transcript gives midnight as the closing time on both weekend days, yet the learner recorded ten p.m., showing that the answer was fixed before the full proposition was heard.",
+     "转写说周末两天的闭馆时间是午夜，但学习者记成了晚上十点，说明在完整命题说完之前就已确定答案。"
+    ]
+   },
+   {
+    "tags": [
+     "听力",
+     [
+      "Reasoning and development",
+      "推理与展开"
+     ]
+    ],
+    "q": [
+     "Q1, Q2 · Critical reasoning → Plausible response unsupported",
+     "第 1、2 题 · 批判性推理 → 合理回应缺乏录音支持"
+    ],
+    "a": [
+     "The transcript states the library will open one hour earlier, but the learner wrote that it will open one hour later, indicating the answer was shaped by expectation rather than by what was actually said.",
+     "转写说图书馆将提前一小时开门，但学习者写的是推迟一小时开门，说明答案来自预期，而不是录音内容。"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "n": 1,
+    "ok": false,
+    "dur": "01:01",
+    "q": "What change to the main library building's weekend schedule is being announced?",
+    "mine": "B. It will open one hour later and close at ten p.m. on both weekend days.",
+    "ans": "A. It will open one hour earlier and close at midnight on both weekend days.",
+    "why": [
+     "The transcript gives midnight as the closing time on both weekend days, yet the learner recorded ten p.m., showing that the answer was fixed before the full proposition was heard.",
+     "转写说周末两天的闭馆时间是午夜，但学习者记成了晚上十点，说明在完整命题说完之前就已确定答案。"
+    ],
+    "evi": "\"the main library building will open at nine a.m. instead of ten, and will remain open until midnight on both Saturday and Sunday.\""
+   },
+   {
+    "n": 2,
+    "ok": false,
+    "dur": "01:01",
+    "q": "Why is the entrance to the twenty-four hour study wing being moved?",
+    "mine": "C. Because the wing is being expanded to include additional study rooms.",
+    "ans": "B. Because the front staircase is undergoing routine maintenance.",
+    "why": [
+     "The learner selected a plausible but unsupported reason (expansion) rather than the stated reason of routine maintenance, indicating the answer was based on expectation instead of the recording.",
+     "学习者选择了一个看似合理但录音未支持的理由（扩建），而不是录音中说明的例行维护，表明作答依据的是预期而非听到的内容。"
+    ],
+    "evi": "\"the entrance to that wing will be relocated to the east side of the building while the front staircase undergoes routine maintenance.\""
+   },
+   {
+    "n": 3,
+    "ok": false,
+    "dur": "01:01",
+    "q": "What is new about reserving group study rooms on the second floor?",
+    "mine": "A. They can only be reserved in person on the day of use.",
+    "ans": "C. They can be reserved online up to seventy-two hours in advance, with some held for walk-ins.",
+    "why": [
+     "The learner answered as if the announcement introduced an in-person-only restriction, missing that online reservation up to seventy-two hours in advance is the new policy.",
+     "学习者的回答把公告理解为只能现场预约的新规定，未能识别提前七十二小时在线预约这一新政策。"
+    ],
+    "evi": "\"Group study rooms on the second floor may now be reserved online up to seventy-two hours in advance, and a small number of rooms will be held for walk-in use during peak evening hours.\""
+   }
+  ],
+  "source": [
+   [
+    "Good morning, everyone. This is a brief update from the university library regarding changes to our weekend access policy. Beginning this Saturday, ",
+    "the main library building will open at nine a.m. instead of ten, and will remain open until midnight on both Saturday and Sunday.",
+    1,
+    ""
+   ],
+   [
+    " The twenty-four hour study wing on the third floor will continue to operate around the clock, but ",
+    "the entrance to that wing will be relocated to the east side of the building while the front staircase undergoes routine maintenance.",
+    2,
+    ""
+   ],
+   [
+    " Students using the study wing after eleven p.m. will be required to show a current university ID at the relocated entrance. ",
+    "Group study rooms on the second floor may now be reserved online up to seventy-two hours in advance, and a small number of rooms will be held for walk-in use during peak evening hours.",
+    3,
+    ""
+   ],
+   [
+    " We are also reminding everyone that the quiet conversation policy remains in effect throughout all reading areas, and food is still restricted to the first floor café. Thank you for your cooperation, and have a productive weekend."
+   ]
+  ],
+  "lead": "Listen to an announcement in a university classroom.",
+  "score": "1.0",
+  "description": [
+   "0 of 3 correct",
+   "答对 0 / 3 题"
+  ],
+  "prefix": "tfAn"
+ },
+ "lecture": {
+  "total": 4,
+  "seconds": 30,
+  "segments": [
+   {
+    "sec": 76,
+    "aud": 0,
+    "lead": "Brief excerpt from a university lecture on archaeology, focusing on recent reassessments of early Mesopotamian urbanization.",
+    "q": "According to the speaker, what long-held assumption about early Mesopotamian cities is being questioned?",
+    "opts": [
+     [
+      "A",
+      "That cities were governed by elected councils."
+     ],
+     [
+      "B",
+      "That large urban centers appeared suddenly around 3500 BCE, driven mainly by writing and centralized administration."
+     ],
+     [
+      "C",
+      "That Mesopotamia had no contact with neighboring regions."
+     ],
+     [
+      "D",
+      "That irrigation systems were introduced after writing."
+     ]
+    ]
+   },
+   {
+    "sec": 76,
+    "aud": 0,
+    "q": "What does the speaker say recent survey work in the northern alluvial plain has revealed?",
+    "opts": [
+     [
+      "A",
+      "That writing originated in the north."
+     ],
+     [
+      "B",
+      "That communities coordinated irrigation, storage, and craft specialization across considerable distances before monumental architecture emerged."
+     ],
+     [
+      "C",
+      "That no settlements existed before 3500 BCE."
+     ],
+     [
+      "D",
+      "That agriculture failed in the northern plain."
+     ]
+    ]
+   },
+   {
+    "sec": 76,
+    "aud": 0,
+    "q": "Why does the speaker mention the clay sealing practices found at a previously dismissed hamlet?",
+    "opts": [
+     [
+      "A",
+      "To argue that administrative behavior existed in places once thought marginal, before the rise of palace economies."
+     ],
+     [
+      "B",
+      "To show that writing began in the north."
+     ],
+     [
+      "C",
+      "To demonstrate that seals were used only by elites."
+     ],
+     [
+      "D",
+      "To claim that all early sites were equal in size."
+     ]
+    ]
+   },
+   {
+    "sec": 76,
+    "aud": 0,
+    "q": "What is the speaker's main point about the standard textbook story?",
+    "opts": [
+     [
+      "A",
+      "It accurately describes the urban revolution."
+     ],
+     [
+      "B",
+      "It focuses too heavily on climate data."
+     ],
+     [
+      "C",
+      "It likely underestimates the organization that existed before the first cities appeared."
+     ],
+     [
+      "D",
+      "It ignores the role of trade with Egypt."
+     ]
+    ]
+   }
+  ],
+  "weak": [
+   {
+    "tags": [
+     "听力",
+     [
+      "Reasoning and development",
+      "推理与展开"
+     ]
+    ],
+    "q": [
+     "Q2, Q3 · Critical reasoning → Plausible response unsupported",
+     "第 2、3 题 · 批判性推理 → 合理回应缺乏录音支持"
+    ],
+    "a": [
+     "The learner chose a plausible-sounding idea not supported by the transcript. The audio states that communities coordinated irrigation, storage, and craft specialization, not that agriculture failed.",
+     "学习者选择了一个在现实中合理但录音并未支持的答案。录音讲的是社群在协调灌溉、储存和手工业专门化，并未提到农业失败。"
+    ]
+   },
+   {
+    "tags": [
+     "听力",
+     [
+      "Reasoning and development",
+      "推理与展开"
+     ]
+    ],
+    "q": [
+     "Q3 · Critical reasoning → First-mention distractor",
+     "第 3 题 · 批判性推理 → 首个提及项干扰"
+    ],
+    "a": [
+     "The learner fixed on an early idea, writing in the north, instead of waiting for the speaker to complete the proposition that the hamlet was administrative and earlier thought marginal.",
+     "学习者停留在“北方出现书写”的早期想法上，没有等待说话者说完该聚落曾被视为边缘地带却具有管理功能这一完整命题。"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "n": 1,
+    "ok": true,
+    "dur": "01:16",
+    "q": "According to the speaker, what long-held assumption about early Mesopotamian cities is being questioned?",
+    "mine": "B. That large urban centers appeared suddenly around 3500 BCE, driven mainly by writing and centralized administration."
+   },
+   {
+    "n": 2,
+    "ok": false,
+    "dur": "01:16",
+    "q": "What does the speaker say recent survey work in the northern alluvial plain has revealed?",
+    "mine": "D. That agriculture failed in the northern plain.",
+    "ans": "B. That communities coordinated irrigation, storage, and craft specialization across considerable distances before monumental architecture emerged.",
+    "why": [
+     "The learner chose a plausible-sounding idea not supported by the transcript. The audio states that communities coordinated irrigation, storage, and craft specialization, not that agriculture failed.",
+     "学习者选择了一个在现实中合理但录音并未支持的答案。录音讲的是社群在协调灌溉、储存和手工业专门化，并未提到农业失败。"
+    ],
+    "evi": "\"Excavations at smaller sites show that long before monumental architecture emerged, communities were already coordinating irrigation, storage, and craft specialization across considerable distances.\""
+   },
+   {
+    "n": 3,
+    "ok": false,
+    "dur": "01:16",
+    "q": "Why does the speaker mention the clay sealing practices found at a previously dismissed hamlet?",
+    "mine": "B. To show that writing began in the north.",
+    "ans": "A. To argue that administrative behavior existed in places once thought marginal, before the rise of palace economies.",
+    "why": [
+     "The learner fixed on an early idea, writing in the north, instead of waiting for the speaker to complete the proposition that the hamlet was administrative and earlier thought marginal.",
+     "学习者停留在“北方出现书写”的早期想法上，没有等待说话者说完该聚落曾被视为边缘地带却具有管理功能这一完整命题。"
+    ],
+    "evi": "\"One team, for instance, documented clay sealing practices at a hamlet that had previously been written off as marginal. Those seals imply administrative behavior usually attributed to palace economies.\""
+   },
+   {
+    "n": 4,
+    "ok": true,
+    "dur": "01:16",
+    "q": "What is the speaker's main point about the standard textbook story?",
+    "mine": "C. It likely underestimates the organization that existed before the first cities appeared."
+   }
+  ],
+  "source": [
+   [
+    "Today I want to talk about a phenomenon that has reshaped how scholars think about early cities in Mesopotamia. ",
+    "For decades, archaeologists assumed that large urban centers appeared rather suddenly around 3500 BCE, propelled mainly by the rise of writing and centralized administration.",
+    1,
+    ""
+   ],
+   [
+    " Recent survey work in the northern alluvial plain, however, suggests a more gradual transition. ",
+    "Excavations at smaller sites show that long before monumental architecture emerged, communities were already coordinating irrigation, storage, and craft specialization across considerable distances.",
+    2,
+    ""
+   ],
+   [
+    " So the traditional boundary between a complex chiefdom and a true state may be much fuzzier than we once believed. ",
+    "One team, for instance, documented clay sealing practices at a hamlet that had previously been written off as marginal. Those seals imply administrative behavior usually attributed to palace economies.",
+    3,
+    ""
+   ],
+   [
+    " This kind of evidence is pushing researchers to treat the preliterate period as socially sophisticated in its own right, rather than as a mere prelude to the urban revolution. ",
+    "The takeaway, then, is that the standard textbook story probably underestimates how much organization existed before the first cities declared themselves on the landscape.",
+    4,
+    ""
+   ]
+  ],
+  "lead": "",
+  "score": "3.5",
+  "description": [
+   "2 of 4 correct",
+   "答对 2 / 4 题"
+  ],
+  "prefix": "tfLc"
+ }
+}
