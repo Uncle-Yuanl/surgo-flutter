@@ -4,6 +4,12 @@
 const { one, lit } = require('./db.cjs');
 const { band, halfBand, pair, annotate } = require('./text.cjs');
 
+// 演示学员的哪两次作答（ielts_attempts.id）：Task 1 要柱状图题，页面按数列原生画柱。
+const ATTEMPTS = {
+  task1: '1a0721f0-53c1-487c-98b1-66de239543fe',
+  task2: '3cd0354a-b33d-48ea-9876-6d5947a3c288',
+};
+
 // 原型四项的中文名（词典里有英文）；后端 criteria 的键，Task 2 第一项可能叫 task_response。
 const CRITERIA = [
   { keys: ['task_achievement', 'task_response'], zh: '任务完成情况', en: 'Task achievement' },
@@ -142,10 +148,9 @@ function analysis(p) {
   };
 }
 
-exports.build = (config) => {
-  const cfg = config.ielts.writing;
-  const t1 = attempt(cfg.task1Attempt);
-  const t2 = attempt(cfg.task2Attempt);
+exports.build = () => {
+  const t1 = attempt(ATTEMPTS.task1);
+  const t2 = attempt(ATTEMPTS.task2);
   const r1 = review(t1);
   const r2 = review(t2);
   return {

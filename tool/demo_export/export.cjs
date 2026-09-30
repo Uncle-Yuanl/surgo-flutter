@@ -13,7 +13,12 @@ const { rows, lit } = require('./db.cjs');
 
 const ROOT = path.resolve(__dirname, '../..');
 const config = require('./demo.config.json');
-const MODULES = [require('./writing.cjs')];
+// 本目录下除了这几个共用文件，每个 .cjs 是一个模块：exports.build(config) 返回 { 文件名: 替换部分 }。
+const SHARED = ['export.cjs', 'db.cjs', 'text.cjs'];
+const MODULES = fs.readdirSync(__dirname)
+  .filter((f) => f.endsWith('.cjs') && !SHARED.includes(f))
+  .sort()
+  .map((f) => require(`./${f}`));
 
 const proto = (file) => JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data', file), 'utf8'));
 const isObj = (v) => v && typeof v === 'object' && !Array.isArray(v);
