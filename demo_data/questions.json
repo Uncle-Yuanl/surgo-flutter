@@ -1884,6 +1884,48 @@
    "mock": {
     "intro": "Three parts, eleven to fourteen minutes. The examiner’s questions play as audio and your spoken answers are recorded. One minute of preparation is given in Part 2 only.",
     "summary": "All three parts back to back, with one minute of preparation in Part 2 only."
+   },
+   "examinerAudio": {
+    "What is a typical morning like for you?": {
+     "asset": "assets/data/aud_examiner_p1_1.mp3",
+     "sec": 2.9
+    },
+    "Do you prefer to plan your day in advance or decide things as you go?": {
+     "asset": "assets/data/aud_examiner_p1_2.mp3",
+     "sec": 4.4
+    },
+    "How has your daily routine changed compared to five years ago?": {
+     "asset": "assets/data/aud_examiner_p1_3.mp3",
+     "sec": 4.3
+    },
+    "Is there anything in your daily routine you would like to change?": {
+     "asset": "assets/data/aud_examiner_p1_4.mp3",
+     "sec": 3.8
+    },
+    "Who do you usually spend the busiest parts of your day with?": {
+     "asset": "assets/data/aud_examiner_p1_5.mp3",
+     "sec": 3.8
+    },
+    "How do most people in your country typically organise their daily schedules?": {
+     "asset": "assets/data/aud_examiner_p3_1.mp3",
+     "sec": 4.7
+    },
+    "Why do you think some people find it difficult to stick to a daily routine?": {
+     "asset": "assets/data/aud_examiner_p3_2.mp3",
+     "sec": 4.5
+    },
+    "Do you think technology has made it easier or harder for people to manage their time? Give reasons for your view.": {
+     "asset": "assets/data/aud_examiner_p3_3.mp3",
+     "sec": 7.4
+    },
+    "Some people believe that a busy life is a fulfilling life. To what extent do you agree?": {
+     "asset": "assets/data/aud_examiner_p3_4.mp3",
+     "sec": 6.3
+    },
+    "How might the way people organise their daily lives change in the future compared with how their parents did?": {
+     "asset": "assets/data/aud_examiner_p3_5.mp3",
+     "sec": 6.3
+    }
    }
   }
  },

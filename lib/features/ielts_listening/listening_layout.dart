@@ -165,14 +165,14 @@ class ListeningBrief extends StatelessWidget {
               subtitle: m['sectionDesc'] ?? m['ctx'] ?? '',
               elapsed: clock(x.audio),
               total: m['audioDur'] ?? '07:00',
-              progress: x.audio / 225,
+              progress: x.audio / x.length,
               playing: x.playing,
               speedLabel: x.speed,
               speeds: const ['0.75X', '1X', '1.25X', '1.5X'],
               onSpeed: onSpeed,
               onToggle: onToggle,
               onSeek: (s) => onSeek(s.toDouble()),
-              onRestart: () => onSeek(-225)),
+              onRestart: () => onSeek(-x.length)),
           const SizedBox(height: 22),
         ]));
   }

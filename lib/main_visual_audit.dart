@@ -7,9 +7,12 @@ import 'app/i18n.dart';
 import 'app/routes.dart';
 import 'app/shell.dart';
 import 'theme/app_theme.dart';
+import 'widgets/demo_audio.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // 手机上音频和朗读都要由一次点击解锁，见 DemoAudio。
+  demoAudio.unlockOnFirstTap();
   await Future.wait([Translator.load(), QuestionBank.load()]);
   final query = Uri.base.queryParameters;
   final page = SurgoPage.values.byName(query['route'] ?? 'exam');

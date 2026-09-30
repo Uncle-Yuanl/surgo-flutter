@@ -1,13 +1,15 @@
 // 雅思听力：日常四个 Part（做题页 + 回顾）、模考四个 Part（考试页 + 回顾）。
 // 数据全部来自后端已存的结果：ielts_attempts + ielts_generated_items（旧版日常）、
 // ielts_listening_daily_sessions（现行日常：题目、判分、原文、解析、分析）、
-// ielts_mock_exam_*（模考的题目、答案键、原文、作答、成绩）。音频在原型里是模拟的，不导；
+// ielts_mock_exam_*（模考的题目、答案键、原文、作答、成绩）。
 // 图示标注题的图（ielts_listening_daily_media 记的 PNG，存在后端的文件存储里）原样导出。
+// 日常练习的录音也导出（页面的播放器真的放它）：现行日常存在 ielts_listening_daily_media，
+// 旧版日常是后端朗读缓存里按「音色 + 原文」寻址的那一份。
 const fs = require('fs');
 const path = require('path');
 const { one, lit } = require('./db.cjs');
 const { band, pair } = require('./text.cjs');
-const { stored, figure } = require('./media.cjs');
+const { stored, figure, object, spoken, audio, clip } = require('./media.cjs');
 
 // 日常练习每个 Part 是各自的一次作答。
 const DAILY = {
@@ -16,6 +18,8 @@ const DAILY = {
   3: { session: '83753ac0-49a2-4311-ae5d-deb754d8b587' }, // 选择 + 配对
   4: { session: '43294b62-16bd-4830-af2c-220f10d8126a' }, // 摘要填空
 };
+// 旧版日常那次练习的对话是这两个音色读的（按说话人出场顺序；后端朗读缓存按音色寻址）。
+const LEGACY_VOICES = ['en-GB-SoniaNeural', 'en-GB-RyanNeural'];
 // 模考（ielts_mock_exam_sessions.id）：四个 Part 40 题；学员没作答就到时交卷了（0 题对）。
 const MOCK = '8c537028-34d6-4453-ac63-44614e86741e';
 
@@ -42,6 +46,7 @@ const named = (type) => {
 };
 const tag = (types) => [0, 1].map((k) => `🏷 ${[...new Set(types)].map((t) => named(t).name[k]).join(' · ')}`);
 const show = (o) => `${o.id}. ${o.text}`;
+const clock = (sec) => `${String(Math.floor(sec / 60)).padStart(2, '0')}:${String(Math.floor(sec % 60)).padStart(2, '0')}`;
 
 // ---------- 读库，整理成同一种结构 ----------
 // part: { n, title, groups: [{ type, title, instruction, options, figure, questions }], lines: [原文一行], review,
@@ -64,6 +69,7 @@ function legacyPart(n, id, learner) {
     n,
     title: null, // 旧版题目没有标题
     lines,
+    audio: audio(spoken(item.transcript.trim(), LEGACY_VOICES, `listening part ${n} audio`), `listening part ${n} audio`),
     groups: [{
       type: 'form',
       instruction: item.instructions.join(' '),
@@ -95,7 +101,9 @@ function sessionPart(n, id, learner) {
     `select jsonb_build_object('pc', s.public_content, 'result', s.result,
       'visuals', (select jsonb_agg(jsonb_build_object('group', m.group_id, 'scope', m.storage_scope, 'key', m.object_key,
           'sha256', m.sha256, 'size', m.size_bytes, 'mime', m.mime_type, 'width', m.width, 'height', m.height, 'alt', m.alt_text))
-        from ielts_listening_daily_media m where m.session_id = s.id and m.media_kind = 'visual' and m.state = 'ready'))
+        from ielts_listening_daily_media m where m.session_id = s.id and m.media_kind = 'visual' and m.state = 'ready'),
+      'audio', (select jsonb_build_object('scope', m.storage_scope, 'key', m.object_key, 'sha256', m.sha256, 'size', m.size_bytes)
+        from ielts_listening_daily_media m where m.session_id = s.id and m.media_kind = 'audio' and m.state = 'ready'))
      from ielts_listening_daily_sessions s
      where s.id = ${lit(id)} and s.part = ${Number(n)} and s.status = 'completed' and s.user_id::text like ${lit(`${learner}%`)}`,
     `listening daily session ${id}`,
@@ -183,6 +191,7 @@ function sessionPart(n, id, learner) {
     lines,
     groups,
     figures,
+    audio: audio(object(s.audio, `listening part ${n} audio`), `listening part ${n} audio`),
     review: {
       band: null, // 现行日常练习不估分
       right: result.score.correct_count,
@@ -321,7 +330,8 @@ function dailyPage(base, part) {
     part: `Part ${part.n}`,
     ctx: part.title,
     section: `Part ${part.n}`,
-    audioDur: base.audioDur, // 播放器是模拟的，时长沿用原型
+    audioDur: clock(part.audio.sec),
+    audio: clip(`aud_listening_p${part.n}.mp3`, part.audio.sec),
     mainType: named(main.type).main,
     brief: [
       `Part ${part.n}, mostly ${en.toLowerCase()}. Listen first, then answer questions ${from}-${to}.`,
@@ -340,7 +350,7 @@ exports.build = ({ learner }) => {
   const figures = {};
   for (const [n, from] of Object.entries(DAILY)) {
     const part = from.attempt ? legacyPart(Number(n), from.attempt, learner) : sessionPart(Number(n), from.session, learner);
-    Object.assign(figures, part.figures);
+    Object.assign(figures, part.figures, { [`aud_listening_p${n}.mp3`]: part.audio.bytes });
     parts[`s${n}`] = dailyPage(daily.parts[`s${n}`], part);
     reviews[n] = feedback(daily.feedback[n], part, flat(part));
   }

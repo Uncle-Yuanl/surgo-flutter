@@ -102,7 +102,8 @@ class FlutterTtsSpeaker implements PlSpeaker {
     } catch (_) {
       Future<void>.delayed(const Duration(milliseconds: 700), finish);
     }
-    return completer.future;
+    // 手机浏览器的朗读可能既不出声也不回调（见 NativeOralSpeech）；一个词等这么久就往下走。
+    return completer.future.timeout(const Duration(seconds: 4), onTimeout: () {});
   }
 
   @override

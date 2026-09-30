@@ -6,9 +6,12 @@ import 'app/i18n.dart';
 import 'app/routes.dart';
 import 'app/shell.dart';
 import 'theme/app_theme.dart';
+import 'widgets/demo_audio.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // 手机上音频和朗读都要由一次点击解锁，见 DemoAudio。
+  demoAudio.unlockOnFirstTap();
 
   // 词典（949 条）与题库（62KB）都是原型原样导出的资产，启动时一次载入。
   // 原型里这两个是同步 <script> 引入的全局变量，这里是异步载入，
