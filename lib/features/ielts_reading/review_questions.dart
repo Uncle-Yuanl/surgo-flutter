@@ -3,6 +3,8 @@ import 'review_style.dart';
 import '../../theme/tokens.dart';
 
 bool rfCorrect(Map q, {bool mock = false}) {
+  // 演示用真实数据带后端判分结果（同义写法也算对），有就用它。
+  if (q['ok'] is bool) return q['ok'] as bool;
   String value(dynamic x) => (x ?? '').toString().toUpperCase();
   return mock
       ? value(q['mine']).trim() == value(q['correct']).trim()
@@ -19,13 +21,14 @@ class RfQuestion extends StatelessWidget {
   Widget build(BuildContext context) {
     final ok = rfCorrect(q, mock: mock);
     final number = mock ? q['no'] : index + 1;
-    final type = mock
-        ? q['typeLbl'] ?? ''
+    final type = q['typeLbl'] ??
+        (mock
+        ? ''
         : q['type'] == 'tfng'
             ? 'TRUE / FALSE / NOT GIVEN'
             : q['type'] == 'ynng'
                 ? 'YES / NO / NOT GIVEN'
-                : 'MULTIPLE CHOICE';
+                : 'MULTIPLE CHOICE');
     final opts = mock
         ? q['opts'] ?? []
         : q['type'] == 'tfng'
@@ -39,8 +42,8 @@ class RfQuestion extends StatelessWidget {
     final ev = q[mock ? 'ev' : 'evidence'],
         en = q[mock ? 'en' : 'why'],
         zh = q[mock ? 'zh' : 'whyZh'];
-    final input = mock && q['kind'] == 'input',
-        pills = mock && q['kind'] == 'pills';
+    // 原型只有模考题带 kind；真实数据的日常题也带（填空 / 简答走 input）。
+    final input = q['kind'] == 'input', pills = q['kind'] == 'pills';
     return Container(
         key: ValueKey('rf-question-$number'),
         padding: const EdgeInsets.all(15),
@@ -73,7 +76,8 @@ class RfQuestion extends StatelessWidget {
           if (input) ...[
             Wrap(spacing: 8, runSpacing: 8, children: [
               _chip(context, '我的作答: ', q['mine'] ?? '', ok),
-              if (!ok) _chip(context, '正确答案: ', q['correct'], true),
+              if (!ok)
+                _chip(context, '正确答案: ', q[mock ? 'correct' : 'a'], true),
             ]),
             const SizedBox(height: 10),
           ] else if (pills) ...[

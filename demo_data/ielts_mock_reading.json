@@ -1,0 +1,338 @@
+[
+ {
+  "title": "The History of Glassmaking",
+  "paras": [
+   [
+    "A",
+    "Glass is one of the oldest manufactured materials known to people, yet for most of its history the techniques used to make it remained closely guarded. The earliest objects that can confidently be called glass are beads from Egypt and Mesopotamia, dated to roughly 2500 BC. These were not the clear, colourless material familiar today. They were often opaque, brightly coloured and produced in small quantities for personal decoration or to mark status. Whether glass was first discovered by accident, perhaps as a byproduct of metalworking or ceramic firing, is still debated, but the practical knowledge of how to shape a glowing gather of molten material spread slowly through the ancient world."
+   ],
+   [
+    "B",
+    "The first major technical breakthrough is associated with the Syrians, working around the eastern Mediterranean in the first century BC. They discovered that a glass bubble could be blown at the end of a hollow iron pipe, and that the bubble could then be shaped, cut and reworked while still soft. This discovery, often linked with the Syrian craftsmen of the coastal city of Sidon, transformed the industry. Vessels that had previously needed many hours of patient labour could now be formed in minutes. Within a few generations, glassblowing workshops had been established across the Roman Empire, from the Rhineland to the Levant, and the material was no longer a luxury reserved for the wealthy."
+   ],
+   [
+    "C",
+    "A second long shift came with the appearance of clear, colourless glass, which depended on the careful purification of raw materials. In the medieval period, the island of Murano, near Venice, became the centre of European glass production. The Venetian authorities went to unusual lengths to ensure that their methods remained secret. Glassmakers who attempted to leave the city, or to reveal the composition of their crucibles, faced severe penalties, and many recipes were passed from one master to a chosen apprentice in private. Murano glass was prized across Europe, and surviving objects from this period show an extraordinary command of colour, from the deep ruby reds produced with tiny additions of gold to the milky white of the opaques."
+   ],
+   [
+    "D",
+    "The Industrial Revolution brought the most dramatic change of all. In 1902, the American engineer Michael Owens patented an automatic bottle-blowing machine, and within a few years the price of a simple glass container fell sharply. The development of the float process in the 1950s, invented in Britain, allowed sheets of perfectly flat glass to be produced continuously. Modern glass is therefore both a craft and an industrial commodity, shaped by a few basic raw materials: silica sand, soda ash and limestone. When the mixture is heated to around 1500 degrees Celsius, it becomes a glowing liquid that can be pressed, blown, drawn or floated into a remarkable range of forms, from window panes and optical fibres to the touch screen in the reader's hand."
+   ],
+   [
+    "E",
+    "Today, the material faces new pressures. The energy required to melt silica is high, and producers are searching for fuels and recycled cullet that reduce the carbon footprint of each furnace. Researchers are also investigating new compositions, including ultra-thin flexible glass used in consumer electronics and stronger glasses that resist cracking. Glass remains, as it has been for thousands of years, both an everyday product and a quiet symbol of human technical progress."
+   ]
+  ],
+  "qs": [
+   {
+    "type": "tfng",
+    "group": "Questions 1-3",
+    "instr": "Do the following statements agree with the information given in the passage?",
+    "q": "The earliest known glass objects were clear and colourless."
+   },
+   {
+    "type": "tfng",
+    "q": "It is generally accepted that glass was invented accidentally during metalworking."
+   },
+   {
+    "type": "tfng",
+    "q": "The technique of glassblowing originated in coastal areas of the eastern Mediterranean."
+   },
+   {
+    "type": "ynng",
+    "group": "Questions 4-5",
+    "instr": "Do the following statements agree with the views of the writer of the passage?",
+    "q": "The writer believes that glassblowing permanently changed the economics of the glass industry."
+   },
+   {
+    "type": "ynng",
+    "q": "The writer thinks the punishments imposed on Murano glassmakers were reasonable."
+   },
+   {
+    "type": "match",
+    "letters": [
+     "A",
+     "B",
+     "C",
+     "D"
+    ],
+    "nobox": true,
+    "group": "Questions 6-8",
+    "instr": "Match each statement with the correct paragraph, A-D.",
+    "q": "A description is given of how the basic raw materials are converted into molten glass."
+   },
+   {
+    "type": "match",
+    "q": "A reference is made to the use of small amounts of a precious metal to produce a particular colour."
+   },
+   {
+    "type": "match",
+    "q": "An example is given of a person whose name is associated with a new industrial glass process."
+   },
+   {
+    "type": "gap",
+    "group": "Questions 9-11",
+    "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+    "q": "Early glass items were mainly used as ______ or to mark status."
+   },
+   {
+    "type": "gap",
+    "q": "Before the invention of glassblowing, glass vessels required many hours of ______ labour."
+   },
+   {
+    "type": "gap",
+    "q": "In Murano, glassmaking secrets were often passed on privately to a chosen ______"
+   },
+   {
+    "type": "shortans",
+    "group": "Questions 12-13",
+    "instr": "Answer the questions below using NO MORE THAN TWO WORDS from the passage for each answer.",
+    "q": "What two main substances, besides limestone, are used to make modern glass?"
+   },
+   {
+    "type": "shortans",
+    "q": "Which country invented the float process for making flat glass?"
+   }
+  ]
+ },
+ {
+  "title": "Lighthouses and the Changing Shape of Coastal Navigation",
+  "paras": [
+   [
+    "A",
+    "For centuries, lighthouses guided mariners through dangerous coastlines, marking harbours, headlands and shifting sandbanks. The earliest references to purpose-built navigation lights date back to antiquity, when open fires on hilltops signalled safe approaches to port. By the eighteenth and nineteenth centuries, masonry towers with oil lamps had become standard features of the European and North American coastline. Their keepers, often isolated for weeks at a time, kept the flame trimmed, the lenses clean and the clockwork turning. These workers developed a strong occupational culture, and many station logs survive as detailed records of weather, shipping and local life."
+   ],
+   [
+    "B",
+    "The optical heart of a traditional lighthouse was its Fresnel lens. Invented by the French physicist Augustin-Jean Fresnel in 1822, the lens used concentric annular rings to bend light into a narrow, horizontal beam. Different patterns of flash, known as characteristic signatures, allowed sailors to identify individual stations even in poor visibility. A first-order lens could be seen many nautical miles out to sea, but the apparatus was heavy, expensive and fragile. Few nations could afford more than a handful at the most critical sites, so the lenses marked a clear social order of navigation: the largest lights signalled the most economically important harbours."
+   ],
+   [
+    "C",
+    "The arrival of reliable electric lighting in the late nineteenth century transformed the economics of the lighthouse. Carbon arc lamps, and later tungsten filament bulbs, produced light that could be projected further and at lower cost than oil. Automated acetylene gas systems, introduced widely after 1910, removed the need for resident keepers at smaller stations. Diesel generators and mains electricity followed, allowing remote beacons to operate unattended for long periods. By the mid-twentieth century, automation had closed most staffed stations in Europe and North America, and many of the remaining towers were demoted to visual backups for radio systems."
+   ],
+   [
+    "D",
+    "Even as manned stations declined, the function of the lighthouse broadened. Engineers added radio beacons, fog horns and, later, racons, devices that return a coded radar pulse when interrogated. A modern light therefore often carries a layered identity: a visual signal for nearby mariners, an audible signal in fog, and an electronic signal for vessels equipped with radar. Each layer reaches a different audience, and lighthouse authorities have to balance competing demands from fishing fleets, commercial shipping and recreational sailors. A single structure may also host weather instruments, tidal gauges and communications relays, so its silhouette on the coast can represent a small, multi-purpose observatory rather than a simple warning fire."
+   ],
+   [
+    "E",
+    "The spread of satellite navigation has complicated the future of these structures. Global Navigation Satellite Systems, often abbreviated as GNSS, allow any vessel with a small receiver to fix its position within a few metres. For commercial shipping on well-charted routes, this positional accuracy has reduced the relevance of a visual landmark on a headland. Yet coastal pilots argue that lighthouses retain a specific value. They provide a sanity check when electronic systems fail, a clear target in optical conditions, and a legal reference point used in court to reconstruct maritime incidents. In several jurisdictions, light keepers have also returned to stations for limited periods to manage tourism and educational visits, which generate income that pays for ongoing maintenance."
+   ],
+   [
+    "F",
+    "The cultural afterlife of the lighthouse is, if anything, larger than its working life. Photographers, painters and writers have long used isolated towers as symbols of endurance, vigilance and the limits of human reason against the sea. Preservation societies now campaign to protect redundant stations, and a small number have been converted into holiday accommodation, research stations or artist residencies. These reuse projects raise practical questions about fire safety, structural reinforcement and access to remote sites, but they also keep engineering skills alive. Visitors who climb a spiral staircase and stand beside a decommissioned lens may gain, in a way that no navigation chart can offer, a sense of what coastal travel once demanded of those who relied on the beam."
+   ],
+   [
+    "G",
+    "Looking forward, the lighthouse is unlikely to disappear. New coastal infrastructure, from offshore wind farms to aquaculture sites, requires visible markers and audible signals that electronic charts cannot fully replace. Designers are experimenting with low-maintenance LED arrays powered by solar panels, and modular plastic buoys now compete with traditional towers in sheltered waters. Even so, the masonry tower with its painted band remains a powerful navigational and cultural reference. The next generation of mariners may rely more on satellites than on flashes of light, but most will still learn to recognise a lighthouse, to understand its characteristic, and to appreciate the long partnership between a coastline and the people who chose to light it."
+   ]
+  ],
+  "qs": [
+   {
+    "type": "diagram",
+    "figure": {
+     "asset": "assets/data/fig_mock_reading_p2.png",
+     "width": 2048,
+     "height": 1536,
+     "alt": "IELTS Academic Reading diagram: Lighthouses and the Changing Shape of Coastal Navigation"
+    },
+    "group": "Questions 14-15",
+    "instr": "Label the diagram. Choose NO MORE THAN TWO WORDS from the passage for this answer.",
+    "q": "Identify the painted masonry structure that carries the light and houses the keepers' working levels."
+   },
+   {
+    "type": "gap",
+    "q": "Identify the segmented glass apparatus at the lantern room that bends light into a narrow horizontal beam."
+   },
+   {
+    "type": "gap",
+    "group": "Question 16",
+    "instr": "Label the diagram. Choose NO MORE THAN THREE WORDS from the passage for this answer.",
+    "q": "Identify the floating marker in the water to the left of the tower, competing with traditional structures in sheltered waters."
+   },
+   {
+    "type": "gap",
+    "group": "Questions 17-18",
+    "instr": "Label the diagram. Choose NO MORE THAN TWO WORDS from the passage for this answer.",
+    "q": "Identify the small coastal building on the headland that issues an audible signal in fog."
+   },
+   {
+    "type": "gap",
+    "q": "Identify the structure at sea level that represents the multi-purpose observatory role of the modern station, with weather and tidal instruments."
+   },
+   {
+    "type": "match",
+    "letters": [
+     "A",
+     "B",
+     "C",
+     "D",
+     "E",
+     "F",
+     "G"
+    ],
+    "nobox": true,
+    "group": "Questions 19-22",
+    "instr": "Which paragraph contains the following information?",
+    "q": "a description of how a lighthouse lens produces a recognisable beam"
+   },
+   {
+    "type": "match",
+    "q": "an example of how lighthouses have acquired a non-navigational role"
+   },
+   {
+    "type": "match",
+    "q": "mention of the social rank attached to the largest lighthouse lenses"
+   },
+   {
+    "type": "match",
+    "q": "an explanation of why lighthouses are still defended by some coastal pilots"
+   },
+   {
+    "type": "tfng",
+    "group": "Questions 23-26",
+    "instr": "Do the following statements agree with the information given in the passage?",
+    "q": "The earliest purpose-built navigation lights used coal fires on hilltops."
+   },
+   {
+    "type": "tfng",
+    "q": "All eighteenth-century lighthouses in Europe used Fresnel lenses."
+   },
+   {
+    "type": "tfng",
+    "q": "The introduction of acetylene gas systems made it possible to run some lighthouses without resident keepers."
+   },
+   {
+    "type": "tfng",
+    "q": "Modern lighthouses sometimes carry weather and tidal monitoring equipment."
+   }
+  ]
+ },
+ {
+  "title": "The Hidden Influence of Smell",
+  "paras": [
+   [
+    "A",
+    "For most of the modern era, the human sense of smell has been treated as a poor relation of sight and hearing. Popular accounts often describe it as a fading evolutionary remnant, a perception that registers little beyond the obvious and that adds only modest colour to daily life. New research paints a more demanding picture, in which the olfactory system operates quietly in the background, shaping memory, mood and social judgement in ways that people rarely anticipate."
+   ],
+   [
+    "B",
+    "The basic architecture of smell is now well understood. Airborne molecules enter the nasal cavity and dissolve in a thin layer of mucus, where they meet specialised receptor neurons. Each neuron carries just one type of receptor protein, and humans possess around four hundred different functional receptor types, in contrast with the far larger olfactory repertoires of rodents or dogs. A given odour typically activates a unique combination of receptors, and the brain reads that combination as a smell. This combinatorial code allows people to distinguish a remarkable number of distinct odours, despite having far fewer receptor types than many mammals."
+   ],
+   [
+    "C",
+    "What smell loses in raw receptor variety, it appears to gain through connection. Signals from the olfactory bulb travel to brain regions associated with emotion, memory and decision-making far more directly than signals from the eyes or ears. As a result, scents become tied to personal episodes with unusual speed, and the same fragrance can retrieve a vivid scene from childhood decades after the event. Experiments in which volunteers learn lists of words while exposed to a novel aroma show that recall improves when the same scent is present during testing, even if participants cannot name the smell that is helping them."
+   ],
+   [
+    "D",
+    "The influence of smell extends into social perception, an area once thought to depend almost entirely on visual cues. Studies have found that judgments of attractiveness, trustworthiness and even political leaning can shift when participants are exposed to subtle body odours or to neutral scents described as positive. Masking a person's natural odour, by contrast, can make facial expressions harder to read. Researchers caution that these effects are small and sensitive to context, but they suggest that smell contributes a quiet layer of information during face-to-face contact."
+   ],
+   [
+    "E",
+    "The commercial world has been quick to translate these findings into practice. Scent marketing is now common in hotels, car showrooms and retail spaces, where carefully chosen fragrances are released to encourage customers to linger, spend more or form a stronger memory of a brand. Manufacturers of household products add masking agents to cover unwanted chemical smells, while fragrance-free ranges are marketed to consumers who report headaches or irritation. Regulators in several countries have begun to issue guideline documents for the use of scent in indoor environments, acknowledging that what is added to the air can shape behaviour in ways that designers did not always intend."
+   ],
+   [
+    "F",
+    "The picture is not entirely one of manipulation. Aroma also supports practical tasks that people value. Chefs rely on smell to assess freshness, perfumers train their noses for years, and firefighters use the odours of smoke to identify the materials burning in a room. These professional uses underline a broader point: although humans may be less sensitive than other animals to faint traces in the air, the olfactory system is far from passive. It filters, compares and remembers, and it does so for almost every waking hour."
+   ],
+   [
+    "G",
+    "Scientists are still debating the limits of human olfactory ability and the degree to which cultural training sharpens it. What seems inevitable is that smell will continue to receive more attention in disciplines that once ignored it, from psychology and marketing to urban design. As measurement tools improve, researchers expect to find that the invisible layer of information carried by scent has been quietly shaping decisions that people believed were based on sight alone."
+   ]
+  ],
+  "qs": [
+   {
+    "type": "tfng",
+    "group": "Questions 27-32",
+    "instr": "Do the following statements agree with the information given in the passage?",
+    "q": "Modern popular opinion considers the human sense of smell less important than sight or hearing."
+   },
+   {
+    "type": "tfng",
+    "q": "Humans have more functional smell receptor types than dogs."
+   },
+   {
+    "type": "tfng",
+    "q": "Odour molecules are detected only after they reach the lungs."
+   },
+   {
+    "type": "tfng",
+    "q": "Smell signals reach brain regions linked with emotion more directly than signals from the eyes."
+   },
+   {
+    "type": "tfng",
+    "q": "Volunteers in word-learning experiments can usually identify which scent is helping their memory."
+   },
+   {
+    "type": "tfng",
+    "q": "Body odour has been shown to influence judgments of a stranger's attractiveness."
+   },
+   {
+    "type": "mchoice",
+    "opts": [
+     "Smell has long been ignored in modern life.",
+     "Recent research suggests smell is more influential than people realise.",
+     "Smell is more important than sight.",
+     "People are wrong to trust their sense of smell."
+    ],
+    "group": "Questions 33-35",
+    "instr": "Choose the correct letter, A, B, C or D.",
+    "q": "What is the writer's main point in paragraph A?"
+   },
+   {
+    "type": "mchoice",
+    "opts": [
+     "Through a single dedicated receptor type.",
+     "By storing memories of past encounters with the odour.",
+     "By interpreting a unique combination of activated receptors.",
+     "By comparing it with known visual cues."
+    ],
+    "q": "According to paragraph B, how does the brain recognise a particular smell?"
+   },
+   {
+    "type": "mchoice",
+    "opts": [
+     "It is less effective than designers believe.",
+     "It is restricted by international law.",
+     "It is widely used in several industries.",
+     "It only works when customers are aware of it."
+    ],
+    "q": "What does the writer suggest about scent marketing in paragraph E?"
+   },
+   {
+    "type": "match",
+    "letters": [
+     "A",
+     "B",
+     "C",
+     "D",
+     "E",
+     "F",
+     "G"
+    ],
+    "nobox": true,
+    "group": "Questions 36-37",
+    "instr": "Which paragraph contains the following information?",
+    "q": "An example of a job that depends on identifying smells."
+   },
+   {
+    "type": "match",
+    "q": "A reference to official advice about using scent indoors."
+   },
+   {
+    "type": "gap",
+    "group": "Questions 38-40",
+    "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+    "q": "Odour molecules dissolve in a thin layer of ______ before meeting receptor neurons."
+   },
+   {
+    "type": "gap",
+    "q": "Recall of word lists improves when a familiar ______ is present during testing."
+   },
+   {
+    "type": "gap",
+    "q": "Some manufacturers market ______ products to consumers who suffer from headaches caused by fragrance."
+   }
+  ]
+ }
+]

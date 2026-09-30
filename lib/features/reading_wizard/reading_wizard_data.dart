@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:typed_data';
 
 import 'package:flutter/services.dart' show rootBundle;
 
@@ -39,7 +40,10 @@ class ReadingWizardData {
 
   static Future<ReadingWizardData> load() async {
     if (_cache != null) return _cache!;
-    final raw = await rootBundle.loadString('assets/data/reading_wizard.json');
+    // 直接读字节再解码：rootBundle.loadString 对 50 KB 以上的文件会另起 isolate 解码，
+    // widget 测试（路由审计）的假时钟等不到它；演示用真实数据的这个文件超过了 50 KB。
+    final raw = utf8.decode(Uint8List.sublistView(
+        await rootBundle.load('assets/data/reading_wizard.json')));
     _cache = fromJson(jsonDecode(raw) as Map<String, dynamic>);
     return _cache!;
   }

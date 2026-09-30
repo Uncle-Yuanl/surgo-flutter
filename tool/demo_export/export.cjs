@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 把本地后端库里一位学员（demo.config.json）的真实作答导出成演示数据 demo_data/*.json。
+// 把本地后端库里一位学员（demo.config.json）的真实作答导出成演示数据 demo_data/*.json（题图是 *.png）。
 //
 // 以 assets/data 里的原型文件为底，只替换各模块映射出来的部分，其余原样保留。Vercel 构建时
 // tool/vercel_build.sh 把 demo_data/ 盖到 assets/data/ 上；仓库里的原型数据不动，同事的测试照跑。
@@ -14,7 +14,8 @@ const { rows, lit } = require('./db.cjs');
 const ROOT = path.resolve(__dirname, '../..');
 const config = require('./demo.config.json');
 // 本目录下除了这几个共用文件，每个 .cjs 是一个模块：exports.build(config) 返回 { 文件名: 替换部分 }。
-const SHARED = ['export.cjs', 'db.cjs', 'text.cjs'];
+// 值是 Buffer 的是二进制文件（题图，见 media.cjs），原样写出，不参与合并。
+const SHARED = ['export.cjs', 'db.cjs', 'text.cjs', 'media.cjs'];
 const MODULES = fs.readdirSync(__dirname)
   .filter((f) => f.endsWith('.cjs') && !SHARED.includes(f))
   .sort()
@@ -29,8 +30,14 @@ const merge = (base, patch) =>
     : patch;
 
 const files = {};
+const binaries = {};
 for (const m of MODULES) {
-  for (const [file, patch] of Object.entries(m.build(config))) files[file] = merge(files[file] ?? proto(file), patch);
+  for (const [file, patch] of Object.entries(m.build(config))) {
+    // 文件名是模块里写死的，这里只防着把库里的 id 带进文件名。
+    if (!/^[a-z][a-z0-9_]*\.[a-z0-9]+$/.test(file) || file.includes(config.learner)) throw new Error(`${file}: unexpected output file name; nothing written`);
+    if (Buffer.isBuffer(patch)) binaries[file] = patch;
+    else files[file] = merge(files[file] ?? proto(file), patch);
+  }
 }
 
 const learner = rows(`select jsonb_build_object('name', display_name, 'email', email, 'phone', phone)
@@ -52,4 +59,9 @@ fs.mkdirSync(out, { recursive: true });
 for (const [file, text] of texts) {
   fs.writeFileSync(path.join(out, file), text);
   console.log(`demo_data/${file}: ${text.length} bytes`);
+}
+// 题图是后端存的原始字节（内容不是文本，上面的检查只查 JSON）。
+for (const [file, bytes] of Object.entries(binaries)) {
+  fs.writeFileSync(path.join(out, file), bytes);
+  console.log(`demo_data/${file}: ${bytes.length} bytes`);
 }

@@ -1,0 +1,256 @@
+{
+ "sharedTimerSec": 1800,
+ "reviewSec": 118,
+ "markLabelTemplate": "正在批改任务 {n} / 4, Part {n}",
+ "mapSvg": "<svg class=\"lmap-svg\" viewBox=\"0 0 460 300\" xmlns=\"http://www.w3.org/2000/svg\">\n    <rect x=\"0\" y=\"0\" width=\"460\" height=\"300\" rx=\"10\" fill=\"#eef1e5\"/>\n    <rect x=\"210\" y=\"55\" width=\"42\" height=\"200\" fill=\"#d9d3c4\"/>\n    <rect x=\"30\" y=\"150\" width=\"400\" height=\"34\" fill=\"#d9d3c4\"/>\n    <rect x=\"45\" y=\"75\" width=\"120\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"105\" cy=\"105\" r=\"13\" fill=\"#e8a90c\"/><text x=\"105\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">A</text>\n    <rect x=\"285\" y=\"75\" width=\"130\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"350\" cy=\"105\" r=\"13\" fill=\"#e8a90c\"/><text x=\"350\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">B</text>\n    <rect x=\"45\" y=\"200\" width=\"120\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"105\" cy=\"230\" r=\"13\" fill=\"#e8a90c\"/><text x=\"105\" y=\"235\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">C</text>\n    <rect x=\"300\" y=\"205\" width=\"115\" height=\"55\" rx=\"16\" fill=\"#c9e2f0\" stroke=\"#9fc7de\"/>\n    <circle cx=\"357\" cy=\"232\" r=\"13\" fill=\"#e8a90c\"/><text x=\"357\" y=\"237\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">F</text>\n    <circle cx=\"200\" cy=\"167\" r=\"13\" fill=\"#e8a90c\"/><text x=\"200\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">D</text>\n    <circle cx=\"285\" cy=\"167\" r=\"13\" fill=\"#e8a90c\"/><text x=\"285\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">E</text>\n    <circle cx=\"231\" cy=\"120\" r=\"13\" fill=\"#e8a90c\"/><text x=\"231\" y=\"125\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">G</text>\n    <text x=\"231\" y=\"278\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7a7566\">ENTRANCE</text>\n  </svg>",
+ "parts": [
+  {
+   "no": 1,
+   "audioTitle": "第 1 部分播放中",
+   "audioBarPct": 0,
+   "audioTime": "00:00/07:00",
+   "tip": "你有约 20 秒查看题目。 (18s)",
+   "dotFrom": 1,
+   "next": "mockListeningQ2",
+   "groups": [
+    {
+     "label": "Questions 1-10",
+     "sub": "Play the controlled audio once and answer all questions."
+    }
+   ],
+   "items": [
+    {
+     "n": 1,
+     "q": "What is the caller's surname?"
+    },
+    {
+     "n": 2,
+     "q": "What is the booking reference number?"
+    },
+    {
+     "n": 3,
+     "q": "On which date does the caller arrive?"
+    },
+    {
+     "n": 4,
+     "q": "How many nights is the booking for?"
+    },
+    {
+     "n": 5,
+     "q": "What type of room has the caller been upgraded to?"
+    },
+    {
+     "n": 6,
+     "q": "From what time is breakfast served?"
+    },
+    {
+     "n": 7,
+     "q": "How much is parking per night?"
+    },
+    {
+     "n": 8,
+     "q": "When can the caller pay for parking?"
+    },
+    {
+     "n": 9,
+     "q": "What time does the caller expect to arrive on the Saturday night?"
+    },
+    {
+     "n": 10,
+     "q": "Is reception staffed twenty-four hours?"
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "audioTitle": "第 2 部分播放中",
+   "audioBarPct": 17,
+   "audioTime": "01:12/07:00",
+   "dotFrom": 11,
+   "next": "mockListeningQ3",
+   "groups": [
+    {
+     "label": "Questions 11-20",
+     "sub": "Play the controlled audio once and answer all questions."
+    }
+   ],
+   "items": [
+    {
+     "n": 11,
+     "q": "The museum is open every day except _____"
+    },
+    {
+     "n": 12,
+     "q": "Permanent galleries: _____ entry"
+    },
+    {
+     "n": 13,
+     "q": "The café is on the _____ floor"
+    },
+    {
+     "n": 14,
+     "q": "The café closes at _____"
+    },
+    {
+     "n": 15,
+     "q": "The shop is on the _____ as you enter"
+    },
+    {
+     "n": 16,
+     "q": "What is currently on display in the temporary exhibition space?",
+     "opts": [
+      "Fishing traditions",
+      "Nineteenth century industry",
+      "River navigation methods"
+     ]
+    },
+    {
+     "n": 17,
+     "q": "The workshop room is on the _____ ground floor"
+    },
+    {
+     "n": 18,
+     "q": "This weekend's workshop theme is traditional _____"
+    },
+    {
+     "n": 19,
+     "q": "How long do the guided tours last?",
+     "opts": [
+      "About one hour",
+      "About ninety minutes",
+      "About two hours"
+     ]
+    },
+    {
+     "n": 20,
+     "q": "Afternoon tours must be booked at least _____ day in advance"
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "audioTitle": "第 3 部分播放中",
+   "audioBarPct": 5,
+   "audioTime": "00:19/07:00",
+   "dotFrom": 21,
+   "next": "mockListeningQ4",
+   "groups": [
+    {
+     "label": "Questions 21-30",
+     "sub": "Play the controlled audio once and answer all questions."
+    }
+   ],
+   "items": [
+    {
+     "n": 21,
+     "q": "The presentation focuses on (21) ______."
+    },
+    {
+     "n": 22,
+     "q": "Participants in the interviews were sometimes (22) ______ to discuss their habits."
+    },
+    {
+     "n": 23,
+     "q": "David found a relevant case study in (23) ______."
+    },
+    {
+     "n": 24,
+     "q": "Visual aids should include clear (24) ______ visualisations."
+    },
+    {
+     "n": 25,
+     "q": "The deadline for the project has been extended by (25) ______."
+    },
+    {
+     "n": 26,
+     "q": "David will send his updated draft by (26) ______ evening."
+    },
+    {
+     "n": 27,
+     "q": "What percentage of the overall marks is allocated to the visual presentation?",
+     "opts": [
+      "10%",
+      "12%",
+      "15%",
+      "20%"
+     ]
+    },
+    {
+     "n": 28,
+     "q": "How long should the presentation be?",
+     "opts": [
+      "Ten minutes",
+      "Eleven minutes",
+      "Twelve minutes",
+      "Fifteen minutes"
+     ]
+    },
+    {
+     "n": 29,
+     "q": "The three cities being compared are Amsterdam, Singapore and (29) ______."
+    },
+    {
+     "n": 30,
+     "q": "For the tutorial, what format does Professor Chen recommend for handouts?"
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "audioTitle": "第 4 部分播放中",
+   "audioBarPct": 0,
+   "audioTime": "00:00/07:00",
+   "tip": "你有约 20 秒查看题目。 (15s)",
+   "dotFrom": 31,
+   "next": null,
+   "groups": [
+    {
+     "label": "Questions 31-40",
+     "sub": "Play the controlled audio once and answer all questions."
+    }
+   ],
+   "items": [
+    {
+     "n": 31,
+     "q": "Ocean acidification is primarily caused by the absorption of _____ from the atmosphere."
+    },
+    {
+     "n": 32,
+     "q": "The average pH of ocean surface waters has dropped from 8.2 to _____ over the past 200 years."
+    },
+    {
+     "n": 33,
+     "q": "The process corals use to build their skeletons is called _____"
+    },
+    {
+     "n": 34,
+     "q": "Ocean acidification is compared to _____ in humans."
+    },
+    {
+     "n": 35,
+     "q": "Pteropods are a type of _____ that are affected by ocean acidification."
+    },
+    {
+     "n": 36,
+     "q": "Coral reefs support approximately _____ million people worldwide."
+    },
+    {
+     "n": 37,
+     "q": "Coral reefs contribute approximately _____ billion dollars to the global economy."
+    },
+    {
+     "n": 38,
+     "q": "One mitigation strategy involves protecting areas with naturally higher _____ levels."
+    },
+    {
+     "n": 39,
+     "q": "For the next seminar, students should read the article by _____ and colleagues."
+    },
+    {
+     "n": 40,
+     "q": "Next week, students will visit a _____ research station for a practical demonstration."
+    }
+   ]
+  }
+ ]
+}

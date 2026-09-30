@@ -45,7 +45,9 @@ class RfText extends StatelessWidget {
       this.spacing = 0,
       this.align,
       this.family});
-  final String text;
+  /// 字符串，或 `[英文, 中文]` 一对（演示用真实数据，tool/demo_export 导出），
+  /// 按界面语言取一项。
+  final Object text;
   final double size, spacing;
   final FontWeight weight;
   final Color color;
@@ -55,8 +57,10 @@ class RfText extends StatelessWidget {
   final String? family;
   @override
   Widget build(BuildContext context) {
-    context.watch<AppState>();
-    final value = rfTranslate(context, text);
+    final zh = context.watch<AppState>().lang == UiLang.zh;
+    final t = text;
+    final value = rfTranslate(
+        context, t is List ? '${t[zh && t.length > 1 ? 1 : 0]}' : '$t');
     return Text(value,
         textAlign: align,
         style: TextStyle(
@@ -207,7 +211,7 @@ class RfNav extends StatelessWidget {
 
 class RfEvidence extends StatelessWidget {
   const RfEvidence(this.text, {super.key, this.italic = true});
-  final String text;
+  final Object text;
   final bool italic;
   @override
   Widget build(BuildContext context) => Container(
@@ -218,7 +222,7 @@ class RfEvidence extends StatelessWidget {
       child: RfText(text, color: const Color(0xffb7b0a3), italic: italic));
 }
 
-Widget rfTag(String text, {bool weak = false}) => Align(
+Widget rfTag(Object text, {bool weak = false}) => Align(
     alignment: Alignment.centerLeft,
     child: Container(
         padding: EdgeInsets.symmetric(

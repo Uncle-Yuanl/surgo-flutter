@@ -11,6 +11,7 @@ import '../../widgets/primitives.dart';
 import '../../widgets/t.dart';
 import '../../widgets/marking_dialog.dart';
 import '../../widgets/answer_sheet_dialog.dart';
+import '../ielts_reading/exam_figure.dart';
 import '../ielts_reading/reading_measure.dart';
 import 'listening_data.dart';
 import 'listening_feedback.dart';
@@ -416,6 +417,11 @@ class _IeltsListeningPageState extends State<IeltsListeningPage> {
             Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
           if (q['groupStart'] != null)
             _group(q['groupStart'], q['groupInstr'] ?? ''),
+          // 演示用真实数据：图示标注这组题的图，挂在这组的第一题上。
+          if (q['figure'] != null) ...[
+            ExamFigure(q['figure']),
+            const SizedBox(height: 12),
+          ],
           SourceText(q['q'],
               style: const TextStyle(
                   fontFamily: 'Outfit',

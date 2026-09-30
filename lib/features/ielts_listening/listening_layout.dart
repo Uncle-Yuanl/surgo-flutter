@@ -118,8 +118,12 @@ class ListeningBrief extends StatelessWidget {
     final x = controller;
     final m = x.meta;
     final zh = x.app.lang == UiLang.zh;
-    final instruction =
-        '${m['part']} · ${_names[m['mainType']]}为主，先听录音再作答第 1-${x.questions.length} 题。';
+    // 演示用真实数据（tool/demo_export）自带这句说明的中英两份（brief：[英文, 中文]，
+    // 题型和题号按真实题目）；原型数据没有，仍按下面的模板拼。
+    final brief = m['brief'] as List?;
+    final instruction = brief != null
+        ? '${brief[zh ? 1 : 0]}'
+        : '${m['part']} · ${_names[m['mainType']]}为主，先听录音再作答第 1-${x.questions.length} 题。';
     final rendered =
         Translator.instance.translate(instruction, x.app.lang) ?? instruction;
     final cjk = RegExp(r'[\u4e00-\u9fff]').hasMatch(rendered);
@@ -137,7 +141,8 @@ class ListeningBrief extends StatelessWidget {
           const SizedBox(height: 10),
           // 用户 2026-09-24：标题与副标题中英要对照 —— 英文模式用 IELTS/TOEFL
           // Listening，不再拼中文「听力」；两行之间加行距。
-          T('${x.app.examType.label} ${zh ? '听力' : 'Listening'} · ${m['ctx']}',
+          // 真实数据里有的练习没有标题（ctx 为 null），就只写科目。
+          T('${x.app.examType.label} ${zh ? '听力' : 'Listening'}${m['ctx'] == null ? '' : ' · ${m['ctx']}'}',
               style: const TextStyle(
                   fontFamily: 'Outfit',
                   fontFamilyFallback: SurgoFontFamily.fallback,
@@ -157,7 +162,7 @@ class ListeningBrief extends StatelessWidget {
           AudioCard(
               cardKey: const ValueKey('listening-audio-card'),
               title: m['section'] ?? 'Section 3',
-              subtitle: m['sectionDesc'] ?? m['ctx'],
+              subtitle: m['sectionDesc'] ?? m['ctx'] ?? '',
               elapsed: clock(x.audio),
               total: m['audioDur'] ?? '07:00',
               progress: x.audio / 225,

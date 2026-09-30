@@ -86,8 +86,15 @@ class _ListeningFeedbackState extends State<ListeningFeedback> {
   @override
   Widget build(BuildContext context) {
     final app = context.watch<AppState>();
-    final parts =
-        app.session['sessionMode'] == 'mock' ? [1, 2, 3, 4] : [_dailyPart(app)];
+    final mock = app.session['sessionMode'] == 'mock';
+    final parts = mock ? [1, 2, 3, 4] : [_dailyPart(app)];
+    // 演示用真实数据（tool/demo_export）：模考回顾是另一场作答（mockFeedback），日常每个
+    // Part 是各自的一次练习；总评（review：估分、对题数、总评文字、薄弱项）模考一份、
+    // 日常每个 Part 一份。原型数据没有这些键，下面各自用原来写死的值。
+    final Map feedback = (mock ? widget.data.raw['mockFeedback'] : null) ??
+        widget.data.raw['feedback'];
+    final Map? review = (mock ? feedback : feedback['$part'])['review'];
+    final List? weak = review?['weak'];
     return ReviewTextScope(
         route: 'listeningFeedback',
         child: Builder(
@@ -95,20 +102,33 @@ class _ListeningFeedbackState extends State<ListeningFeedback> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       const RfNav(title: '练习回顾'),
-                      const RfSummary(
-                          right: 2,
-                          total: 4,
+                      RfSummary(
+                          right: review?['right'] ?? 2,
+                          total: review?['total'] ?? 4,
                           mock: false,
+                          band: review == null
+                              ? '6.5'
+                              : review['band'] as String?,
+                          text: review == null ? null : review['text'] ?? '',
                           english:
                               'You scored 2 of 4 across four sections. You are reliable on directly stated facts, but lose marks on distractors — where a speaker mentions a wrong option before confirming the right one (Q2, Q4). Train yourself to wait for the confirmed answer and to catch exact figures.',
                           chinese:
                               '四个部分共 4 题答对 2 题。你对直接陈述的事实可靠，但在干扰项上失分——说话人在确认正确答案前会先提到错误选项（第 2、4 题）。要训练自己等到被确认的答案，并抓住准确数字。'),
+                      if (weak == null || weak.isNotEmpty)
                       RfCard(children: [
                         const RfHeading('薄弱项分析'),
                         const SizedBox(height: 8),
                         const RfText('仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。',
                             size: 10.5, color: rfMuted),
                         const SizedBox(height: 14),
+                        if (weak != null)
+                          for (final w in weak) ...[
+                            rfTag(w['label'], weak: true),
+                            const SizedBox(height: 20),
+                            RfEvidence(w['text'], italic: false),
+                            SizedBox(height: w == weak.last ? 14 : 20),
+                          ]
+                        else ...[
                         rfTag('Distractor traps', weak: true),
                         const SizedBox(height: 20),
                         const RfEvidence(
@@ -121,6 +141,7 @@ class _ListeningFeedbackState extends State<ListeningFeedback> {
                             'Practise dictation of numbers and key nouns; the exact figure or word is often tested (cost you Q4).',
                             italic: false),
                         const SizedBox(height: 14),
+                        ],
                         RfButton('练习你最弱的题型 →',
                             key: const ValueKey('lf-practice'), onTap: () {
                           app.examType = ExamType.ielts;
@@ -178,8 +199,7 @@ class _ListeningFeedbackState extends State<ListeningFeedback> {
                                   child: ListeningReviewBody(
                                       key: ValueKey('lf-body-$displayPart'),
                                       part: displayPart,
-                                      data: widget.data.raw['feedback']
-                                          ['$displayPart'])))),
+                                      data: feedback['$displayPart'])))),
                       RfButton('回到首页',
                           key: const ValueKey('lf-finish'),
                           onTap: () => app.go(SurgoPage.ielts)),
