@@ -5,7 +5,7 @@
    "ctx": null,
    "section": "Part 1",
    "sectionDesc": null,
-   "audioDur": "07:00",
+   "audioDur": "02:00",
    "audioTitle": null,
    "mainType": "form",
    "groupLabel": "Questions 1-10",
@@ -105,6 +105,10 @@
    "group2Label": null,
    "group2Instr": null,
    "qs2": null,
+   "audio": {
+    "asset": "assets/data/aud_listening_p1.mp3",
+    "sec": 120.6
+   },
    "brief": [
     "Part 1, mostly form completion. Listen first, then answer questions 1-10.",
     "Part 1 · 表格填空为主，先听录音再作答第 1-10 题。"
@@ -115,7 +119,7 @@
    "ctx": "Welcome notes",
    "section": "Part 2",
    "sectionDesc": null,
-   "audioDur": "07:00",
+   "audioDur": "01:52",
    "audioTitle": null,
    "mainType": "note",
    "groupLabel": "Questions 11-16",
@@ -233,6 +237,10 @@
    "mapGroupLabel": null,
    "mapGroupInstr": null,
    "mapQs": null,
+   "audio": {
+    "asset": "assets/data/aud_listening_p2.mp3",
+    "sec": 112.3
+   },
    "brief": [
     "Part 2, mostly note completion. Listen first, then answer questions 11-20.",
     "Part 2 · 笔记填空为主，先听录音再作答第 11-20 题。"
@@ -243,7 +251,7 @@
    "ctx": "Research project supervision feedback",
    "section": "Part 3",
    "sectionDesc": null,
-   "audioDur": "07:00",
+   "audioDur": "02:37",
    "audioTitle": null,
    "mainType": "mc",
    "groupLabel": "Questions 21-26",
@@ -362,6 +370,10 @@
      ]
     }
    ],
+   "audio": {
+    "asset": "assets/data/aud_listening_p3.mp3",
+    "sec": 157.2
+   },
    "brief": [
     "Part 3, mostly multiple choice. Listen first, then answer questions 21-30.",
     "Part 3 · 选择题为主，先听录音再作答第 21-30 题。"
@@ -372,7 +384,7 @@
    "ctx": "Induction programme for new teachers",
    "section": "Part 4",
    "sectionDesc": null,
-   "audioDur": "07:00",
+   "audioDur": "01:37",
    "audioTitle": null,
    "mainType": "note",
    "groupLabel": "Questions 31-40",
@@ -473,6 +485,10 @@
    "group2Label": null,
    "group2Instr": null,
    "qs2": null,
+   "audio": {
+    "asset": "assets/data/aud_listening_p4.mp3",
+    "sec": 97.2
+   },
    "brief": [
     "Part 4, mostly summary completion. Listen first, then answer questions 31-40.",
     "Part 4 · 摘要填空为主，先听录音再作答第 31-40 题。"

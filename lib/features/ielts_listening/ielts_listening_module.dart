@@ -11,6 +11,7 @@ import '../../widgets/primitives.dart';
 import '../../widgets/t.dart';
 import '../../widgets/marking_dialog.dart';
 import '../../widgets/answer_sheet_dialog.dart';
+import '../../widgets/demo_audio.dart';
 import '../ielts_reading/exam_figure.dart';
 import '../ielts_reading/reading_measure.dart';
 import 'listening_data.dart';
@@ -53,7 +54,7 @@ class _IeltsListeningPageState extends State<IeltsListeningPage> {
         if (expired) surgoPrototypeAlert(context, '时间已到');
       });
       audio = Timer.periodic(const Duration(milliseconds: 250), (_) {
-        if (mounted && c!.playing) setState(c!.audioTick);
+        if (mounted && (c!.playing || c!.clip != null)) setState(c!.audioTick);
       });
     });
   }
@@ -62,6 +63,7 @@ class _IeltsListeningPageState extends State<IeltsListeningPage> {
   void dispose() {
     timer?.cancel();
     audio?.cancel();
+    demoAudio.stop();
     questionScroll.dispose();
     super.dispose();
   }
@@ -147,8 +149,8 @@ class _IeltsListeningPageState extends State<IeltsListeningPage> {
                       controller: x,
                       clock: clock,
                       onSeek: (v) => setState(() => x.seek(v)),
-                      onToggle: () => setState(() => x.playing = !x.playing),
-                      onSpeed: (v) => setState(() => x.speed = v))),
+                      onToggle: () => setState(x.toggle),
+                      onSpeed: (v) => setState(() => x.setSpeed(v)))),
             ])),
             Positioned(
                 left: 0,

@@ -71,7 +71,7 @@ class _OralDailyPageState extends State<OralDailyPage> {
               onChanged:c.updateNote,style:const TextStyle(fontSize:14),decoration:const InputDecoration(hintText:'Take notes here …',border:InputBorder.none,contentPadding:EdgeInsets.all(16)))),
           ],
           Padding(padding:const EdgeInsets.symmetric(vertical:16),child:T(c.phase=='note'?(q.kind=='cue'?(c.app.lang==UiLang.zh?'现在是准备时间，请仔细阅读题目并记笔记。':'Now it’s note-taking time, so please read the questions carefully'):'Listen to the question, then answer after the beep'):c.phase=='ready'?'Please answer':'Recording… tap to stop',textAlign:TextAlign.center,style:const TextStyle(fontSize:12,color:Color(0xff7a6a3a),fontWeight:FontWeight.w600))),
-          if(c.error!=null)SourceText(c.error!,style:const TextStyle(color:Colors.red,fontSize:12)),
+          ..._unheard(),
         ]))),
         if(c.preparing) Padding(padding:const EdgeInsets.fromLTRB(0,12,0,22),
           child:Column(children:[
@@ -82,6 +82,12 @@ class _OralDailyPageState extends State<OralDailyPage> {
       ],
     ]));
   });
+  /// 考官的提问读不出声音时（手机浏览器没有语音、或音频被拦下），把题目显示出来。
+  List<Widget> _unheard()=>c.unheard==null?const []:[
+    const T(['Your browser could not play the question, so here it is in writing.','浏览器没能读出这道题，题目显示在这里。'],textAlign:TextAlign.center,style:TextStyle(fontSize:12,color:SurgoColors.muted)),
+    const SizedBox(height:8),
+    SourceText(c.unheard!,key:const ValueKey('oral-unheard'),textAlign:TextAlign.center,style:const TextStyle(fontSize:16,height:1.45,fontWeight:FontWeight.w700)),
+  ];
   Widget _cue(OralTask q)=>SurgoCard(padding:const EdgeInsets.symmetric(horizontal:22,vertical:20),child:Column(crossAxisAlignment:CrossAxisAlignment.start,children:[
     SourceText(q.cue,style:const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize:15,fontWeight:FontWeight.w800,height:1.45)),const SizedBox(height:14),
     const SourceText('You should say:',style:TextStyle(fontSize:14)),const SizedBox(height:9),
@@ -103,9 +109,9 @@ class _OralDailyPageState extends State<OralDailyPage> {
     Row(children:[Expanded(child:SurgoButton('↻ 重新录制',key:const ValueKey('oral-retake'),primary:false,onTap:c.phase=='done'?c.retake:null)),const SizedBox(width:12),Expanded(child:SurgoButton('提交',key:const ValueKey('oral-submit'),onTap:c.phase=='done'?c.submit:null))]),
   ]));
   Widget _discussion(){final ask=c.turn=='ask';return Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
-    SizedBox(height:104,child:Center(child:SourceText(oralTime(ask?c.askSec.clamp(0,5):c.answerSec),style:const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize:32,fontWeight:FontWeight.w900)))),const SizedBox(height:20),
+    SizedBox(height:104,child:Center(child:SourceText(oralTime(ask?c.askSec.clamp(0,c.askSeconds):c.answerSec),style:const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize:32,fontWeight:FontWeight.w900)))),const SizedBox(height:20),
     Container(width:150,height:150,decoration:BoxDecoration(shape:BoxShape.circle,color:ask?const Color(0xff121110):SurgoColors.yellow,boxShadow:[BoxShadow(color:ask?const Color(0x1f1c1a17):const Color(0x33f5b301),spreadRadius:12)]),child:Center(child:icon(_mic,44,ask?Colors.white:const Color(0xff3a2e00)))),
     const SizedBox(height:26),T(ask?'考官正在提问…':'轮到你了 — 请开始回答',style:const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize:17,fontWeight:FontWeight.w900)),const SizedBox(height:10),T(ask?'问题由语音播出，请仔细听。':'像真实面试一样自然作答。',style:const TextStyle(fontSize:11.5,color:Color(0xff8a8378))),const SizedBox(height:16),T('第 ${c.round} / ${c.task.rounds} 轮',style:const TextStyle(fontSize:10,color:Color(0xffb5ad9e))),
-    if(c.error!=null)SourceText(c.error!,style:const TextStyle(color:Colors.red,fontSize:12)),
+    ..._unheard(),
   ]));}
 }

@@ -5,6 +5,7 @@ import 'package:flutter_tts/flutter_tts.dart';
 import '../../app/app_state.dart';
 import '../../app/i18n.dart';
 import '../../app/routes.dart';
+import '../../widgets/demo_audio.dart';
 
 abstract class OralSpeech {
   Future<void> speak(String text, {required VoidCallback started,
@@ -13,21 +14,62 @@ abstract class OralSpeech {
 }
 class NativeOralSpeech implements OralSpeech {
   final FlutterTts tts = FlutterTts();
+  /// 手机浏览器的朗读常常既不出声也不报错（iOS 上不是由点击直接触发的朗读会被丢弃，有的安卓
+  /// 浏览器没有语音引擎）。这么久还没开始读就按失败报，页面改成把题目显示出来。
+  static const startWithin = Duration(milliseconds: 2500);
+  Timer? _watch;
+  VoidCallback? _clip;
+  int _turn = 0;
   @override
   Future<void> speak(String text, {required VoidCallback started,
     required VoidCallback ended, required ValueChanged<String> failed}) async {
+    await stop();
+    final turn = ++_turn;
+    var open = true; // 每次朗读只回一次「结束」或「失败」
+    void close(VoidCallback report) { if (!open) return; open = false; _watch?.cancel(); report(); }
+    // 演示用真实数据带着考官的原音频（题库 ielts.speaking.examinerAudio：题目原文 → { asset, sec }），
+    // 有就放它，不用浏览器朗读；放不出声音同样按失败报。
+    final clip = clipFor(text);
+    if (clip != null) {
+      void watch() {
+        if (!demoAudio.silent && !demoAudio.ended) return;
+        final silent = demoAudio.silent;
+        _dropClip();
+        close(silent ? () => failed('audio blocked') : ended);
+      }
+      _clip = watch;
+      demoAudio.addListener(watch);
+      started();
+      demoAudio.play(clip['asset'] as String, seconds: (clip['sec'] as num).toDouble());
+      return;
+    }
     try {
-      await tts.stop();
       await tts.setLanguage('en-GB');
       await tts.setSpeechRate(.92);
-      tts.setStartHandler(started);
-      tts.setCompletionHandler(ended);
-      tts.setErrorHandler((message) => failed(message.toString()));
+      if (turn != _turn) return; // 等待期间已被 stop()
+      tts.setStartHandler(() { _watch?.cancel(); if (open) started(); });
+      tts.setCompletionHandler(() => close(ended));
+      // 被后一次朗读打断（interrupted / canceled）不算失败。
+      tts.setErrorHandler((message) { if (message != 'interrupted' && message != 'canceled') close(() => failed('$message')); });
+      _watch = Timer(startWithin, () => close(() { stop(); failed('no speech'); }));
       await tts.speak(text);
-    } catch(e) { failed(e.toString()); }
+    } catch(e) { close(() => failed(e.toString())); }
+  }
+  /// [text] 这道题的考官原音频（{ asset, sec }）；没有、或不在网页上（放不了）就是 null。
+  static Map? clipFor(String text) {
+    final Map? clips = QuestionBank.isLoaded && demoAudio.available
+      ? QuestionBank.instance.skill('speaking', ExamType.ielts)['examinerAudio'] : null;
+    return clips?[text];
+  }
+  void _dropClip() {
+    final watch = _clip;
+    if (watch == null) return;
+    _clip = null;
+    demoAudio.removeListener(watch);
+    demoAudio.stop();
   }
   @override
-  Future<void> stop() async { try { await tts.stop(); } catch (_) {} }
+  Future<void> stop() async { _turn++; _watch?.cancel(); _dropClip(); try { await tts.stop(); } catch (_) {} }
 }
 class OralTask {
   OralTask(this.data);
@@ -72,7 +114,8 @@ class OralController extends ChangeNotifier {
   final List<Timer> delayed=[];
   Timer? prepTimer, recTimer, barTimer, discussionTimer, discussionTick;
   String phase='note', note='', turn='ask';
-  String? error;
+  /// 读不出声音的那道题的原文：页面把它显示出来（听得到的时候题目只读不显示）。
+  String? unheard;
   int index=0, recSec=0, round=1, answerSec=0, askSec=0, audioSec=0, prepLeft=60;
   bool get preparing => task.kind=='cue' && phase=='note';
   bool speaking=false, disposed=false;
@@ -84,7 +127,9 @@ class OralController extends ChangeNotifier {
     ? [task.cue,'You should say:',...task.points,task.last].where((s)=>s.isNotEmpty).join('. ')
     : (index<task.questions.length?task.questions[index]:'');
   static int estimate(String text)=>math.max(2,((text.trim().isEmpty?0:text.trim().split(RegExp(r'\s+')).length)*.38+1.2).round());
-  int get duration=>estimate(spokenText);
+  /// 提问的秒数：有考官原音频就是它的时长，否则按词数估（原型的算法）。
+  int get duration=>secondsOf(spokenText);
+  static int secondsOf(String text)=>(NativeOralSpeech.clipFor(text)?['sec'] as num?)?.ceil()??estimate(text);
   void emit(){ if(!disposed) { app.session.addAll({'oralState':phase,'oralQIdx':index,
     'oralNote':note,'oralPrepLeft':prepLeft,'oralRecSec':recSec,'oralSpeaking':speaking,'oralHeard':heard.toList(),
     'd3Turn':turn,'d3Round':round,'d3Sec':answerSec,'d3AskSec':askSec});notifyListeners(); } }
@@ -111,11 +156,16 @@ class OralController extends ChangeNotifier {
     if(spokenText.isEmpty)return;
     final text=spokenText, cue=task.kind=='cue', epoch=++speechEpoch;
     bool valid()=>!disposed&&epoch==speechEpoch;
-    await speech.speak(text,started:(){if(!valid())return;speaking=true;audioSec=0;error=null;
-      barTimer?.cancel();if(!cue)barTimer=Timer.periodic(const Duration(seconds:1),(t){audioSec=math.min(audioSec+1,estimate(text));emit();if(audioSec>=estimate(text))t.cancel();});emit();},
-      ended:(){if(!valid())return;speaking=false;heard.add(index);barTimer?.cancel();audioSec=estimate(text);
-        if(phase=='note'&&!cue){phase='ready';if(app.current!=SurgoPage.oralExam)app.go(SurgoPage.oralExam);}emit();},
-      failed:(e){if(!valid())return;error='（原型）语音播放失败：$e';emit();});
+    unheard=null;
+    await speech.speak(text,started:(){if(!valid())return;speaking=true;audioSec=0;
+      barTimer?.cancel();if(!cue)barTimer=Timer.periodic(const Duration(seconds:1),(t){audioSec=math.min(audioSec+1,secondsOf(text));emit();if(audioSec>=secondsOf(text))t.cancel();});emit();},
+      ended:(){if(!valid())return;speaking=false;heard.add(index);barTimer?.cancel();audioSec=secondsOf(text);
+        // 原型在讨论题第一轮读完题时也会跳去 oralExam（H5 的行为，测试固定住了）。放考官原音频时不跳：
+        // 音频常常在「提问」那几秒之后才放完，一跳就把整轮作答留在了错的页面上。
+        if(phase=='note'&&!cue){phase='ready';if(app.current!=SurgoPage.oralExam&&!(card=='p3'&&NativeOralSpeech.clipFor(text)!=null))app.go(SurgoPage.oralExam);}emit();},
+      // 读不出来就不等了：问答题把题目显示出来、直接可以作答；讨论题（按计时推进）只显示题目。
+      failed:(e){if(!valid())return;speaking=false;barTimer?.cancel();if(!cue)unheard=text;
+        if(phase=='note'&&!cue&&card!='p3'){heard.add(index);phase='ready';}emit();});
   }
   void mic(){
     if(phase=='ready'){phase='rec';recSec=0;recTimer?.cancel();recTimer=Timer.periodic(const Duration(seconds:1),(t){recSec++;if(recSec>=recMax){t.cancel();phase='done';}emit();});emit();}
@@ -123,16 +173,19 @@ class OralController extends ChangeNotifier {
   }
   void retake(){recTimer?.cancel();recSec=0;phase='ready';emit();}
   void submit(){
-    if(task.kind!='cue'&&index<task.questions.length-1){index++;phase='note';note='';audioSec=0;emit();later(350,play);}
+    if(task.kind!='cue'&&index<task.questions.length-1){index++;phase='note';note='';audioSec=0;unheard=null;emit();later(350,play);}
     else {quitSpeech();app.go(SurgoPage.speakingReview);}
   }
+  /// 讨论题「考官提问」这一轮的秒数：原型固定 5 秒；考官的原音频比它长时，等它读完。
+  int get askSeconds=>math.max(5,NativeOralSpeech.clipFor(spokenText)==null?0:duration);
   void stopDiscussion(){discussionTimer?.cancel();discussionTick?.cancel();askSec=0;}
   void scheduleDiscussion(){
     stopDiscussion();
     if(turn=='ask'){
       later(200,play);askSec=0;
-      discussionTick=Timer.periodic(const Duration(seconds:1),(t){askSec++;emit();if(askSec>=5)t.cancel();});
-      discussionTimer=Timer(const Duration(seconds:5),(){turn='answer';answerSec=0;app.go(SurgoPage.oralDiscuss);scheduleDiscussion();emit();});
+      final ask=askSeconds;
+      discussionTick=Timer.periodic(const Duration(seconds:1),(t){askSec++;emit();if(askSec>=ask)t.cancel();});
+      discussionTimer=Timer(Duration(seconds:ask),(){turn='answer';answerSec=0;app.go(SurgoPage.oralDiscuss);scheduleDiscussion();emit();});
     }else{answerSec=0;discussionTick=Timer.periodic(const Duration(seconds:1),(t){answerSec++;if(answerSec>=30){t.cancel();answered();}emit();});}
   }
   void answered(){stopDiscussion();if(round>=task.rounds){app.go(SurgoPage.speakingReview);return;}

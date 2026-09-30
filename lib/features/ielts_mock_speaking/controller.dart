@@ -14,10 +14,12 @@ class IeltsMockSpeakingController extends ChangeNotifier {
  late String part;int index=0,left=300,recSec=0,prep=60,recLeft=120,round=1,phaseLeft=5;
  String phase='prep',turn='ask',note='';bool recording=false,busy=false,disposed=false;
  final List<Map<String,dynamic>> turns=[];Timer? clock,recordTimer;final List<Timer> pending=[];int epoch=0;
+ /// 考官的提问没能读出声音的那几题（题号）：页面把题目文字显示出来。
+ final Set<int> unheard={};
  Map get cfg=>data['SPQ'][part];
  void emit(){if(disposed)return;app.session.addAll({'spqPart':part,'spqIdx':index,'spqLeft':left,'spqRec':recording,'spqBusy':busy,'spqRecSec':recSec,'spqTurns':List.of(turns),'sp2Phase':phase,'sp2Prep':prep,'sp2RecLeft':recLeft,'sp2Note':note,'sp3Phase':turn,'sp3Left':left,'sp3Round':round,'sp3PhaseLeft':phaseLeft});notifyListeners();}
  void later(int ms,VoidCallback callback){pending.add(Timer(Duration(milliseconds:ms),(){if(!disposed)callback();}));}
- void reset(String p){clock?.cancel();recordTimer?.cancel();speech.stop();epoch++;for(final t in pending){t.cancel();}pending.clear();part=p;index=0;left=cfg['sec'];turns.clear();recording=false;busy=false;recSec=0;
+ void reset(String p){clock?.cancel();recordTimer?.cancel();speech.stop();epoch++;for(final t in pending){t.cancel();}pending.clear();part=p;index=0;left=cfg['sec'];turns.clear();unheard.clear();recording=false;busy=false;recSec=0;
   if(p=='p2'){phase='prep';prep=cfg['prep'];recLeft=cfg['rec'];note='';}
   if(p=='p3'){turn='ask';phaseLeft=data['SP3_SWAP'];round=1;}
  }
@@ -26,8 +28,9 @@ class IeltsMockSpeakingController extends ChangeNotifier {
  Future<void> play(int qi,{bool auto=false})async{
   final qs=cfg['qs'] as List,text=qi<qs.length?qs[qi] as String:'';speech.stop();final generation=++epoch;
   if(auto){busy=true;recording=false;emit();}
-  void done(){if(disposed||generation!=epoch)return;if(auto){busy=false;startRec();}emit();}
-  await speech.speak(text,started:(){},ended:done,failed:(_)=>later(900,done));
+  // busy 只由提问结束来解除：提问途中手点重播会作废那一次朗读，所以重播结束时也要解除，否则麦克风一直点不动。
+  void done(){if(disposed||generation!=epoch)return;if(auto||busy){busy=false;startRec();}emit();}
+  await speech.speak(text,started:(){},ended:done,failed:(_){if(disposed||generation!=epoch)return;unheard.add(qi);emit();later(900,done);});
  }
  void startRec(){if(busy)return;recording=true;recSec=0;recordTimer?.cancel();recordTimer=Timer.periodic(const Duration(seconds:1),(_){if(recording){recSec++;emit();}});emit();}
  void mic(){

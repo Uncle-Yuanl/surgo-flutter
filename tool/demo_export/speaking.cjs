@@ -4,6 +4,7 @@
 // ielts_mock_exam_sessions（模考的计时方案）。
 const { one, lit } = require('./db.cjs');
 const { band, pair } = require('./text.cjs');
+const { spoken, audio, clip } = require('./media.cjs');
 
 // 演示学员的哪三次日常作答（ielts_attempts.id），每个 Part 一次：挑质量检查通过、没有质量警告、
 // 转写最完整的一次。回顾页按 Part 显示对应那一次的分数、分项、弱项和逐题。
@@ -17,6 +18,11 @@ const ATTEMPTS = {
 // 模考口语各 Part 的计时取这一场的方案（ielts_mock_exam_sessions.id，唯一一场已完成的）。它按时交卷但一题
 // 都没录上（0/14 题，整场 0 分），题目和成绩都不用它。
 const MOCK_SESSION = '12f6e3bb-00fe-4f72-a2f5-a81d3a18b70b';
+
+// 考官的原音频：Part 1 / Part 3 的提问当时是后端用这个音色读的，读完留在朗读缓存里（media.cjs 的 spoken）。
+// 练习页和模考页问这些题时放的就是它（lib/features/oral_daily/controller.dart 的 NativeOralSpeech）；
+// Part 2 的题卡没有音频，页面上本来就有文字。
+const EXAMINER_VOICE = 'en-GB-RyanNeural';
 
 // 回顾页四张分项卡（中文名是原型的，英文界面由词典译）；发音只有测评指标，后端不折算成分数。
 const CRITERIA = [
@@ -151,10 +157,22 @@ exports.build = ({ learner }) => {
   const a = Object.fromEntries(Object.entries(ATTEMPTS).map(([part, id]) => [part, attempt(id, learner)]));
   const { p1, p3, cue, cueAsked } = askedQuestions(a);
   const plan = mockPlan(MOCK_SESSION, learner);
+  const examiner = {}; // 题目原文 → { asset, sec }
+  const sounds = {};
+  for (const [part, questions] of [['p1', p1], ['p3', p3]]) {
+    questions.forEach((q, i) => {
+      const name = `aud_examiner_${part}_${i + 1}.mp3`;
+      const sound = audio(spoken(q, [EXAMINER_VOICE], `examiner audio ${part} question ${i + 1}`), name);
+      sounds[name] = sound.bytes;
+      examiner[q] = clip(name, sound.sec);
+    });
+  }
   return {
+    ...sounds,
     'questions.json': {
       ielts: {
         speaking: {
+          examinerAudio: examiner,
           daily: {
             part1: { topic: a.p1.item.topic, questions: p1 },
             part2: { cue: cue.topic, points: cue.points, pointsZh: [] },
