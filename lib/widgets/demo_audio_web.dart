@@ -49,7 +49,8 @@ class DemoAudio extends ChangeNotifier {
   /// 从 [from] 秒开始放 [asset]；[seconds] 是导出时记下的时长（放不出声时按它走进度）。
   void play(String asset, {required double seconds, double from = 0}) {
     _stopSilent();
-    if (_asset != asset) {
+    final fresh = _asset != asset;
+    if (fresh) {
       _asset = asset;
       _el.src = ui_web.assetManager.getAssetUrl(asset);
     }
@@ -57,7 +58,8 @@ class DemoAudio extends ChangeNotifier {
     _ended = false;
     _el.defaultPlaybackRate = _rate;
     _el.playbackRate = _rate;
-    _el.currentTime = from;
+    // 刚换的 src 本来就从头放，不用再设位置。
+    if (!fresh || from > 0) _jump(from);
     _start();
     notifyListeners();
   }
@@ -90,7 +92,7 @@ class DemoAudio extends ChangeNotifier {
       _silentAt = to;
       if (_silentTick != null) _runSilent();
     } else {
-      _el.currentTime = to;
+      _jump(to);
     }
     notifyListeners();
   }
@@ -140,9 +142,17 @@ class DemoAudio extends ChangeNotifier {
   void _resume() {
     if (_silent) {
       _stopSilent();
-      _el.currentTime = _silentAt;
+      _jump(_silentAt);
     }
     _start();
+  }
+
+  void _jump(double to) {
+    try {
+      _el.currentTime = to;
+    } catch (_) {
+      // 还没读到元数据时，老的 Safari 设播放位置会抛错：那就从头放。
+    }
   }
 
   void _start() {
