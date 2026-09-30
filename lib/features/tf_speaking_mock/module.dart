@@ -33,23 +33,26 @@ class _TfSpeakingMockPageState extends State<TfSpeakingMockPage> {
  int get total=>c1?.total??c2?.total??1;
  String get phase=>c1?.phase??c2?.phase??'play';
  @override
- void initState(){super.initState();TfSpeakingMockData.load().then((data){if(!mounted)return;final app=context.read<AppState>(),prefix=widget.task==1?'tfS1':'tfS2';
+ void initState(){super.initState();revision=context.read<AppState>().revision;TfSpeakingMockData.load().then((data){if(!mounted)return;final app=context.read<AppState>(),prefix=widget.task==1?'tfS1':'tfS2';
   if(widget.task==1){c1=TfSpk1Controller(data['task1']);c1!.start();c1!.seg=app.session['${prefix}Seg'] as int? ?? 0;}else{c2=TfSpk2Controller(data['task2']);c2!.start();c2!.seg=app.session['${prefix}Seg'] as int? ?? 0;}setState((){});run();});}
  void save(){final p=widget.task==1?'tfS1':'tfS2';context.read<AppState>().session.addAll({'${p}Seg':seg,'${p}Phase':phase,'${p}Audio':audio,'${p}Left':left});}
  /// 演示用真实数据每题带着考官的原音频（segments[].audio：{ asset, sec }，tool/demo_export 导出）：在网页上「正在播放」
- /// 真的放它，只放一遍。这一阶段不数秒，改成每 250 毫秒看一次播放器：进度读它的，放完（demoAudio.ended；被浏览器
- /// 拦下、文件加载失败时它按时长空走，同样会到）才进下一阶段。原型数据没有这一项、或不在网页上，是 null，照旧每秒一拍。
+ /// 真的放它，只放一遍。这一阶段不数秒：进入时起播，之后每 250 毫秒看一次播放器，进度读它的，放完
+ /// （demoAudio.ended；被浏览器拦下、文件加载失败时它按时长空走，同样会到）才进下一阶段。离开页面不用停：
+ /// 换页时 AppState.go 统一停。原型数据没有这一项、或不在网页上，是 null，照旧每秒一拍。
  Map? get clip=>demoAudio.available?(c1?.cur??c2!.cur)['audio'] as Map?:null;
  bool get hearing=>phase=='play'&&clip!=null;
  double get played=>hearing&&demoAudio.asset==clip!['asset']?demoAudio.position/demoAudio.duration:audio/sec;
- void hear(){final c=clip!,asset=c['asset'] as String;
-  // 这一题还不在播放器里：进入播放阶段后的第一拍（不在 initState 里直接放，上一个页面离场时会把播放器停掉），
-  // 或者播放器被刚离场的页面停掉了（换页时旧页面要等 300 毫秒的淡出才 dispose；在设置里切换界面语言就会重建本页）。
+ // 建页时的 AppState.revision。每次换页（go，包括 go 到同一页重建）它都加一，对不上就是这一页已经被换走了
+ //（还要淡出 300 毫秒才 dispose）：这之后不再碰播放器，这时再起播，声音会留在下一个页面上没人停。
+ late int revision;
+ void hear(){if(context.read<AppState>().revision!=revision)return;final c=clip!,asset=c['asset'] as String;
+  // 这一题不在播放器里：刚进入播放阶段，或者正放着被别处停掉了——从头放。
   if(demoAudio.asset!=asset){demoAudio.play(asset,seconds:(c['sec'] as num).toDouble());}
   else if(demoAudio.ended){c1?.heard();c2?.heard();}
   else{final at=demoAudio.position.floor().clamp(0,sec);c1?.audio=at;c2?.audio=at;}
  }
- void run(){timer?.cancel();timer=Timer.periodic(Duration(milliseconds:hearing?250:1000),(_){if(!mounted)return;final was=hearing;String? result;
+ void run(){timer?.cancel();if(hearing)hear();timer=Timer.periodic(Duration(milliseconds:hearing?250:1000),(_){if(!mounted)return;final was=hearing;String? result;
   if(was){hear();}else{result=c1!=null?c1!.step():c2!.step();}
   save();setState((){});
   // 进、出真音频的播放阶段各换一次节拍；出来时从整秒重新数，「准备」和作答的第一秒才是完整的一秒。
@@ -58,7 +61,7 @@ class _TfSpeakingMockPageState extends State<TfSpeakingMockPage> {
   tail=Timer(const Duration(seconds:2),(){if(!mounted)return;Navigator.of(context).pop();stopping=false;final next=c1!=null?c1!.advance():c2!.advance();if(next){save();setState((){});run();}else if(widget.task==1){context.read<AppState>().go(SurgoPage.tfSpk2Intro);}else{showMarking(context,SurgoPage.tfSpeakFb,'正在批改口语作答, Task 2');}});
  }
  @override
- void dispose(){timer?.cancel();tail?.cancel();demoAudio.stop();super.dispose();}
+ void dispose(){timer?.cancel();tail?.cancel();super.dispose();}
  @override
  Widget build(BuildContext context){if(c1==null&&c2==null)return const Center(child:CircularProgressIndicator());final answer=phase=='answer';return Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
   // 用户 2026-09-24：计时代替顶栏 logo，样式与其它考试页统一为黑底胶囊。

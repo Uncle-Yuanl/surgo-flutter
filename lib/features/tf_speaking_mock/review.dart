@@ -23,12 +23,6 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
   String type = 'r'; // 源 tfSfType 默认 'r'
 
   @override
-  void dispose() {
-    demoAudio.stop();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     final state = context.read<AppState>();
     final fb = widget.fb;

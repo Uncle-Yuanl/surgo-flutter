@@ -59,7 +59,7 @@ class TfSpeakingController {
   double get progress => loaded ? demoAudio.position / demoAudio.duration : audio / sec;
 
   void _start({double from = 0}) {
-    // 播放器在页面离场时把倍速复位了，每次起播都带上这一页选的。
+    // 播放器一停（换页）倍速就复位，每次起播都带上这一页选的。
     demoAudio.rate = (rates[rate] as num).toDouble();
     demoAudio.play(clip!['asset'] as String, seconds: (clip!['sec'] as num).toDouble(), from: from);
   }
@@ -77,14 +77,14 @@ class TfSpeakingController {
 
   /// 模拟播放进度：每个 tick +1 秒，播满转 ready（对应源 tfRtRunAudio）。
   ///
-  /// 真音频时页面每 250 毫秒调一次，只按播放器的状态同步：在放就是 play，放完或暂停着是 ready（「播放中...」
-  /// 只在真的在放时出现）。被浏览器拦下、文件加载失败时播放器按时长空走，同样会放完，不会卡在 play。
+  /// 真音频时页面进来先调一次、之后每 250 毫秒调一次（页面被换走后不再调），只按播放器的状态同步：在放就是
+  /// play，放完或暂停着是 ready（「播放中...」只在真的在放时出现）。被浏览器拦下、文件加载失败时播放器按时长
+  /// 空走，同样会放完，不会卡在 play。
   void audioTick() {
     if (clip != null) {
       if (phase == 'answer') return;
       if (!loaded) {
-        // 这一段还不在播放器里：刚进页面、换到下一段的第一拍，或者播放器被刚离场的页面停掉了（换页时旧页面
-        // 要等 300 毫秒的淡出才 dispose；在设置里切换界面语言就会重建本页）。从记下的位置起播。
+        // 这一段不在播放器里：刚进页面、刚换到下一段，或者正放着被别处停掉了。从记下的位置起播。
         if (phase == 'play') _start(from: audio < sec ? audio.toDouble() : 0.0);
       } else if (demoAudio.ended) {
         audio = sec;

@@ -10,7 +10,6 @@ import '../../widgets/primitives.dart';
 import '../../widgets/t.dart';
 import '../../widgets/loop_video.dart';
 import '../../widgets/audio_card.dart';
-import '../../widgets/demo_audio.dart';
 import '../../widgets/marking_dialog.dart';
 import 'controller.dart';
 import 'review.dart';
@@ -38,11 +37,14 @@ class TfSpeakingDailyPage extends StatefulWidget {
 class _TfSpeakingDailyPageState extends State<TfSpeakingDailyPage> {
   TfSpeakingController? c;
   Timer? audioTimer, recTimer;
+  // 建页时的 AppState.revision。每次换页（go，包括 go 到同一页重建）它都加一，对不上就是这一页已经被换走了。
+  late int revision;
 
   @override
   void initState() {
     super.initState();
     final app = context.read<AppState>();
+    revision = app.revision;
     TfSpeakingData.load().then((raw) {
       if (!mounted) return;
       setState(() => c = TfSpeakingController(app, widget.kind, raw[widget.kind] as Map<String, dynamic>));
@@ -54,14 +56,17 @@ class _TfSpeakingDailyPageState extends State<TfSpeakingDailyPage> {
   }
 
   // 模拟音频进度：间隔随倍速而变（源 tfRtRunAudio: setInterval(…, 1000/rate)）。
-  // 真音频（c.clip）不数秒：音频卡在的两个阶段（播放 / 确认）每 250 毫秒按播放器的状态同步一次，
-  // 提示音也由第一拍起播——不在 initState 里直接放，上一个页面离场时会把播放器停掉。
+  // 真音频（c.clip）不数秒：音频卡在的两个阶段（播放 / 确认）按播放器的状态同步，进来先同步一次（提示音就从
+  // 这一次起播），之后每 250 毫秒一次。离开页面不用停：换页时 AppState.go 统一停。
   void _runAudio() {
     audioTimer?.cancel();
     final real = c!.clip != null;
     if (real ? c!.phase == 'answer' : c!.phase != 'play') return;
+    // 已经被换走的页面（还要淡出 300 毫秒才 dispose）不再碰播放器：这时再起播，声音会留在下一个页面上没人停。
+    bool gone() => c!.app.revision != revision;
+    if (real && !gone()) c!.audioTick();
     audioTimer = Timer.periodic(Duration(milliseconds: real ? 250 : c!.audioInterval), (_) {
-      if (!mounted) return;
+      if (!mounted || real && gone()) return;
       setState(c!.audioTick);
       if (!real && c!.phase != 'play') audioTimer?.cancel();
     });
@@ -111,7 +116,6 @@ class _TfSpeakingDailyPageState extends State<TfSpeakingDailyPage> {
   void dispose() {
     audioTimer?.cancel();
     recTimer?.cancel();
-    demoAudio.stop();
     super.dispose();
   }
 
