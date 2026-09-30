@@ -87,6 +87,8 @@ const grammarIn = (answer, issues) => (issues || []).filter((g) => words(answer)
 /** 回顾页的一个 Part：总分、分项、弱项、逐题。 */
 function review(part, a) {
   const turns = part === 'p2' ? a.turns.slice(0, 1) : a.turns; // Part 2 回顾页只有长陈述一张卡，追问不在这页
+  // 早期的 Part 2 作答没有逐题转写，页面上会是一张空卡：换一次作答，别悄悄导出去。
+  if (turns.some((t) => !t.a)) throw new Error(`speaking ${part}: a turn has no transcript, pick another attempt`);
   return {
     // 2026-09-25 以前存的是 ±0.5 的区间，后端与正式客户端都取中点作为唯一的练习估分。
     score: band((Number(a.range.low) + Number(a.range.high)) / 2),
@@ -157,3 +159,19 @@ exports.build = () => {
     },
   };
 };
+
+// 自检：node tool/demo_export/speaking.cjs（不连库）。
+if (require.main === module) {
+  const assert = require('assert');
+  assert.strictEqual(duration(83072), '1:23');
+  assert.strictEqual(duration(9400), '9s');
+  assert.deepStrictEqual(completed('2026-09-16T07:42:46.98+00:00', 116.2), ['Completed 16 Sep, 15:42 · 2 min', '9月16日完成, 15:42 · 2 min']);
+  assert.deepStrictEqual(completed('2026-12-31T16:05:00+00:00', 20), ['Completed 1 Jan, 00:05 · 1 min', '1月1日完成, 00:05 · 1 min']);
+  // 逐题转写是小写、无标点、撇号前带空格的；整篇里摘的原句带标点。找不到的（转写写法不同）不挂。
+  const answer = "then makes makes sound like everything 's mostly and on two time";
+  assert.deepStrictEqual(
+    grammarIn(answer, [{ original: "Then makes makes sound like everything's mostly." }, { original: 'a plan of 1/2 of day' }]),
+    [{ original: "Then makes makes sound like everything's mostly." }],
+  );
+  console.log('speaking.cjs self-check ok');
+}
