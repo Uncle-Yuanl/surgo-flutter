@@ -1,0 +1,47 @@
+{
+ "SPQ": {
+  "p1": {
+   "n": 5,
+   "sec": 300,
+   "qs": [
+    "What is a typical morning like for you?",
+    "Do you prefer to plan your day in advance or decide things as you go?",
+    "How has your daily routine changed compared to five years ago?",
+    "Is there anything in your daily routine you would like to change?",
+    "Who do you usually spend the busiest parts of your day with?"
+   ]
+  },
+  "p2": {
+   "n": 1,
+   "sec": 240,
+   "prep": 60,
+   "rec": 120,
+   "card": {
+    "title": "Describe a useful skill you learned.",
+    "lead": "你应该谈到:",
+    "bullets": [
+     "what the skill is",
+     "when and where you learned it",
+     "how you learned it",
+     "and explain why you think it is useful."
+    ]
+   },
+   "qs": [
+    "Describe a useful skill you learned. — what the skill is — when and where you learned it — how you learned it — and explain why you think it is useful."
+   ]
+  },
+  "p3": {
+   "n": 5,
+   "sec": 300,
+   "qs": [
+    "How do most people in your country typically organise their daily schedules?",
+    "Why do you think some people find it difficult to stick to a daily routine?",
+    "Do you think technology has made it easier or harder for people to manage their time? Give reasons for your view.",
+    "Some people believe that a busy life is a fulfilling life. To what extent do you agree?",
+    "How might the way people organise their daily lives change in the future compared with how their parents did?"
+   ]
+  }
+ },
+ "SP3_TOTAL": 300,
+ "SP3_SWAP": 5
+}

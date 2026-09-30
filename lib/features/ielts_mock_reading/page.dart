@@ -11,6 +11,7 @@ import '../../widgets/primitives.dart';
 import '../../widgets/t.dart';
 import '../../widgets/correction_dialog.dart';
 import '../../widgets/marking_dialog.dart';
+import '../ielts_reading/exam_figure.dart';
 import 'controller.dart';
 class IeltsMockReadingPage extends StatefulWidget {
  const IeltsMockReadingPage({super.key});
@@ -66,7 +67,8 @@ class _IeltsMockReadingPageState extends State<IeltsMockReadingPage> {
    if(q['group']!=null)...[const SizedBox(height:14),SourceText(q['group'],style:const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize:15,fontWeight:FontWeight.w800)),SourceText(q['instr']??'',style:const TextStyle(fontSize:12,height:1.5)),const SizedBox(height:12),
     if(q['box']!=null&&q['nobox']!=true)Container(padding:const EdgeInsets.all(12),color:const Color(0xfff7f3eb),child:Column(crossAxisAlignment:CrossAxisAlignment.start,children:[for(var n=0;n<(q['box'] as List).length;n++)SourceText('${letters[n]}  ${q['box'][n]}',style:const TextStyle(fontSize:12,height:1.8))])),
     if(q['sumText']!=null)...[SourceText(q['sumTitle']??'',style:SurgoText.cardTitle),SourceText(q['sumText'],style:const TextStyle(fontSize:13,height:1.6))],
-    if(type=='diagram')SizedBox(height:100,child:CustomPaint(painter:_Bamboo())),
+    // 演示用真实数据（tool/demo_export）的示意图题带真实图（figure）；原型数据没有，仍画自带的示意图。
+    if(type=='diagram')q['figure']!=null?ExamFigure(q['figure']):SizedBox(height:100,child:CustomPaint(painter:_Bamboo())),
    ],
    const SizedBox(height:10),Row(crossAxisAlignment:CrossAxisAlignment.start,children:[SourceText('${gi+1}',style:const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize:13,fontWeight:FontWeight.w800)),const SizedBox(width:8),Expanded(child:SourceText(q['q']??'',style:const TextStyle(fontSize:14,height:1.5))),if(type=='match')DropdownButton<int>(key:ValueKey('mr-match-$gi'),value:x.answers[gi] as int?,hint:const SourceText('—'),items:[const DropdownMenuItem<int>(value:null,child:SourceText('—')),for(var n=0;n<letters.length;n++)DropdownMenuItem(value:n+1,child:SourceText(letters[n].toString()))],onChanged:(v)=>setState(()=>x.pick(gi,v)))]),
    // 选项字母徐标对齐日常训练：32px 白底 / 选中填黄。

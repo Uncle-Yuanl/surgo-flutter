@@ -66,6 +66,9 @@ void jumpContinue(BuildContext context, Map<String, dynamic> it) {
   Navigator.of(context, rootNavigator: false).pop();
   final go = it['go'] as String;
   final pct = (it['pct'] as num).toDouble();
+  // 演示用真实数据的条目自带落点要用的状态（哪个 Part / Task、托福哪一科、是否模考）。
+  final extra = it['session'];
+  if (extra is Map) app.session.addAll(extra.cast<String, dynamic>());
   if (go == 'readingDaily') {
     // selReadType=null; readIdx=0; typeIdx=0; readDone.clear(); typeDone.clear();
     app.session['selReadType'] = null;
@@ -169,10 +172,13 @@ class _ContinueSheetState extends State<_ContinueSheet> {
     //     .filter(x=>continueTab==='all'||x.it.tab===continueTab);
     //   if(!list.some(x=>x.i===continuePick) && list.length) continuePick=list[0].i;
     final all = d.items;
+    // 演示用真实数据的条目标了考试（exam），只在那门考试的首页出；原型的 5 条不分考试。
+    final exam = context.watch<AppState>().examType.name;
     final list = <({Map<String, dynamic> it, int i})>[];
     for (var i = 0; i < all.length; i++) {
       final it = all[i];
-      if (continueTab == 'all' || it['tab'] == continueTab) {
+      if ((it['exam'] == null || it['exam'] == exam) &&
+          (continueTab == 'all' || it['tab'] == continueTab)) {
         list.add((it: it, i: i));
       }
     }
@@ -306,15 +312,16 @@ class _ContinueSheetState extends State<_ContinueSheet> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    // .cont-name（题目内容，原始 Text，不过翻译）
-                    Text(it['name'] as String,
+                    // .cont-name（题目内容，原始 Text，不过翻译）；
+                    // 演示用真实数据里 name / kicker 是 [英文, 中文]，按界面语言取。
+                    Text(langText(it['name'], context.watch<AppState>().lang),
                         style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                             fontSize: 14, // css 16 → 14
                             fontWeight: FontWeight.w800,
                             color: SurgoColors.ink)),
                     const SizedBox(height: 3),
                     // .cont-kicker
-                    Text(it['kicker'] as String,
+                    Text(langText(it['kicker'], context.watch<AppState>().lang),
                         style: const TextStyle(
                             fontSize: 10, // css 11 → 10（触底）
                             fontWeight: FontWeight.w600,

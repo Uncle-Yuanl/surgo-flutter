@@ -31,7 +31,8 @@ class _IeltsMockWritingPageState extends State<IeltsMockWritingPage> {
   timer=Timer.periodic(const Duration(seconds:1),(_){if(!mounted)return;final zero=c.tick();setState((){});if(zero)mark();});}
  @override
  void dispose(){timer?.cancel();draft.dispose();super.dispose();}
- void mark(){timer?.cancel();showMarking(context,SurgoPage.writingFeedback,'正在批改任务 1 / 2, Task 1');}
+ // 评分页按 sessionMode 认模考；不经模考选择弹窗直接进本页（深链、审计入口）时它没设，这里补上。
+ void mark(){timer?.cancel();context.read<AppState>().session['sessionMode']='mock';showMarking(context,SurgoPage.writingFeedback,'正在批改任务 1 / 2, Task 1');}
  void end(){final kind=c.end(),first=kind=='short',short=kind!='end';showDialog<void>(context:context,useRootNavigator:false,builder:(ctx)=>Dialog(child:Padding(padding:const EdgeInsets.all(24),child:Column(mainAxisSize:MainAxisSize.min,children:[
   if(short)Image.asset('assets/images/otter_study.png',height:140),
   T(first?'字数不足':short?'结束考试':'结束考试？',style:SurgoText.sheetTitle),const SizedBox(height:12),
@@ -80,10 +81,19 @@ class _IeltsMockWritingPageState extends State<IeltsMockWritingPage> {
     if(open)Padding(padding:const EdgeInsets.fromLTRB(16,0,16,16),child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
      SourceText(cfg['prompt']??'',style:const TextStyle(fontSize:15,height:1.7)),
      if(cfg['chartSeries']!=null)chart(cfg),
+     if(cfg['table']!=null)table(cfg['table'] as Map),
     ])),
    ]),
   );
  }
+ /// 演示用真实数据：那场模考的 Task 1 是表格题，按数据原生画表（第一行表头、第一列行名）；
+ /// 列多，窄屏在表格上横向滑动看。原型数据没有 table 键，走上面的柱状图。
+ Widget table(Map data)=>Padding(padding:const EdgeInsets.only(top:16),child:Column(crossAxisAlignment:CrossAxisAlignment.start,children:[
+  SourceText(data['title']??'',style:SurgoText.cardTitle),const SizedBox(height:10),
+  SingleChildScrollView(key:const ValueKey('mw-table'),scrollDirection:Axis.horizontal,child:Table(defaultColumnWidth:const FixedColumnWidth(92),columnWidths:const {0:FixedColumnWidth(118)},border:TableBorder.all(color:SurgoColors.line),children:[
+   for(final (i,row) in [data['head'] as List,...data['rows'] as List].indexed)TableRow(decoration:BoxDecoration(color:i==0?SurgoColors.yellowTint:null),children:[
+    for(final cell in row as List)Padding(padding:const EdgeInsets.symmetric(horizontal:8,vertical:7),child:SourceText('$cell',style:TextStyle(fontSize:12,height:1.35,fontWeight:i==0?FontWeight.w700:FontWeight.w400)))])])),
+ ]));
  Widget chart(Map<String,dynamic> data)=>Padding(padding:const EdgeInsets.symmetric(vertical:16),child:Column(children:[
   SourceText(data['chartTitle']??'',style:SurgoText.cardTitle),const SizedBox(height:10),Wrap(spacing:12,runSpacing:6,children:[for(final s in data['chartSeries'])SourceText(s['name'],style:TextStyle(fontSize:10,color:Color(int.parse((s['color'] as String).replaceFirst('#','ff'),radix:16))))]),const SizedBox(height:10),
   SizedBox(height:185,child:Row(crossAxisAlignment:CrossAxisAlignment.end,children:[for(var i=0;i<(data['chartYears'] as List).length;i++)Expanded(child:Column(mainAxisAlignment:MainAxisAlignment.end,children:[

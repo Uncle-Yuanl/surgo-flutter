@@ -99,8 +99,8 @@ class LearningDetails extends StatelessWidget {
                           style: const TextStyle(fontSize: 13, height: 1.5)),
                       const SizedBox(height: 10),
                       Text(
-                          tr('已评分练习：${data.requirements(skill, chinese).fold<int>(0, (n, r) => n + r.completed)}次（累计）',
-                              'Scored practices: ${data.requirements(skill, chinese).fold<int>(0, (n, r) => n + r.completed)} cumulative'),
+                          tr('已评分练习：${data.scoredPractices(skill, chinese)}次（累计）',
+                              'Scored practices: ${data.scoredPractices(skill, chinese)} cumulative'),
                           style: const TextStyle(
                               fontSize: 13, fontWeight: FontWeight.w600)),
                       const SizedBox(height: 8),
@@ -193,7 +193,9 @@ Future<void> showLearningExplanation(
                             child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
-                                  Text(
+                                  // 演示用真实数据时不说「并非真实学生记录」。
+                                  if (data.real == null)
+                                    Text(
                                       zh
                                           ? '以下为功能演示数据，并非真实学生记录。'
                                           : 'Demo data, not an actual student record.',

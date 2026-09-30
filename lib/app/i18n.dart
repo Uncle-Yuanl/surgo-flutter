@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 
 import 'routes.dart';
 import 'js_replacement.dart';
+import 'learner_profile.dart';
 import 'supplementary_en.dart';
 import 'supplementary_zh.dart';
 import '../widgets/source_text.dart' show SourceNodeTranslations;
@@ -68,6 +69,9 @@ class Translator {
   static Future<Translator> load() async {
     if (_cached != null) return _cached!;
     await SourceNodeTranslations.load();
+    // 学员总览数据也在这里一起载入：页面（首页、个人中心、学情分析…）同步读它，
+    // 而每个入口和测试启动时都会先载词典。
+    await LearnerProfile.load();
     final raw = await rootBundle.loadString('assets/data/i18n.json');
     final map = json.decode(raw) as Map<String, dynamic>;
     final t = Translator._(

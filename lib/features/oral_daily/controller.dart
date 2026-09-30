@@ -47,7 +47,8 @@ class OralTask {
       final p=d[exam==ExamType.toefl?'interview':card=='p1'?'part1':'part3'] as Map? ?? {};
       return OralTask({'kind':exam!=ExamType.toefl&&card=='p3'?'discuss':'qa',
         'list':p['questions']??[],'topic':p['topic']??'','prep':0,
-        'answer':exam==ExamType.toefl?45:30,if(exam!=ExamType.toefl&&card=='p3')'rounds':10});
+        // 演示用真实数据带 rounds（那次作答实际问了几轮）；原型数据没有这个键，仍是 10 轮。
+        'answer':exam==ExamType.toefl?45:30,if(exam!=ExamType.toefl&&card=='p3')'rounds':p['rounds']??10});
     }
     final p=d['part2'] as Map? ?? {}, pts=List<String>.from(p['points']??[]);
     return OralTask({'kind':'cue','cue':p['cue']??'',

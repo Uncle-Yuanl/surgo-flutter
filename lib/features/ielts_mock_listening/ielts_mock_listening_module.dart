@@ -324,10 +324,20 @@ class _MockListeningPageState extends State<MockListeningPage> {
                                           '第 4 部分结束。你现在有 2 分钟检查全部答案。 (${_mmss(reviewLeft)})',
                                           done: true),
                                     _group(groups[0]),
+                                    // 演示用真实数据（tool/demo_export）：真实模考每个
+                                    // Part 是一组混排的题（items：有 opts 的是选择题，
+                                    // 其余填空），不是原型那种每个 Part 固定两种题型。
+                                    if (m['items'] != null)
+                                      for (final q in m['items'] as List)
+                                        q['opts'] != null
+                                            ? _mcQ(x, q)
+                                            : _fillRow(x, q, simple: true)
+                                    else ...[
                                     ..._bodyTop(x, m),
                                     const SizedBox(height: 24),
                                     _group(groups[1]),
                                     ..._bodyBottom(x, m),
+                                    ],
                                   ]))),
                       Positioned(
                           left: 0,
@@ -623,7 +633,7 @@ class _MockListeningPageState extends State<MockListeningPage> {
                                   ? SurgoColors.yellow
                                   : SurgoColors.line),
                           borderRadius: BorderRadius.circular(9)),
-                      child: SourceText('ABC'[i],
+                      child: SourceText(String.fromCharCode(65 + i),
                           style: TextStyle(
                               fontFamily: 'Outfit',
                               fontFamilyFallback: SurgoFontFamily.fallback,

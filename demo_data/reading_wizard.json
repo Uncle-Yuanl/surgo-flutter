@@ -1,0 +1,671 @@
+{
+ "RTYPES": [
+  {
+   "key": "mc",
+   "name": "选择题",
+   "mins": 7.5,
+   "instr": "Choose the correct answer A, B, C or D.",
+   "items": [
+    {
+     "q": "1. What does the passage identify as the main concern of the new research field combining neuroscience, environmental psychology and architecture?",
+     "opts": [
+      "A) How to reduce the cost of constructing tall buildings",
+      "B) Why certain urban spaces cause stress while others promote wellbeing",
+      "C) How urban planning can increase commercial investment",
+      "D) Whether cities should prioritise economic growth over environmental health"
+     ]
+    },
+    {
+     "q": "2. According to the passage, what happens to people exposed to high-density urban scenes in experiments?",
+     "opts": [
+      "A) They develop permanent memory loss",
+      "B) Their cortisol levels change and their concentration suffers",
+      "C) They become more creative in problem-solving tasks",
+      "D) Their ability to process visual information improves significantly"
+     ]
+    },
+    {
+     "q": "3. What does the passage say about the High Line project in New York?",
+     "opts": [
+      "A) It was built primarily to reduce traffic congestion in the city centre",
+      "B) It serves as an example of how natural elements can restore directed attention",
+      "C) It was the first elevated park ever constructed in the United States",
+      "D) It caused property values in the surrounding area to decline significantly"
+     ]
+    },
+    {
+     "q": "4. Why do residents of very high-rise buildings report weaker social ties, according to the passage?",
+     "opts": [
+      "A) They are required to pay higher fees for shared facilities",
+      "B) They are less likely to have spontaneous social interactions at ground level",
+      "C) They tend to move more frequently between neighbourhoods",
+      "D) They are exposed to higher levels of noise pollution"
+     ]
+    },
+    {
+     "q": "5. What do advocates of adaptive reuse argue about its potential application?",
+     "opts": [
+      "A) It should be limited to commercial buildings rather than residential areas",
+      "B) It is too expensive to be implemented on a large scale in most cities",
+      "C) It could be used to transform entire districts while preserving historical character",
+      "D) It has been proven to increase urban noise pollution in the long term"
+     ]
+    }
+   ],
+   "article": {
+    "title": "The Psychology of Urban Design",
+    "passage": [
+     [
+      "A",
+      "The way cities are built shapes how their inhabitants think, feel and behave in ways that urban planners are only beginning to understand. Over the past three decades, a new field of research combining neuroscience, environmental psychology and architecture has emerged, seeking to explain why certain urban spaces leave people feeling energized while others induce chronic stress. The findings challenge long-held assumptions about what makes a city successful and raise uncomfortable questions about the rapid, often unplanned, urbanisation that has characterised the twentieth and twenty-first centuries."
+     ],
+     [
+      "B",
+      "At the heart of this research lies the concept of cognitive load. When people move through complex urban environments, their brains must process an enormous quantity of visual, auditory and olfactory information simultaneously. Street signs, traffic signals, the movement of other pedestrians, the sounds of construction and the smell of exhaust all compete for attention. According to studies conducted at several European universities, this constant bombardment can deplete mental resources that would otherwise be available for creative thinking, decision-making and emotional regulation. The consequence is not merely fatigue. Research subjects exposed to high-density urban scenes showed measurable changes in cortisol levels and reduced performance on tasks requiring sustained concentration."
+     ],
+     [
+      "C",
+      "In response to these findings, some architects and city governments have begun experimenting with what they call restorative environments within urban settings. The basic principle is straightforward: incorporating natural elements into built spaces can counteract the attention-draining effects of urban stimuli. Tree-lined streets, rooftop gardens, water features and the strategic use of natural light have all been shown to restore what psychologists term directed attention. One well-documented case is the High Line in New York, a disused railway line converted into an elevated park. Since its opening, the surrounding area has attracted significant residential and commercial investment, and surveys of visitors consistently report high levels of perceived wellbeing compared with visitors to conventional streets in the same neighbourhood."
+     ],
+     [
+      "D",
+      "The relationship between building height and psychological wellbeing has also attracted considerable attention. While the construction of tall buildings continues to be driven by economic pressure and the desire to accommodate growing urban populations, evidence suggests that extreme vertical density may carry hidden social costs. People living in very high-rise buildings report lower levels of community engagement and weaker social ties with neighbours than those in lower-density areas. Researchers attribute this partly to the reduced likelihood of spontaneous social interaction when residents do not share ground-level spaces. In contrast, mid-rise urban developments that incorporate shared courtyards and mixed-use ground floors tend to generate more social cohesion and a stronger sense of local identity."
+     ],
+     [
+      "E",
+      "Noise pollution remains one of the most persistent challenges in urban design. City dwellers are routinely exposed to sound levels that exceed recommended thresholds for health and cognitive function. Yet the response of urban planners to this problem has been uneven. Some cities have introduced acoustic buffers, underground transport systems and building materials designed to absorb sound. Others have prioritised economic efficiency over acoustic comfort, resulting in residential areas where traffic noise penetrates walls and ceilings at levels that disrupt sleep and impair concentration in children and adults alike. Research published in environmental health journals has documented a clear correlation between chronic noise exposure and elevated blood pressure, even after controlling for other risk factors."
+     ],
+     [
+      "F",
+      "The future of urban design may lie in what planners describe as adaptive reuse. Rather than demolishing existing structures, adaptive reuse involves modifying older buildings to serve contemporary purposes while preserving their original character. This approach offers both environmental and psychological benefits. Buildings with historical character provide a sense of continuity and place that newer, standardised constructions often lack. Residents in neighbourhoods where adaptive reuse has been applied report stronger feelings of attachment to their surroundings and greater satisfaction with their living conditions. Advocates argue that the principles of adaptive reuse could be applied on a larger scale, transforming entire districts into spaces that honour their past while meeting the demands of the present."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "tfng",
+   "name": "判断信息（正误未提及）",
+   "mins": 7.5,
+   "instr": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+   "kind": "tfng",
+   "article": {
+    "title": "The Silent Architects: How Fungi Shape Forests",
+    "passage": [
+     [
+      "A",
+      "Few organisms have transformed the landscape of ecological science more profoundly than mycorrhizal fungi. These microscopic filaments, known as hyphae, form extraordinary partnerships with approximately ninety percent of all terrestrial plant species, including the majority of trees in boreal, temperate and tropical forests. The relationship is ancient, dating back at least four hundred and fifty million years, and it fundamentally altered the trajectory of plant colonisation on land."
+     ],
+     [
+      "B",
+      "The mechanism of mycorrhizal association begins when a fungal spore germinates in soil and extends its hyphal network toward a plant's root system. Rather than penetrating the root cells directly, the fungus weaves between them, creating an interface known as the Hartig net. In exchange for sugars produced by the plant through photosynthesis, the fungus delivers essential minerals, particularly phosphorus and nitrogen, from the surrounding soil to the root zone. This exchange is remarkably efficient because fungal hyphae are far finer than the finest root tips, allowing them to explore soil micropores that plant roots cannot access."
+     ],
+     [
+      "C",
+      "The ecological implications of these networks extend well beyond simple nutrient transfer. Forest ecologists have documented what they call mycorrhizal networks, sometimes poetically described as the wood wide web. These networks connect multiple trees of the same or different species, allowing the transfer of carbon, water and even chemical warning signals between individuals. In a landmark study conducted in old growth Douglas fir forests of British Columbia, researchers discovered that seedlings growing in the shade of larger trees survived at significantly higher rates when connected to the mycorrhizal network, receiving approximately forty percent of their carbon from neighbouring mature trees."
+     ],
+     [
+      "D",
+      "The role of mycorrhizal fungi in forest resilience has attracted considerable attention following recent extreme weather events. During prolonged drought conditions, trees connected to diverse fungal communities demonstrated superior water-use efficiency compared to isolated individuals. The fungal hyphae act as biological pipes, channeling water from moist soil layers to drought-stressed root zones. Furthermore, certain specialist fungi produce compounds that help their host plants regulate water loss, essentially functioning as biological insurance against climatic extremes."
+     ],
+     [
+      "E",
+      "However, the relationship is not without complications for forest management. When forests are clear-cut, the mycorrhizal network is severed and destroyed. Regeneration of trees in these areas becomes difficult because young seedlings lack the fungal partners necessary for efficient nutrient uptake. Forest scientists now recommend retaining pockets of mycorrhizal-rich soil during harvesting operations to accelerate natural regeneration. Similarly, the application of nitrogen-based fertilisers in commercial forestry has been shown to disrupt the natural fungal-plant signalling, sometimes reducing the diversity of mycorrhizal communities and diminishing the network's ecological benefits."
+     ],
+     [
+      "F",
+      "The study of mycorrhizal ecology has also revealed unexpected connections with atmospheric science. Mycorrhizal fungi influence the production of volatile organic compounds by trees, which subsequently affect cloud formation and regional weather patterns. Boreal forests dominated by mycorrhizal tree species have been shown to contribute significantly to regional precipitation through these atmospheric pathways. This discovery has prompted atmospheric scientists to reconsider the role of forest soil communities in climate systems, moving beyond the simplistic view of forests as mere carbon sinks."
+     ],
+     [
+      "G",
+      "Understanding mycorrhizal networks offers practical guidance for climate adaptation strategies. Restoration projects that incorporate diverse mycorrhizal inoculants have demonstrated higher survival rates and faster growth in replanted forests. Some countries are now integrating mycorrhizal considerations into national forest policy, recognising that the invisible fungal networks beneath the soil surface may be as important to forest health as the visible canopy above. The challenge remains in translating this scientific understanding into scalable practical applications that can benefit forests on a continental scale."
+     ],
+     [
+      "H",
+      "As research methods advance, scientists continue to uncover new dimensions of fungal-plant interactions. Recent genetic analyses have identified hundreds of previously unknown fungal species associated with individual forest plots, suggesting that the true diversity of mycorrhizal communities has been dramatically underestimated. This hidden biodiversity represents both an opportunity for forest science and a reminder that some of the most important processes shaping our planet operate largely beyond human perception."
+     ]
+    ]
+   },
+   "items": [
+    "1. Mycorrhizal fungi form partnerships with approximately ninety percent of all terrestrial plant species.",
+    "2. The Hartig net is formed when the fungus penetrates root cells directly.",
+    "3. In the Douglas fir study, shaded seedlings received approximately forty percent of their carbon from neighbouring mature trees.",
+    "4. The application of nitrogen-based fertilisers in commercial forestry has been shown to improve mycorrhizal network function.",
+    "5. Atmospheric scientists now fully understand the role of mycorrhizal fungi in weather pattern formation."
+   ]
+  },
+  {
+   "key": "yyng",
+   "name": "判断观点（是否未提及）",
+   "mins": 7.5,
+   "instr": "Do the following statements agree with the views of the writer? Write YES, NO or NOT GIVEN.",
+   "kind": "tfng",
+   "opts3": [
+    "Yes",
+    "No",
+    "Not Given"
+   ],
+   "article": {
+    "title": "The Rise of Community Repair Workshops",
+    "passage": [
+     [
+      "A",
+      "Across many cities, a quiet movement is reshaping how people think about broken objects. Community repair workshops, often held in libraries, community centres or shared working spaces, invite residents to bring damaged household items and, with the help of volunteer fixers, attempt to mend them in a single afternoon. What began as a small reaction against the throwaway culture of the early twenty-first century has grown into a structured practice supported by local councils, charitable foundations and small businesses."
+     ],
+     [
+      "B",
+      "The origins of the movement can be traced to a handful of European cities in the late 2000s. Volunteers, many of them engineers, designers or simply skilled hobbyists, began gathering once a month to repair small electrical appliances, clothing and bicycles. Word spread through social media, and similar groups appeared in towns across the region. Within a decade, the idea had reached North America, Australia and parts of East Asia, and organisers began exchanging notes on a common set of challenges."
+     ],
+     [
+      "C",
+      "The most immediate challenge is the supply of spare parts. Modern consumer electronics are often assembled with custom screws, glued components and proprietary connectors, so finding a replacement part can be difficult even for an experienced technician. Workshop organisers have responded by building networks of donors who contribute broken devices that can be cannibalised for working parts. Some groups have gone further and started negotiating directly with manufacturers, requesting that they release technical drawings under licence so that local suppliers can produce compatible components."
+     ],
+     [
+      "D",
+      "A second challenge is liability. When a volunteer repairs a neighbour's toaster or sewing machine, who is responsible if the item later causes a fire or an injury? Several national governments have addressed this concern by introducing repair-friendly regulations that protect volunteer fixers acting in good faith, provided they follow published safety guidelines. Insurers, too, have begun to adapt. A growing number of home insurance policies now include a clause that recognises the work of accredited workshops, which gives householders greater confidence when they hand over a cherished device."
+     ],
+     [
+      "E",
+      "The workshops also serve a wider social purpose. Many participants report that the experience of repairing something together strengthens neighbourhood ties. Retirees pass on practical knowledge to younger residents, recent immigrants meet people outside their immediate circle, and parents use the sessions to introduce children to basic tools. Local authorities have noticed the side benefits, and some now fund workshops as part of broader community cohesion programmes rather than purely as environmental initiatives."
+     ],
+     [
+      "F",
+      "Economically, the picture is more complicated. Repair shops that operate commercially have long argued that manufacturer warranties discourage consumers from seeking independent fixes. In response, several jurisdictions have passed so-called right-to-repair laws that obligate producers to supply parts, tools and manuals for a defined period after a product is discontinued. Consumer groups have welcomed these reforms, and surveys suggest that householders who have used a workshop are noticeably more willing to buy higher-quality items that can be mended, even if they cost more at the outset."
+     ],
+     [
+      "G",
+      "The future direction of the movement is still being negotiated. Some advocates want every household to have a basic toolkit and a clear understanding of common fixes. Others argue that the most effective response to mass consumption is structural: stricter product design rules, longer statutory guarantees and deposit-return schemes for high-volume items. A third group prefers to focus on the cultural shift already under way, pointing out that millions of people now treat a broken appliance as a problem to be solved rather than a reason to buy a new one. Whatever the emphasis, the workshops have secured a firm place in the civic life of many towns, and their organisers speak less about saving the planet than about rebuilding everyday skills that the twentieth century quietly let slip away."
+     ]
+    ]
+   },
+   "items": [
+    "1. The writer believes that the economic effects of the repair movement are straightforward.",
+    "2. The writer thinks that the workshops have mainly succeeded in changing how people think about broken objects."
+   ]
+  },
+  {
+   "key": "imatch",
+   "name": "信息匹配",
+   "mins": 4.5,
+   "instr": "Which paragraph contains the following information? Choose A, B, C, D, E or F.",
+   "kind": "match",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "article": {
+    "title": "The Rise of Community Repair Workshops",
+    "passage": [
+     [
+      "A",
+      "Across many cities, a quiet movement is reshaping how people think about broken objects. Community repair workshops, often held in libraries, community centres or shared working spaces, invite residents to bring damaged household items and, with the help of volunteer fixers, attempt to mend them in a single afternoon. What began as a small reaction against the throwaway culture of the early twenty-first century has grown into a structured practice supported by local councils, charitable foundations and small businesses."
+     ],
+     [
+      "B",
+      "The origins of the movement can be traced to a handful of European cities in the late 2000s. Volunteers, many of them engineers, designers or simply skilled hobbyists, began gathering once a month to repair small electrical appliances, clothing and bicycles. Word spread through social media, and similar groups appeared in towns across the region. Within a decade, the idea had reached North America, Australia and parts of East Asia, and organisers began exchanging notes on a common set of challenges."
+     ],
+     [
+      "C",
+      "The most immediate challenge is the supply of spare parts. Modern consumer electronics are often assembled with custom screws, glued components and proprietary connectors, so finding a replacement part can be difficult even for an experienced technician. Workshop organisers have responded by building networks of donors who contribute broken devices that can be cannibalised for working parts. Some groups have gone further and started negotiating directly with manufacturers, requesting that they release technical drawings under licence so that local suppliers can produce compatible components."
+     ],
+     [
+      "D",
+      "A second challenge is liability. When a volunteer repairs a neighbour's toaster or sewing machine, who is responsible if the item later causes a fire or an injury? Several national governments have addressed this concern by introducing repair-friendly regulations that protect volunteer fixers acting in good faith, provided they follow published safety guidelines. Insurers, too, have begun to adapt. A growing number of home insurance policies now include a clause that recognises the work of accredited workshops, which gives householders greater confidence when they hand over a cherished device."
+     ],
+     [
+      "E",
+      "The workshops also serve a wider social purpose. Many participants report that the experience of repairing something together strengthens neighbourhood ties. Retirees pass on practical knowledge to younger residents, recent immigrants meet people outside their immediate circle, and parents use the sessions to introduce children to basic tools. Local authorities have noticed the side benefits, and some now fund workshops as part of broader community cohesion programmes rather than purely as environmental initiatives."
+     ],
+     [
+      "F",
+      "Economically, the picture is more complicated. Repair shops that operate commercially have long argued that manufacturer warranties discourage consumers from seeking independent fixes. In response, several jurisdictions have passed so-called right-to-repair laws that obligate producers to supply parts, tools and manuals for a defined period after a product is discontinued. Consumer groups have welcomed these reforms, and surveys suggest that householders who have used a workshop are noticeably more willing to buy higher-quality items that can be mended, even if they cost more at the outset."
+     ],
+     [
+      "G",
+      "The future direction of the movement is still being negotiated. Some advocates want every household to have a basic toolkit and a clear understanding of common fixes. Others argue that the most effective response to mass consumption is structural: stricter product design rules, longer statutory guarantees and deposit-return schemes for high-volume items. A third group prefers to focus on the cultural shift already under way, pointing out that millions of people now treat a broken appliance as a problem to be solved rather than a reason to buy a new one. Whatever the emphasis, the workshops have secured a firm place in the civic life of many towns, and their organisers speak less about saving the planet than about rebuilding everyday skills that the twentieth century quietly let slip away."
+     ]
+    ]
+   },
+   "items": [
+    "1. a reference to a change in national rules that helps protect volunteer fixers",
+    "2. a description of how workshops help different generations of residents interact"
+   ]
+  },
+  {
+   "key": "hmatch",
+   "name": "标题匹配",
+   "mins": 7.5,
+   "instr": "The passage has five paragraphs, A-E. Choose the correct heading for each paragraph from the list below. Write the correct letter, A-H, on your answer sheet. There are more headings than paragraphs, so you will not use all of them.",
+   "kind": "match",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+   ],
+   "optionLabels": [
+    "A  Coffee's discovery in Ethiopia",
+    "B  The commercial expansion of European coffee trading",
+    "C  The spread of coffee to Europe",
+    "D  Coffee houses and intellectual exchange",
+    "E  Industrialisation and mass production of coffee",
+    "F  The modern specialty coffee movement",
+    "G  Coffee's religious significance in the Middle East",
+    "H  The role of merchants in spreading coffee culture"
+   ],
+   "article": {
+    "title": "The Global Spread of Coffee Culture",
+    "passage": [
+     [
+      "A",
+      "Coffee, one of the world's most popular beverages, has a history that stretches back over a thousand years. The coffee plant originated in the highlands of Ethiopia, where legend suggests a goat herder named Kaldi first discovered its stimulating properties after observing his goats became energetic after eating berries from a particular tree. From these humble beginnings in East Africa, coffee would eventually travel across the globe and transform into a multi-billion dollar industry. The early development of coffee cultivation remained largely confined to the Arabian Peninsula, where it became an important part of cultural and religious practices in Yemen by the fifteenth century."
+     ],
+     [
+      "B",
+      "From the Arabian Peninsula, coffee spread rapidly through the trading routes of the Ottoman Empire. By the seventeenth century, the beverage had reached Europe, where it was initially viewed with suspicion. Some religious leaders even attempted to ban coffee, claiming it was a Muslim drink and therefore unsuitable for Christians. However, European merchants soon recognised the commercial potential of this exotic commodity. Venetian traders established the first European coffee houses, and gradually the drink shed its foreign associations as cities such as London, Paris and Vienna developed their own coffee-drinking traditions."
+     ],
+     [
+      "C",
+      "The impact of coffee houses on European society was considerable. In England, coffee houses became known as penny universities because for the price of a single coin, anyone could enter and engage in intellectual conversation with scholars, merchants and politicians. These establishments fostered lively debates on topics ranging from science to commerce. Many important institutions, including the Royal Society, are said to have originated in coffee house discussions. In London, Lloyd's of London began as a coffee house where ship owners and merchants gathered to share shipping information, eventually becoming the world's largest insurance market."
+     ],
+     [
+      "D",
+      "The industrial era brought significant changes to coffee consumption. As factories expanded during the Industrial Revolution, coffee became essential for workers who needed to maintain alertness during long shifts. The invention of instant coffee in the early twentieth century further transformed the coffee market, making the beverage more convenient for home and office consumption. This period marked a shift in the social meaning of coffee, as it evolved from a leisurely drink associated with intellectual pursuits to an everyday commodity consumed by working people of all classes."
+     ],
+     [
+      "E",
+      "In recent years, a counter-movement has emerged against the standardisation of coffee production. Specialty coffee shops, which first appeared in the 1980s, focus on high-quality beans, precise brewing methods and direct relationships with growers. These establishments celebrate the unique characteristics of coffee from different regions and employ skilled baristas trained in techniques such as pour-over and siphon brewing. This revival of artisan coffee culture represents a return to the appreciation of coffee as a craft product rather than simply a mass-produced commodity."
+     ]
+    ]
+   },
+   "items": [
+    "1. Paragraph A",
+    "2. Paragraph B",
+    "3. Paragraph C",
+    "4. Paragraph D",
+    "5. Paragraph E"
+   ]
+  },
+  {
+   "key": "fmatch",
+   "name": "特征匹配",
+   "mins": 3,
+   "instr": "Match each statement with the correct person or group mentioned in the passage.",
+   "kind": "match",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "optionLabels": [
+    "A  Long-standing borrowers",
+    "B  Some council members",
+    "C  Library staff in urban systems",
+    "D  Regional store managers"
+   ],
+   "article": {
+    "title": "The Quiet Reinvention of the Public Library",
+    "passage": [
+     [
+      "A",
+      "For much of the twentieth century, the public library was a familiar landmark in almost every town. Its shelves of bound volumes, its long reading tables and its enforced silence promised a particular kind of public good: free access to recorded knowledge for anyone willing to walk through the door. That model is now changing more quickly than at any point since the Second World War, and the changes are forcing librarians, councils and visitors to rethink what a library is actually for."
+     ],
+     [
+      "B",
+      "The first shift is in the physical collection. Across many countries, librarians have spent the last decade quietly thinning the rows of books that once filled the ground floor. Books that have not been borrowed for several years are moved to shared regional stores, where they can be retrieved on request within a day or two. Visitors to a modern branch often notice that the space vacated by the stacks has been filled with something else: a small performance area, a homework club, a coffee counter, a workshop room with sewing machines or 3D printers, or simply more comfortable seating. The traditional measure of a library, the number of volumes it holds, has become less important than the number of activities it can host."
+     ],
+     [
+      "C",
+      "The second shift concerns the staff. The stereotype of the librarian who guarded the silence and shushed late arrivals is gradually being replaced by a more outward-facing role. In several urban systems, library workers are now expected to help visitors navigate online forms, apply for jobs, register with a doctor or learn basic digital skills. Some branches run coding clubs for children, while others host language conversation sessions for new arrivals. The library is being repositioned, sometimes deliberately and sometimes reluctantly, as a piece of social infrastructure rather than a warehouse for books."
+     ],
+     [
+      "D",
+      "Not everyone welcomes these changes. Long-standing borrowers complain that the shelves feel emptier, that requested titles take longer to arrive, and that the noise of a children's session can drift across the building. Some council members have argued that, if a library is no longer primarily about books, then perhaps it should not be funded out of the book budget. A few smaller towns have experimented with outsourcing the front desk to volunteers, who are cheaper to employ but who may lack the training to handle difficult enquiries about local services."
+     ],
+     [
+      "E",
+      "Yet the numbers suggest that the reinvention is, at least for now, working. Visitor counts in the larger city systems have risen steadily for several years, even as the number of branches has fallen. Borrowing of physical books has declined, but this has been partly offset by a sharp rise in the lending of e-books, audiobooks and digital magazines. The libraries that report the strongest growth are those that have invested most heavily in flexible space, trained staff and partnerships with local schools, health providers and community groups. A library today may lend out a pressure cooker alongside a novel, or host a vaccination clinic alongside a poetry reading."
+     ],
+     [
+      "F",
+      "None of this means that the book has been abandoned. Surveys consistently find that reading remains the single most common reason people give for visiting a library, and librarians are quick to defend the depth and quality of their remaining collections. What has changed is the expectation. The library is no longer judged only by what is on its shelves, but by the range of needs it can serve in a single afternoon. In that sense, the quiet reinvention underway is not a departure from the original idea of the public library. It is an attempt to keep that idea alive in a world where the way people read, learn and gather has moved on."
+     ]
+    ]
+   },
+   "items": [
+    "1. Argue that libraries should perhaps not be funded from the book budget.",
+    "2. Run coding clubs for children in some city branches."
+   ]
+  },
+  {
+   "key": "ematch",
+   "name": "句尾匹配",
+   "mins": 3,
+   "instr": "Complete each sentence with the correct ending, A-D, below.",
+   "kind": "match",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "optionLabels": [
+    "A  because it grows very quickly.",
+    "B  because building codes lag behind.",
+    "C  because it is heavier than steel.",
+    "D  because it never decays."
+   ],
+   "article": {
+    "title": "The Science of Building with Bamboo",
+    "passage": [
+     [
+      "A",
+      "Bamboo has been used as a building material for thousands of years across Asia and South America. Recently, engineers in Europe and North America have begun to take the plant seriously as a sustainable alternative to steel and concrete, whose production is responsible for a significant share of global carbon emissions."
+     ],
+     [
+      "B",
+      "The appeal of bamboo lies in its remarkable strength-to-weight ratio. Some species have a tensile strength comparable to that of mild steel, yet weigh a fraction as much. Bamboo also grows extraordinarily quickly, with certain species adding almost a metre in a single day, making it a rapidly renewable resource."
+     ],
+     [
+      "C",
+      "There are, however, challenges. Untreated bamboo is vulnerable to insects and fungal decay, and its performance varies widely between species and even between individual stems. Engineers have therefore developed treatment processes and grading systems to ensure consistency and durability in construction."
+     ],
+     [
+      "D",
+      "A typical bamboo culm consists of hollow segments separated by solid joints known as nodes. The outer wall is dense and fibrous, while the inner layers are softer. Understanding this structure is essential for designing joints that transfer loads effectively without splitting the material."
+     ],
+     [
+      "E",
+      "Advocates argue that with proper treatment and engineering, bamboo could play a major role in low-carbon construction, particularly in regions where it grows naturally. Critics counter that building codes in many countries have yet to catch up, limiting its use in large-scale projects."
+     ]
+    ]
+   },
+   "items": [
+    "1. Bamboo is considered rapidly renewable",
+    "2. Large-scale use is currently limited"
+   ]
+  },
+  {
+   "key": "scomplete",
+   "name": "句子填空",
+   "mins": 7.5,
+   "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+   "kind": "gap",
+   "items": [
+    [
+     "1. Urban agriculture allows city residents to harvest crops at the point of ",
+     ""
+    ],
+    [
+     "2. City governments sometimes offer ",
+     " or reduced leasing rates to encourage agricultural projects."
+    ],
+    [
+     "3. Vegetation on rooftops cools the surrounding air through shade and the process of ",
+     ""
+    ],
+    [
+     "4. Participants in community garden programmes reported lower stress levels and stronger senses of ",
+     " compared with non-participants."
+    ],
+    [
+     "5. Hydroponic systems grow plants in nutrient-rich ",
+     " rather than soil."
+    ]
+   ],
+   "article": {
+    "title": "The Growth of Urban Gardens",
+    "passage": [
+     [
+      "A",
+      "Across the world, cities are witnessing a quiet transformation. Empty rooftops are becoming productive growing spaces. Vacant lots that once gathered litter now support rows of vegetables and herbs. This movement, known broadly as urban agriculture, is expanding rapidly in both wealthy nations and developing countries alike. The reasons behind this growth are varied, but they consistently reflect broader social, economic and environmental pressures that modern urban life creates."
+     ],
+     [
+      "B",
+      "The most obvious driver is the demand for fresher food. Supermarkets can stock produce from distant farms, but the journey from harvest to shelf often takes days or weeks. During this time, nutritional value declines noticeably. Community gardens and rooftop farms allow city residents to harvest crops at the point of consumption, delivering genuine freshness that long supply chains cannot match. In cities such as Singapore and Toronto, commercial rooftop greenhouses now operate year-round, supplying restaurants and local markets with herbs, leafy greens and even strawberries."
+     ],
+     [
+      "C",
+      "Economic factors also contribute significantly. Land in urban centres is extremely expensive, which makes traditional farming impossible. However, repurposing underused surfaces such as rooftops, basements and vertical walls avoids the cost of purchasing ground-level plots. Some city governments actively encourage this by offering tax incentives or reduced leasing rates for agricultural projects. In return, the projects generate local employment, often for residents who face barriers to mainstream employment. Training programmes attached to urban farms teach practical horticulture skills that participants can later apply in broader horticultural industries."
+     ],
+     [
+      "D",
+      "Environmental motivations are equally compelling. Urban gardens help to address the heat island effect, a phenomenon where dense city centres become significantly warmer than surrounding rural areas. Concrete and asphalt absorb solar radiation and release it slowly, raising ambient temperatures. Vegetation grown on rooftops and in pocket parks provides shade and releases moisture through transpiration, cooling the surrounding air. Studies conducted in Seoul and Chicago demonstrated measurable temperature reductions in neighbourhoods where green roofs had been installed on a significant scale."
+     ],
+     [
+      "E",
+      "The social dimension of urban agriculture deserves equal attention. Community gardens function as gathering spaces where people from different cultural backgrounds interact through a shared activity. Neighbours who might otherwise never speak find common ground while tending plants together. This social cohesion has measurable benefits for mental health. Research published in the journal Landscape and Urban Planning found that participants in community garden programmes reported lower stress levels and stronger senses of belonging compared with non-participants living in the same areas."
+     ],
+     [
+      "F",
+      "Education forms another important benefit. School gardens give children direct experience of where food originates, counteracting the abstraction that supermarket environments create. Pupils who grow vegetables learn patience, responsibility and basic biology in a hands-on context. Several educational systems have formally integrated school garden curricula, recognising these wider learning outcomes alongside academic成绩."
+     ],
+     [
+      "G",
+      "Despite its many advantages, urban agriculture faces real obstacles. Space remains scarce in densely populated cities, and not all structures can support the weight of soil and water that growing requires. Light pollution from streetlamps can disrupt the natural growth cycles of certain crops. Additionally, soil quality in urban environments may be compromised by historical industrial activity, requiring careful testing and remediation before safe food production can occur. Nevertheless, technological advances are helping to overcome some of these barriers. Hydroponic and aquaponic systems, which grow plants in nutrient-rich water rather than soil, eliminate concerns about contaminated ground and reduce water usage dramatically."
+     ],
+     [
+      "H",
+      "Looking ahead, urban agriculture appears set to become a more permanent feature of city planning rather than a temporary trend. As climate pressures intensify and populations continue to concentrate in urban areas, the incentive to grow food within city boundaries will only strengthen. Planners and policymakers are increasingly treating urban farms not as novelties but as essential infrastructure, on the same footing as transport networks or waste management systems. Whether through rooftop gardens, vertical farms or underground growing facilities, cities are learning to produce food in spaces once considered completely unsuitable for agriculture."
+     ],
+     [
+      "I",
+      "The implications extend beyond nutrition and environment. Urban agriculture reshapes the relationship between city dwellers and the natural world, reminding people that food systems are biological rather than purely industrial. This shift in perspective may prove to be one of the most enduring contributions of the urban garden movement."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "summary",
+   "name": "摘要/笔记/表格填空",
+   "mins": 3,
+   "instr": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+   "kind": "gap",
+   "summaryText": "The library is being repositioned as a piece of social (1) ______ rather than a warehouse for books.",
+   "article": {
+    "title": "The Quiet Reinvention of the Public Library",
+    "passage": [
+     [
+      "A",
+      "For much of the twentieth century, the public library was a familiar landmark in almost every town. Its shelves of bound volumes, its long reading tables and its enforced silence promised a particular kind of public good: free access to recorded knowledge for anyone willing to walk through the door. That model is now changing more quickly than at any point since the Second World War, and the changes are forcing librarians, councils and visitors to rethink what a library is actually for."
+     ],
+     [
+      "B",
+      "The first shift is in the physical collection. Across many countries, librarians have spent the last decade quietly thinning the rows of books that once filled the ground floor. Books that have not been borrowed for several years are moved to shared regional stores, where they can be retrieved on request within a day or two. Visitors to a modern branch often notice that the space vacated by the stacks has been filled with something else: a small performance area, a homework club, a coffee counter, a workshop room with sewing machines or 3D printers, or simply more comfortable seating. The traditional measure of a library, the number of volumes it holds, has become less important than the number of activities it can host."
+     ],
+     [
+      "C",
+      "The second shift concerns the staff. The stereotype of the librarian who guarded the silence and shushed late arrivals is gradually being replaced by a more outward-facing role. In several urban systems, library workers are now expected to help visitors navigate online forms, apply for jobs, register with a doctor or learn basic digital skills. Some branches run coding clubs for children, while others host language conversation sessions for new arrivals. The library is being repositioned, sometimes deliberately and sometimes reluctantly, as a piece of social infrastructure rather than a warehouse for books."
+     ],
+     [
+      "D",
+      "Not everyone welcomes these changes. Long-standing borrowers complain that the shelves feel emptier, that requested titles take longer to arrive, and that the noise of a children's session can drift across the building. Some council members have argued that, if a library is no longer primarily about books, then perhaps it should not be funded out of the book budget. A few smaller towns have experimented with outsourcing the front desk to volunteers, who are cheaper to employ but who may lack the training to handle difficult enquiries about local services."
+     ],
+     [
+      "E",
+      "Yet the numbers suggest that the reinvention is, at least for now, working. Visitor counts in the larger city systems have risen steadily for several years, even as the number of branches has fallen. Borrowing of physical books has declined, but this has been partly offset by a sharp rise in the lending of e-books, audiobooks and digital magazines. The libraries that report the strongest growth are those that have invested most heavily in flexible space, trained staff and partnerships with local schools, health providers and community groups. A library today may lend out a pressure cooker alongside a novel, or host a vaccination clinic alongside a poetry reading."
+     ],
+     [
+      "F",
+      "None of this means that the book has been abandoned. Surveys consistently find that reading remains the single most common reason people give for visiting a library, and librarians are quick to defend the depth and quality of their remaining collections. What has changed is the expectation. The library is no longer judged only by what is on its shelves, but by the range of needs it can serve in a single afternoon. In that sense, the quiet reinvention underway is not a departure from the original idea of the public library. It is an attempt to keep that idea alive in a world where the way people read, learn and gather has moved on."
+     ]
+    ]
+   },
+   "items": [
+    [
+     "1. ",
+     ""
+    ]
+   ]
+  },
+  {
+   "key": "diagram",
+   "name": "示意图标注填空",
+   "mins": 7.5,
+   "instr": "Label the diagram. Choose NO MORE THAN TWO WORDS from the passage for this answer.",
+   "kind": "gap",
+   "groupLabel": "Questions 14-18",
+   "article": {
+    "title": "The Internal Organisation of a Honey Bee Colony",
+    "passage": [
+     [
+      "A",
+      "A honey bee colony is one of the most studied examples of a superorganism in the animal kingdom. Tens of thousands of individual bees live together in a single nest, and the structure of that nest reflects a strict division of labour that biologists have been documenting for more than two centuries. The most familiar member of the colony is the western honey bee, Apis mellifera, but the principles of internal organisation are shared across most cavity-nesting species."
+     ],
+     [
+      "B",
+      "The physical home of the colony is the beehive. In the wild, this is usually a hollow tree or a sheltered rock cavity, while in managed settings it takes the form of a wooden box with removable frames. Whatever its outer shape, the inner space is divided into a series of vertical combs built from beeswax. Each comb is a double-sided sheet of hexagonal cells, and the cells themselves are reused and repaired rather than rebuilt every season, which makes the nest an unusually durable structure for an insect construction."
+     ],
+     [
+      "C",
+      "The comb has several distinct functional regions. The outermost frames, particularly those nearest the entrance, tend to hold honey stores: cells capped with a thin layer of wax once the nectar has been evaporated down to a stable sugar concentration. Deeper inside the hive, the central frames are dedicated to brood rearing. Here, the queen moves in a deliberate pattern, laying one fertilised egg in the bottom of each cell. Workers clean and polish these cells before she will accept them, and the surrounding workers maintain a near-constant temperature of about 34 to 35 degrees Celsius, which is required for the eggs and larvae to develop normally."
+     ],
+     [
+      "D",
+      "Above the brood, the workers often construct a continuous band of cells filled with pollen, known as the pollen reserve. Pollen is the colony's main source of protein, and placing it directly above the brood allows nurse bees to feed young larvae without travelling far. The pollen is packed tightly into the cells by foragers returning from the field, sometimes mixed with a small amount of nectar and enzymes to preserve it. Below the brood, a narrow entrance region is usually kept clear of comb and acts as a ventilation shaft, with workers stationed there fanning their wings to circulate air through the nest."
+     ],
+     [
+      "E",
+      "Around the queen herself, a retinue of young workers constantly attends her, feeding her and removing her waste. The queen is not a ruler in any meaningful sense, but she is the sole reproductive female, and her initial egg-laying pattern largely sets the layout of the brood area. If she is lost, the colony will quickly attempt to raise a replacement from young larvae that are still less than three days old. The population of the colony changes with the seasons, peaking in late spring when foraging conditions are at their best and shrinking through the autumn as older workers die and are not replaced at the same rate."
+     ],
+     [
+      "F",
+      "The adult workers themselves pass through a clear sequence of tasks during their short lives. Newly emerged workers spend their first days cleaning cells and tending the brood. As their glands develop, they move on to building and repairing comb, processing incoming nectar, and guarding the entrance. Only in the final third of their lives do they begin to forage outside the hive. This age-based division of labour means that the loss of a large group of older foragers after a predator attack can leave the colony with too few bees to collect enough nectar, even though the brood area may still be full of developing young. Beekeepers sometimes mark the queen with a small coloured ticket on her thorax so that she can be located quickly during routine inspections, a practice that also makes it easier to record her age and laying pattern from one season to the next."
+     ]
+    ]
+   },
+   "items": [
+    [
+     "14. This region lies at the deepest part of the hive, behind the entrance, and holds the developing young raised by the queen. ",
+     ""
+    ],
+    [
+     "15. This band of cells sits directly above the brood and forms the colony's main protein store, packed in by returning foragers. ",
+     ""
+    ],
+    [
+     "16. This region lies at the front of the hive, nearest the entrance, and is filled with capped cells of evaporated nectar. ",
+     ""
+    ],
+    [
+     "17. This narrow space at the very base of the hive is kept free of comb and used by workers fanning their wings to move air. ",
+     ""
+    ],
+    [
+     "18. This structure fills the hive from ceiling to floor, built by workers from wax, with hexagonal cells used for brood, pollen and honey. ",
+     ""
+    ]
+   ],
+   "figure": {
+    "asset": "assets/data/fig_reading_diagram.jpg",
+    "width": 2048,
+    "height": 1536,
+    "alt": "IELTS Academic Reading diagram: The Internal Organisation of a Honey Bee Colony"
+   }
+  },
+  {
+   "key": "short",
+   "name": "简答题",
+   "mins": 3,
+   "instr": "Answer the questions below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+   "kind": "gap",
+   "groupLabel": "Question 1",
+   "boxInput": true,
+   "article": {
+    "title": "The Quiet Reinvention of the Public Library",
+    "passage": [
+     [
+      "A",
+      "For much of the twentieth century, the public library was a familiar landmark in almost every town. Its shelves of bound volumes, its long reading tables and its enforced silence promised a particular kind of public good: free access to recorded knowledge for anyone willing to walk through the door. That model is now changing more quickly than at any point since the Second World War, and the changes are forcing librarians, councils and visitors to rethink what a library is actually for."
+     ],
+     [
+      "B",
+      "The first shift is in the physical collection. Across many countries, librarians have spent the last decade quietly thinning the rows of books that once filled the ground floor. Books that have not been borrowed for several years are moved to shared regional stores, where they can be retrieved on request within a day or two. Visitors to a modern branch often notice that the space vacated by the stacks has been filled with something else: a small performance area, a homework club, a coffee counter, a workshop room with sewing machines or 3D printers, or simply more comfortable seating. The traditional measure of a library, the number of volumes it holds, has become less important than the number of activities it can host."
+     ],
+     [
+      "C",
+      "The second shift concerns the staff. The stereotype of the librarian who guarded the silence and shushed late arrivals is gradually being replaced by a more outward-facing role. In several urban systems, library workers are now expected to help visitors navigate online forms, apply for jobs, register with a doctor or learn basic digital skills. Some branches run coding clubs for children, while others host language conversation sessions for new arrivals. The library is being repositioned, sometimes deliberately and sometimes reluctantly, as a piece of social infrastructure rather than a warehouse for books."
+     ],
+     [
+      "D",
+      "Not everyone welcomes these changes. Long-standing borrowers complain that the shelves feel emptier, that requested titles take longer to arrive, and that the noise of a children's session can drift across the building. Some council members have argued that, if a library is no longer primarily about books, then perhaps it should not be funded out of the book budget. A few smaller towns have experimented with outsourcing the front desk to volunteers, who are cheaper to employ but who may lack the training to handle difficult enquiries about local services."
+     ],
+     [
+      "E",
+      "Yet the numbers suggest that the reinvention is, at least for now, working. Visitor counts in the larger city systems have risen steadily for several years, even as the number of branches has fallen. Borrowing of physical books has declined, but this has been partly offset by a sharp rise in the lending of e-books, audiobooks and digital magazines. The libraries that report the strongest growth are those that have invested most heavily in flexible space, trained staff and partnerships with local schools, health providers and community groups. A library today may lend out a pressure cooker alongside a novel, or host a vaccination clinic alongside a poetry reading."
+     ],
+     [
+      "F",
+      "None of this means that the book has been abandoned. Surveys consistently find that reading remains the single most common reason people give for visiting a library, and librarians are quick to defend the depth and quality of their remaining collections. What has changed is the expectation. The library is no longer judged only by what is on its shelves, but by the range of needs it can serve in a single afternoon. In that sense, the quiet reinvention underway is not a departure from the original idea of the public library. It is an attempt to keep that idea alive in a world where the way people read, learn and gather has moved on."
+     ]
+    ]
+   },
+   "items": [
+    [
+     "1  According to the passage, what single activity is the most common reason people give for visiting a library? ",
+     ""
+    ]
+   ]
+  }
+ ],
+ "TFREAD_TASKS": [
+  {
+   "key": "wordfill",
+   "n": 1,
+   "title": "补全单词",
+   "sub": "在短段落中填入缺失的字母。",
+   "tag": "显示字母数"
+  },
+  {
+   "key": "liferead",
+   "n": 2,
+   "title": "生活阅读",
+   "sub": "回答有关通知、邮件等日常材料的问题。",
+   "tag": "较短文本"
+  },
+  {
+   "key": "acadread",
+   "n": 3,
+   "title": "学术阅读",
+   "sub": "回答有关较长学术文章的问题。",
+   "tag": "最长任务"
+  }
+ ],
+ "TFREAD_DIFFS": [
+  {
+   "k": "low",
+   "label": "低阶"
+  },
+  {
+   "k": "std",
+   "label": "标准"
+  },
+  {
+   "k": "high",
+   "label": "高阶"
+  }
+ ],
+ "TF_TASK_ICON": {
+  "wordfill": "tf_ic_wordfill",
+  "liferead": "tf_ic_liferead",
+  "acadread": "tf_ic_acadread",
+  "respond": "tf_ic_respond",
+  "convo": "tf_ic_convo",
+  "announce": "tf_ic_announce",
+  "lecture": "tf_ic_lecture",
+  "sent": "tf_ic_sent",
+  "email": "tf_ic_email",
+  "disc": "tf_ic_disc",
+  "retell": "tf_ic_retell",
+  "interview": "tf_ic_interview",
+  "pron": "tf_ic_pron"
+ }
+}

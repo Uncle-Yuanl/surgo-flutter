@@ -1,0 +1,515 @@
+{
+ "score": "",
+ "criteria": [],
+ "weaks": [],
+ "items": {
+  "p1": [],
+  "p2": [],
+  "p3": []
+ },
+ "p3Overall": null,
+ "cuePoints": [],
+ "daily": {
+  "p1": {
+   "score": "5.5",
+   "meta": [
+    "Completed 16 Sep, 15:42 · 2 min",
+    "9月16日完成, 15:42 · 2 min"
+   ],
+   "summary": "Stabilise tense choice between present simple and present perfect when discussing routines and past experience",
+   "criteria": [
+    {
+     "zh": "流利度与连贯性",
+     "sc": "5.5",
+     "en": "You addressed all five questions, but hesitations and false starts, such as 'then to do some profession', disrupt the natural flow expected at this level.",
+     "quotes": [
+      "\"then to do some profession for today's work\""
+     ]
+    },
+    {
+     "zh": "词汇资源",
+     "sc": "5.5",
+     "en": "Vocabulary relevant to the topic is present, yet terms like 'profession' and 'over hides' are used inaccurately, limiting the lexical range shown.",
+     "quotes": [
+      "\"to do some profession for today's work\"",
+      "\"I prefer to learn some over hides and some\""
+     ]
+    },
+    {
+     "zh": "语法多样性与准确性",
+     "sc": "5.0",
+     "en": "Sentence structures are mostly simple and contain frequent subject-verb agreement and tense errors, which reduce clarity.",
+     "quotes": [
+      "\"then makes makes sound like everything's mostly and on two time\"",
+      "\"I preferred to make a plan of 1/2 of day\""
+     ]
+    },
+    {
+     "zh": "发音",
+     "sc": null,
+     "en": "Based on provider pronunciation metrics as evidence, not converted to an official band. Provider accuracy score: 86.4 (evidence only, not a band). Provider prosody score: 71.5. Words to review (provider): always, coffee, profession, for, i, sound, like, 's.",
+     "quotes": []
+    }
+   ],
+   "weaks": [
+    {
+     "en": [
+      "Spoken collocation error",
+      "口语搭配错误"
+     ],
+     "quote": "\"I prefer to learn some over hides and some\"",
+     "tip": [
+      "The chunk 'over hides' is not a natural English collocation, showing instability in adjective-noun and noun combinations. Collocation-chunk speaking drill.",
+      "'over hides' 不是自然的英语搭配，说明你在形容词名词组合上还不够稳定。进行搭配词块口语练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken article error",
+      "口语冠词错误"
+     ],
+     "quote": "\"a plan of 1/2 of day\"",
+     "tip": [
+      "The learner omits the required article and uses the wrong preposition in 'a plan of 1/2 of day', where 'a plan for half the day' is needed. Chunked article-noun practice.",
+      "在 'a plan of 1/2 of day' 中你漏掉了必要冠词，也用错了介词，应改为 'a plan for half the day'。进行冠词与名词词块练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken preposition error",
+      "口语介词错误"
+     ],
+     "quote": "\"relax myself without with doing nothing\"",
+     "tip": [
+      "The phrase 'without with doing nothing' shows an unstable prepositional chunk where a single preposition is required. Preposition-collocation speaking drill.",
+      "'without with doing nothing' 出现了重复介词，说明你在固定介词搭配上不稳定。进行介词搭配口语练习。"
+     ]
+    },
+    {
+     "en": [
+      "Inaccurate word choice",
+      "选词不准确"
+     ],
+     "quote": "\"to do some profession for today's work\"",
+     "tip": [
+      "The learner uses the noun 'profession' where 'professional work' is needed, so the chosen word does not fit the intended meaning. Near-synonym oral contrast.",
+      "你把名词 'profession' 用在了需要 'professional work' 的位置，所选词无法准确表达原意。进行近义词口头辨析。"
+     ]
+    }
+   ],
+   "items": {
+    "p1": [
+     {
+      "q": "What is a typical morning like for you?",
+      "dur": "10s",
+      "ans": "i always make a coffee for myself and then to do some profession for today's work",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"then to do some profession for today's work\" → \"then do some professional work for today\"",
+        "'profession' is a noun; the intended phrase requires an adjective or noun phrase such as 'professional work', and the infinitive after 'then' should be the bare form 'do'.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "q": "Do you prefer to plan your day in advance or decide things as you go?",
+      "dur": "18s",
+      "ans": "yeah i preferred to make a plan of a half of day or the whole day and i preferred to follow the scheduled task and then makes makes sound like everything 's mostly and on two time",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"then makes makes sound like everything's mostly and on two time\" → \"then it makes sure that everything runs mostly on time\"",
+        "The verb should agree with the subject and a clearer structure is needed to express that tasks stay on schedule.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "q": "How has your daily routine changed compared to five years ago?",
+      "dur": "36s",
+      "ans": "five years ago i was a fresh new a man of this uh industry and i think i need to learn some very foundation knowledge about my work and then now after five years i prefer to learn some over hides and some principle of this the technology",
+      "tags": []
+     },
+     {
+      "q": "Is there anything in your daily routine you would like to change?",
+      "dur": "30s",
+      "ans": "yes and sometimes i play game for three or two hours in the evening and i think it's a very very enough time for the entertainments and i think i need to reduce the gaming time and relax myself without with doing nothing",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"I need to reduce the gaming time and relax myself without with doing nothing\" → \"I need to reduce my gaming time and relax by doing nothing\"",
+        "The prepositions 'without with' are incorrect, and the reflexive pronoun should be 'myself' after a clear prepositional phrase.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "q": "Who do you usually spend the busiest parts of your day with?",
+      "dur": "23s",
+      "ans": "i usually spend the business time with my coworkers and the sometimes we get most of time we just communicate online with each other and every everyone will plan their task and we may meet every day",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"every everyone will plan their task and we may meet every day\" → \"everyone plans their tasks and we meet every day\"",
+        "The extra 'every' is unnecessary, 'plan' should match the present simple, and 'task' should be the plural 'tasks'.",
+        "warn"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "p2": {
+   "score": "5.0",
+   "meta": [
+    "Completed 27 Aug, 18:32 · 2 min",
+    "8月27日完成, 18:32 · 2 min"
+   ],
+   "summary": "Plan a two-sentence opening that directly states the topic and when it happened.",
+   "criteria": [
+    {
+     "zh": "流利度与连贯性",
+     "sc": "4.5",
+     "en": "You speak at length and attempt to develop a point about memory and agents, but the delivery is hard to follow. The opening line is unintelligible, and you repeat words and false starts such as 'multiply. Impose multiplied communications' and 'within within'. Coherence is weak because ideas are not signposted and the conclusion does not clearly relate back to the topic.",
+     "quotes": [
+      "\"Hi should I learned us here to show the memory and experience between different. Agents within the club codes or Codex application\"",
+      "\"within within different chat sessions\"",
+      "\"I think that this is very important\""
+     ]
+    },
+    {
+     "zh": "词汇资源",
+     "sc": "4.5",
+     "en": "Vocabulary is limited and often inaccurate for the topic. 'Multiplying communications' is not a natural phrase, and 'final final codes' suggests you are searching for a precise term. You do not paraphrase or use topic-specific vocabulary effectively.",
+     "quotes": [
+      "\"multiply. Impose multiplied communications\"",
+      "\"the final final codes\"",
+      "\"the short time memory\"",
+      "\"a longtime file\""
+     ]
+    },
+    {
+     "zh": "语法多样性与准确性",
+     "sc": "4.0",
+     "en": "There are frequent grammatical errors in both basic and complex structures. Subject-verb agreement is missing in 'should I learned', articles are missing in 'the uh scale make me remind', and word order breaks down in 'free from communicating with the code agent'. Error density reduces clarity.",
+     "quotes": [
+      "\"Hi should I learned us here to show\"",
+      "\"the uh scale make me remind much of time\"",
+      "\"free from communicating with the code agent\""
+     ]
+    },
+    {
+     "zh": "发音",
+     "sc": null,
+     "en": "Based on provider pronunciation metrics as evidence, not converted to an official band. Provider accuracy score: 87.8 (evidence only, not a band). Provider prosody score: 76.2. Words to review (provider): memory, experience, agents, codex, application, such, agents, help.",
+     "quotes": []
+    }
+   ],
+   "weaks": [
+    {
+     "en": [
+      "Long turn underdeveloped",
+      "长段回答展开不足"
+     ],
+     "quote": "\"the final final codes\"",
+     "tip": [
+      "The same point is restated in similar wording and the turn does not develop a clear, organised narrative about the skill. Cue-card expansion and timed long turn.",
+      "同一观点用相似措辞重复出现，长答没有围绕该技能展开清晰有条理的内容。进行提示卡展开与限时长答练习。"
+     ]
+    },
+    {
+     "en": [
+      "Inaccurate word choice",
+      "选词不准确"
+     ],
+     "quote": "\"the uh scale make me remind much of time\"",
+     "tip": [
+      "The words 'scale' and 'multiply' are not the intended meaning and create confusion in place of precise vocabulary such as 'skill' or 'multiple'. Near-synonym oral contrast.",
+      "'scale' 和 'multiply' 并非说话者想表达的意思，造成理解偏差，缺少像 skill 或 multiple 这样准确的词。进行近义词口头辨析。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken preposition error",
+      "口语介词错误"
+     ],
+     "quote": "\"free from communicating with the code agent and I just need to focus Lee targets and the direction of our final objective\"",
+     "tip": [
+      "Preposition use is unstable: 'free from communicating' and 'focus Lee targets' show missing or wrong prepositions, and the dependent clause 'and the direction of our final objective' trails off without a clear preposition link. Preposition-collocation speaking drill.",
+      "介词使用不稳定：'free from communicating' 和 'focus Lee targets' 中介词缺失或错误，从句 'and the direction of our final objective' 也缺少清楚的介词衔接。进行介词搭配口语练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken article error",
+      "口语冠词错误"
+     ],
+     "quote": "\"the uh scale make me remind much of time to uh to let me free\"",
+     "tip": [
+      "Articles are dropped or selected incorrectly in recurring patterns such as 'the uh scale' and 'free from communicating', which breaks the natural noun-phrase shape. Chunked article-noun practice.",
+      "冠词在 'the uh scale'、'free from communicating' 等反复出现的结构中漏掉或选错，破坏了名词短语的自然形式。进行冠词与名词词块练习。"
+     ]
+    },
+    {
+     "en": [
+      "Opinion without reason",
+      "观点没有理由"
+     ],
+     "quote": "\"I think the reason why it's very useful is to avoid me. Chatting too much\"",
+     "tip": [
+      "A reason is offered for why the skill is useful, but the explanation stays vague and does not justify why the skill matters to the learner. Opinion-reason rapid response.",
+      "虽然给出了有用的理由，但解释很模糊，没有说明这个技能为什么对说话者重要。进行观点加理由的快速回答练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken collocation error",
+      "口语搭配错误"
+     ],
+     "quote": "\"free from communicating with the code agent and I just need to focus Lee targets\"",
+     "tip": [
+      "The verb-noun and preposition chunks 'focus Lee' and 'free from communicating' are produced unnaturally instead of the expected 'focus on the target'. Collocation-chunk speaking drill.",
+      "动词名词和介词搭配 'focus Lee' 和 'free from communicating' 用得不自然，缺少应有的 'focus on the target'。进行搭配词块口语练习。"
+     ]
+    },
+    {
+     "en": [
+      "Idea sequence unclear",
+      "观点顺序不清晰"
+     ],
+     "quote": "\"multiply. Impose multiplied communications about within within different chat sessions\"",
+     "tip": [
+      "The sequence of explanation, example and reflection is hard to follow, with no clear signposting between when the skill was learned, how, and why it matters. Answer-frame sequencing.",
+      "解释、例子和反思的顺序难以理解，技能是什么时候学的、怎么学的、为什么重要之间没有清楚衔接。进行回答框架排序练习。"
+     ]
+    },
+    {
+     "en": [
+      "Off-topic response",
+      "回答偏题"
+     ],
+     "quote": "\"Hi should I learned us here to show the memory and experience between different. Agents within the club codes or Codex application\"",
+     "tip": [
+      "The opening is unintelligible and the content about code agents does not remain tied to describing a useful personal skill in a clear way. Relevance-boundary and answer-trimming drill.",
+      "开头难以听懂，并且关于代码智能体的内容与清楚描述一个有用的个人技能这一题目脱节。进行相关性边界与删减练习。"
+     ]
+    }
+   ],
+   "items": {
+    "p2": [
+     {
+      "q": "Describe a useful skill you learned. — what the skill is — when and where you learned it — how you learned it — and explain why you think it is useful.\nThank you. Is there anything else you would like to add about that?\nOverall, how has learning that skill changed the way you study or work today?",
+      "dur": "2:02",
+      "ans": "Hi should I learned us here to show the memory and experience between different. Agents within the club codes or Codex application and I learned it when I trying to use such code coding agents to help me develop a application. I learned after suffering from a multiply. Impose multiplied communications about within within different chat sessions and use them to work on the same target. And I think the reason why it's very useful is to avoid me. Chatting too much and I think it is a very efficient mechanism to let the agents communicate with each other internally and. And so you see target as the only one. Only Wang Funimation for file the final final codes. Yes, and my experience is to use the a longtime file in replace instead of the. Short time memory and I think that this is very important. I think the uh scale make me remind much of time to uh to let me free from communicating with the code agent and I just need to focus Lee targets and the direction of our final objective.",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"Hi should I learned us here to show the memory and experience\" → \"Hi, I should share what I learned about memory and an experience\"",
+        "Subject and verb form are incorrect, and the noun phrase is awkward.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"multiply. Impose multiplied communications\" → \"multiple communications\"",
+        "The intended adjective is 'multiple', and the noun should be 'communications' or 'messages'.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"the final final codes\" → \"the final code\"",
+        "Remove the repeated word; a single 'final' is enough.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"the uh scale make me remind much of time\" → \"the skill reminds me how much time\"",
+        "Use the noun 'skill' instead of 'scale' and a correct clause structure.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"free from communicating with the code agent and I just need to focus Lee targets\" → \"free from communicating with the coding agent, and I just need to focus on the target\"",
+        "Use 'coding agent', add the preposition 'on', and correct 'focus Lee' to 'focus on the'.",
+        "warn"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "p3": {
+   "score": "5.0",
+   "meta": [
+    "Completed 27 Aug, 17:47 · 1 min",
+    "8月27日完成, 17:47 · 1 min"
+   ],
+   "summary": "Address every Part 3 prompt directly with a clear position and a reason.",
+   "criteria": [
+    {
+     "zh": "流利度与连贯性",
+     "sc": "4.0",
+     "en": "You did not address any of the five Part 3 prompts directly, so the examiner cannot credit development of ideas. The transcript reads as a sequence of short, loosely connected thoughts rather than a coherent response. Cohesive devices are largely absent, and the closing line shifts to a meta-comment about the question rather than answering it. Sustained speech is limited, with frequent pauses and self-corrections such as 'they they experienced differently'.",
+     "quotes": [
+      "\"They usually gathered, scattered to hike and, uh, some outdoor exercise.\"",
+      "\"So I think technology can help people to organize this things.\"",
+      "\"So it's not all fixed question and I think every people will have their own answer.\""
+     ]
+    },
+    {
+     "zh": "词汇资源",
+     "sc": "4.5",
+     "en": "Vocabulary is basic and imprecise, with words like 'things' and 'stuff' used in place of more specific terms. 'Gathered, scattered to hike' shows an unclear word choice, and phrases such as 'different rules' and 'fixed question' appear to substitute for intended words like 'routines' or 'fixed answer'. Paraphrasing of the prompts is limited, so lexical flexibility cannot be credited.",
+     "quotes": [
+      "\"they are facing too much things\"",
+      "\"every people will have their own answer\"",
+      "\"different generations may have different rules\""
+     ]
+    },
+    {
+     "zh": "语法多样性与准确性",
+     "sc": "4.0",
+     "en": "A wide range of grammatical errors affects clarity. Subject-verb agreement breaks down in 'most almost 3 disagree', article use is missing in 'the priority of different stuff' and 'this things', and prepositions are wrong in 'regardless the targets'. Sentence structure is often fragmented, for example 'I think the life is life itself'. Errors are persistent enough to slow the listener.",
+     "quotes": [
+      "\"most almost 3 disagree about this option you\"",
+      "\"cannot organize the priority of different stuff\"",
+      "\"We need to enjoy our life regardless the targets of this\"",
+      "\"I think the life is life itself\""
+     ]
+    },
+    {
+     "zh": "发音",
+     "sc": null,
+     "en": "Based on provider pronunciation metrics as evidence, not converted to an official band. Provider accuracy score: 84.7 (evidence only, not a band). Provider prosody score: 76.3. Words to review (provider): usually, gathered, scattered, outdoor, organize, the, priority, so.",
+     "quotes": []
+    }
+   ],
+   "weaks": [
+    {
+     "en": [
+      "Off-topic response",
+      "回答偏题"
+     ],
+     "quote": "\"So it's not all fixed question and I think every people will have their own answer.\"",
+     "tip": [
+      "The response drifts away from the Part 3 prompts into a meta-comment about the question itself, losing relevance while developing the answer. Relevance-boundary and answer-trimming drill.",
+      "回答在展开时逐渐偏离 Part 3 的题目方向，转而对题目本身作元评论，与问题目的脱节。进行相关性边界与删减练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken preposition error",
+      "口语介词错误"
+     ],
+     "quote": "\"We need to enjoy our life regardless the targets of this\"",
+     "tip": [
+      "The fixed preposition 'regardless of' is missing, showing unstable prepositional chunks during speech. Preposition-collocation speaking drill.",
+      "固定搭配 'regardless of' 缺少介词 'of'，说明口语中介词词块不稳定。进行介词搭配口语练习。"
+     ]
+    },
+    {
+     "en": [
+      "Spoken article error",
+      "口语冠词错误"
+     ],
+     "quote": "\"cannot organize the priority of different stuff\"",
+     "tip": [
+      "Articles are missing or mis-selected across recurring patterns such as 'this things' and 'the priority of different stuff'. Chunked article-noun practice.",
+      "在 'this things' 和 'the priority of different stuff' 等常见结构中，冠词被遗漏或选错。进行冠词与名词词块练习。"
+     ]
+    },
+    {
+     "en": [
+      "Inaccurate word choice",
+      "选词不准确"
+     ],
+     "quote": "\"different generations may have different rules\"",
+     "tip": [
+      "Words like 'rules' and 'fixed question' do not match the intended meaning of 'routines' or 'fixed answer', showing imprecise spoken vocabulary choice. Near-synonym oral contrast.",
+      "'rules' 和 'fixed question' 并不是想表达的 'routines' 或 'fixed answer'，所选词汇与本意不符。进行近义词口头辨析。"
+     ]
+    }
+   ],
+   "items": {
+    "p3": [
+     {
+      "q": "How do most people in your country typically organise their daily schedules?",
+      "dur": "9s",
+      "ans": "they usually gathered scattered to hike and uh some outdoor exercise",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"They usually gathered, scattered to hike and, uh, some outdoor exercise.\" → \"They usually gather in groups to hike or do outdoor exercise.\"",
+        "Use the simple present for habitual actions, and complete the verb phrase with a clear activity.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "q": "Why do you think some people find it difficult to stick to a daily routine?",
+      "dur": "9s",
+      "ans": "i think sometimes they are facing too much things and cannot organize the priority of different stuff so",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"they are facing too much things\" → \"they are facing too many things\"",
+        "'Many' is used with countable plural nouns like 'things'.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"cannot organize the priority of different stuff\" → \"cannot organise the priorities of different tasks\"",
+        "Use the plural 'priorities' and a more precise noun than 'stuff'.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "q": "Do you think technology has made it easier or harder for people to manage their time? Give reasons for your view.",
+      "dur": "8s",
+      "ans": "i think technology can help people to organize this things",
+      "tags": []
+     },
+     {
+      "q": "Some people believe that a busy life is a fulfilling life. To what extent do you agree?",
+      "dur": "13s",
+      "ans": "uh and most almost three disagree about this option you because i think the life is life itself we need to enjoy our life regardless the targets of this",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"the life is life itself\" → \"life is fulfilling in itself\"",
+        "Restructure to form a complete and logical sentence.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"regardless the targets of this\" → \"regardless of these goals\"",
+        "The fixed preposition is 'regardless of', and 'goals' fits the meaning better than 'targets' here.",
+        "warn"
+       ]
+      ]
+     },
+     {
+      "q": "How might the way people organise their daily lives change in the future compared with how their parents did?",
+      "dur": "18s",
+      "ans": "i think different generations may have different rules because they they experienced differently during their grow up so it's not all fixed question and i think every people will have their own answer",
+      "tags": [
+       [
+        "语法多样性与准确性",
+        "\"every people will have their own answer\" → \"every person will have their own answer\"",
+        "'Every' takes a singular countable noun.",
+        "warn"
+       ],
+       [
+        "语法多样性与准确性",
+        "\"they experienced differently during their grow up\" → \"they had different experiences while growing up\"",
+        "Use the past tense and the gerund form 'growing up'.",
+        "warn"
+       ]
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

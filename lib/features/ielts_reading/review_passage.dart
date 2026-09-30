@@ -29,11 +29,16 @@ class RfPassage extends StatelessWidget {
     final text = p[1] as String;
     final hits = <({int start, int i, String text})>[];
     for (var i = 0; i < questions.length; i++) {
+      // 演示用真实数据的日常题带 anchor（原文里逐字能找到的依据句）；原型的三道题
+      // 没有这个键，仍用上面的常量。
+      final q = questions[i] as Map;
       final anchor = mock
-          ? questions[i]['ev'] as String?
-          : i < rfAnchors.length
-              ? rfAnchors[i]
-              : null;
+          ? q['ev'] as String?
+          : q.containsKey('anchor')
+              ? q['anchor'] as String?
+              : i < rfAnchors.length
+                  ? rfAnchors[i]
+                  : null;
       if (anchor == null || anchor.isEmpty) continue;
       final start = text.indexOf(anchor);
       if (start >= 0) hits.add((start: start, i: i, text: anchor));
@@ -41,7 +46,8 @@ class RfPassage extends StatelessWidget {
     hits.sort((a, b) => a.start.compareTo(b.start));
     final children = <InlineSpan>[];
     var offset = 0;
-    var prefix = mock ? p[0] as String : '';
+    // 原型的日常原文段首都是空串；真实数据带段落标号（标题匹配题要看）。
+    var prefix = p[0] as String;
     for (final hit in hits) {
       if (hit.start < offset) continue;
       children.add(TextSpan(

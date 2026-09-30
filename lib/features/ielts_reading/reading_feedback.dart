@@ -13,11 +13,15 @@ import 'review_summary.dart';
 
 class ReadingFeedbackData {
   static Map<String, dynamic>? passages;
+
+  /// 演示用真实数据（tool/demo_export）带的总评：`{band, text, weak}`；原型文件没有。
+  static Map? review;
   static Future<void> load() async {
     if (passages != null) return;
     final raw = jsonDecode(
         await rootBundle.loadString('assets/data/reading_feedback_mock.json'));
     passages = Map<String, dynamic>.from(raw['passages']);
+    review = raw['review'] as Map?;
   }
 }
 
@@ -65,10 +69,17 @@ class _ReadingFeedbackPageState extends State<ReadingFeedbackPage> {
             ? 3
             : qs.length;
     final right = all.where((q) => rfCorrect(q, mock: mock)).length;
+    // 真实数据带总评（估分、总评文字、薄弱项）；原型没有，下面各自用原来写死的值。
+    final Map? review = mock ? ReadingFeedbackData.review : d['review'];
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       const RfNav(),
-      RfSummary(right: right, total: total, mock: mock),
-      RfWeakness(mock: mock),
+      RfSummary(
+          right: right,
+          total: total,
+          mock: mock,
+          band: review == null ? '6.5' : review['band'] as String?,
+          text: review == null ? null : review['text'] ?? ''),
+      RfWeakness(mock: mock, items: review?['weak'] as List?),
       if (mock)
         Padding(
             padding: const EdgeInsets.fromLTRB(2, 2, 2, 14),
@@ -101,7 +112,7 @@ class _ReadingFeedbackPageState extends State<ReadingFeedbackPage> {
             ])),
       RfCard(key: const ValueKey('rf-passage-card'), children: [
         if (!mock) ...[
-          rfTag('🏷 TRUE / FALSE / NOT GIVEN · 判断（正确/错误/未提及）'),
+          rfTag(d['tag'] ?? '🏷 TRUE / FALSE / NOT GIVEN · 判断（正确/错误/未提及）'),
           const SizedBox(height: 10)
         ],
         const RfHeading('原文'),
@@ -111,7 +122,10 @@ class _ReadingFeedbackPageState extends State<ReadingFeedbackPage> {
             weight: FontWeight.w700,
             color: rfMuted),
         const SizedBox(height: 8),
-        if (mock) ...[rfTag('⚖ ${d['tag']}'), const SizedBox(height: 10)],
+        if (mock) ...[
+          rfTag(d['tag'] is List ? d['tag'] : '⚖ ${d['tag']}'),
+          const SizedBox(height: 10)
+        ],
         const RfText('高亮句对应每道题——带题号，绿色＝答对，红色＝答错。',
             color: Color(0xffb7b0a3), italic: true),
         const SizedBox(height: 10),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../app/learner_profile.dart';
+
 /// Existing prototype fixtures shared by the dropdown and all-notifications page.
 /// No new messages, persistence, read status or backend is invented.
 class SurgoNotification {
@@ -11,7 +13,28 @@ class SurgoNotification {
   String detail(bool zh) => zh ? detailZh : detailEn;
 }
 
-const surgoNotifications = [
+/// 原型的三条；演示数据（learner_profile.json 的 notifications）里是学员真实收到的
+/// 通知：`{id, kind: mock | daily | report, title: [英文, 中文], detail: [英文, 中文]}`。
+List<SurgoNotification> get surgoNotifications {
+  final real = LearnerProfile.data['notifications'] as List?;
+  if (real == null) return _prototypeNotifications;
+  return [
+    for (final n in real)
+      SurgoNotification(
+          '${n['id']}',
+          switch (n['kind']) {
+            'mock' => Icons.notifications_none,
+            'daily' => Icons.calendar_today_outlined,
+            _ => Icons.person_outline,
+          },
+          '${n['title'][1]}',
+          '${n['title'][0]}',
+          '${n['detail'][1]}',
+          '${n['detail'][0]}')
+  ];
+}
+
+const _prototypeNotifications = [
   SurgoNotification(
       'mock-score',
       Icons.notifications_none,

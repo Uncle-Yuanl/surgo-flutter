@@ -1,0 +1,729 @@
+{
+ "source": "app.js RF_DEMO",
+ "literalSha256": "5ded2bab77f525ad853093231e7745260ae5ed8b9856695ce6e41a8e8fa9ec1a",
+ "passages": {
+  "1": {
+   "title": "The History of Glassmaking",
+   "tag": [
+    "⚖ True / False / Not Given · Yes / No / Not Given · Matching information · Sentence completion · Short answer",
+    "⚖ 判断信息（正误未提及） · 判断观点（是否未提及） · 信息匹配 · 句子填空 · 简答题"
+   ],
+   "paras": [
+    [
+     "Paragraph A: ",
+     "Glass is one of the oldest manufactured materials known to people, yet for most of its history the techniques used to make it remained closely guarded. The earliest objects that can confidently be called glass are beads from Egypt and Mesopotamia, dated to roughly 2500 BC. These were not the clear, colourless material familiar today. They were often opaque, brightly coloured and produced in small quantities for personal decoration or to mark status. Whether glass was first discovered by accident, perhaps as a byproduct of metalworking or ceramic firing, is still debated, but the practical knowledge of how to shape a glowing gather of molten material spread slowly through the ancient world."
+    ],
+    [
+     "Paragraph B: ",
+     "The first major technical breakthrough is associated with the Syrians, working around the eastern Mediterranean in the first century BC. They discovered that a glass bubble could be blown at the end of a hollow iron pipe, and that the bubble could then be shaped, cut and reworked while still soft. This discovery, often linked with the Syrian craftsmen of the coastal city of Sidon, transformed the industry. Vessels that had previously needed many hours of patient labour could now be formed in minutes. Within a few generations, glassblowing workshops had been established across the Roman Empire, from the Rhineland to the Levant, and the material was no longer a luxury reserved for the wealthy."
+    ],
+    [
+     "Paragraph C: ",
+     "A second long shift came with the appearance of clear, colourless glass, which depended on the careful purification of raw materials. In the medieval period, the island of Murano, near Venice, became the centre of European glass production. The Venetian authorities went to unusual lengths to ensure that their methods remained secret. Glassmakers who attempted to leave the city, or to reveal the composition of their crucibles, faced severe penalties, and many recipes were passed from one master to a chosen apprentice in private. Murano glass was prized across Europe, and surviving objects from this period show an extraordinary command of colour, from the deep ruby reds produced with tiny additions of gold to the milky white of the opaques."
+    ],
+    [
+     "Paragraph D: ",
+     "The Industrial Revolution brought the most dramatic change of all. In 1902, the American engineer Michael Owens patented an automatic bottle-blowing machine, and within a few years the price of a simple glass container fell sharply. The development of the float process in the 1950s, invented in Britain, allowed sheets of perfectly flat glass to be produced continuously. Modern glass is therefore both a craft and an industrial commodity, shaped by a few basic raw materials: silica sand, soda ash and limestone. When the mixture is heated to around 1500 degrees Celsius, it becomes a glowing liquid that can be pressed, blown, drawn or floated into a remarkable range of forms, from window panes and optical fibres to the touch screen in the reader's hand."
+    ],
+    [
+     "Paragraph E: ",
+     "Today, the material faces new pressures. The energy required to melt silica is high, and producers are searching for fuels and recycled cullet that reduce the carbon footprint of each furnace. Researchers are also investigating new compositions, including ultra-thin flexible glass used in consumer electronics and stronger glasses that resist cracking. Glass remains, as it has been for thousands of years, both an everyday product and a quiet symbol of human technical progress."
+    ]
+   ],
+   "qs": [
+    {
+     "no": 1,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "The earliest known glass objects were clear and colourless.",
+     "ok": false,
+     "ev": "They were often opaque, brightly coloured and produced in small quantities for personal decoration or to mark status.",
+     "kind": "input",
+     "correct": "FALSE",
+     "mine": "abc"
+    },
+    {
+     "no": 2,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "It is generally accepted that glass was invented accidentally during metalworking.",
+     "ok": false,
+     "ev": "Whether glass was first discovered by accident, perhaps as a byproduct of metalworking or ceramic firing, is still debated",
+     "kind": "input",
+     "correct": "FALSE",
+     "mine": "abc"
+    },
+    {
+     "no": 3,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "The technique of glassblowing originated in coastal areas of the eastern Mediterranean.",
+     "ok": false,
+     "ev": "often linked with the Syrian craftsmen of the coastal city of Sidon, transformed the industry.",
+     "kind": "input",
+     "correct": "TRUE",
+     "mine": "abc"
+    },
+    {
+     "no": 4,
+     "typeLbl": [
+      "Yes / No / Not Given",
+      "判断观点（是否未提及）"
+     ],
+     "q": "The writer believes that glassblowing permanently changed the economics of the glass industry.",
+     "ok": false,
+     "ev": "Vessels that had previously needed many hours of patient labour could now be formed in minutes.",
+     "kind": "input",
+     "correct": "YES",
+     "mine": "abc"
+    },
+    {
+     "no": 5,
+     "typeLbl": [
+      "Yes / No / Not Given",
+      "判断观点（是否未提及）"
+     ],
+     "q": "The writer thinks the punishments imposed on Murano glassmakers were reasonable.",
+     "ok": false,
+     "ev": "The Venetian authorities went to unusual lengths to ensure that their methods remained secret.",
+     "kind": "input",
+     "correct": "NO",
+     "mine": "abc"
+    },
+    {
+     "no": 6,
+     "typeLbl": [
+      "Matching information",
+      "信息匹配"
+     ],
+     "q": "A description is given of how the basic raw materials are converted into molten glass.",
+     "ok": false,
+     "ev": "When the mixture is heated to around 1500 degrees Celsius, it becomes a glowing liquid that can be pressed, blown, drawn or floated into a remarkable range of forms",
+     "kind": "opts",
+     "opts": [
+      "Paragraph A",
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph D"
+     ],
+     "correct": "Paragraph D",
+     "mine": "Paragraph A"
+    },
+    {
+     "no": 7,
+     "typeLbl": [
+      "Matching information",
+      "信息匹配"
+     ],
+     "q": "A reference is made to the use of small amounts of a precious metal to produce a particular colour.",
+     "ok": false,
+     "ev": "from the deep ruby reds produced with tiny additions of gold to the milky white of the opaques.",
+     "kind": "opts",
+     "opts": [
+      "Paragraph A",
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph D"
+     ],
+     "correct": "Paragraph C",
+     "mine": "Paragraph B"
+    },
+    {
+     "no": 8,
+     "typeLbl": [
+      "Matching information",
+      "信息匹配"
+     ],
+     "q": "An example is given of a person whose name is associated with a new industrial glass process.",
+     "ok": false,
+     "ev": "In 1902, the American engineer Michael Owens patented an automatic bottle-blowing machine",
+     "kind": "opts",
+     "opts": [
+      "Paragraph A",
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph D"
+     ],
+     "correct": "Paragraph D",
+     "mine": "Paragraph C"
+    },
+    {
+     "no": 9,
+     "typeLbl": [
+      "Sentence completion",
+      "句子填空"
+     ],
+     "q": "Early glass items were mainly used as ______ or to mark status.",
+     "ok": false,
+     "ev": "They were often opaque, brightly coloured and produced in small quantities for personal decoration or to mark status.",
+     "kind": "input",
+     "correct": "personal decoration",
+     "mine": "abc"
+    },
+    {
+     "no": 10,
+     "typeLbl": [
+      "Sentence completion",
+      "句子填空"
+     ],
+     "q": "Before the invention of glassblowing, glass vessels required many hours of ______ labour.",
+     "ok": false,
+     "ev": "Vessels that had previously needed many hours of patient labour could now be formed in minutes.",
+     "kind": "input",
+     "correct": "patient",
+     "mine": "abc"
+    },
+    {
+     "no": 11,
+     "typeLbl": [
+      "Sentence completion",
+      "句子填空"
+     ],
+     "q": "In Murano, glassmaking secrets were often passed on privately to a chosen ______",
+     "ok": false,
+     "ev": "many recipes were passed from one master to a chosen apprentice in private.",
+     "kind": "input",
+     "correct": "apprentice",
+     "mine": "abc"
+    },
+    {
+     "no": 12,
+     "typeLbl": [
+      "Short answer",
+      "简答题"
+     ],
+     "q": "What two main substances, besides limestone, are used to make modern glass?",
+     "ok": false,
+     "ev": "Modern glass is therefore both a craft and an industrial commodity, shaped by a few basic raw materials: silica sand, soda ash and limestone.",
+     "kind": "input",
+     "correct": "silica sand, soda ash",
+     "mine": "abc"
+    },
+    {
+     "no": 13,
+     "typeLbl": [
+      "Short answer",
+      "简答题"
+     ],
+     "q": "Which country invented the float process for making flat glass?",
+     "ok": false,
+     "ev": "The development of the float process in the 1950s, invented in Britain, allowed sheets of perfectly flat glass to be produced continuously.",
+     "kind": "input",
+     "correct": "Britain",
+     "mine": "abc"
+    }
+   ]
+  },
+  "2": {
+   "title": "Lighthouses and the Changing Shape of Coastal Navigation",
+   "tag": [
+    "⚖ Diagram labelling · Matching information · True / False / Not Given",
+    "⚖ 示意图标注填空 · 信息匹配 · 判断信息（正误未提及）"
+   ],
+   "paras": [
+    [
+     "Paragraph A: ",
+     "For centuries, lighthouses guided mariners through dangerous coastlines, marking harbours, headlands and shifting sandbanks. The earliest references to purpose-built navigation lights date back to antiquity, when open fires on hilltops signalled safe approaches to port. By the eighteenth and nineteenth centuries, masonry towers with oil lamps had become standard features of the European and North American coastline. Their keepers, often isolated for weeks at a time, kept the flame trimmed, the lenses clean and the clockwork turning. These workers developed a strong occupational culture, and many station logs survive as detailed records of weather, shipping and local life."
+    ],
+    [
+     "Paragraph B: ",
+     "The optical heart of a traditional lighthouse was its Fresnel lens. Invented by the French physicist Augustin-Jean Fresnel in 1822, the lens used concentric annular rings to bend light into a narrow, horizontal beam. Different patterns of flash, known as characteristic signatures, allowed sailors to identify individual stations even in poor visibility. A first-order lens could be seen many nautical miles out to sea, but the apparatus was heavy, expensive and fragile. Few nations could afford more than a handful at the most critical sites, so the lenses marked a clear social order of navigation: the largest lights signalled the most economically important harbours."
+    ],
+    [
+     "Paragraph C: ",
+     "The arrival of reliable electric lighting in the late nineteenth century transformed the economics of the lighthouse. Carbon arc lamps, and later tungsten filament bulbs, produced light that could be projected further and at lower cost than oil. Automated acetylene gas systems, introduced widely after 1910, removed the need for resident keepers at smaller stations. Diesel generators and mains electricity followed, allowing remote beacons to operate unattended for long periods. By the mid-twentieth century, automation had closed most staffed stations in Europe and North America, and many of the remaining towers were demoted to visual backups for radio systems."
+    ],
+    [
+     "Paragraph D: ",
+     "Even as manned stations declined, the function of the lighthouse broadened. Engineers added radio beacons, fog horns and, later, racons, devices that return a coded radar pulse when interrogated. A modern light therefore often carries a layered identity: a visual signal for nearby mariners, an audible signal in fog, and an electronic signal for vessels equipped with radar. Each layer reaches a different audience, and lighthouse authorities have to balance competing demands from fishing fleets, commercial shipping and recreational sailors. A single structure may also host weather instruments, tidal gauges and communications relays, so its silhouette on the coast can represent a small, multi-purpose observatory rather than a simple warning fire."
+    ],
+    [
+     "Paragraph E: ",
+     "The spread of satellite navigation has complicated the future of these structures. Global Navigation Satellite Systems, often abbreviated as GNSS, allow any vessel with a small receiver to fix its position within a few metres. For commercial shipping on well-charted routes, this positional accuracy has reduced the relevance of a visual landmark on a headland. Yet coastal pilots argue that lighthouses retain a specific value. They provide a sanity check when electronic systems fail, a clear target in optical conditions, and a legal reference point used in court to reconstruct maritime incidents. In several jurisdictions, light keepers have also returned to stations for limited periods to manage tourism and educational visits, which generate income that pays for ongoing maintenance."
+    ],
+    [
+     "Paragraph F: ",
+     "The cultural afterlife of the lighthouse is, if anything, larger than its working life. Photographers, painters and writers have long used isolated towers as symbols of endurance, vigilance and the limits of human reason against the sea. Preservation societies now campaign to protect redundant stations, and a small number have been converted into holiday accommodation, research stations or artist residencies. These reuse projects raise practical questions about fire safety, structural reinforcement and access to remote sites, but they also keep engineering skills alive. Visitors who climb a spiral staircase and stand beside a decommissioned lens may gain, in a way that no navigation chart can offer, a sense of what coastal travel once demanded of those who relied on the beam."
+    ],
+    [
+     "Paragraph G: ",
+     "Looking forward, the lighthouse is unlikely to disappear. New coastal infrastructure, from offshore wind farms to aquaculture sites, requires visible markers and audible signals that electronic charts cannot fully replace. Designers are experimenting with low-maintenance LED arrays powered by solar panels, and modular plastic buoys now compete with traditional towers in sheltered waters. Even so, the masonry tower with its painted band remains a powerful navigational and cultural reference. The next generation of mariners may rely more on satellites than on flashes of light, but most will still learn to recognise a lighthouse, to understand its characteristic, and to appreciate the long partnership between a coastline and the people who chose to light it."
+    ]
+   ],
+   "qs": [
+    {
+     "no": 14,
+     "typeLbl": [
+      "Diagram labelling",
+      "示意图标注填空"
+     ],
+     "q": "Identify the painted masonry structure that carries the light and houses the keepers' working levels.",
+     "ok": false,
+     "ev": "By the eighteenth and nineteenth centuries, masonry towers with oil lamps had become standard features of the European and North American coastline.",
+     "kind": "input",
+     "correct": "masonry tower",
+     "mine": "abc"
+    },
+    {
+     "no": 15,
+     "typeLbl": [
+      "Diagram labelling",
+      "示意图标注填空"
+     ],
+     "q": "Identify the segmented glass apparatus at the lantern room that bends light into a narrow horizontal beam.",
+     "ok": false,
+     "ev": "The optical heart of a traditional lighthouse was its Fresnel lens.",
+     "kind": "input",
+     "correct": "Fresnel lens",
+     "mine": "abc"
+    },
+    {
+     "no": 16,
+     "typeLbl": [
+      "Diagram labelling",
+      "示意图标注填空"
+     ],
+     "q": "Identify the floating marker in the water to the left of the tower, competing with traditional structures in sheltered waters.",
+     "ok": false,
+     "ev": "Designers are experimenting with low-maintenance LED arrays powered by solar panels, and modular plastic buoys now compete with traditional towers in sheltered waters.",
+     "kind": "input",
+     "correct": "modular plastic buoys",
+     "mine": "abc"
+    },
+    {
+     "no": 17,
+     "typeLbl": [
+      "Diagram labelling",
+      "示意图标注填空"
+     ],
+     "q": "Identify the small coastal building on the headland that issues an audible signal in fog.",
+     "ok": false,
+     "ev": "Engineers added radio beacons, fog horns and, later, racons, devices that return a coded radar pulse when interrogated.",
+     "kind": "input",
+     "correct": "fog horns",
+     "mine": "abc"
+    },
+    {
+     "no": 18,
+     "typeLbl": [
+      "Diagram labelling",
+      "示意图标注填空"
+     ],
+     "q": "Identify the structure at sea level that represents the multi-purpose observatory role of the modern station, with weather and tidal instruments.",
+     "ok": false,
+     "ev": "A single structure may also host weather instruments, tidal gauges and communications relays, so its silhouette on the coast can represent a small, multi-purpose observatory rather than a simple warning fire.",
+     "kind": "input",
+     "correct": "weather instruments",
+     "mine": "abc"
+    },
+    {
+     "no": 19,
+     "typeLbl": [
+      "Matching information",
+      "信息匹配"
+     ],
+     "q": "a description of how a lighthouse lens produces a recognisable beam",
+     "ok": false,
+     "ev": "Invented by the French physicist Augustin-Jean Fresnel in 1822, the lens used concentric annular rings to bend light into a narrow, horizontal beam. Different patterns of flash, known as characteristic signatures, allowed sailors to identify individual stations even in poor visibility.",
+     "kind": "opts",
+     "opts": [
+      "Paragraph A",
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph D",
+      "Paragraph E",
+      "Paragraph F",
+      "Paragraph G"
+     ],
+     "correct": "Paragraph B",
+     "mine": "Paragraph A"
+    },
+    {
+     "no": 20,
+     "typeLbl": [
+      "Matching information",
+      "信息匹配"
+     ],
+     "q": "an example of how lighthouses have acquired a non-navigational role",
+     "ok": false,
+     "ev": "a small number have been converted into holiday accommodation, research stations or artist residencies",
+     "kind": "opts",
+     "opts": [
+      "Paragraph A",
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph D",
+      "Paragraph E",
+      "Paragraph F",
+      "Paragraph G"
+     ],
+     "correct": "Paragraph F",
+     "mine": "Paragraph B"
+    },
+    {
+     "no": 21,
+     "typeLbl": [
+      "Matching information",
+      "信息匹配"
+     ],
+     "q": "mention of the social rank attached to the largest lighthouse lenses",
+     "ok": false,
+     "ev": "the lenses marked a clear social order of navigation: the largest lights signalled the most economically important harbours",
+     "kind": "opts",
+     "opts": [
+      "Paragraph A",
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph D",
+      "Paragraph E",
+      "Paragraph F",
+      "Paragraph G"
+     ],
+     "correct": "Paragraph B",
+     "mine": "Paragraph C"
+    },
+    {
+     "no": 22,
+     "typeLbl": [
+      "Matching information",
+      "信息匹配"
+     ],
+     "q": "an explanation of why lighthouses are still defended by some coastal pilots",
+     "ok": false,
+     "ev": "Yet coastal pilots argue that lighthouses retain a specific value. They provide a sanity check when electronic systems fail, a clear target in optical conditions, and a legal reference point used in court to reconstruct maritime incidents.",
+     "kind": "opts",
+     "opts": [
+      "Paragraph A",
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph D",
+      "Paragraph E",
+      "Paragraph F",
+      "Paragraph G"
+     ],
+     "correct": "Paragraph E",
+     "mine": "Paragraph D"
+    },
+    {
+     "no": 23,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "The earliest purpose-built navigation lights used coal fires on hilltops.",
+     "ok": false,
+     "ev": "The earliest references to purpose-built navigation lights date back to antiquity, when open fires on hilltops signalled safe approaches to port.",
+     "kind": "input",
+     "correct": "FALSE",
+     "mine": "abc"
+    },
+    {
+     "no": 24,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "All eighteenth-century lighthouses in Europe used Fresnel lenses.",
+     "ok": false,
+     "ev": "By the eighteenth and nineteenth centuries, masonry towers with oil lamps had become standard features of the European and North American coastline.",
+     "kind": "input",
+     "correct": "FALSE",
+     "mine": "abc"
+    },
+    {
+     "no": 25,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "The introduction of acetylene gas systems made it possible to run some lighthouses without resident keepers.",
+     "ok": false,
+     "ev": "Automated acetylene gas systems, introduced widely after 1910, removed the need for resident keepers at smaller stations.",
+     "kind": "input",
+     "correct": "TRUE",
+     "mine": "abc"
+    },
+    {
+     "no": 26,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "Modern lighthouses sometimes carry weather and tidal monitoring equipment.",
+     "ok": false,
+     "ev": "A single structure may also host weather instruments, tidal gauges and communications relays, so its silhouette on the coast can represent a small, multi-purpose observatory rather than a simple warning fire.",
+     "kind": "input",
+     "correct": "TRUE",
+     "mine": "abc"
+    }
+   ]
+  },
+  "3": {
+   "title": "The Hidden Influence of Smell",
+   "tag": [
+    "⚖ True / False / Not Given · Multiple choice · Matching information · Sentence completion",
+    "⚖ 判断信息（正误未提及） · 选择题 · 信息匹配 · 句子填空"
+   ],
+   "paras": [
+    [
+     "Paragraph A: ",
+     "For most of the modern era, the human sense of smell has been treated as a poor relation of sight and hearing. Popular accounts often describe it as a fading evolutionary remnant, a perception that registers little beyond the obvious and that adds only modest colour to daily life. New research paints a more demanding picture, in which the olfactory system operates quietly in the background, shaping memory, mood and social judgement in ways that people rarely anticipate."
+    ],
+    [
+     "Paragraph B: ",
+     "The basic architecture of smell is now well understood. Airborne molecules enter the nasal cavity and dissolve in a thin layer of mucus, where they meet specialised receptor neurons. Each neuron carries just one type of receptor protein, and humans possess around four hundred different functional receptor types, in contrast with the far larger olfactory repertoires of rodents or dogs. A given odour typically activates a unique combination of receptors, and the brain reads that combination as a smell. This combinatorial code allows people to distinguish a remarkable number of distinct odours, despite having far fewer receptor types than many mammals."
+    ],
+    [
+     "Paragraph C: ",
+     "What smell loses in raw receptor variety, it appears to gain through connection. Signals from the olfactory bulb travel to brain regions associated with emotion, memory and decision-making far more directly than signals from the eyes or ears. As a result, scents become tied to personal episodes with unusual speed, and the same fragrance can retrieve a vivid scene from childhood decades after the event. Experiments in which volunteers learn lists of words while exposed to a novel aroma show that recall improves when the same scent is present during testing, even if participants cannot name the smell that is helping them."
+    ],
+    [
+     "Paragraph D: ",
+     "The influence of smell extends into social perception, an area once thought to depend almost entirely on visual cues. Studies have found that judgments of attractiveness, trustworthiness and even political leaning can shift when participants are exposed to subtle body odours or to neutral scents described as positive. Masking a person's natural odour, by contrast, can make facial expressions harder to read. Researchers caution that these effects are small and sensitive to context, but they suggest that smell contributes a quiet layer of information during face-to-face contact."
+    ],
+    [
+     "Paragraph E: ",
+     "The commercial world has been quick to translate these findings into practice. Scent marketing is now common in hotels, car showrooms and retail spaces, where carefully chosen fragrances are released to encourage customers to linger, spend more or form a stronger memory of a brand. Manufacturers of household products add masking agents to cover unwanted chemical smells, while fragrance-free ranges are marketed to consumers who report headaches or irritation. Regulators in several countries have begun to issue guideline documents for the use of scent in indoor environments, acknowledging that what is added to the air can shape behaviour in ways that designers did not always intend."
+    ],
+    [
+     "Paragraph F: ",
+     "The picture is not entirely one of manipulation. Aroma also supports practical tasks that people value. Chefs rely on smell to assess freshness, perfumers train their noses for years, and firefighters use the odours of smoke to identify the materials burning in a room. These professional uses underline a broader point: although humans may be less sensitive than other animals to faint traces in the air, the olfactory system is far from passive. It filters, compares and remembers, and it does so for almost every waking hour."
+    ],
+    [
+     "Paragraph G: ",
+     "Scientists are still debating the limits of human olfactory ability and the degree to which cultural training sharpens it. What seems inevitable is that smell will continue to receive more attention in disciplines that once ignored it, from psychology and marketing to urban design. As measurement tools improve, researchers expect to find that the invisible layer of information carried by scent has been quietly shaping decisions that people believed were based on sight alone."
+    ]
+   ],
+   "qs": [
+    {
+     "no": 27,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "Modern popular opinion considers the human sense of smell less important than sight or hearing.",
+     "ok": false,
+     "ev": "Popular accounts often describe it as a fading evolutionary remnant, a perception that registers little beyond the obvious and that adds only modest colour to daily life.",
+     "kind": "input",
+     "correct": "TRUE",
+     "mine": "abc"
+    },
+    {
+     "no": 28,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "Humans have more functional smell receptor types than dogs.",
+     "ok": false,
+     "ev": "humans possess around four hundred different functional receptor types, in contrast with the far larger olfactory repertoires of rodents or dogs.",
+     "kind": "input",
+     "correct": "FALSE",
+     "mine": "abc"
+    },
+    {
+     "no": 29,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "Odour molecules are detected only after they reach the lungs.",
+     "ok": false,
+     "ev": "Airborne molecules enter the nasal cavity and dissolve in a thin layer of mucus, where they meet specialised receptor neurons.",
+     "kind": "input",
+     "correct": "NOT GIVEN",
+     "mine": "abc"
+    },
+    {
+     "no": 30,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "Smell signals reach brain regions linked with emotion more directly than signals from the eyes.",
+     "ok": false,
+     "ev": "Signals from the olfactory bulb travel to brain regions associated with emotion, memory and decision-making far more directly than signals from the eyes or ears.",
+     "kind": "input",
+     "correct": "TRUE",
+     "mine": "abc"
+    },
+    {
+     "no": 31,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "Volunteers in word-learning experiments can usually identify which scent is helping their memory.",
+     "ok": false,
+     "ev": "recall improves when the same scent is present during testing, even if participants cannot name the smell that is helping them.",
+     "kind": "input",
+     "correct": "FALSE",
+     "mine": "abc"
+    },
+    {
+     "no": 32,
+     "typeLbl": [
+      "True / False / Not Given",
+      "判断信息（正误未提及）"
+     ],
+     "q": "Body odour has been shown to influence judgments of a stranger's attractiveness.",
+     "ok": false,
+     "ev": "Studies have found that judgments of attractiveness, trustworthiness and even political leaning can shift when participants are exposed to subtle body odours or to neutral scents described as positive.",
+     "kind": "input",
+     "correct": "TRUE",
+     "mine": "abc"
+    },
+    {
+     "no": 33,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "q": "What is the writer's main point in paragraph A?",
+     "ok": false,
+     "ev": "New research paints a more demanding picture, in which the olfactory system operates quietly in the background, shaping memory, mood and social judgement in ways that people rarely anticipate.",
+     "kind": "opts",
+     "opts": [
+      "A. Smell has long been ignored in modern life.",
+      "B. Recent research suggests smell is more influential than people realise.",
+      "C. Smell is more important than sight.",
+      "D. People are wrong to trust their sense of smell."
+     ],
+     "correct": "B. Recent research suggests smell is more influential than people realise.",
+     "mine": "A. Smell has long been ignored in modern life."
+    },
+    {
+     "no": 34,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "q": "According to paragraph B, how does the brain recognise a particular smell?",
+     "ok": false,
+     "ev": "A given odour typically activates a unique combination of receptors, and the brain reads that combination as a smell.",
+     "kind": "opts",
+     "opts": [
+      "A. Through a single dedicated receptor type.",
+      "B. By storing memories of past encounters with the odour.",
+      "C. By interpreting a unique combination of activated receptors.",
+      "D. By comparing it with known visual cues."
+     ],
+     "correct": "C. By interpreting a unique combination of activated receptors.",
+     "mine": "B. By storing memories of past encounters with the odour."
+    },
+    {
+     "no": 35,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "q": "What does the writer suggest about scent marketing in paragraph E?",
+     "ok": true,
+     "ev": "Scent marketing is now common in hotels, car showrooms and retail spaces, where carefully chosen fragrances are released to encourage customers to linger, spend more or form a stronger memory of a brand.",
+     "kind": "opts",
+     "opts": [
+      "A. It is less effective than designers believe.",
+      "B. It is restricted by international law.",
+      "C. It is widely used in several industries.",
+      "D. It only works when customers are aware of it."
+     ],
+     "correct": "C. It is widely used in several industries.",
+     "mine": "C. It is widely used in several industries."
+    },
+    {
+     "no": 36,
+     "typeLbl": [
+      "Matching information",
+      "信息匹配"
+     ],
+     "q": "An example of a job that depends on identifying smells.",
+     "ok": false,
+     "ev": "Chefs rely on smell to assess freshness, perfumers train their noses for years, and firefighters use the odours of smoke to identify the materials burning in a room.",
+     "kind": "opts",
+     "opts": [
+      "Paragraph A",
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph D",
+      "Paragraph E",
+      "Paragraph F",
+      "Paragraph G"
+     ],
+     "correct": "Paragraph F",
+     "mine": "Paragraph D"
+    },
+    {
+     "no": 37,
+     "typeLbl": [
+      "Matching information",
+      "信息匹配"
+     ],
+     "q": "A reference to official advice about using scent indoors.",
+     "ok": false,
+     "ev": "Regulators in several countries have begun to issue guideline documents for the use of scent in indoor environments, acknowledging that what is added to the air can shape behaviour in ways that designers did not always intend.",
+     "kind": "opts",
+     "opts": [
+      "Paragraph A",
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph D",
+      "Paragraph E",
+      "Paragraph F",
+      "Paragraph G"
+     ],
+     "correct": "Paragraph E",
+     "mine": "Paragraph G"
+    },
+    {
+     "no": 38,
+     "typeLbl": [
+      "Sentence completion",
+      "句子填空"
+     ],
+     "q": "Odour molecules dissolve in a thin layer of ______ before meeting receptor neurons.",
+     "ok": false,
+     "ev": "Airborne molecules enter the nasal cavity and dissolve in a thin layer of mucus, where they meet specialised receptor neurons.",
+     "kind": "input",
+     "correct": "mucus",
+     "mine": "abc"
+    },
+    {
+     "no": 39,
+     "typeLbl": [
+      "Sentence completion",
+      "句子填空"
+     ],
+     "q": "Recall of word lists improves when a familiar ______ is present during testing.",
+     "ok": false,
+     "ev": "Experiments in which volunteers learn lists of words while exposed to a novel aroma show that recall improves when the same scent is present during testing, even if participants cannot name the smell that is helping them.",
+     "kind": "input",
+     "correct": "scent",
+     "mine": "abc"
+    },
+    {
+     "no": 40,
+     "typeLbl": [
+      "Sentence completion",
+      "句子填空"
+     ],
+     "q": "Some manufacturers market ______ products to consumers who suffer from headaches caused by fragrance.",
+     "ok": false,
+     "ev": "fragrance-free ranges are marketed to consumers who report headaches or irritation.",
+     "kind": "input",
+     "correct": "fragrance-free",
+     "mine": "abc"
+    }
+   ]
+  }
+ },
+ "review": {
+  "band": "1.0",
+  "weak": []
+ }
+}

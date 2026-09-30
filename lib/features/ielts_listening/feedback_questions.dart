@@ -10,6 +10,15 @@ class ListeningReviewQuestion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool ok = q['ok'];
+    // 演示用真实数据（tool/demo_export）每道题自带题型（typeLbl）和作答区样式（kind：
+    // chips 填空 / rows 选项）；原型数据没有这两个键，仍按 Part 号取。
+    final Object? real = q['typeLbl'];
+    final kind = q['kind'] ??
+        (part == 1 || part == 4
+            ? 'chips'
+            : part == 2
+                ? 'pills'
+                : 'rows');
     final type = part == 1
         ? 'Form completion'
         : part == 2
@@ -18,7 +27,9 @@ class ListeningReviewQuestion extends StatelessWidget {
                 ? 'Multiple choice'
                 : 'Note completion';
     final translated = rfTranslate(context, type);
-    final typeWidth = RegExp(r'[\u3400-\u9fff]').hasMatch(translated)
+    final typeWidth = real != null
+        ? 80.0
+        : RegExp(r'[\u3400-\u9fff]').hasMatch(translated)
         ? (part == 2 || part == 3 ? 30.90625 : 41.203125)
         : part == 2
             ? 46.1875
@@ -47,14 +58,14 @@ class ListeningReviewQuestion extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 3),
                 child: SizedBox(
                     width: typeWidth,
-                    child: RfText(type,
+                    child: RfText(real ?? type,
                         weight: FontWeight.w700,
                         color: const Color(0xffa89fd6),
                         spacing: .3,
                         align: TextAlign.right))),
           ]),
           const SizedBox(height: 12),
-          if (part == 1 || part == 4) ...[
+          if (kind == 'chips') ...[
             Wrap(
                 spacing: 8,
                 runSpacing: 8,
@@ -68,7 +79,7 @@ class ListeningReviewQuestion extends StatelessWidget {
                   ],
                 ]),
             const SizedBox(height: 10),
-          ] else if (part == 2) ...[
+          ] else if (kind == 'pills') ...[
             Wrap(
                 spacing: 8,
                 runSpacing: 8,
@@ -81,15 +92,23 @@ class ListeningReviewQuestion extends StatelessWidget {
             ],
             const SizedBox(height: 12),
           ],
-          RfEvidence('"${q['evi']}"'),
-          const SizedBox(height: 8),
-          RfText(q['why'],
-              size: 10.5, height: 1.5, color: const Color(0xff6b6255)),
-          const SizedBox(height: 2),
-          RfText(q['whyZh'],
-              size: 10.5, height: 1.5, color: const Color(0xffa49a8a)),
+          // 真实数据里答对的题没有依据句和解析，缺哪行就不画哪行（原型每题都有）。
+          if (has('evi')) ...[
+            RfEvidence('"${q['evi']}"'),
+            const SizedBox(height: 8),
+          ],
+          if (has('why'))
+            RfText(q['why'],
+                size: 10.5, height: 1.5, color: const Color(0xff6b6255)),
+          if (has('whyZh')) ...[
+            const SizedBox(height: 2),
+            RfText(q['whyZh'],
+                size: 10.5, height: 1.5, color: const Color(0xffa49a8a)),
+          ],
         ]));
   }
+
+  bool has(String key) => q[key] != null && q[key] != '';
 
   Widget _answer(String text, bool ok) => Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),

@@ -43,10 +43,7 @@ class T extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final lang = context.select<AppState, UiLang>((s) => s.lang);
-    final t = text;
-    final raw = t is List
-        ? '${t[lang == UiLang.zh && t.length > 1 ? 1 : 0]}'
-        : '$t';
+    final raw = langText(text, lang);
     var out = Translator.instance.translate(raw, lang) ?? raw;
     if (uppercase) out = out.toUpperCase();
     return Text(out, style: style, textAlign: textAlign, maxLines: maxLines);
@@ -63,8 +60,8 @@ class TSpan extends StatelessWidget {
     this.highlightStyle,
   });
 
-  /// (文案, 是否高亮)
-  final List<(String, bool)> parts;
+  /// (文案, 是否高亮)；文案同 [T]，也可以是 `[英文, 中文]` 一对。
+  final List<(Object, bool)> parts;
   final TextStyle? style;
   final TextStyle? highlightStyle;
 
@@ -72,10 +69,17 @@ class TSpan extends StatelessWidget {
   Widget build(BuildContext context) {
     final lang = context.select<AppState, UiLang>((s) => s.lang);
     final spans = <TextSpan>[];
-    for (final (raw, hl) in parts) {
+    for (final (part, hl) in parts) {
+      final raw = langText(part, lang);
       final out = Translator.instance.translate(raw, lang) ?? raw;
       spans.add(TextSpan(text: out, style: hl ? highlightStyle : null));
     }
     return Text.rich(TextSpan(children: spans), style: style);
   }
 }
+
+/// `[英文, 中文]` 一对里按界面语言取一项；普通字符串原样返回。
+/// 给不走 [T] 的地方用（`Text`、拼进句子里的片段）。
+String langText(Object text, UiLang lang) => text is List
+    ? '${text[lang == UiLang.zh && text.length > 1 ? 1 : 0]}'
+    : '$text';

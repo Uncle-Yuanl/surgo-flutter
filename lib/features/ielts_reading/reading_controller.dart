@@ -7,8 +7,11 @@ class ReadingData {
   ReadingData(this.raw);
   final Map<String, dynamic> raw;
   static ReadingData? cache;
-  static Future<ReadingData> load() async => cache ??= ReadingData(jsonDecode(
-      await rootBundle.loadString('assets/data/ielts_reading.json')));
+  // 直接读字节再解码：rootBundle.loadString 对 50 KB 以上的文件会另起 isolate 解码，
+  // widget 测试（路由审计）的假时钟等不到它；演示用真实数据的这个文件超过了 50 KB。
+  static Future<ReadingData> load() async =>
+      cache ??= ReadingData(jsonDecode(utf8.decode(Uint8List.sublistView(
+          await rootBundle.load('assets/data/ielts_reading.json')))));
   List<Map<String, dynamic>> get types =>
       (raw['types'] as List).cast<Map<String, dynamic>>();
 }
@@ -88,10 +91,13 @@ class ReadingController {
     mark();
   }
 
+  /// 示意图标注题：原型数据带 diagramSvg，演示用真实数据带 figure（后端存的原图）。
+  bool get hasDiagram => type['diagramSvg'] != null || type['figure'] != null;
+
   // Original single-type inline gaps have NO onchange (boxInput/diagram do).
   void commitInput(String text) {
     input = text;
-    if (!single || type['boxInput'] == true || type['diagramSvg'] != null) {
+    if (!single || type['boxInput'] == true || hasDiagram) {
       mark();
     }
   }

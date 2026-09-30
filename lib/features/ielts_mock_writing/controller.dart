@@ -8,7 +8,9 @@ class IeltsMockWritingController {
  final AppState app;
  late int task,left,warnCount;
  final Map<int,String> texts={};
- Map<String,dynamic> config(int n)=>Map<String,dynamic>.from(QuestionBank.instance.skill('writing',app.examType)['daily']?['task$n'] ?? {});
+ /// 演示用真实数据带 mock.task1/2（一场真实模考的两道题，tool/demo_export/mock_writing.cjs）；
+ /// 原型数据的 mock 只有 intro/summary，仍读日常那两题。
+ Map<String,dynamic> config(int n){final w=QuestionBank.instance.skill('writing',app.examType);return Map<String,dynamic>.from(w['mock']?['task$n'] ?? w['daily']?['task$n'] ?? {});}
  int get minimum=>(config(task)['minWords'] as int?) ?? (task==1?150:250);
  int get minutes=>(config(task)['minutes'] as int?) ?? (task==1?20:40);
  int words(int n){final v=(texts[n]??'').trim();return v.isEmpty?0:v.split(RegExp(r'\s+')).length;}

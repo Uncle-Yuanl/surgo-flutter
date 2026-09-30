@@ -1,0 +1,958 @@
+{
+ "daysToExam": null,
+ "profile": {
+  "name": "Nafis",
+  "email": null
+ },
+ "notifications": [
+  {
+   "id": "capability_analysis_completed",
+   "kind": "report",
+   "title": [
+    "Learning evidence updated",
+    "学习证据已更新"
+   ],
+   "detail": [
+    "Your latest practice has been added to your capability profile. · Sep 29",
+    "你最近的练习已添加到能力档案中。 · 9月29日"
+   ]
+  },
+  {
+   "id": "mock_exam_scoring_completed",
+   "kind": "mock",
+   "title": [
+    "IELTS mock exam result is ready",
+    "IELTS 模拟考试评分完成"
+   ],
+   "detail": [
+    "Your result is ready to review. · Sep 29",
+    "模拟考试评分已完成，可以查看结果。 · 9月29日"
+   ]
+  },
+  {
+   "id": "daily_training_ready",
+   "kind": "daily",
+   "title": [
+    "IELTS Reading daily training is ready",
+    "雅思阅读 日常训练题目已生成"
+   ],
+   "detail": [
+    "Your practice is ready to start. · Sep 29",
+    "本次练习题目已生成，可以开始作答。 · 9月29日"
+   ]
+  }
+ ],
+ "ielts": {
+  "target": "8.0",
+  "score": "4.0",
+  "streak": 0,
+  "challenge": {
+   "go": "readingDaily",
+   "sub": [
+    "Reading · 7 min",
+    "阅读 · 7 min"
+   ],
+   "status": [
+    "Reading Skill Focus: Locating Key Information · completed Aug 31",
+    "阅读技能训练：定位关键信息 · 8月31日已完成"
+   ]
+  },
+  "continue": [
+   "Continue Listening",
+   "继续听力"
+  ],
+  "weekly": [
+   {
+    "module": "reading",
+    "kicker": [
+     "READING · TRUE/FALSE/NOT GIVEN",
+     "阅读 · 判断正误题"
+    ],
+    "head": [
+     "Three-way rule confused",
+     "三类判断规则混淆"
+    ],
+    "done": 0,
+    "of": 5,
+    "card": null
+   },
+   {
+    "module": "reading",
+    "kicker": [
+     "READING · DIAGRAM LABELLING",
+     "阅读 · 图表标注"
+    ],
+    "head": [
+     "Outside knowledge used",
+     "使用外部常识作答"
+    ],
+    "done": 0,
+    "of": 5,
+    "card": null
+   },
+   {
+    "module": "speaking",
+    "kicker": [
+     "SPEAKING · PART 2",
+     "口语 · Part 2"
+    ],
+    "head": [
+     "Incomplete spoken sentence",
+     "口语句子不完整"
+    ],
+    "done": 0,
+    "of": 5,
+    "card": "p2"
+   }
+  ],
+  "mocks": {
+   "listening": null,
+   "reading": "1.0/9",
+   "writing": "7.5/9",
+   "speaking": null
+  },
+  "report": {
+   "target": 8,
+   "scores": {
+    "listening": 2,
+    "reading": 1.5,
+    "writing": 7.5,
+    "speaking": 4.5
+   },
+   "overall": 4,
+   "weeklyPractice": [
+    7,
+    6,
+    8,
+    21,
+    7,
+    4,
+    8,
+    4
+   ],
+   "weeklyScores": [
+    null,
+    null,
+    null,
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "weekLabels": [
+    "8/10",
+    "8/17",
+    "8/24",
+    "8/31",
+    "9/7",
+    "9/14",
+    "9/21",
+    "9/28"
+   ],
+   "last30": 35,
+   "prior30": 37,
+   "done": {
+    "listening": [
+     7,
+     1,
+     4,
+     1
+    ],
+    "reading": [
+     4,
+     4,
+     1,
+     2,
+     4,
+     1,
+     0,
+     4,
+     1,
+     5,
+     2
+    ],
+    "writing": [
+     16,
+     1
+    ],
+    "speaking": [
+     6,
+     5,
+     2
+    ]
+   },
+   "practices": {
+    "listening": 13,
+    "reading": 12,
+    "writing": 17,
+    "speaking": 13
+   },
+   "review": [
+    {
+     "text": [
+      "Your current overall level is Band 4.0. ",
+      "你目前的综合水平为 Band 4.0。"
+     ]
+    },
+    {
+     "bold": true,
+     "text": [
+      "Writing (7.5) is your strength",
+      "写作（7.5）是你的强项"
+     ]
+    },
+    {
+     "text": [
+      ", and ",
+      "，"
+     ]
+    },
+    {
+     "bold": true,
+     "text": [
+      "Reading (1.5) is the area that most needs a breakthrough",
+      "阅读（1.5）是当前最需要突破的一项"
+     ]
+    },
+    {
+     "text": [
+      ". You are 4.0 short of your 8.0 target.",
+      "。距离目标 8.0 还差 4.0 分。"
+     ]
+    }
+   ],
+   "teacher": {
+    "summary": [
+     "Your available records name Comprehension and decoding in listening as a focus for practice, with a recent improving direction noted for that skill.",
+     "现有记录把听力方向的“理解与解码”列为需要关注的练习重点，趋势显示正在改善。"
+    ],
+    "full": [
+     "Your available records name Comprehension and decoding in listening as a focus for practice, with a recent improving direction noted for that skill. This describes one area shown by current records rather than a full judgement of your listening. For your next practice, preview the questions first to mark the keywords you expect to hear, listen to a section, then immediately paraphrase its main message and the speaker's attitude in your own words. After that, check your version against the source for any missed contrast, qualifying language or number. Keep the comparison focused on the same section.",
+     "现有记录把听力方向的“理解与解码”列为需要关注的练习重点，趋势显示正在改善。这只是该技能在近期记录中的方向，并不代表对你整体能力的判断。下一组听力练习时，先快速预览题目锁定关键词位置，听完一段后立即用自己的话口述这段的主要信息和说话者态度，再对照原文检查是否漏掉转折或数字。"
+    ],
+    "tags": [
+     [
+      "Comprehension and decoding",
+      "理解与解码"
+     ]
+    ]
+   },
+   "advice": {
+    "listening": {
+     "top": [
+      {
+       "title": [
+        "Comprehension and decoding",
+        "理解与解码"
+       ],
+       "trend": "improving",
+       "count": 13,
+       "progress": 0.22
+      },
+      {
+       "title": [
+        "Sequencing",
+        "顺序处理"
+       ],
+       "trend": null,
+       "count": 2,
+       "progress": 0.48
+      }
+     ],
+     "more": [
+      [
+       "Information handling",
+       "信息处理"
+      ]
+     ]
+    },
+    "reading": {
+     "top": [
+      {
+       "title": [
+        "Comprehension and decoding",
+        "理解与解码"
+       ],
+       "trend": "declining",
+       "count": 16,
+       "progress": 0.26
+      },
+      {
+       "title": [
+        "Response validity",
+        "作答有效性"
+       ],
+       "trend": "stable",
+       "count": 5,
+       "progress": 0.46
+      },
+      {
+       "title": [
+        "Prompt interpretation",
+        "题目理解"
+       ],
+       "trend": "stable",
+       "count": 4,
+       "progress": 0.47
+      }
+     ],
+     "more": [
+      [
+       "Task fulfilment",
+       "任务完成度"
+      ],
+      [
+       "Information handling",
+       "信息处理"
+      ],
+      [
+       "Reasoning and development",
+       "推理与展开"
+      ],
+      [
+       "Selection and prioritisation",
+       "信息筛选与优先级"
+      ],
+      [
+       "Critical reasoning",
+       "批判性推理"
+      ],
+      [
+       "Inference",
+       "推断"
+      ],
+      [
+       "Integration and synthesis",
+       "整合与综合"
+      ],
+      [
+       "Information location",
+       "信息定位"
+      ],
+      [
+       "Comparison",
+       "比较"
+      ],
+      [
+       "Transcription accuracy",
+       "转写准确性"
+      ]
+     ]
+    },
+    "writing": {
+     "top": [
+      {
+       "title": [
+        "Visual and data decoding",
+        "图表与数据解码"
+       ],
+       "trend": "stable",
+       "count": 14,
+       "progress": 0.41
+      },
+      {
+       "title": [
+        "Precision",
+        "准确性"
+       ],
+       "trend": "stable",
+       "count": 8,
+       "progress": 0.44
+      },
+      {
+       "title": [
+        "Transcription accuracy",
+        "转写准确性"
+       ],
+       "trend": "stable",
+       "count": 8,
+       "progress": 0.44
+      }
+     ],
+     "more": [
+      [
+       "Information handling",
+       "信息处理"
+      ],
+      [
+       "Comprehension and decoding",
+       "理解与解码"
+      ],
+      [
+       "Collocation",
+       "搭配"
+      ],
+      [
+       "Paragraphing",
+       "段落组织"
+      ],
+      [
+       "Comparison",
+       "比较"
+      ],
+      [
+       "Response adequacy",
+       "作答充分性"
+      ],
+      [
+       "Task-specific fulfilment",
+       "特定任务完成度"
+      ],
+      [
+       "Relevance",
+       "相关性"
+      ],
+      [
+       "Repetition",
+       "重复"
+      ],
+      [
+       "Sequencing and progression",
+       "顺序与推进"
+      ],
+      [
+       "Coverage and completeness",
+       "覆盖与完整性"
+      ],
+      [
+       "Articles and determiners",
+       "冠词与限定词"
+      ],
+      [
+       "Sentence structure",
+       "句子结构"
+      ],
+      [
+       "Reference and substitution",
+       "指代与替代"
+      ],
+      [
+       "Integration and synthesis",
+       "整合与综合"
+      ]
+     ]
+    },
+    "speaking": {
+     "top": [
+      {
+       "title": [
+        "Precision",
+        "准确性"
+       ],
+       "trend": "stable",
+       "count": 10,
+       "progress": 0.43
+      },
+      {
+       "title": [
+        "Sentence structure",
+        "句子结构"
+       ],
+       "trend": "stable",
+       "count": 10,
+       "progress": 0.43
+      },
+      {
+       "title": [
+        "Articles and determiners",
+        "冠词与限定词"
+       ],
+       "trend": "stable",
+       "count": 7,
+       "progress": 0.45
+      }
+     ],
+     "more": [
+      [
+       "Grammar and syntax",
+       "语法与句法"
+      ],
+      [
+       "Organisation and cohesion",
+       "组织与衔接"
+      ],
+      [
+       "Collocation",
+       "搭配"
+      ],
+      [
+       "Prepositions",
+       "介词"
+      ],
+      [
+       "Relevance",
+       "相关性"
+      ],
+      [
+       "Sequencing and progression",
+       "顺序与推进"
+      ],
+      [
+       "Response adequacy",
+       "作答充分性"
+      ],
+      [
+       "Lexical control",
+       "词汇运用"
+      ],
+      [
+       "Reasoning and development",
+       "推理与展开"
+      ],
+      [
+       "Task fulfilment",
+       "任务完成度"
+      ],
+      [
+       "Coverage and completeness",
+       "覆盖与完整性"
+      ],
+      [
+       "Subordination and coordination",
+       "从属与并列"
+      ],
+      [
+       "Reference and substitution",
+       "指代与替代"
+      ],
+      [
+       "Paraphrase",
+       "改述"
+      ],
+      [
+       "Claim support",
+       "观点支持"
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "toefl": {
+  "target": null,
+  "score": "3.0",
+  "streak": 0,
+  "challenge": null,
+  "continue": [
+   "Continue Speaking",
+   "继续口语"
+  ],
+  "weekly": [
+   {
+    "module": "reading",
+    "kicker": [
+     "READING · COMPLETE THE WORDS",
+     "阅读 · 补全单词"
+    ],
+    "head": [
+     "Lexical candidate not recognised",
+     "未识别候选词"
+    ],
+    "done": 0,
+    "of": 5,
+    "card": null
+   },
+   {
+    "module": "writing",
+    "kicker": [
+     "WRITING · BUILD A SENTENCE",
+     "写作 · 排列成句"
+    ],
+    "head": [
+     "Word order error",
+     "词序错误"
+    ],
+    "done": 0,
+    "of": 5,
+    "card": null
+   },
+   {
+    "module": "reading",
+    "kicker": [
+     "READING · COMPLETE THE WORDS",
+     "阅读 · 补全单词"
+    ],
+    "head": [
+     "Grammar cue missed",
+     "忽略语法线索"
+    ],
+    "done": 0,
+    "of": 5,
+    "card": null
+   }
+  ],
+  "mocks": {
+   "listening": null,
+   "reading": "1.5/6",
+   "writing": "1.5/6",
+   "speaking": "3.5/6"
+  },
+  "report": {
+   "target": null,
+   "scores": {
+    "listening": 3,
+    "reading": 1.5,
+    "writing": 3,
+    "speaking": 3.5
+   },
+   "overall": 3,
+   "weeklyPractice": [
+    1,
+    21,
+    0,
+    14,
+    10,
+    0,
+    8,
+    0
+   ],
+   "weeklyScores": [
+    null,
+    null,
+    null,
+    2.5,
+    3,
+    3,
+    3,
+    3
+   ],
+   "weekLabels": [
+    "8/10",
+    "8/17",
+    "8/24",
+    "8/31",
+    "9/7",
+    "9/14",
+    "9/21",
+    "9/28"
+   ],
+   "last30": 31,
+   "prior30": 29,
+   "done": {
+    "listening": [
+     8,
+     3,
+     2,
+     4
+    ],
+    "reading": [
+     5,
+     4,
+     2
+    ],
+    "writing": [
+     6,
+     1,
+     1
+    ],
+    "speaking": [
+     5,
+     2
+    ]
+   },
+   "practices": {
+    "listening": 17,
+    "reading": 11,
+    "writing": 8,
+    "speaking": 7
+   },
+   "review": null,
+   "teacher": null,
+   "advice": {
+    "listening": {
+     "top": [
+      {
+       "title": [
+        "Critical reasoning",
+        "批判性推理"
+       ],
+       "trend": "stable",
+       "count": 29,
+       "progress": 0.37
+      },
+      {
+       "title": [
+        "Prompt interpretation",
+        "题目理解"
+       ],
+       "trend": "stable",
+       "count": 19,
+       "progress": 0.4
+      },
+      {
+       "title": [
+        "Spoken-word recognition",
+        "语音词汇识别"
+       ],
+       "trend": null,
+       "count": 1,
+       "progress": 0.49
+      }
+     ],
+     "more": [
+      [
+       "Reasoning and development",
+       "推理与展开"
+      ],
+      [
+       "Comprehension and decoding",
+       "理解与解码"
+      ],
+      [
+       "Task fulfilment",
+       "任务完成度"
+      ]
+     ]
+    },
+    "reading": {
+     "top": [
+      {
+       "title": [
+        "Lexical decoding",
+        "词汇解码"
+       ],
+       "trend": "stable",
+       "count": 27,
+       "progress": 0.37
+      },
+      {
+       "title": [
+        "Response adequacy",
+        "作答充分性"
+       ],
+       "trend": null,
+       "count": 1,
+       "progress": 0.45
+      },
+      {
+       "title": [
+        "Prompt interpretation",
+        "题目理解"
+       ],
+       "trend": "stable",
+       "count": 4,
+       "progress": 0.47
+      }
+     ],
+     "more": [
+      [
+       "Comprehension and decoding",
+       "理解与解码"
+      ],
+      [
+       "Task fulfilment",
+       "任务完成度"
+      ],
+      [
+       "Information handling",
+       "信息处理"
+      ],
+      [
+       "Information location",
+       "信息定位"
+      ],
+      [
+       "Morphological decoding",
+       "词形解码"
+      ],
+      [
+       "Syntactic decoding",
+       "句法解码"
+      ],
+      [
+       "Inference",
+       "推断"
+      ],
+      [
+       "Reasoning and development",
+       "推理与展开"
+      ],
+      [
+       "Selection and prioritisation",
+       "信息筛选与优先级"
+      ]
+     ]
+    },
+    "writing": {
+     "top": [
+      {
+       "title": [
+        "Sentence structure",
+        "句子结构"
+       ],
+       "trend": "stable",
+       "count": 41,
+       "progress": 0.35
+      },
+      {
+       "title": [
+        "Syntactic decoding",
+        "句法解码"
+       ],
+       "trend": "stable",
+       "count": 22,
+       "progress": 0.39
+      },
+      {
+       "title": [
+        "Subordination and coordination",
+        "从属与并列"
+       ],
+       "trend": "stable",
+       "count": 12,
+       "progress": 0.42
+      }
+     ],
+     "more": [
+      [
+       "Grammar and syntax",
+       "语法与句法"
+      ],
+      [
+       "Comprehension and decoding",
+       "理解与解码"
+      ],
+      [
+       "Task fulfilment",
+       "任务完成度"
+      ],
+      [
+       "Reasoning and development",
+       "推理与展开"
+      ],
+      [
+       "Pragmatics and register",
+       "语用与语域"
+      ],
+      [
+       "Prompt interpretation",
+       "题目理解"
+      ],
+      [
+       "Relevance",
+       "相关性"
+      ],
+      [
+       "Social conventions",
+       "社交规范"
+      ],
+      [
+       "Organisation and cohesion",
+       "组织与衔接"
+      ],
+      [
+       "Cohesive reference",
+       "衔接指代"
+      ],
+      [
+       "Coverage and completeness",
+       "覆盖与完整性"
+      ],
+      [
+       "Examples and evidence",
+       "例证与证据"
+      ],
+      [
+       "Critical reasoning",
+       "批判性推理"
+      ],
+      [
+       "Collocation",
+       "搭配"
+      ],
+      [
+       "Overall structure",
+       "整体结构"
+      ]
+     ]
+    },
+    "speaking": {
+     "top": [
+      {
+       "title": [
+        "Sentence structure",
+        "句子结构"
+       ],
+       "trend": "stable",
+       "count": 4,
+       "progress": 0.47
+      },
+      {
+       "title": [
+        "Segmentals",
+        "音段"
+       ],
+       "trend": "stable",
+       "count": 4,
+       "progress": 0.47
+      },
+      {
+       "title": [
+        "Coverage and completeness",
+        "覆盖与完整性"
+       ],
+       "trend": null,
+       "count": 3,
+       "progress": 0.47
+      }
+     ],
+     "more": [
+      [
+       "Task fulfilment",
+       "任务完成度"
+      ],
+      [
+       "Grammar and syntax",
+       "语法与句法"
+      ],
+      [
+       "Information handling",
+       "信息处理"
+      ],
+      [
+       "Pragmatics and register",
+       "语用与语域"
+      ],
+      [
+       "Retention",
+       "信息保持"
+      ],
+      [
+       "Articles and determiners",
+       "冠词与限定词"
+      ],
+      [
+       "Relevance",
+       "相关性"
+      ],
+      [
+       "Tone and stance",
+       "语气与立场"
+      ],
+      [
+       "Repetition",
+       "重复"
+      ],
+      [
+       "Sequencing",
+       "顺序处理"
+      ],
+      [
+       "Prompt interpretation",
+       "题目理解"
+      ],
+      [
+       "Fluency and automaticity",
+       "流利度与自动化"
+      ],
+      [
+       "Phonological control",
+       "语音控制"
+      ]
+     ]
+    }
+   }
+  }
+ }
+}

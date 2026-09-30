@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 import '../../app/app_state.dart';
+import '../../app/learner_profile.dart';
 import '../../app/routes.dart';
 import '../../theme/tokens.dart';
 import '../../widgets/t.dart';
@@ -24,8 +25,18 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
+    // 演示数据（learner_profile.json）有就用真实学员的，没有的键用原来写死的原型值；
+    // 键在而值是 null（没设目标分、不公开邮箱）的那一行不画。
+    final me = LearnerProfile.exam(state.examType);
+    final who =
+        LearnerProfile.data['profile'] as Map<String, dynamic>? ?? const {};
+    final email =
+        who.containsKey('email') ? who['email'] as String? : 'miki.jin@example.com';
+    final score = me.containsKey('score') ? me['score'] as String? : '6.3';
+    final target = me.containsKey('target') ? me['target'] as String? : '7.0';
+    final days = LearnerProfile.daysToExam;
     final base = now ?? DateTime.now();
-    final date = DateTime(base.year, base.month, base.day + 20);
+    final date = DateTime(base.year, base.month, base.day + (days ?? 0));
     const months = [
       'Jan',
       'Feb',
@@ -81,10 +92,14 @@ class ProfilePage extends StatelessWidget {
                         child: Image.asset('assets/images/otter_glasses.png',
                             fit: BoxFit.cover)))),
             const SizedBox(height: 14),
-            const SourceText('Miki Jin', style: SurgoText.profileName),
-            const SizedBox(height: 4),
-            const SourceText('miki.jin@example.com',
-                style: TextStyle(fontSize: 13, color: SurgoColors.muted)),
+            SourceText(who['name'] as String? ?? 'Miki Jin',
+                style: SurgoText.profileName),
+            if (email != null) ...[
+              const SizedBox(height: 4),
+              SourceText(email,
+                  style:
+                      const TextStyle(fontSize: 13, color: SurgoColors.muted)),
+            ],
           ])),
       Container(
           key: const ValueKey('profile-stats'),
@@ -99,14 +114,26 @@ class ProfilePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                 Expanded(
-                    child: _stat(state.lang, '6.3', '/9', '目前成绩', '目标 7.0')),
+                    child: _stat(
+                        state.lang,
+                        score ?? '—',
+                        // 原型不分考试都是 /9；真实数据按考试的满分。
+                        me.containsKey('score') &&
+                                state.examType == ExamType.toefl
+                            ? '/6'
+                            : '/9',
+                        '目前成绩',
+                        target == null
+                            ? null
+                            : ['Target $target', '目标 $target'])),
                 Container(
                     width: 1,
                     margin:
                         const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
                     color: const Color(0x2E3A2E00)),
                 Expanded(
-                    child: _stat(state.lang, '20', '天', '考试倒计时', dateText)),
+                    child: _stat(state.lang, days == null ? '—' : '$days', '天',
+                        '考试倒计时', days == null ? null : dateText)),
               ]))),
       const Padding(
           padding: EdgeInsets.fromLTRB(2, 0, 2, 6),
@@ -169,7 +196,8 @@ class ProfilePage extends StatelessWidget {
     ]);
   }
 
-  Widget _stat(UiLang lang, String n, String unit, String label, String sub) =>
+  // sub：字符串或 [英文, 中文]；null 时这一行不画。
+  Widget _stat(UiLang lang, String n, String unit, String label, Object? sub) =>
       Column(children: [
         Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -201,12 +229,14 @@ class ProfilePage extends StatelessWidget {
                 height: lang == UiLang.zh ? 18 / 13 : 1,
                 fontWeight: FontWeight.w800,
                 color: SurgoColors.onYellowStrong)),
-        const SizedBox(height: 3),
-        T(sub,
-            style: TextStyle(
-                fontSize: 10,
-                height: lang == UiLang.zh ? 14 / 10 : 1,
-                color: SurgoColors.onYellowSoft)),
+        if (sub != null) ...[
+          const SizedBox(height: 3),
+          T(sub,
+              style: TextStyle(
+                  fontSize: 10,
+                  height: lang == UiLang.zh ? 14 / 10 : 1,
+                  color: SurgoColors.onYellowSoft)),
+        ],
       ]);
 }
 

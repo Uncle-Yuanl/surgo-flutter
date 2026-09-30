@@ -19,8 +19,9 @@ class IeltsMockSpeakingPage extends StatefulWidget {
 }
 class _IeltsMockSpeakingPageState extends State<IeltsMockSpeakingPage>{
  IeltsMockSpeakingController? c;final notes=TextEditingController(),chat=ScrollController();
+ // 回顾页按 sessionMode 认模考（三个 Part 的页签都出）；不经模考选择弹窗直接进本页（深链、审计入口）时它没设，交卷时补上。
  @override
- void initState(){super.initState();final app=context.read<AppState>();IeltsMockSpeakingData.load().then((d){if(!mounted)return;final x=IeltsMockSpeakingController(app,d,speech:widget.speech,mark:()=>showMarking(context,SurgoPage.speakingReview,'正在批改口语作答, Part 3'));c=x;x.addListener(changed);x.start();});}
+ void initState(){super.initState();final app=context.read<AppState>();IeltsMockSpeakingData.load().then((d){if(!mounted)return;final x=IeltsMockSpeakingController(app,d,speech:widget.speech,mark:(){app.session['sessionMode']='mock';showMarking(context,SurgoPage.speakingReview,'正在批改口语作答, Part 3');});c=x;x.addListener(changed);x.start();});}
  void changed(){if(!mounted)return;setState((){});if(c!.part=='p1')WidgetsBinding.instance.addPostFrameCallback((_){if(mounted&&chat.hasClients)chat.jumpTo(chat.position.maxScrollExtent);});}
  @override
  void dispose(){c?.removeListener(changed);c?.dispose();notes.dispose();chat.dispose();super.dispose();}
