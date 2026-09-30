@@ -1,0 +1,1952 @@
+{
+ "parts": {
+  "s1": {
+   "part": "Part 1",
+   "ctx": null,
+   "section": "Part 1",
+   "sectionDesc": null,
+   "audioDur": "07:00",
+   "audioTitle": null,
+   "mainType": "form",
+   "groupLabel": "Questions 1-10",
+   "groupInstr": "Write ONE WORD AND/OR A NUMBER for each answer.",
+   "qs": [
+    {
+     "kind": "gap",
+     "type": "form",
+     "num": 1,
+     "q": [
+      "1. Date of arrival:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "form",
+     "num": 2,
+     "q": [
+      "2. Guest's surname:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "form",
+     "num": 3,
+     "q": [
+      "3. Number of nights:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "form",
+     "num": 4,
+     "q": [
+      "4. Room type:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "form",
+     "num": 5,
+     "q": [
+      "5. Price per night: £",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "form",
+     "num": 6,
+     "q": [
+      "6. Earliest check-in time:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "form",
+     "num": 7,
+     "q": [
+      "7. Preferred floor:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "form",
+     "num": 8,
+     "q": [
+      "8. Special equipment requested:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "form",
+     "num": 9,
+     "q": [
+      "9. Credit card number last four digits:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "form",
+     "num": 10,
+     "q": [
+      "10. Confirmation number:",
+      ""
+     ]
+    }
+   ],
+   "group2Label": null,
+   "group2Instr": null,
+   "qs2": null,
+   "brief": [
+    "Part 1, mostly form completion. Listen first, then answer questions 1-10.",
+    "Part 1 · 表格填空为主，先听录音再作答第 1-10 题。"
+   ]
+  },
+  "s2": {
+   "part": "Part 2",
+   "ctx": "Welcome notes",
+   "section": "Part 2",
+   "sectionDesc": null,
+   "audioDur": "07:00",
+   "audioTitle": null,
+   "mainType": "note",
+   "groupLabel": "Questions 11-16",
+   "groupInstr": "Complete the questions. Follow the word limit shown for each answer.",
+   "tableTitle": null,
+   "table": null,
+   "qs": [
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 11,
+     "q": [
+      "11. Coordinator's name:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 12,
+     "q": [
+      "12. Group name:",
+      "morning"
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 13,
+     "q": [
+      "13. Sessions run from:",
+      "until 12.30"
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 14,
+     "q": [
+      "14. Tea break starts at:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 15,
+     "q": [
+      "15. Cost of a Saturday block:",
+      ""
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 16,
+     "q": [
+      "16. Slips for spare parts are kept by the",
+      ""
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "17",
+     "opts": [
+      "A. Workbenches",
+      "B. Parts library",
+      "C. Cleaning station",
+      "D. Diagnostic area"
+     ],
+     "groupStart": "Questions 17-20 · Main room of the cycle workshop",
+     "groupInstr": "Label the diagram of the main room. Which area of the workshop is described by each statement? Choose the correct letter, A, B, C or D."
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "18",
+     "opts": [
+      "A. Workbenches",
+      "B. Parts library",
+      "C. Cleaning station",
+      "D. Diagnostic area"
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "19",
+     "opts": [
+      "A. Workbenches",
+      "B. Parts library",
+      "C. Cleaning station",
+      "D. Diagnostic area"
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "20",
+     "opts": [
+      "A. Workbenches",
+      "B. Parts library",
+      "C. Cleaning station",
+      "D. Diagnostic area"
+     ]
+    }
+   ],
+   "mapGroupLabel": null,
+   "mapGroupInstr": null,
+   "mapQs": null,
+   "brief": [
+    "Part 2, mostly note completion. Listen first, then answer questions 11-20.",
+    "Part 2 · 笔记填空为主，先听录音再作答第 11-20 题。"
+   ]
+  },
+  "s3": {
+   "part": "Part 3",
+   "ctx": "Research project supervision feedback",
+   "section": "Part 3",
+   "sectionDesc": null,
+   "audioDur": "07:00",
+   "audioTitle": null,
+   "mainType": "mc",
+   "groupLabel": "Questions 21-26",
+   "groupInstr": "Choose the correct letter, A, B or C.",
+   "matchBox": null,
+   "matchOpts": null,
+   "qs": [
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "21. What does Luca say about the methods section?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "22. What does Luca say about the literature review?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "23. What does Luca say about the discussion section?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "24. What does Luca say about the results section?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "25. What does Luca say about the conclusion?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "26. What does Luca say about the abstract?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "27. Discussion section",
+     "opts": [
+      "A. It was the strongest part overall",
+      "B. The limitations paragraph was under-developed",
+      "C. This is the area to focus on improving next",
+      "D. It was the most accurate part of the whole draft",
+      "E. The strongest part was how the main argument was framed"
+     ],
+     "groupStart": "Questions 27-30 · Supervisor's feedback on the research project",
+     "groupInstr": "What did the supervisor say about each section of the draft? Choose the correct letter, A-E, for each answer. You may use any letter more than once."
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "28. Conclusion section",
+     "opts": [
+      "A. It was the strongest part overall",
+      "B. The limitations paragraph was under-developed",
+      "C. This is the area to focus on improving next",
+      "D. It was the most accurate part of the whole draft",
+      "E. The strongest part was how the main argument was framed"
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "29. Literature review",
+     "opts": [
+      "A. It was the strongest part overall",
+      "B. The limitations paragraph was under-developed",
+      "C. This is the area to focus on improving next",
+      "D. It was the most accurate part of the whole draft",
+      "E. The strongest part was how the main argument was framed"
+     ]
+    },
+    {
+     "kind": "mc",
+     "type": "mc",
+     "q": "30. Reference list",
+     "opts": [
+      "A. It was the strongest part overall",
+      "B. The limitations paragraph was under-developed",
+      "C. This is the area to focus on improving next",
+      "D. It was the most accurate part of the whole draft",
+      "E. The strongest part was how the main argument was framed"
+     ]
+    }
+   ],
+   "brief": [
+    "Part 3, mostly multiple choice. Listen first, then answer questions 21-30.",
+    "Part 3 · 选择题为主，先听录音再作答第 21-30 题。"
+   ]
+  },
+  "s4": {
+   "part": "Part 4",
+   "ctx": "Induction programme for new teachers",
+   "section": "Part 4",
+   "sectionDesc": null,
+   "audioDur": "07:00",
+   "audioTitle": null,
+   "mainType": "note",
+   "groupLabel": "Questions 31-40",
+   "groupInstr": "Complete the questions. Follow the word limit shown for each answer.",
+   "notesTitle": null,
+   "qs": [
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 31,
+     "q": [
+      "31. The induction programme is designed for newly",
+      "teachers."
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 32,
+     "q": [
+      "32. It runs across the first two",
+      "of the school year."
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 33,
+     "q": [
+      "33. New teachers are paired with a mentor from the same",
+      "department."
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 34,
+     "q": [
+      "34. Mentors must hold at least",
+      "years of classroom experience."
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 35,
+     "q": [
+      "35. The mentor's first priority is to help the new teacher manage",
+      "during the autumn term."
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 36,
+     "q": [
+      "36. Optional workshops are held on",
+      "afternoons."
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 37,
+     "q": [
+      "37. Teachers must complete at least",
+      "workshops to receive a certificate."
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 38,
+     "q": [
+      "38. They also receive an allowance of",
+      "to spend on classroom resources."
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 39,
+     "q": [
+      "39. The peer observation group meets on the first Monday of each",
+      "."
+     ]
+    },
+    {
+     "kind": "gap",
+     "type": "note",
+     "num": 40,
+     "q": [
+      "40. The reflective portfolio is reviewed by the head of department and the",
+      "."
+     ]
+    }
+   ],
+   "group2Label": null,
+   "group2Instr": null,
+   "qs2": null,
+   "brief": [
+    "Part 4, mostly summary completion. Listen first, then answer questions 31-40.",
+    "Part 4 · 摘要填空为主，先听录音再作答第 31-40 题。"
+   ]
+  }
+ },
+ "mapSvg": "<svg class=\"lmap-svg\" viewBox=\"0 0 460 300\" xmlns=\"http://www.w3.org/2000/svg\">\n    <rect x=\"0\" y=\"0\" width=\"460\" height=\"300\" rx=\"10\" fill=\"#eef1e5\"/>\n    <rect x=\"210\" y=\"55\" width=\"42\" height=\"200\" fill=\"#d9d3c4\"/>\n    <rect x=\"30\" y=\"150\" width=\"400\" height=\"34\" fill=\"#d9d3c4\"/>\n    <rect x=\"45\" y=\"75\" width=\"120\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"105\" cy=\"105\" r=\"13\" fill=\"#e8a90c\"/><text x=\"105\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">A</text>\n    <rect x=\"285\" y=\"75\" width=\"130\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"350\" cy=\"105\" r=\"13\" fill=\"#e8a90c\"/><text x=\"350\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">B</text>\n    <rect x=\"45\" y=\"200\" width=\"120\" height=\"60\" rx=\"6\" fill=\"#f5e6c3\" stroke=\"#d9c48f\"/>\n    <circle cx=\"105\" cy=\"230\" r=\"13\" fill=\"#e8a90c\"/><text x=\"105\" y=\"235\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">C</text>\n    <rect x=\"300\" y=\"205\" width=\"115\" height=\"55\" rx=\"16\" fill=\"#c9e2f0\" stroke=\"#9fc7de\"/>\n    <circle cx=\"357\" cy=\"232\" r=\"13\" fill=\"#e8a90c\"/><text x=\"357\" y=\"237\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">F</text>\n    <circle cx=\"200\" cy=\"167\" r=\"13\" fill=\"#e8a90c\"/><text x=\"200\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">D</text>\n    <circle cx=\"285\" cy=\"167\" r=\"13\" fill=\"#e8a90c\"/><text x=\"285\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">E</text>\n    <circle cx=\"231\" cy=\"120\" r=\"13\" fill=\"#e8a90c\"/><text x=\"231\" y=\"125\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">G</text>\n    <text x=\"231\" y=\"278\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7a7566\">ENTRANCE</text>\n  </svg>",
+ "feedback": {
+  "1": {
+   "qs": [
+    {
+     "n": 1,
+     "ok": false,
+     "typeLbl": [
+      "Form completion",
+      "表格填空"
+     ],
+     "kind": "chips",
+     "q": "Date of arrival: ______",
+     "mine": "12th May",
+     "ans": "12 May",
+     "evi": "We're planning to arrive on the twelfth of May.",
+     "why": [
+      "The caller mentions the twelfth of May as the arrival date. The departure date is the fifteenth, which might distract if not careful.",
+      "The caller mentions the twelfth of May as the arrival date. The departure date is the fifteenth, which might distract if not careful."
+     ]
+    },
+    {
+     "n": 2,
+     "ok": false,
+     "typeLbl": [
+      "Form completion",
+      "表格填空"
+     ],
+     "kind": "chips",
+     "q": "Guest's surname: ______",
+     "mine": "Brenan",
+     "ans": "Brennan",
+     "evi": "It's Andrew Brennan. That's B-R-E-N-N-A-N.",
+     "why": [
+      "The spelling B-R-E-N-N-A-N confirms the surname Brennan. First name Andrew could be mistaken as the answer.",
+      "The spelling B-R-E-N-N-A-N confirms the surname Brennan. First name Andrew could be mistaken as the answer."
+     ]
+    },
+    {
+     "n": 3,
+     "ok": true,
+     "typeLbl": [
+      "Form completion",
+      "表格填空"
+     ],
+     "kind": "chips",
+     "q": "Number of nights: ______",
+     "mine": "3",
+     "ans": "3",
+     "evi": "We'd like to stay for three nights, so from the twelfth until the fifteenth of May.",
+     "why": [
+      "The dates span from twelfth to fifteenth, which might be miscounted as four nights. The explicit statement is three nights.",
+      "The dates span from twelfth to fifteenth, which might be miscounted as four nights. The explicit statement is three nights."
+     ]
+    },
+    {
+     "n": 4,
+     "ok": true,
+     "typeLbl": [
+      "Form completion",
+      "表格填空"
+     ],
+     "kind": "chips",
+     "q": "Room type: ______",
+     "mine": "double",
+     "ans": "double",
+     "evi": "We have a double room available at ninety-five pounds per night.",
+     "why": [
+      "The receptionist confirms a double room. Single or twin rooms are not mentioned and serve as non-relevant distractors.",
+      "The receptionist confirms a double room. Single or twin rooms are not mentioned and serve as non-relevant distractors."
+     ]
+    },
+    {
+     "n": 5,
+     "ok": true,
+     "typeLbl": [
+      "Form completion",
+      "表格填空"
+     ],
+     "kind": "chips",
+     "q": "Price per night: £______",
+     "mine": "95",
+     "ans": "95",
+     "evi": "We have a double room available at ninety-five pounds per night.",
+     "why": [
+      "The price ninety-five pounds is clearly stated. The total cost for three nights is not directly stated.",
+      "The price ninety-five pounds is clearly stated. The total cost for three nights is not directly stated."
+     ]
+    },
+    {
+     "n": 6,
+     "ok": false,
+     "typeLbl": [
+      "Form completion",
+      "表格填空"
+     ],
+     "kind": "chips",
+     "q": "Earliest check-in time: ______",
+     "mine": "2",
+     "ans": "2 pm",
+     "evi": "Check-in is from two o'clock in the afternoon onwards.",
+     "why": [
+      "The exact time two o'clock is given. Earlier times like noon might seem plausible but are not mentioned.",
+      "The exact time two o'clock is given. Earlier times like noon might seem plausible but are not mentioned."
+     ]
+    },
+    {
+     "n": 7,
+     "ok": true,
+     "typeLbl": [
+      "Form completion",
+      "表格填空"
+     ],
+     "kind": "chips",
+     "q": "Preferred floor: ______",
+     "mine": "ground floor",
+     "ans": "ground floor",
+     "evi": "We'd need a room on the ground floor if possible.",
+     "why": [
+      "The caller specifically requests ground floor due to the wheelchair. First floor could distract UK/US listeners.",
+      "The caller specifically requests ground floor due to the wheelchair. First floor could distract UK/US listeners."
+     ]
+    },
+    {
+     "n": 8,
+     "ok": false,
+     "typeLbl": [
+      "Form completion",
+      "表格填空"
+     ],
+     "kind": "chips",
+     "q": "Special equipment requested: ______",
+     "mine": "shower",
+     "ans": "shower seat",
+     "evi": "A shower seat would be very helpful, thank you.",
+     "why": [
+      "The shower seat is the specific equipment requested. Other equipment like a ramp is not mentioned.",
+      "The shower seat is the specific equipment requested. Other equipment like a ramp is not mentioned."
+     ]
+    },
+    {
+     "n": 9,
+     "ok": true,
+     "typeLbl": [
+      "Form completion",
+      "表格填空"
+     ],
+     "kind": "chips",
+     "q": "Credit card number last four digits: ______",
+     "mine": "6743",
+     "ans": "6743",
+     "evi": "The card number is oh-four-seven-one, five-five-two-two, one-one-eight-eight, six-seven-four-three.",
+     "why": [
+      "The last four digits are six-seven-four-three. The full card number contains four groups but only the final group is required.",
+      "The last four digits are six-seven-four-three. The full card number contains four groups but only the final group is required."
+     ]
+    },
+    {
+     "n": 10,
+     "ok": false,
+     "typeLbl": [
+      "Form completion",
+      "表格填空"
+     ],
+     "kind": "chips",
+     "q": "Confirmation number: ______",
+     "mine": "7742",
+     "ans": "7724",
+     "evi": "Your confirmation number is seven-seven-two-four.",
+     "why": [
+      "The receptionist states seven-seven-two-four as the confirmation number. Payment amount or dates could distract.",
+      "The receptionist states seven-seven-two-four as the confirmation number. Payment amount or dates could distract."
+     ]
+    }
+   ],
+   "transcript": null,
+   "title": null,
+   "tag": [
+    "🏷 Form completion",
+    "🏷 表格填空"
+   ],
+   "tHtml": "<div>Receptionist: Good morning, Lakeside Hotel Reservations. How can I help you today?</div><div>Caller: Good morning. I'd like to enquire about booking a room for myself and my wife. <span class=\"hit bad\">We're planning to arrive on the twelfth of May.</span><span class=\"qn bad\">1</span></div><div>Receptionist: Certainly. Let me take some details. May I have your name, please?</div><div>Caller: Yes, it's Andrew Brennan. That's B-R-E-N-N-A-N.</div><div>Receptionist: Thank you, Mr Brennan. And how many nights are you planning to stay?</div><div>Caller: <span class=\"hit ok\">We'd like to stay for three nights, so from the twelfth until the fifteenth of May.</span><span class=\"qn ok\">3</span></div><div>Receptionist: I see. <span class=\"hit ok\">We have a double room available at ninety-five pounds per night.</span><span class=\"qn ok\">4</span> That includes breakfast. Would that suit you?</div><div>Caller: Yes, that sounds fine. Could you also tell me what time we can check in?</div><div>Receptionist: <span class=\"hit bad\">Check-in is from two o'clock in the afternoon onwards.</span><span class=\"qn bad\">6</span> Is there anything else you need?</div><div>Caller: Actually, yes. My wife uses a wheelchair, so we'd need a room on the ground floor if possible.</div><div>Receptionist: I understand. We do have accessible rooms available. I'll make a note of that requirement. Would you like us to provide any special equipment?</div><div>Caller: <span class=\"hit bad\">A shower seat would be very helpful, thank you.</span><span class=\"qn bad\">8</span></div><div>Receptionist: Not a problem. That can be arranged at no extra charge. Shall I go ahead and confirm the booking with your credit card details?</div><div>Caller: Yes, please. <span class=\"hit ok\">The card number is oh-four-seven-one, five-five-two-two, one-one-eight-eight, six-seven-four-three.</span><span class=\"qn ok\">9</span></div><div>Receptionist: Thank you. I've processed the payment. <span class=\"hit bad\">Your confirmation number is seven-seven-two-four.</span><span class=\"qn bad\">10</span> Is there anything else?</div><div>Caller: No, that's everything. Thank you for your help.</div><div>Receptionist: You're welcome, Mr Brennan. We look forward to seeing you on the twelfth. Goodbye.</div><div>Caller: Goodbye.</div>",
+   "review": {
+    "band": "6.0",
+    "right": 5,
+    "total": 10,
+    "text": [
+     "Predicted band: 5.5-6.5 (approximate practice estimate)",
+     "预估分数：5.5-6.5 (approximate practice estimate)"
+    ],
+    "weak": [
+     {
+      "label": [
+       "Form completion",
+       "表格填空"
+      ],
+      "text": [
+       "Completion questions: predict the type of word needed and check the word limit.",
+       "Completion questions: predict the type of word needed and check the word limit."
+      ]
+     }
+    ]
+   }
+  },
+  "2": {
+   "qs": [
+    {
+     "n": 11,
+     "ok": false,
+     "typeLbl": [
+      "Note completion",
+      "笔记填空"
+     ],
+     "kind": "chips",
+     "q": "Coordinator's name: ______",
+     "mine": "abc",
+     "ans": "Harriet",
+     "evi": "My name is Harriet, and",
+     "why": [
+      "The speaker gives the name Harriet. You wrote abc, which does not match.",
+      "录音中给出的人名是 Harriet。你填写的是 abc，不一致。"
+     ]
+    },
+    {
+     "n": 12,
+     "ok": false,
+     "typeLbl": [
+      "Note completion",
+      "笔记填空"
+     ],
+     "kind": "chips",
+     "q": "Group name: ______ morning",
+     "mine": "abc",
+     "ans": "Saturday",
+     "evi": "Saturday morning group",
+     "why": [
+      "The recording specifies Saturday. Your answer abc does not match.",
+      "录音中明确说的是 Saturday。你填的 abc 不符合。"
+     ]
+    },
+    {
+     "n": 13,
+     "ok": false,
+     "typeLbl": [
+      "Note completion",
+      "笔记填空"
+     ],
+     "kind": "chips",
+     "q": "Sessions run from: ______ until 12.30",
+     "mine": "abc",
+     "ans": "half past nine",
+     "evi": "run from half past nine",
+     "why": [
+      "The time stated in the recording is half past nine. Your entry abc does not match.",
+      "录音中给出的时间是 half past nine。你写的 abc 不正确。"
+     ]
+    },
+    {
+     "n": 14,
+     "ok": false,
+     "typeLbl": [
+      "Note completion",
+      "笔记填空"
+     ],
+     "kind": "chips",
+     "q": "Tea break starts at: ______",
+     "mine": "abc",
+     "ans": "quarter past eleven",
+     "evi": "at quarter past eleven",
+     "why": [
+      "The time given is quarter past eleven. Your answer abc does not match.",
+      "录音中提到的时间是 quarter past eleven。你填的 abc 不正确。"
+     ]
+    },
+    {
+     "n": 15,
+     "ok": false,
+     "typeLbl": [
+      "Note completion",
+      "笔记填空"
+     ],
+     "kind": "chips",
+     "q": "Cost of a Saturday block: ______",
+     "mine": "abc",
+     "ans": "fifteen pounds",
+     "evi": "is fifteen pounds,",
+     "why": [
+      "The fee stated is fifteen pounds. Your answer abc does not match.",
+      "录音中提到的费用是 fifteen pounds。你写的 abc 不正确。"
+     ]
+    },
+    {
+     "n": 16,
+     "ok": false,
+     "typeLbl": [
+      "Note completion",
+      "笔记填空"
+     ],
+     "kind": "chips",
+     "q": "Slips for spare parts are kept by the ______",
+     "mine": "abc",
+     "ans": "parts library",
+     "evi": "the yellow pad by the parts library,",
+     "why": [
+      "The location mentioned is the parts library. Your answer abc does not match.",
+      "录音中提到的地点是 parts library。你填的 abc 不一致。"
+     ]
+    },
+    {
+     "n": 17,
+     "ok": false,
+     "typeLbl": [
+      "Diagram labelling",
+      "图示标注"
+     ],
+     "kind": "rows",
+     "q": "Label the diagram of the main room.",
+     "opts": [
+      "A. Workbenches",
+      "B. Parts library",
+      "C. Cleaning station",
+      "D. Diagnostic area"
+     ],
+     "mine": "B. Parts library",
+     "ans": "A. Workbenches",
+     "evi": "on your left is the row of workbenches",
+     "why": [
+      "The recording places the row of workbenches on your left, so the correct label is A. You selected B.",
+      "录音中说工作台一排在你的左边，因此正确答案是 A。你选了 B。"
+     ]
+    },
+    {
+     "n": 18,
+     "ok": false,
+     "typeLbl": [
+      "Diagram labelling",
+      "图示标注"
+     ],
+     "kind": "rows",
+     "q": "Label the diagram of the main room.",
+     "opts": [
+      "A. Workbenches",
+      "B. Parts library",
+      "C. Cleaning station",
+      "D. Diagnostic area"
+     ],
+     "mine": "A. Workbenches",
+     "ans": "B. Parts library",
+     "evi": "we have the parts library",
+     "why": [
+      "The parts library is described after the workbenches on the route, so the correct label is B. You selected A.",
+      "在路线中，parts library 是在工作台之后提到的，因此正确答案是 B。你选了 A。"
+     ]
+    },
+    {
+     "n": 19,
+     "ok": true,
+     "typeLbl": [
+      "Diagram labelling",
+      "图示标注"
+     ],
+     "kind": "rows",
+     "q": "Label the diagram of the main room.",
+     "opts": [
+      "A. Workbenches",
+      "B. Parts library",
+      "C. Cleaning station",
+      "D. Diagnostic area"
+     ],
+     "mine": "C. Cleaning station",
+     "ans": "C. Cleaning station"
+    },
+    {
+     "n": 20,
+     "ok": true,
+     "typeLbl": [
+      "Diagram labelling",
+      "图示标注"
+     ],
+     "kind": "rows",
+     "q": "Label the diagram of the main room.",
+     "opts": [
+      "A. Workbenches",
+      "B. Parts library",
+      "C. Cleaning station",
+      "D. Diagnostic area"
+     ],
+     "mine": "D. Diagnostic area",
+     "ans": "D. Diagnostic area"
+    }
+   ],
+   "transcript": null,
+   "title": [
+    "Transcript — Welcome notes",
+    "听力原文 · Welcome notes"
+   ],
+   "tag": [
+    "🏷 Note completion · Diagram labelling",
+    "🏷 笔记填空 · 图示标注"
+   ],
+   "tHtml": "<div>Workshop Coordinator: Welcome to Bridge Street Cycle Workshop. <span class=\"hit bad\">My name is Harriet, and</span><span class=\"qn bad\">11</span> I will be looking after the <span class=\"hit bad\">Saturday morning group</span><span class=\"qn bad\">12</span>. Before we start, let me give you a quick tour of the main room so you know where everything lives. Coming through the double doors, the first thing <span class=\"hit bad\">on your left is the row of workbenches</span><span class=\"qn bad\">17</span>. Each bench seats two riders, and every bench has its own small set of Allen keys in a red tray. On the right-hand wall, just past the front window, <span class=\"hit bad\">we have the parts library</span><span class=\"qn bad\">18</span>, a tall wooden shelving unit with labelled drawers for brake blocks, cables, inner tubes, and similar small items. If you carry on along the same wall, you will find the cleaning station, with a sink, a brush rack, and a stack of blue cotton cloths for drying frames after washing. At the back of the room, behind the central rack, there is the diagnostic area, with a truing stand, a spoke tension meter, and a small laptop used to log wheel and gear measurements. A few practical notes before you begin. Sessions <span class=\"hit bad\">run from half past nine</span><span class=\"qn bad\">13</span> until twelve thirty, and we close for a short tea break <span class=\"hit bad\">at quarter past eleven</span><span class=\"qn bad\">14</span>. Please wear closed-toe shoes and bring your own water bottle. The shop next door sells snacks, but it is not part of the workshop. The cost for a Saturday block <span class=\"hit bad\">is fifteen pounds,</span><span class=\"qn bad\">15</span> payable by card at the front desk before the first session, or in cash on the day to me directly. If you need a spare part during a session, write the part name and your name on a slip from <span class=\"hit bad\">the yellow pad by the parts library,</span><span class=\"qn bad\">16</span> then hand the slip to one of the volunteer mechanics. Tools stay in the workshop. Bikes and personal bags should go in the cage near the back door, as the floor must stay clear for safety. Right, that is the room. We will start the morning with a ten-minute talk on basic brake checks, then move to the workbenches.</div>",
+   "review": {
+    "band": null,
+    "right": 2,
+    "total": 10,
+    "text": [
+     "Note completion: All six responses were the same placeholder string 'abc', which does not match any expected answer. Diagram labelling: Two answers were correct, but the other two were swapped between options A and B.",
+     "笔记填空：你六道填空题的答案都填了同一个占位符 'abc'，与所有正确答案都不一致。图示标注：有两道题答对，另外两道把 A 和 B 标反了。"
+    ],
+    "weak": [
+     {
+      "label": [
+       "Note completion",
+       "表格、笔记与流程信息提取"
+      ],
+      "text": [
+       "Write down the words you actually hear, not a placeholder.",
+       "把听到的词原样写下来，不要写占位符。"
+      ]
+     },
+     {
+      "label": [
+       "Diagram labelling",
+       "地图、平面图与示意图定位"
+      ],
+      "text": [
+       "Track the speaker's position on the map as they describe each location.",
+       "听描述时同步在图上标记说话人的位置。"
+      ]
+     }
+    ]
+   }
+  },
+  "3": {
+   "qs": [
+    {
+     "n": 21,
+     "ok": true,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "kind": "rows",
+     "q": "What does Luca say about the methods section?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ],
+     "mine": "A. Luca was originally confident about it.",
+     "ans": "A. Luca was originally confident about it."
+    },
+    {
+     "n": 22,
+     "ok": false,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "kind": "rows",
+     "q": "What does Luca say about the literature review?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ],
+     "mine": "A. Luca was originally confident about it.",
+     "ans": "B. Luca has changed his opinion about it.",
+     "evi": "but I've had second thoughts after her comments",
+     "why": [
+      "You chose A, but the recording says the writer had second thoughts after the supervisor's comments, which points to answer B.",
+      "你选了 A，但录音中提到作者在导师点评之后改变了想法，对应选项 B。"
+     ]
+    },
+    {
+     "n": 23,
+     "ok": false,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "kind": "rows",
+     "q": "What does Luca say about the discussion section?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ],
+     "mine": "A. Luca was originally confident about it.",
+     "ans": "C. Luca thinks the supervisor disagreed with him.",
+     "evi": "She said the strongest part of the discussion was",
+     "why": [
+      "The recording states the strongest part of the discussion was the way the main argument was framed, which supports answer C rather than A.",
+      "录音明确说讨论最有力的部分在于主要论点的表述方式，对应选项 C，不是 A。"
+     ]
+    },
+    {
+     "n": 24,
+     "ok": true,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "kind": "rows",
+     "q": "What does Luca say about the results section?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ],
+     "mine": "A. Luca was originally confident about it.",
+     "ans": "A. Luca was originally confident about it."
+    },
+    {
+     "n": 25,
+     "ok": false,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "kind": "rows",
+     "q": "What does Luca say about the conclusion?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ],
+     "mine": "A. Luca was originally confident about it.",
+     "ans": "B. Luca has changed his opinion about it.",
+     "evi": "the limitations paragraph felt under-developed",
+     "why": [
+      "The supervisor noted the limitations paragraph felt under-developed, which points to answer B instead of A.",
+      "导师指出 limitations 这一段写得不够充分，对应选项 B，不是 A。"
+     ]
+    },
+    {
+     "n": 26,
+     "ok": false,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "kind": "rows",
+     "q": "What does Luca say about the abstract?",
+     "opts": [
+      "A. Luca was originally confident about it.",
+      "B. Luca has changed his opinion about it.",
+      "C. Luca thinks the supervisor disagreed with him."
+     ],
+     "mine": "A. Luca was originally confident about it.",
+     "ans": "C. Luca thinks the supervisor disagreed with him.",
+     "evi": "the abstract was acceptable as it stood, with no major issues",
+     "why": [
+      "The recording says the abstract was acceptable as it stood with no major issues, which points to answer C, not A.",
+      "录音中明确说摘要本身合格，没有大问题，对应选项 C，不是 A。"
+     ]
+    },
+    {
+     "n": 27,
+     "ok": false,
+     "typeLbl": [
+      "Matching",
+      "配对题"
+     ],
+     "kind": "rows",
+     "q": "Discussion section",
+     "opts": [
+      "A. It was the strongest part overall",
+      "B. The limitations paragraph was under-developed",
+      "C. This is the area to focus on improving next",
+      "D. It was the most accurate part of the whole draft",
+      "E. The strongest part was how the main argument was framed"
+     ],
+     "mine": "A. It was the strongest part overall",
+     "ans": "E. The strongest part was how the main argument was framed",
+     "evi": "the strongest part of the discussion was the way we'd framed the main argument",
+     "why": [
+      "For this matching item, the strongest part of the discussion was the framing of the main argument, which matches E rather than A.",
+      "在这道匹配题中，讨论最有力的部分是主要论点的表述方式，对应 E，不是 A。"
+     ]
+    },
+    {
+     "n": 28,
+     "ok": true,
+     "typeLbl": [
+      "Matching",
+      "配对题"
+     ],
+     "kind": "rows",
+     "q": "Conclusion section",
+     "opts": [
+      "A. It was the strongest part overall",
+      "B. The limitations paragraph was under-developed",
+      "C. This is the area to focus on improving next",
+      "D. It was the most accurate part of the whole draft",
+      "E. The strongest part was how the main argument was framed"
+     ],
+     "mine": "B. The limitations paragraph was under-developed",
+     "ans": "B. The limitations paragraph was under-developed"
+    },
+    {
+     "n": 29,
+     "ok": false,
+     "typeLbl": [
+      "Matching",
+      "配对题"
+     ],
+     "kind": "rows",
+     "q": "Literature review",
+     "opts": [
+      "A. It was the strongest part overall",
+      "B. The limitations paragraph was under-developed",
+      "C. This is the area to focus on improving next",
+      "D. It was the most accurate part of the whole draft",
+      "E. The strongest part was how the main argument was framed"
+     ],
+     "mine": "B. The limitations paragraph was under-developed",
+     "ans": "C. This is the area to focus on improving next",
+     "evi": "the literature review is the area to focus on next",
+     "why": [
+      "The recording states the literature review is the area to focus on next, which matches C rather than B.",
+      "录音中明确说下一步要重点修改文献综述部分，对应 C，不是 B。"
+     ]
+    },
+    {
+     "n": 30,
+     "ok": true,
+     "typeLbl": [
+      "Matching",
+      "配对题"
+     ],
+     "kind": "rows",
+     "q": "Reference list",
+     "opts": [
+      "A. It was the strongest part overall",
+      "B. The limitations paragraph was under-developed",
+      "C. This is the area to focus on improving next",
+      "D. It was the most accurate part of the whole draft",
+      "E. The strongest part was how the main argument was framed"
+     ],
+     "mine": "D. It was the most accurate part of the whole draft",
+     "ans": "D. It was the most accurate part of the whole draft"
+    }
+   ],
+   "tHtml": "<div>Harriet: So, how are you feeling about the research project now that the supervisor's gone through our draft sections?</div><div>Luca: Honestly, a bit mixed. I thought the methods section was the strongest, <span class=\"hit bad\">but I've had second thoughts after her comments</span><span class=\"qn bad\">22</span>.</div><div>Harriet: Really? I felt the opposite. I thought the literature review was the part that needed the most work.</div><div>Luca: Maybe. She was quite firm that we should not be leaning so heavily on the older sources, and that did pull the literature review down a bit.</div><div>Harriet: And I suppose the discussion section was where she had the most detailed notes, wasn't it.</div><div>Luca: Definitely. <span class=\"hit bad\">She said the strongest part of the discussion was</span><span class=\"qn bad\">23</span> the way we'd framed the main argument. That came through clearly in her notes.</div><div>Harriet: So the discussion is what she's most happy with overall, even though there's plenty to revise.</div><div>Luca: On the results section, she seemed happier than I'd expected, actually. I'd assumed she'd push for more statistical detail, but she was fine with how we'd presented the figures.</div><div>Harriet: What about the conclusion? I wasn't sure whether she'd see it as rushed.</div><div>Luca: She wasn't harsh on it, but she did flag that <span class=\"hit bad\">the limitations paragraph felt under-developed</span><span class=\"qn bad\">25</span> compared with the rest of the section.</div><div>Harriet: And the abstract? She barely mentioned it.</div><div>Luca: She said <span class=\"hit bad\">the abstract was acceptable as it stood, with no major issues</span><span class=\"qn bad\">26</span>, which surprised me a bit. I'd expected more comments there.</div><div>Harriet: Looking back, do you think the methods section is what she'd most want us to improve?</div><div>Luca: Not the methods, I think. The methods was the strongest part for her too, on the whole. The clearest thing from her notes was that <span class=\"hit bad\">the literature review is the area to focus on next</span><span class=\"qn bad\">29</span>.</div><div>Harriet: And in terms of what kind of action she wants, she didn't actually tell us to scrap anything and start again, did she?</div><div>Luca: No, she didn't ask us to rewrite any of the sections from scratch. The next step is to revise what we have, keeping the overall structure, and address her specific points one by one.</div><div>Harriet: That sounds manageable. And the reference list, she didn't flag that either?</div><div>Luca: She thought the reference list was the most accurate part of the whole draft. The citation style was consistent throughout, she said, and the dates all matched the sources.</div><div>Harriet: So our next supervision meeting, when is it booked for?</div><div>Luca: Tuesday the eleventh of March, in her office, at half past two in the afternoon. I'll put it in the shared calendar once we hang up.</div>",
+   "title": [
+    "Transcript — Research project supervision feedback",
+    "听力原文 · Research project supervision feedback"
+   ],
+   "tag": [
+    "🏷 Multiple choice · Matching",
+    "🏷 选择题 · 配对题"
+   ],
+   "review": {
+    "band": null,
+    "right": 4,
+    "total": 10,
+    "text": [
+     "Multiple choice: Four out of six items were wrong. You selected the same letter A on questions 21 to 26, which suggests you stopped tracking the speaker's shift in opinion across the recording. Matching: Two items were wrong. The errors sit on different speakers, so the issue is matching opinion to the right person rather than losing the order of the recording.",
+     "选择题：六题里错了四题。第 21 到 26 题你连续选 A，说明你没有跟上说话人观点的变化。配对题：匹配错了两题。错误分散在不同说话人上，说明问题在于把观点匹配到正确的说话人，而不是跟不上录音顺序。"
+    ],
+    "weak": [
+     {
+      "label": [
+       "Multiple choice",
+       "选择与干扰项辨析"
+      ],
+      "text": [
+       "Listen for signposting of a change of view, such as 'but' or 'after her comments', before you commit to an option.",
+       "在确定答案之前，先听观点转变的提示词，比如 but 或 after her comments。"
+      ]
+     },
+     {
+      "label": [
+       "Matching",
+       "信息匹配与关系定位"
+      ],
+      "text": [
+       "Write the speaker label next to each opinion in your notes before you match.",
+       "在匹配之前，先在笔记里给每条观点标上说话人。"
+      ]
+     }
+    ]
+   }
+  },
+  "4": {
+   "qs": [
+    {
+     "n": 31,
+     "ok": false,
+     "typeLbl": [
+      "Summary completion",
+      "摘要填空"
+     ],
+     "kind": "chips",
+     "q": "The induction programme is designed for newly ______ teachers.",
+     "mine": "english",
+     "ans": "qualified",
+     "evi": "newly qualified teachers",
+     "why": [
+      "The recording says 'newly qualified teachers', so the expected answer is 'qualified'. You wrote 'english', which is a different word.",
+      "录音中说的是 newly qualified teachers，所以正确答案是 qualified。你写的 english 是另一个词。"
+     ]
+    },
+    {
+     "n": 32,
+     "ok": false,
+     "typeLbl": [
+      "Summary completion",
+      "摘要填空"
+     ],
+     "kind": "chips",
+     "q": "It runs across the first two ______ of the school year.",
+     "mine": "seasons",
+     "ans": "terms",
+     "evi": "first two terms",
+     "why": [
+      "The recording gives 'first two terms', so the expected answer is 'terms'. You wrote 'seasons' instead.",
+      "录音中说的是 first two terms，正确答案是 terms。你写的是 seasons。"
+     ]
+    },
+    {
+     "n": 33,
+     "ok": false,
+     "typeLbl": [
+      "Summary completion",
+      "摘要填空"
+     ],
+     "kind": "chips",
+     "q": "New teachers are paired with a mentor from the same ______ department.",
+     "mine": "learning",
+     "ans": "subject",
+     "evi": "same subject department",
+     "why": [
+      "The phrase in the recording is 'same subject department', so the expected word is 'subject'. You wrote 'learning'.",
+      "录音中的说法是 same subject department，正确答案是 subject。你写的是 learning。"
+     ]
+    },
+    {
+     "n": 34,
+     "ok": false,
+     "typeLbl": [
+      "Summary completion",
+      "摘要填空"
+     ],
+     "kind": "chips",
+     "q": "Mentors must hold at least ______ years of classroom experience.",
+     "mine": "3",
+     "ans": "five",
+     "evi": "at least five years",
+     "why": [
+      "The recording states 'at least five years', so the expected answer is 'five'. You wrote the number '3'.",
+      "录音中说的是 at least five years，正确答案是 five。你写的是 3。"
+     ]
+    },
+    {
+     "n": 35,
+     "ok": false,
+     "typeLbl": [
+      "Summary completion",
+      "摘要填空"
+     ],
+     "kind": "chips",
+     "q": "The mentor's first priority is to help the new teacher manage ______ during the autumn term.",
+     "mine": "students",
+     "ans": "workload",
+     "evi": "help the new teacher manage workload",
+     "why": [
+      "The recording says 'help the new teacher manage workload', so the expected answer is 'workload'. You wrote 'students'.",
+      "录音中说的是 help the new teacher manage workload，正确答案是 workload。你写的是 students。"
+     ]
+    },
+    {
+     "n": 36,
+     "ok": false,
+     "typeLbl": [
+      "Summary completion",
+      "摘要填空"
+     ],
+     "kind": "chips",
+     "q": "Optional workshops are held on ______ afternoons.",
+     "mine": "Friday",
+     "ans": "Wednesday",
+     "evi": "held on Wednesday afternoons",
+     "why": [
+      "The recording mentions 'held on Wednesday afternoons', so the expected answer is 'Wednesday'. You wrote 'Friday'.",
+      "录音中提到 held on Wednesday afternoons，正确答案是 Wednesday。你写的是 Friday。"
+     ]
+    },
+    {
+     "n": 37,
+     "ok": false,
+     "typeLbl": [
+      "Summary completion",
+      "摘要填空"
+     ],
+     "kind": "chips",
+     "q": "Teachers must complete at least ______ workshops to receive a certificate.",
+     "mine": "3",
+     "ans": "three",
+     "evi": "complete at least three workshops",
+     "why": [
+      "The expected answer is 'three'. You wrote '3'. Write the number in words because that is the required answer form here.",
+      "正确答案是 three。你写的是 3。这里需要写成英文单词。"
+     ]
+    },
+    {
+     "n": 38,
+     "ok": false,
+     "typeLbl": [
+      "Summary completion",
+      "摘要填空"
+     ],
+     "kind": "chips",
+     "q": "They also receive an allowance of ______ to spend on classroom resources.",
+     "mine": "email",
+     "ans": "two hundred pounds",
+     "evi": "two hundred pounds to spend",
+     "why": [
+      "The recording gives 'two hundred pounds to spend', so the expected answer is 'two hundred pounds'. You wrote 'email'.",
+      "录音中说的是 two hundred pounds to spend，正确答案是 two hundred pounds。你写的是 email。"
+     ]
+    },
+    {
+     "n": 39,
+     "ok": true,
+     "typeLbl": [
+      "Summary completion",
+      "摘要填空"
+     ],
+     "kind": "chips",
+     "q": "The peer observation group meets on the first Monday of each ______.",
+     "mine": "month",
+     "ans": "month"
+    },
+    {
+     "n": 40,
+     "ok": false,
+     "typeLbl": [
+      "Summary completion",
+      "摘要填空"
+     ],
+     "kind": "chips",
+     "q": "The reflective portfolio is reviewed by the head of department and the ______.",
+     "mine": "class",
+     "ans": "deputy headteacher",
+     "evi": "and the deputy headteacher",
+     "why": [
+      "The recording mentions 'and the deputy headteacher', so the expected answer is 'deputy headteacher'. You wrote 'class'.",
+      "录音中提到 and the deputy headteacher，正确答案是 deputy headteacher。你写的是 class。"
+     ]
+    }
+   ],
+   "tHtml": "<div>Lecturer: Good morning, everyone. Today's session focuses on professional development for <span class=\"hit bad\">newly qualified teachers</span><span class=\"qn bad\">31</span> joining secondary schools. We will begin with the induction programme, which runs across the <span class=\"hit bad\">first two terms</span><span class=\"qn bad\">32</span> and includes four observed teaching practice sessions. Each new teacher is paired with a mentor who observes lessons every fortnight and provides a written report at the end of each half term. Mentors are usually drawn from the <span class=\"hit bad\">same subject department</span><span class=\"qn bad\">33</span>, and they hold <span class=\"hit bad\">at least five years</span><span class=\"qn bad\">34</span> of classroom experience. The mentor's first priority is to <span class=\"hit bad\">help the new teacher manage workload</span><span class=\"qn bad\">35</span>, particularly marking and lesson preparation during the autumn term. Alongside mentoring, the school runs a series of optional workshops, <span class=\"hit bad\">held on Wednesday afternoons</span><span class=\"qn bad\">36</span>, covering behaviour management, assessment design and the use of digital tools in the classroom. Teachers who <span class=\"hit bad\">complete at least three workshops</span><span class=\"qn bad\">37</span> receive a certificate, and a small allowance of <span class=\"hit bad\">two hundred pounds to spend</span><span class=\"qn bad\">38</span> on classroom resources. All new teachers are expected to join the peer observation group, which meets in the main staffroom on the first Monday of each month. At the end of the year, each teacher submits a reflective portfolio containing two lesson plans, samples of student work and a short action research report. The portfolio is reviewed by the head of department <span class=\"hit bad\">and the deputy headteacher</span><span class=\"qn bad\">40</span>, and successful candidates progress to the main professional development track. If you have any questions, please come and see me after the session. Office hours are posted on the staff noticeboard each week.</div>",
+   "title": [
+    "Transcript — Induction programme for new teachers",
+    "听力原文 · Induction programme for new teachers"
+   ],
+   "tag": [
+    "🏷 Summary completion",
+    "🏷 摘要填空"
+   ],
+   "review": {
+    "band": null,
+    "right": 1,
+    "total": 10,
+    "text": [
+     "You often gave a word from the same topic area instead of the exact word the recording used. The expected wording was in the source for questions 31, 32, 33, 35, 36, 38 and 40, but your answer did not match. On question 34, a digit was written when the source uses a number word. Only question 39 was correct.",
+     "你多次写出了同一主题的词，但没有用录音中的原词。31、32、33、35、36、38、40 题的原文中其实都有正确用词，但你没有写对。第 34 题录音中说的是数字单词，你却写成了阿拉伯数字。只有第 39 题正确。"
+    ],
+    "weak": [
+     {
+      "label": [
+       "Summary completion",
+       "表格、笔记与流程信息提取"
+      ],
+      "text": [
+       "Underline the exact wording in the recording before you transfer an answer, and copy the speaker's word or number word rather than your own paraphrase. Keep the word limit and singular or plural form that you hear.",
+       "誊写答案前先在录音中标记原词，直接照搬说话人使用的词或数字单词，不要换成自己的说法。同时注意题目词数要求和单复数。"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "audioDuration": 225,
+ "mockFeedback": {
+  "1": {
+   "title": null,
+   "tag": [
+    "🏷 Completion",
+    "🏷 填空题"
+   ],
+   "tHtml": "<div>Receptionist: Good afternoon, Riverside Hotel, how can I help you?</div><div>Caller: Good afternoon. I'm calling about the booking I made online last week. I'd like to check a few details please.</div><div>Receptionist: Of course, I'd be happy to help. May I have your surname and booking reference number?</div><div><span class=\"hit bad\">Caller: Yes, it's Thompson, and the reference is RH7842.</span><span class=\"qn bad\">2</span></div><div><span class=\"hit bad\">Receptionist: Thank you, Mrs Thompson. I can see your booking here. You're booked for two nights, starting on the fifteenth of June, arriving on the Saturday evening.</span><span class=\"qn bad\">3</span></div><div>Caller: That's right. I was wondering if we could check the room type. We booked a double room, but my colleague mentioned we might have been upgraded.</div><div><span class=\"hit bad\">Receptionist: Let me see... Yes, we've been able to upgrade you to a deluxe double with a river view on the third floor.</span><span class=\"qn bad\">5</span></div><div>Caller: Oh, that's lovely, thank you. What time is check-in on the Saturday?</div><div>Receptionist: Check-in is from two o'clock in the afternoon. However, if you arrive earlier, you're welcome to leave your luggage at reception.</div><div>Caller: Great. And could you tell me if breakfast is included with that room?</div><div><span class=\"hit bad\">Receptionist: Yes, a full English breakfast is included each morning, served in the dining room from seven until ten.</span><span class=\"qn bad\">6</span></div><div>Caller: Perfect. One more question, do you have secure parking at the hotel?</div><div><span class=\"hit bad\">Receptionist: We do. We have an underground car park with CCTV coverage. The charge is eight pounds per night.</span><span class=\"qn bad\">7</span></div><div>Caller: That's fine. Is it possible to pay for the parking when we check out rather than when we arrive?</div><div><span class=\"hit bad\">Receptionist: Absolutely, you can settle that along with any extras when you check out.</span><span class=\"qn bad\">8</span> Will there be anything else?</div><div><span class=\"hit bad\">Caller: Yes, I need to let you know we'll be checking in quite late, around eleven thirty on the Saturday night.</span><span class=\"qn bad\">9</span> Will there still be someone at the desk?</div><div><span class=\"hit bad\">Receptionist: Yes, our reception is staffed twenty-four hours, so that won't be a problem at all.</span><span class=\"qn bad\">10</span></div><div>Caller: Excellent. I think that covers everything. Thank you very much for your help.</div><div>Receptionist: You're welcome, Mrs Thompson. We look forward to welcoming you on the fifteenth. Goodbye.</div><div>Caller: Goodbye.</div>",
+   "qs": [
+    {
+     "n": 1,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "What is the caller's surname?",
+     "mine": "—",
+     "ans": "Thompson",
+     "evi": "Receptionist: Of course, I'd be happy to help. May I have your surname and booking reference number? Caller: Yes, it's Thompson, and the reference is RH7842."
+    },
+    {
+     "n": 2,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "What is the booking reference number?",
+     "mine": "—",
+     "ans": "RH7842",
+     "evi": "Caller: Yes, it's Thompson, and the reference is RH7842."
+    },
+    {
+     "n": 3,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "On which date does the caller arrive?",
+     "mine": "—",
+     "ans": "15 June",
+     "evi": "Receptionist: Thank you, Mrs Thompson. I can see your booking here. You're booked for two nights, starting on the fifteenth of June, arriving on the Saturday evening."
+    },
+    {
+     "n": 4,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "How many nights is the booking for?",
+     "mine": "—",
+     "ans": "2",
+     "evi": "Receptionist: Thank you, Mrs Thompson. I can see your booking here. You're booked for two nights, starting on the fifteenth of June, arriving on the Saturday evening."
+    },
+    {
+     "n": 5,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "What type of room has the caller been upgraded to?",
+     "mine": "—",
+     "ans": "deluxe double",
+     "evi": "Receptionist: Let me see... Yes, we've been able to upgrade you to a deluxe double with a river view on the third floor."
+    },
+    {
+     "n": 6,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "From what time is breakfast served?",
+     "mine": "—",
+     "ans": "7",
+     "evi": "Receptionist: Yes, a full English breakfast is included each morning, served in the dining room from seven until ten."
+    },
+    {
+     "n": 7,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "How much is parking per night?",
+     "mine": "—",
+     "ans": "8 pounds",
+     "evi": "Receptionist: We do. We have an underground car park with CCTV coverage. The charge is eight pounds per night."
+    },
+    {
+     "n": 8,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "When can the caller pay for parking?",
+     "mine": "—",
+     "ans": "checkout",
+     "evi": "Receptionist: Absolutely, you can settle that along with any extras when you check out."
+    },
+    {
+     "n": 9,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "What time does the caller expect to arrive on the Saturday night?",
+     "mine": "—",
+     "ans": "11:30",
+     "evi": "Caller: Yes, I need to let you know we'll be checking in quite late, around eleven thirty on the Saturday night."
+    },
+    {
+     "n": 10,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Is reception staffed twenty-four hours?",
+     "mine": "—",
+     "ans": "Yes",
+     "evi": "Receptionist: Yes, our reception is staffed twenty-four hours, so that won't be a problem at all."
+    }
+   ]
+  },
+  "2": {
+   "title": null,
+   "tag": [
+    "🏷 Completion · Multiple choice",
+    "🏷 填空题 · 选择题"
+   ],
+   "tHtml": "<div>Good afternoon, everyone, and welcome to the Riverside Heritage Museum. My name is Sarah and I'll be your guide this afternoon. Before we begin the tour, I'd like to share some important information about your visit and introduce you to what you'll discover here.</div><div>The museum is open seven days a week, including public holidays, from ten in the morning until six in the evening. <span class=\"hit bad\">We're closed only on Christmas Day</span><span class=\"qn bad\">11</span>. <span class=\"hit bad\">Entry to the permanent galleries is completely free</span><span class=\"qn bad\">12</span>, which means you can explore our main exhibitions at no cost. However, we do charge for the temporary exhibitions in the east wing and for the special interactive displays on the second floor.</div><div>Regarding refreshments, <span class=\"hit bad\">our café is located on the ground floor</span><span class=\"qn bad\">13</span> at the end of the main corridor, and it serves hot and cold drinks along with a selection of sandwiches and cakes. <span class=\"hit bad\">The café opens at half past ten and closes at five</span><span class=\"qn bad\">14</span>. For those interested in souvenirs or books, <span class=\"hit bad\">our shop is on the left as you enter through the main doors</span><span class=\"qn bad\">15</span>, and it stays open until ten minutes before the museum closes.</div><div>Now, let me tell you about the layout of the museum. As you walk through the entrance, you'll find the reception desk directly ahead. To your left is the temporary exhibition space, which currently features <span class=\"hit bad\">a fascinating display about local industry in the nineteenth century</span><span class=\"qn bad\">16</span>. Straight ahead and to the right is our permanent River Valley Gallery, which chronicles the history of the river and its significance to the development of our town. This gallery is particularly popular with visitors, so I'd recommend visiting it first if you can.</div><div>The museum also offers a range of activities for families and children. <span class=\"hit bad\">Our workshop room, which is on the upper ground floor</span><span class=\"qn bad\">17</span>, hosts craft sessions every Saturday and Sunday at eleven and at two o'clock. These sessions are included in the general entry price, though we do ask that you book a place in advance because they tend to fill up quickly. The workshop sessions focus on different themes each week, and <span class=\"hit bad\">this weekend's theme is traditional boat-building</span><span class=\"qn bad\">18</span>, which ties in nicely with our river theme.</div><div>Finally, I'd like to mention our guided tours. These run twice daily, at eleven in the morning and again at three in the afternoon. The morning tour focuses on the industrial history of the region, while the afternoon tour covers the cultural and artistic heritage. <span class=\"hit bad\">Tours last approximately ninety minutes</span><span class=\"qn bad\">19</span> and depart from the reception desk. There's no need to book the morning tour, but <span class=\"hit bad\">afternoon tours must be reserved at least one day in advance</span><span class=\"qn bad\">20</span>.</div><div>Are there any questions before we begin?</div>",
+   "qs": [
+    {
+     "n": 11,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "The museum is open every day except ______",
+     "mine": "—",
+     "ans": "Christmas Day",
+     "evi": "We're closed only on Christmas Day"
+    },
+    {
+     "n": 12,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Permanent galleries: ______ entry",
+     "mine": "—",
+     "ans": "free",
+     "evi": "Entry to the permanent galleries is completely free"
+    },
+    {
+     "n": 13,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "The café is on the ______ floor",
+     "mine": "—",
+     "ans": "ground",
+     "evi": "our café is located on the ground floor"
+    },
+    {
+     "n": 14,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "The café closes at ______",
+     "mine": "—",
+     "ans": "five",
+     "evi": "The café opens at half past ten and closes at five"
+    },
+    {
+     "n": 15,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "The shop is on the ______ as you enter",
+     "mine": "—",
+     "ans": "left",
+     "evi": "our shop is on the left as you enter through the main doors"
+    },
+    {
+     "n": 16,
+     "ok": false,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "kind": "rows",
+     "q": "What is currently on display in the temporary exhibition space?",
+     "opts": [
+      "A. Fishing traditions",
+      "B. Nineteenth century industry",
+      "C. River navigation methods"
+     ],
+     "mine": "",
+     "ans": "B. Nineteenth century industry",
+     "evi": "a fascinating display about local industry in the nineteenth century"
+    },
+    {
+     "n": 17,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "The workshop room is on the ______ ground floor",
+     "mine": "—",
+     "ans": "upper",
+     "evi": "Our workshop room, which is on the upper ground floor"
+    },
+    {
+     "n": 18,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "This weekend's workshop theme is traditional ______",
+     "mine": "—",
+     "ans": "boat-building",
+     "evi": "this weekend's theme is traditional boat-building"
+    },
+    {
+     "n": 19,
+     "ok": false,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "kind": "rows",
+     "q": "How long do the guided tours last?",
+     "opts": [
+      "A. About one hour",
+      "B. About ninety minutes",
+      "C. About two hours"
+     ],
+     "mine": "",
+     "ans": "B. About ninety minutes",
+     "evi": "Tours last approximately ninety minutes"
+    },
+    {
+     "n": 20,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Afternoon tours must be booked at least ______ day in advance",
+     "mine": "—",
+     "ans": "one",
+     "evi": "afternoon tours must be reserved at least one day in advance"
+    }
+   ]
+  },
+  "3": {
+   "title": null,
+   "tag": [
+    "🏷 Completion · Multiple choice",
+    "🏷 填空题 · 选择题"
+   ],
+   "tHtml": "<div>Maya: Hi David, have you got a minute? I wanted to go over our presentation plan before our tutorial with Professor Chen tomorrow.</div><div>David: Sure Maya, come in. I've been looking at the feedback from the last seminar. It was quite useful actually.</div><div>Maya: Yes, I thought so too. She said we need to be clearer about our methodology. I've been working on that section of the draft.</div><div>David: Good. <span class=\"hit bad\">I have also added some more recent case studies on urban recycling programmes.</span><span class=\"qn bad\">21</span> <span class=\"hit bad\">There is a really interesting one from Amsterdam that I found.</span><span class=\"qn bad\">23</span></div><div>Maya: That sounds perfect. We need to strengthen the practical applications part. The theory is there but we should show how it works in real cities.</div><div>David: Exactly. I also think we should mention the challenges we faced with data collection. Professor Chen always says that demonstrates critical thinking.</div><div>Maya: Agreed. I have to be honest though, the interviews were harder than I expected. <span class=\"hit bad\">Some participants were quite reluctant to discuss their waste management habits.</span><span class=\"qn bad\">22</span></div><div>David: That is a common problem in social research. We should include a note about that in the methodology section. It will make our analysis more transparent.</div><div>Maya: I will draft a paragraph explaining the ethical considerations. We need to make sure we cover that before we submit.</div><div>David: I will also look at the literature review again. I found some newer articles on circular economy models that we could reference.</div><div>Maya: Brilliant. We should also think about the visual aids. <span class=\"hit bad\">Professor Chen mentioned that presentations with clear data visualisations tend to score higher.</span><span class=\"qn bad\">24</span></div><div>David: I have started working on some charts. <span class=\"hit bad\">I thought a comparison between three cities would work well. Perhaps Amsterdam, Singapore and Cape Town.</span><span class=\"qn bad\">29</span></div><div>Maya: That is a good spread. Different economic contexts and different approaches. It will make our argument more robust.</div><div>David: Should we meet before the tutorial tomorrow? I could come to the library at ten if that suits you.</div><div>Maya: Yes, that works for me. I will bring my laptop so we can review everything together.</div><div>David: Perfect. Oh, and did you see Professor Chen's message about the deadline? <span class=\"hit bad\">She has extended it by one week.</span><span class=\"qn bad\">25</span></div><div>Maya: I saw that. It is helpful but I would rather not leave it too late. We still need to incorporate the peer review feedback too.</div><div>David: True. <span class=\"hit bad\">I will send you my updated draft by Wednesday evening.</span><span class=\"qn bad\">26</span> You can add your sections and we can review it on Thursday.</div><div>Maya: Sounds like a plan. I will also check if there are any upcoming guest lectures on sustainable urban design. They might give us some additional perspectives.</div><div>David: Good idea. Right, I should get back to my literature search. See you at ten tomorrow.</div><div>Maya: See you then. And thanks for the help with the methodology section.</div><div>David: No problem. We are a team after all.</div><div>Maya: (Prof Chen joins) Oh Professor Chen, we were just discussing our presentation. We have incorporated your feedback and we are ready for tomorrow's tutorial.</div><div>Prof Chen: Excellent. I look forward to seeing your progress. <span class=\"hit bad\">Please remember that the visual presentation is worth fifteen percent of the overall marks.</span><span class=\"qn bad\">27</span></div><div>Maya: We have prepared some charts and diagrams. David has found some excellent case studies.</div><div>Prof Chen: Good. And do not forget to practise your timing. <span class=\"hit bad\">The presentation should be no longer than twelve minutes.</span><span class=\"qn bad\">28</span></div><div>David: We have timed it already. It comes to about eleven minutes with questions at the end.</div><div>Prof Chen: Perfect. I am pleased that you are on schedule. Any final questions before tomorrow?</div><div>Maya: Just one. Should we prepare printed handouts for the tutorial or is a digital version sufficient?</div><div>Prof Chen: <span class=\"hit bad\">Digital is fine. Just make sure everyone in the group has a copy on their device.</span><span class=\"qn bad\">30</span> And bring your notes in case we go into detailed discussion.</div><div>David: Thank you Professor. We will see you tomorrow at two.</div><div>Prof Chen: Yes, see you then. Good luck with your final preparations.</div>",
+   "qs": [
+    {
+     "n": 21,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "The presentation focuses on (21) ______.",
+     "mine": "—",
+     "ans": "recycling programmes",
+     "evi": "I have also added some more recent case studies on urban recycling programmes."
+    },
+    {
+     "n": 22,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Participants in the interviews were sometimes (22) ______ to discuss their habits.",
+     "mine": "—",
+     "ans": "reluctant",
+     "evi": "Some participants were quite reluctant to discuss their waste management habits."
+    },
+    {
+     "n": 23,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "David found a relevant case study in (23) ______.",
+     "mine": "—",
+     "ans": "Amsterdam",
+     "evi": "There is a really interesting one from Amsterdam that I found."
+    },
+    {
+     "n": 24,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Visual aids should include clear (24) ______ visualisations.",
+     "mine": "—",
+     "ans": "data",
+     "evi": "Professor Chen mentioned that presentations with clear data visualisations tend to score higher."
+    },
+    {
+     "n": 25,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "The deadline for the project has been extended by (25) ______.",
+     "mine": "—",
+     "ans": "one week",
+     "evi": "She has extended it by one week."
+    },
+    {
+     "n": 26,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "David will send his updated draft by (26) ______ evening.",
+     "mine": "—",
+     "ans": "Wednesday",
+     "evi": "I will send you my updated draft by Wednesday evening."
+    },
+    {
+     "n": 27,
+     "ok": false,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "kind": "rows",
+     "q": "What percentage of the overall marks is allocated to the visual presentation?",
+     "opts": [
+      "A. 10%",
+      "B. 12%",
+      "C. 15%",
+      "D. 20%"
+     ],
+     "mine": "",
+     "ans": "C. 15%",
+     "evi": "Please remember that the visual presentation is worth fifteen percent of the overall marks."
+    },
+    {
+     "n": 28,
+     "ok": false,
+     "typeLbl": [
+      "Multiple choice",
+      "选择题"
+     ],
+     "kind": "rows",
+     "q": "How long should the presentation be?",
+     "opts": [
+      "A. Ten minutes",
+      "B. Eleven minutes",
+      "C. Twelve minutes",
+      "D. Fifteen minutes"
+     ],
+     "mine": "",
+     "ans": "C. Twelve minutes",
+     "evi": "The presentation should be no longer than twelve minutes."
+    },
+    {
+     "n": 29,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "The three cities being compared are Amsterdam, Singapore and (29) ______.",
+     "mine": "—",
+     "ans": "Cape Town",
+     "evi": "I thought a comparison between three cities would work well. Perhaps Amsterdam, Singapore and Cape Town."
+    },
+    {
+     "n": 30,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "For the tutorial, what format does Professor Chen recommend for handouts?",
+     "mine": "—",
+     "ans": "digital",
+     "evi": "Digital is fine. Just make sure everyone in the group has a copy on their device."
+    }
+   ]
+  },
+  "4": {
+   "title": null,
+   "tag": [
+    "🏷 Completion",
+    "🏷 填空题"
+   ],
+   "tHtml": "<div>Good morning, everyone. Today we're going to discuss a phenomenon that's increasingly concerning marine biologists: ocean acidification and its effects on coral reef ecosystems. Now, let me start by explaining what ocean acidification actually means. Put simply, it's a reduction in the pH of the Earth's oceans, <span class=\"hit bad\">caused primarily by the absorption of carbon dioxide from the atmosphere</span><span class=\"qn bad\">31</span>. Since the industrial revolution, the ocean has absorbed approximately 30 percent of all human-generated carbon emissions. This might sound like a good thing for the atmosphere, but it has serious consequences for marine life. The key problem lies in chemistry. When CO2 dissolves in seawater, it forms carbonic acid. This acid releases hydrogen ions, which increase the ocean's acidity. Over the past 200 years, the average pH of ocean surface waters has dropped from 8.2 to 8.1. While this might seem like a minor change, it represents roughly a 26 percent increase in acidity. Now, why are coral reefs so vulnerable to these changes? Well, <span class=\"hit bad\">corals build their skeletons through a process called calcification</span><span class=\"qn bad\">33</span>, which requires calcium carbonate. In more acidic waters, the chemical平衡 necessary for calcification is disrupted. The hydrogen ions essentially compete with the calcium ions, making it harder for corals to build and maintain their skeletons. <span class=\"hit bad\">This process is often compared to osteoporosis in humans</span><span class=\"qn bad\">34</span>, where the structure becomes weaker over time. Beyond corals themselves, ocean acidification affects numerous other marine organisms. Shellfish, for example, including oysters and mussels, also rely on calcium carbonate to build their shells. Studies have shown that juvenile oysters in acidic conditions have significantly higher mortality rates. Similarly, <span class=\"hit bad\">certain species of plankton called pteropods</span><span class=\"qn bad\">35</span>, which form a crucial part of the marine food web, are already showing shell dissolution in naturally acidic waters. This is particularly concerning because pteropods are a primary food source for many fish species, including salmon. The economic implications are substantial too. <span class=\"hit bad\">Coral reefs support approximately 500 million people worldwide</span><span class=\"qn bad\">36</span> and <span class=\"hit bad\">contribute roughly 375 billion dollars to the global economy</span><span class=\"qn bad\">37</span> through tourism, fisheries and coastal protection. If reef ecosystems continue to decline, we can expect significant impacts on food security and livelihoods. Now, some researchers are exploring whether marine organisms might adapt to these changing conditions over time. Studies on certain seaweed species suggest they may have some capacity for acclimatisation. However, the rate of change is likely to outpace natural adaptation for most species. I should mention that we're also looking at various mitigation strategies. These include reducing carbon emissions at their source, which remains the most effective approach, and exploring localised interventions such as <span class=\"hit bad\">protecting areas with naturally higher pH levels</span><span class=\"qn bad\">38</span>. There are also emerging technologies being researched, though many remain experimental. In conclusion, ocean acidification represents one of the most significant threats to marine biodiversity in the coming decades. The science is clear, though uncertainty remains about the precise timeline and magnitude of impacts. What we do know is that action is needed at multiple levels, from individual behavioural changes to international policy agreements. For your next seminar, I'd like you to read <span class=\"hit bad\">the article by Doney and colleagues from 2009</span><span class=\"qn bad\">39</span>, which provides an excellent overview of the chemical processes involved. We'll also be <span class=\"hit bad\">visiting the marine research station next week</span><span class=\"qn bad\">40</span> for a practical demonstration of how scientists measure ocean pH in the field. Please ensure you've read the preparatory materials before we arrive. Are there any questions before we continue?</div>",
+   "qs": [
+    {
+     "n": 31,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Ocean acidification is primarily caused by the absorption of ______ from the atmosphere.",
+     "mine": "—",
+     "ans": "carbon dioxide",
+     "evi": "caused primarily by the absorption of carbon dioxide from the atmosphere"
+    },
+    {
+     "n": 32,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "The average pH of ocean surface waters has dropped from 8.2 to ______ over the past 200 years.",
+     "mine": "—",
+     "ans": "8.1",
+     "evi": "over the past 200 years, the average pH of ocean surface waters has dropped from 8.2 to 8.1"
+    },
+    {
+     "n": 33,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "The process corals use to build their skeletons is called ______",
+     "mine": "—",
+     "ans": "calcification",
+     "evi": "corals build their skeletons through a process called calcification"
+    },
+    {
+     "n": 34,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Ocean acidification is compared to ______ in humans.",
+     "mine": "—",
+     "ans": "osteoporosis",
+     "evi": "This process is often compared to osteoporosis in humans"
+    },
+    {
+     "n": 35,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Pteropods are a type of ______ that are affected by ocean acidification.",
+     "mine": "—",
+     "ans": "plankton",
+     "evi": "certain species of plankton called pteropods"
+    },
+    {
+     "n": 36,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Coral reefs support approximately ______ million people worldwide.",
+     "mine": "—",
+     "ans": "500",
+     "evi": "Coral reefs support approximately 500 million people worldwide"
+    },
+    {
+     "n": 37,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Coral reefs contribute approximately ______ billion dollars to the global economy.",
+     "mine": "—",
+     "ans": "375",
+     "evi": "contribute roughly 375 billion dollars to the global economy"
+    },
+    {
+     "n": 38,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "One mitigation strategy involves protecting areas with naturally higher ______ levels.",
+     "mine": "—",
+     "ans": "pH",
+     "evi": "protecting areas with naturally higher pH levels"
+    },
+    {
+     "n": 39,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "For the next seminar, students should read the article by ______ and colleagues.",
+     "mine": "—",
+     "ans": "Doney",
+     "evi": "the article by Doney and colleagues from 2009"
+    },
+    {
+     "n": 40,
+     "ok": false,
+     "typeLbl": [
+      "Completion",
+      "填空题"
+     ],
+     "kind": "chips",
+     "q": "Next week, students will visit a ______ research station for a practical demonstration.",
+     "mine": "—",
+     "ans": "marine",
+     "evi": "visiting the marine research station next week"
+    }
+   ]
+  },
+  "review": {
+   "band": "0.0",
+   "right": 0,
+   "total": 40,
+   "weak": []
+  }
+ }
+}

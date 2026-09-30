@@ -25,18 +25,24 @@ class ListeningReviewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final qs = data['qs'] as List;
+    // 演示用真实数据（tool/demo_export）自带题型标签和原文标题；原型数据没有这两个键，
+    // 仍用上面按 Part 写死的。真实数据没有标题（title 为 null）就不画那一行。
+    final Object tag = data['tag'] ?? lfTags[part - 1];
+    final Object? title =
+        data.containsKey('title') ? data['title'] : lfTitles[part - 1];
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       RfCard(children: [
-        if (part == 1) ...[rfTag(lfTags[part - 1]), const SizedBox(height: 10)],
+        if (part == 1) ...[rfTag(tag), const SizedBox(height: 10)],
         const RfHeading('原文'),
-        RfText(lfTitles[part - 1],
-            key: const ValueKey('lf-transcript-title'),
-            size: 12,
-            weight: FontWeight.w700,
-            color: rfMuted),
+        if (title != null)
+          RfText(title,
+              key: const ValueKey('lf-transcript-title'),
+              size: 12,
+              weight: FontWeight.w700,
+              color: rfMuted),
         if (part != 1) ...[
           const SizedBox(height: 8),
-          rfTag(lfTags[part - 1]),
+          rfTag(tag),
           const SizedBox(height: 6)
         ] else
           const SizedBox(height: 4),
@@ -78,7 +84,9 @@ class ListeningReviewTranscript extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final blocks = <List<InlineSpan>>[];
-    if (part <= 2) {
+    // 原型 Part 1-2 是 transcript 行，Part 3-4 是 tHtml；真实数据四个 Part 都给 tHtml
+    // （一行里可以标多道题），所以按数据有哪一种来分，不按 Part 号。
+    if (data['transcript'] is List) {
       for (final row in rows) {
         final children = <InlineSpan>[
           TextSpan(text: rfTranslate(context, row[0]))

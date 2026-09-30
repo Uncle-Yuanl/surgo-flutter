@@ -4,7 +4,9 @@ import '../../app/app_state.dart';
 class IeltsListeningData {
  IeltsListeningData(this.raw);final Map<String,dynamic> raw;
  static IeltsListeningData? cache;
- static Future<IeltsListeningData> load()async=>cache??=IeltsListeningData(jsonDecode(await rootBundle.loadString('assets/data/ielts_listening.json')));
+ // 直接读字节再解码：rootBundle.loadString 对 50 KB 以上的文件会另起 isolate 解码，
+ // widget 测试（路由审计）的假时钟等不到它；演示用真实数据的这个文件超过了 50 KB。
+ static Future<IeltsListeningData> load()async=>cache??=IeltsListeningData(jsonDecode(utf8.decode(Uint8List.sublistView(await rootBundle.load('assets/data/ielts_listening.json')))));
 }
 class IeltsListeningController {
  IeltsListeningController(this.app,this.data){
