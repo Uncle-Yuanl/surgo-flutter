@@ -175,10 +175,12 @@ class WritingReviewHeader extends StatelessWidget {
                 key: const ValueKey('review-tab-mark'),
                 active: !l1,
                 onTap: l1 ? () => selectTab('mark') : null),
-            ReviewTab('母语负迁移分析',
-                key: const ValueKey('review-tab-l1'),
-                active: l1,
-                onTap: l1 ? null : () => selectTab('l1')),
+            // 模考的那一块（hasL1 == false）没有母语负迁移检查，不出这个页签。
+            if (data['hasL1'] != false)
+              ReviewTab('母语负迁移分析',
+                  key: const ValueKey('review-tab-l1'),
+                  active: l1,
+                  onTap: l1 ? null : () => selectTab('l1')),
           ])),
     ]);
   }

@@ -178,3 +178,7 @@ exports.build = () => {
     },
   };
 };
+
+// 模考写作（mock_writing.cjs）的评分页用同一套映射。
+exports.review = review;
+exports.weakest = weakest;

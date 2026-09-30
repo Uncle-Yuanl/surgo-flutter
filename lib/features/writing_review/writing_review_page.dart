@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../../app/app_state.dart';
+import '../../app/i18n.dart';
 import '../../app/routes.dart';
 import 'review_header.dart';
 import 'review_content.dart';
@@ -29,13 +30,19 @@ class _WritingReviewPageState extends State<WritingReviewPage> {
 
   @override
   Widget build(BuildContext context) {
-    final d = data;
-    if (d == null) {
+    final all = data;
+    if (all == null) {
       return const Center(child: CircularProgressIndicator());
     }
-    final app = context.watch<AppState>(),
-        task = appTask(context),
-        l1 = context.watch<AppState>().session['wfTab'] == 'l1';
+    final app = context.watch<AppState>(), task = appTask(context);
+    // 演示用真实数据：从模考写作进来时看那一场模考的评分（题库 ielts.writing.mock.review，
+    // tool/demo_export/mock_writing.cjs，形状同 writing_review.json）；原型数据没有这个键，仍是日常那一份。
+    // 模考不做母语负迁移检查（hasL1 == false），那个页签不出，也不进那一页。
+    final mock = app.session['sessionMode'] == 'mock'
+        ? QuestionBank.instance.skill('writing', app.examType)['mock']
+        : null;
+    final d = mock?['review'] as Map<String, dynamic>? ?? all;
+    final l1 = app.session['wfTab'] == 'l1' && d['hasL1'] != false;
     final content =
         Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       WritingReviewHeader(task: task, l1: l1, data: d),
