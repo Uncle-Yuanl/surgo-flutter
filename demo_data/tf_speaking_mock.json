@@ -1,0 +1,348 @@
+{
+ "task1": {
+  "total": 7,
+  "instrSec": 5,
+  "readySec": 1,
+  "segments": [
+   {
+    "sec": 3,
+    "ansSec": 8,
+    "instruct": "Listen once, then repeat the prompt clearly."
+   },
+   {
+    "sec": 3,
+    "ansSec": 8,
+    "instruct": "Listen once, then repeat the prompt clearly."
+   },
+   {
+    "sec": 3,
+    "ansSec": 8,
+    "instruct": "Listen once, then repeat the prompt clearly."
+   },
+   {
+    "sec": 3,
+    "ansSec": 8,
+    "instruct": "Listen once, then repeat the prompt clearly."
+   },
+   {
+    "sec": 4,
+    "ansSec": 8,
+    "instruct": "Listen once, then repeat the prompt clearly."
+   },
+   {
+    "sec": 5,
+    "ansSec": 10,
+    "instruct": "Listen once, then repeat the prompt clearly."
+   },
+   {
+    "sec": 7,
+    "ansSec": 13,
+    "instruct": "Listen once, then repeat the prompt clearly."
+   }
+  ]
+ },
+ "task2": {
+  "total": 4,
+  "intro": {
+   "title": "参加访谈",
+   "sub": "在本任务中，你将参加一场简短的访谈。请听每个问题并用自己的话回答。每题有 45 秒作答时间，不提供准备时间。",
+   "note": "每段音频只播放一次，且无法返回上一题。不提供准备时间。提示音后开始作答。"
+  },
+  "brief": {
+   "title": "参加访谈",
+   "sub": "Short student-services intake question about a campus club you would like to join and your reasons for choosing it."
+  },
+  "segments": [
+   {
+    "sec": 5,
+    "ansSec": 45
+   },
+   {
+    "sec": 6,
+    "ansSec": 45
+   },
+   {
+    "sec": 6,
+    "ansSec": 45
+   },
+   {
+    "sec": 7,
+    "ansSec": 45
+   }
+  ]
+ },
+ "feedback": {
+  "score": "3.5",
+  "description": null,
+  "footnote": "练习估分仅供参考，不代表官方托福分数。",
+  "types": [
+   {
+    "key": "r",
+    "name": "Listen and Repeat",
+    "score": 4
+   },
+   {
+    "key": "i",
+    "name": "Take an Interview",
+    "score": 2.5
+   }
+  ],
+  "subs": {
+   "r": [
+    {
+     "n": [
+      "Accuracy",
+      "准确度"
+     ],
+     "v": "4.0",
+     "c": "bad"
+    },
+    {
+     "n": [
+      "Completeness",
+      "复述完整度"
+     ],
+     "v": "4.5",
+     "c": "ok"
+    },
+    {
+     "n": [
+      "Intelligibility",
+      "可懂度"
+     ],
+     "v": "4.0",
+     "c": ""
+    },
+    {
+     "n": [
+      "Prosody",
+      "韵律"
+     ],
+     "v": "4.5",
+     "c": ""
+    }
+   ],
+   "i": [
+    {
+     "n": [
+      "Delivery",
+      "表达"
+     ],
+     "v": "5.0",
+     "c": "ok"
+    },
+    {
+     "n": [
+      "Language Control",
+      "语言控制"
+     ],
+     "v": "2.0",
+     "c": ""
+    },
+    {
+     "n": [
+      "Relevance",
+      "相关性"
+     ],
+     "v": "2.0",
+     "c": ""
+    },
+    {
+     "n": [
+      "Development",
+      "内容展开"
+     ],
+     "v": "2.0",
+     "c": "bad"
+    }
+   ]
+  },
+  "questions": {
+   "r": [
+    {
+     "n": 1,
+     "score": "5.5",
+     "dur": "00:00 / 00:03",
+     "myDur": "00:00 / 00:04",
+     "pct": 100,
+     "fb": [
+      "Your weakest dimension this turn is prosody (4.4/5); completeness is your strongest (5.0/5). No individual word was flagged, so work on the dimension as a whole.",
+      "本题最弱的维度是韵律（4.4/5），最强的是完整度（5.0/5）。本题没有单词被单独标记，请整体练习该维度。"
+     ],
+     "ask": "\"The library is on the second floor.\""
+    },
+    {
+     "n": 2,
+     "score": "5.5",
+     "dur": "00:00 / 00:03",
+     "myDur": "00:00 / 00:05",
+     "pct": 100,
+     "fb": [
+      "Your weakest dimension this turn is prosody (3.8/5); completeness is your strongest (5.0/5). No individual word was flagged, so work on the dimension as a whole.",
+      "本题最弱的维度是韵律（3.8/5），最强的是完整度（5.0/5）。本题没有单词被单独标记，请整体练习该维度。"
+     ],
+     "ask": "\"My roommate usually studies in the evening.\""
+    },
+    {
+     "n": 3,
+     "score": "4.5",
+     "dur": "00:00 / 00:03",
+     "myDur": "00:00 / 00:04",
+     "pct": 71,
+     "fb": [
+      "Your weakest dimension this turn is accuracy (3.3/5); prosody is your strongest (4.0/5). Replay \"every\" in the audio review.",
+      "本题最弱的维度是准确度（3.3/5），最强的是韵律（4.0/5）。可在音频复盘里回听“every”。"
+     ],
+     "ask": "\"The campus shuttle leaves every twenty minutes.\""
+    },
+    {
+     "n": 4,
+     "score": "4.5",
+     "dur": "00:00 / 00:03",
+     "myDur": "00:00 / 00:05",
+     "pct": 78,
+     "fb": [
+      "Your weakest dimension this turn is prosody (3.0/5); accuracy is your strongest (4.1/5). Replay \"registration\", \"where\", \"registration\" in the audio review.",
+      "本题最弱的维度是韵律（3.0/5），最强的是准确度（4.1/5）。可在音频复盘里回听“registration”、“where”、“registration”。"
+     ],
+     "ask": "\"Could you tell me where the registration office is?\""
+    },
+    {
+     "n": 5,
+     "score": "4.0",
+     "dur": "00:00 / 00:04",
+     "myDur": "00:00 / 00:05",
+     "pct": 55,
+     "fb": [
+      "Your weakest dimension this turn is accuracy (2.6/5); prosody is your strongest (3.2/5). Replay \"paper\", \"since\", \"been\" in the audio review.",
+      "本题最弱的维度是准确度（2.6/5），最强的是韵律（3.2/5）。可在音频复盘里回听“paper”、“since”、“been”。"
+     ],
+     "ask": "\"I have been working on my research paper since last Monday.\""
+    },
+    {
+     "n": 6,
+     "score": "3.5",
+     "dur": "00:00 / 00:05",
+     "myDur": "00:00 / 00:06",
+     "pct": 45,
+     "fb": [
+      "Your weakest dimension this turn is accuracy (2.2/5); prosody is your strongest (2.9/5). Replay \"suggested\", \"professor\", \"review\" in the audio review.",
+      "本题最弱的维度是准确度（2.2/5），最强的是韵律（2.9/5）。可在音频复盘里回听“suggested”、“professor”、“review”。"
+     ],
+     "ask": "\"The professor suggested that we review the chapter before Friday's discussion.\""
+    },
+    {
+     "n": 7,
+     "score": "2.0",
+     "dur": "00:00 / 00:07",
+     "myDur": "00:00 / 00:06",
+     "pct": 12,
+     "fb": [
+      "Your weakest dimension this turn is completeness (0.6/5); prosody is your strongest (1.5/5). Replay \"seminar\", \"students\", \"rescheduled\" in the audio review.",
+      "本题最弱的维度是完整度（0.6/5），最强的是韵律（1.5/5）。可在音频复盘里回听“seminar”、“students”、“rescheduled”。"
+     ],
+     "ask": "\"Although the seminar was rescheduled, the guest speaker still shared her latest findings with the graduate students.\""
+    }
+   ],
+   "i": [
+    {
+     "n": 1,
+     "score": "2.5",
+     "dur": "00:00 / 00:05",
+     "myDur": "00:00 / 00:40",
+     "fb": [
+      "Your response does not yet meet the basic expectations of Take an Interview. The audio is about 40 seconds, but the listener only hears a short fragment about a club called \"the Y\" and the words \"Talk radio.\" The seven \"blah\" tokens replace the club name, the reason, and any example, so relevance and development both fail. Language control is also weak because the sentence \"I suggestion the Y\" does not form a grammatical answer, and several words such as \"I,\" \"suggestion,\" and \"the\" are mispronounced enough to lower intelligibility. Prosody sits at 78.3, which is acceptable for rhythm, but flat delivery cannot compensate for missing content. As a next step, prepare a 60 second answer that names one specific club, gives one clear reason in a full sentence, and adds one short example. SURGO practice estimate for this attempt is 0.5 out of 5.",
+      "这次作答还没有达到 Take an Interview 的基本要求。音频大约 40 秒，但听者只听到一个叫 the Y 的社团和 Talk radio 两个词。七个 blah 取代了社团名称、原因和例子，相关性和内容展开都不及格。语言控制也很弱，因为 I suggestion the Y 没有构成一个语法完整的回答，而且 I、suggestion、the 等词的发音问题足以影响听辨。韵律得分 78.3 本身不算差，但平淡的语调无法弥补内容的缺失。SURGO 练习估分为 0.5 分。下一步请准备一个 60 秒的回答，先说出一个具体社团，再用一个完整句子给出明确原因，并加一个小例子。"
+     ],
+     "ask": "\"Could you describe a club or student group you would like to join this semester and explain why?\""
+    },
+    {
+     "n": 2,
+     "score": "3.0",
+     "dur": "00:00 / 00:06",
+     "myDur": "00:00 / 00:41",
+     "fb": [
+      "I scored this as a SURGO practice estimate of 1.5 out of 5. You opened with false starts (\"The subject, yeah, I remember once there was a surprise. Subject.\") and never named a specific challenging course, so the adviser could not identify what subject you meant. The second half of the prompt, how you manage the work, is missing: there is no study method, schedule, or example. Language control is weakened by word-form errors such as \"lie on\" for \"rely on\" and by unfinished ideas like \"it's it's, it turns out people will think well. Oh, remember less.\" Delivery is also affected: Azure flagged mispronunciations on surprise (44), decisions (37), plan (41), and learning (44), and prosody was 69.8. Next step: choose one real course, state in one sentence why it is hard, then give two concrete steps you use to manage the workload, and record a 45-second version to check clarity.",
+      "SURGO 练习估分 1.5 分（满分 5 分）。你的回答一开始就有大量重整和停顿（\"The subject, yeah, I remember once there was a surprise. Subject.\"），而且始终没有点出具体是哪门有挑战性的课程，顾问无法判断你谈的是什么科目。题目第二部分“如何管理学习任务”基本没有回答：没有学习方法、时间安排或具体例子。语言准确度也受影响，出现了 “lie on” 应为 “rely on” 这类用词错误，以及 “it's it's, it turns out people will think well. Oh, remember less.” 这种没有说完的句子。发音方面，Azure 标注了 surprise（44）、decisions（37）、plan（41）、learning（44）等词不够清楚，韵律得分 69.8。下一步建议：选一门真实的课，用一句话说清难点，再给出两个具体的管理步骤，录一段 45 秒的版本回听，检查是否清晰。"
+     ],
+     "ask": "\"Talk about a challenging subject you have studied and explain how you manage the work it requires.\""
+    },
+    {
+     "n": 3,
+     "score": "3.0",
+     "dur": "00:00 / 00:06",
+     "myDur": "00:00 / 00:42",
+     "fb": [
+      "Your response touched only one side of the prompt, problems from uneven effort, and did not mention any advantages of team projects. The single sentence also has grammar issues, for example 'may just doing less', and several words such as 'realize' and 'others' were hard to hear. The delivery sounded slow and fragmented, with long pauses between short bursts of speech. For a stronger answer, plan two short points, one advantage and one problem, give a brief reason for each, and practise speaking in complete sentences with clearer word stress.",
+      "你的回答只提到了小组项目的一个问题，也就是成员付出不均，没有谈到任何优点。一句话里还有语法错误，例如 may just doing less，而且 realize 和 others 这几个词听不清楚。整体语速很慢，停顿偏长，像是断断续续的几个词拼在一起。要提升的话，建议先准备两个要点，一个优点一个困难，各给一句简单解释，然后练习把整句说完整，并注意把实词的重音读清楚。"
+     ],
+     "ask": "\"What are the main advantages of working on a team project, and what problems can it sometimes cause?\""
+    },
+    {
+     "n": 4,
+     "score": "2.5",
+     "dur": "00:00 / 00:07",
+     "myDur": "00:00 / 00:40",
+     "fb": [
+      "You opened with the right frame, 'I think the most effective way to', but you stopped there. The task asked which support is most effective for new students and why, and the rest of your answer drifted into an unrelated fragment about 'the project' and a stray 'yeah'. With no completed idea, no reason, and no example, the response does not meet the task. Delivery also suffers from long pauses and a mispronounced 'acquitted' that hurt intelligibility. Practise giving one full opinion sentence plus one reason in 45 seconds, for example: 'I think a peer-mentor programme is the most effective support, because a trained older student can answer small daily questions before they become problems.' Then add one short example. SURGO practice estimate for this attempt: about 0.5 out of 5.",
+      "你用了正确的开头框架 I think the most effective way to，但说完就停住了。题目要求你说哪种支持最有效以及原因，而你的回答转去讲一个不相关的片段 the project 和一个 yeah。没有完成的意思、没有原因、没有例子，这段录音没有完成 Take an Interview 的任务。中间停顿太长，acquitted 发音也有问题，影响了可懂度。建议练习 45 秒内说一句完整观点加一个原因，比如：I think a peer-mentor programme is the most effective support, because a trained older student can answer small daily questions before they become problems. 然后补一个简短例子。本次 SURGO 练习估分约为 0.5 分（满分 5 分）。"
+     ],
+     "ask": "\"In your opinion, what is the most effective way a university can help first-year students adjust to campus life, and why?\""
+    }
+   ]
+  },
+  "weak": [
+   {
+    "tags": [
+     "口语",
+     [
+      "Task fulfilment",
+      "任务完成度"
+     ]
+    ],
+    "q": [
+     "Relevance → Interview response off topic",
+     "相关性 → 访谈回答偏题"
+    ],
+    "a": [
+     "The answer starts with a relevant frame but then shifts to talk about 'the project', so the elaboration is only minimally connected to the interview question.",
+     "回答以相关框架开头，但随后转向 the project，展开内容与访谈问题只有很弱的关联。"
+    ]
+   },
+   {
+    "tags": [
+     "口语",
+     [
+      "Task fulfilment",
+      "任务完成度"
+     ]
+    ],
+    "q": [
+     "Coverage and completeness → Interview response partial",
+     "覆盖与完整性 → 访谈回答不完整"
+    ],
+    "a": [
+     "The learner states a frame for answering but abandons the required reason and drifts into an unrelated fragment, leaving the interview question only partly addressed.",
+     "学习者给出了回答框架，却没有完成题目要求的理由，并转向不相关的片段，导致访谈问题只被部分回答。"
+    ]
+   },
+   {
+    "tags": [
+     "口语",
+     [
+      "Grammar and syntax",
+      "语法与句法"
+     ]
+    ],
+    "q": [
+     "Sentence structure → Fragmented spoken language",
+     "句子结构 → 口语表达碎片化"
+    ],
+    "a": [
+     "Multiple clauses are started and then abandoned or left incomplete, so the response consists mainly of isolated phrases rather than finished sentences.",
+     "多个分句在开始后被放弃或没有说完，回答主要由孤立的短语组成，没有形成完整句子。"
+    ]
+   }
+  ]
+ }
+}

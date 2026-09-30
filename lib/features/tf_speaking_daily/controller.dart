@@ -32,7 +32,8 @@ class TfSpeakingController {
 
   String get prefix => data['prefix'] as String; // tfRt | tfIv
   int get total => data['total'] as int;
-  int get ansSec => data['ansSec'] as int;
+  // 演示用真实数据每句的作答时长不同（8 / 10 / 12 秒），写在段上；原型数据只有整体的一个值。
+  int get ansSec => (current['ansSec'] ?? data['ansSec']) as int;
   List get segments => data['segments'] as List;
   List get rates => data['rates'] as List;
   Map get current => (segments[index % segments.length] as Map);

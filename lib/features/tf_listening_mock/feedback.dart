@@ -65,6 +65,19 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
     final isM1 = _mod == 'm1';
     final types = _types();
     final qs = ((fb['qs'] as Map)[_type] as List?) ?? const [];
+    // 演示用真实数据（tool/demo_export）带 final / weak / transcripts 这几个键；
+    // 原型数据没有，下面的分数、级别、薄弱项和原文就用原来写死的值。
+    final fin = fb['final'] as Map?;
+    final score = fin?['score'] as String? ?? '4.5';
+    final levelPair = fin?['level'] as List?; // [英文, 中文]，如 ['Lower', '低阶']
+    final level = levelPair?[0] as String? ?? 'Upper';
+    final zh = context.select<AppState, UiLang>((s) => s.lang) == UiLang.zh;
+    final weak = (fb['weak'] as List?) ?? _prototypeWeak;
+    // 真实数据每种题型有自己的原文（transcripts，没有的题型不画）；原型只有一份，「听后选择回应」不画。
+    final perType = fb['transcripts'] as Map?;
+    final transcript = (perType != null
+        ? perType[_type]
+        : (_type != 'r' ? fb['transcript'] : null)) as List?;
 
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       // ra-nav: home icon + 练习回顾 tab.
@@ -85,30 +98,31 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
               decoration: BoxDecoration(
                   color: SurgoColors.yellow,
                   borderRadius: SurgoRadius.pillAll),
-              child: const SourceText('Upper',
-                  style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
-                      color: SurgoColors.onYellowStrong,
-                      fontSize: 13.5,
-                      fontWeight: FontWeight.w800)),
+              child: levelPair == null
+                  ? const SourceText('Upper', style: _pillStyle)
+                  : T(levelPair, style: _pillStyle),
             ),
           ]),
           const SizedBox(height: 10),
           Row(crossAxisAlignment: CrossAxisAlignment.baseline,
-              textBaseline: TextBaseline.alphabetic, children: const [
-            SourceText('4.5',
-                style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
+              textBaseline: TextBaseline.alphabetic, children: [
+            SourceText(score,
+                style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback,
                     color: Colors.white,
                     fontSize: 40,
                     fontWeight: FontWeight.w900)),
-            SourceText(' /6',
+            const SourceText(' /6',
                 style: TextStyle(color: SurgoColors.grip, fontSize: 16)),
-            SizedBox(width: 8),
-            SourceText('(4.0-5.0)',
-                style: TextStyle(color: SurgoColors.arrow, fontSize: 13.5)),
+            // 分数区间是原型的演示值，真实结果只有一个分。
+            if (fin == null) ...const [
+              SizedBox(width: 8),
+              SourceText('(4.0-5.0)',
+                  style: TextStyle(color: SurgoColors.arrow, fontSize: 13.5)),
+            ],
           ]),
           const SizedBox(height: 8),
-          const T('最终听力分基于你的 Upper 卷表现。对话是明显强项；学术讲座的推断需加强。',
-              style: TextStyle(
+          T(fin?['summary'] ?? '最终听力分基于你的 Upper 卷表现。对话是明显强项；学术讲座的推断需加强。',
+              style: const TextStyle(
                   color: Colors.white, fontSize: 13.5, height: 1.55)),
           const SizedBox(height: 6),
           const T('SURGO 练习估分。最终分基于你的正式模块（模块2）表现；模块1用于定级。',
@@ -120,7 +134,13 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
       Row(children: [
         _ModTab(label: '模块1 · 定级', on: isM1, onTap: () => _pickMod('m1')),
         const SizedBox(width: 8),
-        _ModTab(label: '模块2 · Upper', on: !isM1, onTap: () => _pickMod('m2')),
+        // 词典只认「模块2 · Upper」，别的级别直接按界面语言给。
+        _ModTab(
+            label: level == 'Upper'
+                ? '模块2 · Upper'
+                : (zh ? '模块2 · $level' : 'Module 2 · $level'),
+            on: !isM1,
+            onTap: () => _pickMod('m2')),
       ]),
       const SizedBox(height: 16),
 
@@ -130,16 +150,16 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
           const T('总体 · 练习估分', style: SurgoText.cardDesc),
           const SizedBox(height: 6),
           Row(crossAxisAlignment: CrossAxisAlignment.baseline,
-              textBaseline: TextBaseline.alphabetic, children: const [
-            SourceText('4.5',
-                style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 36, fontWeight: FontWeight.w900)),
-            SourceText(' / 6.0', style: SurgoText.cardDesc),
+              textBaseline: TextBaseline.alphabetic, children: [
+            SourceText(score,
+                style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 36, fontWeight: FontWeight.w900)),
+            const SourceText(' / 6.0', style: SurgoText.cardDesc),
           ]),
           const SizedBox(height: 6),
           T(
               isM1
-                  ? '定级表现良好——你已进入 Upper（高阶）卷。'
-                  : 'Upper 卷表现稳定，最终分基于本模块。',
+                  ? (fin?['m1'] ?? '定级表现良好——你已进入 Upper（高阶）卷。')
+                  : (fin?['m2'] ?? 'Upper 卷表现稳定，最终分基于本模块。'),
               style: SurgoText.cardDesc),
           const SizedBox(height: 6),
           const T('练习估分仅供参考，不代表官方托福分数。', style: SurgoText.cardDesc),
@@ -155,25 +175,24 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
         ]),
       ),
 
-      // tffb-card 薄弱项分析 (fixed weak analysis)
-      SurgoCard(
+      // tffb-card 薄弱项分析。真实数据里这场没分析出薄弱项（空列表）时整块不画。
+      if (weak.isNotEmpty) SurgoCard(
         child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
           const T('薄弱项分析', style: SurgoText.cardTitle),
           const SizedBox(height: 8),
           const T('仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。', style: SurgoText.cardDesc),
           const SizedBox(height: 12),
-          SurgoCard(
+          for (final w in weak) SurgoCard(
             color: SurgoColors.bg,
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Wrap(spacing: 6, children: const [
-                T('听力', style: SurgoText.cardEn),
-                T('目的意图', style: SurgoText.cardEn),
-                T('对话开头', style: SurgoText.cardEn),
+              Wrap(spacing: 6, children: [
+                for (final tag in w['tags'] as List)
+                  T(tag, style: SurgoText.cardEn),
               ]),
               const SizedBox(height: 8),
-              const T('听对话第 1 题：错把附带请求当成主要目的。', style: SurgoText.rowLabel),
+              T(w['q'], style: SurgoText.rowLabel),
               const SizedBox(height: 8),
-              const T('对话目的的题重点听开头 2-3 句。建议练习“开头意图捕捉”。', style: SurgoText.cardDesc),
+              T(w['a'], style: SurgoText.cardDesc),
             ]),
           ),
           const T('仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。',
@@ -199,7 +218,7 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
       ),
 
       // Transcript card (only for non-'r' types) — source `tfFbTranscript()`.
-      if (_type != 'r') _transcript(fb, qs),
+      if (transcript != null) _transcript(transcript, qs),
 
       // tffb-card 逐题分析 (qcards)
       SurgoCard(
@@ -216,8 +235,7 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
 
   /// Source `tfFbTranscript()` — highlights the transcript spans that the
   /// current type's questions hit, colouring by that question's ok flag.
-  Widget _transcript(Map<String, dynamic> fb, List qs) {
-    final rows = (fb['transcript'] as List);
+  Widget _transcript(List rows, List qs) {
     bool okOf(int n) {
       final i = n - 1;
       if (i < 0 || i >= qs.length) return true;
@@ -255,6 +273,22 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
       ]),
     );
   }
+
+  static const _pillStyle = TextStyle(
+      fontFamily: 'Outfit',
+      fontFamilyFallback: SurgoFontFamily.fallback,
+      color: SurgoColors.onYellowStrong,
+      fontSize: 13.5,
+      fontWeight: FontWeight.w800);
+
+  /// 原型写死的那一条薄弱项（JSON 里没有 weak 键时用）。
+  static const _prototypeWeak = [
+    {
+      'tags': ['听力', '目的意图', '对话开头'],
+      'q': '听对话第 1 题：错把附带请求当成主要目的。',
+      'a': '对话目的的题重点听开头 2-3 句。建议练习“开头意图捕捉”。',
+    },
+  ];
 }
 
 // tffb-modtab
@@ -336,7 +370,10 @@ class _QCard extends StatelessWidget {
     return SurgoCard(
       child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
         Row(children: [
-          Expanded(child: T('第 ${q['n']}', style: SurgoText.rowLabel)),
+          // [英文, 中文] 一对：词典只有「第 1」到「第 7」，真实数据一种题型有十几题。
+          Expanded(
+              child: T(['Q${q['n']}', '第 ${q['n']}'],
+                  style: SurgoText.rowLabel)),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
             decoration: BoxDecoration(

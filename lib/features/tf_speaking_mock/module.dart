@@ -62,7 +62,8 @@ class _Intro extends StatelessWidget {
  @override
  Widget build(BuildContext context){final app=context.read<AppState>(),back=brief?SurgoPage.tfSpk2Intro:SurgoPage.mockSpeaking;return Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
   SurgoTopBar(onBack:()=>app.go(back)),const SizedBox(height:20),const Wrap(spacing:8,runSpacing:8,children:[SourceText('TOEFL SPEAKING'),SourceText('MOCK EXAM · REAL TIMING'),SourceText('TASK 2 OF 2')]),const SizedBox(height:20),const T('参加访谈',style:SurgoText.h1),const SizedBox(height:16),
-  if(brief)const SourceText('You have volunteered for a research study at your university about work experience. You will have a short online interview with a researcher. The researcher will ask you some questions.',style:SurgoText.cardDesc)else...[
+  // 访谈情境读 JSON 的 task2.brief.sub：原型数据里就是下面这一段，演示用真实数据（tool/demo_export）是那一场的情境简介。
+  if(brief)FutureBuilder<Map<String,dynamic>>(future:TfSpeakingMockData.load(),builder:(c,s)=>SourceText(s.data?['task2']?['brief']?['sub'] as String? ?? 'You have volunteered for a research study at your university about work experience. You will have a short online interview with a researcher. The researcher will ask you some questions.',style:SurgoText.cardDesc))else...[
    const T('在本任务中，你将参加一场简短的访谈。请听每个问题并用自己的话回答。每题有 45 秒作答时间，不提供准备时间。',style:SurgoText.cardDesc),const SizedBox(height:16),const SurgoCard(child:T('每段音频只播放一次，且无法返回上一题。不提供准备时间。提示音后开始作答。',style:SurgoText.cardDesc)),
   ],const SizedBox(height:28),SurgoButton('开始访谈',onTap:(){if(brief)app.session.addAll({'tfS2Seg':0,'tfS2Phase':'play','tfS2Audio':0,'tfS2Left':0});app.go(brief?SurgoPage.tfSpk2Q:SurgoPage.tfSpk2Brief);}),const SizedBox(height:10),SurgoButton('返回',primary:false,onTap:()=>app.go(back)),
  ]);}

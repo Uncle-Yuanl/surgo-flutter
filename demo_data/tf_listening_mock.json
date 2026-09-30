@@ -1,0 +1,1922 @@
+{
+ "modules": {
+  "listen": {
+   "key": "listen",
+   "prefix": "tf",
+   "total": 12,
+   "answerSec": 20,
+   "style": "locked",
+   "grouped": false,
+   "next": "conv",
+   "segments": [
+    {
+     "sec": 6,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "I have a paper due at midnight, so I'll probably stay in the library until closing time."
+      ],
+      [
+       "B",
+       "The dining hall closes at nine, so I was going to grab a quick dinner first."
+      ],
+      [
+       "C",
+       "Do you know if the gym is open on weekends?"
+      ],
+      [
+       "D",
+       "My roommate is picking me up at five o'clock for a family event."
+      ]
+     ]
+    },
+    {
+     "sec": 6,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "Yeah, I just got back from the advising office, and my schedule is finally settled for next semester."
+      ],
+      [
+       "B",
+       "Not really, but I think the lab opens later on Fridays."
+      ],
+      [
+       "C",
+       "I usually take the later bus because the morning one is always crowded."
+      ],
+      [
+       "D",
+       "My professor said the final review session was optional, so I'm not sure if I'll go."
+      ]
+     ]
+    },
+    {
+     "sec": 6,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "I went to the new cafe near the engineering building and the coffee was actually pretty good."
+      ],
+      [
+       "B",
+       "Sure, do you want to walk over together around seven?"
+      ],
+      [
+       "C",
+       "I haven't checked my email yet, so I don't know if the meeting was moved."
+      ],
+      [
+       "D",
+       "My laptop crashed last night, so I lost the file I was working on."
+      ]
+     ]
+    },
+    {
+     "sec": 6,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "I already turned it in this morning, so you can relax about that one."
+      ],
+      [
+       "B",
+       "I think I'm staying on campus because the shuttle back home doesn't run on Sundays."
+      ],
+      [
+       "C",
+       "My roommate and I are planning a trip over the long weekend, if you're interested."
+      ],
+      [
+       "D",
+       "I left my notebook in the chemistry lab again, and I need to go back for it."
+      ]
+     ]
+    },
+    {
+     "sec": 7,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "That sounds rough, but you could try talking to the registrar first thing tomorrow."
+      ],
+      [
+       "B",
+       "I heard the coffee at the new place by the science building is much better than at the union."
+      ],
+      [
+       "C",
+       "My roommate is taking an extra history elective, and she says it's really relaxed."
+      ],
+      [
+       "D",
+       "Have you finished the reading for our media studies class yet?"
+      ]
+     ]
+    },
+    {
+     "sec": 7,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "The bus to the stadium leaves from the student center at six thirty."
+      ],
+      [
+       "B",
+       "I actually have a friend who dropped that exact course, and she said it was a lot of work."
+      ],
+      [
+       "C",
+       "My advisor is on sabbatical this term, so I haven't been able to meet with her."
+      ],
+      [
+       "D",
+       "The library printers are usually busy right before the midterms."
+      ]
+     ]
+    },
+    {
+     "sec": 7,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "Do you want me to check the course catalog later tonight to see what's still open?"
+      ],
+      [
+       "B",
+       "I usually study on the third floor because it's the quietest part of the library."
+      ],
+      [
+       "C",
+       "The campus shuttle only runs every half hour on weekends, which is kind of annoying."
+      ],
+      [
+       "D",
+       "I left my jacket in the lecture hall after class yesterday."
+      ]
+     ]
+    },
+    {
+     "sec": 7,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "My statistics class meets on Tuesdays and Thursdays, and the labs are on Mondays."
+      ],
+      [
+       "B",
+       "That really stinks, but at least the add deadline for spring isn't until next month."
+      ],
+      [
+       "C",
+       "I'm planning to go home for fall break, so I need to finish this essay first."
+      ],
+      [
+       "D",
+       "The dining hall ran out of vegetarian options by the time I got there."
+      ]
+     ]
+    },
+    {
+     "sec": 7,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "The front desk usually keeps lost items in a bin by the printer station, so it's worth checking there."
+      ],
+      [
+       "B",
+       "I have a spare charger you can borrow until you find yours, if that helps."
+      ],
+      [
+       "C",
+       "The recital hall is closed for maintenance until the end of the month."
+      ],
+      [
+       "D",
+       "My sister is coming to visit next weekend, and I'm still figuring out where to take her."
+      ]
+     ]
+    },
+    {
+     "sec": 7,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "I usually do my reading in the lounge because it's quieter than my dorm room."
+      ],
+      [
+       "B",
+       "I think I saw something like that on the counter this morning when I walked in, actually."
+      ],
+      [
+       "C",
+       "The library closes at ten during the week, but it stays open later on Fridays."
+      ],
+      [
+       "D",
+       "I left my umbrella in the cafeteria last week, and it was gone when I went back."
+      ]
+     ]
+    },
+    {
+     "sec": 7,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "Are you sure it wasn't in your bag the whole time? It happens to me all the time."
+      ],
+      [
+       "B",
+       "My roommate and I usually eat lunch around noon, if you want to join us."
+      ],
+      [
+       "C",
+       "The new coffee shop on the corner started selling pastries last week."
+      ],
+      [
+       "D",
+       "I haven't been to the music building in months, so I wouldn't have seen it."
+      ]
+     ]
+    },
+    {
+     "sec": 7,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "I can ask the desk staff for you when I get there in a few minutes, if you want."
+      ],
+      [
+       "B",
+       "I have a group meeting at four, but I'm free after that."
+      ],
+      [
+       "C",
+       "The dining hall is doing a special menu tonight, in case you haven't seen the email."
+      ],
+      [
+       "D",
+       "I usually charge my phone in the student lounge because there are outlets there."
+      ]
+     ]
+    }
+   ]
+  },
+  "conv": {
+   "key": "conv",
+   "prefix": "tf2",
+   "total": 6,
+   "answerSec": 20,
+   "style": "playing",
+   "grouped": true,
+   "next": "ann",
+   "segments": [
+    {
+     "sec": 67,
+     "audio": 0,
+     "lead": "A conversation between two students",
+     "q": "Why is the student returning the biology textbook?",
+     "opts": [
+      [
+       "A",
+       "The textbook is overdue and another student has placed a hold on it."
+      ],
+      [
+       "B",
+       "The student finished reading the entire textbook before the midterm."
+      ],
+      [
+       "C",
+       "The library closed the student account because of unpaid fines."
+      ],
+      [
+       "D",
+       "The midterm was cancelled and the textbook is no longer required."
+      ]
+     ]
+    },
+    {
+     "sec": 54,
+     "audio": 1,
+     "lead": "A conversation between two students",
+     "q": "What do the students plan to do if the teammate does not respond?",
+     "opts": [
+      [
+       "A",
+       "Wait one more day, then ask the professor to intervene."
+      ],
+      [
+       "B",
+       "Cancel the project and choose a new topic immediately."
+      ],
+      [
+       "C",
+       "Submit the project as it is without the teammate's section."
+      ],
+      [
+       "D",
+       "Contact the registrar to remove the teammate from the course."
+      ]
+     ]
+    },
+    {
+     "sec": 41,
+     "audio": 2,
+     "lead": "A conversation between a student and a dining services manager",
+     "q": "Why did the dining services manager say portions were reduced?",
+     "opts": [
+      [
+       "A",
+       "To reduce food waste on campus."
+      ],
+      [
+       "B",
+       "To lower the price of the meal plan."
+      ],
+      [
+       "C",
+       "To shorten the lunch line at peak hours."
+      ],
+      [
+       "D",
+       "To comply with a new health department rule."
+      ]
+     ]
+    },
+    {
+     "sec": 42,
+     "audio": 3,
+     "lead": "A conversation between a student and a campus security officer",
+     "q": "What does the officer suggest the student do to prevent the lost card from being misused?",
+     "opts": [
+      [
+       "A",
+       "Flag the account so the card cannot be used for purchases."
+      ],
+      [
+       "B",
+       "Cancel the printing balance and request a refund immediately."
+      ],
+      [
+       "C",
+       "Visit the science building and retrace every step of the morning."
+      ],
+      [
+       "D",
+       "Pay the replacement fee before going to the student services desk."
+      ]
+     ]
+    },
+    {
+     "sec": 46,
+     "audio": 4,
+     "lead": "A conversation between two students",
+     "q": "What change did the publishing company offer to the internship?",
+     "opts": [
+      [
+       "A",
+       "The student can work remotely for the first week and then in the office."
+      ],
+      [
+       "B",
+       "The whole internship will be completed online from another city."
+      ],
+      [
+       "C",
+       "The start date will be moved to the end of the summer break."
+      ],
+      [
+       "D",
+       "The student can split the internship into two separate sessions."
+      ]
+     ]
+    },
+    {
+     "sec": 45,
+     "audio": 5,
+     "lead": "A conversation between two students",
+     "q": "What did the professor ask the students to do for the field trip?",
+     "opts": [
+      [
+       "A",
+       "Bring waterproof boots and a rain jacket for the rainy weather."
+      ],
+      [
+       "B",
+       "Reschedule the trip because of the bad weather forecast."
+      ],
+      [
+       "C",
+       "Cancel the visit to the rock formation site entirely."
+      ],
+      [
+       "D",
+       "Sign up at the outdoor rental center before five o'clock."
+      ]
+     ]
+    }
+   ]
+  },
+  "ann": {
+   "key": "ann",
+   "prefix": "tf3",
+   "total": 6,
+   "answerSec": 20,
+   "style": "playing",
+   "grouped": true,
+   "next": "talk",
+   "segments": [
+    {
+     "sec": 57,
+     "audio": 0,
+     "lead": "A campus announcement",
+     "q": "What change is being introduced on the third floor?",
+     "opts": [
+      [
+       "A",
+       "Extended opening hours on weeknights and weekends."
+      ],
+      [
+       "B",
+       "A new policy that bans all drinks in the reading rooms."
+      ],
+      [
+       "C",
+       "Free printing services for graduate students only."
+      ],
+      [
+       "D",
+       "Renovations that will close the third floor for one month."
+      ]
+     ]
+    },
+    {
+     "sec": 48,
+     "audio": 1,
+     "lead": "A campus announcement",
+     "q": "When will the central dining hall be closed?",
+     "opts": [
+      [
+       "A",
+       "On Saturday for maintenance."
+      ],
+      [
+       "B",
+       "On Sunday morning before brunch."
+      ],
+      [
+       "C",
+       "On Friday after dinner service."
+      ],
+      [
+       "D",
+       "On Monday morning before ten a.m."
+      ]
+     ]
+    },
+    {
+     "sec": 50,
+     "audio": 2,
+     "lead": "A campus announcement",
+     "q": "Why is the shuttle route being changed?",
+     "opts": [
+      [
+       "A",
+       "Because of construction at the engineering building."
+      ],
+      [
+       "B",
+       "Because the recreation center is being renovated."
+      ],
+      [
+       "C",
+       "Because ridership has dropped on weekdays."
+      ],
+      [
+       "D",
+       "Because the main station is being repaired."
+      ]
+     ]
+    },
+    {
+     "sec": 51,
+     "audio": 3,
+     "lead": "A campus announcement",
+     "q": "What is the new student ticket price for mainstage productions?",
+     "opts": [
+      [
+       "A",
+       "Five dollars for any seat."
+      ],
+      [
+       "B",
+       "Ten dollars for any seat."
+      ],
+      [
+       "C",
+       "Five dollars for seats in the back only."
+      ],
+      [
+       "D",
+       "Ten dollars for seats near the front only."
+      ]
+     ]
+    },
+    {
+     "sec": 51,
+     "audio": 4,
+     "lead": "A campus announcement",
+     "q": "What should students do before attending the networking event?",
+     "opts": [
+      [
+       "A",
+       "Register online in advance to receive a name tag."
+      ],
+      [
+       "B",
+       "Pay a small fee at the door to enter the ballroom."
+      ],
+      [
+       "C",
+       "Send their resumes to the career center by mail."
+      ],
+      [
+       "D",
+       "Arrive at five p.m. for the main program."
+      ]
+     ]
+    },
+    {
+     "sec": 51,
+     "audio": 5,
+     "lead": "A campus announcement",
+     "q": "What must students bring to receive a flu shot at the clinic?",
+     "opts": [
+      [
+       "A",
+       "A student ID and a completed consent form."
+      ],
+      [
+       "B",
+       "A printed schedule of future clinics."
+      ],
+      [
+       "C",
+       "A referral from a family doctor."
+      ],
+      [
+       "D",
+       "Proof of health insurance coverage."
+      ]
+     ]
+    }
+   ]
+  },
+  "talk": {
+   "key": "talk",
+   "prefix": "tf4",
+   "total": 8,
+   "answerSec": 30,
+   "style": "playing",
+   "grouped": true,
+   "next": "modEnd",
+   "segments": [
+    {
+     "sec": 74,
+     "audio": 0,
+     "lead": "An academic lecture on speleothem formation",
+     "q": "According to the lecture, why does calcium carbonate stop remaining in solution once cave water is exposed to air?",
+     "opts": [
+      [
+       "A",
+       "The water temperature drops sharply at the cave entrance."
+      ],
+      [
+       "B",
+       "Carbon dioxide escapes from the water and the pH rises."
+      ],
+      [
+       "C",
+       "Soil bacteria consume the dissolved carbonic acid."
+      ],
+      [
+       "D",
+       "The limestone walls absorb the mineral from the drip."
+      ],
+      [
+       "E",
+       "A second acid layer forms on the cave ceiling."
+      ]
+     ]
+    },
+    {
+     "sec": 71,
+     "audio": 1,
+     "lead": "An academic lecture on signaling theory in animals",
+     "q": "What does the lecturer mean by the term signaling tradeoff?",
+     "opts": [
+      [
+       "A",
+       "Signals evolve to satisfy the needs of predators as well as intended receivers."
+      ],
+      [
+       "B",
+       "A signal must be both effective for its receiver and hard for competitors to exploit."
+      ],
+      [
+       "C",
+       "Bright plumage is always more attractive to potential mates."
+      ],
+      [
+       "D",
+       "Animals prefer to communicate only at dawn or after dusk."
+      ],
+      [
+       "E",
+       "Deep-sea species share one signaling channel with land species."
+      ]
+     ]
+    },
+    {
+     "sec": 75,
+     "audio": 2,
+     "lead": "An academic lecture on memory and forgetting",
+     "q": "According to the lecture, what does the shape of the classic forgetting curve imply for study scheduling?",
+     "opts": [
+      [
+       "A",
+       "Spacing study sessions evenly produces the slowest forgetting."
+      ],
+      [
+       "B",
+       "Most forgetting occurs long after the initial learning session."
+      ],
+      [
+       "C",
+       "Review within the first day yields large gains, and further review gives smaller benefits."
+      ],
+      [
+       "D",
+       "The curve explains whether traces decay or are overwritten."
+      ],
+      [
+       "E",
+       "Modern research has overturned Ebbinghaus's results."
+      ]
+     ]
+    },
+    {
+     "sec": 75,
+     "audio": 3,
+     "lead": "An academic lecture on seismic engineering",
+     "q": "Why do engineers try to lengthen a building's natural period during seismic design?",
+     "opts": [
+      [
+       "A",
+       "To keep the structure from resonating with the dominant ground frequencies."
+      ],
+      [
+       "B",
+       "To make the building heavier so it sinks less during shaking."
+      ],
+      [
+       "C",
+       "To allow the foundation to crack in a controlled pattern."
+      ],
+      [
+       "D",
+       "To replace flexible materials with rigid masonry."
+      ],
+      [
+       "E",
+       "To reduce the cost of constructing moment-resisting frames."
+      ]
+     ]
+    },
+    {
+     "sec": 68,
+     "audio": 4,
+     "lead": "An academic lecture on mangrove ecology",
+     "q": "What point does the lecturer make about the ecological influence of mangroves?",
+     "opts": [
+      [
+       "A",
+       "Mangroves influence coastal systems well beyond the narrow band they occupy."
+      ],
+      [
+       "B",
+       "Mangrove trees absorb salt through pores in their bark."
+      ],
+      [
+       "C",
+       "Most mangrove species are found in cold temperate zones."
+      ],
+      [
+       "D",
+       "The roots of mangroves attract large predatory fish."
+      ],
+      [
+       "E",
+       "Coastal erosion stops wherever mangroves are planted."
+      ]
+     ]
+    },
+    {
+     "sec": 72,
+     "audio": 5,
+     "lead": "An academic lecture on cognitive load theory",
+     "q": "According to the lecture, what is the main goal of managing cognitive load in instructional design?",
+     "opts": [
+      [
+       "A",
+       "To reduce extraneous load while preserving the inherent complexity of the material."
+      ],
+      [
+       "B",
+       "To replace working memory with long-term memory during a lesson."
+      ],
+      [
+       "C",
+       "To eliminate intrinsic load by simplifying every topic."
+      ],
+      [
+       "D",
+       "To add as much germane load as possible to every task."
+      ],
+      [
+       "E",
+       "To remove headings and worked examples from classroom materials."
+      ]
+     ]
+    },
+    {
+     "sec": 74,
+     "audio": 6,
+     "lead": "An academic lecture on historical epidemiology",
+     "q": "What is the lecturer's main point about the connection between urbanisation and disease?",
+     "opts": [
+      [
+       "A",
+       "Disease in cities is unrelated to the practices of nearby populations."
+      ],
+      [
+       "B",
+       "Cities grew larger when pathogen pressure was low."
+      ],
+      [
+       "C",
+       "Sustained urbanisation depends on sanitation practices or acquired immunity."
+      ],
+      [
+       "D",
+       "Coastal cities had fewer diseases than inland cities."
+      ],
+      [
+       "E",
+       "Pre-industrial cities had no infectious disease outbreaks."
+      ]
+     ]
+    },
+    {
+     "sec": 73,
+     "audio": 7,
+     "lead": "An academic lecture on glaciology and sea level rise",
+     "q": "According to the lecture, why does melting sea ice contribute little to sea level rise?",
+     "opts": [
+      [
+       "A",
+       "Because sea ice is too salty to melt at normal temperatures."
+      ],
+      [
+       "B",
+       "Because floating ice already displaces its own weight in water."
+      ],
+      [
+       "C",
+       "Because sea ice reflects sunlight away from the ocean."
+      ],
+      [
+       "D",
+       "Because most sea ice forms during the winter months."
+      ],
+      [
+       "E",
+       "Because Antarctic sea ice is thicker than Arctic sea ice."
+      ]
+     ]
+    }
+   ]
+  },
+  "m2p1": {
+   "key": "m2p1",
+   "prefix": "tfM2",
+   "total": 7,
+   "answerSec": 20,
+   "style": "locked",
+   "grouped": false,
+   "next": "m2p2",
+   "segments": [
+    {
+     "sec": 3,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "Sure, it is a little after three."
+      ],
+      [
+       "B",
+       "No, I do not think so."
+      ],
+      [
+       "C",
+       "Yes, I have a class tomorrow."
+      ],
+      [
+       "D",
+       "Sorry, I am new here."
+      ]
+     ]
+    },
+    {
+     "sec": 3,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "It is the large building next to the cafe."
+      ],
+      [
+       "B",
+       "The library opens at nine."
+      ],
+      [
+       "C",
+       "You should borrow a different map."
+      ],
+      [
+       "D",
+       "I usually study in my dorm."
+      ]
+     ]
+    },
+    {
+     "sec": 3,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "No problem, it was not heavy at all."
+      ],
+      [
+       "B",
+       "Did you finish your homework?"
+      ],
+      [
+       "C",
+       "I have a meeting later today."
+      ],
+      [
+       "D",
+       "The boxes are in the hallway."
+      ]
+     ]
+    },
+    {
+     "sec": 3,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "Sure, I will meet you there at noon."
+      ],
+      [
+       "B",
+       "I prefer cooking at home."
+      ],
+      [
+       "C",
+       "The student centre is closed today."
+      ],
+      [
+       "D",
+       "I already ate breakfast."
+      ]
+     ]
+    },
+    {
+     "sec": 3,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "That is too bad, maybe you can explain to the teacher."
+      ],
+      [
+       "B",
+       "Buses usually come every ten minutes."
+      ],
+      [
+       "C",
+       "My class is in the science building."
+      ],
+      [
+       "D",
+       "Did you buy the textbook yet?"
+      ]
+     ]
+    },
+    {
+     "sec": 3,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "Yes, they have a whole section near the front door."
+      ],
+      [
+       "B",
+       "Notebooks are expensive this year."
+      ],
+      [
+       "C",
+       "I write all my notes on my phone."
+      ],
+      [
+       "D",
+       "The bookstore closes at five."
+      ]
+     ]
+    },
+    {
+     "sec": 4,
+     "q": "Choose the most appropriate response.",
+     "opts": [
+      [
+       "A",
+       "That is normal, practising a few times usually helps."
+      ],
+      [
+       "B",
+       "You should skip the class instead."
+      ],
+      [
+       "C",
+       "Presentations are my favourite part of school."
+      ],
+      [
+       "D",
+       "I never get nervous before tests."
+      ]
+     ]
+    }
+   ]
+  },
+  "m2p2": {
+   "key": "m2p2",
+   "prefix": "tfP2",
+   "total": 4,
+   "answerSec": 20,
+   "style": "playing",
+   "grouped": true,
+   "next": "m2p3",
+   "segments": [
+    {
+     "sec": 68,
+     "audio": 0,
+     "lead": "A student asks a librarian about a book on hold",
+     "q": "Why does the student go to the library desk?",
+     "opts": [
+      [
+       "A",
+       "To return a book that is due today."
+      ],
+      [
+       "B",
+       "To ask about the status of a book she placed on hold."
+      ],
+      [
+       "C",
+       "To renew a book she borrowed last semester."
+      ],
+      [
+       "D",
+       "To sign up for a new library card."
+      ]
+     ]
+    },
+    {
+     "sec": 68,
+     "audio": 1,
+     "lead": "Two classmates discuss plans for a group project",
+     "q": "What will the students most likely do next?",
+     "opts": [
+      [
+       "A",
+       "Submit their topic to the professor before doing research."
+      ],
+      [
+       "B",
+       "Meet on Thursday to work on the report together."
+      ],
+      [
+       "C",
+       "Choose a different class for the group project."
+      ],
+      [
+       "D",
+       "Drop the project because the topic is too hard."
+      ]
+     ]
+    },
+    {
+     "sec": 60,
+     "audio": 2,
+     "lead": "A student speaks with a professor about a submitted file",
+     "q": "What is the main purpose of the student's visit?",
+     "opts": [
+      [
+       "A",
+       "To ask for an extension on a homework deadline."
+      ],
+      [
+       "B",
+       "To explain a problem with a file she submitted."
+      ],
+      [
+       "C",
+       "To pick up a graded paper from the professor."
+      ],
+      [
+       "D",
+       "To register for a new laboratory course."
+      ]
+     ]
+    },
+    {
+     "sec": 57,
+     "audio": 3,
+     "lead": "A student calls her manager to change a work shift",
+     "q": "Why is the student calling the bookstore?",
+     "opts": [
+      [
+       "A",
+       "To quit her campus job before the semester ends."
+      ],
+      [
+       "B",
+       "To ask whether a coworker can cover one of her shifts."
+      ],
+      [
+       "C",
+       "To request a pay raise for working weekends."
+      ],
+      [
+       "D",
+       "To order textbooks for her classes."
+      ]
+     ]
+    }
+   ]
+  },
+  "m2p3": {
+   "key": "m2p3",
+   "prefix": "tfP3",
+   "total": 4,
+   "answerSec": 30,
+   "style": "playing",
+   "grouped": true,
+   "next": "mark",
+   "segments": [
+    {
+     "sec": 53,
+     "audio": 0,
+     "lead": "A campus announcement about library hours",
+     "q": "What change is being introduced at the library?",
+     "opts": [
+      [
+       "A",
+       "Closing the third floor all day"
+      ],
+      [
+       "B",
+       "Extending weekday opening hours"
+      ],
+      [
+       "C",
+       "Removing group study rooms"
+      ],
+      [
+       "D",
+       "Starting weekend hours earlier"
+      ]
+     ]
+    },
+    {
+     "sec": 49,
+     "audio": 1,
+     "lead": "A campus announcement about cafeteria payments",
+     "q": "What will the cashier stations begin to accept?",
+     "opts": [
+      [
+       "A",
+       "Only the new student ID card and the campus payment app"
+      ],
+      [
+       "B",
+       "Only cash payments at every register"
+      ],
+      [
+       "C",
+       "Old magnetic stripe cards and the campus app"
+      ],
+      [
+       "D",
+       "Personal debit cards at all stations"
+      ]
+     ]
+    },
+    {
+     "sec": 50,
+     "audio": 2,
+     "lead": "A campus announcement about shuttle routes",
+     "q": "How long will the temporary shuttle change last?",
+     "opts": [
+      [
+       "A",
+       "One week"
+      ],
+      [
+       "B",
+       "Two weeks"
+      ],
+      [
+       "C",
+       "Three weeks"
+      ],
+      [
+       "D",
+       "The entire semester"
+      ]
+     ]
+    },
+    {
+     "sec": 54,
+     "audio": 3,
+     "lead": "A campus announcement about a career fair",
+     "q": "Where will the career fair be held?",
+     "opts": [
+      [
+       "A",
+       "In the student center"
+      ],
+      [
+       "B",
+       "In the main gymnasium"
+      ],
+      [
+       "C",
+       "In room 210"
+      ],
+      [
+       "D",
+       "In the career development office"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "feedback": {
+  "typesM1": [
+   {
+    "key": "r",
+    "name": "Listen and Choose a Response",
+    "score": 2.5
+   },
+   {
+    "key": "c",
+    "name": "Listen to a Conversation",
+    "score": 1
+   },
+   {
+    "key": "a",
+    "name": "Listen to an Announcement",
+    "score": 1
+   },
+   {
+    "key": "t",
+    "name": "Listen to an Academic Talk",
+    "score": 1
+   }
+  ],
+  "typesM2": [
+   {
+    "key": "r2",
+    "name": "Listen and Choose a Response",
+    "score": 1
+   },
+   {
+    "key": "c2",
+    "name": "Listen to a Conversation",
+    "score": 1
+   },
+   {
+    "key": "a2",
+    "name": "Listen to an Announcement",
+    "score": 1
+   }
+  ],
+  "qs": {
+   "r": [
+    {
+     "n": 1,
+     "ok": true,
+     "dur": "00:06",
+     "q": "\"Are you going to the open library hours tonight, or are you planning to head back to your dorm early?\"",
+     "mine": "A. I have a paper due at midnight, so I'll probably stay in the library until closing time."
+    },
+    {
+     "n": 2,
+     "ok": false,
+     "dur": "00:06",
+     "q": "\"Are you going to the open library hours tonight, or are you planning to head back to your dorm early?\"",
+     "mine": "B. Not really, but I think the lab opens later on Fridays.",
+     "ans": "A. Yeah, I just got back from the advising office, and my schedule is finally settled for next semester."
+    },
+    {
+     "n": 3,
+     "ok": true,
+     "dur": "00:06",
+     "q": "\"Are you going to the open library hours tonight, or are you planning to head back to your dorm early?\"",
+     "mine": "B. Sure, do you want to walk over together around seven?"
+    },
+    {
+     "n": 4,
+     "ok": true,
+     "dur": "00:06",
+     "q": "\"Are you going to the open library hours tonight, or are you planning to head back to your dorm early?\"",
+     "mine": "B. I think I'm staying on campus because the shuttle back home doesn't run on Sundays."
+    },
+    {
+     "n": 5,
+     "ok": false,
+     "dur": "00:07",
+     "q": "\"I missed the deadline to add that linguistics seminar, so now I'm scrambling to find a replacement course before Friday.\"",
+     "mine": "C. My roommate is taking an extra history elective, and she says it's really relaxed.",
+     "ans": "A. That sounds rough, but you could try talking to the registrar first thing tomorrow."
+    },
+    {
+     "n": 6,
+     "ok": false,
+     "dur": "00:07",
+     "q": "\"I missed the deadline to add that linguistics seminar, so now I'm scrambling to find a replacement course before Friday.\"",
+     "mine": "—",
+     "ans": "B. I actually have a friend who dropped that exact course, and she said it was a lot of work."
+    },
+    {
+     "n": 7,
+     "ok": false,
+     "dur": "00:07",
+     "q": "\"I missed the deadline to add that linguistics seminar, so now I'm scrambling to find a replacement course before Friday.\"",
+     "mine": "C. The campus shuttle only runs every half hour on weekends, which is kind of annoying.",
+     "ans": "A. Do you want me to check the course catalog later tonight to see what's still open?"
+    },
+    {
+     "n": 8,
+     "ok": false,
+     "dur": "00:07",
+     "q": "\"I missed the deadline to add that linguistics seminar, so now I'm scrambling to find a replacement course before Friday.\"",
+     "mine": "—",
+     "ans": "B. That really stinks, but at least the add deadline for spring isn't until next month."
+    },
+    {
+     "n": 9,
+     "ok": false,
+     "dur": "00:07",
+     "q": "\"I left my laptop charger in the practice room yesterday, and I was wondering if anyone turned it in to the front desk.\"",
+     "mine": "B. I have a spare charger you can borrow until you find yours, if that helps.",
+     "ans": "A. The front desk usually keeps lost items in a bin by the printer station, so it's worth checking there."
+    },
+    {
+     "n": 10,
+     "ok": false,
+     "dur": "00:07",
+     "q": "\"I left my laptop charger in the practice room yesterday, and I was wondering if anyone turned it in to the front desk.\"",
+     "mine": "—",
+     "ans": "B. I think I saw something like that on the counter this morning when I walked in, actually."
+    },
+    {
+     "n": 11,
+     "ok": false,
+     "dur": "00:07",
+     "q": "\"I left my laptop charger in the practice room yesterday, and I was wondering if anyone turned it in to the front desk.\"",
+     "mine": "—",
+     "ans": "A. Are you sure it wasn't in your bag the whole time? It happens to me all the time."
+    },
+    {
+     "n": 12,
+     "ok": false,
+     "dur": "00:07",
+     "q": "\"I left my laptop charger in the practice room yesterday, and I was wondering if anyone turned it in to the front desk.\"",
+     "mine": "—",
+     "ans": "A. I can ask the desk staff for you when I get there in a few minutes, if you want."
+    }
+   ],
+   "c": [
+    {
+     "n": 1,
+     "ok": false,
+     "dur": "01:07",
+     "q": "Why is the student returning the biology textbook?",
+     "mine": "—",
+     "ans": "A. The textbook is overdue and another student has placed a hold on it."
+    },
+    {
+     "n": 2,
+     "ok": false,
+     "dur": "00:54",
+     "q": "What do the students plan to do if the teammate does not respond?",
+     "mine": "—",
+     "ans": "A. Wait one more day, then ask the professor to intervene."
+    },
+    {
+     "n": 3,
+     "ok": false,
+     "dur": "00:41",
+     "q": "Why did the dining services manager say portions were reduced?",
+     "mine": "—",
+     "ans": "A. To reduce food waste on campus."
+    },
+    {
+     "n": 4,
+     "ok": false,
+     "dur": "00:42",
+     "q": "What does the officer suggest the student do to prevent the lost card from being misused?",
+     "mine": "—",
+     "ans": "A. Flag the account so the card cannot be used for purchases."
+    },
+    {
+     "n": 5,
+     "ok": false,
+     "dur": "00:46",
+     "q": "What change did the publishing company offer to the internship?",
+     "mine": "—",
+     "ans": "A. The student can work remotely for the first week and then in the office."
+    },
+    {
+     "n": 6,
+     "ok": false,
+     "dur": "00:45",
+     "q": "What did the professor ask the students to do for the field trip?",
+     "mine": "—",
+     "ans": "A. Bring waterproof boots and a rain jacket for the rainy weather."
+    }
+   ],
+   "a": [
+    {
+     "n": 1,
+     "ok": false,
+     "dur": "00:57",
+     "q": "What change is being introduced on the third floor?",
+     "mine": "—",
+     "ans": "A. Extended opening hours on weeknights and weekends."
+    },
+    {
+     "n": 2,
+     "ok": false,
+     "dur": "00:48",
+     "q": "When will the central dining hall be closed?",
+     "mine": "—",
+     "ans": "A. On Saturday for maintenance."
+    },
+    {
+     "n": 3,
+     "ok": false,
+     "dur": "00:50",
+     "q": "Why is the shuttle route being changed?",
+     "mine": "—",
+     "ans": "A. Because of construction at the engineering building."
+    },
+    {
+     "n": 4,
+     "ok": false,
+     "dur": "00:51",
+     "q": "What is the new student ticket price for mainstage productions?",
+     "mine": "—",
+     "ans": "A. Five dollars for any seat."
+    },
+    {
+     "n": 5,
+     "ok": false,
+     "dur": "00:51",
+     "q": "What should students do before attending the networking event?",
+     "mine": "—",
+     "ans": "A. Register online in advance to receive a name tag."
+    },
+    {
+     "n": 6,
+     "ok": false,
+     "dur": "00:51",
+     "q": "What must students bring to receive a flu shot at the clinic?",
+     "mine": "—",
+     "ans": "A. A student ID and a completed consent form."
+    }
+   ],
+   "t": [
+    {
+     "n": 1,
+     "ok": false,
+     "dur": "01:14",
+     "q": "According to the lecture, why does calcium carbonate stop remaining in solution once cave water is exposed to air?",
+     "mine": "—",
+     "ans": "B. Carbon dioxide escapes from the water and the pH rises."
+    },
+    {
+     "n": 2,
+     "ok": false,
+     "dur": "01:11",
+     "q": "What does the lecturer mean by the term signaling tradeoff?",
+     "mine": "—",
+     "ans": "B. A signal must be both effective for its receiver and hard for competitors to exploit."
+    },
+    {
+     "n": 3,
+     "ok": false,
+     "dur": "01:15",
+     "q": "According to the lecture, what does the shape of the classic forgetting curve imply for study scheduling?",
+     "mine": "—",
+     "ans": "C. Review within the first day yields large gains, and further review gives smaller benefits."
+    },
+    {
+     "n": 4,
+     "ok": false,
+     "dur": "01:15",
+     "q": "Why do engineers try to lengthen a building's natural period during seismic design?",
+     "mine": "—",
+     "ans": "A. To keep the structure from resonating with the dominant ground frequencies."
+    },
+    {
+     "n": 5,
+     "ok": false,
+     "dur": "01:08",
+     "q": "What point does the lecturer make about the ecological influence of mangroves?",
+     "mine": "—",
+     "ans": "A. Mangroves influence coastal systems well beyond the narrow band they occupy."
+    },
+    {
+     "n": 6,
+     "ok": false,
+     "dur": "01:12",
+     "q": "According to the lecture, what is the main goal of managing cognitive load in instructional design?",
+     "mine": "—",
+     "ans": "A. To reduce extraneous load while preserving the inherent complexity of the material."
+    },
+    {
+     "n": 7,
+     "ok": false,
+     "dur": "01:14",
+     "q": "What is the lecturer's main point about the connection between urbanisation and disease?",
+     "mine": "—",
+     "ans": "C. Sustained urbanisation depends on sanitation practices or acquired immunity."
+    },
+    {
+     "n": 8,
+     "ok": false,
+     "dur": "01:13",
+     "q": "According to the lecture, why does melting sea ice contribute little to sea level rise?",
+     "mine": "—",
+     "ans": "B. Because floating ice already displaces its own weight in water."
+    }
+   ],
+   "r2": [
+    {
+     "n": 1,
+     "ok": false,
+     "dur": "00:03",
+     "q": "\"Excuse me, do you have the time?\"",
+     "mine": "—",
+     "ans": "A. Sure, it is a little after three."
+    },
+    {
+     "n": 2,
+     "ok": false,
+     "dur": "00:03",
+     "q": "\"I cannot find the library on this map.\"",
+     "mine": "—",
+     "ans": "A. It is the large building next to the cafe."
+    },
+    {
+     "n": 3,
+     "ok": false,
+     "dur": "00:03",
+     "q": "\"Thanks for helping me move the boxes yesterday.\"",
+     "mine": "—",
+     "ans": "A. No problem, it was not heavy at all."
+    },
+    {
+     "n": 4,
+     "ok": false,
+     "dur": "00:03",
+     "q": "\"Would you like to join us for lunch at the student centre?\"",
+     "mine": "—",
+     "ans": "A. Sure, I will meet you there at noon."
+    },
+    {
+     "n": 5,
+     "ok": false,
+     "dur": "00:03",
+     "q": "\"I missed the bus and now I am late for class.\"",
+     "mine": "—",
+     "ans": "A. That is too bad, maybe you can explain to the teacher."
+    },
+    {
+     "n": 6,
+     "ok": false,
+     "dur": "00:03",
+     "q": "\"Do you know if the campus bookstore sells notebooks?\"",
+     "mine": "—",
+     "ans": "A. Yes, they have a whole section near the front door."
+    },
+    {
+     "n": 7,
+     "ok": false,
+     "dur": "00:04",
+     "q": "\"I am feeling a bit nervous about my presentation tomorrow.\"",
+     "mine": "—",
+     "ans": "A. That is normal, practising a few times usually helps."
+    }
+   ],
+   "c2": [
+    {
+     "n": 1,
+     "ok": false,
+     "dur": "01:08",
+     "q": "Why does the student go to the library desk?",
+     "mine": "—",
+     "ans": "B. To ask about the status of a book she placed on hold."
+    },
+    {
+     "n": 2,
+     "ok": false,
+     "dur": "01:08",
+     "q": "What will the students most likely do next?",
+     "mine": "—",
+     "ans": "B. Meet on Thursday to work on the report together."
+    },
+    {
+     "n": 3,
+     "ok": false,
+     "dur": "01:00",
+     "q": "What is the main purpose of the student's visit?",
+     "mine": "—",
+     "ans": "B. To explain a problem with a file she submitted."
+    },
+    {
+     "n": 4,
+     "ok": false,
+     "dur": "00:57",
+     "q": "Why is the student calling the bookstore?",
+     "mine": "—",
+     "ans": "B. To ask whether a coworker can cover one of her shifts."
+    }
+   ],
+   "a2": [
+    {
+     "n": 1,
+     "ok": false,
+     "dur": "00:53",
+     "q": "What change is being introduced at the library?",
+     "mine": "—",
+     "ans": "B. Extending weekday opening hours"
+    },
+    {
+     "n": 2,
+     "ok": false,
+     "dur": "00:49",
+     "q": "What will the cashier stations begin to accept?",
+     "mine": "—",
+     "ans": "A. Only the new student ID card and the campus payment app"
+    },
+    {
+     "n": 3,
+     "ok": false,
+     "dur": "00:50",
+     "q": "How long will the temporary shuttle change last?",
+     "mine": "—",
+     "ans": "C. Three weeks"
+    },
+    {
+     "n": 4,
+     "ok": false,
+     "dur": "00:54",
+     "q": "Where will the career fair be held?",
+     "mine": "—",
+     "ans": "B. In the main gymnasium"
+    }
+   ]
+  },
+  "transcript": [
+   [
+    "Student: Hi Professor Lee, do you have a minute? ",
+    "I'm not sure which topic to choose for my research paper",
+    1,
+    ". Professor: Of course. "
+   ],
+   [
+    "",
+    "I'd suggest you narrow the scope of the topic first",
+    2,
+    " — a focused question is much easier to research well than a broad one. Why don’t you bring me a one-paragraph outline by Friday?"
+   ]
+  ],
+  "transcripts": {
+   "c": [
+    [
+     "Student A: Hey, I saw you returning that biology textbook. Did you finish the whole thing?\nStudent B: Not even close. The midterm got moved up, so I stopped reading it and just used the chapter summaries online.\nStudent A: Oh, that makes sense. Was the online chapter summary enough, though?\nStudent B: Honestly, the practice questions at the end of each chapter were the most useful part. The summaries skipped a lot of detail.\nStudent A: Right, I had the same problem with the psychology reader last term.\nStudent B: ",
+     "So now I'm trying to renew it, but the library system says the book is already overdue and I owe a small fine.",
+     1,
+     ""
+    ],
+    [
+     "\nStudent A: That's annoying. Did you try renewing it through your student account?\nStudent B: Yes, but the system blocked the renewal because another student placed a hold on it two days ago.\nStudent A: So what are you going to do now?\nStudent B: I think I'll just return it today and pay the fine. Then I can borrow the hold copy once it's available."
+    ],
+    [
+     "\n\nStudent A: I heard there was some drama in your marketing group. What happened?\nStudent B: Yeah, one teammate missed the last two meetings, and then turned in a section that didn't match our outline at all.\nStudent A: That's frustrating. Did the professor say anything about it?\nStudent B: Not yet, but our group contract said every member has to contribute equally. The rest of us want to ask the professor to lower that person's share of the grade.\nStudent A: Did you talk to the teammate first?\nStudent B: We tried, but he didn't reply to any messages since last Friday. He might be dealing with something personal.\nStudent A: Maybe give him one more day before you escalate it.\nStudent B: That's what the group leader suggested too. ",
+     "If he doesn't respond by tomorrow, we'll ask the professor to step in.",
+     2,
+     ""
+    ],
+    [
+     "\n\nStudent: Hi, I wanted to ask about the new meal plan changes. The portion sizes at the north dining hall seem much smaller this semester.\nManager: Thanks for bringing that up. We've actually been receiving a few similar comments over the past two weeks.\nStudent: A lot of my friends are still hungry after lunch, and some of them stopped buying the meal plan because of it.\nManager: I understand. ",
+     "The change was meant to reduce food waste, but it sounds like we may have cut the portions too much.",
+     3,
+     ""
+    ],
+    [
+     "\nStudent: Could you at least add a second serving option for students with bigger appetites?\nManager: I'll bring that idea to our next staff meeting and see what we can do this term."
+    ],
+    [
+     "\n\nStudent: Excuse me, I think I lost my student ID card somewhere near the science building this morning.\nOfficer: Okay, let's check our lost and found log. Can you describe the card?\nStudent: It's the standard campus card with my photo, and I keep it in a clear plastic holder.\nOfficer: ",
+     "We don't have a match yet, but we can flag your account so no one else can use it for purchases.",
+     4,
+     ""
+    ],
+    [
+     "\nStudent: That's a good idea, because I still have a small balance on it for printing.\nOfficer: You can also request a replacement at the student services desk. There is a small fee, and the new card is usually ready in one business day.\nStudent: Thanks, I'll head there right after this class."
+    ],
+    [
+     "\n\nStudent A: Are you still planning to do the summer internship at the publishing house?\nStudent B: I was, but the start date got pushed back by two weeks, and now it overlaps with my family trip.\nStudent A: That's rough. Did the company offer any flexibility?\nStudent B: ",
+     "They said I can work remotely during the first week and then join the office for the remaining three weeks.",
+     5,
+     ""
+    ],
+    [
+     "\nStudent A: So you'd still have to cut the trip short.\nStudent B: Yes, I'd miss the last four days. I'm trying to decide if the internship is worth it.\nStudent A: Well, it does count toward your major requirement, right?\nStudent B: Right, and the editor I spoke with said the experience could lead to a recommendation letter."
+    ],
+    [
+     "\n\nStudent A: Did you see the email about the geology field trip on Saturday?\nStudent B: Yeah, it sounds cool, but the weather forecast now says it's going to rain all day.\nStudent A: I know. ",
+     "The professor sent a follow-up saying the trip will still happen, but we need to bring waterproof boots and a rain jacket.",
+     6,
+     ""
+    ],
+    [
+     "\nStudent B: That's a relief, because I really don't want to miss the rock formation site we were supposed to visit.\nStudent A: Same here. Do you have a good rain jacket, though?\nStudent B: I do, but I might need to borrow extra boots from the outdoor rental center on campus.\nStudent A: I think they close at five today, so we should stop by before they shut down."
+    ]
+   ],
+   "a": [
+    [
+     "Good evening, students. This is a brief update from the main library about the late-night study area on the third floor. Beginning this coming Monday, ",
+     "the third floor will remain open until two a.m. on weeknights and until midnight on weekends",
+     1,
+     ""
+    ],
+    [
+     ", so please plan your visits accordingly. A valid university ID is required for entry after eleven p.m., and security staff will check IDs at the elevator lobby. Group study rooms on the third floor can be reserved through the library website, with a maximum of two hours per session. Please remember that food is not allowed in the reading rooms, but covered drinks are welcome. Noise should be kept to a minimum after ten p.m. to respect other students who are preparing for exams. If you need assistance during the extended hours, a reference librarian will be on duty at the front desk until one a.m. on weeknights. Thank you for your cooperation, and good luck with your studies."
+    ],
+    [
+     "\n\nHello everyone, this is a quick message from dining services. During the upcoming reading week, the central dining hall will adjust its schedule. The dining hall will open at ten a.m. and close at eight p.m. from Monday through Friday, and ",
+     "it will be closed on Saturday for routine maintenance",
+     2,
+     ""
+    ],
+    [
+     ". Brunch service on Sunday will run from eleven a.m. to two p.m., followed by regular dinner service from five p.m. to nine p.m. Please note that meal plan swipes are accepted during all operating hours, and Flex Dollars can be used at any self-serve station. Students with specific dietary needs are encouraged to speak with a staff member at the welcome counter. For the latest updates, check the dining services page on the student portal. Thank you, and enjoy your reading week."
+    ],
+    [
+     "\n\nAttention students and staff. Transportation services is announcing a temporary change to the West Campus shuttle route. Starting tomorrow, ",
+     "the shuttle will no longer stop at the engineering building due to ongoing construction",
+     3,
+     ""
+    ],
+    [
+     ". Instead, it will follow a detour through the science plaza and will add a new stop near the recreation center. The revised schedule will keep the same departure times from the main station, with service running every fifteen minutes from seven a.m. to ten p.m. on weekdays. Weekend service will continue every thirty minutes. Riders can find updated route maps posted at each shuttle stop and on the transportation website. We expect the engineering building stop to reopen in about six weeks. Thank you for your patience while we work to keep your travel around campus safe and reliable."
+    ],
+    [
+     "\n\nGood afternoon. The student theatre box office is sharing an important update about ticket policies. Beginning next week, ",
+     "all student ticket prices for mainstage productions will be five dollars, regardless of seat location",
+     4,
+     ""
+    ],
+    [
+     ". Tickets can be purchased online through the theatre website or in person one hour before each performance. Please bring a valid student ID, as you may be asked to show it at the door. Late seating is not permitted once the performance has begun, so plan to arrive at least ten minutes early. Group discounts are available for parties of ten or more when booked at least three days in advance. Exchanges are allowed up to twenty-four hours before showtime. For questions, contact the box office by email or stop by during regular hours. We look forward to seeing you at the theatre."
+    ],
+    [
+     "\n\nHello, this is a reminder from the career center. Our fall networking night will take place next Thursday from six p.m. to eight p.m. in the student union ballroom. More than forty employers from industries such as finance, engineering, education, and nonprofit work are expected to attend. Students are encouraged to dress in business casual attire and to bring several copies of their resumes. A resume review station will be open from five p.m. to five forty-five p.m. before the event begins. Light refreshments will be provided, and there is no cost to attend. To make the most of the evening, review the list of participating employers on our website and prepare a short self-introduction. ",
+     "Register online in advance to receive a name tag and a printed directory of employers",
+     5,
+     ""
+    ],
+    [
+     ". We hope to see you there."
+    ],
+    [
+     "\n\nGood morning, students. The student health center is hosting a free flu shot clinic next week. Vaccinations will be available from Monday through Wednesday, between nine a.m. and four p.m., in clinic room B on the second floor. No appointment is necessary, but ",
+     "please bring your student ID and a completed consent form, which can be downloaded from the health center website",
+     6,
+     ""
+    ],
+    [
+     ". Students with allergies to eggs or previous vaccine reactions should consult a nurse before receiving the shot. After the injection, you will be asked to wait fifteen minutes in the observation area to make sure you feel well before leaving. The clinic is open to all currently enrolled students and is free of charge while supplies last. For more information, call the health center or visit our page on the student portal. Stay healthy, everyone."
+    ]
+   ],
+   "t": [
+    [
+     "Today we are going to look at how mineral deposits form inside limestone caves, and why the process is so sensitive to small changes in water chemistry. Caves develop in regions where rainwater absorbs carbon dioxide as it moves through soil, forming a weak carbonic acid solution. When that slightly acidic water seeps into fractured limestone, it slowly dissolves the rock and enlarges the original cracks into passages. Once a cavity becomes open to air, the chemistry reverses. ",
+     "Carbon dioxide escapes from the thin film of water clinging to the ceiling, the pH rises, and dissolved calcium carbonate can no longer remain in solution.",
+     1,
+     ""
+    ],
+    [
+     " The mineral then precipitates around the drip point, building a hollow tube called a soda straw. As the tube grows longer, water may begin to flow along its outside instead, depositing successive rings of calcite that widen the structure into a stalactite. Droplets that fall to the floor lose additional carbon dioxide on impact and deposit calcite upward, forming stalagmites. The shape of every speleothem reflects the balance between drip rate, mineral concentration, and carbon dioxide loss, which is why no two formations look exactly alike."
+    ],
+    [
+     "\n\nIn this session, I want to consider why animal signals are rarely simple. ",
+     "A signal has to do two jobs at once. It must travel effectively to the intended receiver, and it must be difficult or costly for predators and competitors to exploit. Natural selection therefore pulls signals in opposite directions.",
+     2,
+     ""
+    ],
+    [
+     " A brightly coloured bird, for instance, may attract mates more quickly, but the same plumage makes the individual easier for a hawk to detect. That kind of evolutionary tension is called a signaling tradeoff. Many species resolve it by limiting conspicuous displays to brief windows, such as the first minutes of dawn, when low light reduces visibility to predators but still allows conspecifics to read the signal. Other species shift the signaling channel altogether. Some deep-sea fish, for example, produce brief bioluminescent flashes whose colour peaks at wavelengths that penetrate water efficiently and are difficult for many predators to perceive. Across taxa, the recurring pattern is the same: the design of a signal is shaped less by what would be ideal for the receiver than by what competing audiences can and cannot detect."
+    ],
+    [
+     "\n\nLet us turn now to the early laboratory work on forgetting, and to a few results that any student of memory should recognise. When Hermann Ebbinghaus tested himself on nonsense syllables at increasing time intervals, he observed a steep initial drop in savings followed by a much slower decline. The pattern, when plotted, resembles a curve that falls sharply and then levels off. Modern replications with broader word lists confirm the qualitative shape, though the absolute rate of loss depends on the material, the retention interval, and the degree of prior learning. The curve has two implications worth noting. ",
+     "First, the bulk of forgetting happens shortly after learning, so review within the first day yields large gains. Second, because the curve flattens, the marginal benefit of additional review sessions grows smaller over time.",
+     3,
+     ""
+    ],
+    [
+     " Psychologists therefore recommend a spacing pattern known as expanded rehearsal, in which practice intervals gradually lengthen as the material becomes more stable. The forgetting curve is descriptive, not explanatory. It does not, by itself, tell us whether traces decay, are overwritten, or simply become harder to retrieve. Those are separate theoretical questions."
+    ],
+    [
+     "\n\nOur topic this hour is how engineers design buildings to resist earthquake damage, and why flexibility, not raw strength, is the key concept. In a strong tremor, a rigid structure experiences large inertial forces at its base, and brittle materials such as unreinforced masonry crack almost immediately. ",
+     "Engineers therefore try to lengthen the natural period of the building, which is the time it takes to sway back and forth once, so that the structure does not resonate with the dominant frequencies of the ground motion.",
+     4,
+     ""
+    ],
+    [
+     " Several strategies are common. Base isolators, often layers of rubber and steel, decouple the building from its foundation and let the ground slide while the structure above moves only slightly. In high-rise construction, a tuned mass damper, essentially a heavy pendulum mounted near the top, can be set in motion opposite to the building's sway, absorbing vibrational energy. Shear walls and moment-resisting frames distribute lateral loads through the floors rather than concentrating stress at any one column. These approaches are complementary. The most resistant buildings combine isolation at the base, a continuous load path through the frame, and damping devices that absorb the energy that isolation alone cannot remove."
+    ],
+    [
+     "\n\n",
+     "Mangrove forests occupy a narrow band along tropical and subtropical coastlines, yet their ecological influence is much wider than their footprint suggests.",
+     5,
+     ""
+    ],
+    [
+     " The trees are adapted to salt water through specialised root systems that exclude most of the salt at uptake, and through pores in the leaves that excrete the excess. Below the canopy, the architecture of prop and aerial roots slows incoming tides, so waves reaching the interior of the forest carry far less energy than waves at the seaward edge. That buffering effect is one reason coastal communities value mangroves as natural barriers against storm surge. The root matrix also traps fine sediment, allowing the land surface to keep pace with sea level rise in some regions. Biologically, mangrove channels serve as nurseries for juvenile fish, crabs, and mollusks, because the shaded water offers refuge from predators and the leaf litter supports a rich detrital food web. When mangroves are removed, the loss is rarely local. Coastal erosion can accelerate, fisheries decline, and the carbon stored in waterlogged peat can oxidise and enter the atmosphere."
+    ],
+    [
+     "\n\nLet us examine the idea of cognitive load, which is central to contemporary instructional design. Working memory holds the information we are actively processing, and it is severely limited in both capacity and duration. Any instructional material that overloads working memory interferes with the construction of stable knowledge in long-term memory. Cognitive load theory distinguishes three sources of demand. Intrinsic load is set by the inherent complexity of the material and the learner's prior knowledge. Extraneous load is imposed by the way the material is presented, for example, by redundant text overlaid on a diagram. Germane load refers to the effort a learner devotes to building mental schemas, which is productive when not crowded out by the other two. ",
+     "Effective design reduces extraneous load without diluting intrinsic load.",
+     6,
+     ""
+    ],
+    [
+     " Common strategies include splitting complex procedures into worked examples, aligning narration with on-screen animation, and signalling the structure of a lesson with headings. The goal is not to simplify the subject itself, but to remove obstacles that prevent the learner from focusing on what the subject actually requires them to think about."
+    ],
+    [
+     "\n\nWe are going to look today at the relationship between urban living and infectious disease in the pre-industrial world. Early cities were dense, insanitary, and dependent on water sources that often lay downstream of waste disposal. Under those conditions, faecal-oral pathogens such as typhoid and dysentery flourished, and respiratory infections like measles spread easily through crowded interiors. The historian William McNeill argued that these disease regimes helped decide which populations could sustain large urban centres and which could not. His argument has two parts. First, sustained urbanisation requires either cultural practices that limit contamination, such as careful handling of food and water, or biological resistance acquired through repeated exposure. Second, when two populations with different disease histories met, the result was often catastrophic. Eurasian populations carried a long roster of childhood diseases to which they had partial immunity. When they reached the Americas, those pathogens spread through communities that had never experienced them, with devastating effects. The pattern reminds us that the growth of cities is inseparable from the biology of the people who live in them."
+    ],
+    [
+     "\n\nOur final topic is the link between glacial retreat and sea level rise, which students often misunderstand. The most common error is to imagine that melting sea ice, such as the ice floating around Antarctica, raises sea levels directly. ",
+     "In fact, floating ice already displaces its own weight in water, so its melting adds little to ocean volume.",
+     8,
+     ""
+    ],
+    [
+     " The contribution to sea level rise comes mostly from land-based ice, including the Greenland and Antarctic ice sheets and mountain glaciers. There are two main mechanisms. The first is surface meltwater, which flows to the ocean through rivers and subglacial channels. The second is the calving of icebergs from glacier termini that extend into the sea. Calving is sensitive to ocean temperature, because warmer water can undercut the leading edge of a glacier and accelerate its break-up. Recent observations suggest that calving now contributes a growing share of mass loss in regions like West Antarctica. The time scales also differ. Surface melt responds within years to changes in air temperature, while the dynamic response of an ice sheet can unfold over centuries, which is why long-term sea level projections remain uncertain."
+    ]
+   ],
+   "c2": [
+    [
+     "Student: Hi, I work at the campus library. ",
+     "I wanted to ask about a book I put on hold earlier this week.",
+     1,
+     ""
+    ],
+    [
+     "\nLibrarian: Sure, I can help with that. Do you have your student ID?\nStudent: Yes, here you go. The book is called Introduction to Marine Biology, and I think the hold was placed on Monday.\nLibrarian: Let me check our system. Yes, I see the request. Right now the book is still checked out to another student, and it is due back on Friday.\nStudent: So it will be available this weekend?\nLibrarian: Most likely. When it is returned, we will hold it at the front desk for forty eight hours. You will get an email when it is ready.\nStudent: Perfect. One more question, can I renew the book once I pick it up, or is that only for original borrowers?\nLibrarian: Students on the hold list can also renew, as long as no one else is waiting. You can do it online or at the desk.\nStudent: Great, thank you for explaining that.\nLibrarian: You are welcome. Have a good day."
+    ],
+    [
+     "\n\nMale student: Hey, are you free to talk about the group project for our environmental science class?\nFemale student: Sure, I have a few minutes before my next lecture. What do you need to discuss?\nMale student: We need to pick a case study. I was thinking about focusing on water pollution in coastal cities. What do you think?\nFemale student: That sounds good, but two other groups already chose that topic. Our professor suggested picking something less common.\nMale student: Right, I forgot about that. How about urban air quality? We could compare two cities with different policies.\nFemale student: I like that better. I can gather data on the first city if you handle the second one. When do we want to meet to write the report together?\nMale student: ",
+     "Could we meet on Thursday afternoon in the study room on the third floor?",
+     2,
+     ""
+    ],
+    [
+     "\nFemale student: Thursday works for me. I will bring my laptop and notes.\nMale student: Great, I will reserve the room and send everyone a confirmation email."
+    ],
+    [
+     "\n\nStudent: Professor Chen, do you have a moment? I am worried about the lab report I submitted yesterday.\nProfessor: Of course, come in. What is the issue?\nStudent: ",
+     "I think I may have attached the wrong file.",
+     3,
+     ""
+    ],
+    [
+     " The document I sent was an older draft, not the final version with the corrected data table.\nProfessor: I see. I have not opened the attachment yet because I usually review all reports over the weekend.\nStudent: Is there any way I can send you the correct file before you grade it?\nProfessor: Yes, please email it to me by Friday evening, and mention the original submission in the message so I can match them. I will replace the file in my folder.\nStudent: Thank you. I will send it right after this meeting.\nProfessor: No problem. For next time, consider including your name and the date in the file name to avoid confusion.\nStudent: That is a good idea. Thanks again, Professor."
+    ],
+    [
+     "\n\nStudent: Hello, this is Maya from the campus bookstore. I am calling about my work schedule for next week.\nManager: Hi Maya, I have it right here. You are currently scheduled for Tuesday, Thursday, and Saturday.\nStudent: I just realized there is a required workshop for my major on Saturday morning. ",
+     "Is there any way I can swap that shift with a coworker?",
+     4,
+     ""
+    ],
+    [
+     "\nManager: Let me think. Daniel usually wants extra hours, so he might be willing to cover. I will send him a message and let you know by tomorrow.\nStudent: That would be great. If Daniel can take it, do I still need to do anything?\nManager: Yes, please confirm the swap with him directly, and then I will update the schedule so payroll is correct.\nStudent: Sounds good. Thanks for being flexible.\nManager: No problem. I will email you once I hear back from Daniel."
+    ]
+   ],
+   "a2": [
+    [
+     "Good morning, students. This is a brief announcement from the main campus library. ",
+     "Beginning next Monday, the library will extend its weekday opening hours to better support evening study.",
+     1,
+     ""
+    ],
+    [
+     " The new schedule will be Monday through Thursday from 7:30 a.m. to 11:00 p.m., and on Friday from 7:30 a.m. to 8:00 p.m. Weekend hours remain unchanged: Saturday from 9:00 a.m. to 9:00 p.m., and Sunday from 10:00 a.m. to 8:00 p.m. The third floor quiet study zone will close fifteen minutes before the building closes, so please plan to gather your belongings in advance. Group study rooms on the second floor can still be booked through the library website up to one week in advance. We remind everyone that food is not allowed near the computer stations, but covered drinks are welcome. Thank you for your cooperation, and we wish you a productive week of study."
+    ],
+    [
+     "\n\nAttention, students. The campus dining services office would like to inform you about an update to the cafeteria payment system. ",
+     "Starting tomorrow, the cashier stations will accept only the new student ID card and the official campus payment app.",
+     2,
+     ""
+    ],
+    [
+     " Old magnetic stripe cards will no longer be accepted, and cash payments will be limited to a small number of designated registers near the south entrance. If you have not yet linked your student account to the campus payment app, please visit the dining services desk before the end of the week. Volunteers will be available today and tomorrow between noon and 3:00 p.m. to help with the setup process. The mobile app allows you to check your balance, view the daily menu, and add funds using a debit or credit card. Thank you for your patience during this transition."
+    ],
+    [
+     "\n\nHello, this is the transportation office with a quick update about the campus shuttle service. ",
+     "Due to construction near the engineering building, the Blue Line shuttle will follow a temporary route for the next three weeks.",
+     3,
+     ""
+    ],
+    [
+     " The revised route will stop at the science library, the student center, the north parking lot, and the residence hall, but it will skip the engineering building stop. A replacement shuttle, called the Engineering Express, will run every fifteen minutes between the main gate and the engineering building during peak hours. Peak hours are defined as 8:00 to 10:00 in the morning and 4:00 to 6:00 in the afternoon. Outside of those times, students are encouraged to use the standard Blue Line service. The Green Line and the Red Line routes are not affected. Please check the transportation website for the updated map."
+    ],
+    [
+     "\n\nGood afternoon, everyone. The career development center would like to remind all students about the upcoming fall career fair. ",
+     "The event will take place this Thursday from 10:00 a.m. to 4:00 p.m. in the main gymnasium.",
+     4,
+     ""
+    ],
+    [
+     " More than forty companies are expected to attend, including firms in engineering, business, information technology, and the nonprofit sector. Students are encouraged to bring several printed copies of their resume and to dress in business casual attire. Before the fair, the career center will host two preparation workshops: one on resume writing tomorrow at 2:00 p.m., and one on interview skills on Wednesday at 3:00 p.m. Both workshops will be held in room 210 of the student center. Online registration is available through the career center website, but walk in participants are also welcome. We look forward to seeing you there."
+    ]
+   ]
+  },
+  "weak": [],
+  "final": {
+   "score": "1.5",
+   "level": [
+    "Lower",
+    "低阶"
+   ],
+   "summary": [
+    "Your final Listening score is based on your Lower form.",
+    "最终听力分基于你的 Lower 卷表现。"
+   ],
+   "m1": [
+    "Placement: 3 of 32 correct — you were routed to the Lower form.",
+    "定级：32 题答对 3 题——你已进入 Lower（低阶）卷。"
+   ],
+   "m2": [
+    "Lower form: 0 of 15 questions answered before the time ran out.",
+    "Lower 卷：15 题作答 0 题，时间已到。"
+   ]
+  }
+ }
+}
