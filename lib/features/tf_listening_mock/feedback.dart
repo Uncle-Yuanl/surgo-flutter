@@ -7,6 +7,7 @@ import '../../app/routes.dart';
 import '../../theme/tokens.dart';
 import '../../widgets/primitives.dart';
 import '../../widgets/t.dart';
+import '../../widgets/demo_audio.dart';
 import 'data.dart';
 
 /// TOEFL listening MOCK feedback / review page — a faithful Flutter port of the
@@ -30,6 +31,8 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
   // Source module/state globals: `let tfFbMod='m1', tfFbType='r';`
   String _mod = 'm1';
   String _type = 'r';
+  // 逐题分析里点了播放键的那一题（见 _QCard 的播放条）。
+  Object? _heard;
 
   @override
   void initState() {
@@ -47,6 +50,7 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
   /// Source `tfFbPickMod(m)` — swap module tab, keep type if still present
   /// otherwise fall back to the first key of the new list.
   void _pickMod(String m) {
+    demoAudio.stop(); // 换模块 / 题型后，正在放的那张题卡不在屏幕上了：录音停掉。
     setState(() {
       _mod = m;
       final ks = _types().map((t) => t['key'] as String).toList();
@@ -55,7 +59,10 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
   }
 
   /// Source `tfFbPickType(t)`.
-  void _pickType(String t) => setState(() => _type = t);
+  void _pickType(String t) {
+    demoAudio.stop();
+    setState(() => _type = t);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -225,7 +232,11 @@ class _TfListenFeedbackPageState extends State<TfListenFeedbackPage> {
         child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
           const T('逐题分析', style: SurgoText.cardTitle),
           const SizedBox(height: 12),
-          for (final q in qs) _QCard(q: q as Map),
+          for (final q in qs)
+            _QCard(
+                q: q as Map,
+                heard: identical(_heard, q),
+                onHear: () => setState(() => _heard = q)),
         ]),
       ),
 
@@ -362,8 +373,12 @@ class _Chip extends StatelessWidget {
 
 // tffb-qcard
 class _QCard extends StatelessWidget {
-  const _QCard({required this.q});
+  const _QCard({required this.q, required this.heard, required this.onHear});
   final Map q;
+
+  /// 这一题是不是刚点了播放键的那一题，以及点的时候告诉页面。
+  final bool heard;
+  final VoidCallback onHear;
   @override
   Widget build(BuildContext context) {
     final ok = q['ok'] == true;
@@ -390,26 +405,61 @@ class _QCard extends StatelessWidget {
         const T('题目', style: SurgoText.cardDesc),
         SourceText(q['q'] as String, style: SurgoText.rowLabel),
         // tffb-audio row (progress simulation — no real audio).
-        Container(
-          margin: const EdgeInsets.symmetric(vertical: 12),
-          padding: const EdgeInsets.all(10),
-          decoration: BoxDecoration(
-              color: SurgoColors.bg, borderRadius: BorderRadius.circular(14)),
-          child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-            Row(children: [
-              const Icon(Icons.play_arrow, size: 18),
-              const SizedBox(width: 6),
-              Expanded(
-                  child: SourceText('00:00 / ${q['dur']}',
-                      style: const TextStyle(fontSize: 12))),
-              const SourceText('↺ 15   ↻ 15   1.0x', style: TextStyle(fontSize: 12)),
-            ]),
-            const SizedBox(height: 6),
-            const LinearProgressIndicator(
-                value: 0,
-                color: SurgoColors.yellow,
-                backgroundColor: SurgoColors.track),
-          ]),
+        // 演示用真实数据的每题带着它那段录音（clip：{ asset, sec }），网页上点这一条真的放：整条都算播放键
+        // （只点那个 18 像素的图标，手指很容易点偏），右边那几个字在原型里就是摆设，点了不算。原型数据没有
+        // clip，这一条照旧是摆设。全站同一时间只放一段，而一段录音常是几题共用的（模块 1 的「听后选择回应」
+        // 四题一段）：播放器里是这一段、点的又是这一题，才画它的进度和暂停键。
+        ListenableBuilder(
+          listenable: demoAudio,
+          builder: (_, __) {
+            final Map? clip = demoAudio.available ? q['clip'] as Map? : null;
+            final on =
+                clip != null && heard && demoAudio.asset == clip['asset'];
+            return Padding(
+              padding: const EdgeInsets.symmetric(vertical: 12),
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: clip == null
+                    ? null
+                    : () {
+                        final sec = (clip['sec'] as num).toDouble();
+                        if (on) {
+                          demoAudio.toggle(clip['asset'] as String, seconds: sec);
+                        } else {
+                          onHear();
+                          demoAudio.play(clip['asset'] as String, seconds: sec);
+                        }
+                      },
+                child: Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                      color: SurgoColors.bg, borderRadius: BorderRadius.circular(14)),
+                  child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+                    Row(children: [
+                      Icon(on && demoAudio.playing ? Icons.pause : Icons.play_arrow,
+                          size: 18),
+                      const SizedBox(width: 6),
+                      Expanded(
+                          child: SourceText(
+                              '${on ? (demoAudio.ended ? q['dur'] : _clock(demoAudio.position)) : '00:00'} / ${q['dur']}',
+                              style: const TextStyle(fontSize: 12))),
+                      GestureDetector(
+                          onTap: clip == null ? null : () {},
+                          child: const SourceText('↺ 15   ↻ 15   1.0x',
+                              style: TextStyle(fontSize: 12))),
+                    ]),
+                    const SizedBox(height: 6),
+                    LinearProgressIndicator(
+                        value: on
+                            ? (demoAudio.position / demoAudio.duration).clamp(0, 1)
+                            : 0,
+                        color: SurgoColors.yellow,
+                        backgroundColor: SurgoColors.track),
+                  ]),
+                ),
+              ),
+            );
+          },
         ),
         const T('你的作答', style: SurgoText.cardDesc),
         SourceText(q['mine'] as String,
@@ -434,4 +484,7 @@ class _QCard extends StatelessWidget {
       ]),
     );
   }
+
+  static String _clock(double s) =>
+      '${(s ~/ 60).toString().padLeft(2, '0')}:${(s.floor() % 60).toString().padLeft(2, '0')}';
 }

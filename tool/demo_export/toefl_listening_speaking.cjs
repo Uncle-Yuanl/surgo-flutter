@@ -126,13 +126,42 @@ const passagesOf = (list, nOf) => [...new Set(list.map((x) => x.audio))].map((au
   return { text: own[0].transcript, marks: own.map((x) => ({ n: nOf(x), span: x.support })) };
 });
 
-/** 做题页的一段：录音时长（秒）、同一段录音的序号、情境说明（每段录音的第一题带）、题干和选项。 */
+// 听力的录音文件（文件名 → MP3 字节）：dailyListening / mockListening 读出来先收在这里，build 一起交出去。
+const LISTENING_AUDIO = {};
+
+/**
+ * 给每道题挂上它那段录音（页面认的 clip：{ asset, sec }），做题页和批改页就真的放它。录音是后端存档里
+ * 挂在这道题上的那一份（x.stored：*_media_assets 里 purpose = 'listening_prompt'、state = 'attached' 的对象），
+ * 读出来按库里记的 sha256 / 大小核对。同一段录音的几道题共用一个文件；文件名按出场顺序编号，不带库里的 id。
+ * 没挂上录音的题不带 clip，页面那一段照旧走原型的模拟播放。
+ */
+function attachClips(list, prefix) {
+  // media.cjs 只有这里用，就在这里 require：文件头那几行，口语那半边同时在改。
+  const { object, audio, clip } = require('./media.cjs');
+  const clips = new Map(); // 录音（media asset）→ clip
+  for (const x of list) {
+    if (!x.stored) continue;
+    if (!clips.has(x.audio)) {
+      const name = `${prefix}_${clips.size + 1}.mp3`;
+      const sound = audio(object(x.stored, name), name);
+      LISTENING_AUDIO[name] = sound.bytes;
+      clips.set(x.audio, clip(name, sound.sec));
+    }
+    x.clip = clips.get(x.audio);
+  }
+}
+
+/** 这道题的录音多长（毫秒）：带了录音就是成品量出来的时长（页面的时间和进度才对得上真的在放的那段），否则是库里记的。 */
+const heardMs = (x) => (x.clip ? x.clip.sec * 1000 : x.ms);
+
+/** 做题页的一段：录音时长（秒）、同一段录音的序号、情境说明（每段录音的第一题带）、题干和选项、录音文件。 */
 function segments(list, audioKey, grouped) {
   const audios = [...new Set(list.map((x) => x.audio))];
   return list.map((x, i) => ({
-    sec: secs(x.ms),
+    sec: secs(heardMs(x)),
     ...(grouped ? { [audioKey]: audios.indexOf(x.audio) } : {}),
     ...(grouped && x.context && list.findIndex((y) => y.audio === x.audio) === i ? { lead: x.context } : {}),
+    ...(x.clip ? { clip: x.clip } : {}),
     q: x.prompt,
     opts: x.options.map((o) => [o.id, o.text]),
   }));
@@ -144,7 +173,8 @@ function questionCard(x, n, ok) {
   return {
     n,
     ok,
-    dur: clock(x.ms),
+    dur: clock(heardMs(x)),
+    ...(x.clip ? { clip: x.clip } : {}),
     q: x.type === 'listen_choose_response' ? `"${x.transcript}"` : x.prompt,
     mine: x.choice ? option(x, x.choice) : '—',
     ...(ok ? {} : { ans: option(x, x.answer) }),
@@ -158,6 +188,8 @@ function dailyListening(kind, learner) {
     `select jsonb_build_object(
       'n', i.ordinal, 'type', i.item_type, 'prompt', i.public_content->>'prompt', 'options', i.public_content->'options',
       'context', i.public_content#>>'{context,0,text}', 'audio', i.marking_key->>'media_asset_id', 'ms', m.duration_ms,
+      'stored', case when m.purpose = 'listening_prompt' and m.state = 'attached' and m.user_id = s.user_id
+        then jsonb_build_object('scope', 'user', 'key', m.object_key, 'sha256', m.sha256, 'size', m.size_bytes) end,
       'answer', i.marking_key#>>'{accepted_responses,0}', 'transcript', i.marking_key->>'listening_transcript',
       'support', i.marking_key->>'source_support', 'choice', r.response->>'choice',
       'score', a.task_score, 'outcome', a.result_detail->>'outcome', 'findings', ${findingsOf('toefl_daily', 'a.id')})
@@ -170,6 +202,7 @@ function dailyListening(kind, learner) {
      order by i.ordinal`,
   );
   if (!items.length) throw new Error(`toefl daily ${kind} ${id}: no scored items for this learner`);
+  attachClips(items, `aud_tf_listening_${kind}`);
   const right = items.filter((x) => x.outcome === 'matched').length;
   return {
     total: items.length,
@@ -266,6 +299,9 @@ function mockListening(learner) {
                   cross join jsonb_array_elements(u->'context') c
                   where u->>'id' = i.public_content->>'source_id' and c->>'label' = 'Context' limit 1),
       'audio', k.marking_key->>'media_asset_id', 'ms', m.duration_ms,
+      'stored', case when m.purpose = 'listening_prompt' and m.state = 'attached' and m.session_id = i.session_id
+          and m.user_id::text like ${lit(`${learner}%`)}
+        then jsonb_build_object('scope', m.storage_scope, 'key', m.object_key, 'sha256', m.sha256, 'size', m.size_bytes) end,
       'answer', k.marking_key#>>'{accepted_responses,0}', 'transcript', k.marking_key->>'listening_transcript',
       'support', k.marking_key->>'source_support', 'choice', x.response->>'choice')
      from toefl_mock_exam_items i
@@ -285,6 +321,7 @@ function mockListening(learner) {
   for (const [key, [stage, type]] of Object.entries(MOCK_MODULES)) {
     const list = of(stage, type);
     if (!list.length) throw new Error(`toefl mock listening ${id}: stage ${stage} has no ${type}`);
+    attachClips(list, `aud_tf_listening_mock_${key}`);
     // 「听后选择回应」每题单独放一遍录音（页面的 locked 样式），不分组、不带情境说明。
     modules[key] = { total: list.length, segments: segments(list, 'audio', type !== 'listen_choose_response') };
   }
@@ -402,6 +439,7 @@ exports.build = ({ learner }) => ({
     ['respond', 'convo', 'announce', 'lecture'].map((kind) => [kind, dailyListening(kind, learner)]),
   ),
   'tf_listening_mock.json': mockListening(learner),
+  ...LISTENING_AUDIO, // 上面两项读出来的听力录音（aud_tf_listening_*.mp3）
   'tf_speaking_daily.json': Object.fromEntries(
     ['retell', 'interview'].map((kind) => [kind, dailySpeaking(kind, learner)]),
   ),
