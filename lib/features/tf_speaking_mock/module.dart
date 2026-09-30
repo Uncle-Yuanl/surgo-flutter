@@ -52,7 +52,9 @@ class _TfSpeakingMockPageState extends State<TfSpeakingMockPage> {
   else if(demoAudio.ended){c1?.heard();c2?.heard();}
   else{final at=demoAudio.position.floor().clamp(0,sec);c1?.audio=at;c2?.audio=at;}
  }
- void run(){timer?.cancel();if(hearing)hear();timer=Timer.periodic(Duration(milliseconds:hearing?250:1000),(_){if(!mounted)return;final was=hearing;String? result;
+ void run(){timer?.cancel();if(hearing)hear();timer=Timer.periodic(Duration(milliseconds:hearing?250:1000),(_){
+  // 被换走的页面（淡出的 300 毫秒里还活着）整个停下：不再推进，也不再弹「停止回答」——那个弹窗弹出来就没人关了。
+  if(!mounted||context.read<AppState>().revision!=revision)return;final was=hearing;String? result;
   if(was){hear();}else{result=c1!=null?c1!.step():c2!.step();}
   save();setState((){});
   // 进、出真音频的播放阶段各换一次节拍；出来时从整秒重新数，「准备」和作答的第一秒才是完整的一秒。

@@ -9,7 +9,9 @@ class IeltsMockSpeakingData {
  static Future<Map<String,dynamic>> load()async=>cache??=jsonDecode(await rootBundle.loadString('assets/data/ielts_mock_speaking.json')) as Map<String,dynamic>;
 }
 class IeltsMockSpeakingController extends ChangeNotifier {
- IeltsMockSpeakingController(this.app,this.data,{OralSpeech? speech,required this.mark}):speech=speech??NativeOralSpeech(){part=app.session['spqPart'] as String? ?? 'p1';reset(part);}
+ IeltsMockSpeakingController(this.app,this.data,{OralSpeech? speech,required this.mark}):speech=speech??NativeOralSpeech(),revision=app.revision{part=app.session['spqPart'] as String? ?? 'p1';reset(part);}
+ /// 建控制器时的 AppState.revision：每次换页它都加一，对不上就是这一页已经被换走了（还要淡出 300 毫秒才 dispose）。
+ final int revision;
  final AppState app;final Map<String,dynamic> data;final OralSpeech speech;final VoidCallback mark;
  late String part;int index=0,left=300,recSec=0,prep=60,recLeft=120,round=1,phaseLeft=5;
  String phase='prep',turn='ask',note='';bool recording=false,busy=false,disposed=false;
@@ -26,6 +28,8 @@ class IeltsMockSpeakingController extends ChangeNotifier {
  void start(){clock?.cancel();clock=Timer.periodic(const Duration(seconds:1),(_)=>tick());if(part!='p3')later(260,()=>play(index,auto:part=='p1'));emit();}
  void select(String p){reset(p);start();}
  Future<void> play(int qi,{bool auto=false})async{
+  // 被换走的页面不再提问：这时再放，考官的声音会在下一个页面上响一下。
+  if(app.revision!=revision)return;
   final qs=cfg['qs'] as List,text=qi<qs.length?qs[qi] as String:'';speech.stop();final generation=++epoch;
   if(auto){busy=true;recording=false;emit();}
   // busy 只由提问结束来解除：提问途中手点重播会作废那一次朗读，所以重播结束时也要解除，否则麦克风一直点不动。
