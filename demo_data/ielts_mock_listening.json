@@ -8,7 +8,11 @@
    "no": 1,
    "audioTitle": "第 1 部分播放中",
    "audioBarPct": 0,
-   "audioTime": "00:00/07:00",
+   "audioTime": "00:00/02:17",
+   "audio": {
+    "asset": "assets/data/aud_mock_listening_p1.mp3",
+    "sec": 137.7
+   },
    "tip": "你有约 20 秒查看题目。 (18s)",
    "dotFrom": 1,
    "next": "mockListeningQ2",
@@ -64,8 +68,12 @@
   {
    "no": 2,
    "audioTitle": "第 2 部分播放中",
-   "audioBarPct": 17,
-   "audioTime": "01:12/07:00",
+   "audioBarPct": 0,
+   "audioTime": "00:00/02:32",
+   "audio": {
+    "asset": "assets/data/aud_mock_listening_p2.mp3",
+    "sec": 152.9
+   },
    "dotFrom": 11,
    "next": "mockListeningQ3",
    "groups": [
@@ -130,8 +138,12 @@
   {
    "no": 3,
    "audioTitle": "第 3 部分播放中",
-   "audioBarPct": 5,
-   "audioTime": "00:19/07:00",
+   "audioBarPct": 0,
+   "audioTime": "00:00/04:33",
+   "audio": {
+    "asset": "assets/data/aud_mock_listening_p3.mp3",
+    "sec": 273.7
+   },
    "dotFrom": 21,
    "next": "mockListeningQ4",
    "groups": [
@@ -199,7 +211,11 @@
    "no": 4,
    "audioTitle": "第 4 部分播放中",
    "audioBarPct": 0,
-   "audioTime": "00:00/07:00",
+   "audioTime": "00:00/04:00",
+   "audio": {
+    "asset": "assets/data/aud_mock_listening_p4.mp3",
+    "sec": 240.9
+   },
    "tip": "你有约 20 秒查看题目。 (15s)",
    "dotFrom": 31,
    "next": null,

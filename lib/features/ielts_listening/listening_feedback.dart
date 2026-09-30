@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../../app/app_state.dart';
 import '../../app/routes.dart';
 import '../../theme/tokens.dart';
+import '../../widgets/demo_audio.dart';
 import '../ielts_reading/review_style.dart';
 import '../ielts_reading/review_summary.dart';
 import 'feedback_body.dart';
@@ -45,6 +46,8 @@ class _ListeningFeedbackState extends State<ListeningFeedback> {
     if (next == part) return;
     final dir = next > part ? 1 : -1;
     context.read<AppState>().session['lfPart'] = next;
+    // 换 Part：上一个 Part 的录音停下，倍速回到 1X（新的播放条也是从 1X 开始的）。
+    demoAudio.stop();
     setState(() {
       part = next;
       tabsRefreshed = true;

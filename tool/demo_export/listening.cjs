@@ -5,6 +5,8 @@
 // 图示标注题的图（ielts_listening_daily_media 记的 PNG，存在后端的文件存储里）原样导出。
 // 日常练习的录音也导出（页面的播放器真的放它）：现行日常存在 ielts_listening_daily_media，
 // 旧版日常是后端朗读缓存里按「音色 + 原文」寻址的那一份。
+// 模考四个 Part 的录音存在 ielts_mock_exam_media_artifacts（每个 Part 一段 MP3），考试页进来就放它。
+// 回顾页每个 Part 的播放条放的是同一段录音（日常的回顾用日常那四段，不另导一份）。
 const fs = require('fs');
 const path = require('path');
 const { one, lit } = require('./db.cjs');
@@ -214,6 +216,10 @@ function mockSession(id, learner) {
           'instructions', x.public_content->>'instructions',
           'transcript', (select k.marking_key->>'listening_transcript' from ielts_mock_exam_items i join ielts_mock_exam_marking_keys k on k.item_id = i.id
                          where i.section_id = x.id and k.marking_key ? 'listening_transcript' limit 1),
+          'audio', (select jsonb_build_object('scope', m.storage_scope, 'key', m.object_key, 'sha256', m.content_sha256, 'size', m.size_bytes)
+                    from ielts_mock_exam_media_artifacts m
+                    where m.session_id = s.id and m.user_id = s.user_id and m.section_ordinal = x.ordinal
+                      and m.artifact_kind = 'listening_audio' and m.state = 'attached'),
           'items', (select jsonb_agg(jsonb_build_object(
                 'type', i.public_content->>'type', 'prompt', i.public_content->>'prompt', 'options', i.public_content->'options',
                 'accepted', k.marking_key->'accepted_responses', 'quote', k.marking_key->>'source_support', 'answer', p.response->>'answer') order by i.ordinal)
@@ -247,7 +253,15 @@ function mockSession(id, learner) {
         quote: it.quote,
       };
     });
-    return { n: i + 1, title: null, instruction: sec.instructions, lines: (sec.transcript || '').split('\n').filter(Boolean), questions };
+    const what = `mock listening part ${i + 1} audio`;
+    return {
+      n: i + 1,
+      title: null,
+      instruction: sec.instructions,
+      lines: (sec.transcript || '').split('\n').filter(Boolean),
+      questions,
+      audio: audio(object(sec.audio, what), what),
+    };
   });
   // 后端只存了总对题数，没有逐题对错；这里按答案键逐题比对，必须和它对得上。
   if (right !== Number(s.correct)) throw new Error(`mock listening: ${right} correct by key, backend stored ${s.correct}`);
@@ -256,8 +270,8 @@ function mockSession(id, learner) {
 
 // ---------- 写成页面认的格式 ----------
 
-/** 回顾页的一个 Part：原文（依据句按页面认的 span 标出题号和对错）+ 每道题。 */
-function feedback(base, part, questions) {
+/** 回顾页的一个 Part：原文（依据句按页面认的 span 标出题号和对错）+ 每道题；recording 是这一 Part 的录音，播放条放它。 */
+function feedback(base, part, questions, recording) {
   const hits = part.lines.map(() => []);
   for (const q of questions) {
     if (!q.quote) continue;
@@ -285,6 +299,7 @@ function feedback(base, part, questions) {
     title: part.title ? [`Transcript — ${part.title}`, `听力原文 · ${part.title}`] : null,
     tag: tag(questions.map((q) => q.type)),
     tHtml,
+    audio: recording,
     qs: questions.map((q) => ({
       n: q.n,
       ok: q.ok,
@@ -352,7 +367,7 @@ exports.build = ({ learner }) => {
     const part = from.attempt ? legacyPart(Number(n), from.attempt, learner) : sessionPart(Number(n), from.session, learner);
     Object.assign(figures, part.figures, { [`aud_listening_p${n}.mp3`]: part.audio.bytes });
     parts[`s${n}`] = dailyPage(daily.parts[`s${n}`], part);
-    reviews[n] = feedback(daily.feedback[n], part, flat(part));
+    reviews[n] = feedback(daily.feedback[n], part, flat(part), parts[`s${n}`].audio);
   }
 
   const m = mockSession(MOCK, learner);
@@ -360,13 +375,19 @@ exports.build = ({ learner }) => {
   const exam = proto('ielts_mock_listening.json').parts.map((p) => {
     const part = m.parts.find((x) => x.n === p.no);
     const questions = part.questions;
-    mockReviews[p.no] = feedback({}, part, questions);
-    // 考试页：真实模考每个 Part 是一组混排的题，播放条那几项是模拟的，沿用原型。
+    // 这一 Part 的录音：考试页进来就放，回顾页的播放条放的也是这个文件。
+    const name = `aud_mock_listening_p${p.no}.mp3`;
+    const recording = clip(name, part.audio.sec);
+    figures[name] = part.audio.bytes;
+    mockReviews[p.no] = feedback({}, part, questions, recording);
+    // 考试页：真实模考每个 Part 是一组混排的题。audioBarPct / audioTime 是放不了音频时（不在网页上）
+    // 页面画的那一格写死的进度：还没开始，总时长按录音。
     return {
       no: p.no,
       audioTitle: p.audioTitle,
-      audioBarPct: p.audioBarPct,
-      audioTime: p.audioTime,
+      audioBarPct: 0,
+      audioTime: `00:00/${clock(part.audio.sec)}`,
+      audio: recording,
       ...(p.tip ? { tip: p.tip } : {}),
       dotFrom: questions[0].n,
       next: p.next,

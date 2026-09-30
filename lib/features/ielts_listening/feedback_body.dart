@@ -46,8 +46,10 @@ class ListeningReviewBody extends StatelessWidget {
           const SizedBox(height: 6)
         ] else
           const SizedBox(height: 4),
+        // 演示用真实数据带着这一 Part 的录音（audio：{ asset, sec }），播放条放它；原型数据没有。
         ListeningReviewAudio(
             key: ValueKey('lf-audio-$part'),
+            clip: data['audio'],
             duration: ['05:12', '05:48', '05:36', '05:00'][part - 1]),
         const RfText('高亮句对应每道题——带题号，绿色＝答对，红色＝答错。',
             color: Color(0xffb7b0a3), italic: true),

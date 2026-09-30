@@ -3,8 +3,11 @@ import 'package:provider/provider.dart';
 import '../../app/app_state.dart';
 import '../ielts_reading/review_style.dart';
 import '../../theme/tokens.dart';
+import '../../widgets/demo_audio.dart';
 
 /// Source feedback play button has no onclick. Speed is a label-only local menu.
+/// 演示用真实数据带着这一 Part 的录音（[ListeningReviewAudio.clip]），网页上这一条是真的播放条：
+/// 播放 / 暂停，竖条按进度变深，倍速作用在播放器上。原型数据、或不在网页上，仍是上面说的样子。
 class _ReviewPlayTriangle extends CustomPainter {
   const _ReviewPlayTriangle();
   @override
@@ -20,16 +23,57 @@ class _ReviewPlayTriangle extends CustomPainter {
 }
 
 class ListeningReviewAudio extends StatefulWidget {
-  const ListeningReviewAudio({super.key, required this.duration});
+  const ListeningReviewAudio({super.key, required this.duration, this.clip});
   final String duration;
+
+  /// 这一 Part 的录音：{ asset, sec }；原型数据没有。
+  final Map? clip;
   @override
   State<ListeningReviewAudio> createState() => _ListeningReviewAudioState();
 }
 
 class _ListeningReviewAudioState extends State<ListeningReviewAudio> {
   String speed = '1X';
+  Map? get clip => demoAudio.available ? widget.clip : null;
+  void _changed() => setState(() {});
+  static String _mmss(int s) =>
+      '${'${s ~/ 60}'.padLeft(2, '0')}:${'${s % 60}'.padLeft(2, '0')}';
+
   @override
-  Widget build(BuildContext context) => Container(
+  void initState() {
+    super.initState();
+    demoAudio.addListener(_changed);
+  }
+
+  // 停不在这里：换页由 AppState.go 统一停，换 Part 由回顾页（ListeningFeedback.select）停。
+  @override
+  void dispose() {
+    demoAudio.removeListener(_changed);
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final clip = this.clip;
+    // 全站同一时间只放一段：播放器里是这一段，才算这一条在放、有进度。
+    final mine = clip != null && demoAudio.asset == clip['asset'];
+    final playing = mine && demoAudio.playing;
+    // 40 根竖条里放到的那几根变深（一放就有第一根，放完是全部）。
+    final played = mine ? 40 * demoAudio.position / demoAudio.duration : 0;
+    // 有录音就写它的真实时长（不在网页上、放不了时也是）。
+    final length = (widget.clip?['sec'] as num?)?.floor();
+    final button = Container(
+        key: ValueKey(clip == null ? 'lf-play-inert' : 'lf-play'),
+        width: 32,
+        height: 32,
+        alignment: Alignment.center,
+        decoration: const BoxDecoration(
+            color: Color(0xff6b52d6), shape: BoxShape.circle),
+        child: playing
+            ? const Icon(Icons.pause, size: 18, color: Colors.white)
+            : const CustomPaint(
+                size: Size(9, 10), painter: _ReviewPlayTriangle()));
+    return Container(
       key: const ValueKey('lf-audio'),
       margin: const EdgeInsets.only(top: 4, bottom: 12),
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
@@ -37,15 +81,12 @@ class _ListeningReviewAudioState extends State<ListeningReviewAudio> {
           color: const Color(0xffefeafd),
           borderRadius: BorderRadius.circular(12)),
       child: Row(children: [
-        Container(
-            key: const ValueKey('lf-play-inert'),
-            width: 32,
-            height: 32,
-            alignment: Alignment.center,
-            decoration: const BoxDecoration(
-                color: Color(0xff6b52d6), shape: BoxShape.circle),
-            child: const CustomPaint(
-                size: Size(9, 10), painter: _ReviewPlayTriangle())),
+        clip == null
+            ? button
+            : GestureDetector(
+                onTap: () => demoAudio.toggle(clip['asset'],
+                    seconds: (clip['sec'] as num).toDouble()),
+                child: button),
         const SizedBox(width: 10),
         Expanded(
             child: SizedBox(
@@ -64,12 +105,13 @@ class _ListeningReviewAudioState extends State<ListeningReviewAudio> {
                                             ? 0.9
                                             : 0.6),
                                 decoration: BoxDecoration(
-                                    color: const Color(0xffb9a9ef),
+                                    color: Color(
+                                        i - 1 < played ? 0xff6b52d6 : 0xffb9a9ef),
                                     borderRadius: BorderRadius.circular(2))))
                       ]
                     ]))),
         const SizedBox(width: 10),
-        RfText(widget.duration,
+        RfText(length == null ? widget.duration : _mmss(length),
             weight: FontWeight.w700, color: const Color(0xff6b52d6)),
         const SizedBox(width: 12),
         PopupMenuButton<String>(
@@ -86,6 +128,7 @@ class _ListeningReviewAudioState extends State<ListeningReviewAudio> {
             menuPadding: EdgeInsets.zero,
             onSelected: (value) {
               context.read<AppState>().session['lisSpeed'] = value;
+              demoAudio.rate = double.parse(value.replaceAll('X', ''));
               setState(() => speed = value);
             },
             itemBuilder: (_) => ['0.75X', '1X', '1.25X', '1.5X']
@@ -127,4 +170,5 @@ class _ListeningReviewAudioState extends State<ListeningReviewAudio> {
                           fontSize: 12, height: 1, color: Color(0xff8f82c9)))
                 ]))),
       ]));
+  }
 }
