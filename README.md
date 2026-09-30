@@ -9,8 +9,9 @@
 - **数据**：`demo_data/` 是从本地后端库只读导出的一位学员的真实作答，`assets/data/` 仍是原型数据（测试跑的是它）。
   怎么导、哪些规矩、怎么验证见 `tool/demo_export/README.md`；换一场作答 = 改对应模块文件头的 id，
   重跑 `node tool/demo_export/export.cjs`，提交 `demo_data/`。
-- **发布**：推 `vercel` 分支。Vercel 项目连上这个 GitHub 仓库后会自动构建；没连上时本地跑构建脚本，
-  再 `vercel deploy --prebuilt --prod`（产物放 `.vercel/output/static`）。
+- **发布**：推 `vercel` 分支。Vercel 项目 `surgo-demo` 已连这个 GitHub 仓库，生产分支是 `vercel`，推送后自动
+  构建并上线；其他分支不构建（项目的 Ignored Build Step）。要手动发时：本地跑构建脚本，再
+  `vercel deploy --prebuilt --prod`（产物放 `.vercel/output/static`）。
 
 A new Flutter project.
 
