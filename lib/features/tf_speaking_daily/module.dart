@@ -37,29 +37,38 @@ class TfSpeakingDailyPage extends StatefulWidget {
 class _TfSpeakingDailyPageState extends State<TfSpeakingDailyPage> {
   TfSpeakingController? c;
   Timer? audioTimer, recTimer;
+  // 建页时的 AppState.revision。每次换页（go，包括 go 到同一页重建）它都加一，对不上就是这一页已经被换走了。
+  late int revision;
 
   @override
   void initState() {
     super.initState();
     final app = context.read<AppState>();
+    revision = app.revision;
     TfSpeakingData.load().then((raw) {
       if (!mounted) return;
       setState(() => c = TfSpeakingController(app, widget.kind, raw[widget.kind] as Map<String, dynamic>));
       if (!widget.feedback) {
-        if (c!.phase == 'play') _runAudio();
+        if (c!.phase != 'answer') _runAudio();
         if (c!.phase == 'answer') _runAnswer();
       }
     });
   }
 
-  // 模拟音频进度：间隔随倍速而变（源 tfRtRunAudio: setInterval(…, 1000/rate)）
+  // 模拟音频进度：间隔随倍速而变（源 tfRtRunAudio: setInterval(…, 1000/rate)）。
+  // 真音频（c.clip）不数秒：音频卡在的两个阶段（播放 / 确认）按播放器的状态同步，进来先同步一次（提示音就从
+  // 这一次起播），之后每 250 毫秒一次。离开页面不用停：换页时 AppState.go 统一停。
   void _runAudio() {
     audioTimer?.cancel();
-    if (c!.phase != 'play') return;
-    audioTimer = Timer.periodic(Duration(milliseconds: c!.audioInterval), (_) {
-      if (!mounted) return;
+    final real = c!.clip != null;
+    if (real ? c!.phase == 'answer' : c!.phase != 'play') return;
+    // 已经被换走的页面（还要淡出 300 毫秒才 dispose）不再碰播放器：这时再起播，声音会留在下一个页面上没人停。
+    bool gone() => c!.app.revision != revision;
+    if (real && !gone()) c!.audioTick();
+    audioTimer = Timer.periodic(Duration(milliseconds: real ? 250 : c!.audioInterval), (_) {
+      if (!mounted || real && gone()) return;
       setState(c!.audioTick);
-      if (c!.phase != 'play') audioTimer?.cancel();
+      if (!real && c!.phase != 'play') audioTimer?.cancel();
     });
   }
 
@@ -135,7 +144,7 @@ class _TfSpeakingDailyPageState extends State<TfSpeakingDailyPage> {
       // 用户 2026-09-24：标签连带音频卡移到返回箭头的下一行（第 2、3 部分同改）。
       // 播放/确认阶段展示音频卡；作答阶段隐藏（源 tsoSpeakView）。
       if (playing || ready) ...[
-        _audioCard(x, playing),
+        _audioCard(x, x.playing),
         const SizedBox(height: 16),
       ],
       // 作答阶段的中央大计时
@@ -177,7 +186,7 @@ class _TfSpeakingDailyPageState extends State<TfSpeakingDailyPage> {
         subtitle: playing ? '正在播放...' : '本次训练中可按需重播与变速。',
         elapsed: clock(x.audio),
         total: clock(x.sec),
-        progress: x.audio / x.sec,
+        progress: x.progress,
         playing: playing,
         speedLabel: '${x.rates[x.rate]}X',
         speeds: [for (final r in x.rates) '${r}X'],
@@ -187,8 +196,8 @@ class _TfSpeakingDailyPageState extends State<TfSpeakingDailyPage> {
           setState(() => x.setRate(i));
           _runAudio();
         },
-        onToggle: () { setState(x.replay); _runAudio(); },
-        onSeek: (s) => setState(() => x.audio = (x.audio + s).clamp(0, x.sec)),
+        onToggle: () { setState(x.toggle); _runAudio(); },
+        onSeek: (s) => setState(() => x.skip(s)),
         onRestart: () { setState(x.replay); _runAudio(); },
       );
 
@@ -201,7 +210,7 @@ class _TfSpeakingDailyPageState extends State<TfSpeakingDailyPage> {
         Expanded(child: SurgoButton(x.isLast ? '提交' : '下一段', onTap: _next)),
       ]);
     }
-    if (ready) return SurgoButton('开始答题', onTap: () { setState(x.begin); _runAnswer(); });
+    if (ready) return SurgoButton('开始答题', onTap: () { audioTimer?.cancel(); setState(x.begin); _runAnswer(); });
     return SurgoButton('播放中...', onTap: null);
   }
 }

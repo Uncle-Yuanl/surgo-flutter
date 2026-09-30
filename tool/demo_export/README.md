@@ -52,6 +52,12 @@ JSON，不调接口，也不现场生成任何内容。
     还晚，这一停会把新页面刚放起来的那一段掐掉。进页面就自动放的，在 `initState` 之后放都行（go 已经先停过了）。
   - 一张卡要连着放几段（回顾页：提问接着作答、Part 2 三轮连放）：监听 `demoAudio`，上一段 `ended` 了就放
     下一段，见 `lib/features/speaking_review/speaking_review_page.dart` 的 `_queue`。
+  - **自己会起播的页面**（倒计时走完自动进下一段、每秒跟一次进度的考试页）：被换走的页面在那 300 毫秒里
+    定时器还在跑，恰好这时起播，声音就留在下一个页面上没人停。建页（或建控制器）时记下 `AppState.revision`，
+    对不上就不再碰播放器，例：`lib/features/tf_listening_mock/controller.dart` 的 `listen()`、
+    `lib/features/tf_speaking_mock/module.dart` 的 `hear()`、雅思模考听力按 `app.current` 判断。
+  - 一段录音几道题共用时（托福听力一段对话出几题、批改页每题一条播放条）：只有「播放器里是这一段、点的又是
+    这一题」才画它的进度，见 `lib/features/tf_listening_mock/feedback.dart` 的 `heard`。
   - 考官提问：题库 `ielts.speaking.examinerAudio`（题目原文 → `{ asset, sec }`），
     `NativeOralSpeech` 见到就放它、不用浏览器朗读；放不出声（或浏览器朗读 2.5 秒还没开始）就把题目文字
     显示出来，流程照走（`test/speaking_unheard_test.dart`）。

@@ -1,4 +1,5 @@
 import '../../app/app_state.dart';
+import '../../widgets/demo_audio.dart';
 
 /// Generic, PARAMETERIZED controller for the seven repeated TOEFL listening
 /// MOCK question modules (tfListenQ / tfConvQ / tfAnnQ / tfTalkQ /
@@ -21,7 +22,7 @@ import '../../app/app_state.dart';
 /// flow — there is NO Audio/TTS call and no invented speech. Answer countdown,
 /// segment totals and the transition chain are copied verbatim.
 class TfMockController {
-  TfMockController(this.app, this.module) {
+  TfMockController(this.app, this.module) : _revision = app.revision {
     index = app.session['${prefix}Idx'] as int? ?? 0;
     phase = app.session['${prefix}Phase'] as String? ?? 'play';
     left = app.session['${prefix}Left'] as int? ?? answerSec;
@@ -76,10 +77,44 @@ class TfMockController {
         '_${prefix}Notes': notes,
       });
 
+  /// 演示用真实数据的每一段带着后端存的那段录音（clip：{ asset, sec }，tool/demo_export 导出），网页上真的放它；
+  /// 没有这一项（原型数据）或不在网页上，就是上面说的模拟播放：每秒走 1 秒，走到 sec 秒。
+  Map? get clip => demoAudio.available ? current['clip'] as Map? : null;
+  // 全站同一时间只放一段：播放器里是这一段，它的位置才算这一段的进度。
+  bool get _loaded => clip != null && demoAudio.asset == clip!['asset'];
+  double get progress =>
+      _loaded ? demoAudio.position / demoAudio.duration : audio / curSec;
+
+  // 建这一页时的 revision（AppState 每次换页加一）。对不上，就是这一页已经被换掉、正在退场：旧页面还要留
+  // 300 毫秒的过渡，答题倒计时照跑，恰好在这时走到 0 会自动进下一段——不能让它把下一段的录音放起来。
+  final int _revision;
+
+  /// 放这一段的录音。模考只放一遍，没有暂停、拖动和重播；从记着的位置放，是为了中途离开再回来时接着放。
+  void listen() {
+    if (clip == null || app.revision != _revision) return;
+    demoAudio.play(clip!['asset'] as String,
+        seconds: (clip!['sec'] as num).toDouble(),
+        from: audio >= curSec ? 0 : audio.toDouble());
+  }
+
   /// One second of forced playback. Unlocks to the answer phase once the whole
   /// recording has "played" (mirrors the source audio setInterval).
   void audioTick() {
     if (phase != 'play') return;
+    if (clip != null) {
+      // 播放器里已经不是这一段：页面正在退场（换页时 AppState.go 先把播放器停了，旧页面还要留 300 毫秒的过渡）。
+      // 不动它，更不能再放起来；记着的位置留给下次进来接着放。
+      if (!_loaded) return;
+      // 位置和放完都读播放器：放不出声时它按时长空走、照样放完，这里不会一直等。
+      audio = demoAudio.position.floor().clamp(0, curSec);
+      if (demoAudio.ended) {
+        audio = curSec;
+        phase = 'answer';
+        left = answerSec;
+      }
+      save();
+      return;
+    }
     audio++;
     if (audio >= curSec) {
       audio = curSec;
@@ -122,6 +157,7 @@ class TfMockController {
     } else {
       audio = 0;
       phase = 'play';
+      listen();
     }
     save();
     return true;
