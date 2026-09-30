@@ -26,7 +26,9 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
     final state = context.read<AppState>();
     final fb = widget.fb;
     final types = (fb['types'] as List).cast<Map<String, dynamic>>();
-    final subs = (fb['subs'] as List).cast<Map<String, dynamic>>();
+    // 原型的子分只有一组；演示用真实数据（tool/demo_export）两种题型的评分项不同，按题型各一组。
+    final subsRaw = fb['subs'];
+    final subs = ((subsRaw is Map ? subsRaw[type] : subsRaw) as List).cast<Map<String, dynamic>>();
     final weak = (fb['weak'] as List).cast<Map<String, dynamic>>();
     final questions = ((fb['questions'] as Map)[type] as List).cast<Map<String, dynamic>>();
 
@@ -36,7 +38,9 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
       SurgoCard(color: SurgoColors.yellowSoft, child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         const T('总体 · 练习估分', style: SurgoText.cardDesc), const SizedBox(height: 8),
         SourceText('${fb['score']} / 6.0', style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 36, fontWeight: FontWeight.w900)),
-        T(fb['description'] as String, style: SurgoText.cardDesc), const SizedBox(height: 7),
+        // 后端没有整场的一句话总评，真实数据这一行不画。
+        if (fb['description'] != null) T(fb['description'], style: SurgoText.cardDesc),
+        const SizedBox(height: 7),
         T(fb['footnote'] as String, style: SurgoText.cardDesc),
       ])),
       // 各题型得分条（源 tffb-bar-row）
@@ -50,15 +54,15 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
           SourceText('${(t['score'] as num).toStringAsFixed(1)}/6', style: SurgoText.rowLabel),
         ])),
       ])),
-      // 薄弱项分析（源 tffb-weak，两段静态）
-      SurgoCard(child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+      // 薄弱项分析（源 tffb-weak，两段静态）。文案可以是 [英文, 中文] 一对；没分析出薄弱项时整块不画。
+      if (weak.isNotEmpty) SurgoCard(child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
         const T('薄弱项分析', style: SurgoText.cardTitle), const SizedBox(height: 10),
         const T('仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。', style: SurgoText.cardDesc), const SizedBox(height: 12),
         for (final w in weak) Padding(padding: const EdgeInsets.only(bottom: 12), child:
           SurgoCard(color: SurgoColors.bg, child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Wrap(spacing: 6, runSpacing: 4, children: [for (final tag in w['tags'] as List) T(tag as String, style: SurgoText.cardEn)]),
-            const SizedBox(height: 8), T(w['q'] as String, style: SurgoText.rowLabel),
-            const SizedBox(height: 8), T(w['a'] as String, style: SurgoText.cardDesc),
+            Wrap(spacing: 6, runSpacing: 4, children: [for (final tag in w['tags'] as List) T(tag, style: SurgoText.cardEn)]),
+            const SizedBox(height: 8), T(w['q'], style: SurgoText.rowLabel),
+            const SizedBox(height: 8), T(w['a'], style: SurgoText.cardDesc),
           ]))),
         const T('仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。', style: SurgoText.cardDesc),
         const SizedBox(height: 12),
@@ -77,7 +81,8 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
       SurgoCard(child: Wrap(spacing: 12, runSpacing: 8, children: [
         for (final sc in subs)
           Row(mainAxisSize: MainAxisSize.min, children: [
-            T('${sc['n']}  ', style: SurgoText.cardDesc),
+            // 名称后面留两个空格；名称是 [英文, 中文] 一对时两项都留。
+            T(sc['n'] is List ? [for (final s in sc['n'] as List) '$s  '] : '${sc['n']}  ', style: SurgoText.cardDesc),
             SourceText(sc['v'] as String, style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontWeight: FontWeight.w800,
                 color: sc['c'] == 'ok' ? SurgoColors.ok : sc['c'] == 'bad' ? SurgoColors.overrun : SurgoColors.ink)),
           ]),
@@ -92,12 +97,19 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
   }
 
   Widget _qCard(Map<String, dynamic> q) {
-    final ok = q['ok'] as bool;
+    final ok = q['ok'] == true;
     final pct = q['pct'] as int?; // 仅 Listen & Repeat 有
+    // 演示用真实数据：口语没有对错，每题带的是这一题的分（score）和学员那段录音的时长（myDur）；
+    // 反馈是 [英文, 中文] 一对。原型数据没有这些键，走原来的写法。
+    final score = q['score'] as String?;
+    final fb = q['fb'];
     return SurgoCard(child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       Row(children: [
         Expanded(child: T('第 ${q['n']}', style: SurgoText.rowLabel)),
-        T(ok ? '表现良好' : '错误', style: TextStyle(color: ok ? SurgoColors.ok : SurgoColors.overrun, fontSize: 13.5)),
+        if (score != null)
+          SourceText('$score / 6', style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 13.5, fontWeight: FontWeight.w800))
+        else
+          T(ok ? '表现良好' : '错误', style: TextStyle(color: ok ? SurgoColors.ok : SurgoColors.overrun, fontSize: 13.5)),
       ]),
       const SizedBox(height: 10),
       const T('考官提问', style: SurgoText.cardDesc),
@@ -106,7 +118,7 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
       const SizedBox(height: 10),
       _audio('考官', q['dur'] as String),
       const SizedBox(height: 6),
-      _audio('你的作答', q['dur'] as String),
+      _audio('你的作答', (q['myDur'] ?? q['dur']) as String),
       if (pct != null) ...[
         const SizedBox(height: 12),
         Row(children: [
@@ -115,14 +127,17 @@ class _TfSpeakFbReviewState extends State<TfSpeakFbReview> {
             SourceText('$pct%', style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 13, fontWeight: FontWeight.w800)),
           ])),
           const SizedBox(width: 12),
-          Expanded(child: T('复述完整度 · ${q['fb']}', style: SurgoText.cardDesc)),
+          Expanded(child: T(fb is List ? '复述完整度' : '复述完整度 · $fb', style: SurgoText.cardDesc)),
         ]),
       ],
       const SizedBox(height: 12),
       Container(padding: const EdgeInsets.all(12), decoration: BoxDecoration(color: SurgoColors.bg, borderRadius: BorderRadius.circular(14)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           const T('反馈', style: SurgoText.rowLabel), const SizedBox(height: 4),
-          SourceText(q['fb'] as String, style: const TextStyle(fontSize: 13, height: 1.5)),
+          if (fb is List)
+            T(fb, style: const TextStyle(fontSize: 13, height: 1.5))
+          else
+            SourceText(fb as String, style: const TextStyle(fontSize: 13, height: 1.5)),
         ])),
     ]));
   }

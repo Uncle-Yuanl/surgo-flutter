@@ -20,7 +20,9 @@ class TfSpeakingReview extends StatelessWidget {
   Widget build(BuildContext context) {
     final state = context.read<AppState>();
     final fb = (data['feedback'] as Map).cast<String, dynamic>();
-    final weak = (fb['weak'] as Map).cast<String, dynamic>();
+    // 原型是一条薄弱项（Map）；演示用真实数据（tool/demo_export）是一个列表，
+    // 这次没分析出薄弱项就是空列表，整块不画。文案可以是 [英文, 中文] 一对，T 按界面语言取。
+    final weak = fb['weak'] is List ? fb['weak'] as List : [fb['weak']];
     final subs = fb['subs'] as List;
     final questions = fb['questions'] as List;
     final task = kind; // retell | interview
@@ -29,16 +31,18 @@ class TfSpeakingReview extends StatelessWidget {
       SurgoCard(color: const Color(0xFFFBE7A8), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         const T('总体 · 练习估分', style: SurgoText.cardDesc), const SizedBox(height: 8),
         SourceText('${fb['score']} / 6.0', style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 36, fontWeight: FontWeight.w900)),
-        T(fb['description'] as String, style: SurgoText.cardDesc), const SizedBox(height: 7),
+        // 后端没有整场的一句话总评，真实数据这一行不画。
+        if (fb['description'] != null) T(fb['description'], style: SurgoText.cardDesc),
+        const SizedBox(height: 7),
         const T('练习估分仅供参考，不代表官方托福分数。', style: SurgoText.cardDesc),
       ])),
-      SurgoCard(child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+      if (weak.isNotEmpty) SurgoCard(child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
         const T('薄弱项分析', style: SurgoText.cardTitle), const SizedBox(height: 10),
         const T('仅基于本次作答总结，并附带匹配练习。以你的界面语言显示。', style: SurgoText.cardDesc), const SizedBox(height: 12),
-        SurgoCard(color: SurgoColors.bg, child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Wrap(spacing: 6, children: [for (final tag in weak['tags'] as List) T(tag as String, style: SurgoText.cardEn)]),
-          const SizedBox(height: 8), T(weak['q'] as String, style: SurgoText.rowLabel),
-          const SizedBox(height: 8), T(weak['a'] as String, style: SurgoText.cardDesc),
+        for (final w in weak) SurgoCard(color: SurgoColors.bg, child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Wrap(spacing: 6, children: [for (final tag in w['tags'] as List) T(tag, style: SurgoText.cardEn)]),
+          const SizedBox(height: 8), T(w['q'], style: SurgoText.rowLabel),
+          const SizedBox(height: 8), T(w['a'], style: SurgoText.cardDesc),
         ])),
         const SizedBox(height: 12),
         const T('仅记录本次能明确看到的问题；不诊断口音、听力或设备问题，也不下长期结论。', style: SurgoText.cardDesc),
@@ -53,7 +57,7 @@ class TfSpeakingReview extends StatelessWidget {
       SurgoCard(child: Wrap(spacing: 10, runSpacing: 8, children: [
         for (final sc in subs)
           Row(mainAxisSize: MainAxisSize.min, children: [
-            T('${(sc as List)[0]}  ', style: SurgoText.cardDesc),
+            T(_gap((sc as List)[0]), style: SurgoText.cardDesc),
             SourceText(sc[1] as String, style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontWeight: FontWeight.w800,
                 color: sc[2] == 'ok' ? Colors.green : sc[2] == 'bad' ? SurgoColors.overrun : SurgoColors.ink)),
           ]),
@@ -66,22 +70,34 @@ class TfSpeakingReview extends StatelessWidget {
     ]);
   }
 
+  /// 子分名称后面留两个空格；名称是 [英文, 中文] 一对时两项都留。
+  static Object _gap(Object name) =>
+      name is List ? [for (final s in name) '$s  '] : '$name  ';
+
   Widget _qCard(Map<String, dynamic> q) {
-    final ok = q['ok'] as bool;
+    final ok = q['ok'] == true;
     final pct = q['pct'] as int?; // 仅听后复述有
+    // 演示用真实数据：口语没有对错，每题带的是这一题的分（score）和两段录音各自的时长；
+    // 反馈是 [英文, 中文] 一对。原型数据没有这些键，走原来的写法。
+    final score = q['score'] as String?;
+    final dur = q['dur'] as String? ?? '00:03 / 00:10';
+    final fb = q['fb'];
     return SurgoCard(child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       Row(children: [
         Expanded(child: T('第 ${q['n']}', style: SurgoText.rowLabel)),
-        T(ok ? '表现良好' : '错误', style: TextStyle(color: ok ? Colors.green : SurgoColors.overrun, fontSize: 13.5)),
+        if (score != null)
+          SourceText('$score / 6', style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 13.5, fontWeight: FontWeight.w800))
+        else
+          T(ok ? '表现良好' : '错误', style: TextStyle(color: ok ? Colors.green : SurgoColors.overrun, fontSize: 13.5)),
       ]),
       const SizedBox(height: 10),
       const T('考官提问', style: SurgoText.cardDesc),
       SourceText(q['q'] as String, style: SurgoText.rowLabel),
       // 考官 / 你的作答 两条模拟音频波形（源 tfRtFbAudio，静态展示，无真实播放）
       const SizedBox(height: 10),
-      _audio('考官'),
+      _audio('考官', dur),
       const SizedBox(height: 6),
-      _audio('你的作答'),
+      _audio('你的作答', q['myDur'] as String? ?? dur),
       if (pct != null) ...[
         const SizedBox(height: 12),
         Row(children: [
@@ -90,19 +106,22 @@ class TfSpeakingReview extends StatelessWidget {
             SourceText('$pct%', style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 13, fontWeight: FontWeight.w800)),
           ])),
           const SizedBox(width: 12),
-          Expanded(child: T('复述完整度 · ${q['fb']}', style: SurgoText.cardDesc)),
+          Expanded(child: T(fb is List ? '复述完整度' : '复述完整度 · $fb', style: SurgoText.cardDesc)),
         ]),
       ],
       const SizedBox(height: 12),
       Container(padding: const EdgeInsets.all(12), decoration: BoxDecoration(color: SurgoColors.bg, borderRadius: BorderRadius.circular(14)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           const T('反馈', style: SurgoText.rowLabel), const SizedBox(height: 4),
-          SourceText(q['fb'] as String, style: const TextStyle(fontSize: 13, height: 1.5)),
+          if (fb is List)
+            T(fb, style: const TextStyle(fontSize: 13, height: 1.5))
+          else
+            SourceText(fb as String, style: const TextStyle(fontSize: 13, height: 1.5)),
         ])),
     ]));
   }
 
-  Widget _audio(String who) => Container(
+  Widget _audio(String who, String dur) => Container(
     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
     decoration: BoxDecoration(color: SurgoColors.bg, borderRadius: BorderRadius.circular(12)),
     child: Wrap(spacing: 6, runSpacing: 6, crossAxisAlignment: WrapCrossAlignment.center, children: [
@@ -110,7 +129,7 @@ class TfSpeakingReview extends StatelessWidget {
       const SizedBox(width: 6),
       SourceText(who, style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 13, fontWeight: FontWeight.w700)),
       const SizedBox(width: 8),
-      const SourceText('00:03 / 00:10', style: TextStyle(fontSize: 12)),
+      SourceText(dur, style: const TextStyle(fontSize: 12)),
       const SizedBox(width: 4),
       const SourceText('↻15  ↻15  1.0x', style: TextStyle(fontSize: 12)),
     ]),
