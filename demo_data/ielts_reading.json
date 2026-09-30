@@ -346,54 +346,6 @@
    ]
   },
   {
-   "key": "ematch",
-   "name": "句尾匹配",
-   "mins": 3,
-   "instr": "Complete each sentence with the correct ending, A-D, below.",
-   "kind": "match",
-   "options": [
-    "A",
-    "B",
-    "C",
-    "D"
-   ],
-   "optionLabels": [
-    "A  because it grows very quickly.",
-    "B  because building codes lag behind.",
-    "C  because it is heavier than steel.",
-    "D  because it never decays."
-   ],
-   "article": {
-    "title": "The Science of Building with Bamboo",
-    "passage": [
-     [
-      "A",
-      "Bamboo has been used as a building material for thousands of years across Asia and South America. Recently, engineers in Europe and North America have begun to take the plant seriously as a sustainable alternative to steel and concrete, whose production is responsible for a significant share of global carbon emissions."
-     ],
-     [
-      "B",
-      "The appeal of bamboo lies in its remarkable strength-to-weight ratio. Some species have a tensile strength comparable to that of mild steel, yet weigh a fraction as much. Bamboo also grows extraordinarily quickly, with certain species adding almost a metre in a single day, making it a rapidly renewable resource."
-     ],
-     [
-      "C",
-      "There are, however, challenges. Untreated bamboo is vulnerable to insects and fungal decay, and its performance varies widely between species and even between individual stems. Engineers have therefore developed treatment processes and grading systems to ensure consistency and durability in construction."
-     ],
-     [
-      "D",
-      "A typical bamboo culm consists of hollow segments separated by solid joints known as nodes. The outer wall is dense and fibrous, while the inner layers are softer. Understanding this structure is essential for designing joints that transfer loads effectively without splitting the material."
-     ],
-     [
-      "E",
-      "Advocates argue that with proper treatment and engineering, bamboo could play a major role in low-carbon construction, particularly in regions where it grows naturally. Critics counter that building codes in many countries have yet to catch up, limiting its use in large-scale projects."
-     ]
-    ]
-   },
-   "items": [
-    "1. Bamboo is considered rapidly renewable",
-    "2. Large-scale use is currently limited"
-   ]
-  },
-  {
    "key": "scomplete",
    "name": "句子填空",
    "mins": 7.5,

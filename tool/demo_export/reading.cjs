@@ -10,7 +10,7 @@ const { inline, figure } = require('./media.cjs');
 // 日常整篇：13 题（标题匹配 7、选择 1、判断 2、句子填空 2、简答 1），答对 6。
 const DAILY = '81afb75d-b1d1-4649-8852-c14d56fe287d';
 // 单一题型练习：ielts_reading.json 里每个题型用哪次作答的文章和题目（第二项：整篇作答里只取这一种题型）。
-// 句尾匹配（ematch）学员没做过，保留原型。示意图标注（diagram）取图上画了题号的那次：另外几次的图
+// 句尾匹配（ematch）学员没做过，演示里不出这个题型。示意图标注（diagram）取图上画了题号的那次：另外几次的图
 // 要么没画题号，要么题号在手机宽度下小得看不清。
 const TYPES_FROM = {
   mc: ['ea308527-66c1-4a11-b31e-f7ae375f72ec'],
@@ -310,9 +310,9 @@ exports.build = ({ learner }) => {
   };
   const d = daily(attempt(DAILY, learner));
   const attempts = {};
-  const types = proto('ielts_reading.json').types.map((t) => {
+  // 只出有真实作答的题型：没做过的留着原型内容就成了假数据。
+  const types = proto('ielts_reading.json').types.filter((t) => TYPES_FROM[t.key]).map((t) => {
     const from = TYPES_FROM[t.key];
-    if (!from) return t;
     attempts[from[0]] ??= attempt(from[0], learner);
     return practiceType(t, attempts[from[0]].item, from[1], addFigure);
   });
