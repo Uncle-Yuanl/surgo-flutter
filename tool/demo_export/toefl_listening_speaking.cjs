@@ -2,6 +2,8 @@
 // 数据全部来自后端已存的结果：toefl_daily_training_*、toefl_mock_exam_*（题目、作答、判分、答案键里的
 // 听力原文和原文依据、口语的音频分析），薄弱项来自能力分析（assessment_observations 的负向发现）。
 // 后端存了中英两份的（口语反馈、薄弱项解释）输出 [英文, 中文]；只有英文的（题目、选项、原文）照原文。
+// 音频也导出（toefl_*_media_assets 里挂在题目上的存档）：听力每段的录音、口语的考官提示音和学员的作答录音，
+// 做题页和批改页真的放它们。
 const { rows, one, lit } = require('./db.cjs');
 const { band, pair } = require('./text.cjs');
 
