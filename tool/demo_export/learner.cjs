@@ -251,6 +251,7 @@ function verify(user, exam, tz) {
 
 const NAMES = { listening: ['Listening', '听力'], reading: ['Reading', '阅读'], writing: ['Writing', '写作'], speaking: ['Speaking', '口语'] };
 const EXAMS = { ielts: ['IELTS', '雅思'], toefl: ['TOEFL', '托福'] };
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 // 题型名：雅思阅读的中文照后端学情 catalog，托福照 examReviewBundle.LABELS（全站一套）。
 const TASK_LABELS = {
   multiple_choice: ['Multiple choice', '选择题'], true_false_not_given: ['True/False/Not given', '判断正误题'],
@@ -294,13 +295,46 @@ function streak(user, exam, at, today) {
   return n;
 }
 
-/** 首页三张卡 = 本周推荐计划的三项（每项目标 5 次，完成数是记到该项的练习）。这周还没有计划就是 null。 */
+/**
+ * 首页「每日挑战」卡：学员最近一次出了题的每日挑战——科目、预计用时、标题（库里存了中英两份）、做没做完。
+ * 这门考试一次都没有就是 null，整张卡不画。
+ */
+function dailyChallenge(user, exam, at) {
+  const c = rows(`select jsonb_build_object('date', challenge_date::text,
+      'module', ${exam === 'toefl' ? 'module' : "coalesce(content->>'module_targeted', task_type)"},
+      'title', jsonb_build_array(content->>'title_en', content->>'title_cn'), 'minutes', content->'estimated_minutes',
+      'done', coalesce(completed_at <= ${at}, false))
+    from ${exam}_daily_challenges where user_id = ${lit(user)} and content is not null and created_at <= ${at}
+    order by challenge_date desc limit 1`)[0];
+  if (!c) return null;
+  const [, month, day] = c.date.split('-').map(Number);
+  const name = NAMES[c.module] || (c.module === 'vocabulary' ? ['Vocabulary', '词汇'] : [c.module, c.module]);
+  const minutes = Number.isInteger(c.minutes) ? ` · ${c.minutes} min` : '';
+  const title = pair(c.title[0], c.title[1]);
+  const state = c.done
+    ? [`completed ${MONTHS[month - 1]} ${day}`, `${month}月${day}日已完成`]
+    : [`${MONTHS[month - 1]} ${day}, not finished`, `${month}月${day}日未完成`];
+  return {
+    // 点卡片去哪：该科的日常训练页（词汇去词汇页）。
+    go: NAMES[c.module] ? `${c.module}Daily` : 'vocab',
+    sub: [`${name[0]}${minutes}`, `${name[1]}${minutes}`],
+    status: title[0] ? [`${title[0]} · ${state[0]}`, `${title[1]} · ${state[1]}`] : state,
+  };
+}
+
+/**
+ * 首页三张卡 = 推荐计划的三项（每项目标 5 次，完成数是记到该项的练习）：取这门考试最近的一份计划——
+ * 本周有就是本周的，本周还没生成就用上一份（后端是学员打开首页时才生成当周计划）。一份都没有才是 null。
+ */
 function weeklyFocus(user, exam, at) {
   const items = rows(`select jsonb_build_object('module', i.module, 'title', jsonb_build_array(i.title_en, i.title_zh),
       'selector', i.task_selector, 'of', i.target_count, 'done', (select count(*) from ielts_recommendation_credits c
         where c.item_id = i.id and c.user_id = i.user_id and c.credited_at <= ${at}))
-    from ielts_weekly_recommendation_plans p join ielts_weekly_recommendation_items i on i.plan_id = p.id and i.user_id = p.user_id
-    where p.user_id = ${lit(user)} and p.exam = ${lit(exam)} and p.week_start_at <= ${at} and p.week_end_at > ${at}
+    from ielts_weekly_recommendation_items i
+    where i.user_id = ${lit(user)} and i.plan_id = (select p.id from ielts_weekly_recommendation_plans p
+      where p.user_id = ${lit(user)} and p.exam = ${lit(exam)} and p.week_start_at <= ${at}
+        and exists (select 1 from ielts_weekly_recommendation_items x where x.plan_id = p.id)
+      order by p.week_start_at desc limit 1)
     order by i.rank`);
   if (!items.length) return null;
   return items.map((i) => {
@@ -429,7 +463,6 @@ function review(scores, total, target) {
 /** 每种通知取最近一条：模考出分、练习题目就绪、能力档案更新。标题和正文库里就是「英文 / 中文」。 */
 function notifications(user, at, tz) {
   const KINDS = { mock_exam_scoring_completed: 'mock', daily_training_ready: 'daily', capability_analysis_completed: 'report' };
-  const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const both = (text) => { const [en, ...zh] = String(text || '').split(' / '); return pair(en, zh.join(' / ')); };
   return rows(`select distinct on (type) jsonb_build_object('type', type, 'title', title, 'body', body, 'at', created_at)
     from notifications where user_id = ${lit(user)} and created_at <= ${at} and type in (${Object.keys(KINDS).map(lit).join(', ')})
@@ -471,6 +504,7 @@ exports.build = (config) => {
       target: target == null ? null : band(target),
       score: e.total == null ? null : band(e.total),
       streak: streak(user, exam, at, today),
+      challenge: dailyChallenge(user, exam, at),
       continue: resume.length ? [`Continue ${NAMES[resume[0].module][0]}`, `继续${NAMES[resume[0].module][1]}`] : ['Continue', '继续'],
       weekly: weeklyFocus(user, exam, at),
       // 模考选科：每科最近一次真作答过的模考分 / 满分；没有就不显示。

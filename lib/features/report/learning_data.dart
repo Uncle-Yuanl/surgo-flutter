@@ -83,9 +83,14 @@ class LearningReportData {
     return map;
   }
 
-  Map<String, double> get peers => toefl
-      ? {'writing': 4.3, 'reading': 4.4, 'listening': 4.3, 'speaking': 4.2}
-      : {'writing': 6.0, 'reading': 6.0, 'listening': 5.8, 'speaking': 5.9};
+  /// 同龄人平均：只有原型有这组演示值。真实数据没有同龄人 / 百分位的来源，返回空表，
+  /// 学情页据此不画雷达图上的同龄人虚线和图例、「超过 x% 的同龄考生」那一块、
+  /// 「超过 12 万名考生…」那一行。
+  Map<String, double> get peers => real != null
+      ? const {}
+      : toefl
+          ? {'writing': 4.3, 'reading': 4.4, 'listening': 4.3, 'speaking': 4.2}
+          : {'writing': 6.0, 'reading': 6.0, 'listening': 5.8, 'speaking': 5.9};
   // 真实数据带后端算好的总分（四科半分取整后平均、再取半分）；strong 是原型的演示分，照原型算。
   double? get overall => scores.length != 4
       ? null

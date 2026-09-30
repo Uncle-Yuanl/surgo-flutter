@@ -48,8 +48,8 @@ class HomePage extends StatelessWidget {
   final void Function(String page, String? variant) onTrain;
   final VoidCallback onLogo;
 
-  /// 三张训练卡的原型值。演示数据（learner_profile.json 的 weekly）里是学员本周
-  /// 推荐计划的三项：科目 · 题型、弱项名、本周完成数 / 目标数。
+  /// 三张训练卡的原型值。演示数据（learner_profile.json 的 weekly）里是学员最近一份
+  /// 推荐计划的三项：科目 · 题型、弱项名、完成数 / 目标数。
   static const _prototypeWeekly = <Map<String, dynamic>>[
     {
       'module': 'reading',
@@ -80,10 +80,16 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final me = _me(context);
-    // 键在而值是 null：这周还没有推荐计划，三张卡不画。
+    // 键在而值是 null：这门考试一份推荐计划都没有，三张卡不画。
     final weekly = me.containsKey('weekly')
         ? (me['weekly'] as List? ?? const [])
         : _prototypeWeekly;
+    // 每日挑战卡：演示数据里是学员最近一次每日挑战；一次都没有（键在而值是 null）就不画。
+    final challenge = me['challenge'] as Map<String, dynamic>?;
+    final showChallenge = !me.containsKey('challenge') || challenge != null;
+    void openChallenge() => challenge == null
+        ? onTrain('listeningDaily', 's1')
+        : onTrain(challenge['go'] as String, null);
     return DefaultTextStyle.merge(
         style: const TextStyle(
             letterSpacing: 0,
@@ -156,7 +162,8 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            const _SectionHeader('Today’s train'),
+            if (weekly.isNotEmpty || showChallenge)
+              const _SectionHeader('Today’s train'),
 
             // 三张大卡 + 每日挑战
             for (final (i, w) in weekly.indexed)
@@ -172,10 +179,8 @@ class HomePage extends StatelessWidget {
                 onTap: () =>
                     onTrain('${w['module']}Daily', w['card'] as String?),
               ),
-            _ChallengeCard(
-              onTap: () => onTrain('listeningDaily', 's1'),
-              onContinue: () => onTrain('listeningDaily', 's1'),
-            ),
+            if (showChallenge)
+              _ChallengeCard(onTap: openChallenge, onContinue: openChallenge),
           ],
         ));
   }
@@ -637,8 +642,11 @@ class _ChallengeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final me = _me(context);
     // 每日挑战的连胜天数：原型 12；演示数据里是学员真实的连续完成天数。
-    final streak = _me(context)['streak'] as int? ?? 12;
+    final streak = me['streak'] as int? ?? 12;
+    // 演示数据里是学员最近一次每日挑战：sub = 科目 · 预计用时，status = 标题 · 哪天做完的。
+    final challenge = me['challenge'] as Map<String, dynamic>?;
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -689,8 +697,8 @@ class _ChallengeCard extends StatelessWidget {
                           height: 1.25,
                         )),
                     const SizedBox(height: 4),
-                    const T('听力 · 5 min',
-                        style: TextStyle(
+                    T(challenge?['sub'] ?? '听力 · 5 min',
+                        style: const TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.w600,
                           color: Color(0x80FFFFFF),
@@ -719,9 +727,9 @@ class _ChallengeCard extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Expanded(
-                            child: T('今日挑战已就绪',
-                                style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
+                        Expanded(
+                            child: T(challenge?['status'] ?? '今日挑战已就绪',
+                                style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback,
                                   fontSize: 10.5,
                                   fontWeight: FontWeight.w700,
                                   color: Color(0x8CFFFFFF),

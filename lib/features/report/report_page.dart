@@ -231,8 +231,9 @@ class _ReportPageState extends State<ReportPage> {
                 ),
               ),
             ),
-            if (goalIsReading) const SizedBox(height: 8),
-            if (goalIsReading)
+            // 「超过 12 万名考生…」是同龄人数据，没有就不画。
+            if (goalIsReading && peers.isNotEmpty) const SizedBox(height: 8),
+            if (goalIsReading && peers.isNotEmpty)
             SourceText.rich(
               TextSpan(
                 children: [
@@ -598,7 +599,9 @@ class _ScoreCard extends StatelessWidget {
                           color: Color(0xFF8A8378))),
                 ],
               ),
-              const SizedBox(width: 22),
+              // 图例的「同龄人平均」跟着虚线走：没有同龄人数据就不画。
+              if (peers.isNotEmpty) const SizedBox(width: 22),
+              if (peers.isNotEmpty)
               Row(
                 children: [
                   Container(
@@ -729,7 +732,8 @@ class _ScoreCard extends StatelessWidget {
               onSelect: onSelect,
               onExpand: onExpand),
           const SizedBox(height: 18),
-          if (data.scenario == 'full' && !data.toefl)
+          // 「超过 62% 的同龄考生」这一块全是同龄人比较，没有同龄人数据就不画。
+          if (data.scenario == 'full' && !data.toefl && peers.isNotEmpty)
             Container(
               key: const ValueKey('report-compare'),
               width: double.infinity,
@@ -1116,27 +1120,31 @@ class _RadarPainter extends CustomPainter {
       }
     }
 
-    // 同龄人虚线 —— 原型 stroke-dasharray="5 4"，用 PathMetrics 手绘虚线
-    final peerPath = Path()
-      ..moveTo(pt('top', peers['writing']!).dx, pt('top', peers['writing']!).dy)
-      ..lineTo(
-          pt('right', peers['reading']!).dx, pt('right', peers['reading']!).dy)
-      ..lineTo(pt('bottom', peers['listening']!).dx,
-          pt('bottom', peers['listening']!).dy)
-      ..lineTo(
-          pt('left', peers['speaking']!).dx, pt('left', peers['speaking']!).dy)
-      ..close();
-    _drawDashedPath(
-      canvas,
-      peerPath,
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 2 * scale
-        ..color = const Color(0xFFB9AFF2)
-        ..strokeJoin = StrokeJoin.round,
-      dash: 5 * scale,
-      gap: 4 * scale,
-    );
+    // 同龄人虚线 —— 原型 stroke-dasharray="5 4"，用 PathMetrics 手绘虚线。
+    // 真实数据没有同龄人数据（peers 为空），这条线不画。
+    if (peers.length == 4) {
+      final peerPath = Path()
+        ..moveTo(
+            pt('top', peers['writing']!).dx, pt('top', peers['writing']!).dy)
+        ..lineTo(pt('right', peers['reading']!).dx,
+            pt('right', peers['reading']!).dy)
+        ..lineTo(pt('bottom', peers['listening']!).dx,
+            pt('bottom', peers['listening']!).dy)
+        ..lineTo(pt('left', peers['speaking']!).dx,
+            pt('left', peers['speaking']!).dy)
+        ..close();
+      _drawDashedPath(
+        canvas,
+        peerPath,
+        Paint()
+          ..style = PaintingStyle.stroke
+          ..strokeWidth = 2 * scale
+          ..color = const Color(0xFFB9AFF2)
+          ..strokeJoin = StrokeJoin.round,
+        dash: 5 * scale,
+        gap: 4 * scale,
+      );
+    }
 
     canvas.saveLayer(Offset.zero & size,
         Paint()..color = Colors.white.withAlpha((255 * alpha).round()));

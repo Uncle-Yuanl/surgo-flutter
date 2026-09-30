@@ -46,6 +46,17 @@
   "target": "8.0",
   "score": "4.0",
   "streak": 0,
+  "challenge": {
+   "go": "readingDaily",
+   "sub": [
+    "Reading · 7 min",
+    "阅读 · 7 min"
+   ],
+   "status": [
+    "Reading Skill Focus: Locating Key Information · completed Aug 31",
+    "阅读技能训练：定位关键信息 · 8月31日已完成"
+   ]
+  },
   "continue": [
    "Continue Listening",
    "继续听力"
@@ -522,11 +533,55 @@
   "target": null,
   "score": "3.0",
   "streak": 0,
+  "challenge": null,
   "continue": [
    "Continue Speaking",
    "继续口语"
   ],
-  "weekly": null,
+  "weekly": [
+   {
+    "module": "reading",
+    "kicker": [
+     "READING · COMPLETE THE WORDS",
+     "阅读 · 补全单词"
+    ],
+    "head": [
+     "Lexical candidate not recognised",
+     "未识别候选词"
+    ],
+    "done": 0,
+    "of": 5,
+    "card": null
+   },
+   {
+    "module": "writing",
+    "kicker": [
+     "WRITING · BUILD A SENTENCE",
+     "写作 · 排列成句"
+    ],
+    "head": [
+     "Word order error",
+     "词序错误"
+    ],
+    "done": 0,
+    "of": 5,
+    "card": null
+   },
+   {
+    "module": "reading",
+    "kicker": [
+     "READING · COMPLETE THE WORDS",
+     "阅读 · 补全单词"
+    ],
+    "head": [
+     "Grammar cue missed",
+     "忽略语法线索"
+    ],
+    "done": 0,
+    "of": 5,
+    "card": null
+   }
+  ],
   "mocks": {
    "listening": null,
    "reading": "1.5/6",
