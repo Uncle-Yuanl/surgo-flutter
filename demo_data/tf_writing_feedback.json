@@ -1,0 +1,1577 @@
+{
+ "TFWFB_TYPES": [
+  {
+   "key": "s",
+   "name": "Build a Sentence",
+   "score": 1
+  },
+  {
+   "key": "e",
+   "name": "Write an Email",
+   "score": 2
+  },
+  {
+   "key": "d",
+   "name": "Academic Discussion",
+   "score": 2
+  }
+ ],
+ "TFWFB_QS": {
+  "s": [
+   {
+    "n": 1,
+    "ok": false,
+    "q": "\"Build a grammatically correct sentence using all the given tokens in the correct order.\"",
+    "chips": [
+     [
+      "analyzed",
+      1
+     ],
+     [
+      "from",
+      1
+     ],
+     [
+      "the",
+      1
+     ],
+     [
+      "The",
+      1
+     ],
+     [
+      "estuary",
+      1
+     ],
+     [
+      "morning",
+      1
+     ],
+     [
+      "yesterday",
+      1
+     ],
+     [
+      "before",
+      1
+     ],
+     [
+      "researchers",
+      1
+     ],
+     [
+      "samples",
+      1
+     ],
+     [
+      "the",
+      1
+     ],
+     [
+      "river",
+      1
+     ],
+     [
+      "carefully",
+      1
+     ],
+     [
+      "collected",
+      1
+     ],
+     [
+      "water",
+      1
+     ],
+     [
+      "the",
+      0
+     ],
+     [
+      "tide",
+      0
+     ],
+     [
+      "reversed",
+      0
+     ],
+     [
+      "its",
+      0
+     ],
+     [
+      "direction",
+      0
+     ]
+    ],
+    "ans": "The researchers carefully analyzed the water samples collected from the river estuary yesterday morning before the tide reversed its direction."
+   },
+   {
+    "n": 2,
+    "ok": false,
+    "q": "\"Build a grammatically correct sentence using all the given tokens in the correct order.\"",
+    "chips": [
+     [
+      "managed",
+      1
+     ],
+     [
+      "conference",
+      1
+     ],
+     [
+      "the",
+      1
+     ],
+     [
+      "ambitious,",
+      1
+     ],
+     [
+      "presenter",
+      1
+     ],
+     [
+      "was",
+      1
+     ],
+     [
+      "schedule",
+      1
+     ],
+     [
+      "Although",
+      1
+     ],
+     [
+      "stay",
+      1
+     ],
+     [
+      "to",
+      0
+     ],
+     [
+      "every",
+      1
+     ],
+     [
+      "within",
+      0
+     ],
+     [
+      "the",
+      0
+     ],
+     [
+      "allotted",
+      0
+     ],
+     [
+      "time.",
+      0
+     ]
+    ],
+    "ans": "Although the conference schedule was ambitious, every presenter managed to stay within the allotted time."
+   },
+   {
+    "n": 3,
+    "ok": false,
+    "q": "\"Build a grammatically correct sentence using all the given tokens in the correct order.\"",
+    "chips": [
+     [
+      "the",
+      0
+     ],
+     [
+      "midnight",
+      1
+     ],
+     [
+      "remain",
+      1
+     ],
+     [
+      "final",
+      1
+     ],
+     [
+      "will",
+      1
+     ],
+     [
+      "open",
+      1
+     ],
+     [
+      "during",
+      1
+     ],
+     [
+      "until",
+      1
+     ],
+     [
+      "The",
+      0
+     ],
+     [
+      "library",
+      1
+     ],
+     [
+      "examination",
+      0
+     ],
+     [
+      "period",
+      0
+     ],
+     [
+      "in",
+      0
+     ],
+     [
+      "December",
+      0
+     ]
+    ],
+    "ans": "The library will remain open until midnight during the final examination period in December."
+   },
+   {
+    "n": 4,
+    "ok": false,
+    "q": "\"Build a grammatically correct sentence using all the given tokens in the correct order.\"",
+    "chips": [
+     [
+      "group",
+      1
+     ],
+     [
+      "cleanups",
+      1
+     ],
+     [
+      "has",
+      1
+     ],
+     [
+      "been",
+      1
+     ],
+     [
+      "of",
+      1
+     ],
+     [
+      "A",
+      1
+     ],
+     [
+      "small",
+      1
+     ],
+     [
+      "along",
+      1
+     ],
+     [
+      "weekly",
+      0
+     ],
+     [
+      "volunteers",
+      1
+     ],
+     [
+      "organizing",
+      1
+     ],
+     [
+      "the",
+      0
+     ],
+     [
+      "harbor",
+      0
+     ],
+     [
+      "since",
+      0
+     ],
+     [
+      "early",
+      0
+     ],
+     [
+      "spring",
+      0
+     ]
+    ],
+    "ans": "A small group of volunteers has been organizing weekly cleanups along the harbor since early spring."
+   },
+   {
+    "n": 5,
+    "ok": false,
+    "q": "\"Build a grammatically correct sentence using all the given tokens in the correct order.\"",
+    "chips": [
+     [
+      "moved",
+      1
+     ],
+     [
+      "the",
+      0
+     ],
+     [
+      "will",
+      1
+     ],
+     [
+      "forecast",
+      0
+     ],
+     [
+      "proves",
+      0
+     ],
+     [
+      "the",
+      1
+     ],
+     [
+      "lecture",
+      1
+     ],
+     [
+      "If",
+      1
+     ],
+     [
+      "be",
+      1
+     ],
+     [
+      "accurate,",
+      1
+     ],
+     [
+      "weather",
+      1
+     ],
+     [
+      "outdoor",
+      1
+     ],
+     [
+      "to",
+      0
+     ],
+     [
+      "the",
+      0
+     ],
+     [
+      "nearby",
+      0
+     ],
+     [
+      "auditorium.",
+      0
+     ]
+    ],
+    "ans": "If the weather forecast proves accurate, the outdoor lecture will be moved to the nearby auditorium."
+   },
+   {
+    "n": 6,
+    "ok": false,
+    "q": "\"Build a grammatically correct sentence using all the given tokens in the correct order.\"",
+    "chips": [
+     [
+      "proposal",
+      1
+     ],
+     [
+      "language",
+      1
+     ],
+     [
+      "a",
+      1
+     ],
+     [
+      "to",
+      1
+     ],
+     [
+      "university",
+      1
+     ],
+     [
+      "considering",
+      1
+     ],
+     [
+      "the",
+      1
+     ],
+     [
+      "expand",
+      0
+     ],
+     [
+      "The",
+      0
+     ],
+     [
+      "is",
+      1
+     ],
+     [
+      "learning",
+      0
+     ],
+     [
+      "center",
+      0
+     ],
+     [
+      "next",
+      0
+     ],
+     [
+      "semester",
+      0
+     ]
+    ],
+    "ans": "The university is considering a proposal to expand the language learning center next semester."
+   },
+   {
+    "n": 7,
+    "ok": false,
+    "q": "\"Build a grammatically correct sentence using all the given tokens in the correct order.\"",
+    "chips": [
+     [
+      "a",
+      1
+     ],
+     [
+      "of",
+      1
+     ],
+     [
+      "internship",
+      1
+     ],
+     [
+      "complete",
+      1
+     ],
+     [
+      "receive",
+      1
+     ],
+     [
+      "the",
+      1
+     ],
+     [
+      "a",
+      0
+     ],
+     [
+      "and",
+      1
+     ],
+     [
+      "who",
+      1
+     ],
+     [
+      "Students",
+      1
+     ],
+     [
+      "certificate",
+      1
+     ],
+     [
+      "letter",
+      1
+     ],
+     [
+      "recommendation",
+      0
+     ],
+     [
+      "from",
+      0
+     ],
+     [
+      "their",
+      0
+     ],
+     [
+      "supervisor",
+      0
+     ]
+    ],
+    "ans": "Students who complete the internship receive a certificate and a letter of recommendation from their supervisor."
+   },
+   {
+    "n": 8,
+    "ok": false,
+    "q": "\"Build a grammatically correct sentence using all the given tokens in the correct order.\"",
+    "chips": [
+     [
+      "The",
+      0
+     ],
+     [
+      "prompted",
+      1
+     ],
+     [
+      "backup",
+      1
+     ],
+     [
+      "residents",
+      1
+     ],
+     [
+      "power",
+      1
+     ],
+     [
+      "have",
+      1
+     ],
+     [
+      "frequent",
+      1
+     ],
+     [
+      "outages",
+      1
+     ],
+     [
+      "reliable",
+      1
+     ],
+     [
+      "to",
+      1
+     ],
+     [
+      "invest",
+      1
+     ],
+     [
+      "in",
+      1
+     ],
+     [
+      "generators",
+      0
+     ],
+     [
+      "for",
+      0
+     ],
+     [
+      "their",
+      0
+     ],
+     [
+      "homes",
+      0
+     ]
+    ],
+    "ans": "The frequent power outages have prompted residents to invest in reliable backup generators for their homes."
+   },
+   {
+    "n": 9,
+    "ok": false,
+    "q": "\"Build a grammatically correct sentence using all the given tokens in the correct order.\"",
+    "chips": [
+     [
+      "committee",
+      1
+     ],
+     [
+      "dean",
+      1
+     ],
+     [
+      "reviewing",
+      1
+     ],
+     [
+      "After",
+      1
+     ],
+     [
+      "the",
+      1
+     ],
+     [
+      "an",
+      1
+     ],
+     [
+      "to",
+      1
+     ],
+     [
+      "address",
+      1
+     ],
+     [
+      "meeting",
+      1
+     ],
+     [
+      "open",
+      0
+     ],
+     [
+      "report,",
+      1
+     ],
+     [
+      "the",
+      1
+     ],
+     [
+      "scheduled",
+      1
+     ],
+     [
+      "the",
+      0
+     ],
+     [
+      "faculty",
+      0
+     ],
+     [
+      "concerns",
+      0
+     ],
+     [
+      "directly.",
+      0
+     ]
+    ],
+    "ans": "After reviewing the committee report, the dean scheduled an open meeting to address the faculty concerns directly."
+   },
+   {
+    "n": 10,
+    "ok": false,
+    "q": "\"Build a grammatically correct sentence using all the given tokens in the correct order.\"",
+    "chips": [
+     [
+      "in",
+      1
+     ],
+     [
+      "campus",
+      0
+     ],
+     [
+      "introduced",
+      1
+     ],
+     [
+      "The",
+      1
+     ],
+     [
+      "new",
+      1
+     ],
+     [
+      "plant-based",
+      1
+     ],
+     [
+      "options",
+      1
+     ],
+     [
+      "several",
+      1
+     ],
+     [
+      "cafeteria",
+      1
+     ],
+     [
+      "has",
+      1
+     ],
+     [
+      "response",
+      0
+     ],
+     [
+      "to",
+      0
+     ],
+     [
+      "student",
+      0
+     ],
+     [
+      "requests.",
+      0
+     ]
+    ],
+    "ans": "The campus cafeteria has introduced several new plant-based options in response to student requests."
+   }
+  ],
+  "e": [
+   {
+    "n": 1,
+    "ok": false,
+    "q": "\"Write an Email — Quick trip to your city\"",
+    "subs": [
+     [
+      "Fulfilment",
+      "1.0",
+      "bad"
+     ],
+     [
+      "Organisation",
+      "2.0",
+      "bad"
+     ],
+     [
+      "Register",
+      "1.0",
+      "bad"
+     ],
+     [
+      "Language control",
+      "2.0",
+      "bad"
+     ]
+    ],
+    "task": "You received an email from a friend who is planning to visit your city for a short vacation. She asks for recommendations and help with planning. Write an email that responds to all of her questions and requests.",
+    "seg": [
+     [
+      "plain",
+      "### Academic Discussion Post\n\n---\n\n**In my view, universities should keep the general education requirement, and I find Alex's argument more persuasive.**\n\nWhile Sam raises a practical concern about packed curricula, I believe the long-term benefits of interdisciplinary exposure far outweigh the short-term costs. The world today is increasingly complex, and many of the most pressing challenges—such as climate change, public health crises, and artificial intelligence ethics—cannot be addressed through a single disciplinary lens. An engineer who understands environmental policy or a computer scientist who grasps basic ethics is simply better equipped to design solutions that are both effective and socially responsible.\n\nMoreover, I would argue that the supposed conflict between breadth and depth is somewhat exaggerated. A well-designed general education curriculum does not have to dilute a student's major. Instead, it can complement it by fostering critical thinking, communication skills, and creativity—qualities that are highly valued by employers in any field. In fact, many companies today explicitly seek candidates who can think across boundaries rather than narrowly specialised technicians.\n\nSam also mentions that employers look for specific skills, but I would counter that technical skills can be learned on the job, whereas the ability to think broadly and adapt to new situations is harder to cultivate later in life. Universities are not merely vocational schools; they are institutions that shape well-rounded citizens and lifelong learners. Therefore, I strongly support maintaining the requirement."
+     ]
+    ],
+    "notes": [],
+    "fb": [
+     "You answered the wrong task. The prompt asked you to reply to Priya's email about her trip, covering places to visit, weather and packing, and a hotel neighbourhood. Instead, you wrote an academic discussion post about general education requirements, referencing Sam and Alex. Because none of Priya's three requests is addressed and the format is not an email, fulfilment and register both fail. The writing itself is organised and mostly accurate, but those strengths do not transfer when the content and genre are wrong. To improve, start by reading the sender's questions one by one and draft a short reply to each, in friendly email form, before polishing.",
+     "你写错了任务。题目要求回复 Priya 关于来你所在城市旅游的邮件，分别推荐景点、说明天气和打包建议、推荐一个住宿的街区。你却写了一篇关于通识教育要求的学术讨论帖，提到了 Sam 和 Alex。Priya 的三个问题一个都没有回答，格式也不是邮件，所以 fulfilment 和 register 都无法给分。文本本身组织较清楚，语法大体准确，但内容和体裁完全跑偏，这些优势在此不计分。改进方法：先逐条读清单里的问题，针对每条先写一两句话回复，用友好的邮件格式写完再润色。SURGO 练习估分：1 分（满分 5 分）。"
+    ]
+   }
+  ],
+  "d": [
+   {
+    "n": 1,
+    "ok": false,
+    "q": "\"Academic Discussion\"",
+    "subs": [
+     [
+      "Contribution",
+      "0.5",
+      "bad"
+     ],
+     [
+      "Development",
+      "0.5",
+      "bad"
+     ],
+     [
+      "Interaction",
+      "1.5",
+      "bad"
+     ],
+     [
+      "Language control",
+      "2.0",
+      "bad"
+     ]
+    ],
+    "task": "Our city has just announced that, starting next month, retail stores may no longer provide free single-use plastic bags. Some stores will charge a small fee for paper or reusable bags, while others are expected to stop offering bags altogether. Supporters argue that this will sharply reduce plastic waste, while critics worry about the inconvenience for shoppers and the impact on small businesses. How effective do you think this kind of policy really is, and what factors should local officials consider before expanding it further?",
+    "seg": [
+     [
+      "plain",
+      "### Academic Discussion Post\n\n---\n\n**"
+     ],
+     [
+      "hl",
+      "In my view, universities should keep the general education requirement, and I find Alex's argument more persuasive.",
+      "bad",
+      1
+     ],
+     [
+      "plain",
+      "**\n\nWhile "
+     ],
+     [
+      "hl",
+      "Sam raises a practical concern about packed curricula",
+      "bad",
+      2
+     ],
+     [
+      "plain",
+      ", I believe the long-term benefits of "
+     ],
+     [
+      "hl",
+      "interdisciplinary exposure far outweigh the short-term costs",
+      "bad",
+      3
+     ],
+     [
+      "plain",
+      ". The world today is increasingly complex, and many of the most pressing challenges—such as climate change, public health crises, and artificial intelligence ethics—cannot be addressed through a single disciplinary lens. An engineer who understands environmental policy or a computer scientist who grasps basic ethics is simply better equipped to design solutions that are both effective and socially responsible.\n\nMoreover, I would argue that the supposed conflict between breadth and depth is somewhat exaggerated. A well-designed general education curriculum does not have to dilute a student's major. Instead, it can complement it by fostering critical thinking, communication skills, and creativity—qualities that are highly valued by employers in any field. In fact, many companies today explicitly seek candidates who can think across boundaries rather than narrowly specialised technicians.\n\nSam also mentions that employers look for specific skills, but I would counter that "
+     ],
+     [
+      "hl",
+      "technical skills can be learned on the job",
+      "bad",
+      4
+     ],
+     [
+      "plain",
+      ", whereas the ability to think broadly and adapt to new situations is harder to cultivate later in life. "
+     ],
+     [
+      "hl",
+      "Universities are not merely vocational schools",
+      "bad",
+      5
+     ],
+     [
+      "plain",
+      "; they are institutions that shape well-rounded citizens and lifelong learners. Therefore, I strongly support maintaining the requirement."
+     ]
+    ],
+    "notes": [
+     [
+      1,
+      "bad",
+      [
+       "Your opening sentence addresses a different topic. The professor asked about a single-use plastic bag policy, not general education requirements.",
+       "你的开头句子讨论的是另一个话题。教授讨论的是一次性塑料袋政策，而不是通识教育要求。"
+      ]
+     ],
+     [
+      2,
+      "bad",
+      [
+       "Sam, Alex, and a curriculum debate do not appear in the discussion. You need to respond to Tomas and Maya about plastic bags.",
+       "讨论中并没有 Sam、Alex 或课程争议。你需要针对塑料袋话题回应 Tomas 和 Maya。"
+      ]
+     ],
+     [
+      3,
+      "bad",
+      [
+       "This point is developed clearly, but it is built on the wrong topic. Repurpose this structure to discuss environmental and economic trade-offs of the bag policy.",
+       "这一点的展开本身清晰，但建立在错误的话题上。请把同样的展开方式用在塑料袋政策的环境与经济权衡上。"
+      ]
+     ],
+     [
+      4,
+      "bad",
+      [
+       "Replace this claim with a concrete example, such as reusable bag adoption rates or the cost difference between paper and plastic production.",
+       "请把这种说法替换为具体例子，例如可重复使用购物袋的采用率，或纸袋与塑料袋的生产成本差异。"
+      ]
+     ],
+     [
+      5,
+      "bad",
+      [
+       "This sentence is off topic. Use the space to discuss whether small businesses need financial support to adapt to the new policy.",
+       "这句话偏题了。请利用这部分空间讨论小型商户是否需要财政支持来适应新政策。"
+      ]
+     ]
+    ],
+    "fb": [
+     "Your response does not address the assigned topic. The professor asked about the effectiveness of a local ban on free single-use plastic bags, and Tomas and Maya discussed plastic waste, paper bags, and small business impact. Your post instead argues about university general education requirements and refers to classmates who were not part of the discussion. Because the content is off topic, the contribution, development, and interaction criteria cannot be rewarded, even though the sentence-level language is clear. Rewrite the response to state a position on the bag policy, give one new supporting example, and respond directly to either Tomas's optimism or Maya's concern about small businesses. SURGO practice estimate for this attempt is around 1.0 out of 5.",
+     "你的回复没有讨论指定话题。教授要求讨论的是本地禁止免费一次性塑料袋政策的成效，Tomas 和 Maya 讨论的是塑料垃圾、纸袋和小型商户的影响。你的文章却在论证大学的通识教育要求，并提到了讨论中并不存在的同学。由于内容偏题，贡献、展开和互动三项均无法得分，尽管句子层面的语言是清晰的。请重写一段，明确表达你对塑料袋政策的态度，给出一个新的支持性例子，并直接回应 Tomas 的乐观看法或 Maya 对小型商户的担忧。SURGO 练习估分约为 1.0 / 5。"
+    ]
+   }
+  ]
+ },
+ "TFWFB_WEAK": [],
+ "TFSENT_FB": [
+  {
+   "n": 1,
+   "ok": true,
+   "q": "\"Form a logical sentence using the given tokens.\"",
+   "chips": [
+    [
+     "The",
+     0
+    ],
+    [
+     "students",
+     0
+    ],
+    [
+     "went",
+     0
+    ],
+    [
+     "to",
+     0
+    ],
+    [
+     "the",
+     0
+    ],
+    [
+     "library",
+     0
+    ],
+    [
+     "to",
+     0
+    ],
+    [
+     "study.",
+     0
+    ]
+   ],
+   "ans": "The students went to the library to study.",
+   "fb": [
+    "The sentence is correctly arranged: all 8 token positions and all 7 adjacent pairs match.",
+    "句子排列正确：8 个词块位置和 7 组相邻关系全部匹配。"
+   ]
+  },
+  {
+   "n": 2,
+   "ok": true,
+   "q": "\"Form a logical sentence using the given tokens.\"",
+   "chips": [
+    [
+     "The",
+     0
+    ],
+    [
+     "professor",
+     0
+    ],
+    [
+     "gave",
+     0
+    ],
+    [
+     "a",
+     0
+    ],
+    [
+     "lecture",
+     0
+    ],
+    [
+     "about",
+     0
+    ],
+    [
+     "biology.",
+     0
+    ]
+   ],
+   "ans": "The professor gave a lecture about biology.",
+   "fb": [
+    "The sentence is correctly arranged: all 7 token positions and all 6 adjacent pairs match.",
+    "句子排列正确：7 个词块位置和 6 组相邻关系全部匹配。"
+   ]
+  },
+  {
+   "n": 3,
+   "ok": false,
+   "q": "\"Form a logical sentence using the given tokens.\"",
+   "chips": [
+    [
+     "The",
+     0
+    ],
+    [
+     "class",
+     1
+    ],
+    [
+     "will",
+     1
+    ],
+    [
+     "begin",
+     1
+    ],
+    [
+     "morning",
+     1
+    ],
+    [
+     "at",
+     0
+    ],
+    [
+     "nine.",
+     0
+    ]
+   ],
+   "ans": "The morning class will begin at nine.",
+   "fb": [
+    "The arrangement matches 3 of 7 token positions and 3 of 6 adjacent pairs. Reorder the 4 highlighted token(s) before your next attempt.",
+    "当前排列匹配 3/7 个词块位置和 3/6 组相邻关系。请在下次练习前调整 4 个已标记词块的顺序。"
+   ]
+  },
+  {
+   "n": 4,
+   "ok": true,
+   "q": "\"Form a logical sentence using the given tokens.\"",
+   "chips": [
+    [
+     "The",
+     0
+    ],
+    [
+     "research",
+     0
+    ],
+    [
+     "project",
+     0
+    ],
+    [
+     "was",
+     0
+    ],
+    [
+     "organized",
+     0
+    ],
+    [
+     "on",
+     0
+    ],
+    [
+     "campus.",
+     0
+    ]
+   ],
+   "ans": "The research project was organized on campus.",
+   "fb": [
+    "The sentence is correctly arranged: all 7 token positions and all 6 adjacent pairs match.",
+    "句子排列正确：7 个词块位置和 6 组相邻关系全部匹配。"
+   ]
+  },
+  {
+   "n": 5,
+   "ok": true,
+   "q": "\"Form a logical sentence using the given tokens.\"",
+   "chips": [
+    [
+     "The",
+     0
+    ],
+    [
+     "students",
+     0
+    ],
+    [
+     "prepared",
+     0
+    ],
+    [
+     "carefully",
+     0
+    ],
+    [
+     "for",
+     0
+    ],
+    [
+     "the",
+     0
+    ],
+    [
+     "exam.",
+     0
+    ]
+   ],
+   "ans": "The students prepared carefully for the exam.",
+   "fb": [
+    "The sentence is correctly arranged: all 7 token positions and all 6 adjacent pairs match.",
+    "句子排列正确：7 个词块位置和 6 组相邻关系全部匹配。"
+   ]
+  },
+  {
+   "n": 6,
+   "ok": true,
+   "q": "\"Form a logical sentence using the given tokens.\"",
+   "chips": [
+    [
+     "The",
+     0
+    ],
+    [
+     "university",
+     0
+    ],
+    [
+     "offers",
+     0
+    ],
+    [
+     "a",
+     0
+    ],
+    [
+     "course",
+     0
+    ],
+    [
+     "in",
+     0
+    ],
+    [
+     "history.",
+     0
+    ]
+   ],
+   "ans": "The university offers a course in history.",
+   "fb": [
+    "The sentence is correctly arranged: all 7 token positions and all 6 adjacent pairs match.",
+    "句子排列正确：7 个词块位置和 6 组相邻关系全部匹配。"
+   ]
+  },
+  {
+   "n": 7,
+   "ok": true,
+   "q": "\"Form a logical sentence using the given tokens.\"",
+   "chips": [
+    [
+     "The",
+     0
+    ],
+    [
+     "campus",
+     0
+    ],
+    [
+     "cafeteria",
+     0
+    ],
+    [
+     "opens",
+     0
+    ],
+    [
+     "early",
+     0
+    ],
+    [
+     "every",
+     0
+    ],
+    [
+     "morning.",
+     0
+    ]
+   ],
+   "ans": "The campus cafeteria opens early every morning.",
+   "fb": [
+    "The sentence is correctly arranged: all 7 token positions and all 6 adjacent pairs match.",
+    "句子排列正确：7 个词块位置和 6 组相邻关系全部匹配。"
+   ]
+  },
+  {
+   "n": 8,
+   "ok": true,
+   "q": "\"Form a logical sentence using the given tokens.\"",
+   "chips": [
+    [
+     "The",
+     0
+    ],
+    [
+     "teacher",
+     0
+    ],
+    [
+     "met",
+     0
+    ],
+    [
+     "her",
+     0
+    ],
+    [
+     "students",
+     0
+    ],
+    [
+     "in",
+     0
+    ],
+    [
+     "the",
+     0
+    ],
+    [
+     "office.",
+     0
+    ]
+   ],
+   "ans": "The teacher met her students in the office.",
+   "fb": [
+    "The sentence is correctly arranged: all 8 token positions and all 7 adjacent pairs match.",
+    "句子排列正确：8 个词块位置和 7 组相邻关系全部匹配。"
+   ]
+  },
+  {
+   "n": 9,
+   "ok": true,
+   "q": "\"Form a logical sentence using the given tokens.\"",
+   "chips": [
+    [
+     "I",
+     0
+    ],
+    [
+     "need",
+     0
+    ],
+    [
+     "to",
+     0
+    ],
+    [
+     "return",
+     0
+    ],
+    [
+     "the",
+     0
+    ],
+    [
+     "book",
+     0
+    ],
+    [
+     "to",
+     0
+    ],
+    [
+     "the",
+     0
+    ],
+    [
+     "library.",
+     0
+    ]
+   ],
+   "ans": "I need to return the book to the library.",
+   "fb": [
+    "The sentence is correctly arranged: all 9 token positions and all 8 adjacent pairs match.",
+    "句子排列正确：9 个词块位置和 8 组相邻关系全部匹配。"
+   ]
+  },
+  {
+   "n": 10,
+   "ok": false,
+   "q": "\"Form a logical sentence using the given tokens.\"",
+   "chips": [
+    [
+     "The",
+     0
+    ],
+    [
+     "classes",
+     1
+    ],
+    [
+     "finish",
+     1
+    ],
+    [
+     "in",
+     1
+    ],
+    [
+     "semester",
+     1
+    ],
+    [
+     "late",
+     0
+    ],
+    [
+     "May.",
+     0
+    ]
+   ],
+   "ans": "The semester classes finish in late May.",
+   "fb": [
+    "The arrangement matches 3 of 7 token positions and 3 of 6 adjacent pairs. Reorder the 4 highlighted token(s) before your next attempt.",
+    "当前排列匹配 3/7 个词块位置和 3/6 组相邻关系。请在下次练习前调整 4 个已标记词块的顺序。"
+   ]
+  }
+ ],
+ "tfEmailFbView": {
+  "seg": [
+   [
+    "plain",
+    "Dear Dr.L.Mehta,\n\nThank you for reaching out regarding my course selection for the upcoming term. After careful consideration, I would like to confirm that I plan to enroll in the research seminar rather than a standard elective.\n\nMy decision is driven by my strong interest in pursuing independent research, particularly in the area of [your field, e.g., developmental psychology]. I believe the seminar will offer me valuable hands-on experience in designing and conducting a small-scale study, which aligns closely with my long-term goal of applying to graduate school. Compared to a standard elective, which typically follows a lecture-based format, the seminar provides more opportunities for in-depth discussion and direct mentorship from faculty members. I am also eager to collaborate with peers who share similar research interests, as I think this will enrich my learning experience and help me build a stronger academic network.\n\nBefore registration officially opens, however, I would kindly ask for one additional piece of information: could you please let me know whether the research seminar has any prerequisite courses or required permissions? I have checked the online course catalogue, but the details are not clearly stated. If there is a specific instructor consent form or a minimum GPA requirement, I would appreciate it if you could forward the relevant documents or guidelines so that I can prepare accordingly.\n\nI understand that you are busy, so I would be grateful for any clarification at your earliest convenience. Please let me know if you need any further information from my side, such as my current transcript or a brief statement of my research interests.\n\nThank you again for your guidance. I look forward to your reply.\n\nYours sincerely,\n[Your Full Name]\n[Student ID]\n[Your Major/Department]"
+   ]
+  ],
+  "notes": [],
+  "subs": [
+   [
+    "Fulfilment",
+    "4.0",
+    "ok"
+   ],
+   [
+    "Organisation",
+    "4.0",
+    "ok"
+   ],
+   [
+    "Register",
+    "4.0",
+    "ok"
+   ],
+   [
+    "Language control",
+    "4.0",
+    "ok"
+   ]
+  ],
+  "task": "You are a university student. An academic advisor has contacted you about the upcoming course registration period and wants to know whether you plan to take a research seminar or a standard elective in the coming term. You have a strong preference, and you also need one additional piece of information from the advisor before registration opens. Write a clear, polite reply that answers the question and asks for the information you need.",
+  "q": "\"Write an Email — Course planning for next term\"",
+  "fb": [
+   "Your reply is well structured and clearly states both your preference and a specific request, which addresses the core task. The reasons for choosing the research seminar are relevant and persuasive, and the tone is appropriately formal. Two issues lower the score: the response is noticeably longer than the 100-200 word range, and the bracketed placeholder '[your field, e.g., developmental psychology]' should be removed and replaced with a concrete detail. Also tighten the salutation spacing to 'Dear Dr. L. Mehta' for a cleaner academic look. SURGO practice estimate: 4.0 out of 5.",
+   "你的回复结构清楚，清楚说明了你的选择和一项具体请求，符合任务核心要求。选择研究课的理由相关且有说服力，语气也符合学术邮件的正式程度。但有两个问题影响了分数：一是篇幅明显超过了 100 到 200 词的要求，二是文中保留了占位符 “[your field, e.g., developmental psychology]”，应该替换为具体内容。称呼中的空格也建议改为 “Dear Dr. L. Mehta”，以符合学术邮件的规范。SURGO 练习估分：满分 5 分中的 4.0 分。"
+  ],
+  "weak": "",
+  "n": 1,
+  "ok": true
+ },
+ "tfDiscFbView": {
+  "seg": [
+   [
+    "plain",
+    "In my view, universities should keep the general education requirement, and I find Alex's argument more persuasive.\n\nWhile Sam raises a practical concern about packed curricula, I believe the long-term benefits of interdisciplinary exposure far outweigh the short-term costs. The world today is increasingly complex, and many of the most pressing challenges—such as climate change, public health crises, and artificial intelligence ethics—cannot be addressed through a single disciplinary lens. An engineer who understands environmental policy or a computer scientist who grasps basic ethics is simply better equipped to design solutions that are both effective and socially responsible.\n\nMoreover, I would argue that the supposed conflict between breadth and depth is somewhat exaggerated. A well-designed general education curriculum does not have to dilute a student's major. Instead, it can complement it by fostering critical thinking, communication skills, and creativity—qualities that are highly valued by employers in any field. In fact, many companies today explicitly seek candidates who can think across boundaries rather than narrowly specialised technicians.\n\nSam also mentions that employers look for specific skills, but I would counter that technical skills can be learned on the job, whereas the ability to think broadly and adapt to new situations is harder to cultivate later in life. Universities are not merely vocational schools; they are institutions that shape well-rounded citizens and lifelong learners. Therefore, I strongly support maintaining the requirement."
+   ]
+  ],
+  "notes": [],
+  "subs": [
+   [
+    "Contribution",
+    "4.5",
+    "ok"
+   ],
+   [
+    "Development",
+    "4.5",
+    "ok"
+   ],
+   [
+    "Interaction",
+    "4.5",
+    "ok"
+   ],
+   [
+    "Language control",
+    "4.5",
+    "ok"
+   ]
+  ],
+  "task": "As part of their undergraduate degree, students at many universities are required to take a number of courses outside their primary field of study. For example, an engineering student might enroll in a literature seminar, or a music major might take a statistics class. Supporters argue that this broadens students' perspectives and helps them connect ideas across disciplines. Opponents argue that it pulls attention away from the deep expertise that employers and graduate programs expect. Should universities keep this general education requirement, or should they let students focus entirely on their chosen field? Explain which position you find more convincing and why.",
+  "q": "\"Academic Discussion\"",
+  "fb": [
+   "Your response is well organised, takes a clear position, and engages both Alex and Sam by name, which is a strength. Development is solid but tends toward listing examples, such as 'climate change, public health crises, and artificial intelligence ethics,' without unpacking one in detail. Adding a brief concrete case, for example how an engineering student used a policy course to influence a project, would make the argument feel more demonstrated than asserted. The closing phrase 'I strongly support maintaining the requirement' sounds slightly more declarative than academic; 'I therefore support maintaining the requirement' would be more measured. Overall, this is a strong practice response that meets the task requirements comfortably. SURGO practice estimate for Write for an Academic Discussion: 4.5 out of 5.",
+   "你的回答结构清晰，立场明确，并且用名字回应了 Alex 和 Sam，这是优点。展开部分比较扎实，但偏向罗列例子，例如把气候变化、公共卫生危机和人工智能伦理并列后没有逐一展开。如果能加入一个简短的具体案例，比如某位工科学生如何用政策课影响了项目，论证会显得更有支撑而非仅靠陈述。结尾的\"I strongly support maintaining the requirement\"语气偏宣言式，改为\"I therefore support maintaining the requirement\"会更符合学术讨论的克制风格。总体来看，这是一篇高质量的练习作答，完整满足任务要求。SURGO 练习估分：Write for an Academic Discussion 4.5 / 5。"
+  ],
+  "weak": "",
+  "n": 1,
+  "ok": true
+ },
+ "SCORE": {
+  "sent": "5.0",
+  "email": "5.0",
+  "disc": "5.5",
+  "mock": "1.5"
+ },
+ "WEAK": {
+  "sent": [
+   {
+    "tags": [
+     "Writing · Syntactic decoding · Sentence role misidentified",
+     "写作 · 句法解码 · 误判句子成分功能"
+    ],
+    "q": [
+     "Q10: 'semester' is treated as an adverbial rather than the noun modifier of 'classes', so its grammatical role is placed in an impossible position.",
+     "第 10 题：学习者把 semester 当作状语，而不是 classes 的名词修饰语，因此这个成分被放在了不可能的位置。"
+    ],
+    "a": [
+     "Constituent-role labelling.",
+     "进行成分角色标注。"
+    ]
+   }
+  ],
+  "email": [
+   {
+    "tags": [
+     "Writing · Sequencing and progression · Idea progression weak",
+     "写作 · 顺序与推进 · 观点推进较弱"
+    ],
+    "q": [
+     "The rubric notes that the specific request sits between the reasons and a courteous close, which slightly weakens logical progression to the closing.",
+     "评分反馈指出，具体请求夹在理由与礼貌结尾之间，使结尾的逻辑推进略有削弱。"
+    ],
+    "a": [
+     "Sentence ordering and progression.",
+     "进行句子排序与推进练习。"
+    ]
+   }
+  ],
+  "disc": [
+   {
+    "tags": [
+     "Writing · Examples and evidence · Detail or example irrelevant",
+     "写作 · 例证与证据 · 细节或例子不相关"
+    ],
+    "q": [
+     "The rubric and learner text show three examples listed in parallel without individual unpacking, so the supporting detail does not clearly strengthen the view.",
+     "反馈和作答文本显示三个例子并列罗列，没有逐一展开，因此支持细节未能有效强化观点。"
+    ],
+    "a": [
+     "Claim-detail matching.",
+     "进行主张与细节匹配。"
+    ]
+   },
+   {
+    "tags": [
+     "Writing · Voice and modality · Modality miscalibrated",
+     "写作 · 语态与情态 · 情态强度失衡"
+    ],
+    "q": [
+     "The modal-strength expression 'I strongly support' overstates certainty relative to the supporting evidence and the academic register expected in the discussion.",
+     "\"I strongly support\" 的情态强度超出所提供的支撑，也与学术讨论应有的语气不符。"
+    ],
+    "a": [
+     "Modality-strength practice.",
+     "进行情态强度练习。"
+    ]
+   },
+   {
+    "tags": [
+     "Writing · Explanation · Academic reasoning gap",
+     "写作 · 解释展开 · 学术推理链断裂"
+    ],
+    "q": [
+     "The cost-benefit claim is asserted without a concrete short-term cost example, so the reasoning chain from claim to conclusion is incomplete.",
+     "成本与收益的比较直接断言，没有给出具体的短期成本例子，推理链不完整。"
+    ],
+    "a": [
+     "Claim-because-therefore drill.",
+     "进行主张、因为和所以练习。"
+    ]
+   },
+   {
+    "tags": [
+     "Writing · Hedging and certainty · Certainty mismatch",
+     "写作 · 模糊限制与确定程度 · 确定程度不匹配"
+    ],
+    "q": [
+     "The closing statement uses absolute language for a debatable academic position, so the certainty is not properly calibrated to the discussion context.",
+     "结尾句对有争议的学术立场使用了绝对表达，确定性与讨论语境不匹配。"
+    ],
+    "a": [
+     "Hedging-strength continuum.",
+     "进行模糊限制强度练习。"
+    ]
+   }
+  ],
+  "mock": [
+   {
+    "tags": [
+     "Writing · Relevance · Discussion contribution off topic",
+     "写作 · 相关性 · 学术讨论内容偏题"
+    ],
+    "q": [
+     "The feedback shows the academic discussion post argued about general education requirements rather than the professor's plastic bag policy, so the contribution was off topic.",
+     "反馈指出学术讨论帖讨论的是通识教育要求，而非教授提出的塑料袋政策，因此贡献与讨论不相关。"
+    ],
+    "a": [
+     "Discussion-focus extraction.",
+     "进行讨论焦点提取。"
+    ]
+   },
+   {
+    "tags": [
+     "Writing · Prompt interpretation · Email purpose misread",
+     "写作 · 题目理解 · 误解邮件目的"
+    ],
+    "q": [
+     "The feedback states that the email response was replaced with an academic discussion post, so the writer misidentified the email's communicative purpose.",
+     "反馈指出邮件回复被一篇学术讨论帖取代，因此学习者错误识别了邮件的沟通目的。"
+    ],
+    "a": [
+     "Email speech-act classification.",
+     "进行邮件言语行为分类。"
+    ]
+   },
+   {
+    "tags": [
+     "Writing · Social conventions · Email opening or closing unsuitable",
+     "写作 · 社交规范 · 邮件开头或结尾不合适"
+    ],
+    "q": [
+     "The feedback notes that no greeting, address to Priya, or sign-off appears, so the email conventions required for a friendly reply are missing.",
+     "反馈指出回复中没有称呼、提及 Priya 的开头或落款，作为友好回信所需的邮件规范全部缺失。"
+    ],
+    "a": [
+     "Email-convention selection.",
+     "进行邮件常规表达选择。"
+    ]
+   },
+   {
+    "tags": [
+     "Writing · Coverage and completeness · Required action or detail omitted",
+     "写作 · 覆盖与完整性 · 遗漏必要行动或细节"
+    ],
+    "q": [
+     "The feedback confirms that place recommendations, weather and packing advice, and a hotel neighbourhood suggestion are all missing, so the email does not fulfil the requested functions.",
+     "反馈确认推荐景点、天气与打包建议、住宿街区三项请求均未涉及，邮件未完成所要求的功能。"
+    ],
+    "a": [
+     "Prompt-to-function checklist.",
+     "使用题目到沟通功能清单。"
+    ]
+   },
+   {
+    "tags": [
+     "Writing · Critical reasoning · Counterpoint not evaluated",
+     "写作 · 批判性推理 · 未评价反方观点"
+    ],
+    "q": [
+     "The feedback states that the post did not engage with Tomas's or Maya's arguments about plastic waste, paper bags, or small business impact, so no opposing view was assessed or answered.",
+     "反馈指出该帖未回应 Tomas 或 Maya 关于塑料垃圾、纸袋或小型商户影响的观点，因此没有评价或回应不同看法。"
+    ],
+    "a": [
+     "Counterpoint-response micro-drill.",
+     "进行反方观点回应微型练习。"
+    ]
+   }
+  ]
+ }
+}

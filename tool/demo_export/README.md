@@ -26,6 +26,7 @@ JSON，不调接口，也不现场生成任何内容。
 - 要导哪些作答写在模块文件头（`ielts_attempts.id`、各种 session id），挑已完成、结果完整的；
   `demo.config.json` 只放学员前缀。
 - 参考 `writing.cjs`（雅思写作：题目、柱状图、规划、评分页、批注、母语负迁移）。
+- `toefl_rw.cjs`：托福阅读、写作（日常训练六个题型 + 阅读、写作两场模考；估分、讲解、批注、薄弱项）。
 
 ## 验证
 
@@ -39,6 +40,10 @@ JSON，不调接口，也不现场生成任何内容。
    ```
 
    每个页面显示了哪些文字在 `build/audit/bilingual_routes.json`，可以核对真实数据有没有上屏。
+
+   真实数据比原型大。JSON 到 50 KB（51200 字节）时 `rootBundle.loadString` 改用 isolate 解码，审计的假时钟
+   等不到结果：进页面才加载这份 JSON 的页面会一直转圈，审计报 `indeterminateIndicators`。把那一处加载改成
+   `rootBundle.load` + `utf8.decode`（例：`lib/features/tf_reading_mock/controller.dart`）。
 3. 原型数据下（不覆盖）跑相关页面的测试：`flutter test -j 2 test/<相关>_test.dart`。
 4. 看图：同第 2 步先覆盖，`flutter build web --release --no-web-resources-cdn -t lib/main_visual_audit.dart -o build/audit-web`，
    换回原型数据，再把 `build/web/fonts` 拷进 `build/audit-web/` 后起静态服务。网址参数见
