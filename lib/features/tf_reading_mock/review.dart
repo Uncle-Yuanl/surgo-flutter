@@ -35,7 +35,9 @@ class _TfReadMockReviewState extends State<TfReadMockReview> {
   SurgoCard(child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[SourceText(src['label'],style:SurgoText.cardTitle),const SizedBox(height:12),SourceText.rich(TextSpan(children:[for(final r in src['rows'])...[
    TextSpan(text:r[0]),TextSpan(text:r[1],style:TextStyle(backgroundColor:qs[(r[2] as int)-1]['ok']?const Color(0xffe7f5e8):const Color(0xffffe7e2))),TextSpan(text:' ${r[2]} ',style:const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize:10,fontWeight:FontWeight.w800)),TextSpan(text:r[3]),
   ]]),style:const TextStyle(fontSize:14,height:1.7))])),const SizedBox(height:14),
-  const T('逐题分析',style:SurgoText.cardTitle),for(final q in qs)Padding(padding:const EdgeInsets.symmetric(vertical:10),child:SurgoCard(child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[Row(children:[T('第 ${q['n']}'),const Spacer(),T(q['ok']?'表现良好':'错误')]),const SizedBox(height:8),const T('题目',style:SurgoText.sub),
+  const T('逐题分析',style:SurgoText.cardTitle),for(final q in qs)Padding(padding:const EdgeInsets.symmetric(vertical:10),child:SurgoCard(child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
+   // 词典只收了「第 1」到「第 7」，真实数据一个题型有 20 题：直接给 [英文, 中文]（英文和词典的译法一致）。
+   Row(children:[T(['Q${q['n']}','第 ${q['n']}']),const Spacer(),T(q['ok']?'表现良好':'错误')]),const SizedBox(height:8),const T('题目',style:SurgoText.sub),
    // 题干：原型数据是字符串；真实数据的补全单词题给 [英文, 中文]（Blank 1 / 第 1 空）。
    q['q'] is List?T(q['q'],style:SurgoText.cardTitle):SourceText(q['q'],style:SurgoText.cardTitle),const T('你的作答',style:SurgoText.sub),SourceText(q['mine'],style:TextStyle(color:q['ok']?Color(0xff36825a):SurgoColors.danger,fontSize:14)),if(q['ans']!=null)...[const T('正确答案',style:SurgoText.sub),SourceText(q['ans'],style:const TextStyle(color:Color(0xff36825a)))],if(q['why']!=null)...[const SizedBox(height:12),const T('解析',style:SurgoText.cardTitle),T(q['why'],style:SurgoText.cardDesc),const T('原文依据：'),SourceText(q['evi'],style:const TextStyle(fontSize:12,height:1.6))]]))),
   SurgoButton('回到首页',onTap:()=>app.go(SurgoPage.ielts)),

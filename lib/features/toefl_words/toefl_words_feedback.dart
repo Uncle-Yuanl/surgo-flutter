@@ -392,7 +392,9 @@ class _QCard extends StatelessWidget {
           Row(
             children: [
               // 「第 N」含数字，chrome → 过词典
-              T('\u7b2c ${q.n}',
+              // 词典只收了「第 1」到「第 7」，真实数据一页可以不止 7 题：直接给
+              // [英文, 中文]（英文和词典的译法一致）。
+              T(['Q${q.n}', '\u7b2c ${q.n}'],
                   style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                       fontSize: 15, fontWeight: FontWeight.w900, color: SurgoColors.ink)),
               const SizedBox(width: 10),

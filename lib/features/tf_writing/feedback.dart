@@ -35,7 +35,8 @@ class _TfWritingFeedbackState extends State<TfWritingFeedback>{
   ]);
  }
  Widget _card(Map q)=>SurgoCard(child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
-  Row(children:[Expanded(child:T('第 ${q['n']}',style:SurgoText.rowLabel)),T(q['ok']?'表现良好':'错误',style:TextStyle(color:q['ok']?Colors.green:Colors.red,fontSize:12))]),const SizedBox(height:12),const T('考官提问',style:SurgoText.cardDesc),SourceText(q['q'],style:SurgoText.rowLabel),
+  // 词典只收了「第 1」到「第 7」，真实数据排列成句有 10 题：直接给 [英文, 中文]（英文和词典的译法一致）。
+  Row(children:[Expanded(child:T(['Q${q['n']}','第 ${q['n']}'],style:SurgoText.rowLabel)),T(q['ok']?'表现良好':'错误',style:TextStyle(color:q['ok']?Colors.green:Colors.red,fontSize:12))]),const SizedBox(height:12),const T('考官提问',style:SurgoText.cardDesc),SourceText(q['q'],style:SurgoText.rowLabel),
   if(q['subs']!=null)...[const SizedBox(height:12),Wrap(spacing:14,runSpacing:10,children:[for(final sub in q['subs'])SourceText('${sub[0]}  ${sub[1]}',style:TextStyle(fontSize:12,color:sub[2]=='ok'?Colors.green:Colors.red))])],
   if(q['task']!=null)...[const SizedBox(height:12),const T('题目',style:SurgoText.cardEn),SourceText(q['task'],style:const TextStyle(fontSize:14,height:1.6))]else const T('你的作答',style:SurgoText.cardDesc),const SizedBox(height:12),
   if(q['chips']!=null)Wrap(spacing:5,runSpacing:5,children:[for(final c in q['chips'])Container(padding:const EdgeInsets.all(7),decoration:BoxDecoration(color:c[1]==1?const Color(0xFFFDEAEA):SurgoColors.bg,borderRadius:BorderRadius.circular(9)),child:SourceText(c[0],style:TextStyle(fontSize:13,color:c[1]==1?Colors.red:SurgoColors.ink,decoration:c[1]==1?TextDecoration.lineThrough:null)))])else if(q['seg']!=null)_segments(q['seg'])else SourceText(q['mine']??'',style:const TextStyle(fontSize:14,height:1.7)),
