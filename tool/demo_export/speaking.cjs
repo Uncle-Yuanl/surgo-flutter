@@ -1,19 +1,21 @@
 // 雅思口语：日常 Part 1–3 的题目与练习回顾页，模考口语的题目与计时。
-// 数据全部来自后端已存的结果：ielts_attempts（逐题转写、评分、语法问题）、ielts_generated_items（题目）、
+// 数据全部来自后端已存的结果：ielts_attempts（逐题的题目与转写、评分、语法问题）、ielts_generated_items（题目）、
 // 能力分析的弱项（assessment_observations + assessment_error_tags，中英两份）、
-// ielts_mock_exam_sections / items / sessions（模考题目与计时方案）。
+// ielts_mock_exam_sessions（模考的计时方案）。
 const { one, lit } = require('./db.cjs');
 const { band, pair } = require('./text.cjs');
 
 // 演示学员的哪三次日常作答（ielts_attempts.id），每个 Part 一次：挑质量检查通过、没有质量警告、
 // 转写最完整的一次。回顾页按 Part 显示对应那一次的分数、分项、弱项和逐题。
+// 模考口语问的也是这三次作答的题（2026-09-30 定）：模考走完进的就是这张回顾页，看到、听到的每道题
+// 回顾页上都得有。
 const ATTEMPTS = {
   p1: '88213563-b7af-4744-a989-1aba8928a120',
   p2: 'de733c07-a358-4358-8268-3a2fee9da835',
   p3: '3da0783a-9216-4239-a016-fcaaae72e79b',
 };
-// 模考口语的题目用这一场（ielts_mock_exam_sessions.id，唯一一场已完成的）。它按时交卷但一题都没录上
-// （0/14 题，整场 0 分、各项 not_demonstrated），所以成绩页不用它：模考模式的回顾页仍按 Part 显示上面三次日常作答。
+// 模考口语各 Part 的计时取这一场的方案（ielts_mock_exam_sessions.id，唯一一场已完成的）。它按时交卷但一题
+// 都没录上（0/14 题，整场 0 分），题目和成绩都不用它。
 const MOCK_SESSION = '12f6e3bb-00fe-4f72-a2f5-a81d3a18b70b';
 
 // 回顾页四张分项卡（中文名是原型的，英文界面由词典译）；发音只有测评指标，后端不折算成分数。
@@ -50,14 +52,10 @@ function attempt(id, learner) {
   );
 }
 
-function mockSession(id, learner) {
+/** 那场模考的计时方案：各阶段的 id 和时长。 */
+function mockPlan(id, learner) {
   return one(
-    `select jsonb_build_object(
-      'groups', s.exam_plan_snapshot->'groups',
-      'parts', (select jsonb_agg(jsonb_build_object('c', sc.public_content,
-                 'qs', (select jsonb_agg(i.public_content->>'prompt' order by i.ordinal)
-                        from ielts_mock_exam_items i where i.section_id = sc.id)) order by sc.ordinal)
-                from ielts_mock_exam_sections sc where sc.session_id = s.id))
+    `select s.exam_plan_snapshot->'groups'
      from ielts_mock_exam_sessions s where s.id = ${lit(id)} and s.module = 'speaking' and s.status = 'completed'
        and s.user_id::text like ${lit(`${learner}%`)}`,
     `speaking mock session ${id}`,
@@ -89,8 +87,10 @@ const grammarIn = (answer, issues) => (issues || []).filter((g) => words(answer)
 /** 回顾页的一个 Part：总分、分项、弱项、逐题。 */
 function review(part, a) {
   // Part 2 回顾页只有一张卡：放整段 Part 2 的作答（长陈述加追问的回答）。评分、引文、弱项看的都是这一整段，
-  // 只放长陈述那一轮的话，一半引文在页面上找不到出处。
-  const turns = part === 'p2' ? [{ a: a.response, ms: Number(a.seconds) * 1000 }] : a.turns;
+  // 只放长陈述那一轮的话，一半引文在页面上找不到出处。考官那一栏相应地列出题卡和后面的追问，一句一行。
+  const turns = part === 'p2'
+    ? [{ q: a.turns.map((t) => t.q).join('\n'), a: a.response, ms: Number(a.seconds) * 1000 }]
+    : a.turns;
   // 没有转写的那一轮在页面上是一张空卡：换一次作答，别悄悄导出去。
   if (turns.some((t) => !t.a)) throw new Error(`speaking ${part}: a turn has no transcript, pick another attempt`);
   return {
@@ -116,7 +116,7 @@ function review(part, a) {
     }),
     items: {
       [part]: turns.map((t) => ({
-        ...(part === 'p3' ? { q: t.q } : {}),
+        q: t.q, // 考官问的原话；回顾页每张卡都写出来（原型只有 Part 3 写）
         dur: duration(t.ms),
         ans: t.a,
         tags: grammarIn(t.a, a.grammar).map((g) => ['语法多样性与准确性', `"${g.original}" → "${g.correction}"`, g.explanation, 'warn']),
@@ -125,23 +125,41 @@ function review(part, a) {
   };
 }
 
-const questions = (item) => item.questions.map((q) => q.question);
 const seconds = (groups, id) => groups.find((g) => g.id === id).timing_policy.duration_seconds;
+
+/**
+ * 练习页和模考页上看到、听到的题，必须就是回顾页上讲的那几题：Part 1 / 3 的题目表要和那次作答里逐轮问出去的
+ * 一字不差，Part 2 的题卡（话题加要点）要都在当时问出去的原话里。对不上（比如挑了追问是现场生成的作答）就报错。
+ */
+function askedQuestions(a) {
+  const asked = Object.fromEntries(['p1', 'p3'].map((part) => [part, a[part].turns.map((t) => t.q)]));
+  for (const [part, list] of Object.entries(asked)) {
+    const task = a[part].item.questions.map((q) => q.question);
+    if (JSON.stringify(task) !== JSON.stringify(list)) {
+      throw new Error(`speaking ${part}: the task's questions are not the ones asked in the attempt, pick another attempt`);
+    }
+  }
+  const cue = a.p2.item.cue_card;
+  const cueAsked = a.p2.turns[0].q;
+  if (![cue.topic, ...cue.points].every((line) => words(cueAsked).includes(words(line)))) {
+    throw new Error('speaking p2: the cue card is not what the attempt was asked, pick another attempt');
+  }
+  return { ...asked, cue, cueAsked };
+}
 
 exports.build = ({ learner }) => {
   const a = Object.fromEntries(Object.entries(ATTEMPTS).map(([part, id]) => [part, attempt(id, learner)]));
-  const cue = a.p2.item.cue_card;
-  const mock = mockSession(MOCK_SESSION, learner);
-  const [m1, m2, m3] = mock.parts;
+  const { p1, p3, cue, cueAsked } = askedQuestions(a);
+  const plan = mockPlan(MOCK_SESSION, learner);
   return {
     'questions.json': {
       ielts: {
         speaking: {
           daily: {
-            part1: { topic: a.p1.item.topic, questions: questions(a.p1.item) },
+            part1: { topic: a.p1.item.topic, questions: p1 },
             part2: { cue: cue.topic, points: cue.points, pointsZh: [] },
             // rounds：那次作答实际问了几轮（原型固定 10 轮、题目循环着问），练习页和回顾页的轮数才对得上。
-            part3: { topic: a.p3.item.topic, questions: questions(a.p3.item), rounds: a.p3.turns.length },
+            part3: { topic: a.p3.item.topic, questions: p3, rounds: p3.length },
           },
         },
       },
@@ -152,14 +170,14 @@ exports.build = ({ learner }) => {
       score: '', criteria: [], weaks: [], items: { p1: [], p2: [], p3: [] }, cuePoints: [], p3Overall: null,
     },
     'ielts_mock_speaking.json': {
+      // 题目是上面三次日常作答的题，计时是那场真实模考的方案。
       SPQ: {
-        p1: { n: m1.qs.length, sec: seconds(mock.groups, 'speaking_part_1'), qs: m1.qs },
-        // 模考的 Part 2 题卡只有话题一句，没有「你应该谈到」的要点；题卡下面放这一节的作答说明。
-        // 两道追问（ordinal 2、3）在原型的 Part 2 流程里没有位置，不放。
-        p2: { card: { title: m2.c.topic, lead: m2.c.instructions, bullets: [] }, qs: m2.qs.slice(0, 1) },
-        p3: { n: m3.qs.length, sec: seconds(mock.groups, 'speaking_part_3'), qs: m3.qs },
+        p1: { n: p1.length, sec: seconds(plan, 'speaking_part_1'), qs: p1 },
+        // 题卡：话题加要点（原型那行「你应该谈到:」不动）；念出来的是当时问出去的原话。
+        p2: { card: { title: cue.topic, bullets: cue.points }, qs: [cueAsked] },
+        p3: { n: p3.length, sec: seconds(plan, 'speaking_part_3'), qs: p3 },
       },
-      SP3_TOTAL: seconds(mock.groups, 'speaking_part_3'),
+      SP3_TOTAL: seconds(plan, 'speaking_part_3'),
     },
   };
 };
@@ -171,6 +189,14 @@ if (require.main === module) {
   assert.strictEqual(duration(9400), '9s');
   assert.deepStrictEqual(completed('2026-09-16T07:42:46.98+00:00', 116.2), ['Completed 16 Sep, 15:42 · 2 min', '9月16日完成, 15:42 · 2 min']);
   assert.deepStrictEqual(completed('2026-12-31T16:05:00+00:00', 20), ['Completed 1 Jan, 00:05 · 1 min', '1月1日完成, 00:05 · 1 min']);
+  // 练习页 / 模考页的题必须是回顾页讲的题：题目表和问出去的对不上、题卡不在问出去的原话里，都要报错。
+  const task = (qs) => ({ item: { questions: qs.map((question) => ({ question })) }, turns: qs.map((q) => ({ q })) });
+  const cueCard = { topic: 'Describe a trip.', points: ['where you went', 'and explain why you remember it.'] };
+  const part2 = (q) => ({ item: { cue_card: cueCard }, turns: [{ q }, { q: 'Anything else?' }] });
+  const ok = { p1: task(['A?', 'B?']), p2: part2('Describe a trip. — where you went — and explain why you remember it.'), p3: task(['C?']) };
+  assert.deepStrictEqual(askedQuestions(ok).p1, ['A?', 'B?']);
+  assert.throws(() => askedQuestions({ ...ok, p3: { ...task(['C?']), turns: [{ q: 'C?' }, { q: 'a follow-up made up on the spot' }] } }), /p3/);
+  assert.throws(() => askedQuestions({ ...ok, p2: part2('Describe a trip. — where you went') }), /p2/);
   // 逐题转写是小写、无标点、撇号前带空格的；整篇里摘的原句带标点。找不到的（转写写法不同）不挂。
   const answer = "then makes makes sound like everything 's mostly and on two time";
   assert.deepStrictEqual(

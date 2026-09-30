@@ -286,7 +286,7 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
   }
 
   // Examiner block: Part 3 writes the question text under "考官"; other Parts
-  // show an avatar + audio waveform.
+  // show an avatar + audio waveform (plus the question text when the data has it).
   Widget _examinerBlock(Map<String, dynamic> it) {
     if (spReviewPart == 'p3') {
       return Padding(padding: const EdgeInsets.only(bottom: 12), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -303,6 +303,12 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
         T('考官', style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(13.5), fontWeight: FontWeight.w800, color: const Color(0xFF3A352C))),
         const SizedBox(height: 5),
         _audioBar(const Color(0xFFFDF6E3), SurgoColors.yellow, const Color(0xFF3A2E00), const Color(0xFFE6B93A), 26, 22, 30, playLabel: '▶'),
+        // 真实数据每张卡都带考官问的原话（Part 2 是题卡加追问，一句一行），写在音频条下面，
+        // 字体同 Part 3 那行；原型的 Part 1 / 2 没有 q，仍只有音频条。
+        if (it['q'] != null) ...[
+          const SizedBox(height: 7),
+          SourceText(it['q'] as String, style: TextStyle(fontSize: SurgoText.css(14), height: 1.6, color: const Color(0xFF4A453D))),
+        ],
       ])),
     ]));
   }

@@ -4,11 +4,11 @@
    "n": 5,
    "sec": 300,
    "qs": [
-    "What do you like about the area where you live?",
-    "How long have you been living in your current neighbourhood?",
-    "Are there any facilities near your home that you use regularly?",
-    "Has your neighbourhood changed much since you first lived there?",
-    "Do you think your area is a good place for families with children?"
+    "What is a typical morning like for you?",
+    "Do you prefer to plan your day in advance or decide things as you go?",
+    "How has your daily routine changed compared to five years ago?",
+    "Is there anything in your daily routine you would like to change?",
+    "Who do you usually spend the busiest parts of your day with?"
    ]
   },
   "p2": {
@@ -17,24 +17,28 @@
    "prep": 60,
    "rec": 120,
    "card": {
-    "title": "Describe a book or film that you have enjoyed recently.",
-    "lead": "Prepare for 60 seconds, then speak for up to 120 seconds.",
-    "bullets": []
+    "title": "Describe a useful skill you learned.",
+    "lead": "你应该谈到:",
+    "bullets": [
+     "what the skill is",
+     "when and where you learned it",
+     "how you learned it",
+     "and explain why you think it is useful."
+    ]
    },
    "qs": [
-    "Describe a book or film that you have enjoyed recently."
+    "Describe a useful skill you learned. — what the skill is — when and where you learned it — how you learned it — and explain why you think it is useful."
    ]
   },
   "p3": {
-   "n": 6,
+   "n": 5,
    "sec": 300,
    "qs": [
-    "What aspects of the book or film made it particularly memorable for you?",
-    "Do you think books and films have different strengths as storytelling mediums?",
-    "How do you think technology has changed the way people enjoy stories today?",
-    "Some people say that classic literature is being replaced by films and television shows. To what extent do you agree?",
-    "How might storytelling evolve in the future with new technologies such as virtual reality?",
-    "Do you think the stories we consume influence the values and beliefs of society?"
+    "How do most people in your country typically organise their daily schedules?",
+    "Why do you think some people find it difficult to stick to a daily routine?",
+    "Do you think technology has made it easier or harder for people to manage their time? Give reasons for your view.",
+    "Some people believe that a busy life is a fulfilling life. To what extent do you agree?",
+    "How might the way people organise their daily lives change in the future compared with how their parents did?"
    ]
   }
  },

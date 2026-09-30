@@ -100,6 +100,7 @@
    "items": {
     "p1": [
      {
+      "q": "What is a typical morning like for you?",
       "dur": "10s",
       "ans": "i always make a coffee for myself and then to do some profession for today's work",
       "tags": [
@@ -112,6 +113,7 @@
       ]
      },
      {
+      "q": "Do you prefer to plan your day in advance or decide things as you go?",
       "dur": "18s",
       "ans": "yeah i preferred to make a plan of a half of day or the whole day and i preferred to follow the scheduled task and then makes makes sound like everything 's mostly and on two time",
       "tags": [
@@ -124,11 +126,13 @@
       ]
      },
      {
+      "q": "How has your daily routine changed compared to five years ago?",
       "dur": "36s",
       "ans": "five years ago i was a fresh new a man of this uh industry and i think i need to learn some very foundation knowledge about my work and then now after five years i prefer to learn some over hides and some principle of this the technology",
       "tags": []
      },
      {
+      "q": "Is there anything in your daily routine you would like to change?",
       "dur": "30s",
       "ans": "yes and sometimes i play game for three or two hours in the evening and i think it's a very very enough time for the entertainments and i think i need to reduce the gaming time and relax myself without with doing nothing",
       "tags": [
@@ -141,6 +145,7 @@
       ]
      },
      {
+      "q": "Who do you usually spend the busiest parts of your day with?",
       "dur": "23s",
       "ans": "i usually spend the business time with my coworkers and the sometimes we get most of time we just communicate online with each other and every everyone will plan their task and we may meet every day",
       "tags": [
@@ -294,6 +299,7 @@
    "items": {
     "p2": [
      {
+      "q": "Describe a useful skill you learned. — what the skill is — when and where you learned it — how you learned it — and explain why you think it is useful.\nThank you. Is there anything else you would like to add about that?\nOverall, how has learning that skill changed the way you study or work today?",
       "dur": "2:02",
       "ans": "Hi should I learned us here to show the memory and experience between different. Agents within the club codes or Codex application and I learned it when I trying to use such code coding agents to help me develop a application. I learned after suffering from a multiply. Impose multiplied communications about within within different chat sessions and use them to work on the same target. And I think the reason why it's very useful is to avoid me. Chatting too much and I think it is a very efficient mechanism to let the agents communicate with each other internally and. And so you see target as the only one. Only Wang Funimation for file the final final codes. Yes, and my experience is to use the a longtime file in replace instead of the. Short time memory and I think that this is very important. I think the uh scale make me remind much of time to uh to let me free from communicating with the code agent and I just need to focus Lee targets and the direction of our final objective.",
       "tags": [
