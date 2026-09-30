@@ -15,6 +15,8 @@ import '../../widgets/t.dart';
 /// per-criterion comments are the exact source fixtures (exported byte-for-byte
 /// by tool/export_speaking_review.cjs). They are illustrative, not the product
 /// of real grading, and must never be replaced by live scoring.
+/// The Vercel demo build overlays one learner's stored results instead
+/// (tool/demo_export/speaking.cjs) — still fixed JSON, nothing is scored live.
 ///
 /// Layout mirrors the source markup as a single natural-height Column (no inner
 /// scroll view — the shell owns scrolling): meta chips, overall hero, weak-point
@@ -60,12 +62,16 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
     final app = context.watch<AppState>();
     final en = app.lang == UiLang.en;
     final mock = app.session['sessionMode'] == 'mock';
-    final score = data['score'] as String;
-    final criteria = (data['criteria'] as List).cast<Map<String, dynamic>>();
-    final weaks = (data['weaks'] as List).cast<Map<String, dynamic>>();
-    final items = data['items'] as Map<String, dynamic>;
-    final cuePoints = (data['cuePoints'] as List).cast<List>();
-    final overall = data['p3Overall'] as Map<String, dynamic>;
+    // 演示用真实数据（tool/demo_export/speaking.cjs）按 Part 各带一次作答：daily.p1/p2/p3，
+    // 分数、分项、弱项、逐题都跟着当前 Part 走。原型数据没有 daily，整页用顶层这一份。
+    final view = (data['daily'] as Map?)?[spReviewPart] as Map<String, dynamic>? ?? data;
+    final score = view['score'] as String;
+    final criteria = (view['criteria'] as List).cast<Map<String, dynamic>>();
+    final weaks = (view['weaks'] as List).cast<Map<String, dynamic>>();
+    final items = view['items'] as Map<String, dynamic>;
+    // 真实数据没有「话题卡要点覆盖」和 Part 3 考官总评，这两块就不画。
+    final cuePoints = (view['cuePoints'] as List? ?? const []).cast<List>();
+    final overall = view['p3Overall'] as Map<String, dynamic>?;
     final curItems = (items[spReviewPart] as List? ?? const []).cast<Map<String, dynamic>>();
 
     final partInfo = spReviewPart == 'p1'
@@ -92,7 +98,7 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
       Padding(padding: const EdgeInsets.fromLTRB(2, 0, 2, 14), child: Wrap(spacing: 8, runSpacing: 8, crossAxisAlignment: WrapCrossAlignment.center, children: [
         _chip('模拟考成绩', const Color(0xFF8A5AA8), const Color(0xFFF4E9F8)),
         _chip(app.examType == ExamType.toefl ? (en ? 'TOEFL Speaking' : 'TOEFL 口语') : (en ? 'IELTS Speaking' : 'IELTS 口语'), const Color(0xFF3F7AB8), const Color(0xFFE6F0FA)),
-        T('今日完成, 14:32 · 24 min', style: TextStyle(fontSize: SurgoText.css(13.5), color: SurgoColors.muted)),
+        T(view['meta'] ?? '今日完成, 14:32 · 24 min', style: TextStyle(fontSize: SurgoText.css(13.5), color: SurgoColors.muted)),
       ])),
       // .sv-hero — overall practice estimate (fixed demo score).
       Container(
@@ -108,10 +114,11 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
           const SizedBox(height: 11),
           // 用户 2026-09-24：中英分开 —— 中文模式只出中文、英文模式只出英文，
           // 不再中英并列；字号同时放大一档。
+          // 真实数据带 summary（第一条优先改进项，只有英文），两种界面都显示原文。
           SourceText(
-              en
+              view['summary'] as String? ?? (en
                   ? 'A solid Band $score performance: you speak at length, stay relevant and use a decent range of vocabulary. To reach Band 7 you need fewer filled pauses before complex ideas, more varied verbs instead of repeating "I like", and a wider range of complex sentences. Pronunciation is not scored here because this practice run has no real audio analysis.'
-                  : '总体 $score：你能持续表达、内容切题、词汇范围尚可。要冲 7 分，需要减少复杂观点前的填充停顿、用更多样的动词代替反复的 "I like"，并使用更丰富的复合句。发音在本次练习中不评分，因为没有真实音频分析。',
+                  : '总体 $score：你能持续表达、内容切题、词汇范围尚可。要冲 7 分，需要减少复杂观点前的填充停顿、用更多样的动词代替反复的 "I like"，并使用更丰富的复合句。发音在本次练习中不评分，因为没有真实音频分析。'),
               style: TextStyle(
                   fontSize: SurgoText.css(15),
                   height: 1.6,
@@ -133,12 +140,14 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
                 decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: const Color(0xFFC0392B), width: 1.5)),
                 child: const SourceText('!', style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: 12, fontWeight: FontWeight.w900, color: Color(0xFFC0392B)))),
               const SizedBox(width: 8),
-              Expanded(child: SourceText(w['en'] as String, style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(16), fontWeight: FontWeight.w800, color: const Color(0xFFC0392B)))),
+              Expanded(child: _text(w['en'], TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(16), fontWeight: FontWeight.w800, color: const Color(0xFFC0392B)))),
             ]),
-            const SizedBox(height: 9),
-            Container(padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              decoration: BoxDecoration(color: const Color(0xFFEFECE4), borderRadius: BorderRadius.circular(9)),
-              child: SourceText(_weakQuote(w, en), style: TextStyle(fontSize: SurgoText.css(14), fontStyle: FontStyle.italic, color: const Color(0xFF7A736A)))),
+            if (w['quote'] != null) ...[
+              const SizedBox(height: 9),
+              Container(padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                decoration: BoxDecoration(color: const Color(0xFFEFECE4), borderRadius: BorderRadius.circular(9)),
+                child: SourceText(_weakQuote(w, en), style: TextStyle(fontSize: SurgoText.css(14), fontStyle: FontStyle.italic, color: const Color(0xFF7A736A)))),
+            ],
             const SizedBox(height: 10),
             SourceText.rich(TextSpan(children: [
               TextSpan(text: en ? 'Suggestion' : '改进建议', style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(14.5), fontWeight: FontWeight.w800, color: const Color(0xFF3A3630))),
@@ -168,8 +177,11 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
         ]),
         const SizedBox(height: 9),
         SourceText(c['en'] as String, style: TextStyle(fontSize: SurgoText.css(13.5), height: 1.55, color: const Color(0xFF4A453D))),
-        const SizedBox(height: 5),
-        SourceText(c['zhNote'] as String, style: TextStyle(fontSize: SurgoText.css(13.5), height: 1.55, color: const Color(0xFFA99A82))),
+        // 真实数据的分项反馈只有英文，没有这段中文说明。
+        if (c['zhNote'] != null) ...[
+          const SizedBox(height: 5),
+          SourceText(c['zhNote'] as String, style: TextStyle(fontSize: SurgoText.css(13.5), height: 1.55, color: const Color(0xFFA99A82))),
+        ],
         for (final q in (c['quotes'] as List)) Padding(padding: const EdgeInsets.only(top: 8), child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 9),
           decoration: BoxDecoration(color: const Color(0xFFF0EEFB), borderRadius: BorderRadius.circular(10)),
@@ -199,7 +211,7 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
       // Per-question cards.
       for (var i = 0; i < curItems.length; i++) _questionCard(curItems[i], i, en, cuePoints),
       // Part 3 examiner overall comment, after the final round.
-      if (spReviewPart == 'p3') Container(
+      if (spReviewPart == 'p3' && overall != null) Container(
         margin: const EdgeInsets.only(bottom: 14), padding: const EdgeInsets.fromLTRB(18, 17, 18, 17),
         decoration: BoxDecoration(color: SurgoColors.yellowTint, borderRadius: BorderRadius.circular(18), border: Border.all(color: SurgoColors.yellowSoft)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -255,23 +267,26 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
         const SizedBox(width: 9),
         // Round / Part label is UI chrome (already localised above) — raw Text of the resolved string.
         Expanded(child: SourceText(qLabel, style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(15), fontWeight: FontWeight.w700, color: SurgoColors.ink))),
-        Container(padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 5),
+        // 真实数据没有逐题分数和逐题点评（后端只给整场评分），这两处不画；逐题只留转写和挂在这题上的语法问题。
+        if (it['band'] != null) Container(padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 5),
           decoration: BoxDecoration(color: const Color(0xFFE8F5E0), borderRadius: BorderRadius.circular(9)),
           child: SourceText(it['band'] as String, style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(13.5), fontWeight: FontWeight.w700, color: const Color(0xFF4F8A1F)))),
       ]),
       const SizedBox(height: 12),
       _examinerBlock(it),
       _answerBlock(it, cuePoints),
-      SourceText(it['en'] as String, style: TextStyle(fontSize: SurgoText.css(13.5), height: 1.55, color: const Color(0xFF4A453D))),
-      const SizedBox(height: 4),
-      SourceText(it['zh'] as String, style: TextStyle(fontSize: SurgoText.css(13.5), height: 1.55, color: const Color(0xFFA99A82))),
+      if (it['en'] != null) ...[
+        SourceText(it['en'] as String, style: TextStyle(fontSize: SurgoText.css(13.5), height: 1.55, color: const Color(0xFF4A453D))),
+        const SizedBox(height: 4),
+        SourceText(it['zh'] as String, style: TextStyle(fontSize: SurgoText.css(13.5), height: 1.55, color: const Color(0xFFA99A82))),
+      ],
       const SizedBox(height: 12),
       for (final t in (it['tags'] as List)) _tagRow((t as List).cast()),
     ]));
   }
 
   // Examiner block: Part 3 writes the question text under "考官"; other Parts
-  // show an avatar + audio waveform.
+  // show an avatar + audio waveform (plus the question text when the data has it).
   Widget _examinerBlock(Map<String, dynamic> it) {
     if (spReviewPart == 'p3') {
       return Padding(padding: const EdgeInsets.only(bottom: 12), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -288,6 +303,12 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
         T('考官', style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(13.5), fontWeight: FontWeight.w800, color: const Color(0xFF3A352C))),
         const SizedBox(height: 5),
         _audioBar(const Color(0xFFFDF6E3), SurgoColors.yellow, const Color(0xFF3A2E00), const Color(0xFFE6B93A), 26, 22, 30, playLabel: '▶'),
+        // 真实数据每张卡都带考官问的原话（Part 2 是题卡加追问，一句一行），写在音频条下面，
+        // 字体同 Part 3 那行；原型的 Part 1 / 2 没有 q，仍只有音频条。
+        if (it['q'] != null) ...[
+          const SizedBox(height: 7),
+          SourceText(it['q'] as String, style: TextStyle(fontSize: SurgoText.css(14), height: 1.6, color: const Color(0xFF4A453D))),
+        ],
       ])),
     ]));
   }
@@ -317,7 +338,7 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
 
   Widget _p2Body(Map<String, dynamic> it, List<List> cuePoints) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
     // Cue-card coverage.
-    Container(margin: const EdgeInsets.only(bottom: 12), padding: const EdgeInsets.fromLTRB(15, 13, 15, 13),
+    if (cuePoints.isNotEmpty) Container(margin: const EdgeInsets.only(bottom: 12), padding: const EdgeInsets.fromLTRB(15, 13, 15, 13),
       decoration: BoxDecoration(color: const Color(0xFFF4F2FD), borderRadius: BorderRadius.circular(12)),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         T('▤ 话题卡要点覆盖', style: TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, fontSize: SurgoText.css(13.5), fontWeight: FontWeight.w800, color: const Color(0xFF6B5FC7))),
@@ -446,7 +467,14 @@ class _SpeakingReviewPageState extends State<SpeakingReviewPage> {
   static String _weakQuote(Map<String, dynamic> w, bool en) =>
       en ? w['quote'] as String : (_weakZh[w['en']]?[0] ?? w['quote'] as String);
 
-  /// 取某条薄弱项在当前语言下的建议。
-  static String _weakTip(Map<String, dynamic> w, bool en) =>
-      en ? w['tip'] as String : (_weakZh[w['en']]?[1] ?? w['tip'] as String);
+  /// 取某条薄弱项在当前语言下的建议。真实数据（能力分析的弱项）本身就是 [英文, 中文]。
+  static String _weakTip(Map<String, dynamic> w, bool en) {
+    final tip = w['tip'];
+    if (tip is List) return '${tip[en ? 0 : 1]}';
+    return en ? tip as String : (_weakZh[w['en']]?[1] ?? tip as String);
+  }
+
+  /// 原型的串照旧走 SourceText；真实数据的 [英文, 中文] 一对交给 T 按界面语言取。
+  static Widget _text(Object v, TextStyle style) =>
+      v is List ? T(v, style: style) : SourceText(v as String, style: style);
 }

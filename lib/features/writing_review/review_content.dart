@@ -31,14 +31,17 @@ class WritingReviewContent extends StatelessWidget {
         ? (second ? data['WF_T2_L1_ESSAY'] : data['l1task1']['essay'])
         : (second ? data['WF_T2_ESSAY'] : data['task1']['essay']);
     final notes = second ? data['WF_T2_NOTES'] : data['task1']['notes'];
-    final items = second ? data['WF_T2_L1'] : data['l1task1']['items'];
+    // 模考那一块没有母语负迁移的数据（l1task1 为空，也进不了这一页），所以用 ?[。
+    final items = second ? data['WF_T2_L1'] : data['l1task1']?['items'];
     // 演示用真实数据：这篇没查出母语负迁移时，用检查的总评代替空卡片。
     final l1Summary =
-        second ? data['WF_T2_L1_SUMMARY'] : data['l1task1']['summary'];
+        second ? data['WF_T2_L1_SUMMARY'] : data['l1task1']?['summary'];
     final writing = QuestionBank.instance.skill('writing', app.examType);
+    // 模考的评分页配模考的题目（演示用真实数据才有 mock.task1/2），否则是日常那两题。
+    final key = second ? 'task2' : 'task1';
+    final mock = app.session['sessionMode'] == 'mock' ? writing['mock'] : null;
     final prompt =
-        writing['daily']?[second ? 'task2' : 'task1']?['prompt'] as String? ??
-            '';
+        (mock?[key] ?? writing['daily']?[key])?['prompt'] as String? ?? '';
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       if (l1) ...[
         ReviewCard(title: '母语负迁移分析', children: [

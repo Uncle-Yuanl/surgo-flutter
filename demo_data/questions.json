@@ -1153,7 +1153,337 @@
    },
    "mock": {
     "intro": "Two tasks share a single sixty-minute clock. Task 2 carries twice the marks of Task 1, so most candidates spend about twenty minutes on Task 1 and forty on Task 2.",
-    "summary": "Both tasks under one 60-minute clock, at least 150 words then at least 250 words."
+    "summary": "Both tasks under one 60-minute clock, at least 150 words then at least 250 words.",
+    "task1": {
+     "prompt": "The table below shows the number of library members and the average number of books borrowed per member per year in three public libraries between 2020 and 2022. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+     "minWords": 150,
+     "table": {
+      "title": "Library members and average books borrowed per member, 2020-2022",
+      "head": [
+       "Library",
+       "Members (2020)",
+       "Average books per member (2020)",
+       "Members (2021)",
+       "Average books per member (2021)",
+       "Members (2022)",
+       "Average books per member (2022)"
+      ],
+      "rows": [
+       [
+        "Central Library",
+        4800,
+        6.2,
+        5300,
+        5.8,
+        5700,
+        5.4
+       ],
+       [
+        "Riverside Library",
+        3200,
+        8.4,
+        3400,
+        7.9,
+        3550,
+        7.5
+       ],
+       [
+        "Oakwood Library",
+        1900,
+        11.5,
+        2100,
+        10.2,
+        2300,
+        9.6
+       ]
+      ]
+     }
+    },
+    "task2": {
+     "prompt": "Some people believe that a part-time job during secondary school is an essential experience that helps young people prepare for adult working life. Others argue that studying and extracurricular activities should take priority, and that any work commitments distract teenagers from their main responsibilities.\n\nDiscuss both these views and give your own opinion.",
+     "minWords": 250
+    },
+    "review": {
+     "overall": "7.5",
+     "weak": [
+      {
+       "label": [
+        "Task 1 · Task achievement 8.0",
+        "Task 1 · 任务完成情况 8.0"
+       ],
+       "text": [
+        "Add one or two intermediate 2021 values for the borrowing variable at Central and Riverside, and pair at least one overall change with a figure such as a difference or percentage to sharpen the comparison.",
+        "为 Central 和 Riverside 的借阅数据补上一个或两个 2021 年的中间值，并将至少一项整体变化与差值或百分比搭配使用，使对比更精确。"
+       ]
+      },
+      {
+       "label": [
+        "Task 2 · Task achievement 7.0",
+        "Task 2 · 任务完成情况 7.0"
+       ],
+       "text": [
+        "Develop the own-opinion paragraph so it explicitly argues why education must remain the priority, with a concrete reason and example rather than general guidance to parents and schools.",
+        "扩展你的个人观点段，明确阐述为什么教育必须放在首位，给出具体的理由和例子，而不是停留在给家长和学校的笼统建议。"
+       ]
+      }
+     ],
+     "task1": {
+      "band": "8.0",
+      "descEn": "The response meets the task at a high level with a clear overview, accurate figures across both variables and all three libraries, and logical paragraphing; the main priority is to quantify at least one of the changes and tighten the three parallel membership summaries into a sharper comparison.",
+      "descZh": "回应在较高水平上完成了任务，概述清晰，数字准确覆盖两个变量和三所图书馆，段落安排合理。最需要改进的是对变化幅度进行量化，并把三段平行的会员描述整合成更有力的对比。",
+      "crit": [
+       {
+        "name": "任务完成情况",
+        "sc": "8.0",
+        "ok": [
+         "The response contains a clear overview that identifies the two main trends and the key contrast between Central and Oakwood libraries: \"membership figures increased steadily across all three libraries\" and \"Central Library had the largest membership but the lowest borrowing rate, whereas Oakwood Library had the fewest members but the highest borrowing rate\". Key features are well selected and supported with accurate figures across both variables and all three libraries, including Central Library's rise from 4,800 to 5,700 and Oakwood Library's borrowing fall from 11.5 to 9.6.",
+         "The response contains a clear overview that identifies the two main trends and the key contrast between Central and Oakwood libraries: \"membership figures increased steadily across all three libraries\" and \"Central Library had the largest membership but the lowest borrowing rate, whereas Oakwood Library had the fewest members but the highest borrowing rate\". Key features are well selected and supported with accurate figures across both variables and all three libraries, including Central Library's rise from 4,800 to 5,700 and Oakwood Library's borrowing fall from 11.5 to 9.6."
+        ],
+        "up": [
+         "The intermediate year 2021 values for Central and Riverside borrowing are omitted, so the per-year trajectory of the decline is only fully shown for Oakwood Library: \"from 11.5 in 2020 to 10.2 in 2021, and further to 9.6 in 2022\". The response does not quantify the size of the increases and decreases, for example noting how much Central's borrowing per member fell or how the proportional growth in membership compared across libraries.",
+         "The intermediate year 2021 values for Central and Riverside borrowing are omitted, so the per-year trajectory of the decline is only fully shown for Oakwood Library: \"from 11.5 in 2020 to 10.2 in 2021, and further to 9.6 in 2022\". The response does not quantify the size of the increases and decreases, for example noting how much Central's borrowing per member fell or how the proportional growth in membership compared across libraries."
+        ]
+       },
+       {
+        "name": "连贯与衔接",
+        "sc": "8.0",
+        "ok": [
+         "The response is sequenced logically in four clear blocks: overview, membership, borrowing, and conclusion, with each paragraph carrying one recognisable focus such as \"Turning to borrowing habits\". Cohesive devices such as \"Similarly\", \"whereas\" and \"an inverse pattern is evident\" are used appropriately to link ideas and signal the contrasting relationship between the two variables.",
+         "The response is sequenced logically in four clear blocks: overview, membership, borrowing, and conclusion, with each paragraph carrying one recognisable focus such as \"Turning to borrowing habits\". Cohesive devices such as \"Similarly\", \"whereas\" and \"an inverse pattern is evident\" are used appropriately to link ideas and signal the contrasting relationship between the two variables."
+        ],
+        "up": [
+         "Some cohesive markers are slightly mechanical, for example the parallel \"climbing from 1,900 to 2,100, and finally to 2,300\" sits in a list of three separate library summaries and could read more naturally as a single comparison.",
+         "Some cohesive markers are slightly mechanical, for example the parallel \"climbing from 1,900 to 2,100, and finally to 2,300\" sits in a list of three separate library summaries and could read more naturally as a single comparison."
+        ]
+       },
+       {
+        "name": "词汇资源",
+        "sc": "8.0",
+        "ok": [
+         "Vocabulary is used fluently and flexibly to describe trends and comparisons, including \"accommodated the most members\", \"experienced the same upward trajectory\" and \"per-capita borrowing\". Less common collocations such as \"consistent decline\", \"inverse pattern\" and \"user engagement patterns\" fit naturally in context and add precision.",
+         "Vocabulary is used fluently and flexibly to describe trends and comparisons, including \"accommodated the most members\", \"experienced the same upward trajectory\" and \"per-capita borrowing\". Less common collocations such as \"consistent decline\", \"inverse pattern\" and \"user engagement patterns\" fit naturally in context and add precision."
+        ],
+        "up": [
+         "\"Borrowing rate\" is used several times to mean average books per member; a term such as \"average borrowing per member\" would be more precise and avoid confusion with a percentage rate.",
+         "\"Borrowing rate\" is used several times to mean average books per member; a term such as \"average borrowing per member\" would be more precise and avoid confusion with a percentage rate."
+        ]
+       },
+       {
+        "name": "语法",
+        "sc": "8.0",
+        "ok": [
+         "A wide range of structures is used accurately, including complex sentences with participle clauses such as \"Notably, Central Library had the largest membership but the lowest borrowing rate\" and \"Oakwood Library, which boasted the highest borrowing rate throughout, also witnessed a decline\". Punctuation is well controlled, with commas, semicolons and dashes used correctly to support the longer sentences.",
+         "A wide range of structures is used accurately, including complex sentences with participle clauses such as \"Notably, Central Library had the largest membership but the lowest borrowing rate\" and \"Oakwood Library, which boasted the highest borrowing rate throughout, also witnessed a decline\". Punctuation is well controlled, with commas, semicolons and dashes used correctly to support the longer sentences."
+        ],
+        "up": [
+         "A few long sentences stack several clauses together, for example \"In terms of membership, Central Library consistently accommodated the most members, rising from 4,800 in 2020 to 5,300 in 2021, and then reaching 5,700 in 2022\"; the participle phrases could be tightened to reduce reading load.",
+         "A few long sentences stack several clauses together, for example \"In terms of membership, Central Library consistently accommodated the most members, rising from 4,800 in 2020 to 5,300 in 2021, and then reaching 5,700 in 2022\"; the participle phrases could be tightened to reduce reading load."
+        ]
+       }
+      ],
+      "tips": [
+       {
+        "name": "任务完成情况",
+        "items": [
+         [
+          "Add one or two intermediate 2021 values for the borrowing variable at Central and Riverside, and pair at least one overall change with a figure such as a difference or percentage to sharpen the comparison.",
+          "为 Central 和 Riverside 的借阅数据补上一个或两个 2021 年的中间值，并将至少一项整体变化与差值或百分比搭配使用，使对比更精确。"
+         ]
+        ]
+       },
+       {
+        "name": "连贯与衔接",
+        "items": [
+         [
+          "Combine the three one-by-one library summaries into a comparative statement that contrasts Oakwood's small scale with Central's large scale in one sentence rather than three separate growth descriptions.",
+          "将三所图书馆逐条描述的段落改为一句对比，集中体现 Oakwood 的小规模与 Central 的大规模之间的反差，而不是三条独立的增长叙述。"
+         ]
+        ]
+       },
+       {
+        "name": "词汇资源",
+        "items": [
+         [
+          "Replace \"borrowing rate\" with \"average borrowing per member\" or \"books borrowed per member\" so the unit of the figure is unambiguous.",
+          "把“borrowing rate”改为“average borrowing per member”或“books borrowed per member”，以免读者误以为是百分比。"
+         ]
+        ]
+       },
+       {
+        "name": "语法",
+        "items": [
+         [
+          "Shorten the longest list-based sentences by splitting the final participle phrase into its own clause, for example ending with \"and reached 5,700 in 2022\" rather than layering three participle phrases in one sentence.",
+          "将最长的并列型长句中的最后一个分词短语拆为独立分句，例如把“and then reaching 5,700 in 2022”改为“and reached 5,700 in 2022”，以避免连续叠加分词短语。"
+         ]
+        ]
+       }
+      ],
+      "essay": "The table provides data on the number of members and the average books borrowed per member at three libraries in the city—Central Library, Riverside Library, and Oakwood Library—over a three-year period from 2020 to 2022.\n\nOverall, membership figures increased steadily across all three libraries over the period. However, the average number of books borrowed per member showed a consistent decline in every library. Notably, Central Library had the largest membership but the lowest borrowing rate, whereas Oakwood Library had the fewest members but the highest borrowing rate.\n\nIn terms of membership, Central Library consistently accommodated the most members, rising from 4,800 in 2020 to 5,300 in 2021, and then reaching 5,700 in 2022. Riverside Library followed with 3,200 members in 2020, growing steadily to 3,400 and then 3,550 in the subsequent years. Oakwood Library, despite having the smallest membership base, experienced the same upward trajectory, <span class=\"wf-hl\">climbing from 1,900 to 2,100, and finally to 2,300.<sup>1</sup></span>\n\nTurning to borrowing habits, an inverse pattern is evident. <span class=\"wf-hl\">Central Library saw its average books borrowed per member fall from 6.2 in 2020 to 5.4 in 2022.<sup>2</sup></span> <span class=\"wf-hl\">Similarly, Riverside Library's borrowing rate dropped from 8.4 to 7.5 over the same period.<sup>3</sup></span> Oakwood Library, which boasted the highest borrowing rate throughout, also witnessed a decline, from 11.5 in 2020 to 10.2 in 2021, and further to 9.6 in 2022.\n\nIn conclusion, while all three libraries attracted more members between 2020 and 2022, the average borrowing activity per member decreased. <span class=\"wf-hl\">Central and Oakwood libraries represented opposite extremes in terms of membership size and per-capita borrowing, highlighting distinct user engagement patterns.<sup>4</sup></span>",
+      "notes": [
+       {
+        "n": 1,
+        "old": "climbing from 1,900 to 2,100, and finally to 2,300.",
+        "neu": "growing from 1,900 in 2020 to 2,300 in 2022, a rise of around 21 percent.",
+        "en": "",
+        "zh": "",
+        "whyEn": "A combined comparative statement with an approximate percentage adds analytical weight and avoids three parallel one-by-one growth descriptions that read mechanically.",
+        "whyZh": "把三组平行增长合并为一句对比性陈述，并加入约 21% 的增幅，提升分析力度，也避免了逐条机械列举的读感。"
+       },
+       {
+        "n": 2,
+        "old": "Central Library saw its average books borrowed per member fall from 6.2 in 2020 to 5.4 in 2022.",
+        "neu": "Central Library saw its average books borrowed per member fall from 6.2 in 2020 to 5.8 in 2021 and then to 5.4 in 2022, a total drop of 0.8 books per member.",
+        "en": "",
+        "zh": "",
+        "whyEn": "Adding the 2021 midpoint and the total drop sharpens the trend description and supports the overview's claim of a consistent decline across the whole period.",
+        "whyZh": "补上 2021 年的中间值和总下降幅度，使趋势描述更清晰，并支撑概述中关于整个周期持续下降的判断。"
+       },
+       {
+        "n": 3,
+        "old": "Similarly, Riverside Library's borrowing rate dropped from 8.4 to 7.5 over the same period.",
+        "neu": "Similarly, Riverside Library's average borrowing per member fell from 8.4 in 2020 to 7.9 in 2021 and 7.5 in 2022.",
+        "en": "",
+        "zh": "",
+        "whyEn": "Including the 2021 figure and using the more precise term \"average borrowing per member\" removes the ambiguity of \"borrowing rate\" and shows the year-on-year pattern explicitly.",
+        "whyZh": "加入 2021 年的数值并改用更精确的“average borrowing per member”，既消除了“borrowing rate”的歧义，也显化了逐年变化模式。"
+       },
+       {
+        "n": 4,
+        "old": "Central and Oakwood libraries represented opposite extremes in terms of membership size and per-capita borrowing, highlighting distinct user engagement patterns.",
+        "neu": "Central Library had roughly two and a half times as many members as Oakwood Library in every year, yet Oakwood Library members borrowed about twice as many books on average, showing opposite user engagement patterns.",
+        "en": "",
+        "zh": "",
+        "whyEn": "Replacing the abstract phrase \"opposite extremes\" with a concrete proportional comparison makes the contrast measurable and clearer to the reader.",
+        "whyZh": "把“opposite extremes”这种抽象表述替换为具体的比例对比，使反差可量化，读者更易把握。"
+       }
+      ]
+     },
+     "WF_T2": {
+      "band": "7.0",
+      "descEn": "The essay addresses both views and a personal position clearly, with good paragraphing and a mostly controlled range of vocabulary and grammar; the most serious gap is that the own-opinion paragraph relies on general advice rather than a directly argued stance.",
+      "descZh": "文章回应了题目的两种观点和自身立场，段落组织较好，词汇和语法大体受控；最主要的不足在于个人观点段以泛泛的建议代替了直接的论证。",
+      "crit": [
+       {
+        "name": "任务完成情况",
+        "sc": "7.0",
+        "ok": [
+         "The response clearly addresses both views and presents a consistent personal position that a balanced approach is best, developed in a dedicated paragraph. Main ideas are extended with relevant support, such as the illustration of skills gained in a café or retail job and the warning about employer exploitation.",
+         "The response clearly addresses both views and presents a consistent personal position that a balanced approach is best, developed in a dedicated paragraph. Main ideas are extended with relevant support, such as the illustration of skills gained in a café or retail job and the warning about employer exploitation."
+        ],
+        "up": [
+         "The two body paragraphs are uneven in depth. The view that part-time work distracts from studies is largely asserted, with the example of low pay and poor conditions feeling slightly general. Your own-opinion paragraph is quite short and reads more as advice for parents and schools than as a direct, fully developed argument from you.",
+         "The two body paragraphs are uneven in depth. The view that part-time work distracts from studies is largely asserted, with the example of low pay and poor conditions feeling slightly general. Your own-opinion paragraph is quite short and reads more as advice for parents and schools than as a direct, fully developed argument from you."
+        ]
+       },
+       {
+        "name": "连贯与衔接",
+        "sc": "7.0",
+        "ok": [
+         "There is a clear overall progression from introduction to two body paragraphs, own opinion, and conclusion. Each paragraph has a recognisable central topic, signalled clearly in the topic sentences such as \"On the one hand\" and \"On the other hand\".",
+         "There is a clear overall progression from introduction to two body paragraphs, own opinion, and conclusion. Each paragraph has a recognisable central topic, signalled clearly in the topic sentences such as \"On the one hand\" and \"On the other hand\"."
+        ],
+        "up": [
+         "Some cohesive devices are mechanical, for example \"Moreover\" after the first body paragraph's example, and the final paragraph's \"With sensible limits and proper support\" reads as a stock phrase. Referencing in the third body paragraph is not always explicit; \"It should complement\" and \"It\" depend on the reader tracking the abstract idea of part-time work.",
+         "Some cohesive devices are mechanical, for example \"Moreover\" after the first body paragraph's example, and the final paragraph's \"With sensible limits and proper support\" reads as a stock phrase. Referencing in the third body paragraph is not always explicit; \"It should complement\" and \"It\" depend on the reader tracking the abstract idea of part-time work."
+        ]
+       },
+       {
+        "name": "词汇资源",
+        "sc": "7.0",
+        "ok": [
+         "Vocabulary is sufficient for flexibility and some precision, with items such as \"financial awareness\", \"time management\", and \"exploit young workers\" used appropriately. Collocations like \"academic foundations\" and \"future job market\" are natural and support the argument.",
+         "Vocabulary is sufficient for flexibility and some precision, with items such as \"financial awareness\", \"time management\", and \"exploit young workers\" used appropriately. Collocations like \"academic foundations\" and \"future job market\" are natural and support the argument."
+        ],
+        "up": [
+         "Some word choices are slightly general or repetitive, such as \"crucial for adulthood\" and \"valuable experience\" appearing across paragraphs. Less precise phrasing such as \"a balanced approach is best\" and \"sensible limits\" keeps the conclusion from sounding fully developed.",
+         "Some word choices are slightly general or repetitive, such as \"crucial for adulthood\" and \"valuable experience\" appearing across paragraphs. Less precise phrasing such as \"a balanced approach is best\" and \"sensible limits\" keeps the conclusion from sounding fully developed."
+        ]
+       },
+       {
+        "name": "语法",
+        "sc": "7.0",
+        "ok": [
+         "A variety of complex structures is used, including conditional and passive forms such as \"If a student is struggling at school, work should be postponed\" and \"employers may exploit young workers\". The majority of sentences are error-free and punctuation is well controlled.",
+         "A variety of complex structures is used, including conditional and passive forms such as \"If a student is struggling at school, work should be postponed\" and \"employers may exploit young workers\". The majority of sentences are error-free and punctuation is well controlled."
+        ],
+        "up": [
+         "A few structures are slightly awkward, for example \"poor grades can limit future opportunities\" and \"They are not essential for everyone\" feel list-like in places. The final sentence \"With sensible limits and proper support, part-time work can be a positive experience rather than a distraction\" is grammatically correct but structurally flat compared with the rest of the essay.",
+         "A few structures are slightly awkward, for example \"poor grades can limit future opportunities\" and \"They are not essential for everyone\" feel list-like in places. The final sentence \"With sensible limits and proper support, part-time work can be a positive experience rather than a distraction\" is grammatically correct but structurally flat compared with the rest of the essay."
+        ]
+       }
+      ],
+      "tips": [
+       {
+        "name": "任务完成情况",
+        "items": [
+         [
+          "Develop the own-opinion paragraph so it explicitly argues why education must remain the priority, with a concrete reason and example rather than general guidance to parents and schools.",
+          "扩展你的个人观点段，明确阐述为什么教育必须放在首位，给出具体的理由和例子，而不是停留在给家长和学校的笼统建议。"
+         ]
+        ]
+       },
+       {
+        "name": "连贯与衔接",
+        "items": [
+         [
+          "Vary your linking words and make pronoun references clearer, for instance by naming the subject of the sentence rather than relying on \"it\".",
+          "变换衔接词的使用，并把代词所指的内容写得更清楚，例如直接写出句子的主语，而不是依赖it指代。"
+         ]
+        ]
+       },
+       {
+        "name": "词汇资源",
+        "items": [
+         [
+          "Replace general phrases like \"valuable\" and \"crucial\" with more specific alternatives, and avoid reusing the same adjective across paragraphs.",
+          "用更具体的词替换valuable、crucial这类通用词，并避免在同一篇文章中重复使用同一个形容词。"
+         ]
+        ]
+       },
+       {
+        "name": "语法",
+        "items": [
+         [
+          "Add more varied sentence openings, such as an inverted or participle clause, to avoid a repetitive subject-verb pattern across paragraphs.",
+          "尝试更多样的句子开头，例如倒装句或分词短语，以避免各段重复的主谓开头模式。"
+         ]
+        ]
+       }
+      ]
+     },
+     "WF_T2_ESSAY": "It is often debated whether secondary school students should take part-time jobs. While some believe such work is essential preparation for adult life, others argue that it distracts teenagers from their academic and extracurricular priorities. In my opinion, part-time employment can be valuable if carefully managed, but it should never take precedence over education.\n\nOn the one hand, supporters of part-time work argue that it provides practical experience that schools cannot offer. Holding a job helps young people develop responsibility, time management, and communication skills. For example, working in a café or retail store teaches teenagers how to deal with customers, handle money, and work in a team. These experiences can boost confidence and make them more competitive in the future job market. Moreover, earning their own money encourages financial awareness and independence, which are <span class=\"wf-hl\">crucial for adulthood<sup>1</sup></span>.\n\nOn the other hand, opponents contend that studying and extracurricular activities should come first. Secondary school is a critical period for building academic foundations, and poor grades can limit future opportunities. A part-time job, especially one with long or late hours, can lead to fatigue, stress, and reduced concentration in class. Teenagers may also miss out on sports, clubs, or volunteering, which also foster valuable skills. In some cases, employers may exploit young workers with low pay and poor conditions.\n\nIn my view, <span class=\"wf-hl\">a balanced approach is best<sup>2</sup></span>. Part-time work should be optional and limited—perhaps a few hours on weekends or during holidays. It should complement, not compete with, schooling. Parents and schools can guide students toward jobs that align with their interests or career goals, and ensure that academic performance does not suffer. If a student is struggling at school, work should be postponed.\n\nIn conclusion, while part-time jobs can help prepare teenagers for working life, they are not essential for everyone. The priority must remain education and healthy development. <span class=\"wf-hl\">With sensible limits and proper support, part-time work can be a positive experience rather than a distraction<sup>3</sup></span>.",
+     "WF_T2_NOTES": [
+      {
+       "n": 1,
+       "old": "crucial for adulthood",
+       "neu": "essential for managing independent financial decisions in adulthood",
+       "en": "",
+       "zh": "",
+       "whyEn": "Replaces a general adjective with a more specific collocation that adds precision to the argument.",
+       "whyZh": "用更具体的搭配替换笼统形容词，使论述更加精确。"
+      },
+      {
+       "n": 2,
+       "old": "a balanced approach is best",
+       "neu": "education should remain the central priority, with part-time work serving only as a secondary supplement",
+       "en": "",
+       "zh": "",
+       "whyEn": "Replaces a vague stance with a clear, arguable position that directly answers the prompt and strengthens Task Response.",
+       "whyZh": "用一个明确、可论证的立场替换模糊表态，更直接地回应题目，并加强 Task Response 的表现。"
+      },
+      {
+       "n": 3,
+       "old": "With sensible limits and proper support, part-time work can be a positive experience rather than a distraction",
+       "neu": "When hours are capped and parents monitor workload, part-time work can reinforce, rather than undermine, a student's academic focus",
+       "en": "",
+       "zh": "",
+       "whyEn": "Replaces a vague abstract opening with a concrete conditional clause and a more precise verb choice, lifting both grammar and lexical range.",
+       "whyZh": "用具体条件状语替代空泛的抽象开头，并使用更精确的动词，同时提升语法和词汇得分。"
+      }
+     ],
+     "hasL1": false
+    }
    }
   },
   "speaking": {
@@ -1176,47 +1506,37 @@
    ],
    "daily": {
     "part1": {
-     "topic": "Your studies and daily routine",
+     "topic": "daily routine",
      "questions": [
-      "Do you like music?",
-      "What kind of music do you like to listen to?",
-      "Do you prefer sad or happy music?",
-      "Does happy music make you feel more excited?",
-      "Has the music you listen to changed since you were young?",
-      "Where is your hometown?",
-      "What do you like most about your hometown?",
-      "Has your hometown changed much in recent years?",
-      "Would you like to live in your hometown in the future?",
-      "Do many tourists visit your hometown?"
+      "What is a typical morning like for you?",
+      "Do you prefer to plan your day in advance or decide things as you go?",
+      "How has your daily routine changed compared to five years ago?",
+      "Is there anything in your daily routine you would like to change?",
+      "Who do you usually spend the busiest parts of your day with?"
      ]
     },
     "part2": {
-     "cue": "Describe a person you know who has a healthy lifestyle",
+     "cue": "Describe a useful skill you learned.",
      "points": [
-      "where it is",
-      "how often you go there",
-      "what you do there",
-      "and explain why you enjoy visiting it."
+      "what the skill is",
+      "when and where you learned it",
+      "how you learned it",
+      "and explain why you think it is useful."
      ],
-     "pointsZh": [
-      "它在哪里",
-      "你多久去一次",
-      "你在那里做什么",
-      "你为什么喜欢它"
-     ],
+     "pointsZh": [],
      "prepSeconds": 60,
      "minutes": 2
     },
     "part3": {
-     "topic": "Skills, work and the future",
+     "topic": "Daily Routines and Time Management",
      "questions": [
-      "Why do people like to visit different places?",
-      "What are the differences between travelling in your own country and abroad?",
-      "Do you think tourism can harm local communities?",
-      "How has the way people travel changed over the past few decades?",
-      "Will virtual travel ever replace real travel in the future?",
-      "Should governments invest more in local tourism?"
-     ]
+      "How do most people in your country typically organise their daily schedules?",
+      "Why do you think some people find it difficult to stick to a daily routine?",
+      "Do you think technology has made it easier or harder for people to manage their time? Give reasons for your view.",
+      "Some people believe that a busy life is a fulfilling life. To what extent do you agree?",
+      "How might the way people organise their daily lives change in the future compared with how their parents did?"
+     ],
+     "rounds": 5
     }
    },
    "mock": {
