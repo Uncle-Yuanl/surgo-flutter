@@ -32,6 +32,9 @@ class WritingReviewContent extends StatelessWidget {
         : (second ? data['WF_T2_ESSAY'] : data['task1']['essay']);
     final notes = second ? data['WF_T2_NOTES'] : data['task1']['notes'];
     final items = second ? data['WF_T2_L1'] : data['l1task1']['items'];
+    // 演示用真实数据：这篇没查出母语负迁移时，用检查的总评代替空卡片。
+    final l1Summary =
+        second ? data['WF_T2_L1_SUMMARY'] : data['l1task1']['summary'];
     final writing = QuestionBank.instance.skill('writing', app.examType);
     final prompt =
         writing['daily']?[second ? 'task2' : 'task1']?['prompt'] as String? ??
@@ -46,7 +49,10 @@ class WritingReviewContent extends StatelessWidget {
           ReviewEssay(source: essay)
         ]),
         ReviewCard(children: [
-          for (var i = 0; i < (items as List).length; i++) ...[
+          if ((items as List).isEmpty && l1Summary != null)
+            T(l1Summary,
+                style: const TextStyle(fontSize: 13.5, height: 1.65, color: reviewMuted)),
+          for (var i = 0; i < items.length; i++) ...[
             if (i > 0) const SizedBox(height: 14),
             ReviewNote(note: items[i], l1: true)
           ]
@@ -90,14 +96,17 @@ class WritingReviewContent extends StatelessWidget {
                           letterSpacing: .4,
                           color: Color(0xff9a7a00))),
                   const SizedBox(height: 4),
-                  ReviewScore(score: second ? '6.5' : '6.0'),
+                  ReviewScore(
+                      score: block['band'] as String? ??
+                          (second ? '6.5' : '6.0')),
                   const SizedBox(height: 8),
                   // 用户 2026-09-24：中英要对应 —— 中文模式只出中文，英文模式只出
                   // 英文，不再两段并列。数据源本就有 descEn / descZh 两份。
+                  // 原型的 Task 1 块没有 descEn / descZh，用上面两句常量。
                   T(
                       zh
-                          ? (second ? block['descZh'] : task1Zh)
-                          : (second ? block['descEn'] : task1En),
+                          ? (block['descZh'] ?? task1Zh)
+                          : (block['descEn'] ?? task1En),
                       style: const TextStyle(
                           fontSize: 13.5,
                           height: 1.6,

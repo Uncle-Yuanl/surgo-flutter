@@ -18,6 +18,16 @@ if ! flutter --version 2>/dev/null | grep -q "Flutter $FLUTTER_VERSION "; then
   export PATH="$SDK/bin:$PATH"
 fi
 flutter --disable-analytics >/dev/null 2>&1 || true
+
+# --demo-data：用 demo_data/（tool/demo_export 导出的真实作答）盖掉 assets/data/ 再构建，
+# 构建完换回来。仓库里的 assets/data 始终是原型数据，同事的测试跑的就是它。
+if [ "${1:-}" = --demo-data ] && [ -d demo_data ]; then
+  keep="$(mktemp -d)"
+  cp -r assets/data/. "$keep/"
+  trap 'rm -rf assets/data; mkdir -p assets/data; cp -r "$keep/." assets/data/; rm -rf "$keep"' EXIT
+  cp -r demo_data/. assets/data/
+  echo "demo data: $(ls demo_data | wc -l) files over assets/data"
+fi
 flutter build web --release --no-web-resources-cdn
 
 ENGINE="$(dirname "$(command -v flutter)")/cache/flutter_web_sdk/lib/_engine/engine"

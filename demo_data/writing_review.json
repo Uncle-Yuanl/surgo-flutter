@@ -1,0 +1,400 @@
+{
+ "WF_T2": {
+  "band": "7.5",
+  "descEn": "This is a well-organised response with a clear position, relevant examples and confident vocabulary that places it firmly in band 7.5. The main areas to improve are sharper original examples in the opinion paragraph and tighter sentence control in the longest sentences.",
+  "descZh": "这篇作文结构清晰，观点明确，例证相关，词汇丰富，稳定在 7.5 分。下一步重点是在观点段加入更有原创性的例子，并把第二段最长的两三句话拆短。",
+  "crit": [
+   {
+    "name": "任务完成情况",
+    "sc": "7.5",
+    "ok": [
+     "The response addresses both views and presents a clear, sustained position in the fourth paragraph beginning \"In my opinion, a balanced approach is the most sensible.\" Main ideas are extended with relevant support, for instance the medical student example and the link between cross-disciplinary study and reduced \"professional obsolescence.\"",
+     "The response addresses both views and presents a clear, sustained position in the fourth paragraph beginning \"In my opinion, a balanced approach is the most sensible.\" Main ideas are extended with relevant support, for instance the medical student example and the link between cross-disciplinary study and reduced \"professional obsolescence.\""
+    ],
+    "up": [
+     "The opinion paragraph largely restates the earlier discussion without adding a fresh, concrete example of what a balanced curriculum might look like in practice. The conclusion repeats the phrase \"well-rounded education\" and ideas already covered rather than synthesising them into a new final insight.",
+     "The opinion paragraph largely restates the earlier discussion without adding a fresh, concrete example of what a balanced curriculum might look like in practice. The conclusion repeats the phrase \"well-rounded education\" and ideas already covered rather than synthesising them into a new final insight."
+    ]
+   },
+   {
+    "name": "连贯与衔接",
+    "sc": "7.5",
+    "ok": [
+     "Each body paragraph has a clear central focus, signposted by topic sentences such as \"those who support a narrow focus on the main field of study have compelling reasons.\" Cohesive devices are used with reasonable variety, including \"Moreover,\" \"Furthermore,\" \"In today's rapidly changing world\" and \"Ideally,\" which move the argument forward.",
+     "Each body paragraph has a clear central focus, signposted by topic sentences such as \"those who support a narrow focus on the main field of study have compelling reasons.\" Cohesive devices are used with reasonable variety, including \"Moreover,\" \"Furthermore,\" \"In today's rapidly changing world\" and \"Ideally,\" which move the argument forward."
+    ],
+    "up": [
+     "The contrast structure \"On the one hand... On the other hand\" is appropriate but combined with a fourth opinion paragraph makes the essay feel slightly list-like. Some linkers, such as the repeated use of \"Moreover\" and \"Furthermore\" in the second body paragraph, lean on mechanical patterning instead of varied referencing.",
+     "The contrast structure \"On the one hand... On the other hand\" is appropriate but combined with a fourth opinion paragraph makes the essay feel slightly list-like. Some linkers, such as the repeated use of \"Moreover\" and \"Furthermore\" in the second body paragraph, lean on mechanical patterning instead of varied referencing."
+    ]
+   },
+   {
+    "name": "词汇资源",
+    "sc": "7.5",
+    "ok": [
+     "There is a confident range of topic-specific vocabulary, including \"interdisciplinary approach,\" \"professional competence,\" \"dilute their focus\" and \"cross-disciplinary learning.\" Paraphrasing of the prompt is handled skilfully, using alternatives such as \"a more interdisciplinary approach\" and \"a well-rounded education.\"",
+     "There is a confident range of topic-specific vocabulary, including \"interdisciplinary approach,\" \"professional competence,\" \"dilute their focus\" and \"cross-disciplinary learning.\" Paraphrasing of the prompt is handled skilfully, using alternatives such as \"a more interdisciplinary approach\" and \"a well-rounded education.\""
+    ],
+    "up": [
+     "The noun \"subjects\" is repeated many times across the essay instead of being varied with \"disciplines,\" \"fields\" or \"courses.\" The phrase \"leaving little room for unrelated courses\" is slightly awkward because \"room\" is being used figuratively without enough support.",
+     "The noun \"subjects\" is repeated many times across the essay instead of being varied with \"disciplines,\" \"fields\" or \"courses.\" The phrase \"leaving little room for unrelated courses\" is slightly awkward because \"room\" is being used figuratively without enough support."
+    ]
+   },
+   {
+    "name": "语法",
+    "sc": "7.5",
+    "ok": [
+     "A wide range of complex structures is used accurately, for example the concessive clause \"although specialisation is essential, a certain degree of cross-disciplinary study is highly beneficial.\" Subordination within long sentences is generally well controlled, as in \"Exposure to different disciplines... fosters critical thinking, creativity, and problem-solving abilities.\"",
+     "A wide range of complex structures is used accurately, for example the concessive clause \"although specialisation is essential, a certain degree of cross-disciplinary study is highly beneficial.\" Subordination within long sentences is generally well controlled, as in \"Exposure to different disciplines... fosters critical thinking, creativity, and problem-solving abilities.\""
+    ],
+    "up": [
+     "Some sentences stretch across many clauses and risk losing clarity, for instance the 45-word sentence beginning \"A graduate who understands both technology and ethics...\" A few subject-verb pairings are heavy, such as \"proponents of a broader curriculum argue that studying subjects beyond one's major can cultivate essential life skills and perspectives.\"",
+     "Some sentences stretch across many clauses and risk losing clarity, for instance the 45-word sentence beginning \"A graduate who understands both technology and ethics...\" A few subject-verb pairings are heavy, such as \"proponents of a broader curriculum argue that studying subjects beyond one's major can cultivate essential life skills and perspectives.\""
+    ]
+   }
+  ],
+  "tips": [
+   {
+    "name": "任务完成情况",
+    "items": [
+     [
+      "Add one specific real-world example of an interdisciplinary module in your opinion paragraph and end the conclusion with a memorable synthesis rather than a recap.",
+      "Add one specific real-world example of an interdisciplinary module in your opinion paragraph and end the conclusion with a memorable synthesis rather than a recap."
+     ]
+    ]
+   },
+   {
+    "name": "连贯与衔接",
+    "items": [
+     [
+      "Replace at least one of the repeated additive linkers with a referencing phrase like \"This focus on depth\" or \"In addition to these practical concerns\" to vary cohesion.",
+      "Replace at least one of the repeated additive linkers with a referencing phrase like \"This focus on depth\" or \"In addition to these practical concerns\" to vary cohesion."
+     ]
+    ]
+   },
+   {
+    "name": "词汇资源",
+    "items": [
+     [
+      "Replace several instances of \"subjects\" with \"disciplines\" or \"fields\" and rewrite \"leaving little room for unrelated courses\" as \"leaving little time for unrelated courses\".",
+      "Replace several instances of \"subjects\" with \"disciplines\" or \"fields\" and rewrite \"leaving little room for unrelated courses\" as \"leaving little time for unrelated courses\"."
+     ]
+    ]
+   },
+   {
+    "name": "语法",
+    "items": [
+     [
+      "Break the longest sentences in the second body paragraph into two shorter sentences and add a pronoun subject to lighten the subject of the \"proponents\" sentence.",
+      "Break the longest sentences in the second body paragraph into two shorter sentences and add a pronoun subject to lighten the subject of the \"proponents\" sentence."
+     ]
+    ]
+   }
+  ]
+ },
+ "WF_T2_ESSAY": "Here is a model IELTS Writing Task 2 essay on the given topic:\n\n---\n\n**Some people believe that university students should be required to study subjects outside their main field of study. Others think that students should focus only on their chosen specialisation. Discuss both views and give your own opinion.**\n\n---\n\nThe question of whether university education should be broad or specialised has long been debated. While some argue that students should concentrate exclusively on their chosen discipline, others advocate for a more interdisciplinary approach. In my view, although specialisation is essential, a certain degree of cross-disciplinary study is highly beneficial.\n\n<span class=\"wf-hl\">On the one hand, those who support a narrow focus on the main field of study have compelling reasons.<sup>1</sup></span> They contend that university education is already intensive and demanding, and students need to devote all their time and energy to mastering their chosen subject in order to achieve professional competence. For example, medical students must acquire extensive knowledge and practical skills, leaving little room for unrelated courses. <span class=\"wf-hl\">Moreover, employers often seek graduates with deep expertise in a specific area, so specialisation can directly enhance career prospects and employability.<sup>2</sup></span>\n\nOn the other hand, proponents of a broader curriculum argue that studying subjects beyond one's major can cultivate essential life skills and perspectives. Exposure to different disciplines—such as humanities for science students or basic statistics for arts students—fosters critical thinking, creativity, and problem-solving abilities. In today's rapidly changing world, problems rarely fall neatly into one category. <span class=\"wf-hl\">A graduate who understands both technology and ethics, or both economics and sociology, is better equipped to address complex real-world challenges.<sup>3</sup></span> Furthermore, learning outside one's comfort zone can spark new interests and lead to unexpected career paths, reducing the risk of professional obsolescence.\n\nIn my opinion, a balanced approach is the most sensible. <span class=\"wf-hl\">Universities should not force students to take a large number of unrelated subjects, which could dilute their focus and increase stress.<sup>4</sup></span> However, offering a limited number of elective courses or interdisciplinary modules would allow students to broaden their horizons without compromising their specialisation. <span class=\"wf-hl\">Ideally, these supplementary subjects should be relevant to their major, creating meaningful connections between fields.<sup>5</sup></span>\n\nIn conclusion, while I recognise the importance of in-depth study in one's primary discipline, I believe that a well-rounded education, enriched by exposure to other subjects, ultimately produces more adaptable and insightful graduates. Therefore, universities should encourage, rather than require, cross-disciplinary learning.",
+ "WF_T2_NOTES": [
+  {
+   "n": 1,
+   "old": "On the one hand, those who support a narrow focus on the main field of study have compelling reasons.",
+   "neu": "On the one hand, those who advocate a narrow focus on the main field of study raise legitimate concerns about academic workload and professional readiness.",
+   "en": "",
+   "zh": "",
+   "whyEn": "\"Advocate\" is a more precise verb than \"support,\" and the addition of \"workload and professional readiness\" previews the reasons that follow, improving coherence.",
+   "whyZh": "\"Advocate\" is a more precise verb than \"support,\" and the addition of \"workload and professional readiness\" previews the reasons that follow, improving coherence."
+  },
+  {
+   "n": 2,
+   "old": "Moreover, employers often seek graduates with deep expertise in a specific area, so specialisation can directly enhance career prospects and employability.",
+   "neu": "Furthermore, since employers typically value graduates with in-depth expertise, specialisation can directly enhance both career prospects and employability.",
+   "en": "",
+   "zh": "",
+   "whyEn": "Using \"since\" to mark cause and a more precise phrase \"in-depth expertise\" reduces repetition of \"deep\" and \"often\" and creates tighter logical flow.",
+   "whyZh": "Using \"since\" to mark cause and a more precise phrase \"in-depth expertise\" reduces repetition of \"deep\" and \"often\" and creates tighter logical flow."
+  },
+  {
+   "n": 3,
+   "old": "A graduate who understands both technology and ethics, or both economics and sociology, is better equipped to address complex real-world challenges.",
+   "neu": "Graduates who understand both technology and ethics, or both economics and sociology, are better equipped to tackle complex real-world challenges.",
+   "en": "",
+   "zh": "",
+   "whyEn": "Switching to the plural subject avoids an awkward long conditional and \"tackle\" is a more natural collocation with \"challenges\" than \"address.\"",
+   "whyZh": "Switching to the plural subject avoids an awkward long conditional and \"tackle\" is a more natural collocation with \"challenges\" than \"address.\""
+  },
+  {
+   "n": 4,
+   "old": "Universities should not force students to take a large number of unrelated subjects, which could dilute their focus and increase stress.",
+   "neu": "Universities should not compel students to take numerous unrelated modules, which could dilute their focus and add to their academic burden.",
+   "en": "",
+   "zh": "",
+   "whyEn": "\"Compel\" is more formal than \"force,\" \"modules\" fits university context better than \"subjects,\" and \"academic burden\" is a precise alternative to \"stress.\"",
+   "whyZh": "\"Compel\" is more formal than \"force,\" \"modules\" fits university context better than \"subjects,\" and \"academic burden\" is a precise alternative to \"stress.\""
+  },
+  {
+   "n": 5,
+   "old": "Ideally, these supplementary subjects should be relevant to their major, creating meaningful connections between fields.",
+   "neu": "Ideally, these supplementary modules should align with students' majors, creating meaningful bridges between related fields.",
+   "en": "",
+   "zh": "",
+   "whyEn": "\"Align with majors\" is a precise academic collocation, and \"bridges between related fields\" offers a sharper metaphor than the more general \"connections.\"",
+   "whyZh": "\"Align with majors\" is a precise academic collocation, and \"bridges between related fields\" offers a sharper metaphor than the more general \"connections.\""
+  }
+ ],
+ "WF_T2_L1_ESSAY": "Here is a model IELTS Writing Task 2 essay on the given topic:\n\n---\n\n**Some people believe that university students should be required to study subjects outside their main field of study. Others think that students should focus only on their chosen specialisation. Discuss both views and give your own opinion.**\n\n---\n\nThe question of whether university education should be broad or specialised has long been debated. While some argue that students should concentrate exclusively on their chosen discipline, others advocate for a more interdisciplinary approach. In my view, although specialisation is essential, a certain degree of cross-disciplinary study is highly beneficial.\n\nOn the one hand, those who support a narrow focus on the main field of study have compelling reasons. They contend that university education is already intensive and demanding, and students need to devote all their time and energy to mastering their chosen subject in order to achieve professional competence. For example, medical students must acquire extensive knowledge and practical skills, leaving little room for unrelated courses. Moreover, employers often seek graduates with deep expertise in a specific area, so specialisation can directly enhance career prospects and employability.\n\nOn the other hand, proponents of a broader curriculum argue that studying subjects beyond one's major can cultivate essential life skills and perspectives. Exposure to different disciplines—such as humanities for science students or basic statistics for arts students—fosters critical thinking, creativity, and problem-solving abilities. In today's rapidly changing world, problems rarely fall neatly into one category. A graduate who understands both technology and ethics, or both economics and sociology, is better equipped to address complex real-world challenges. Furthermore, learning outside one's comfort zone can spark new interests and lead to unexpected career paths, reducing the risk of professional obsolescence.\n\nIn my opinion, a balanced approach is the most sensible. Universities should not force students to take a large number of unrelated subjects, which could dilute their focus and increase stress. However, offering a limited number of elective courses or interdisciplinary modules would allow students to broaden their horizons without compromising their specialisation. Ideally, these supplementary subjects should be relevant to their major, creating meaningful connections between fields.\n\nIn conclusion, while I recognise the importance of in-depth study in one's primary discipline, I believe that a well-rounded education, enriched by exposure to other subjects, ultimately produces more adaptable and insightful graduates. Therefore, universities should encourage, rather than require, cross-disciplinary learning.",
+ "WF_T2_L1": [],
+ "task1": {
+  "crit": [
+   {
+    "name": "任务完成情况",
+    "sc": "8.0",
+    "ok": [
+     "The overview is clear and accurate, identifying the universal increase, the Norway-South Korea reversal, and Mexico as the lowest performer in both years. All eight data points are reported and the major features from the chart are covered, including the largest rise in South Korea and the persistent gap between Mexico and the other three countries.",
+     "The overview is clear and accurate, identifying the universal increase, the Norway-South Korea reversal, and Mexico as the lowest performer in both years. All eight data points are reported and the major features from the chart are covered, including the largest rise in South Korea and the persistent gap between Mexico and the other three countries."
+    ],
+    "up": [
+     "The figure of 21% to 27% for Mexico is correct, but describing it as a rise of 6 percentage points then later as 14 points behind South Korea (41% minus 27%) is accurate arithmetic; the comparative phrasing is correct, so no real weakness exists here.",
+     "The figure of 21% to 27% for Mexico is correct, but describing it as a rise of 6 percentage points then later as 14 points behind South Korea (41% minus 27%) is accurate arithmetic; the comparative phrasing is correct, so no real weakness exists here."
+    ]
+   },
+   {
+    "name": "连贯与衔接",
+    "sc": "8.0",
+    "ok": [
+     "The response has a clear four-part structure: overview, detailed comparison, second pair, and conclusion, each with a recognisable central topic. Cohesive devices such as \"However\", \"Turning to\", \"Meanwhile\" and \"Despite this\" are used flexibly and accurately, and referencing is clear throughout.",
+     "The response has a clear four-part structure: overview, detailed comparison, second pair, and conclusion, each with a recognisable central topic. Cohesive devices such as \"However\", \"Turning to\", \"Meanwhile\" and \"Despite this\" are used flexibly and accurately, and referencing is clear throughout."
+    ],
+    "up": [
+     "The phrase \"remained at the bottom of the group, although its share increased from 21% to 27%\" is slightly wordy and could be tightened for cleaner flow.",
+     "The phrase \"remained at the bottom of the group, although its share increased from 21% to 27%\" is slightly wordy and could be tightened for cleaner flow."
+    ]
+   },
+   {
+    "name": "词汇资源",
+    "sc": "8.0",
+    "ok": [
+     "A wide range of vocabulary is used to describe trends and comparisons, including \"witnessed an upward trend\", \"overtook\", \"surged\", \"most dynamic improvement\" and \"lag considerably behind\". Paraphrases of the task language are handled naturally, for example \"full-time higher education enrolment rates\" and \"higher education participation among young adults\".",
+     "A wide range of vocabulary is used to describe trends and comparisons, including \"witnessed an upward trend\", \"overtook\", \"surged\", \"most dynamic improvement\" and \"lag considerably behind\". Paraphrases of the task language are handled naturally, for example \"full-time higher education enrolment rates\" and \"higher education participation among young adults\"."
+    ],
+    "up": [
+     "Replace generic intensifiers such as \"significant\" and \"substantial\" with more precise comparatives such as \"the steepest\" or \"the widest gap\" when ranking values.",
+     "Replace generic intensifiers such as \"significant\" and \"substantial\" with more precise comparatives such as \"the steepest\" or \"the widest gap\" when ranking values."
+    ]
+   },
+   {
+    "name": "语法",
+    "sc": "8.0",
+    "ok": [
+     "A wide range of structures is used, including complex sentences with subordinate clauses, participle phrases, and inverted comparisons such as \"This represented a 13 percentage point increase for South Korea\". Error-free sentences dominate, and punctuation, including em dash use in the introduction, is well controlled.",
+     "A wide range of structures is used, including complex sentences with subordinate clauses, participle phrases, and inverted comparisons such as \"This represented a 13 percentage point increase for South Korea\". Error-free sentences dominate, and punctuation, including em dash use in the introduction, is well controlled."
+    ],
+    "up": [
+     "Vary sentence openings beyond \"By 2020\" and \"In 2010\" by using participial openings such as \"Leading the group in 2010, Norway...\".",
+     "Vary sentence openings beyond \"By 2020\" and \"In 2010\" by using participial openings such as \"Leading the group in 2010, Norway...\"."
+    ]
+   }
+  ],
+  "tips": [
+   {
+    "name": "任务完成情况",
+    "items": [
+     [
+      "Group the data more tightly by feature rather than by country to keep the comparison continuous, for example by leading with the South Korea overtaking Norway and then moving to Australia and Mexico.",
+      "Group the data more tightly by feature rather than by country to keep the comparison continuous, for example by leading with the South Korea overtaking Norway and then moving to Australia and Mexico."
+     ]
+    ]
+   },
+   {
+    "name": "连贯与衔接",
+    "items": [
+     [
+      "Trim adverbial clusters such as \"more modestly\" and \"a substantial 14 percentage points\" when a single precise number already carries the comparison.",
+      "Trim adverbial clusters such as \"more modestly\" and \"a substantial 14 percentage points\" when a single precise number already carries the comparison."
+     ]
+    ]
+   }
+  ],
+  "essay": "The bar chart compares the percentage of 18- to 24-year-olds enrolled in full-time higher education across four countries—Norway, South Korea, Australia, and Mexico—in 2010 and 2020.\n\nOverall, <span class=\"wf-hl\">all four nations witnessed an upward trend in their full-time higher education enrolment rates over the decade<sup>1</sup></span>. While <span class=\"wf-hl\">Norway initially had the highest proportion of students in this age group<sup>2</sup></span>, South Korea overtook it by 2020. <span class=\"wf-hl\">Mexico consistently recorded the lowest enrolment rate in both years<sup>3</sup></span>.\n\nIn 2010, Norway led the four countries with 32% of its 18- to 24-year-olds in full-time education. South Korea followed closely at 28%. However, by 2020, <span class=\"wf-hl\">South Korea experienced the most significant growth, surging to 41% and surpassing Norway<sup>4</sup></span>, whose enrolment rate rose more modestly to 39%. This represented a 13 percentage point increase for South Korea, compared to a 7 percentage point rise for Norway.\n\nTurning to the other two nations, Australia’s enrolment rate climbed steadily from 26% in 2010 to 34% in 2020. Mexico, meanwhile, remained at the bottom of the group, although its share increased from 21% to 27%. Despite this growth, Mexico’s figure remained 7 percentage points below Australia’s and a substantial 14 percentage points behind South Korea’s, <span class=\"wf-hl\">highlighting the persistent gap between the highest and lowest performing countries<sup>5</sup></span>.\n\nIn conclusion, while all four countries made progress in higher education participation among young adults, South Korea demonstrated the most dynamic improvement, whereas Mexico continued to lag considerably behind its counterparts.",
+  "notes": [
+   {
+    "n": 1,
+    "old": "all four nations witnessed an upward trend in their full-time higher education enrolment rates over the decade",
+    "neu": "all four countries saw a rise in full-time higher education enrolment among 18- to 24-year-olds between 2010 and 2020",
+    "en": "",
+    "zh": "",
+    "whyEn": "Names the age group and years directly, replacing the vague \"over the decade\" and the less precise verb \"witnessed\".",
+    "whyZh": "Names the age group and years directly, replacing the vague \"over the decade\" and the less precise verb \"witnessed\"."
+   },
+   {
+    "n": 2,
+    "old": "Norway initially had the highest proportion of students in this age group",
+    "neu": "Norway had the highest share among 18- to 24-year-olds in 2010",
+    "en": "",
+    "zh": "",
+    "whyEn": "Placing the year in the clause removes the vague temporal marker \"initially\" and makes the comparison point explicit.",
+    "whyZh": "Placing the year in the clause removes the vague temporal marker \"initially\" and makes the comparison point explicit."
+   },
+   {
+    "n": 3,
+    "old": "Mexico consistently recorded the lowest enrolment rate in both years",
+    "neu": "Mexico had the lowest share in both 2010 and 2020",
+    "en": "",
+    "zh": "",
+    "whyEn": "Avoids the overused \"consistently recorded\" and uses the more precise noun \"share\" already established in the overview.",
+    "whyZh": "Avoids the overused \"consistently recorded\" and uses the more precise noun \"share\" already established in the overview."
+   },
+   {
+    "n": 4,
+    "old": "South Korea experienced the most significant growth, surging to 41% and surpassing Norway",
+    "neu": "South Korea recorded the steepest increase, climbing to 41% and overtaking Norway",
+    "en": "",
+    "zh": "",
+    "whyEn": "\"Steepest increase\" is a more precise trend descriptor than \"most significant growth\", and \"overtaking\" matches the standard verb for ranking reversals.",
+    "whyZh": "\"Steepest increase\" is a more precise trend descriptor than \"most significant growth\", and \"overtaking\" matches the standard verb for ranking reversals."
+   },
+   {
+    "n": 5,
+    "old": "highlighting the persistent gap between the highest and lowest performing countries",
+    "neu": "highlighting the persistent gap between the top and bottom performers in the group",
+    "en": "",
+    "zh": "",
+    "whyEn": "\"Top and bottom performers\" is a tighter academic collocation than \"the highest and lowest performing countries\".",
+    "whyZh": "\"Top and bottom performers\" is a tighter academic collocation than \"the highest and lowest performing countries\"."
+   }
+  ],
+  "band": "8.0",
+  "descEn": "The response meets the task with a clear overview, accurate reporting of all eight data points, and well-judged comparisons that highlight the Norway-South Korea reversal, South Korea's steepest rise, and Mexico's persistent lowest position.",
+  "descZh": "这篇作文完成了任务，概述清晰，八个数据点全部准确呈现，并恰当比较了挪威与韩国的位次反转、韩国涨幅最大以及墨西哥始终最低这三项主要特征。"
+ },
+ "l1task1": {
+  "essay": "The bar chart compares the percentage of 18- to 24-year-olds enrolled in full-time higher education across four countries—Norway, South Korea, Australia, and Mexico—in 2010 and 2020.\n\nOverall, <span class=\"wf-hl-p\">all four nations witnessed an upward trend in their full-time higher education enrolment rates over the decade<sup>1</sup></span>. While Norway initially had the highest proportion of students in this age group, South Korea overtook it by 2020. Mexico consistently recorded the lowest enrolment rate in both years.\n\nIn 2010, Norway led the four countries with 32% of its 18- to 24-year-olds in full-time education. South Korea followed closely at 28%. However, by 2020, South Korea experienced <span class=\"wf-hl-p\">the most significant growth, surging to 41% and surpassing Norway<sup>2</sup></span>, whose enrolment rate rose more modestly to 39%. This represented a 13 percentage point increase for South Korea, compared to a 7 percentage point rise for Norway.\n\nTurning to the other two nations, <span class=\"wf-hl-p\">Australia’s enrolment rate climbed steadily from 26% in 2010 to 34% in 2020<sup>3</sup></span>. <span class=\"wf-hl-p\">Mexico, meanwhile, remained at the bottom of the group, although its share increased from 21% to 27%<sup>4</sup></span>. Despite this growth, Mexico’s figure remained 7 percentage points below Australia’s and a substantial 14 percentage points behind South Korea’s, <span class=\"wf-hl-p\">highlighting the persistent gap between the highest and lowest performing countries<sup>5</sup></span>.\n\nIn conclusion, while all four countries made progress in higher education participation among young adults, <span class=\"wf-hl-p\">South Korea demonstrated the most dynamic improvement<sup>6</sup></span>, <span class=\"wf-hl-p\">whereas Mexico continued to lag considerably behind its counterparts<sup>7</sup></span>.",
+  "items": [
+   {
+    "n": 1,
+    "title": "Word choice",
+    "zh": "用词",
+    "old": "all four nations witnessed an upward trend in their full-time higher education enrolment rates over the decade",
+    "neu": "all four countries saw an increase in full-time higher education enrolment rates over the decade",
+    "en": "'witnessed an upward trend' is a Chinglish-style phrasing. The verb 'witness' with an abstract noun like 'trend' sounds unnatural, and 'upward trend' is overly formal for a bar chart description.",
+    "cn": "中文里会说\"呈现上升趋势\"，直译成英文就是'present an upward trend'或'witness an upward trend'。英文里图表描述通常用'see an increase'或'show a rise'更自然。",
+    "whyZh": "",
+    "tip": ""
+   },
+   {
+    "n": 2,
+    "title": "Word choice",
+    "zh": "用词",
+    "old": "the most significant growth, surging to 41% and surpassing Norway",
+    "neu": "the largest increase, rising to 41% and overtaking Norway",
+    "en": "'significant' and 'surging' are Chinglish-influenced choices. 'Significant' is often a direct translation of 显著, but in data description 'largest' or 'biggest' is more precise. 'Surging' is a direct translation of 激增 and sounds dramatic for a 13 percentage point change.",
+    "cn": "中文写作用\"显著增长\"和\"激增\"很常见。英文里数据描述要更精确，用'large increase'和'rose sharply'即可，不需要'surging'这种戏剧化动词。",
+    "whyZh": "",
+    "tip": ""
+   },
+   {
+    "n": 3,
+    "title": "Word choice",
+    "zh": "用词",
+    "old": "Australia’s enrolment rate climbed steadily from 26% in 2010 to 34% in 2020",
+    "neu": "Australia’s enrolment rate rose from 26% in 2010 to 34% in 2020",
+    "en": "'climbed steadily' suggests a gradual year-on-year change, but the chart only shows two data points (2010 and 2020), so 'steadily' is not supported by the data.",
+    "cn": "中文里\"稳步上升\"是常用表达。英文里如果只有起点和终点两个数据点，用'steadily'就过度推断，雅思Task 1要求准确描述图表信息。",
+    "whyZh": "",
+    "tip": ""
+   },
+   {
+    "n": 4,
+    "title": "Word choice",
+    "zh": "用词",
+    "old": "Mexico, meanwhile, remained at the bottom of the group, although its share increased from 21% to 27%",
+    "neu": "Mexico, meanwhile, remained the lowest, although its share increased from 21% to 27%",
+    "en": "'remained at the bottom of the group' is a direct translation of 处于最低位. More natural English would be 'remained the lowest' or 'remained the lowest of the four countries'.",
+    "cn": "中文说\"处于……的最低位\"很自然。英文里用 'remained the lowest' 就够了，加 'at the bottom of the group' 是中文式表达。",
+    "whyZh": "",
+    "tip": ""
+   },
+   {
+    "n": 5,
+    "title": "Sentence structure",
+    "zh": "句式",
+    "old": "highlighting the persistent gap between the highest and lowest performing countries",
+    "neu": "highlighting the persistent gap between the highest and lowest",
+    "en": "'lowest performing countries' is a plural mismatch. There is only one lowest country (Mexico). It should be 'between the highest and the lowest country' or 'between the top and bottom performers'.",
+    "cn": "中文里\"最高和最低的国家\"可以接受，因为中文量词不严格区分单复数。英文里要么都用单数配对，要么明确说'the top and bottom performers'。",
+    "whyZh": "",
+    "tip": ""
+   },
+   {
+    "n": 6,
+    "title": "Word choice",
+    "zh": "用词",
+    "old": "South Korea demonstrated the most dynamic improvement",
+    "neu": "South Korea showed the largest improvement",
+    "en": "'demonstrated' and 'dynamic' are Chinglish-influenced formal words. 'Demonstrated' is often a direct translation of 展示 or 体现. 'Dynamic' here means 'energetic change' but sounds awkward applied to a static data point.",
+    "cn": "中文常用\"展示\"和\"动态的\"，直译到英文就变成'demonstrated'和'dynamic'。英文写作里'showed'和'greatest'更自然。",
+    "whyZh": "",
+    "tip": ""
+   },
+   {
+    "n": 7,
+    "title": "Word choice",
+    "zh": "用词",
+    "old": "whereas Mexico continued to lag considerably behind its counterparts",
+    "neu": "while Mexico remained well below the other three countries",
+    "en": "'lag considerably behind its counterparts' is a direct translation of 远远落后于其同行. The word 'counterparts' is more suitable for professional peers, not countries in an education dataset.",
+    "cn": "中文里\"同行\"和\"落后于\"很常用。英文里'counterparts'多用于同行机构或个人，描述国家数据时用 'the other countries' 更准确。",
+    "whyZh": "",
+    "tip": ""
+   }
+  ],
+  "summary": [
+   "This is a strong Task 1 response with clear organisation, accurate data reporting, and a well-structured overview. The main L1 transfer issues are vocabulary choices that read as direct translations from Chinese, such as 'witnessed an upward trend', 'surging', 'climbed steadily', and 'demonstrated the most dynamic improvement'. These do not block meaning but reduce the naturalness of the language. There is also one minor pluralisation slip. Grammar and sentence structure are otherwise accurate.",
+   "这是一篇结构清晰、数据描述准确的Task 1范文。主要的母语干扰集中在词汇层面，多处表达是中文直译，例如'witnessed an upward trend'（呈现上升趋势）、'surging'（激增）、'climbed steadily'（稳步上升）、'demonstrated the most dynamic improvement'（展示了最动态的提升）。这些不影响理解，但降低了语言的自然度。另外有一处复数小错误。其余语法和句式基本准确。"
+  ]
+ },
+ "bands": {
+  "para": "A data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. iOS maintains approximately",
+  "bands": [
+   {
+    "band": "BAND 7.0",
+    "stars": 5
+   },
+   {
+    "band": "BAND 8.0",
+    "stars": 4
+   },
+   {
+    "band": "BAND 6.0",
+    "stars": 3
+   }
+  ]
+ },
+ "writingImproveView": "\n    <div class=\"ra-nav\">\n      <div class=\"ra-home\" onclick=\"go('ielts')\"><img src=\"assets/home_icon.svg\" alt=\"首页\"></div>\n      <div class=\"ra-tabs\">\n        <span class=\"ra-tab\" onclick=\"go('writingFeedback')\">WRITING MARK</span>\n        <span class=\"ra-tab on\">IMPROVE</span>\n        <span class=\"ra-tab\">L1 ERROR</span>\n      </div>\n    </div>\n    <div class=\"wi-wrap\">\n      <div class=\"ra-h-wrap\"><span class=\"ra-h\">ORIGINAL ANNOTATIONS</span></div>\n      <div class=\"wi-body\">\n        A data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), <span class=\"wi-qn\">1</span><span class=\"wi-hl\">2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M).</span>\n      </div>\n      <div class=\"wi-anno\">\n        <div class=\"wi-anno-old\"><span class=\"wi-anno-n\">1</span><span>In my opinion, the most effective approach is a synthesis of both.</span></div>\n        <div class=\"wi-anno-new\">→ <b>The most effective approach is, therefore, a synthesis of both.</b></div>\n        <div class=\"wi-anno-note\">Overusing 'In my opinion' and 'I believe' weakens academic writing. While expressing personal views is appropriate in IELTS essays, these phrases should appear sparingly (once, typically in the introduction or conclusion) rather than multiple times throughout the essay. Direct assertions with appropriate hedging ('therefore', 'thus', 'consequently') are more effective in academic contexts./过度使用\"In my opinion\"</div>\n      </div>\n      <div class=\"wi-body\">\n        2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. iOS maintains approximately 15-19% share with some recovery after 2020. Other platforms become nearly obsolete, <span class=\"wi-qn\">2</span><span class=\"wi-hl\">declining from 6% to under 0.3% of the market</span> A data table showing annual smartphone sales market share in millions of units. Android: <span class=\"wi-hl\">2015 (1,154M), 2017 (1,506M), 2019 (1,368M),</span> 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. <span class=\"wi-qn\">3</span><span class=\"wi-hl\">iOS maintains approximately 15-19% share with some recovery after 2020.</span> Other platforms become nearly obsolete, declining from 6% to under 0.3% of the marketA data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight declining trend. <span class=\"wi-qn\">4</span><span class=\"wi-hl\">iOS maintains approximately 15-19% share with some recovery after 2020. Other platforms become nearly obsolete,</span> declining from 6% to under 0.3% of the marketA data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight <span class=\"wi-qn\">5</span><span class=\"wi-hl\">declining trend. iOS maintains approximately 15-19% share with some recovery after 2020. Other platforms become nearly obsolete, declining from 6%</span> to under 0.3% of the marketdeclining from 6% to under 0.3% of the marketA data table showing annual smartphone sales market share in millions of units. Android: 2015 (1,154M), 2017 (1,506M), 2019 (1,368M), 2021 (1,351M), 2023 (1,290M). iOS: 2015 (231M), 2017 (216M), 2019 (200M),2021 (235M), 2023 (244M). Others: 2015 (74M), 2017 (42M), 2019 (18M), 2021 (8M), 2023 (3M). Android dominates with over 80% market share throughout but shows a slight\n      </div>\n      <button class=\"ra-next\" onclick=\"go('writingBands')\">NEXT</button>\n    </div>",
+ "writingL1DetailView": "\n    <div class=\"ra-nav\">\n      <div class=\"ra-home\" onclick=\"go('ielts')\"><img src=\"assets/home_icon.svg\" alt=\"首页\"></div>\n      <div class=\"ra-tabs\">\n        <span class=\"ra-tab\" onclick=\"go('writingFeedback')\">WRITING MARK</span>\n        <span class=\"ra-tab\" onclick=\"go('writingImprove')\">IMPROVE</span>\n        <span class=\"ra-tab on\">L1 ERROR</span>\n      </div>\n    </div>\n    <div class=\"wb-hd\" onclick=\"go('writingL1Error')\">\n      <span class=\"wb-back\">←</span><span class=\"wb-ttl\">OVERALL EVALUATION</span>\n    </div>\n    <div class=\"ld-cats\">\n      <span class=\"ld-cat vocab\">Vocabulary (4)</span>\n      <span class=\"ld-cat syntax\">Syntax (1)</span>\n      <span class=\"ld-cat style\">Style (2)</span>\n    </div>\n    \n    <div class=\"ra-card\">\n      <div class=\"ld-old\">In my opinion, the most effective approach is a synthesis of both.</div>\n      <div class=\"ld-new\">→ <b>The most effective approach is, therefore, a synthesis of both.</b></div>\n      <div class=\"ld-note\">Overusing 'In my opinion' and 'I believe' weakens academic writing. While expressing personal views is appropriate in IELTS essays, these phrases should appear sparingly (once, typically in the introduction or conclusion) rather than multiple times throughout the essay. Direct assertions with appropriate hedging ('therefore', 'thus', 'consequently') are more effective in academic contexts.</div>\n      <div class=\"ld-note blue\">This pattern of overusing first-person hedging phrases is one of the most common style weaknesses among Chinese IELTS candidates and can limit scores to 7.0 in Lexical Resource and Coherence and Cohesion. Reducing these to one or two instances and replacing with logical connectors can elevate the score.</div>\n      <div class=\"ld-tags\"><span class=\"ld-tag style\">Style</span><span class=\"ld-tag low\">Low</span></div>\n    </div>\n    \n    <div class=\"ra-card\">\n      <div class=\"ld-old\">In my opinion, the most effective approach is a synthesis of both.</div>\n      <div class=\"ld-new\">→ <b>The most effective approach is, therefore, a synthesis of both.</b></div>\n      <div class=\"ld-note\">Overusing 'In my opinion' and 'I believe' weakens academic writing. While expressing personal views is appropriate in IELTS essays, these phrases should appear sparingly (once, typically in the introduction or conclusion) rather than multiple times throughout the essay. Direct assertions with appropriate hedging ('therefore', 'thus', 'consequently') are more effective in academic contexts.</div>\n      <div class=\"ld-note blue\">This pattern of overusing first-person hedging phrases is one of the most common style weaknesses among Chinese IELTS candidates and can limit scores to 7.0 in Lexical Resource and Coherence and Cohesion. Reducing these to one or two instances and replacing with logical connectors can elevate the score.</div>\n      <div class=\"ld-tags\"><span class=\"ld-tag style\">Style</span><span class=\"ld-tag low\">Low</span></div>\n    </div>\n    <button class=\"ra-next\" onclick=\"go('ielts')\">The end</button>",
+ "overall": "7.5",
+ "weak": [
+  {
+   "label": [
+    "Task 1 · Task achievement 8.0",
+    "Task 1 · 任务完成情况 8.0"
+   ],
+   "text": [
+    "Group the data more tightly by feature rather than by country to keep the comparison continuous, for example by leading with the South Korea overtaking Norway and then moving to Australia and Mexico.",
+    "Group the data more tightly by feature rather than by country to keep the comparison continuous, for example by leading with the South Korea overtaking Norway and then moving to Australia and Mexico."
+   ]
+  },
+  {
+   "label": [
+    "Task 2 · Task achievement 7.5",
+    "Task 2 · 任务完成情况 7.5"
+   ],
+   "text": [
+    "Add one specific real-world example of an interdisciplinary module in your opinion paragraph and end the conclusion with a memorable synthesis rather than a recap.",
+    "Add one specific real-world example of an interdisciplinary module in your opinion paragraph and end the conclusion with a memorable synthesis rather than a recap."
+   ]
+  }
+ ],
+ "WF_T2_L1_SUMMARY": [
+  "No clear Chinese L1 transfer patterns were detected in this text. Article use, tense, subject-verb agreement, pluralisation, copula, prepositions, collocations, and clause structure all follow standard English norms. The academic style uses appropriate hedging and varied sentence structures without topic-comment bleeding or comma splicing. This is consistent with advanced proficiency rather than typical L1 interference.",
+  "未在这篇文本中观察到明显的中文母语负迁移特征。冠词、时态、主谓一致、复数、系动词、介词搭配和从句结构均符合英语规范。学术语体使用了恰当的模糊表达和多样的句式，没有出现汉语主题-评论结构的迁移或逗号连接独立句的用法。这与高级英语水平一致，不是典型的母语干扰产物。"
+ ]
+}

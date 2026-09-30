@@ -8,9 +8,14 @@ import '../../widgets/t.dart';
 import 'review_widgets.dart';
 
 class WritingReviewHeader extends StatelessWidget {
-  const WritingReviewHeader({super.key, required this.task, required this.l1});
+  const WritingReviewHeader(
+      {super.key, required this.task, required this.l1, this.data = const {}});
   final int task;
   final bool l1;
+
+  /// writing_review.json。原型数据没有 overall / band / weak 这几个键，下面的
+  /// 分数和薄弱项就用原来写死的值；演示用真实数据（tool/demo_export）会带上。
+  final Map<String, dynamic> data;
   @override
   Widget build(BuildContext context) {
     final app = context.watch<AppState>();
@@ -99,7 +104,9 @@ class WritingReviewHeader extends StatelessWidget {
                 runSpacing: 8,
                 alignment: WrapAlignment.spaceBetween,
                 children: [
-                  const ReviewScore(score: '6.5', overall: true),
+                  ReviewScore(
+                      score: data['overall'] as String? ?? '6.5',
+                      overall: true),
                   Padding(
                       padding: const EdgeInsets.only(top: 6),
                       child: Row(mainAxisSize: MainAxisSize.min, children: [
@@ -113,7 +120,10 @@ class WritingReviewHeader extends StatelessWidget {
                                   border: Border.all(
                                       color: const Color(0x66e0a000)),
                                   borderRadius: BorderRadius.circular(12)),
-                              child: Text(i == 1 ? 'T1 6.0' : 'T2 6.5',
+                              child: Text(
+                                  i == 1
+                                      ? 'T1 ${data['task1']?['band'] ?? '6.0'}'
+                                      : 'T2 ${data['WF_T2']?['band'] ?? '6.5'}',
                                   style: const TextStyle(fontFamily: 'Outfit', fontFamilyFallback: SurgoFontFamily.fallback, 
                                       fontSize: 13.5,
                                       height: 1,
@@ -137,16 +147,8 @@ class WritingReviewHeader extends StatelessWidget {
                     fontSize: 13.5, height: 1.6, color: Color(0xff6a645b)))),
         // 用户 2026-09-24：淡黄背景里的反馈正文要随界面语言 —— 这两句原本硬编码
         // 英文，且两张词典都没有译文，中文模式一直露英文。
-        _weak(
-            'Task 1 · 任务完成情况 6.0',
-            zh
-                ? '缺少总体概述句。请在细节之前加一句概括整体趋势（两者都上升，城市始终更高）—— 这是任务完成度上 7 分的硬性要求。'
-                : 'There is no overview sentence. Add one line summarising the overall trend (both rose, urban always higher) before the detail — this is required for Band 7 in Task Achievement.'),
-        _weak(
-            'Task 2 · 任务完成情况 6.5',
-            zh
-                ? '论证偏抽象。请为每一方补充具体例子（如小儿麻痹疫苗试验、欧盟化妆品试验禁令）以充分展开。'
-                : 'Arguments stay abstract. Support each side with a specific example (e.g. polio vaccine testing, EU cosmetics-testing ban) to fully develop the response.'),
+        for (final w in (data['weak'] as List?) ?? _prototypeWeak)
+          _weak(w['label'], w['text']),
         Padding(
             padding: const EdgeInsets.only(top: 6),
             child: ReviewButton('练习你最弱的题型 →',
@@ -181,7 +183,25 @@ class WritingReviewHeader extends StatelessWidget {
     ]);
   }
 
-  Widget _weak(String label, String text) => Container(
+  static const _prototypeWeak = [
+    {
+      'label': 'Task 1 · 任务完成情况 6.0',
+      'text': [
+        'There is no overview sentence. Add one line summarising the overall trend (both rose, urban always higher) before the detail — this is required for Band 7 in Task Achievement.',
+        '缺少总体概述句。请在细节之前加一句概括整体趋势（两者都上升，城市始终更高）—— 这是任务完成度上 7 分的硬性要求。',
+      ],
+    },
+    {
+      'label': 'Task 2 · 任务完成情况 6.5',
+      'text': [
+        'Arguments stay abstract. Support each side with a specific example (e.g. polio vaccine testing, EU cosmetics-testing ban) to fully develop the response.',
+        '论证偏抽象。请为每一方补充具体例子（如小儿麻痹疫苗试验、欧盟化妆品试验禁令）以充分展开。',
+      ],
+    },
+  ];
+
+  // label / text：字符串或 [英文, 中文]，由 T 按界面语言取。
+  Widget _weak(Object label, Object text) => Container(
       margin: const EdgeInsets.only(bottom: 11),
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
       decoration: BoxDecoration(
