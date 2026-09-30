@@ -1,11 +1,13 @@
 // 雅思听力：日常四个 Part（做题页 + 回顾）、模考四个 Part（考试页 + 回顾）。
 // 数据全部来自后端已存的结果：ielts_attempts + ielts_generated_items（旧版日常）、
 // ielts_listening_daily_sessions（现行日常：题目、判分、原文、解析、分析）、
-// ielts_mock_exam_*（模考的题目、答案键、原文、作答、成绩）。音频在原型里是模拟的，不导。
+// ielts_mock_exam_*（模考的题目、答案键、原文、作答、成绩）。音频在原型里是模拟的，不导；
+// 图示标注题的图（ielts_listening_daily_media 记的 PNG，存在后端的文件存储里）原样导出。
 const fs = require('fs');
 const path = require('path');
 const { one, lit } = require('./db.cjs');
 const { band, pair } = require('./text.cjs');
+const { stored, figure } = require('./media.cjs');
 
 // 日常练习每个 Part 是各自的一次作答。
 const DAILY = {
@@ -42,7 +44,8 @@ const tag = (types) => [0, 1].map((k) => `🏷 ${[...new Set(types)].map((t) => 
 const show = (o) => `${o.id}. ${o.text}`;
 
 // ---------- 读库，整理成同一种结构 ----------
-// part: { n, title, groups: [{ type, title, instruction, options, questions }], lines: [原文一行], review }
+// part: { n, title, groups: [{ type, title, instruction, options, figure, questions }], lines: [原文一行], review,
+//         figures: { 文件名: PNG 字节 } }
 // question: { n, text, given, ok, answer, quote, at: { line, start }, why }
 
 /** 旧版日常（ielts_attempts）：一组表格填空，原文是带说话人的文本，解析只有英文。 */
@@ -89,12 +92,16 @@ function legacyPart(n, id, learner) {
 /** 现行日常（ielts_listening_daily_sessions）。 */
 function sessionPart(n, id, learner) {
   const s = one(
-    `select jsonb_build_object('pc', s.public_content, 'result', s.result)
+    `select jsonb_build_object('pc', s.public_content, 'result', s.result,
+      'visuals', (select jsonb_agg(jsonb_build_object('group', m.group_id, 'scope', m.storage_scope, 'key', m.object_key,
+          'sha256', m.sha256, 'size', m.size_bytes, 'mime', m.mime_type, 'width', m.width, 'height', m.height, 'alt', m.alt_text))
+        from ielts_listening_daily_media m where m.session_id = s.id and m.media_kind = 'visual' and m.state = 'ready'))
      from ielts_listening_daily_sessions s
      where s.id = ${lit(id)} and s.part = ${Number(n)} and s.status = 'completed' and s.user_id::text like ${lit(`${learner}%`)}`,
     `listening daily session ${id}`,
   );
   const { pc, result } = s;
+  const figures = {};
   const number = Object.fromEntries(pc.answer_units.map((u) => [u.answer_unit_id, u.number]));
   const scored = Object.fromEntries(result.score.per_answer_unit.map((u) => [u.answer_unit_id, u]));
   const explained = Object.fromEntries((result.explanations || []).map((e) => [e.answer_unit_id, e]));
@@ -123,10 +130,18 @@ function sessionPart(n, id, learner) {
     const entries = layout.questions || layout.entries || layout.segments || layout.sentences || layout.steps || layout.labels;
     const type = g.question_type === 'completion' ? (g.completion_subtype || 'completion') : g.question_type;
     named(type);
+    // 这组题的图：题目快照里可能还写着 pending，以媒体表为准。对象键带着 id，只用来读文件，不进输出。
+    const visual = (s.visuals || []).find((v) => v.group === g.group_id && v.mime === 'image/png');
+    const name = `fig_listening_p${n}.png`;
+    if (visual) {
+      if (figures[name]) throw new Error(`listening part ${n}: more than one figure`);
+      figures[name] = stored(visual, `listening part ${n} figure`);
+    }
     return {
       type,
       qtype: g.question_type,
       title: g.title,
+      ...(visual ? { figure: figure(name, visual) } : {}),
       // 图示标注：每个位置只有编号，题干是整组共用的那句。
       instruction: [layout.kind === 'visual_labels' ? layout.prompt : null, g.instruction].filter(Boolean).join(' '),
       options,
@@ -167,6 +182,7 @@ function sessionPart(n, id, learner) {
     title: groups[0].title,
     lines,
     groups,
+    figures,
     review: {
       band: null, // 现行日常练习不估分
       right: result.score.correct_count,
@@ -286,6 +302,7 @@ function dailyPage(base, part) {
   const qs = part.groups.flatMap((g, gi) => g.questions.map((q, i) => {
     if (!g.options) {
       if (gi) throw new Error(`listening part ${part.n}: the page cannot show a completion group after the first group`);
+      if (g.figure) throw new Error(`listening part ${part.n}: the page only shows a figure on an option group`);
       const [head, ...tail] = q.text.split(/_{2,}/);
       return { kind: 'gap', type: named(g.type).main, num: q.n, q: [`${q.n}. ${head.trimEnd()}`, tail.join('______').trimStart()] };
     }
@@ -295,6 +312,7 @@ function dailyPage(base, part) {
       q: q.stem === false ? `${q.n}` : `${q.n}. ${q.text}`,
       opts: g.options.map(show),
       ...(gi && !i ? { groupStart: [range(g), g.title].filter(Boolean).join(' · '), groupInstr: g.instruction } : {}),
+      ...(g.figure && !i ? { figure: g.figure } : {}),
     };
   }));
   const [en, zh] = named(main.type).name;
@@ -319,8 +337,10 @@ exports.build = ({ learner }) => {
   const daily = proto('ielts_listening.json');
   const parts = {};
   const reviews = {};
+  const figures = {};
   for (const [n, from] of Object.entries(DAILY)) {
     const part = from.attempt ? legacyPart(Number(n), from.attempt, learner) : sessionPart(Number(n), from.session, learner);
+    Object.assign(figures, part.figures);
     parts[`s${n}`] = dailyPage(daily.parts[`s${n}`], part);
     reviews[n] = feedback(daily.feedback[n], part, flat(part));
   }
@@ -346,6 +366,7 @@ exports.build = ({ learner }) => {
   });
 
   return {
+    ...figures,
     'ielts_listening.json': { parts, feedback: reviews, mockFeedback: mockReviews },
     'ielts_mock_listening.json': { parts: exam },
   };

@@ -188,7 +188,13 @@
       "D. Diagnostic area"
      ],
      "groupStart": "Questions 17-20 · Main room of the cycle workshop",
-     "groupInstr": "Label the diagram of the main room. Which area of the workshop is described by each statement? Choose the correct letter, A, B, C or D."
+     "groupInstr": "Label the diagram of the main room. Which area of the workshop is described by each statement? Choose the correct letter, A, B, C or D.",
+     "figure": {
+      "asset": "assets/data/fig_listening_p2.png",
+      "width": 1280,
+      "height": 720,
+      "alt": "Diagram of the main workshop room with four unanswered positions, 17 to 20."
+     }
     },
     {
      "kind": "mc",

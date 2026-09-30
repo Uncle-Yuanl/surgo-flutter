@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../app/routes.dart';
 import '../../theme/tokens.dart';
 import '../../widgets/t.dart';
+import 'exam_figure.dart';
 import 'reading_controller.dart';
 
 class ReadingQuestion extends StatelessWidget {
@@ -39,7 +40,7 @@ class ReadingQuestion extends StatelessWidget {
     final gap = x.options.isEmpty;
     final inline = gap &&
         (!x.single ||
-            (x.type['boxInput'] != true && x.type['diagramSvg'] == null));
+            (x.type['boxInput'] != true && !x.hasDiagram));
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       if (x.single && x.type['groupLabel'] != null) ...[
         text(x.type['groupLabel'],
@@ -77,7 +78,15 @@ class ReadingQuestion extends StatelessWidget {
                         ],
                         _summaryText(),
                       ])),
-            if (x.single && x.type['diagramSvg'] != null)
+            if (x.single && x.type['figure'] != null)
+              Container(
+                  margin: const EdgeInsets.only(bottom: 16),
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                      color: const Color(0xfff5f1e9),
+                      borderRadius: BorderRadius.circular(12)),
+                  child: ExamFigure(x.type['figure']))
+            else if (x.single && x.type['diagramSvg'] != null)
               Container(
                   margin: const EdgeInsets.only(bottom: 16),
                   padding: const EdgeInsets.all(16),

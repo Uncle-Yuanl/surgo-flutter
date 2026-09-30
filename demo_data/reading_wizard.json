@@ -3,7 +3,7 @@
   {
    "key": "mc",
    "name": "选择题",
-   "mins": 9,
+   "mins": 7.5,
    "instr": "Choose the correct answer A, B, C or D.",
    "items": [
     {
@@ -85,7 +85,7 @@
   {
    "key": "tfng",
    "name": "判断信息（正误未提及）",
-   "mins": 6,
+   "mins": 7.5,
    "instr": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
    "kind": "tfng",
    "article": {
@@ -396,7 +396,7 @@
   {
    "key": "scomplete",
    "name": "句子填空",
-   "mins": 4.5,
+   "mins": 7.5,
    "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
    "kind": "gap",
    "items": [
@@ -509,42 +509,67 @@
   {
    "key": "diagram",
    "name": "示意图标注填空",
-   "mins": 1.5,
-   "instr": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage.",
+   "mins": 7.5,
+   "instr": "Label the diagram. Choose NO MORE THAN TWO WORDS from the passage for this answer.",
    "kind": "gap",
-   "groupLabel": "Question 40",
-   "diagramSvg": "<svg viewBox=\"0 0 260 150\" width=\"100%\" height=\"140\"><g stroke=\"#8bbf6a\" stroke-width=\"1.6\" fill=\"#e7f2dc\"><rect x=\"90\" y=\"20\" width=\"52\" height=\"36\"/><rect x=\"90\" y=\"56\" width=\"52\" height=\"36\"/><rect x=\"90\" y=\"92\" width=\"52\" height=\"36\"/></g><line x1=\"142\" y1=\"40\" x2=\"215\" y2=\"40\" stroke=\"#8bbf6a\" stroke-width=\"1.6\"/><text x=\"222\" y=\"45\" font-size=\"16\" fill=\"#7a6f5a\" font-weight=\"700\">?</text></svg>",
+   "groupLabel": "Questions 14-18",
    "article": {
-    "title": "The Science of Building with Bamboo",
+    "title": "The Internal Organisation of a Honey Bee Colony",
     "passage": [
      [
       "A",
-      "Bamboo has been used as a building material for thousands of years across Asia and South America. Recently, engineers in Europe and North America have begun to take the plant seriously as a sustainable alternative to steel and concrete, whose production is responsible for a significant share of global carbon emissions."
+      "A honey bee colony is one of the most studied examples of a superorganism in the animal kingdom. Tens of thousands of individual bees live together in a single nest, and the structure of that nest reflects a strict division of labour that biologists have been documenting for more than two centuries. The most familiar member of the colony is the western honey bee, Apis mellifera, but the principles of internal organisation are shared across most cavity-nesting species."
      ],
      [
       "B",
-      "The appeal of bamboo lies in its remarkable strength-to-weight ratio. Some species have a tensile strength comparable to that of mild steel, yet weigh a fraction as much. Bamboo also grows extraordinarily quickly, with certain species adding almost a metre in a single day, making it a rapidly renewable resource."
+      "The physical home of the colony is the beehive. In the wild, this is usually a hollow tree or a sheltered rock cavity, while in managed settings it takes the form of a wooden box with removable frames. Whatever its outer shape, the inner space is divided into a series of vertical combs built from beeswax. Each comb is a double-sided sheet of hexagonal cells, and the cells themselves are reused and repaired rather than rebuilt every season, which makes the nest an unusually durable structure for an insect construction."
      ],
      [
       "C",
-      "There are, however, challenges. Untreated bamboo is vulnerable to insects and fungal decay, and its performance varies widely between species and even between individual stems. Engineers have therefore developed treatment processes and grading systems to ensure consistency and durability in construction."
+      "The comb has several distinct functional regions. The outermost frames, particularly those nearest the entrance, tend to hold honey stores: cells capped with a thin layer of wax once the nectar has been evaporated down to a stable sugar concentration. Deeper inside the hive, the central frames are dedicated to brood rearing. Here, the queen moves in a deliberate pattern, laying one fertilised egg in the bottom of each cell. Workers clean and polish these cells before she will accept them, and the surrounding workers maintain a near-constant temperature of about 34 to 35 degrees Celsius, which is required for the eggs and larvae to develop normally."
      ],
      [
       "D",
-      "A typical bamboo culm consists of hollow segments separated by solid joints known as nodes. The outer wall is dense and fibrous, while the inner layers are softer. Understanding this structure is essential for designing joints that transfer loads effectively without splitting the material."
+      "Above the brood, the workers often construct a continuous band of cells filled with pollen, known as the pollen reserve. Pollen is the colony's main source of protein, and placing it directly above the brood allows nurse bees to feed young larvae without travelling far. The pollen is packed tightly into the cells by foragers returning from the field, sometimes mixed with a small amount of nectar and enzymes to preserve it. Below the brood, a narrow entrance region is usually kept clear of comb and acts as a ventilation shaft, with workers stationed there fanning their wings to circulate air through the nest."
      ],
      [
       "E",
-      "Advocates argue that with proper treatment and engineering, bamboo could play a major role in low-carbon construction, particularly in regions where it grows naturally. Critics counter that building codes in many countries have yet to catch up, limiting its use in large-scale projects."
+      "Around the queen herself, a retinue of young workers constantly attends her, feeding her and removing her waste. The queen is not a ruler in any meaningful sense, but she is the sole reproductive female, and her initial egg-laying pattern largely sets the layout of the brood area. If she is lost, the colony will quickly attempt to raise a replacement from young larvae that are still less than three days old. The population of the colony changes with the seasons, peaking in late spring when foraging conditions are at their best and shrinking through the autumn as older workers die and are not replaced at the same rate."
+     ],
+     [
+      "F",
+      "The adult workers themselves pass through a clear sequence of tasks during their short lives. Newly emerged workers spend their first days cleaning cells and tending the brood. As their glands develop, they move on to building and repairing comb, processing incoming nectar, and guarding the entrance. Only in the final third of their lives do they begin to forage outside the hive. This age-based division of labour means that the loss of a large group of older foragers after a predator attack can leave the colony with too few bees to collect enough nectar, even though the brood area may still be full of developing young. Beekeepers sometimes mark the queen with a small coloured ticket on her thorax so that she can be located quickly during routine inspections, a practice that also makes it easier to record her age and laying pattern from one season to the next."
      ]
     ]
    },
    "items": [
     [
-     "40. The solid joints of a culm are called ",
-     "."
+     "14. This region lies at the deepest part of the hive, behind the entrance, and holds the developing young raised by the queen. ",
+     ""
+    ],
+    [
+     "15. This band of cells sits directly above the brood and forms the colony's main protein store, packed in by returning foragers. ",
+     ""
+    ],
+    [
+     "16. This region lies at the front of the hive, nearest the entrance, and is filled with capped cells of evaporated nectar. ",
+     ""
+    ],
+    [
+     "17. This narrow space at the very base of the hive is kept free of comb and used by workers fanning their wings to move air. ",
+     ""
+    ],
+    [
+     "18. This structure fills the hive from ceiling to floor, built by workers from wax, with hexagonal cells used for brood, pollen and honey. ",
+     ""
     ]
-   ]
+   ],
+   "figure": {
+    "asset": "assets/data/fig_reading_diagram.png",
+    "width": 2048,
+    "height": 1536,
+    "alt": "IELTS Academic Reading diagram: The Internal Organisation of a Honey Bee Colony"
+   }
   },
   {
    "key": "short",

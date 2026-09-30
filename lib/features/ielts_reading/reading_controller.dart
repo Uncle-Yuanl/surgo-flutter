@@ -91,10 +91,13 @@ class ReadingController {
     mark();
   }
 
+  /// 示意图标注题：原型数据带 diagramSvg，演示用真实数据带 figure（后端存的原图）。
+  bool get hasDiagram => type['diagramSvg'] != null || type['figure'] != null;
+
   // Original single-type inline gaps have NO onchange (boxInput/diagram do).
   void commitInput(String text) {
     input = text;
-    if (!single || type['boxInput'] == true || type['diagramSvg'] != null) {
+    if (!single || type['boxInput'] == true || hasDiagram) {
       mark();
     }
   }

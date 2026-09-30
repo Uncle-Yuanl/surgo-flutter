@@ -67,7 +67,7 @@ class _IeltsReadingPageState extends State<IeltsReadingPage> {
       inputDirty = false;
       if (!widget.single ||
           c!.type['boxInput'] == true ||
-          c!.type['diagramSvg'] != null) {
+          c!.hasDiagram) {
         progressChanged = true;
       }
     });

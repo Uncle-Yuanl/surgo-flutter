@@ -130,6 +130,12 @@
   "qs": [
    {
     "type": "diagram",
+    "figure": {
+     "asset": "assets/data/fig_mock_reading_p2.png",
+     "width": 2048,
+     "height": 1536,
+     "alt": "IELTS Academic Reading diagram: Lighthouses and the Changing Shape of Coastal Navigation"
+    },
     "group": "Questions 14-15",
     "instr": "Label the diagram. Choose NO MORE THAN TWO WORDS from the passage for this answer.",
     "q": "Identify the painted masonry structure that carries the light and houses the keepers' working levels."

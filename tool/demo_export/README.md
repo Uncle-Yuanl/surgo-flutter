@@ -21,11 +21,17 @@ JSON，不调接口，也不现场生成任何内容。
 
 ## 模块
 
-- 本目录下除 `export.cjs`、`db.cjs`、`text.cjs` 外，每个 `.cjs` 是一个模块（自动发现）：
+- 本目录下除 `export.cjs`、`db.cjs`、`text.cjs`、`media.cjs` 外，每个 `.cjs` 是一个模块（自动发现）：
   `exports.build(config)` 返回 `{ 'questions.json': 替换部分, … }`。对象逐键合并，数组和标量整体替换。
 - 要导哪些作答写在模块文件头（`ielts_attempts.id`、各种 session id），挑已完成、结果完整的；
   `demo.config.json` 只放学员前缀。
 - 参考 `writing.cjs`（雅思写作：题目、柱状图、规划、评分页、批注、母语负迁移）。
+- 题图：模块返回的值是 Buffer 就是二进制文件（`{ 'fig_xxx.png': 字节 }`），原样写进 `demo_data/`，构建时和
+  JSON 一起盖进 `assets/data/`，页面用 `assets/data/fig_xxx.png`。图用 `media.cjs` 读：题目里内嵌的
+  base64（`inline`），或后端文件存储里的对象（`stored`，只读 `docker exec surgo-app cat`），都按库里记的
+  sha256 / 大小核对，不转码。文件名里不许带库里的 id。JSON 里记 `figure: { asset, width, height, alt }`
+  （`media.cjs` 的 `figure`），页面见 `lib/features/ielts_reading/exam_figure.dart`；没有 `figure` 时页面
+  画原型自带的示意图。
 
 ## 验证
 
@@ -39,6 +45,9 @@ JSON，不调接口，也不现场生成任何内容。
    ```
 
    每个页面显示了哪些文字在 `build/audit/bilingual_routes.json`，可以核对真实数据有没有上屏。
+   页面一直转圈多半是它的 JSON 超过了 50 KB：`rootBundle.loadString` 对 50 KB 以上的文件另起 isolate
+   解码，widget 测试的假时钟等不到（网页上没有这回事）。页面自己懒加载的文件超了，就改成读字节直接解码
+   （见 `lib/features/ielts_reading/reading_controller.dart` 的 `ReadingData.load`）。
 3. 原型数据下（不覆盖）跑相关页面的测试：`flutter test -j 2 test/<相关>_test.dart`。
 4. 看图：同第 2 步先覆盖，`flutter build web --release --no-web-resources-cdn -t lib/main_visual_audit.dart -o build/audit-web`，
    换回原型数据，再把 `build/web/fonts` 拷进 `build/audit-web/` 后起静态服务。网址参数见

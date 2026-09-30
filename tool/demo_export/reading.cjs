@@ -1,15 +1,17 @@
 // 雅思阅读：日常整篇（题目 + 回顾）、单一题型练习、模考（考试页 + 回顾）。
 // 数据全部来自后端已存的结果：ielts_attempts（作答、判分、解析）、ielts_generated_items（文章和题目）、
-// ielts_mock_exam_*（模考的文章、题目、答案键、作答、成绩）。
+// ielts_mock_exam_*（模考的文章、题目、答案键、作答、成绩）。示意图题的图是题目里内嵌的 PNG，原样导出。
 const fs = require('fs');
 const path = require('path');
 const { one, lit } = require('./db.cjs');
 const { band, pair } = require('./text.cjs');
+const { inline, figure } = require('./media.cjs');
 
 // 日常整篇：13 题（标题匹配 7、选择 1、判断 2、句子填空 2、简答 1），答对 6。
 const DAILY = '81afb75d-b1d1-4649-8852-c14d56fe287d';
 // 单一题型练习：ielts_reading.json 里每个题型用哪次作答的文章和题目（第二项：整篇作答里只取这一种题型）。
-// 句尾匹配（ematch）学员没做过；示意图标注（diagram）真实题的图是位图或根本没生成，页面画不了，两项保留原型。
+// 句尾匹配（ematch）学员没做过，保留原型。示意图标注（diagram）取图上画了题号的那次：另外几次的图
+// 要么没画题号，要么题号在手机宽度下小得看不清。
 const TYPES_FROM = {
   mc: ['ea308527-66c1-4a11-b31e-f7ae375f72ec'],
   tfng: ['1bcb6cc7-c374-4e51-bc0f-639a63811000'],
@@ -19,6 +21,7 @@ const TYPES_FROM = {
   fmatch: ['631344fc-7c82-4a28-917a-3790728ce7e4', 'matching_features'],
   scomplete: ['3cb4c85e-bce0-42c7-8557-39e34f1adc66'],
   summary: ['631344fc-7c82-4a28-917a-3790728ce7e4', 'summary_completion'],
+  diagram: ['7a46d728-25a5-40f6-8d35-727d4a986a47'],
   short: ['631344fc-7c82-4a28-917a-3790728ce7e4', 'short_answer'],
 };
 // 模考（ielts_mock_exam_sessions.id）：三篇 40 题，题目质量最好的一场；学员是点过去的（答对 1 题）。
@@ -158,10 +161,12 @@ function daily(a) {
 
 // ---------- 单一题型练习 ----------
 
-/** 按原型的题型格式（ielts_reading.json 的 types）把真实题目填进去；题号从 1 排。 */
-function practiceType(t, item, only) {
+/** 按原型的题型格式（ielts_reading.json 的 types）把真实题目填进去；题号从 1 排（示意图题照用图上的题号）。 */
+function practiceType(t, item, only, addFigure) {
   const qs = item.questions.filter((q) => !only || q.type === only);
   if (!qs.length) throw new Error(`reading type ${t.key}: no ${only} question in the chosen item`);
+  // 整套题原样用的，计时用这套题自己的时限；只取了其中几道的，沿用原型的时长。
+  if (!only && item.time_limit_seconds) t = { ...t, mins: item.time_limit_seconds / 60 };
   const article = { title: item.title, passage: paragraphs(item.passage) };
   const instr = qs[0].instruction;
   const opts = (qs[0].options || []).map(option);
@@ -188,6 +193,21 @@ function practiceType(t, item, only) {
       const { summaryTitle, ...rest } = t;
       return { ...rest, instr, article, summaryText: qs.map((q, i) => q.question.replace(/_{2,}/, `(${i + 1}) ______`)).join(' '), items: qs.map((q, i) => [`${i + 1}. `, '']) };
     }
+    case 'diagram': {
+      // 真实图代替原型自带的示意图（diagramSvg）；图上标的是原题号。
+      const { diagramSvg, ...rest } = t;
+      const image = (item.media || []).find((x) => x.id === qs[0].media_id)?.image;
+      if (!image?.base64) throw new Error(`reading type ${t.key}: the chosen item has no stored figure`);
+      const n = (q) => q.question_number ?? q.id;
+      return {
+        ...rest,
+        instr,
+        article,
+        groupLabel: label(n(qs[0]), n(qs[qs.length - 1])),
+        figure: addFigure('fig_reading_diagram.png', image, 'reading diagram figure'),
+        items: qs.map((q) => [`${n(q)}. ${q.question} `, '']),
+      };
+    }
     case 'short':
       return { ...t, instr, article, groupLabel: label(1, qs.length), items: qs.map((q, i) => [`${i + 1}  ${q.question} `, '']) };
     default:
@@ -202,7 +222,7 @@ function mockSession(id, learner) {
     `select jsonb_build_object(
       'score', r.section_score, 'correct', r.score_detail->'correct_count',
       'sections', (select jsonb_agg(jsonb_build_object(
-          'title', x.public_content->>'title', 'passage', x.public_content->>'passage',
+          'title', x.public_content->>'title', 'passage', x.public_content->>'passage', 'media', x.public_content->'media',
           'items', (select jsonb_agg(jsonb_build_object('pc', i.public_content, 'key', k.marking_key, 'answer', p.response->>'answer') order by i.ordinal)
                     from ielts_mock_exam_items i join ielts_mock_exam_marking_keys k on k.item_id = i.id
                     left join ielts_mock_exam_responses p on p.item_id = i.id where i.section_id = x.id)) order by x.ordinal)
@@ -216,9 +236,8 @@ function mockSession(id, learner) {
 /** 选项怎么显示：段落题的选项就是 "Paragraph A"，其余带上字母。 */
 const showOption = (o) => (o.text.startsWith('Paragraph ') || o.text === o.id ? o.text : `${o.id}. ${o.text}`);
 
-function mock(s) {
+function mock(s, addFigure) {
   let no = 0;
-  let figureShown = false;
   let right = 0;
   const pages = [];
   const passages = {};
@@ -228,6 +247,7 @@ function mock(s) {
     const base = no;
     const exam = [];
     const review = [];
+    let figureShown = false;
     sec.items.forEach((it, i) => {
       no += 1;
       const { pc, key } = it;
@@ -247,9 +267,11 @@ function mock(s) {
         const plain = opts.every((o) => o.text.startsWith('Paragraph ') || o.text === o.id);
         q = { type: 'match', ...(first ? { letters: opts.map((o) => o.id), ...(plain ? { nobox: true } : { box: opts.map((o) => o.text) }) } : {}) };
       } else if (pc.type === 'diagram_labelling' && first && !figureShown) {
-        // 真实题的图是位图，页面画不了：这一组保留页面自带的示意图（只画一次）。
+        // 一篇的几组标注题共用一张图，只在第一组画。真实图是 PNG，和题目一起导出；
+        // 这篇没存图的话页面画它自带的示意图。
         figureShown = true;
-        q = { type: 'diagram' };
+        const image = (Array.isArray(sec.media) ? sec.media : []).find((x) => x.id === pc.media_id)?.image;
+        q = { type: 'diagram', ...(image?.base64 ? { figure: addFigure(`fig_mock_reading_p${si + 1}.png`, image, `mock reading passage ${si + 1} figure`) } : {}) };
       } else q = { type: pc.type === 'short_answer' ? 'shortans' : 'gap' };
       exam.push({ ...q, ...head, q: pc.prompt });
 
@@ -280,16 +302,23 @@ function mock(s) {
 }
 
 exports.build = ({ learner }) => {
+  // 题图：{ 文件名: PNG 字节 }，和 JSON 一起交给 export.cjs 写出；JSON 里记文件位置和原图宽高。
+  const figures = {};
+  const addFigure = (name, image, what) => {
+    figures[name] = inline(image, what);
+    return figure(name, { width: image.width, height: image.height, alt: image.alt_text });
+  };
   const d = daily(attempt(DAILY, learner));
   const attempts = {};
   const types = proto('ielts_reading.json').types.map((t) => {
     const from = TYPES_FROM[t.key];
     if (!from) return t;
     attempts[from[0]] ??= attempt(from[0], learner);
-    return practiceType(t, attempts[from[0]].item, from[1]);
+    return practiceType(t, attempts[from[0]].item, from[1], addFigure);
   });
-  const m = mock(mockSession(MOCK, learner));
+  const m = mock(mockSession(MOCK, learner), addFigure);
   return {
+    ...figures,
     // passages.monarch：回顾页按这个键取日常那篇（原型是帝王蝶那篇，键名沿用）。
     'questions.json': { ielts: { reading: { daily: d.session, passages: { monarch: d.review } } } },
     'ielts_reading.json': { types },
